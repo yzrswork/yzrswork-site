@@ -1,0 +1,11 @@
+{
+  "electronics-starter": {
+    "name": "YZRS LP-01",
+    "codename": "Drafting Bench",
+    "path": "/lp/electronics-starter/",
+    "status": "experiment",
+    "robots": "noindex,follow",
+    "primaryGoal": "guide_click",
+    "source": "Manus LP-01 + production integration"
+  }
+}
