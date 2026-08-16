@@ -1,0 +1,16 @@
+{
+  "name": "yzrswork-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "yzrswork.com本体サイトのShadow Repository",
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "build:guide": "node scripts/build-guide.mjs",
+    "generate:sitemap": "node scripts/generate-sitemap.mjs",
+    "serve": "python3 -m http.server 8000 -d public",
+    "check": "node scripts/check-public.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {}
+}
