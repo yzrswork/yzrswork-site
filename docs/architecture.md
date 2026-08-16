@@ -17,6 +17,15 @@
 
 `yzrswork/yzrs-times` は、引き続きProduction配信元であり、YZRS Times生成エンジンです。Timesのprompt、source収集、scheduler、edition生成、AI処理、publish workflowは移しません。
 
+## 周辺システムとの境界
+
+- `yzrswork/yzrswork-site`: `yzrswork.com` の静的なTop、Guide、LP、About、Privacy、SEO、Analytics、assetとbuild/check。
+- `yzrswork/yzrs-times`: YZRS Timesの候補収集、編集、edition生成、発行、および現行Production配信。
+- `yzrswork_apps`: 電子工作・自作PC・DIY向けのWebツール群。Siteから外部リンクで参照しますが、今回のCOPY対象でもbuild対象でもありません。
+- `obsidian-vault`: Ownerのローカル知識・制作メモ。Repositoryの公開コンテンツやProduction配信のSSoTではなく、今回のMigration対象外です。
+
+SiteとTimesの公開成果物の受け渡し、およびAppsやVaultとの同期は今回実装しません。
+
 ## Source and generated output
 
 Guideのsource of truthは `content/guides/*.md` です。`npm run build` により `public/guides/*/index.html` を生成します。生成HTMLを編集してsourceに戻す運用はしません。
