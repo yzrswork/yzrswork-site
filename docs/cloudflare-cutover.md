@@ -22,6 +22,8 @@
 
 ## 3. 本番切替前の承認条件
 
+Cloudflare変更とProduction切替にはOwner explicit approval requiredです。文書化だけでは承認とはみなしません。
+
 次の全てが完了するまで `CUTOVER_READY = false` とします。
 
 - Owner review完了
@@ -30,6 +32,7 @@
 - Preview相当の安全な検証方法の承認
 - rollback担当・時間枠・監視項目の合意
 - Cloudflare変更の明示承認
+- Cloudflare変更前の最終diff確認
 
 ## 4. Timesの未解決事項
 
