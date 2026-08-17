@@ -36,12 +36,16 @@ git diff --check
 - LP-01 `electronics-starter`（`noindex,follow`）
 - Guide Markdown sourceとbuild script
 - 本体サイト用Analytics、robots、sitemap、OGP asset
+- Site所有のTimes UI (`/times/`、`/evening.html`)
+- JSON-only Times delivery receiverと冪等性state
 - verify-only GitHub Actions
 - Migration / architecture / analytics / deployment / Cloudflare cutover documentation
 
 ## Deferred
 
-Timesの公開と自動更新をProductionへ接続する方法は未決定です。候補は `repository_dispatch`、reusable workflow、GitHub API commit、build artifact受け渡し、Timesのsubdomain分離です。いずれもこのShadow Migrationでは実装しません。
+Times data/contentのownerは `yzrswork/yzrs-times`、Times UI/siteのownerは本Repositoryです。`sync-times.yml` は指定runのJSON-only artifactを受け取るSite receiverですが、senderは未実装です。入力・manifest・path/type・JSON・orderingをFail Closedで検証し、Siteだけが自身のmainへ直接commitします。
+
+受信に使う `TIMES_ARTIFACT_READ_TOKEN` の実値は保存しません。Cloudflare操作・deploy・Production変更は行わず、`CUTOVER_READY = false` のままです。
 
 ## Cutover rule
 

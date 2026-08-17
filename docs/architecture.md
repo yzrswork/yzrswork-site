@@ -32,16 +32,14 @@ Guideのsource of truthは `content/guides/*.md` です。`npm run build` によ
 
 本体サイトの固定HTMLは、現在のProductionサイトからCOPYした移行対象です。LP-01は `yzrs-times` の未マージDraft PR #14のheadから取り込みました。
 
-## Deferred Times dependency
+## Times delivery receiver v0.1
 
-現在 `/times/` は `yzrs-times` 側のProduction資産です。本Repositoryには `public/times/` を含めません。新RepositoryをProductionに昇格するには、Timesの生成結果をこのRepositoryへ渡すcross-repo publishing設計が必要です。
+Timesのデータ/content ownerは `yzrswork/yzrs-times`、TimesのUI/site ownerは `yzrswork/yzrswork-site` です。Siteが自身のRepositoryへの唯一のwriterであり、TimesへSite contents:write権限を渡しません。
 
-候補は次のとおりです。
+- `public/times/` と `public/evening.html` はSiteへCOPY済みで、以後Siteが所有します。
+- `.github/workflows/sync-times.yml` は `workflow_dispatch` の手動receiverです。指定された `source_run_id` の `times-delivery` artifactだけを取得し、latest artifact探索はしません。
+- artifactは `delivery-manifest.json` と `data/**/*.json` だけを許可します。HTML、JS、CSS、YAML、workflow、script、package等はFail Closedで拒否します。
+- manifestのsource repository、source SHA、run ID、edition、publishedAtとworkflow入力を一致検証し、JSONと既存配信時刻を確認してから `public/data/` と `times-sync-state.json` を更新します。
+- `data/times-sync-state.json` はSite管理で、同一runはNO-OP、古いdeliveryは拒否、新しいdeliveryだけを受け入れます。
 
-1. `repository_dispatch`
-2. reusable workflow
-3. GitHub APIによるcommit
-4. build artifactの受け渡し
-5. Timesを別subdomainへ分離
-
-このタスクでは候補の選定・実装を行わず、`CUTOVER_READY = false` とします。
+このreceiverでTimesの生成・AI処理・scheduler・senderは実装しません。Cloudflare操作、deploy、Production変更は0で、`CUTOVER_READY = false` です。

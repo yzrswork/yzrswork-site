@@ -9,7 +9,8 @@
     "build:guide": "node scripts/build-guide.mjs",
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
     "serve": "python3 -m http.server 8000 -d public",
-    "check": "node scripts/check-public.mjs"
+    "check": "node scripts/check-public.mjs",
+    "test": "node --test test/times-delivery.test.mjs"
   },
   "engines": { "node": ">=20" },
   "dependencies": {}

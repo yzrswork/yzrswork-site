@@ -12,6 +12,8 @@ Production Repositoryは変更せず、以下のsourceをShadow RepositoryへCOP
 | `yzrs-times/public/robots.txt` | `public/robots.txt` | COPY | 公開サイトのcrawl方針を維持 | COMPLETE |
 | `yzrs-times/public/sitemap.xml` | `public/sitemap.xml` | COPY / REGENERATED | LP-01とDEFER対象を除外したSite用sitemapを生成 | COMPLETE |
 | `yzrs-times/public/og.png` | `public/og.png` | COPY | 本体OGP assetを保持 | COMPLETE |
+| `yzrs-times/public/times/index.html` | `public/times/index.html` | COPY | Times UIをSite所有へ移管 | COMPLETE |
+| `yzrs-times/public/evening.html` | `public/evening.html` | COPY | 夕刊UIをSite所有へ移管 | COMPLETE |
 | `yzrs-times/content/hajimete-no-denshi-kousaku-starter-guide.md` | `content/guides/hajimete-no-denshi-kousaku-starter-guide.md` | COPY | Guide本文をsourceとして保持 | COMPLETE |
 | `yzrs-times/content/hajimete-no-denshi-kousaku-starter-guide.images.yaml` | `content/guides/hajimete-no-denshi-kousaku-starter-guide.images.yaml` | COPY | Guide画像の権利確認manifestを保持 | COMPLETE |
 | `yzrs-times/public/guides/hajimete-no-denshi-kousaku-starter-guide/assets/` | `public/guides/hajimete-no-denshi-kousaku-starter-guide/assets/` | COPY | Guideが参照するassetを保持 | COMPLETE |
@@ -23,12 +25,15 @@ Production Repositoryは変更せず、以下のsourceをShadow RepositoryへCOP
 | なし（Shadow専用） | `scripts/generate-sitemap.mjs` | NEW | Site責務だけのsitemapを生成 | COMPLETE |
 | `yzrs-times/scripts/check-public.mjs` | `scripts/check-public.mjs` | ADAPT | Site用required file / link / SEO / LP checkを独立化 | COMPLETE |
 | なし（Shadow専用） | `.github/workflows/verify.yml` | NEW | install / build / checkのみのverify-only CI | COMPLETE |
+| なし（Shadow専用） | `.github/workflows/sync-times.yml` | NEW | 指定runのTimes artifactを検証してSiteだけへ受信 | COMPLETE |
+| なし（Shadow専用） | `scripts/times-delivery.mjs` | NEW | JSON/path/manifest/orderのFail Closed検証とstate更新 | COMPLETE |
+| なし（Shadow専用） | `test/times-delivery.test.mjs` | NEW | 受信、NO-OP、ordering、異常系の決定的テスト | COMPLETE |
 | `yzrs-times/prompts/` | `yzrs-times/prompts/` | KEEP | Times生成・編集 | KEPT IN SOURCE |
 | `yzrs-times/scheduler/` | `yzrs-times/scheduler/` | KEEP | Times自動処理 | KEPT IN SOURCE |
 | `yzrs-times/editions/` | `yzrs-times/editions/` | KEEP | Times edition定義 | KEPT IN SOURCE |
 | `yzrs-times/sources.json` | `yzrs-times/sources.json` | KEEP | source収集定義 | KEPT IN SOURCE |
-| `yzrs-times/public/data/` | なし | DEFER | Times成果物のcross-repo publishing未設計 | DEFERRED |
-| `yzrs-times/public/times/` | なし | DEFER | Times公開成果物の受け渡し未設計 | DEFERRED |
+| `yzrs-times/public/data/` | `public/data/`（workflow受信時） | RECEIVER | JSON-only artifactをSite側で検証後に更新 | READY FOR SENDER |
+| `yzrs-times/public/times/` | `public/times/` | COPY | Times UIをSite所有へ移管 | COMPLETE |
 | `yzrs-times/wrangler.jsonc` | `yzrs-times/wrangler.jsonc` | KEEP | 現行ProductionのCloudflare設定 | KEPT IN SOURCE |
 | Cloudflare secrets / tokens | なし | DEFER | Shadowへcredentialを持ち込まない | DEFERRED |
 
@@ -38,7 +43,7 @@ Production Repositoryは変更せず、以下のsourceをShadow RepositoryへCOP
 
 ## Gate
 
-Production unchanged: `yzrs-times` のProductionファイル、`wrangler.jsonc`、接続設定は変更していません。
+Production unchanged: `yzrs-times` のProductionファイル、`wrangler.jsonc`、接続設定は変更していません。Times data/contentは `yzrs-times` がowner、Times UI/siteと受信後のSite dataは `yzrswork-site` がownerです。ArtifactはJSON-only、receiverはFail Closed、Siteが唯一のwriterです。
 
 `CUTOVER_READY = false`
 

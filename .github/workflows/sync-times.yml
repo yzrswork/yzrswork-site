@@ -1,0 +1,177 @@
+name: sync-times
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_run_id:
+        description: Exact successful yzrs-times Actions run ID
+        required: true
+        type: string
+      source_sha:
+        description: Exact yzrs-times commit SHA for that run
+        required: true
+        type: string
+      edition:
+        description: Optional manifest edition assertion
+        required: false
+        default: ''
+        type: string
+      published_at:
+        description: Optional manifest publishedAt assertion
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: times-sync
+  cancel-in-progress: false
+
+jobs:
+  receive:
+    runs-on: ubuntu-latest
+    env:
+      SOURCE_REPOSITORY: yzrswork/yzrs-times
+      ARTIFACT_NAME: times-delivery
+      SOURCE_RUN_ID: ${{ inputs.source_run_id }}
+      SOURCE_SHA: ${{ inputs.source_sha }}
+      SOURCE_EDITION: ${{ inputs.edition }}
+      SOURCE_PUBLISHED_AT: ${{ inputs.published_at }}
+    steps:
+      - name: Check out Site main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Verify exact source run
+        env:
+          GH_TOKEN: ${{ secrets.TIMES_ARTIFACT_READ_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "::error::TIMES_ARTIFACT_READ_TOKEN is not configured"
+            echo "Site変更: NONE"
+            exit 1
+          fi
+          if ! [[ "$SOURCE_RUN_ID" =~ ^[0-9]+$ ]] || ! [[ "$SOURCE_SHA" =~ ^[0-9a-fA-F]{7,64}$ ]]; then
+            echo "::error::source_run_id or source_sha has an invalid format"
+            echo "Site変更: NONE"
+            exit 1
+          fi
+          run_json="$(gh api "repos/$SOURCE_REPOSITORY/actions/runs/$SOURCE_RUN_ID")"
+          printf '%s' "$run_json" | jq -e --arg expected_sha "$SOURCE_SHA" '
+            (.head_sha | ascii_downcase) == ($expected_sha | ascii_downcase)
+            and .status == "completed"
+            and .conclusion == "success"
+          ' >/dev/null
+
+      - name: Download exact delivery artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: times-delivery
+          repository: yzrswork/yzrs-times
+          run-id: ${{ inputs.source_run_id }}
+          github-token: ${{ secrets.TIMES_ARTIFACT_READ_TOKEN }}
+          path: ${{ runner.temp }}/times-delivery
+
+      - name: Validate staged delivery
+        id: validate
+        run: |
+          node scripts/times-delivery.mjs validate \
+            --staging "$RUNNER_TEMP/times-delivery" \
+            --state "public/data/times-sync-state.json" \
+            --source-run-id "$SOURCE_RUN_ID" \
+            --source-sha "$SOURCE_SHA" \
+            --edition "$SOURCE_EDITION" \
+            --published-at "$SOURCE_PUBLISHED_AT" \
+            --output "$GITHUB_OUTPUT"
+
+      - name: Stop for duplicate or old delivery
+        if: steps.validate.outputs.status != 'ACCEPT'
+        run: |
+          echo "No delivery was accepted; Site変更: NONE"
+
+      - name: Install accepted delivery into the Site data area
+        if: steps.validate.outputs.status == 'ACCEPT'
+        run: |
+          node scripts/times-delivery.mjs install \
+            --staging "$RUNNER_TEMP/times-delivery" \
+            --destination "public/data" \
+            --state "public/data/times-sync-state.json" \
+            --source-run-id "$SOURCE_RUN_ID" \
+            --source-sha "$SOURCE_SHA" \
+            --edition "$SOURCE_EDITION" \
+            --published-at "$SOURCE_PUBLISHED_AT"
+
+      - name: Snapshot accepted Times data
+        if: steps.validate.outputs.status == 'ACCEPT'
+        id: accepted-data
+        run: echo "digest=$(node scripts/times-delivery.mjs digest --root public/data)" >> "$GITHUB_OUTPUT"
+
+      - name: Build
+        if: steps.validate.outputs.status == 'ACCEPT'
+        run: npm run build
+
+      - name: Check
+        if: steps.validate.outputs.status == 'ACCEPT'
+        run: npm run check
+
+      - name: Test
+        if: steps.validate.outputs.status == 'ACCEPT'
+        run: npm test
+
+      - name: Confirm build preserved accepted Times data
+        if: steps.validate.outputs.status == 'ACCEPT'
+        env:
+          EXPECTED_DIGEST: ${{ steps.accepted-data.outputs.digest }}
+        run: test "$(node scripts/times-delivery.mjs digest --root public/data)" = "$EXPECTED_DIGEST"
+
+      - name: Check diff
+        if: steps.validate.outputs.status == 'ACCEPT'
+        run: git diff --check
+
+      - name: Commit only accepted Times data
+        if: steps.validate.outputs.status == 'ACCEPT'
+        env:
+          DELIVERY_EDITION: ${{ steps.validate.outputs.edition }}
+        run: |
+          set -euo pipefail
+          changed="$(git diff --name-only)"
+          if [ -n "$changed" ] && printf '%s\n' "$changed" | grep -v '^public/data/' >/dev/null; then
+            echo "::error::build changed files outside public/data"
+            echo "Site変更: NONE"
+            exit 1
+          fi
+          git add -- public/data
+          if git diff --cached --quiet; then
+            echo "No Site data diff; Site変更: NONE"
+            exit 0
+          fi
+          if git diff --cached --name-only | grep -v '^public/data/' >/dev/null; then
+            echo "::error::staged file is outside public/data"
+            echo "Site変更: NONE"
+            exit 1
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "sync(times): ${DELIVERY_EDITION} from ${SOURCE_SHA:0:7}"
+
+      - name: Push accepted delivery to Site main
+        if: steps.validate.outputs.status == 'ACCEPT'
+        run: |
+          if ! git push origin HEAD:main; then
+            echo "::error::Site main push failed. Do not weaken branch protection; Shadow execution is required."
+            echo "Site変更: NONE (remote)"
+            exit 1
+          fi
