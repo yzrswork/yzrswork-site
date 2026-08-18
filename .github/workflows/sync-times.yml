@@ -71,6 +71,7 @@ jobs:
             exit 1
           fi
           run_file="$RUNNER_TEMP/times-source-run.json"
+          normalized_run_file="$RUNNER_TEMP/times-source-run-normalized.json"
           commit_file="$RUNNER_TEMP/times-publication-commit.json"
           fetch_source_run() {
             gh api "repos/$SOURCE_REPOSITORY/actions/runs/$SOURCE_RUN_ID" > "$run_file"
@@ -92,9 +93,11 @@ jobs:
             echo "Site変更: NONE"
             exit 1
           fi
+          jq 'if ((.path | type) == "string" and (.path | endswith("@main"))) then .path |= sub("@main$"; "") else . end' \
+            "$run_file" > "$normalized_run_file"
           gh api "repos/$SOURCE_REPOSITORY/commits/$SOURCE_SHA" > "$commit_file"
           node scripts/times-delivery.mjs verify-provenance \
-            --run "$run_file" \
+            --run "$normalized_run_file" \
             --commit "$commit_file" \
             --source-run-id "$SOURCE_RUN_ID" \
             --source-sha "$SOURCE_SHA" \
