@@ -15,7 +15,7 @@
 - Productionは現在も `yzrswork/yzrs-times` が配信します。
 - `yzrs-times` のファイルは削除・移動せず、COPYで扱います。
 - `yzrs-times` のTimes生成、AI編集、scheduler、publish workflowは本Repositoryに移しません。
-- `public/times/` はcross-repo publishing設計が未確定のためDEFERです。
+- `public/times/` と `public/evening.html` はSite-owned UIです。両方ともSite CIでcanonical、必要なTimes data参照、戻り導線、inline JavaScriptを検証します。
 - `wrangler.jsonc`、Cloudflare deploy script、Cloudflare deploy workflow、Secretsは含めません。
 - Cutover条件は `CUTOVER_READY = false` です。
 
@@ -43,9 +43,19 @@ git diff --check
 
 ## Deferred
 
-Times data/contentのownerは `yzrswork/yzrs-times`、Times UI/siteのownerは本Repositoryです。`sync-times.yml` は指定runのJSON-only artifactを受け取るSite receiverですが、senderは未実装です。入力・manifest・path/type・JSON・orderingをFail Closedで検証し、Siteだけが自身のmainへ直接commitします。
+Times data/contentのownerは `yzrswork/yzrs-times`、Times UI/siteのownerは本Repositoryです。`sync-times.yml` は指定runのJSON-only artifactを受け取るSite receiverです。入力・manifest・provenance・path/type・Times snapshot・orderingをFail Closedで検証し、Siteだけが自身のmainへ直接commitします。
 
 受信に使う `TIMES_ARTIFACT_READ_TOKEN` の実値は保存しません。Cloudflare操作・deploy・Production変更は行わず、`CUTOVER_READY = false` のままです。
+
+## Cross-repo permission model
+
+- `TIMES_ARTIFACT_READ_TOKEN`: repository accessは `yzrswork/yzrs-times` のみに制限し、Actions: Read と Contents: Readだけを付与します。write権限は不要です。
+- `SITE_SYNC_TOKEN`: repository accessは `yzrswork/yzrswork-site` のみに制限し、Actions: Writeだけを付与します。Site Contents: Writeは付与しません。
+- Site receiverの `GITHUB_TOKEN`: Site workflowの `contents: write` で、Site自身の `public/data/` を受け入れたときだけcommit/pushします。Times senderにはSite Contents: Write権限を与えません。
+
+## `public/data/` ownership
+
+`yzrswork-site/public/data/` は、Times delivery snapshotとSite-ownedの `times-sync-state.json` 専用です。無関係なSiteアプリケーションデータを置きません。receiverは受け入れたTimes snapshotを単位として意図的に置き換えます。
 
 ## Cutover rule
 
