@@ -10,11 +10,12 @@ const GUIDE = 'guides/hajimete-no-denshi-kousaku-starter-guide/index.html';
 const GUIDE_URL = `${BASE}/guides/hajimete-no-denshi-kousaku-starter-guide/`;
 const LP = 'lp/electronics-starter/index.html';
 const LP_URL = `${BASE}/lp/electronics-starter/`;
+const TIMES = 'times/index.html';
+const EVENING = 'evening.html';
 const pages = ['index.html', 'about/index.html', 'privacy/index.html', GUIDE, LP];
+const uiPages = [TIMES, EVENING];
 const analyticsPages = new Set(pages);
 const errors = [];
-const deferredPaths = new Set(['/times/', '/evening.html']);
-const deferredLinks = new Set();
 
 function read(relativePath) {
   const path = join(PUBLIC, relativePath);
@@ -71,7 +72,6 @@ function checkLinks(page, html) {
     let url;
     try { url = new URL(href, BASE); } catch { errors.push(`URLが不正: ${page}: ${href}`); continue; }
     if (url.origin !== BASE) continue;
-    if (deferredPaths.has(url.pathname)) { deferredLinks.add(url.pathname); continue; }
     if (!localPathExists(url.pathname)) errors.push(`内部リンク先がない: ${page}: ${href}`);
   }
 }
@@ -79,6 +79,7 @@ function checkLinks(page, html) {
 const expectedFiles = [
   'index.html', 'about/index.html', 'privacy/index.html', 'analytics.js', 'ads.txt', 'robots.txt', 'sitemap.xml', 'og.png',
   GUIDE, LP,
+  TIMES, EVENING,
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/tools-step1-set.jpg',
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/tools-step2-set.jpg',
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/tools-step3-psu.jpg',
@@ -101,15 +102,21 @@ for (const [page, html] of htmlByPage) {
   checkLinks(page, html);
 }
 
+const uiHtmlByPage = new Map(uiPages.map((page) => [page, read(page)]));
+for (const [page, html] of uiHtmlByPage) checkInlineScripts(page, html);
+
 const canonicalExpectations = {
   'index.html': `${BASE}/`,
   'about/index.html': `${BASE}/about/`,
   'privacy/index.html': `${BASE}/privacy/`,
   [GUIDE]: GUIDE_URL,
   [LP]: LP_URL,
+  [TIMES]: `${BASE}/times/`,
+  [EVENING]: `${BASE}/evening.html`,
 };
 for (const [page, canonical] of Object.entries(canonicalExpectations)) {
-  if (!htmlByPage.get(page).includes(`<link rel="canonical" href="${canonical}"`)) errors.push(`canonicalが不一致: ${page}`);
+  const html = uiHtmlByPage.get(page) ?? htmlByPage.get(page);
+  if (!html.includes(`<link rel="canonical" href="${canonical}"`)) errors.push(`canonicalが不一致: ${page}`);
 }
 
 const root = htmlByPage.get('index.html');
@@ -167,7 +174,12 @@ for (const file of siteFiles) {
   for (const pattern of secretPatterns) if (pattern.test(content)) errors.push(`secret patternがある: ${rel}`);
 }
 
-if (deferredLinks.size) console.log(`[check] DEFER link: ${[...deferredLinks].join(', ')}`);
+const times = uiHtmlByPage.get(TIMES);
+if (!times.includes("'/data/latest.json'")) errors.push('Timesのlatest.json参照がない');
+if (!times.includes("fetch('/data/index-manifest.json')")) errors.push('Timesのindex-manifest.json参照がない');
+
+const evening = uiHtmlByPage.get(EVENING);
+if (!evening.includes('href="/times/?mode=day"')) errors.push('EveningのTimes戻り導線がない');
 if (errors.length) {
   console.error(`[check] ${errors.length}件のエラー`);
   for (const error of errors) console.error(`  - ${error}`);
