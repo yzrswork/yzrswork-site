@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 24,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-22",
+  "dateDisplay": "Wednesday, July 22, 2026",
+  "pressTimeJst": "2026-07-22 12:00",
+  "generatedAt": "2026-07-22T02:47:13.848Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "手で動かす仕組み",
+    "note": "昼休み、画面を見るだけでなく実際に作りたくなる技術にフォーカスした紙面。"
+  },
+  "editorial": {
+    "comment": "昼刊はニュースを削ぎ落とし、手を動かすための技術を集めました。特に『FreeInk』のように電子ペーパー端末をオープンにする試みは、ものづくり好きの心を強くくすぐります。午後の作業の合間に、自分だけの道具をいじる妄想を膨らませてみてください。 —— YZRS Times 編集長",
+    "passedOver": "ニチレイへのサイバー攻撃やHugging Faceの障害など大規模なインシデントニュースが相次ぎましたが、昼刊の主旨に合わせ見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "曇り",
+    "icon": "cloudy",
+    "tempMax": 35,
+    "tempMin": 25,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 33,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 66314,
+        "priceJpy": 10815874,
+        "change24hPct": 1.6,
+        "sparkline7d": [
+          64964.48,
+          64558.78,
+          62799.55,
+          64017.89,
+          64534.59,
+          65160.1,
+          66257.34
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1928.58,
+        "priceJpy": 314551,
+        "change24hPct": 0.97,
+        "sparkline7d": [
+          1889.48,
+          1917.03,
+          1827.53,
+          1844.34,
+          1873.23,
+          1896.96,
+          1919.07
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.192913,
+        "priceJpy": 31.46,
+        "change24hPct": 3.07,
+        "sparkline7d": [
+          0.184511,
+          0.187513,
+          0.182951,
+          0.183831,
+          0.190874,
+          0.188814,
+          0.191669
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 224.9,
+        "priceJpy": 36682,
+        "change24hPct": 1.66,
+        "sparkline7d": [
+          236.55,
+          220.84,
+          222.51,
+          219.37,
+          216.58,
+          217.17,
+          223.49
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-2d7be904",
+    "zenn-trend-c9348c60",
+    "lobsters-13d9ec31"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hatebu-it-0febbeb1"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-1c91c391",
+        "zenn-trend-46c1368d",
+        "qiita-popular-b41c76f6"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-59bafd6a",
+        "lobsters-49023286"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-2d7be904",
+      "title": "FreeInk: Open ecosystem for e-readers",
+      "url": "https://freeink.org/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-21T18:39:06.000Z",
+      "summaryJa": [
+        "FreeInk: Open ecosystem for e-readers",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "FreeInk",
+        "Open",
+        "ecosystem",
+        "for",
+        "readers"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 428,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 2,
+          "velocity": 52.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-c9348c60",
+      "title": "Unity CLI でAIエージェントにゲームを作らせてみた",
+      "url": "https://zenn.dev/tkada/articles/1ba97707dee14a",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-21T02:47:18.000Z",
+      "summaryJa": [
+        "はじめに Unity公式のCLIであるUnity CLIがリリースされました。",
+        "https://unity.",
+        "com/ja/blog/meet-the-unity-cli 今回はUnity CLIのインストール方法、AIエージェントの連携について解説し、最終的にはゲーム"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Unity",
+        "CLI",
+        "でAIエージェントにゲームを作らせてみた"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 24,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-13d9ec31",
+      "title": "AP8L - APL for the Pico-8",
+      "url": "https://www.lexaloffle.com/bbs/?tid=152582",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-21T19:33:38.000Z",
+      "summaryJa": [
+        "It's a flat-array APL on the PICO-8 with modern features like promote and root, ",
+        "Comments",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "AP8L",
+        "APL",
+        "for",
+        "the",
+        "Pico"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-0febbeb1",
+      "title": "LLM の「脳内」をハッキングする技術 - ｼﾞｮｲｼﾞｮｲｼﾞｮｲ",
+      "url": "https://joisino.hatenablog.com/entry/hack",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-21T09:10:55.000Z",
+      "summaryJa": [
+        "LLM の内部状態やパラメータ、いわばLLM の「脳内」を局所的に書き換えることで、LLM の動作に介入する手法が発展を遂げています。",
+        "まずは最も基本的な操舵ベクトルについてみていきましょう。",
+        "操舵ベクトル LLM の内部状態を特定の方向に動かすことで動作を操作できます。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "LLM",
+        "の「脳内」をハッキングする技術",
+        "ｼﾞｮｲｼﾞｮｲｼﾞｮｲ"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 211,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 12
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-1c91c391",
+      "title": "自社のレビュー履歴からAIコードレビュアーをつくる方法",
+      "url": "https://zenn.dev/estie/articles/f0f114389662ba",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-21T00:45:05.000Z",
+      "summaryJa": [
+        "こんにちは、株式会社estie（エスティ） 取締役CTO の Nari （@tiwanari）です。",
+        "みなさんはコードレビューにAIツールを活用されているでしょうか？",
+        "汎用のAIコードレビューツールは便利なのですが、自社のコードにおける書き振りへの対応やレビューでどのような指摘を行うか、といったところまでは拾いきれません。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-46c1368d",
+      "title": "フロントエンドに広がりつつある OpenTelemetry：Browser SDK の現在地",
+      "url": "https://zenn.dev/cybozu_frontend/articles/opentelemetry-browser-frontend",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-21T00:56:04.000Z",
+      "summaryJa": [
+        "OpenTelemetry と聞くと、サーバーサイドのトレースやメトリクスを集めるためのもの、という印象を持っている人は多いと思います。",
+        "実際、バックエンドでは OpenTelemetry を使った計装をよく見かけるようになりました。",
+        "一方で、フロントエンドの監視は Sentry や Datadog のような SaaS の SDK に任せることが多く、OpenTelemetry をブラウザの計"
+      ],
+      "category": "programming",
+      "keywords": [
+        "フロントエンドに広がりつつある",
+        "SDK",
+        "の現在地"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-b41c76f6",
+      "title": "☔️ 梅雨なのでLINEに天気通知を自動送信する仕組みを作ってみた【完全無料】",
+      "url": "https://qiita.com/keishin_nishiura/items/64862bd19bc8b6976b18?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-21T03:03:42.000Z",
+      "summaryJa": [
+        "1.",
+        "はじめに ソーイ株式会社の西浦です。",
+        "普段は受託開発でWebアプリケーションの開発を担当しています。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "☔️"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 24,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-59bafd6a",
+      "title": "Bringing the modern web to the original iPad mini",
+      "url": "https://seg6.space/posts/resurrecting-ipad-mini",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-21T22:47:54.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Bringing",
+        "the",
+        "modern",
+        "web",
+        "to"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-49023286",
+      "title": "An Engineer’s Guide to USB Type-C",
+      "url": "https://www.ti.com/lit/eb/slyy228/slyy228.pdf",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-21T22:38:33.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "An",
+        "Engineer’s",
+        "Guide",
+        "to",
+        "USB"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-a9532c92",
+      "title": "opencardev/crankshaft — Crankshaft: A turnkey GNU/Linux solution that transforms a Raspberry Pi to an Android Auto head unit.",
+      "url": "https://github.com/opencardev/crankshaft",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-21T21:44:17Z",
+      "summaryJa": [
+        "Crankshaft: A turnkey GNU/Linux solution that transforms a Raspberry Pi to an An",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "Crankshaft",
+        "turnkey",
+        "GNU/Linux",
+        "solution",
+        "that"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "Raspberry Piを車載端末へ変貌させる、作って動かす楽しさが詰まったターンキープロジェクトです。電子工作と実用の境界線を壊す刺激を、午後の手作業の前にどうぞ。"
+  },
+  "unavailableSources": []
+}

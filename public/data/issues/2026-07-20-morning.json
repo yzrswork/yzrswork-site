@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 19,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-20",
+  "dateDisplay": "Monday, July 20, 2026",
+  "pressTimeJst": "2026-07-20 05:00",
+  "generatedAt": "2026-07-19T21:06:41.117Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "手の中の物語",
+    "note": "既存の道具を再定義し、物理的な仕組みを自ら構築する作り手の情熱に焦点を当てました。"
+  },
+  "editorial": {
+    "comment": "ボウリング場のシステムをESP32で置き換えた記事（hn-front-de6f8fe5）は、作り手として最高の週末の過ごし方です。不便を愛し、自分の手で仕組みを再構築するその姿勢こそ、この紙面が大切にしたい美学です。",
+    "passedOver": "サッカーW杯の結果速報。スポーツは熱狂的ですが、本紙は日常の傍らにある個人の技術的営みを優先しました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ",
+    "icon": "sunny",
+    "tempMax": 35,
+    "tempMin": 24,
+    "precipChancePct": 6
+  },
+  "market": {
+    "fearGreed": {
+      "value": 28,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64477,
+        "priceJpy": 10474263,
+        "change24hPct": -0.22,
+        "sparkline7d": [
+          64109.23,
+          61848.88,
+          64458.85,
+          64719.05,
+          62931.09,
+          64043.43,
+          64526.46
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1865.83,
+        "priceJpy": 303104,
+        "change24hPct": 0.56,
+        "sparkline7d": [
+          1820.34,
+          1755.9,
+          1864.04,
+          1920.83,
+          1833.06,
+          1840.09,
+          1867.25
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.19157,
+        "priceJpy": 31.12,
+        "change24hPct": 1.94,
+        "sparkline7d": [
+          0.189516,
+          0.17997,
+          0.181964,
+          0.189075,
+          0.183469,
+          0.184834,
+          0.189734
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 216.95,
+        "priceJpy": 35243,
+        "change24hPct": -1.47,
+        "sparkline7d": [
+          244.33,
+          233.8,
+          233.51,
+          223.82,
+          222.89,
+          220.34,
+          216.43
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-de6f8fe5",
+    "hn-front-c3e19e66",
+    "hatebu-it-43bab3b0"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-978ee9ec",
+        "nhk-top-2679620d",
+        "nhk-world-9677a862"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-ebdb659d"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-de6f8fe5",
+      "title": "Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",
+      "url": "https://news.ycombinator.com/item?id=48968606",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-19T14:41:16.000Z",
+      "summaryJa": [
+        "I might be the only SRE on Earth with his own bowling center.",
+        "It&#x27;s a more in-depth gig than you&#x27;d think.",
+        "<p>My family and I bought an abandoned 8-lane bowling center in the rural mid-we"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "replaced",
+        "$120k",
+        "bowling"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 746,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 116.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-c3e19e66",
+      "title": "What I learned selling 2,500 MIDI recorders: Hardware is not so hard",
+      "url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-19T10:34:58.000Z",
+      "summaryJa": [
+        "What I learned selling 2,500 MIDI recorders: Hardw",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "What",
+        "learned",
+        "selling",
+        "500",
+        "MIDI"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 360,
+          "hatebuCount": 0,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 34.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-43bab3b0",
+      "title": "セキュリティの勉強になるサイト138選(2026年版) - Qiita",
+      "url": "https://qiita.com/Nakanishi_RareTECH/items/16fd0b847aa68c152e00",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-19T05:44:51.000Z",
+      "summaryJa": [
+        "セキュリティを独学するときに役立つサイトを、Webアプリ・クラウド・CTF・マルウェア解析・資格まで分野ごとにまとめました。",
+        "ほとんどが無料で、ブラウザだけ、あるいはDockerで自分のマシンに立てればすぐ試せます。",
+        "全部で138本。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Qiita"
+      ],
+      "heat": {
+        "temperature": 89,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 312,
+          "ageHours": 15,
+          "crossSources": 2,
+          "velocity": 20.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-978ee9ec",
+      "title": "ロシアがウクライナに弾道ミサイルで攻撃 過去最大規模か",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015181001000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-19T19:56:13.000Z",
+      "summaryJa": [
+        "ロシア軍は19日にかけて、ウクライナに対して大規模な攻撃を行い、首都キーウでは1人が死亡、15人がけがをしました。",
+        "ウクライナのゼレンスキー大統領はこれまでに行われたロシアの弾道ミサイルによる攻撃の中で…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "ロシアがウクライナに弾道ミサイルで攻撃",
+        "過去最大規模か"
+      ],
+      "heat": {
+        "temperature": 60,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-2679620d",
+      "title": "奈良 西名阪道で逆走か 軽乗用車どうしが正面衝突 2人死亡",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015181011000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-19T20:38:13.000Z",
+      "summaryJa": [
+        "20日未明、奈良県香芝市の西名阪自動車道で軽乗用車どうしが正面衝突し、2人が死亡し、1人が意識不明の重体となっています。",
+        "現場の状況からいずれかの車が逆走していた可能性もあるとみて警察が事故の詳しい状況…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "奈良",
+        "西名阪道で逆走か",
+        "軽乗用車どうしが正面衝突",
+        "2人死亡"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-9677a862",
+      "title": "米軍8日連続の攻撃完了 イラン「壊滅的な反撃招く」とけん制",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015180851000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-07-19T10:15:21.000Z",
+      "summaryJa": [
+        "アメリカ中央軍は、イランの攻撃に対応していた兵士2人が死亡したことを受けて8日連続となるイランへの攻撃を行ったと発表しました。",
+        "一方、イランの中央司令部は声明で「壊滅的な反撃を招くことになる」などとアメ…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "米軍8日連続の攻撃完了",
+        "イラン「壊滅的な反撃招く」とけん制"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-ebdb659d",
+      "title": "アニメ・映画・ドラマで見かけた「Emacs」いろいろまとめ",
+      "url": "https://gigazine.net/news/20260719-emacs-in-pop-culture/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-19T03:58:12.000Z",
+      "summaryJa": [
+        "Emacsはオリジナルが1976年にリリースされ、50年経った記事作成時点でも脈々と更新が続いている古参かつ現役のテキストエディタです。",
+        "歴史の長さゆえに根強い愛好者が多く、同じく長い歴史を持つviとの「エディタ戦争」に代表されるミームにも事欠きません。",
+        "そんなEmacsは映画などのワンシーンを演出するツールとしても."
+      ],
+      "category": "programming",
+      "keywords": [
+        "アニメ",
+        "映画"
+      ],
+      "heat": {
+        "temperature": 75,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 100,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 5.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "熱中症警戒アラート",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-19T20:50:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "熱中症警戒アラート"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-1be73848",
+      "title": "Show HN: I 3D scanned the interior of the Great Pyramid at Giza",
+      "url": "https://giza.mused.org/en/guided/266/inside-the-great-pyramid",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2022-10-27T13:31:25.000Z",
+      "summaryJa": [
+        "Hey HN, I 3d scanned the interior of the Great Pyramid &#x2F; Khufu&#x27;s pyram",
+        "Would love feedback and&#x2F;or problems you encounter.",
+        "<p>I used both a Leica BLK 360 and Matterport Pro 2 to do the scanning and the M"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "3D",
+        "scanned",
+        "the"
+      ],
+      "heat": {
+        "temperature": 68,
+        "signals": {
+          "hnPoints": 1752,
+          "hatebuCount": 0,
+          "ageHours": 32672,
+          "crossSources": 1,
+          "velocity": 0.1
+        }
+      },
+      "image": null
+    },
+    "reason": "ギザの大ピラミッド内部を3Dスキャンするという試みは、歴史と最新技術の美しい交差点です。現地の空気をデジタルに閉じ込める作業は、創造性を刺激する至高の探究心と言えます。"
+  },
+  "unavailableSources": []
+}

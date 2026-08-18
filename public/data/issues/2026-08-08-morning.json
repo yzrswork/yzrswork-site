@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 57,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-08-08",
+  "dateDisplay": "Saturday, August 8, 2026",
+  "pressTimeJst": "2026-08-08 05:00",
+  "generatedAt": "2026-08-07T20:17:21.906Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "規律の境界と時を越える道具",
+    "note": "AIによる新たな規則や古典データの再整理を通じ、過去の名作が現代に蘇る手触りを探ります。"
+  },
+  "editorial": {
+    "comment": "チューチューマウス（hatebu-it-6613850b）がAIの力を得て15年ぶりに復活した姿には、ものづくりの粘り強い執念を感じます。古い道具であっても、今の技術を少し混ぜるだけで、驚くほど滑らかに現代に適合できるはずです。 —— YZRS Times 編集長",
+    "passedOver": "KDDIの楽天ローミング終了などインフラの決定は影響が大きいですが、朝の創作の刺激を優先し、チューチューマウスや古典図書館の話題に紙面を割きました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ",
+    "icon": "sunny",
+    "tempMax": 33,
+    "tempMin": 26,
+    "precipChancePct": 36
+  },
+  "market": {
+    "fearGreed": {
+      "value": 29,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64944,
+        "priceJpy": 10240862,
+        "change24hPct": 0.8,
+        "sparkline7d": [
+          62925.21,
+          62802.63,
+          62818.98,
+          63666.15,
+          64040.49,
+          64718.86,
+          64681.59
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1916.84,
+        "priceJpy": 302262,
+        "change24hPct": 0.6,
+        "sparkline7d": [
+          1866.73,
+          1844.61,
+          1857.05,
+          1863.11,
+          1867.71,
+          1913.52,
+          1908.25
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.161791,
+        "priceJpy": 25.51,
+        "change24hPct": 0.4,
+        "sparkline7d": [
+          0.171011,
+          0.170889,
+          0.171134,
+          0.171141,
+          0.166242,
+          0.161665,
+          0.160421
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 216.49,
+        "priceJpy": 34137,
+        "change24hPct": 1.3,
+        "sparkline7d": [
+          208.61,
+          207.92,
+          210.73,
+          213.09,
+          212.99,
+          212.83,
+          214.85
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-f0674d0a",
+    "hatebu-it-6613850b",
+    "hn-front-0102bda1"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-bfaf26f7",
+        "nhk-world-38e77f6f",
+        "nhk-top-dee14e02"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-12a203ae"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-f0674d0a",
+      "title": "Oracle bans AI-generated code from OpenJDK",
+      "url": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-07T17:36:30.000Z",
+      "summaryJa": [
+        "Oracle bans AI-generated code from OpenJDK",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Oracle",
+        "bans",
+        "AI",
+        "generated",
+        "code"
+      ],
+      "heat": {
+        "temperature": 89,
+        "signals": {
+          "hnPoints": 240,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 89.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-6613850b",
+      "title": "老舗のマウスユーティリティ「チューチューマウス」がAIの力を借りて15年ぶりに復活／64bit化、Windows 10/11、「Chrome」も走り回る。復活記念で2026年末まで500円",
+      "url": "https://forest.watch.impress.co.jp/docs/news/2131497.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-07T05:47:22.000Z",
+      "summaryJa": [
+        "老舗のマウスユーティリティ「チューチューマウス」がAIの力を借りて15年ぶりに復活／64bit化、W",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "老舗のマウスユーティリティ",
+        "チューチューマウス",
+        "Windows",
+        "Chrome",
+        "復活記念で2026年末まで500円"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 113,
+          "ageHours": 14,
+          "crossSources": 1,
+          "velocity": 7.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-0102bda1",
+      "title": "Ancient Library – 1,060 Greek/Latin texts, click any word to parse it",
+      "url": "https://ancientlibrary.net/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-07T18:51:14.000Z",
+      "summaryJa": [
+        "Ancient Library – 1,060 Greek/Latin texts, click a",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Ancient",
+        "Library",
+        "Greek/Latin",
+        "texts",
+        "click"
+      ],
+      "heat": {
+        "temperature": 75,
+        "signals": {
+          "hnPoints": 30,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 20.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-bfaf26f7",
+      "title": "大型で非常に強い台風13号 暴風などに厳重警戒",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015199841000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-07T20:09:41.000Z",
+      "summaryJa": [
+        "大型で非常に強い台風13号は、依然として沖縄本島地方や・奄美地方を暴風域に巻き込みながら西寄りに進んでいます。",
+        "暴風などに厳重な警戒を続けてください。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "大型で非常に強い台風13号",
+        "暴風などに厳重警戒"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-38e77f6f",
+      "title": "川底からマンモスとみられる骨や沈没船 欧州で熱波続き干ばつ",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015199481000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-08-07T12:51:15.000Z",
+      "summaryJa": [
+        "熱波の影響が続くヨーロッパでは、ドナウ川の水位が記録的な低さとなり、川底からマンモスのものとみられる骨や沈没した船が姿を現しました。",
+        "出典: NHKニュース 国際",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "川底からマンモスとみられる骨や沈没船",
+        "欧州で熱波続き干ばつ"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-dee14e02",
+      "title": "税務職員が高齢女性から約1億5000万円受け取り競艇 懲戒免職に",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015199381000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-07T12:49:47.000Z",
+      "summaryJa": [
+        "茨城県の税務署の職員が税務調査で知り合った高齢の女性からおよそ1億5000万円を受け取って競艇につぎ込んだうえ、脱税していたとして、関東信越国税局は懲戒免職の処",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "懲戒免職に"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-12a203ae",
+      "title": "テストが増えすぎてもう限界だったので、PRで全テストを回すのをやめた話 - Timee Product Team Blog",
+      "url": "https://tech.timee.co.jp/entry/2026/08/07/164910",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-07T09:53:34.000Z",
+      "summaryJa": [
+        "はじめに こんにちは、タイミーのプラットフォームエンジニアリングチームに所属している徳富(@yannKazu1)です。",
+        "この記事では、スキマバイトサービス「タイミー」のバックエンド（Rails API）に Datadog Test Impact Analysis（TIA） を導入",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "テストが増えすぎてもう限界だったので",
+        "PRで全テストを回すのをやめた話",
+        "Timee",
+        "Product",
+        "Team"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 83,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "日本郵政",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-08-07T19:30:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "日本郵政"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-411a292b",
+      "title": "RavenSystem/esp-homekit-devices — Advanced firmware to add native Apple HomeKit and custom configurations, compatible with any SoC based on ESP32, ESP32-S, ESP32-C and ESP8266 series. (Shelly, Sonoff, Electrodragon, Tuya...)",
+      "url": "https://github.com/RavenSystem/esp-homekit-devices",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-26T18:48:08Z",
+      "summaryJa": [
+        "Advanced firmware to add native Apple HomeKit and custom configurations, compati",
+        "(Shelly, Sonoff, Electrodragon, Tuya.",
+        "."
+      ],
+      "category": "oss",
+      "keywords": [
+        "RavenSystem/esp",
+        "homekit",
+        "devices",
+        "Advanced",
+        "firmware"
+      ],
+      "heat": {
+        "temperature": 40,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 289,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "Apple HomeKitに任意のESP製チップを直結できる強力なファームウェアです。週末の電子工作で、自宅の照明やスイッチを自分の手でスマートホームに組み込んでみませんか。"
+  },
+  "unavailableSources": []
+}

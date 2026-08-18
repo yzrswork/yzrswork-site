@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 76,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-08-17",
+  "dateDisplay": "Monday, August 17, 2026",
+  "pressTimeJst": "2026-08-17 12:00",
+  "generatedAt": "2026-08-17T02:47:17.768Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "指先と基盤のチューニング",
+    "note": "キーマップの極小化からメモリ確保やローカルLLMまで、手元の道具と基盤を自ら調律する技術を集めました。"
+  },
+  "editorial": {
+    "comment": "Cornixのキーマップ設定（zenn-trend-fc4f7054）のように、運指を突き詰めて作業環境そのものを再構築する試みには、自作キーボードならではの深い醍醐味があります。自分の手足となる道具のチューニングは、午後の創作意欲を静かに刺激してくれます。 —— YZRS Times 編集長",
+    "passedOver": "AI画像の著作権訴訟や北朝鮮IT労働者関連の潜入調査など、時事・社会性の強い話題は昼刊の方針に合わせ見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 31,
+    "tempMin": 22,
+    "precipChancePct": 22
+  },
+  "market": {
+    "fearGreed": {
+      "value": 31,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63203,
+        "priceJpy": 10051969,
+        "change24hPct": 0.1,
+        "sparkline7d": [
+          65089.27,
+          63932.99,
+          64048.61,
+          63673.33,
+          63097.13,
+          63041.54,
+          62856.41
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1893.92,
+        "priceJpy": 301213,
+        "change24hPct": 0.5,
+        "sparkline7d": [
+          1921.12,
+          1871.47,
+          1903.99,
+          1888.83,
+          1883.76,
+          1881.54,
+          1876.84
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.157851,
+        "priceJpy": 25.1,
+        "change24hPct": -0.6,
+        "sparkline7d": [
+          0.163098,
+          0.160861,
+          0.161375,
+          0.160202,
+          0.15962,
+          0.157865,
+          0.156398
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 204.58,
+        "priceJpy": 32536,
+        "change24hPct": 0.4,
+        "sparkline7d": [
+          215.64,
+          214.43,
+          213.81,
+          213.76,
+          202.79,
+          203.62,
+          203.86
+        ]
+      }
+    ]
+  },
+  "top": [
+    "zenn-trend-fc4f7054",
+    "hatebu-it-131ad713",
+    "lobsters-e17ea681"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-86bde586",
+        "hatebu-it-6f147f50",
+        "hatebu-it-2a253b3a"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-82737ed8",
+        "qiita-popular-26f0ad2c",
+        "zenn-trend-80316288"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-4894b420",
+        "lobsters-57280765"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "zenn-trend-fc4f7054",
+      "title": "ぼくのかんがえたさいきょうのCornixせってい ~最小限の運指で全ての操作を完結させ、モニターを1枚減らせた究極のキーマップ~",
+      "url": "https://zenn.dev/gacchi/articles/my-cornix-setting",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-16T09:30:09.000Z",
+      "summaryJa": [
+        "Keychronとギズモード・ジャパンが共同開発したKeychron Orca echoのクラウドファンディングが6億円に迫るなど、分割キーボードが最近盛り上が",
+        "私は、昨今の盛り上がりの火付け役となったと思われるCornixを使っているのですが、いろいろと試行錯誤しながら設定を変えてきました。",
+        "変更するたびに毎回「今回は完璧だな！"
+      ],
+      "category": "programming",
+      "keywords": [
+        "~最小限の運指で全ての操作を完結させ",
+        "モニターを1枚減らせた究極のキーマップ~"
+      ],
+      "heat": {
+        "temperature": 50,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-131ad713",
+      "title": "ローカル LLM 雑感 (2026-08)",
+      "url": "https://voluntas.ghost.io/local-llm-2026-08/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-16T12:36:32.000Z",
+      "summaryJa": [
+        "NVIDIA DGX Spark 互換機 (以下 Spark) を 2 台購入し、クラスター起動して ローカルで DeepSeek V4 Flash 0731 ",
+        "前提悪いのでそもそもコスパを検討するなら API 利用をすべきなので、コスト面でのメリットはとても薄い。",
+        "速度まずローカル LLM の一番気になっていた「速度」だが."
+      ],
+      "category": "programming",
+      "keywords": [
+        "ローカル",
+        "LLM",
+        "雑感"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 222,
+          "ageHours": 14,
+          "crossSources": 1,
+          "velocity": 15.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-e17ea681",
+      "title": "Pony's Arena Allocator",
+      "url": "https://www.ponylang.io/blog/2026/08/ponys-arena-allocator/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-16T23:48:45.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Pony",
+        "Arena",
+        "Allocator"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-86bde586",
+      "title": "A 3rd World Embedded Engineer Responds to \"RISC-V They Should Have Known Better\"",
+      "url": "https://rvembedded.com/blog_post/12/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-16T17:01:07.000Z",
+      "summaryJa": [
+        "A 3rd World Embedded Engineer Responds to \"RISC-V ",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "3rd",
+        "World",
+        "Embedded",
+        "Engineer",
+        "Responds"
+      ],
+      "heat": {
+        "temperature": 89,
+        "signals": {
+          "hnPoints": 390,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 2,
+          "velocity": 39.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-6f147f50",
+      "title": "CloudFront標準ログでは取れないHTTPヘッダ - リアルタイムログ×Rust/Lambdaで取得・加工 - Techtouch Developers Blog",
+      "url": "https://tech.techtouch.jp/entry/cloudfront-realtime-log-with-rust",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-17T00:28:55.000Z",
+      "summaryJa": [
+        "テックタッチの SRE チームの tabito です。",
+        "Rust, AWS, Terraform, Lambda が大好きです。",
+        "最近は、業務外で Terraform の AWS Provider にコントリビュートしています （コントリビュートを始めてから約1年で、マージされたPR数は約"
+      ],
+      "category": "programming",
+      "keywords": [
+        "加工",
+        "Techtouch",
+        "Developers"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 24,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 10.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-2a253b3a",
+      "title": "AI エージェントの「認可疲れ」に効く処方箋 : 理論から実装まで",
+      "url": "https://zenn.dev/aws_japan/articles/2b62886aa8735e",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-16T20:30:35.000Z",
+      "summaryJa": [
+        "皆さんは仕事でどれぐらいのアプリケーションを使用するでしょうか。",
+        "GitHub、Slack、Notion、Outlook/Gmail・・・などの SaaS はもちろん、社内の業務システムもあるでしょう。",
+        "AI エージェントに仕事を任せるとき、これらのサービスと連携させたくなるのは自然です。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "AI",
+        "エージェントの",
+        "認可疲れ",
+        "理論から実装まで"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 56,
+          "ageHours": 6,
+          "crossSources": 2,
+          "velocity": 8.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-82737ed8",
+      "title": "Hello, Solid 2.0 ! —— use() も startTransition もない Async React !?",
+      "url": "https://zenn.dev/r1013t/articles/37669abac10840",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-16T09:47:15.000Z",
+      "summaryJa": [
+        "はじめに Solid 2.",
+        "0 が RC になりました。",
+        "公式ブログを読みつつ触ってみましたので共有します。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Hello",
+        "Solid",
+        "startTransition",
+        "Async",
+        "React"
+      ],
+      "heat": {
+        "temperature": 50,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-26f0ad2c",
+      "title": "Regional NAT Gatewayを検討して見送った話 — 何と比べて「良い」のかを確認する",
+      "url": "https://qiita.com/Omizu-25/items/555c6319df5a97d3c90f?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-16T14:02:58.000Z",
+      "summaryJa": [
+        "はじめに こんにちは！",
+        "KDDIアイレット株式会社の水野 永遠です。",
+        "この記事は「2026 Japan AWS Jr."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Regional",
+        "NAT",
+        "Gatewayを検討して見送った話",
+        "何と比べて",
+        "良い"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 13,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-80316288",
+      "title": "botterのためのKaggle金融予測コンペの設計史",
+      "url": "https://zenn.dev/gamella/articles/f5e6bddab37c8d",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-16T04:43:06.000Z",
+      "summaryJa": [
+        "AlpacaTechの北山です。",
+        "今回は大作、かつ、かなりマニアックな話題なので、興味のある人だけお付き合いください。",
+        "発端は以下のXのやり取りでした。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 22,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-4894b420",
+      "title": "A faster way to calculate the day-of-the-week",
+      "url": "https://www.benjoffe.com/fast-day-of-week",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-16T20:52:12.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "faster",
+        "calculate",
+        "day",
+        "week"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-57280765",
+      "title": "Human Interface Guidelines from various platforms",
+      "url": "https://unsung.aresluna.org/i-think-theres-a-lot-of-value-in-these/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-16T19:56:03.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Human",
+        "Interface",
+        "Guidelines",
+        "various",
+        "platforms"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-c22bfac4",
+      "title": "nRF24/RF24 — OSI Layer 2 driver for nRF24L01 on Arduino & Raspberry Pi/Linux Devices",
+      "url": "https://github.com/nRF24/RF24",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-13T02:20:41Z",
+      "summaryJa": [
+        "OSI Layer 2 driver for nRF24L01 on Arduino & Raspberry Pi/Linux Devices",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "nRF24/RF24",
+        "OSI",
+        "Layer",
+        "driver",
+        "nRF24L01"
+      ],
+      "heat": {
+        "temperature": 40,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 96,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "安価で手に入りやすい無線モジュールnRF24L01をArduinoやRaspberry Piで自在に制御できる定番ドライバです。手元のマイコン同士で独自の小型メッシュ通信を組みたい電子工作愛好家にうってつけです。"
+  },
+  "unavailableSources": []
+}

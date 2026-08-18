@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 65,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-08-12",
+  "dateDisplay": "Wednesday, August 12, 2026",
+  "pressTimeJst": "2026-08-12 05:00",
+  "generatedAt": "2026-08-11T20:18:19.999Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "モデルが捕らえる現象の輪郭",
+    "note": "データの圧縮と予測の等価性から実世界の気象やインフラ整備まで、モデル化が生み出す境界を見出す紙面。"
+  },
+  "editorial": {
+    "comment": "データ圧縮と予測の等価性を説く論考（hn-front-c7f2c12b）に目を奪われます。複雑な現象から無駄を削ぎ落とし、その本質をモデルとして捉え直す営みは、プログラミングや創作の核心そのものです。今朝も手元のツールを研ぎ澄ませていきましょう。 —— YZRS Times 編集長",
+    "passedOver": "1日500コミットをうたう自動化ツールの話題（hatebu-it-00e4fb2d）は注目を集めましたが、過剰な量産よりも思考を深める時間を優先し見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "強い雨",
+    "icon": "rain",
+    "tempMax": 25,
+    "tempMin": 23,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 29,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63607,
+        "priceJpy": 10132059,
+        "change24hPct": -0.6,
+        "sparkline7d": [
+          64100.24,
+          64574.31,
+          64214.57,
+          64924.95,
+          64913.94,
+          64612.78,
+          63312.69
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1879.68,
+        "priceJpy": 299417,
+        "change24hPct": 0.5,
+        "sparkline7d": [
+          1872.05,
+          1906.36,
+          1895.44,
+          1913.68,
+          1919,
+          1889.98,
+          1863.97
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.161938,
+        "priceJpy": 25.8,
+        "change24hPct": -0.6,
+        "sparkline7d": [
+          0.170013,
+          0.164815,
+          0.159906,
+          0.163276,
+          0.16266,
+          0.162107,
+          0.160805
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 212.79,
+        "priceJpy": 33895,
+        "change24hPct": -0.5,
+        "sparkline7d": [
+          213.87,
+          214.3,
+          212.87,
+          216.7,
+          216.62,
+          214.19,
+          211.33
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-f1352db8",
+    "hn-front-c7f2c12b",
+    "nhk-top-9fa98967"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-f44c521c",
+        "nhk-top-8f879f83",
+        "yahoo-topics-65d2f855"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-6f304518",
+        "hn-front-6d204be2"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-f1352db8",
+      "title": "Mojo 1.0",
+      "url": "https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-11T16:56:46.000Z",
+      "summaryJa": [
+        "Mojo 1.0",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Mojo"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 136,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 2,
+          "velocity": 40.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-c7f2c12b",
+      "title": "Compression Is Prediction",
+      "url": "https://ngrok.com/blog/compression-is-prediction",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-11T19:49:44.000Z",
+      "summaryJa": [
+        "Compression Is Prediction",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Compression",
+        "Prediction"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 12,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 24
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-9fa98967",
+      "title": "台風15号 関東で強風被害 台風から離れても大雨に警戒",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260811de43217",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-11T20:09:26.000Z",
+      "summaryJa": [
+        "11日夜、茨城県に上陸した台風15号の影響で、関東では強風による被害が相次ぎました。",
+        "関東ではこの時間も激しい雨が降っていて、気象庁は、台風から離れた東北などでも土砂災害や低い土地の浸水、川の氾濫などに…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "台風15号",
+        "関東で強風被害",
+        "台風から離れても大雨に警戒"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-f44c521c",
+      "title": "奥田碩氏が死去 93歳 トヨタ自動車社長や経団連会長など歴任",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260812de43330",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-11T20:15:59.000Z",
+      "summaryJa": [
+        "トヨタ自動車の社長や経団連の初代会長などを務めた奥田碩氏が今月8日に亡くなりました。",
+        "93歳でした。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "奥田碩氏が死去",
+        "93歳",
+        "トヨタ自動車社長や経団連会長など歴任"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-8f879f83",
+      "title": "半蔵門線 ホームにアスベスト含む糸くず 約14時間運転見合わせ",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260811de43221",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-11T14:17:18.000Z",
+      "summaryJa": [
+        "東京メトロ半蔵門線は駅のホームにアスベストが含まれる糸くずが落ちていたとして、始発からおよそ14時間にわたって運転を見合わせました。",
+        "東京メトロは専門家に健康への影響について調査を依頼し、すべての路線の…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "半蔵門線",
+        "ホームにアスベスト含む糸くず",
+        "約14時間運転見合わせ"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-65d2f855",
+      "title": "YouTube 収益化ハードル引き上げ",
+      "url": "https://news.yahoo.co.jp/pickup/6591352?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-08-11T11:59:38.000Z",
+      "summaryJa": [
+        "YouTube 収益化ハードル引き上げ",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "YouTube",
+        "収益化ハードル引き上げ"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-6f304518",
+      "title": "AIに書かせた文はバレる時代へ。EU AI法にClaudeも対応、編集しても残る見えないテキスト透かしを導入 | テクノエッジ TechnoEdge",
+      "url": "https://www.techno-edge.net/article/2026/08/11/5382.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-11T08:52:44.000Z",
+      "summaryJa": [
+        "Anthropicが、AIモデル Claudeが生成する文章に電子透かしを導入する計画を明らかにしました。",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "AIに書かせた文はバレる時代へ",
+        "EU",
+        "AI法にClaudeも対応",
+        "テクノエッジ",
+        "TechnoEdge"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 158,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 13.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-6d204be2",
+      "title": "OpenSSH 10.5/10.5p1",
+      "url": "https://www.openssh.org/releasenotes.html#10.5",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-11T17:49:37.000Z",
+      "summaryJa": [
+        "OpenSSH 10.5/10.5p1",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "OpenSSH",
+        "10.5/10.5p1"
+      ],
+      "heat": {
+        "temperature": 78,
+        "signals": {
+          "hnPoints": 63,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 25.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "埼玉 天気",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-08-11T19:50:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "埼玉",
+        "天気"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-32f4429d",
+      "title": "tsl0922/EPD-nRF5 — E-paper display firmware for Nordic nRF51/nRF52, with support for image transfer, OTA update.",
+      "url": "https://github.com/tsl0922/EPD-nRF5",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-11T03:28:13Z",
+      "summaryJa": [
+        "E-paper display firmware for Nordic nRF51/nRF52, with support for image transfer",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "tsl0922/EPD",
+        "nRF5",
+        "paper",
+        "display",
+        "firmware"
+      ],
+      "heat": {
+        "temperature": 50,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "NordicのnRF51/nRF52向け電子ペーパー表示ファームウェアであり、低消費電力な表示端末の自作に直結します。画像転送や無線更新を備えており、手元で独自の情報を表示させる工作の基盤として魅力的です。"
+  },
+  "unavailableSources": []
+}

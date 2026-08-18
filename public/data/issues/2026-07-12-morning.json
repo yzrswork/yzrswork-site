@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 4,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-12",
+  "dateDisplay": "Sunday, July 12, 2026",
+  "pressTimeJst": "2026-07-12 05:00",
+  "generatedAt": "2026-07-11T20:38:01.422Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "道具を飼い慣らす",
+    "note": "AIに振り回されず、あるいはかつてのIoTデバイスを愛おしむように、技術の手綱を握り直す朝。"
+  },
+  "editorial": {
+    "comment": "前号の『Claude Code』への視点から一歩進み、今号は『Loop Engineeringで失敗しないためのハーネス設計』をトップに据えました。AIという自律的な道具をただ信じるのではなく、検証の『ハーネス』を自分で設計して手懐ける。この泥臭くも誠実なものづくりの姿勢こそ、今の私たちに最も必要なものだと強く感じます。 —— YZRS Times 編集長",
+    "passedOver": "AppleとOpenAIの訴訟（hn-front-f1741400）は巨大企業間の覇権争いに終始しており、個人のクリエイティビティを刺激する要素が薄いため本日の掲載は見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 29,
+    "tempMin": 23,
+    "precipChancePct": 62
+  },
+  "market": {
+    "fearGreed": {
+      "value": 26,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64308,
+        "priceJpy": 10396309,
+        "change24hPct": 0.76,
+        "sparkline7d": [
+          63265.08,
+          63091.26,
+          63854.43,
+          62583.97,
+          62836.65,
+          64246.64,
+          64128.17
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1824.7,
+        "priceJpy": 294989,
+        "change24hPct": 1.82,
+        "sparkline7d": [
+          1798.74,
+          1786.97,
+          1792.76,
+          1752.11,
+          1752.86,
+          1792.98,
+          1821.67
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.1919,
+        "priceJpy": 31.02,
+        "change24hPct": 1.3,
+        "sparkline7d": [
+          0.213336,
+          0.202128,
+          0.19872,
+          0.185822,
+          0.181062,
+          0.190418,
+          0.191058
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 247.47,
+        "priceJpy": 40007,
+        "change24hPct": 0.94,
+        "sparkline7d": [
+          232.61,
+          245.17,
+          241.44,
+          237.25,
+          238.32,
+          249.17,
+          247.61
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-8407a498",
+    "hatebu-it-3d0a56b6",
+    "nhk-top-a6faffaa"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-b2f2c1ee",
+        "nhk-world-470a6689"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hn-front-8b89716b",
+        "hatebu-it-87c4ef91"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-8407a498",
+      "title": "Loop Engineeringで失敗しないためのハーネス設計",
+      "url": "https://zenn.dev/kamo78/articles/kaji-guarded-loop-engineering",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-10T15:09:34.000Z",
+      "summaryJa": [
+        "「動きました！",
+        "」（動いてない） 「全テストパスしました！",
+        "」（通るように書いたテストが、通っただけ） 「完了しました ✅」（何も完了していない） AI coding agent を業務で使っている人なら、どれか一つは見"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Loop"
+      ],
+      "heat": {
+        "temperature": 74,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 145,
+          "ageHours": 29,
+          "crossSources": 2,
+          "velocity": 4.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-3d0a56b6",
+      "title": "「AI臭くない文章」を書かせることができる執筆エディタを作った｜なつ (生活者/デザイナー/リサーチャー)",
+      "url": "https://note.com/art_reflection/n/n7ffd5ce3320c",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-11T10:37:44.000Z",
+      "summaryJa": [
+        "ここ最近、いかに「AIでAI臭くない文章を書かせられるか？",
+        "」を試行錯誤しています。",
+        "書かれた文章は自分としてもそれなりに思考を凝らせたものとなっていますが、実のところそろそろアイディアが枯渇し、頭打ちになってきまし。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "(生活者/デザイナー/リサーチャー)"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 114,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 11.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-a6faffaa",
+      "title": "新型コロナ後遺症 体内のヘルペスウイルス活性化が原因か",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015173931000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-11T19:51:54.000Z",
+      "summaryJa": [
+        "新型コロナの後遺症とされるけん怠感などの症状は、体内に潜伏していた別のウイルスが新型コロナの感染によって活性化することで起きるとする研究成果を、東京慈恵会医科大",
+        "新しい治…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "新型コロナ後遺症",
+        "体内のヘルペスウイルス活性化が原因か"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-b2f2c1ee",
+      "title": "米大統領専用機めぐる報道で記者に召喚状 新聞社は非難",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015174731000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-11T20:00:09.000Z",
+      "summaryJa": [
+        "アメリカの有力紙ニューヨーク・タイムズは、トランプ大統領が使用する新たな大統領専用機に、ミサイル攻撃に対応する機能が備わっていないなどと報じた自社の記者に対し、",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "米大統領専用機めぐる報道で記者に召喚状",
+        "新聞社は非難"
+      ],
+      "heat": {
+        "temperature": 60,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-470a6689",
+      "title": "アマゾン先住民族利用の植物 気候変動で3割減のおそれ",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015174401000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-07-11T19:49:47.000Z",
+      "summaryJa": [
+        "世界最大の熱帯雨林、南米のアマゾンでは気候変動による気温の上昇などの影響で先住民族が薬や食料として利用してきた植物のおよそ3割が失われる可能性があるとの分析結果",
+        "出典: NHKニュース 国際",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "アマゾン先住民族利用の植物",
+        "気候変動で3割減のおそれ"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-8b89716b",
+      "title": "Show HN: Ant – A JavaScript Runtime and Ecosystem",
+      "url": "https://antjs.org",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-11T20:07:18.000Z",
+      "summaryJa": [
+        "Hello HN!",
+        "<p>I&#x27;m the author of Ant, a JavaScript ecosystem built around a runtime wit",
+        "Ant also includes a package manager, the ants."
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "Ant",
+        "JavaScript",
+        "Runtime"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 23,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 44.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-87c4ef91",
+      "title": "誤爆で「ワインが20本も届いちゃう」　押せば注文できる“Amazon Dash Button ”とは何だったのか",
+      "url": "https://www.itmedia.co.jp/mobile/articles/2607/11/news002.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-11T02:57:35.000Z",
+      "summaryJa": [
+        "4月、ある小型端末がSNSを中心に再び注目を集めた。",
+        "ワンプッシュで日用品を注文できた「Amazon Dash Button（アマゾン・ダッシュ・ボタン）」だ。",
+        "既に端末の販売およびサービスは終了しているが、買い忘れを防ぐ画期的な仕組みは多くの家庭で重宝された実績があり、現在もさまざまな視点で当時の存在意義が語られた。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "誤爆で「ワインが20本も届いちゃう」",
+        "押せば注文できる",
+        "Amazon",
+        "Dash",
+        "Button"
+      ],
+      "heat": {
+        "temperature": 78,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 100,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 5.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "飛行機事故",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-11T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "飛行機事故"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-6fd4eb7b",
+      "title": "ailyProject/aily-blockly — AI IDE for hardware development, support Arduino, MicroPython, ESP32, STM32, RP2040, Nrf5x...",
+      "url": "https://github.com/ailyProject/aily-blockly",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-11T16:24:22Z",
+      "summaryJa": [
+        "AI IDE for hardware development, support Arduino, MicroPython, ESP32, STM32, RP2",
+        ".",
+        "."
+      ],
+      "category": "oss",
+      "keywords": [
+        "ailyProject/aily",
+        "blockly",
+        "AI",
+        "IDE",
+        "for"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "AIを用いたハードウェア開発用IDEで、ArduinoやESP32など多様なマイコンに対応しています。電子工作を愛するあなたが、AIと物理世界を繋ぐプロトタイピングを加速させるための最高のおもちゃになるでしょう。"
+  },
+  "unavailableSources": []
+}

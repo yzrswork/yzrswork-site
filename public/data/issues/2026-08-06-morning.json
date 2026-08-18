@@ -1,0 +1,503 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 53,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-08-06",
+  "dateDisplay": "Thursday, August 6, 2026",
+  "pressTimeJst": "2026-08-06 05:00",
+  "generatedAt": "2026-08-05T20:18:26.380Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "工芸の領域と自動化の境界",
+    "note": "効率化の波の中で手がけていくものづくりの手触りを問い直す紙面。"
+  },
+  "editorial": {
+    "comment": "AI駆動開発を「工芸から農業へ」と例えた考察（hatebu-it-b3dd0a05）にはハッとさせられました。効率を求めて畑を耕すのも良いですが、自分の手で1行ずつ木を削り出すようなプログラミングの面白さも忘れたくありません。 —— YZRS Times 編集長",
+    "passedOver": "Google DeepMindの体制変更や大谷翔平選手の25号本塁打など大型ニュースは見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 32,
+    "tempMin": 23,
+    "precipChancePct": 81
+  },
+  "market": {
+    "fearGreed": {
+      "value": 27,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64866,
+        "priceJpy": 10234069,
+        "change24hPct": 0.9,
+        "sparkline7d": [
+          63447.32,
+          64776.94,
+          62950.28,
+          63435.23,
+          62627.23,
+          64112.6,
+          64736.96
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1919.35,
+        "priceJpy": 302822,
+        "change24hPct": 2.4,
+        "sparkline7d": [
+          1883.41,
+          1918.76,
+          1868.13,
+          1874.4,
+          1842.9,
+          1872.65,
+          1916.34
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.167448,
+        "priceJpy": 26.42,
+        "change24hPct": -1.5,
+        "sparkline7d": [
+          0.169395,
+          0.171918,
+          0.171917,
+          0.175624,
+          0.17126,
+          0.169337,
+          0.167421
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 215.85,
+        "priceJpy": 34055,
+        "change24hPct": 0.8,
+        "sparkline7d": [
+          205.04,
+          217.03,
+          211.07,
+          212.04,
+          210.06,
+          214.05,
+          214.87
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-b3dd0a05",
+    "hn-front-a2d2be5a",
+    "hatebu-it-56367d99"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-cadfc144",
+        "nhk-top-1f44a798",
+        "yahoo-topics-f6e75644"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hn-front-accea404",
+        "hatebu-it-12dd29c0",
+        "hatebu-it-2048ae2a",
+        "hn-front-f853f679"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-b3dd0a05",
+      "title": "高度に進化したAI駆動開発は、農業と区別がつかなくなる｜深津 貴之 (fladdict)",
+      "url": "https://note.com/fladdict/n/nd10afb769a62",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-05T04:38:23.000Z",
+      "summaryJa": [
+        "オープン社内報です。",
+        "このままAI駆動開発が進むと、ソフトウェア開発は工芸から農業へ近づいていくんじゃないかなと思っています。",
+        "従来の開発は、人間が一行づつこころを込めてコードを書いてました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "高度に進化したAI駆動開発は",
+        "農業と区別がつかなくなる｜深津",
+        "貴之",
+        "fladdict"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 145,
+          "ageHours": 16,
+          "crossSources": 1,
+          "velocity": 9.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-a2d2be5a",
+      "title": "Born Against, or why hobby programming communities are against LLM usage",
+      "url": "https://blog.fogus.me/llm/born-against.html",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-05T18:37:49.000Z",
+      "summaryJa": [
+        "Born Against, or why hobby programming communities",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Born",
+        "hobby",
+        "communities",
+        "LLM",
+        "usage"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 70,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 2,
+          "velocity": 41.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-56367d99",
+      "title": "【速報】AIが指示なくサイバー攻撃",
+      "url": "https://www.47news.jp/14745830.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-05T14:08:52.000Z",
+      "summaryJa": [
+        "【ロンドン共同】英政府機関AIセキュリティー研究所は4日、米アンソロピックなどの人工知能（AI）が試験中に別人になりすましたり、偽のメッセージを送ったりして、サ",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "速報",
+        "AIが指示なくサイバー攻撃"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 66,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 10.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-cadfc144",
+      "title": "食料品消費税減税 政府が基本方針決定 来年4月から2年間1％に",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015197191000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-05T13:02:02.000Z",
+      "summaryJa": [
+        "食料品の消費税減税について、政府は、5日の臨時閣議で、来年4月から2年間、税率を1％に引き下げるなどとした基本方針を決定しました。",
+        "決定された基本方針では、中低所得の人などの税や社会保険料の負担軽減を図…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "食料品消費税減税",
+        "政府が基本方針決定",
+        "来年4月から2年間1％に"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-1f44a798",
+      "title": "広島 原爆投下から81年 核兵器の廃絶を国内外に訴え",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015197471000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-05T19:52:24.000Z",
+      "summaryJa": [
+        "広島に原爆が投下されて6日で81年です。",
+        "世界で核による脅しや核抑止力を強化しようとする動きがみられる中、被爆地・広島は、犠牲者を追悼するとともに、核兵器の廃絶を改めて国内外に訴えます。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "広島",
+        "原爆投下から81年",
+        "核兵器の廃絶を国内外に訴え"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-f6e75644",
+      "title": "スペースXロケット残骸 月衝突か",
+      "url": "https://news.yahoo.co.jp/pickup/6590670?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-08-05T14:16:27.000Z",
+      "summaryJa": [
+        "スペースXロケット残骸 月衝突か",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "スペースXロケット残骸",
+        "月衝突か"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-accea404",
+      "title": "Zed DeltaDB",
+      "url": "https://zed.dev/deltadb",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-05T18:52:54.000Z",
+      "summaryJa": [
+        "Zed DeltaDB",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Zed",
+        "DeltaDB"
+      ],
+      "heat": {
+        "temperature": 89,
+        "signals": {
+          "hnPoints": 112,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 78.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-12dd29c0",
+      "title": "今こそ聞きたいソフトウェア設計　ドメイン駆動設計再入門",
+      "url": "https://speakerdeck.com/masuda220/jin-kosowen-kitaisohutoueashe-ji-domeinqu-dong-she-ji-zai-ru-men",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-05T09:20:11.000Z",
+      "summaryJa": [
+        "①ソフトウェア開発の基本課題 ②AI技術をソフトウェア開発に活用するアプローチ ③これからのソフトウェア開発にどう取り組むか ④ドメイン駆動設計 再入門",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "今こそ聞きたいソフトウェア設計",
+        "ドメイン駆動設計再入門"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 96,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 8.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-2048ae2a",
+      "title": "ふとした出会いで生まれたSkillが、 社内利用1位になるまで",
+      "url": "https://speakerdeck.com/mikimhk/how-a-skill-born-from-a-chance-encounter-became-the-most-used-tool-in-the-company",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-05T11:10:17.000Z",
+      "summaryJa": [
+        "『Claude Code Skills利用Skill Top5 誕生と運用の苦労も大公開！",
+        "』登壇資料 https://findy-aiplus.",
+        "connpass."
+      ],
+      "category": "programming",
+      "keywords": [
+        "社内利用1位になるまで"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 84,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 9.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-f853f679",
+      "title": "Cloudflare OS: an open platform for agents, apps, and work",
+      "url": "https://blog.cloudflare.com/cloudflare-os/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-05T13:58:53.000Z",
+      "summaryJa": [
+        "Cloudflare OS: an open platform for agents, apps, ",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Cloudflare",
+        "OS",
+        "platform",
+        "agents",
+        "apps"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 376,
+          "hatebuCount": 11,
+          "ageHours": 6,
+          "crossSources": 2,
+          "velocity": 59.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "ドジャース",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-08-05T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "ドジャース"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-05b12dd8",
+      "title": "YunoHost/yunohost — YunoHost is an operating system aiming to simplify as much as possible the administration of a server. This repository corresponds to the core code, written mostly in Python and Bash.",
+      "url": "https://github.com/YunoHost/yunohost",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-05T20:13:26Z",
+      "summaryJa": [
+        "YunoHost is an operating system aiming to simplify as much as possible the admin",
+        "This repository corresponds to the core code, written mostly in Python and Bash.",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "YunoHost/yunohost",
+        "YunoHost",
+        "operating",
+        "system",
+        "aiming"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "サーバー構築の煩雑さを取り除き自前インフラを手軽に育てる精神が詰まっています。自分だけの作業環境を所有したい作り手に響くツールです。"
+  },
+  "unavailableSources": []
+}

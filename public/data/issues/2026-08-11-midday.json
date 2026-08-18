@@ -1,0 +1,510 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 64,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-08-11",
+  "dateDisplay": "Tuesday, August 11, 2026",
+  "pressTimeJst": "2026-08-11 12:00",
+  "generatedAt": "2026-08-11T02:48:14.991Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "極限まで引き締まるデータと数理",
+    "note": "無駄なバイトや無駄なメモリ空間、そして冗長な探索を削ぎ落とし、純粋な美しさと性能を両立させる手触り。"
+  },
+  "editorial": {
+    "comment": "Rustのニッチ最適化（zenn-trend-bef1d98f）における、1バイトすら無駄にしないコンパイラ内部の精緻な戦いには背筋が伸びます。こうした見えない『極限の引き締め』に美を見出す心こそが、午後の私たちのコードをより研ぎ澄まされたものにしてくれます。 —— YZRS Times 編集長",
+    "passedOver": "はてなブックマークの障害報告や、AIライバルへの各社CEOの舌戦などは、時事的な話題であり読者の『今日の創作』の邪魔になると判断し見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "雨",
+    "icon": "rain",
+    "tempMax": 27,
+    "tempMin": 22,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 29,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63993,
+        "priceJpy": 10194109,
+        "change24hPct": -1.5,
+        "sparkline7d": [
+          63762.27,
+          64265.07,
+          64604.96,
+          64927.64,
+          65039.39,
+          65097.51,
+          63981.68
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1876.85,
+        "priceJpy": 298982,
+        "change24hPct": -1.9,
+        "sparkline7d": [
+          1865.24,
+          1870.89,
+          1904.55,
+          1918.85,
+          1920.92,
+          1919.4,
+          1873.41
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.161932,
+        "priceJpy": 25.8,
+        "change24hPct": -0.6,
+        "sparkline7d": [
+          0.17097,
+          0.166996,
+          0.159939,
+          0.160743,
+          0.165698,
+          0.163885,
+          0.161743
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 215.21,
+        "priceJpy": 34282,
+        "change24hPct": -0.1,
+        "sparkline7d": [
+          212.51,
+          211.55,
+          212.03,
+          215.39,
+          217.01,
+          215.79,
+          214.16
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-a9074865",
+    "zenn-trend-bef1d98f",
+    "hn-front-6f6ee9ef"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-e31f8270",
+        "hatebu-it-f44e3816"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-484333e5",
+        "qiita-popular-64b5995a",
+        "qiita-popular-3ef4fffd"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-c17f3485",
+        "lobsters-d45d4746",
+        "lobsters-fadb8ae3"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-a9074865",
+      "title": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-10T10:10:02.000Z",
+      "summaryJa": [
+        "Muse Glimmer: 30B-parameter model optimized for al",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Muse",
+        "Glimmer",
+        "30B",
+        "parameter",
+        "model"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 1049,
+          "hatebuCount": 0,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 63.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-bef1d98f",
+      "title": "型の表現力はタダ: Rustのニッチ最適化を追う【第3部: コンパイラ内部を読む】",
+      "url": "https://zenn.dev/fast/articles/44f261437d706c",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-10T04:00:05.000Z",
+      "summaryJa": [
+        "!",
+        "この記事はシリーズの第3部です。",
+        "第1部: メモリレイアウトの観察 第2部: MIR・LLVM IR・ASMを追う 第3部: コンパイラ内部を読む（本記事） 第4部: ニッチ最適化の実践パターン"
+      ],
+      "category": "programming",
+      "keywords": [
+        "型の表現力はタダ",
+        "Rustのニッチ最適化を追う",
+        "第3部",
+        "コンパイラ内部を読む"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 23,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-6f6ee9ef",
+      "title": "Show HN: Scroll through all 43252003274489856000 Rubik's Cube states",
+      "url": "https://everycube.alen.is/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-10T23:16:25.000Z",
+      "summaryJa": [
+        "Show HN: Scroll through all 43252003274489856000 R",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Scroll",
+        "through",
+        "Rubik",
+        "Cube",
+        "states"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 81,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 22.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-e31f8270",
+      "title": "Chicken Scheme 6.0",
+      "url": "https://code.call-cc.org/releases/6.0.0/NEWS",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-11T00:24:15.000Z",
+      "summaryJa": [
+        "Chicken Scheme 6.0",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Chicken",
+        "Scheme"
+      ],
+      "heat": {
+        "temperature": 89,
+        "signals": {
+          "hnPoints": 59,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 2,
+          "velocity": 24.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-f44e3816",
+      "title": "「エンジニアのための自己管理入門」に救われた話 - expajp's Permanent Way",
+      "url": "https://expajp-tech.hatenablog.com/entry/2026/08/09/191222",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-10T00:07:10.000Z",
+      "summaryJa": [
+        "「エンジニアのための自己管理入門」を読み終えました。",
+        "本書は自己管理を通して日々の生活に「余白」を作り出し、成果を上げてスキルを磨き、キャリアを前進させる方法を述べた本です。",
+        "www."
+      ],
+      "category": "programming",
+      "keywords": [
+        "エンジニアのための自己管理入門",
+        "expajp",
+        "Permanent"
+      ],
+      "heat": {
+        "temperature": 77,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 183,
+          "ageHours": 27,
+          "crossSources": 1,
+          "velocity": 6.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-484333e5",
+      "title": "Agent Plugins 1.0.0 は何を標準化し、何を標準化しなかったのか",
+      "url": "https://zenn.dev/aws_japan/articles/agent-plugins-1-0-deep-dive",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-10T09:06:44.000Z",
+      "summaryJa": [
+        "はじめに こんにちは、 AWS Japan でソリューションアーキテクトをしているいなりくです。",
+        "2026 年 8 月 6 日、AI エージェントの拡張機能をパッケージングするオープン標準 Agent Plugins Specification 1.",
+        "0."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Agent",
+        "Plugins",
+        "何を標準化しなかったのか"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-64b5995a",
+      "title": "【Unity】コルーチンのように扱える非同期タスクで専用ライブラリのパフォーマンスに迫る【Omochaya Story 1.3 ～ Tween機能】",
+      "url": "https://qiita.com/Omochaya/items/851106dfe25b5c34afae?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-10T11:57:32.000Z",
+      "summaryJa": [
+        "TL;DR Omochaya Story は Unity の標準コルーチン（IEnumerator）を完全置き換えするゼロアロケーション非同期タスクエンジンです",
+        "Ver 1.",
+        "3."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Unity",
+        "Omochaya",
+        "Story",
+        "Tween機能"
+      ],
+      "heat": {
+        "temperature": 50,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 15,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-3ef4fffd",
+      "title": "Maestro CLIとMaestro MCPでネイティブアプリのE2Eテストを試してみた",
+      "url": "https://qiita.com/ma-ryu/items/9614d08d25a9b9adc2d6?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-10T08:21:30.000Z",
+      "summaryJa": [
+        "最近、Maestro CLIとMaestro MCPというものを見かけて気になっていました。",
+        "ネイティブアプリのE2Eテストを自然言語で書ける、という話を聞いて、実際に手元のサンプルアプリで触ってみることにしました。",
+        "普段からネイティブアプリの動作確認は手動でポチポチやるこ."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Maestro",
+        "CLIとMaestro"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-c17f3485",
+      "title": "The mathematical beauty of hyperbezier curves",
+      "url": "https://linebender.org/blog/hyperbezier/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-10T18:31:12.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "mathematical",
+        "beauty",
+        "hyperbezier",
+        "curves"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-d45d4746",
+      "title": "A C++ toolchain from 357 bytes in Bazel",
+      "url": "https://fzakaria.com/2026/08/01/a-c++-toolchain-from-357-bytes-in-bazel",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-10T19:18:34.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "C++",
+        "toolchain",
+        "bytes",
+        "Bazel"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-fadb8ae3",
+      "title": "We're not done with point clouds",
+      "url": "https://claytonwramsey.com/blog/mvt/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-10T18:21:20.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "re",
+        "point",
+        "clouds"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-d4bbb213",
+      "title": "sepandhaghighi/samila — A Generative Art Generator",
+      "url": "https://github.com/sepandhaghighi/samila",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-10T01:33:02Z",
+      "summaryJa": [
+        "A Generative Art Generator",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "Generative",
+        "Art",
+        "Generator"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 25,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "数式から驚くほど有機的で美しいカオスパターンを描き出す、Python製のジェネレーティブアート生成器です。数理の美をコードで弄ぶ、あなたの午後の創作に小さな刺激を連れてきてくれるでしょう。"
+  },
+  "unavailableSources": []
+}

@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 21,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-21",
+  "dateDisplay": "Tuesday, July 21, 2026",
+  "pressTimeJst": "2026-07-21 05:00",
+  "generatedAt": "2026-07-20T21:31:18.626Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "静かな技術",
+    "note": "既存の巨大なシステムを、個人の手と小さなデバイスで置き換える。そんな静かな反逆の記録たち。"
+  },
+  "editorial": {
+    "comment": "ボウリング場の制御システムをESP32で刷新したHidden Gemの記事は圧巻でした。既存の複雑な製品をあえて捨て、自分の手で仕組みを理解し制御する。その姿勢こそが、今日の紙面を貫く「静かな技術」の精神です。 —— YZRS Times 編集長",
+    "passedOver": "サッカーW杯や政治動向は、私たちが今日没頭すべき創造の熱量とは別の次元にあるため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ",
+    "icon": "sunny",
+    "tempMax": 34,
+    "tempMin": 25,
+    "precipChancePct": 94
+  },
+  "market": {
+    "fearGreed": {
+      "value": 29,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 65278,
+        "priceJpy": 10608720,
+        "change24hPct": 1.38,
+        "sparkline7d": [
+          61911.94,
+          64622.47,
+          64722.65,
+          62779.35,
+          63943.95,
+          64390.81,
+          65408.87
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1903.64,
+        "priceJpy": 309372,
+        "change24hPct": 2.28,
+        "sparkline7d": [
+          1756.02,
+          1874.58,
+          1921.86,
+          1821.65,
+          1845.82,
+          1869.54,
+          1896.61
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.188918,
+        "priceJpy": 30.7,
+        "change24hPct": -1.41,
+        "sparkline7d": [
+          0.180917,
+          0.183862,
+          0.187989,
+          0.182552,
+          0.184723,
+          0.190258,
+          0.189006
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 220.69,
+        "priceJpy": 35865,
+        "change24hPct": 2.06,
+        "sparkline7d": [
+          235.73,
+          236.34,
+          222.23,
+          221.9,
+          218.63,
+          216.72,
+          217.25
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-37ff218d",
+    "hatebu-it-6cc80501",
+    "hn-front-0eaeed5a"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-e39e7cb1",
+        "nhk-top-502d9e50",
+        "nhk-world-5a380b76",
+        "nhk-top-16109807"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-4d4547e8"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-37ff218d",
+      "title": "AIがBlenderを勝手に操作　3D制作のハードルが一気に下がった (1/4)",
+      "url": "https://ascii.jp/elem/000/004/420/4420739/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-20T01:21:48.000Z",
+      "summaryJa": [
+        "Anthropicの「Claude Fable 5」や、OpenAIの「GPT-5.",
+        "6 Sol」を使用したCodexから、3D制作ツール「Blender」を操作する手法が注目を集めています。",
+        "無料で使えることからBlenderは多くの人が利用していますが、初心者が使いこなすためのハードルはかなり高いという実情があります。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "AIがBlenderを勝手に操作",
+        "3D制作のハードルが一気に下がった",
+        "(1/4)"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 467,
+          "ageHours": 20,
+          "crossSources": 1,
+          "velocity": 23.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-6cc80501",
+      "title": "「アルゴリズム」が大っ嫌い？ ならRSSを使いなさいよ » p2ptk[.]org",
+      "url": "https://p2ptk.org/digital-rights/5632",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-19T19:43:13.000Z",
+      "summaryJa": [
+        "以下の文章は、電子フロンティア財団の「Hate “The Algorithm?",
+        "” RSS Is One of the Tools You’ve Been Looking For」という記事を翻訳したものである。",
+        "Electronic Frontier Foundation オンラインのソーシャルネットワーク――あるいはインターネット文化をめぐるあらゆる会話――を軽く覗く"
+      ],
+      "category": "programming",
+      "keywords": [
+        "「アルゴリズム」が大っ嫌い？",
+        "ならRSSを使いなさいよ",
+        "p2ptk[.]org"
+      ],
+      "heat": {
+        "temperature": 77,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 265,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 10.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-0eaeed5a",
+      "title": "Jelly UI: Soft-body physics for native HTML form controls",
+      "url": "https://jelly-ui.com/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-20T17:07:39.000Z",
+      "summaryJa": [
+        "Jelly UI: Soft-body physics for native HTML form c",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Jelly",
+        "UI",
+        "Soft",
+        "body",
+        "physics"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 204,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 46.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-e39e7cb1",
+      "title": "米大統領 イランへの攻撃強化の構え 双方による応酬収まらず",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015181461000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-20T21:24:03.000Z",
+      "summaryJa": [
+        "中東でアメリカ軍の兵士が死亡したことについて、アメリカのトランプ大統領は「イランがアメリカ軍の兵士を殺害するたびに、彼らはその何倍もの代償を支払うことになる」と",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "米大統領",
+        "イランへの攻撃強化の構え",
+        "双方による応酬収まらず"
+      ],
+      "heat": {
+        "temperature": 60,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-502d9e50",
+      "title": "中国海警局とフィリピン海軍が海上で接触か 非難の応酬",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015181431000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-20T20:40:59.000Z",
+      "summaryJa": [
+        "フィリピン軍は中国と領有権を争う南シナ海で20日、海軍の兵士1人が中国海警局の乗組員に木製の棒で殴られけがをしたと発表しました。",
+        "これに対して中国側は「事実をわい曲している」と反論しています。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "中国海警局とフィリピン海軍が海上で接触か",
+        "非難の応酬"
+      ],
+      "heat": {
+        "temperature": 60,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-5a380b76",
+      "title": "EU 中国アリババ傘下のアリエクスプレスに1000億円余の制裁金",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015181351000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-07-20T20:35:22.000Z",
+      "summaryJa": [
+        "EU＝ヨーロッパ連合は、中国のネット通販大手「アリババグループ」傘下でヨーロッパなどで事業を展開する企業に対し、違法な商品が流通することへの対策を怠ったとして日",
+        "出典: NHKニュース 国際",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "EU"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-16109807",
+      "title": "危険運転致死傷罪を適用する数値基準盛り込んだ改正法が施行",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015181341000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-20T21:19:19.000Z",
+      "summaryJa": [
+        "飲酒運転や高速度での走行に危険運転致死傷罪を適用する数値基準を盛り込んだ改正自動車運転処罰法が21日、施行されました。",
+        "飲酒運転は呼気1リットルにつき0.",
+        "5ミリグラム以上で適用されます。"
+      ],
+      "category": "news",
+      "keywords": [
+        "news"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-4d4547e8",
+      "title": "Google Search Console APIを使ってSEO改善を自動化する",
+      "url": "https://zenn.dev/asoventure/articles/2026-07-19-gsc-api-seo-automation",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-19T19:43:02.000Z",
+      "summaryJa": [
+        "はじめに Futuristic Imagination LLC 代表の佐藤です。",
+        "AI技術を実事業に注ぎ込み、圧倒的な開発・検証スピードと**徹底した自動化・省力化（仕組み化）**を武器に日々プロダクト開発に励んでいます。",
+        "自社ではAIオウンドメディアを11サイト運営しており、Next."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Google",
+        "Search",
+        "Console",
+        "APIを使ってSEO改善を自動化する"
+      ],
+      "heat": {
+        "temperature": 77,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 97,
+          "ageHours": 26,
+          "crossSources": 2,
+          "velocity": 3.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "リオネル メッシ",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-20T21:10:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "リオネル",
+        "メッシ"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-de6f8fe5",
+      "title": "Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",
+      "url": "https://news.ycombinator.com/item?id=48968606",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2026-07-19T14:41:16.000Z",
+      "summaryJa": [
+        "I might be the only SRE on Earth with his own bowling center.",
+        "It&#x27;s a more in-depth gig than you&#x27;d think.",
+        "<p>My family and I bought an abandoned 8-lane bowling center in the rural mid-we"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "replaced",
+        "$120k",
+        "bowling"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 2800,
+          "hatebuCount": 0,
+          "ageHours": 31,
+          "crossSources": 1,
+          "velocity": 90.8
+        }
+      },
+      "image": null
+    },
+    "reason": "12万ドルの商用システムを1,600ドルのESP32で代替するという、技術者としての執念が宿る物語です。巨大な壁を個人の知恵で乗り越える楽しさを、ぜひあなたのプロジェクトの参考にしてください。"
+  },
+  "unavailableSources": []
+}

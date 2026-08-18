@@ -1,0 +1,567 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 34,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-27",
+  "dateDisplay": "Monday, July 27, 2026",
+  "pressTimeJst": "2026-07-27 12:00",
+  "generatedAt": "2026-07-27T02:48:11.039Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "a2f907d8"
+  },
+  "theme": {
+    "title": "ブラックボックスに手を突っ込む",
+    "note": "AIにすべてを委ねず、OSや筐体、コードの隅々まで自分の理解と制御の下に置こうとする静かな抵抗と実験。"
+  },
+  "editorial": {
+    "comment": "「理解を手放さない（hatebu-it-86e61e2b）」は、AI時代の道具との距離感に悩むすべての作り手に読んでほしい名文です。他人の、あるいはAIの脳を借りて動かすだけの速さよりも、自分の頭で「なぜ動くか」を噛み砕く愉しさと強さを、私たちは忘れずにいたいものです。 —— YZRS Times 編集長",
+    "passedOver": "「もはや待っても安くならない？PC値上げ本格化（hatebu-it-6059def8）」など。今日は昼刊の技術フォーカスに徹するため、時事的な価格ニュースや物販情報は紙面から除外しました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ時々曇り",
+    "icon": "partly-cloudy",
+    "tempMax": 30,
+    "tempMin": 24,
+    "precipChancePct": 84
+  },
+  "market": {
+    "fearGreed": {
+      "value": 30,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 65206,
+        "priceJpy": 10663596,
+        "change24hPct": 1.1,
+        "sparkline7d": [
+          64575.12,
+          65705.84,
+          65885.39,
+          64867.54,
+          63912.98,
+          64273.94,
+          65061.85
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1945.54,
+        "priceJpy": 318165,
+        "change24hPct": 3.5,
+        "sparkline7d": [
+          1868.52,
+          1928.94,
+          1923.03,
+          1898.89,
+          1856.34,
+          1871.24,
+          1940.14
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.181726,
+        "priceJpy": 29.72,
+        "change24hPct": 1.8,
+        "sparkline7d": [
+          0.187373,
+          0.189704,
+          0.189664,
+          0.181753,
+          0.177307,
+          0.178166,
+          0.181812
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 215.11,
+        "priceJpy": 35178,
+        "change24hPct": 3.1,
+        "sparkline7d": [
+          211.93,
+          224.1,
+          220.94,
+          214.11,
+          208.35,
+          209.24,
+          217.01
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-86e61e2b",
+    "hn-front-b7d5fc28",
+    "lobsters-baaca6b0"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-1ed9222c",
+        "hatebu-it-34b06422",
+        "hatebu-it-bbfdd374",
+        "hatebu-it-be196a41"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "qiita-popular-61462f25",
+        "zenn-trend-3695d67b",
+        "qiita-popular-bb750eaf",
+        "zenn-trend-b48df69c"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-8ffdf3ac",
+        "lobsters-658978f3"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-86e61e2b",
+      "title": "理解を手放さない - Shin x Blog",
+      "url": "https://blog.shin1x1.com/entry/dont-let-go-of-understanding",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-26T11:28:59.000Z",
+      "summaryJa": [
+        "AI コーディングエージェントに実装を任せると、あっという間に成果物が出来上がってきます。",
+        "この速度を活かすなら、人間の理解を待たずにどんどん先へ進めるのが合理的にも見えます。",
+        "人間が理解していなくても AI が理解していれば良く、分からないことが出てきたらその時に AI に聞けば良い、という考え方です。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "理解を手放さない",
+        "Shin",
+        "Blog"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 392,
+          "ageHours": 15,
+          "crossSources": 1,
+          "velocity": 25.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-b7d5fc28",
+      "title": "Decker, a platform that builds on the legacy of Hypercard and classic macOS",
+      "url": "https://beyondloom.com/decker/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-26T18:23:06.000Z",
+      "summaryJa": [
+        "Decker, a platform that builds on the legacy of Hy",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Decker",
+        "platform",
+        "that",
+        "builds",
+        "on"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 233,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 27.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-baaca6b0",
+      "title": "Using ThinkPad T480 as a mobile phone",
+      "url": "https://grego.site/blog/thinkphone",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-26T23:17:55.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Using",
+        "ThinkPad",
+        "T480",
+        "as",
+        "mobile"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-1ed9222c",
+      "title": "PGSimCity - How PostgreSQL Works",
+      "url": "https://nikolays.github.io/PGSimCity/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-27T00:19:04.000Z",
+      "summaryJa": [
+        "PGSimCity - How PostgreSQL Works",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "PGSimCity",
+        "How",
+        "PostgreSQL",
+        "Works"
+      ],
+      "heat": {
+        "temperature": 91,
+        "signals": {
+          "hnPoints": 155,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 62.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-34b06422",
+      "title": "Appleのワイヤレスイヤホン「AirPods」をフリスビーに搭載してモーショントラッカーにする猛者が登場",
+      "url": "https://gigazine.net/news/20260727-airpod-powered-frisbee-tracker/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-26T22:28:37.000Z",
+      "summaryJa": [
+        "Apple純正のワイヤレスイヤホンであるAirPodsをフリスビー(フライングディスク)に空けた穴に挿し込み、フリスビーのモーショントラッカーとして利用する猛者",
+        "Airpods can track frisbee throws : r/airpods https://www.",
+        "reddit."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 28,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 6.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-bbfdd374",
+      "title": "MCP仕様が明日アップデート、7月28日版MCPからはステートレスな接続が正式仕様に。GitHub MCPサーバが早くも対応発表",
+      "url": "https://www.publickey1.jp/blog/26/mcp728mcpgithub_mcp.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-26T15:30:19.000Z",
+      "summaryJa": [
+        "MCP仕様が明日アップデート、7月28日版MCPからはステートレスな接続が正式仕様に。",
+        "GitHub MCPサーバが早くも対応発表 AIツールとサービスを接続するための事実上の業界標準となっている通信プロトコルMCP（Model Context P",
+        "MCPの仕様は継続的にアップデートされ続."
+      ],
+      "category": "programming",
+      "keywords": [
+        "MCP仕様が明日アップデート",
+        "GitHub",
+        "MCPサーバが早くも対応発表"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 89,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 7.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-be196a41",
+      "title": "Opus 5では今までのプロンプトが逆効果に。「検証して」を消して「簡潔に」と書くべし。公式プロンプトガイドを読み解く",
+      "url": "https://zenn.dev/little_hand_s/articles/72646a09f49d2a",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-26T04:07:12.000Z",
+      "summaryJa": [
+        "こんにちは、ログラスの松岡(@little_hand_s)です。",
+        "3行まとめ Opus 5は放っておくと応答が前より長くなる。",
+        "「簡潔さの指示」を基本セットとして書いておこう（effortでは短くならない） 公式ガイドは、プロンプト内の検証指示を 「削除してください」とまで明言。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Opus",
+        "5では今までのプロンプトが逆効果に",
+        "「検証して」を消して「簡潔に」と書くべし",
+        "公式プロンプトガイドを読み解く"
+      ],
+      "heat": {
+        "temperature": 78,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 155,
+          "ageHours": 23,
+          "crossSources": 2,
+          "velocity": 6.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-61462f25",
+      "title": "2026年上半期にどのくらい自作OSの開発が進んだのか？",
+      "url": "https://qiita.com/miku_JK_Jb/items/ea4be1446d29d5cc62bc?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-26T12:36:11.000Z",
+      "summaryJa": [
+        "はい、miku_JK_Jbです 今回は2026年の上半期の間にどのくらい自作OSの開発が進んだのかについて紹介していきます 色々あってYouTubeの動画やブロ",
+        ".",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 14,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-3695d67b",
+      "title": "Opus5が思考が浅いように感じる問題への対策",
+      "url": "https://zenn.dev/u1/articles/claude5-rules-collapse-and-fix",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-26T03:01:36.000Z",
+      "summaryJa": [
+        "Claude Code を Opus 5 に切り替えた直後から、応答の散文傾向が急に強まり、思考が浅くなる (構造化して考えられない) 変化が出ました。",
+        "長年育ててきた rules (CLAUDE.",
+        "md や常時ロードの指示ファイル群) は何も変えていないのに、です。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 24,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-bb750eaf",
+      "title": "【鉄テキに匹敵】凝った tcolorbox の作り方【前編】（LaTeX確認シリーズ#６）",
+      "url": "https://qiita.com/KKTeX/items/91efd16fd2e759dcc671?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-26T03:27:06.000Z",
+      "summaryJa": [
+        "【鉄テキに匹敵】凝った tcolorbox の作り方【前編】（LaTeX確認シリーズ#６） tcolorbox で箱を作っていると、どこかで必ずこの壁にぶつかり",
+        "「キーを組み合わせるだけでは、作りたい形にならない」 タイトルを旗みたいに尖らせたい。",
+        "四隅を 45 度に."
+      ],
+      "category": "programming",
+      "keywords": [
+        "【鉄テキに匹敵】凝った",
+        "tcolorbox"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 23,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-b48df69c",
+      "title": "放置していた旧環境で見つけたReact2Shell攻撃の実態",
+      "url": "https://zenn.dev/munenick/articles/b507a9848b6fdd",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-25T08:27:52.000Z",
+      "summaryJa": [
+        "はじめに 本記事は以下のミラーです。",
+        "https://www.",
+        "munenick."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 42,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 42,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-8ffdf3ac",
+      "title": "Forth Moving Lisp Moving Forth",
+      "url": "https://letoverlambda.com/textmode.cl/guest/chap8.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-26T17:39:27.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Forth",
+        "Moving",
+        "Lisp"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-658978f3",
+      "title": "Fast DEFLATE compression in Lean",
+      "url": "https://kim-em.github.io/blog/2026-7-24-why-lean-is-faster-than-rust/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-26T15:54:26.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Fast",
+        "DEFLATE",
+        "compression",
+        "in",
+        "Lean"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-b817d175",
+      "title": "Show HN: Web Design in 4 minutes",
+      "url": "http://jgthms.com/web-design-in-4-minutes/",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2016-07-26T16:17:42.000Z",
+      "summaryJa": [
+        "Show HN: Web Design in 4 minutes",
+        "出典: Show HN",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "Web",
+        "Design",
+        "in"
+      ],
+      "heat": {
+        "temperature": 35,
+        "signals": {
+          "hnPoints": 1624,
+          "hatebuCount": 0,
+          "ageHours": 87659,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "たった4分間で、美しいWebサイトのレイアウトと色彩の基礎をインタラクティブに教えてくれる見事な作品です。無駄を極限まで削ぎ落としたミニマルなデザインプロセスは、午後のあなたのUI作りにすぐインスピレーションを与えるでしょう。"
+  },
+  "unavailableSources": []
+}

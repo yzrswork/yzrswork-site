@@ -1,0 +1,388 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 16,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-18",
+  "dateDisplay": "Saturday, July 18, 2026",
+  "pressTimeJst": "2026-07-18 12:00",
+  "generatedAt": "2026-07-18T05:12:06.771Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "制約と実装の愉しみ",
+    "note": "メモリ管理や非同期処理の機微など、午後の設計を鋭くする話題を集めました。"
+  },
+  "editorial": {
+    "comment": "『メモリリークの正体は glibc malloc だった』は、原因特定から環境変数一発での解決に至る過程が非常に誠実です。こうした地道な切り分けこそが、大規模なシステムを支える土台であることを改めて実感しました。",
+    "passedOver": "Apple Musicの値上げなど、市場ニュースは今回は紙面の密度を優先し見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 29,
+    "tempMin": 24,
+    "precipChancePct": 76
+  },
+  "market": {
+    "fearGreed": {
+      "value": 25,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63900,
+        "priceJpy": 10383997,
+        "change24hPct": 0.85,
+        "sparkline7d": [
+          64118.7,
+          64133.11,
+          62968.23,
+          62782.17,
+          65385.07,
+          64223.11,
+          63933.54
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1842.75,
+        "priceJpy": 299456,
+        "change24hPct": -0.16,
+        "sparkline7d": [
+          1795.63,
+          1809.59,
+          1786.1,
+          1796.3,
+          1931.03,
+          1875.28,
+          1838.65
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.184538,
+        "priceJpy": 29.99,
+        "change24hPct": 0.04,
+        "sparkline7d": [
+          0.190488,
+          0.186237,
+          0.183897,
+          0.180349,
+          0.188271,
+          0.189532,
+          0.185316
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 218.41,
+        "priceJpy": 35493,
+        "change24hPct": -2.21,
+        "sparkline7d": [
+          245.1,
+          245.68,
+          237.05,
+          237.61,
+          234.42,
+          221.92,
+          219.59
+        ]
+      }
+    ]
+  },
+  "top": [
+    "zenn-trend-8d6ebe6a",
+    "hatebu-it-c7cdee20",
+    "hatebu-it-3317f451"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-d7a3c6fa",
+        "hn-front-0b4a0b29"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-9e3f0256"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "zenn-trend-14e255bf"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "zenn-trend-8d6ebe6a",
+      "title": "メモリリークの正体は glibc malloc だった ── Python 以外でも効く LD_PRELOAD 1 行のアロケータ差し替え",
+      "url": "https://zenn.dev/pksha/articles/python-memory-leak-jemalloc",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-17T05:27:27.000Z",
+      "summaryJa": [
+        "要約 FastAPI サーバで、メモリ使用率が単調増加し、OOM が発生する現象に遭遇した。",
+        "同じアプリケーションコードと負荷試験内容のまま jemalloc に差し替えると OOM が発生しなくなったため、主要因は glibc malloc（ptmal",
+        "Linux 上の Ruby on Rails や Node."
+      ],
+      "category": "programming",
+      "keywords": [
+        "メモリリークの正体は",
+        "glibc",
+        "malloc",
+        "だった",
+        "──"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 24,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-c7cdee20",
+      "title": "世界一わかりみの深いasync/awaitによる非同期処理 | SIOS Tech Lab",
+      "url": "https://tech-lab.sios.jp/archives/53462",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-17T11:28:14.000Z",
+      "summaryJa": [
+        "こんにちは、サイオステクノロジー武井です。",
+        "今回はasync/awaitの動きをOSカーネルのレイヤーから追うことで理解を深めようとしてみます。",
+        "1."
+      ],
+      "category": "programming",
+      "keywords": [
+        "SIOS",
+        "Tech",
+        "Lab"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 237,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 13.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-3317f451",
+      "title": "AIに「レビューして」はもう古い？「敵対的検証」のすすめ",
+      "url": "https://zenn.dev/loglass/articles/6aa18c80496ec6",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-17T06:06:34.000Z",
+      "summaryJa": [
+        "この記事は毎週必ず記事がでるテックブログ Loglass Tech Blog Sprint の152週目の記事です！",
+        "3年間連続達成まで残り7週となりました！",
+        "こんにちは、ログラスの松岡(@little_hand_s)です。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 249,
+          "ageHours": 23,
+          "crossSources": 2,
+          "velocity": 10.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-d7a3c6fa",
+      "title": "AWS: Inaccurate Estimated Billing Data – $1.7 billion",
+      "url": "https://news.ycombinator.com/item?id=48945241",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-17T09:42:05.000Z",
+      "summaryJa": [
+        "URL already posted: <a href=\"https:&#x2F;&#x2F;health.",
+        "aws.",
+        "amazon."
+      ],
+      "category": "tech",
+      "keywords": [
+        "AWS",
+        "Inaccurate",
+        "Estimated",
+        "Billing",
+        "Data"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 1106,
+          "hatebuCount": 0,
+          "ageHours": 20,
+          "crossSources": 1,
+          "velocity": 56.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-0b4a0b29",
+      "title": "The Zilog Z80 has turned 50",
+      "url": "https://goliath32.com/blog/z80.html",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-17T19:41:02.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "The",
+        "Zilog",
+        "Z80",
+        "has",
+        "turned"
+      ],
+      "heat": {
+        "temperature": 78,
+        "signals": {
+          "hnPoints": 189,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 19.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-9e3f0256",
+      "title": "Claude Code の Plan モードをループエンジニアリングで楽にする",
+      "url": "https://zenn.dev/k_yoshiya/articles/claude-code-plan-mode-loop",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-16T07:40:05.000Z",
+      "summaryJa": [
+        "はじめに Claude Code の Plan モードを、人間の労力を少なくして使いこなすためのループエンジニアリングをしてみました。",
+        "この記事を読むと、hook を使って Plan モードに「質問による要件詰め」「実装のサブエージェント委譲」「計画の HTML 確認」を自動で組み込む方法がわか",
+        "ねらい Plan モードの運用に、次の 3 つを組み込みます。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Claude",
+        "Code",
+        "Plan",
+        "モードをループエンジニアリングで楽にする"
+      ],
+      "heat": {
+        "temperature": 41,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 46,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-14e255bf",
+      "title": "SwiftだけでWebをつくって、運用する",
+      "url": "https://zenn.dev/1amageek/articles/swift-web-fullstack",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-16T12:20:27.000Z",
+      "summaryJa": [
+        "こんにちは、Stamp Incの村本です。",
+        "※ English version: Building and Running Web Apps with Just Swift 以前、次世代のサーバー見えなく",
+        "という記事で、Distributed Actorによってサーバーの実装が隠蔽されていく未来について書きました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "SwiftだけでWebをつくって",
+        "運用する"
+      ],
+      "heat": {
+        "temperature": 42,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 41,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-0957d799",
+      "title": "moltis-org/moltis — A secure persistent personal agent server in Rust. One binary, sandboxed execution, multi-provider LLMs, voice, memory, Telegram, WhatsApp, Discord, Teams, and MCP tools. Secure by design, runs on your hardware.",
+      "url": "https://github.com/moltis-org/moltis",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-18T04:56:16Z",
+      "summaryJa": [
+        "A secure persistent personal agent server in Rust.",
+        "One binary, sandboxed execution, multi-provider LLMs, voice, memory, Telegram, W",
+        "Secure by design, runs on your hardware."
+      ],
+      "category": "oss",
+      "keywords": [
+        "moltis",
+        "org/moltis",
+        "secure",
+        "persistent",
+        "personal"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "Rustで書かれたシングルバイナリの個人用エージェントサーバーです。自分のハードウェアでLLMのメモリやツールを自律的に動かすための構成として、あなたの探究心を刺激するはずです。"
+  },
+  "unavailableSources": [
+    "Lobsters"
+  ]
+}

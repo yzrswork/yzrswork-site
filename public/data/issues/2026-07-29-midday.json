@@ -1,0 +1,517 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 38,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-29",
+  "dateDisplay": "Wednesday, July 29, 2026",
+  "pressTimeJst": "2026-07-29 12:00",
+  "generatedAt": "2026-07-29T02:48:08.872Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "わずかな不便への自作の回答",
+    "note": "日常の小さな摩擦に対して、購入や妥協ではなく「自分で作って解決する」ことを選んだ開発者たちの執念と工夫。"
+  },
+  "editorial": {
+    "comment": "ボタンを3回押すのが面倒だからと、自分で回路図を描きPCBを設計して解決したという『I Designed A Custom PCB To Avoid Pressing A Button Three Times』の姿勢に、心から拍手を送りたくなりました。ほんのわずかな不便に妥協せず、物理から作り変える。この執念こそが、ものづくりの根源にある美しさと楽しさそのものです。午後の皆様の作業にも、そんな小さなハックの火が灯りますように。 —— YZRS Times 編集長",
+    "passedOver": "『田舎で家族5人が写ったAI生成画像を見て...』などAIの判定や時事に関する考察は、昼刊のインプットには刺激が強すぎるため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 34,
+    "tempMin": 23,
+    "precipChancePct": 45
+  },
+  "market": {
+    "fearGreed": {
+      "value": 29,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63952,
+        "priceJpy": 10468800,
+        "change24hPct": 0.3,
+        "sparkline7d": [
+          66378.17,
+          65659.14,
+          65051.32,
+          64081.05,
+          64648.88,
+          64884.87,
+          63893.04
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1911.63,
+        "priceJpy": 312932,
+        "change24hPct": 1.4,
+        "sparkline7d": [
+          1932.33,
+          1921.61,
+          1886.47,
+          1864.61,
+          1912.37,
+          1945.8,
+          1915.57
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.174293,
+        "priceJpy": 28.53,
+        "change24hPct": 1.1,
+        "sparkline7d": [
+          0.193197,
+          0.184493,
+          0.183024,
+          0.178131,
+          0.178962,
+          0.176217,
+          0.174958
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 214.88,
+        "priceJpy": 35175,
+        "change24hPct": 0.5,
+        "sparkline7d": [
+          224.47,
+          217.45,
+          211.29,
+          209.89,
+          213.68,
+          215.51,
+          215.35
+        ]
+      }
+    ]
+  },
+  "top": [
+    "lobsters-801877ce",
+    "hn-front-5ebaa509",
+    "zenn-trend-0396f91a"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-e59f0283",
+        "hn-front-fffcec4c",
+        "hatebu-it-3da63308"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-ecec0e67",
+        "qiita-popular-d6ebda5b",
+        "zenn-trend-5e013c77"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-a305485a",
+        "lobsters-1aaaafd6"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "lobsters-801877ce",
+      "title": "I Designed A Custom PCB To Avoid Pressing A Button Three Times",
+      "url": "https://blog.tymscar.com/posts/opensourcedimmer/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-28T13:33:00.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Designed",
+        "Custom",
+        "PCB",
+        "Avoid",
+        "Pressing"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 13,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-5ebaa509",
+      "title": "Show HN: I was tired of opening 2 tabs for every HN link, so I made a userscript",
+      "url": "https://github.com/twalichiewicz/HNewhere",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-28T22:09:06.000Z",
+      "summaryJa": [
+        "HN is great for the links people share, but a big part of the value I get comes ",
+        "I realized I was always opening the article in one tab and the comments in anoth",
+        "<p>I figured there was probably a simpler way, so I threw t"
+      ],
+      "category": "tech",
+      "keywords": [
+        "tired",
+        "opening",
+        "tabs",
+        "every",
+        "link"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 152,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 32.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-0396f91a",
+      "title": "【決着】Claude CodeとCodexの設定ファイルを同期させる (みんな仲良く)",
+      "url": "https://zenn.dev/explaza/articles/20f7f41cff8428",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-28T04:40:29.000Z",
+      "summaryJa": [
+        "ごまんと触れられてきた話題であるのにも関わらず、細かい所に手の届くツールが無かったので作成しました。",
+        "有名どころから個人で制作されているツールまで、一通り使わせていただいたのですが実際に困った場面があり・・・ サマリ 課題 同じプロジェクトでCodexとClau",
+        "mdやSKILLSなどの変更が片方にしか適用されない 同期ツールは出ているものの、自動コピーやSymlinkの作成に留まり、差分があることを想定していない 目指"
+      ],
+      "category": "programming",
+      "keywords": [
+        "決着",
+        "Claude"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 22,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-e59f0283",
+      "title": "Half-Life ported to Mac OS 9",
+      "url": "https://mac-classic.com/news/half-life-ported-to-mac-os-9/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-28T20:58:39.000Z",
+      "summaryJa": [
+        "Half-Life ported to Mac OS 9",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Half",
+        "Life",
+        "ported",
+        "Mac",
+        "OS"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 166,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 28.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-fffcec4c",
+      "title": "Substack writers, you need a website",
+      "url": "https://elizabethtai.com/2026/06/10/substack-writers-you-need-a-website/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-28T16:58:31.000Z",
+      "summaryJa": [
+        "Substack writers, you need a website",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Substack",
+        "writers",
+        "need",
+        "website"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 427,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 43.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-3da63308",
+      "title": "リアーキテクチャという山にみんなで登るために - 10 年ものの Android アプリを壊さずに作り変える - - ドワンゴ教育サービス開発者ブログ",
+      "url": "https://blog.nnn.dev/entry/2026/07/29/110000",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-29T02:09:54.000Z",
+      "summaryJa": [
+        "こんにちは！",
+        "株式会社ドワンゴ教育事業本部で、学習アプリ「ZEN Study」の Android 版開発を担当している本藤です。",
+        "ZEN Study Android は 10 年以上にわたって開発が続いているアプリで、その歴史の中でさまざまな技術選定の積み重ねがあります。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "年ものの",
+        "Android",
+        "アプリを壊さずに作り変える",
+        "ドワンゴ教育サービス開発者ブログ"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 6,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 9.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-ecec0e67",
+      "title": "Microsoft APM を試してみる　(npmと対比しながら）",
+      "url": "https://zenn.dev/xtm_blog/articles/f016695e2839ee",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-28T04:31:05.000Z",
+      "summaryJa": [
+        "Claude CodeやCodexの設定をチームで揃える「Microsoft APM」入門 ─ npmとの対比で理解する はじめに Claude CodeやCo",
+        "自分だけで使ううちは、ローカルへファイルを置いたり、必要なものをコピーしたりするだけでも困りません。",
+        "ただ、複数のAIエージェントをチームで使い始めると、次のようなズレが出てきます。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Microsoft",
+        "APM",
+        "npmと対比しながら"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 22,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-d6ebda5b",
+      "title": "「最後に検証して」はもう書かなくていい — Claude Opus 5 でプロンプトの常識が逆転した4つのこと",
+      "url": "https://qiita.com/jqit_suwa/items/74a96ce83dde5245407a?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-28T04:08:47.000Z",
+      "summaryJa": [
+        "あなたのシステムプロンプトに、こんな一文が入っていませんか。",
+        "最後に、出力内容を検証してください。",
+        "Claude Opus 5 では、これは消したほうがいい一文になりました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "最後に検証して",
+        "Claude",
+        "Opus"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 23,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-5e013c77",
+      "title": "【速報】Kimi-K3 を Day0 デプロイ。2.8T モデルは NVIDIA B300 x8 の 1 ノードで動くのか",
+      "url": "https://zenn.dev/fixstars/articles/kimi-k3-benchmark",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-27T23:19:53.000Z",
+      "summaryJa": [
+        "はじめに 2026年7月27日、Moonshot AI から Kimi-K3 のモデルウェイトが公開されました。",
+        "7月16日のモデル発表時点から「オープンウェイトモデルとして史上最大」と大きな話題になっていたモデルです。",
+        "フィックスターズでは、ウェイト公開の当日に NVIDIA B300 x8 のシングルノード環境へデプロイし、推論性能のベンチマークを実施しました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "速報",
+        "Kimi",
+        "K3",
+        "Day0",
+        "デプロイ"
+      ],
+      "heat": {
+        "temperature": 46,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 27,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-a305485a",
+      "title": "Starling, a Linux Desktop written from scratch",
+      "url": "https://starling.build",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-28T16:56:05.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Starling",
+        "Linux",
+        "Desktop",
+        "written",
+        "scratch"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-1aaaafd6",
+      "title": "Building (systems) software with Nix",
+      "url": "https://hondu.co/blog/building-systems-software",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-28T13:10:24.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "systems",
+        "software",
+        "Nix"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 14,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-2c3fd6e3",
+      "title": "Show HN: I made a site where you practice typing by retyping entire novels",
+      "url": "http://typelit.io",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2020-10-06T11:37:53.000Z",
+      "summaryJa": [
+        "Show HN: I made a site where you practice typing b",
+        "出典: Show HN",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "site",
+        "practice",
+        "typing",
+        "retyping",
+        "entire"
+      ],
+      "heat": {
+        "temperature": 35,
+        "signals": {
+          "hnPoints": 1589,
+          "hatebuCount": 0,
+          "ageHours": 50919,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "小説一冊を丸ごとタイピングするという、一見過剰で贅沢な時間が静かな没頭を生み出します。コードを書く指先に、物語のグルーヴを染み込ませる新しい練習体験です。"
+  },
+  "unavailableSources": []
+}

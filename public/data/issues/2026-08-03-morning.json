@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 47,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-08-03",
+  "dateDisplay": "Monday, August 3, 2026",
+  "pressTimeJst": "2026-08-03 05:00",
+  "generatedAt": "2026-08-02T20:18:08.509Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "余剰を削ぎ、骨格を際立たせる",
+    "note": "AIへの指示から為替への配慮まで、不要な情報を削ることで機能する構造"
+  },
+  "editorial": {
+    "comment": "指示を追加し、ルールを書き足し、気がつけば肥大化した『CLAUDE.md』にAIの思考が溺れていく。そんな事態に白井氏が下した『引き算』の決断（hatebu-it-66ab2bb7）は、AIコーディングの枠を超えて、すべてのシステム設計に通底する引き算の美学を教えてくれます。不要な前提を削ぎ落としてこそ、本当に機能すべき論理の骨格が鮮明に立ち上がってくるのです。朝のコーヒーを飲み終えたら、まずはデスクトップの余計なファイルをひとつ捨てることから、今日の実装を始めてみませんか。 —— YZRS Times 編集長",
+    "passedOver": "「昔ベンチャーで働いてた頃、役員に〇されて俺は内臓の一部がない」（hatebu-it-ef8e0a0f）は非常に注目されていましたが、凄惨な労働体験に偏り、朝の創作の足場を静かに整える本紙のトーンにはそぐわないため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 26,
+    "tempMin": 23,
+    "precipChancePct": 65
+  },
+  "market": {
+    "fearGreed": {
+      "value": 27,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63406,
+        "priceJpy": 9962040,
+        "change24hPct": 1.4,
+        "sparkline7d": [
+          64637.67,
+          63673.71,
+          63644.82,
+          63942.45,
+          63898.67,
+          63061.43,
+          63321.74
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1880.69,
+        "priceJpy": 295483,
+        "change24hPct": 2.4,
+        "sparkline7d": [
+          1912.64,
+          1890.57,
+          1888.94,
+          1900.27,
+          1886.76,
+          1871.99,
+          1874.02
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.174131,
+        "priceJpy": 27.36,
+        "change24hPct": 2.4,
+        "sparkline7d": [
+          0.179575,
+          0.171938,
+          0.171961,
+          0.17176,
+          0.169676,
+          0.171289,
+          0.174574
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 213.61,
+        "priceJpy": 33561,
+        "change24hPct": 3.4,
+        "sparkline7d": [
+          217.07,
+          211.91,
+          211.19,
+          209.47,
+          207.77,
+          208.15,
+          213.43
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-66ab2bb7",
+    "hn-front-68334413",
+    "nhk-top-a1682152"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-50ec0c27",
+        "yahoo-topics-89cd937d",
+        "nhk-top-a11f954e"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hn-front-fd9acd43",
+        "hatebu-it-0aeb3767"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-66ab2bb7",
+      "title": "CLAUDE.mdとAGENTS.mdを削ったら、AIコーディングがグンと賢くなった｜白井暁彦 aka しらいはかせ",
+      "url": "https://note.com/o_ob/n/nd19cba8e11d7",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-01T13:32:46.000Z",
+      "summaryJa": [
+        "Claude CodeやCodexのようなコーディングエージェントを使い続けていると、いつの間にかCLAUDE.",
+        "mdやAGENTS.",
+        "mdが巨大化していきます。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "aka"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 329,
+          "ageHours": 31,
+          "crossSources": 1,
+          "velocity": 10.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-68334413",
+      "title": "Meshdiff – visually compare two STL versions in the browser, client-side",
+      "url": "https://meshdiff.com/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-02T11:34:41.000Z",
+      "summaryJa": [
+        "Meshdiff – visually compare two STL versions in th",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Meshdiff",
+        "visually",
+        "compare",
+        "STL",
+        "versions"
+      ],
+      "heat": {
+        "temperature": 77,
+        "signals": {
+          "hnPoints": 150,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 17.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-a1682152",
+      "title": "日米の協調介入 ことし5月の日米財務相会談から本格調整",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015194421000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-02T20:01:10.000Z",
+      "summaryJa": [
+        "歴史的な円安に歯止めをかけるため、日本とアメリカの通貨当局は、先週、協調して円買いの市場介入に踏み切りました。",
+        "ことし5月中旬に東京で行われた日米財務相会談で協調介入についての調整が本格化し、その後、入…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "日米の協調介入"
+      ],
+      "heat": {
+        "temperature": 60,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-50ec0c27",
+      "title": "熊本地震 猛暑の中での災害関連死防ぐ対策を強化 政府",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015194451000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-02T20:03:29.000Z",
+      "summaryJa": [
+        "今回の地震で、政府は、猛暑の中での災害関連死を防ぐ対策を強化する必要があるとして、車中泊や在宅避難をしている人のもとを行政側から積極的に訪れ、医療や福祉につなげ",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "熊本地震",
+        "猛暑の中での災害関連死防ぐ対策を強化",
+        "政府"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-89cd937d",
+      "title": "地震と雲を関係付ける誤情報 注意",
+      "url": "https://news.yahoo.co.jp/pickup/6590323?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-08-02T16:40:22.000Z",
+      "summaryJa": [
+        "地震と雲を関係付ける誤情報 注意",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "地震と雲を関係付ける誤情報",
+        "注意"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-a11f954e",
+      "title": "記録的な暑さ 3日は熊本市など九州で酷暑日予想 熱中症対策を",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015193981000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-02T10:28:34.000Z",
+      "summaryJa": [
+        "2日も晴れて気温が上がり、高知県と和歌山県で40度を超える酷暑日となったほか、全国の40を超える観測点で観測史上、最も高い気温を観測する記録的な暑さとなりました",
+        "さらに、3日は熊本市など九州で酷暑日が…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "記録的な暑さ",
+        "3日は熊本市など九州で酷暑日予想"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-fd9acd43",
+      "title": "Rooting, firmware analysis and persistent credentials of TP-Link TL-841N",
+      "url": "https://blog.juni-mp4.com/posts/42/rooting-the-tplink-tl841n-pt1/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-02T16:19:17.000Z",
+      "summaryJa": [
+        "Rooting, firmware analysis and persistent credenti",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Rooting",
+        "firmware",
+        "analysis",
+        "persistent",
+        "credentials"
+      ],
+      "heat": {
+        "temperature": 76,
+        "signals": {
+          "hnPoints": 58,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 2,
+          "velocity": 14.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-0aeb3767",
+      "title": "GitHub - microsoft/skill-recorder",
+      "url": "https://github.com/microsoft/skill-recorder",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-02T00:10:53.000Z",
+      "summaryJa": [
+        "Record yourself doing a task once, then turn it into a skill your AI agent can r",
+        "Skill Recorder captures a real work session on your screen: the clicks, the app ",
+        "It then uses the GitHub Copilot CLI to reconstr."
+      ],
+      "category": "programming",
+      "keywords": [
+        "GitHub",
+        "microsoft/skill",
+        "recorder"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 198,
+          "ageHours": 20,
+          "crossSources": 1,
+          "velocity": 9.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "ペルセウス座流星群",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-08-02T19:50:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "ペルセウス座流星群"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-72020fc8",
+      "title": "abey79/vpype — The Swiss-Army-knife command-line tool for plotter vector graphics.",
+      "url": "https://github.com/abey79/vpype",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-01T14:36:53Z",
+      "summaryJa": [
+        "The Swiss-Army-knife command-line tool for plotter vector graphics.",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "abey79/vpype",
+        "Swiss",
+        "Army",
+        "knife",
+        "command"
+      ],
+      "heat": {
+        "temperature": 46,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 30,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "ペンプロッターでの物理的な描画を好むあなたにとって、ベクターデータの最適化は極めて重要な工程のはずです。このツールは、線の並び替えやレイヤー結合といった面倒なパス処理をCLIから一撃で処理して創作の手間を劇的に減らしてくれます。"
+  },
+  "unavailableSources": []
+}

@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 20,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-20",
+  "dateDisplay": "Monday, July 20, 2026",
+  "pressTimeJst": "2026-07-20 12:00",
+  "generatedAt": "2026-07-20T05:55:53.120Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "自分で組み立てる",
+    "note": "既製品に不満を覚え、ハードウェアからソフトウェア、果ては自前のリンターまで自分仕様に再構築する作り手たちの実践を集めました。"
+  },
+  "editorial": {
+    "comment": "MIDIレコーダーを2,500台も売り上げた個人の軌跡（hn-front-c3e19e66）を読み、ハードウェア開発がかつてないほど身近になっている現実を実感します。既製の製品を待つのではなく、足りないものを自作し世界へ届ける。その初期衝動を、今日の午後のコードや回路設計に繋げてみてください。 —— YZRS Times 編集長",
+    "passedOver": "AWS障害（qiita-popular-8b33f211）や農家の時給（hatebu-it-20b3bfec）など、午後の創作活動に直結しない広域なインフラトラブルや時事ニュースは、技術のインプットに徹するため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ",
+    "icon": "sunny",
+    "tempMax": 35,
+    "tempMin": 24,
+    "precipChancePct": 2
+  },
+  "market": {
+    "fearGreed": {
+      "value": 29,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64066,
+        "priceJpy": 10401713,
+        "change24hPct": -0.96,
+        "sparkline7d": [
+          63746.44,
+          62498.68,
+          64513.87,
+          64194.16,
+          63158.84,
+          64473.88,
+          64637.03
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1853.83,
+        "priceJpy": 300989,
+        "change24hPct": -0.75,
+        "sparkline7d": [
+          1805.54,
+          1781.53,
+          1868.69,
+          1883.61,
+          1821.76,
+          1855.7,
+          1868.8
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.185454,
+        "priceJpy": 30.11,
+        "change24hPct": -0.7,
+        "sparkline7d": [
+          0.18626,
+          0.178516,
+          0.182124,
+          0.190505,
+          0.185406,
+          0.187001,
+          0.18807
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 211.51,
+        "priceJpy": 34341,
+        "change24hPct": -3.32,
+        "sparkline7d": [
+          240.04,
+          233.4,
+          234.72,
+          221.84,
+          217.35,
+          220.43,
+          216.13
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-c3e19e66",
+    "zenn-trend-2c816350",
+    "qiita-popular-bac9af52"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hatebu-it-6cc80501",
+        "hn-front-5b3d4453"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-8ff0c1c2",
+        "qiita-popular-90f87c0e"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-758569bf",
+        "lobsters-9ca556b0"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-c3e19e66",
+      "title": "What I learned selling 2,500 MIDI recorders: Hardware is not so hard",
+      "url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-19T10:34:58.000Z",
+      "summaryJa": [
+        "What I learned selling 2,500 MIDI recorders: Hardw",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "What",
+        "learned",
+        "selling",
+        "500",
+        "MIDI"
+      ],
+      "heat": {
+        "temperature": 77,
+        "signals": {
+          "hnPoints": 454,
+          "hatebuCount": 0,
+          "ageHours": 19,
+          "crossSources": 1,
+          "velocity": 23.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-2c816350",
+      "title": "ImportLintの紹介: import専門の高速なリンター",
+      "url": "https://zenn.dev/uhyo/articles/import-lint-intro",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-19T03:46:26.000Z",
+      "summaryJa": [
+        "皆さんこんにちは。",
+        "今回は、筆者が最近Claude Fable 5さんと一緒に開発したImportLintを紹介します。",
+        "https://github."
+      ],
+      "category": "programming",
+      "keywords": [
+        "ImportLintの紹介",
+        "import専門の高速なリンター"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-bac9af52",
+      "title": "【個人開発】セルフネイルのネイルレシピアプリを開発しました！（React/Supabase/PWA）",
+      "url": "https://qiita.com/potato11/items/6f010e9bd4d74f88c855?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-19T08:37:11.000Z",
+      "summaryJa": [
+        "はじめに 最近セルフネイルを始めたのですが、ショート動画を見て「このデザインを真似したい！",
+        "」と思っても、使用しているネイル用品が動画内に散らばっていたり、そもそも何のアイテムを使っているのか紹介されていなかったりすることがあります。",
+        "そこで、ネイルデザインだけでなく「使用."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 21,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-6cc80501",
+      "title": "「アルゴリズム」が大っ嫌い？ ならRSSを使いなさいよ » p2ptk[.]org",
+      "url": "https://p2ptk.org/digital-rights/5632",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-19T19:43:13.000Z",
+      "summaryJa": [
+        "以下の文章は、電子フロンティア財団の「Hate “The Algorithm?",
+        "” RSS Is One of the Tools You’ve Been Looking For」という記事を翻訳したものである。",
+        "Electronic Frontier Foundation オンラインのソーシャルネットワーク――あるいはインターネット文化をめぐるあらゆる会話――を軽く覗く"
+      ],
+      "category": "programming",
+      "keywords": [
+        "「アルゴリズム」が大っ嫌い？",
+        "ならRSSを使いなさいよ",
+        "p2ptk[.]org"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 128,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 12.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-5b3d4453",
+      "title": "Claude Fable produced a counterexample to the Jacobian Conjecture",
+      "url": "https://xcancel.com/__alpoge__/status/2079028340955197566",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-20T02:51:16.000Z",
+      "summaryJa": [
+        "Claude Fable produced a counterexample to the Jaco",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Claude",
+        "Fable",
+        "produced",
+        "counterexample",
+        "to"
+      ],
+      "heat": {
+        "temperature": 90,
+        "signals": {
+          "hnPoints": 207,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 67.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-8ff0c1c2",
+      "title": "1-bit LLM「Bonsai」活用ガイド — 1.15GB で動く 8B モデルをローカルで使い倒す",
+      "url": "https://zenn.dev/tkou15/articles/bonsai-1bit-llm-guide",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-19T07:35:46.000Z",
+      "summaryJa": [
+        "はじめに 2026年3月31日、Caltech 発のスタートアップ PrismML が 1-bit LLM ファミリー Bonsai を発表しました。",
+        "8B クラスのモデルがわずか 1.",
+        "15GB、必要メモリ約 1."
+      ],
+      "category": "programming",
+      "keywords": [
+        "bit",
+        "LLM「Bonsai」活用ガイド",
+        "1.15GB",
+        "で動く",
+        "8B"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 22,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-90f87c0e",
+      "title": "【個人開発】マルチレポでnoteクリエイター向け統計ダッシュボードを作ってみた【React / Hono / Chrome拡張】",
+      "url": "https://qiita.com/natsugure/items/e12091867becb931bce0?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-19T08:37:56.000Z",
+      "summaryJa": [
+        "はじめに 私は以前ブログサービスのnoteで記事を書いていたのですが、note公式で実装されているクリエイター向け統計画面（ダッシュボード）には「固定された期間",
+        "「これ、自分で作った.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Hono",
+        "Chrome拡張】"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 21,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-758569bf",
+      "title": "What is your favorite blog to read recently?",
+      "url": "https://lobste.rs/s/69mche/what_is_your_favorite_blog_read_recently",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-19T13:14:39.000Z",
+      "summaryJa": [
+        "Especially interesting what it adds beyond an academic paper would.",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "What",
+        "is",
+        "your",
+        "favorite",
+        "blog"
+      ],
+      "heat": {
+        "temperature": 50,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-9ca556b0",
+      "title": "Running microVMs in Proxmox VE, The Easy Way",
+      "url": "https://taoofmac.com/space/blog/2026/06/18/1845",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-19T19:31:26.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Running",
+        "microVMs",
+        "in",
+        "Proxmox",
+        "VE"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-64ed6381",
+      "title": "HomeSpan/HomeSpan — HomeKit Library for the Arduino-ESP32",
+      "url": "https://github.com/HomeSpan/HomeSpan",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-19T23:11:28Z",
+      "summaryJa": [
+        "HomeKit Library for the Arduino-ESP32",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "HomeSpan/HomeSpan",
+        "HomeKit",
+        "Library",
+        "for",
+        "the"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "ESP32をAppleのHomeKit機器に変貌させるこのライブラリは、自宅のスマートホーム化を自作したいあなたに最適です。既存の枠組みに頼らず、ハードウェアの挙動を隅々まで自分でコントロールする楽しさを味わえます。"
+  },
+  "unavailableSources": []
+}

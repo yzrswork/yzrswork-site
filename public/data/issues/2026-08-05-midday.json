@@ -1,0 +1,483 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 52,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-08-05",
+  "dateDisplay": "Wednesday, August 5, 2026",
+  "pressTimeJst": "2026-08-05 12:00",
+  "generatedAt": "2026-08-05T02:48:00.260Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "制御と音声を自ら組み上げる",
+    "note": "ロボティクスの自律走行から音声合成の泥臭い実装まで、自分の手でロジックを動かす手触りのある技術を集めました。"
+  },
+  "editorial": {
+    "comment": "50音の音素をつないで自作TTSを組み上げる試み（qiita-popular-b709f7d0）に、無骨ながらも愛らしいものづくりの原点を見ました。規則通りに動かすだけでなく、予期せぬ声の質感に出会う瞬間こそが自作の醍醐味です。 —— YZRS Times 編集長",
+    "passedOver": "Googleパスワードマネージャーの脆弱性など一般セキュリティニュースは、昼休みに手を動かしたい読者の意識を削がないため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ時々曇り",
+    "icon": "partly-cloudy",
+    "tempMax": 30,
+    "tempMin": 22,
+    "precipChancePct": 18
+  },
+  "market": {
+    "fearGreed": {
+      "value": 27,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64380,
+        "priceJpy": 10128010,
+        "change24hPct": 1.4,
+        "sparkline7d": [
+          63662.39,
+          63951.84,
+          63625.53,
+          63019.53,
+          63118.23,
+          63699.36,
+          63950.61
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1874.34,
+        "priceJpy": 294862,
+        "change24hPct": 1.1,
+        "sparkline7d": [
+          1903.38,
+          1902.74,
+          1880.74,
+          1868.49,
+          1861.3,
+          1865.66,
+          1862.52
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.167897,
+        "priceJpy": 26.41,
+        "change24hPct": -1.9,
+        "sparkline7d": [
+          0.173652,
+          0.171563,
+          0.169129,
+          0.171536,
+          0.173891,
+          0.172186,
+          0.166151
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 213,
+        "priceJpy": 33509,
+        "change24hPct": 0.5,
+        "sparkline7d": [
+          213.93,
+          210.43,
+          206.11,
+          208.37,
+          213.55,
+          213.99,
+          212.63
+        ]
+      }
+    ]
+  },
+  "top": [
+    "zenn-trend-b6d093eb",
+    "qiita-popular-b709f7d0",
+    "hatebu-it-06e686e8"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hatebu-it-b1fb4ee9",
+        "hn-front-6d70628e"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-963ec295",
+        "qiita-popular-a058130e"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-f563c8fd",
+        "lobsters-20dba9d0",
+        "lobsters-bbc1216f"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "zenn-trend-b6d093eb",
+      "title": "ROS 2 ハンズオン — 環境構築から自作ノード・自律走行まで",
+      "url": "https://zenn.dev/kimushun1101/books/ros2-handson",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-04T01:08:42.000Z",
+      "summaryJa": [
+        "ROS 2 Jazzy で TurtleBot3 をシミュレーション (Gazebo) 上で動かしながら、ノード / トピックの基礎、launch ファイル、自",
+        "回答例付きのハンズオン演習を11本収録。",
+        "Windows (WSL) / Ubuntu のどちらでも進められます。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "ROS",
+        "ハンズオン",
+        "環境構築から自作ノード",
+        "自律走行まで"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-b709f7d0",
+      "title": "50音を全部作って繋いだのに、（　´∀｀）になった話",
+      "url": "https://qiita.com/taguchi_sapeet/items/f2da1003b168b52f5770?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-04T01:11:44.000Z",
+      "summaryJa": [
+        "まず、これを聴いてください 音声①：自作したTTSで「こんにちは」 聞き覚えのある感じ、しませんか。",
+        "∧＿∧ （ ´∀｀） ＜ こんにちは （ ） ｜ ｜ ｜ （_＿）＿） そう、モナーです。",
+        "一応、本人（？"
+      ],
+      "category": "programming",
+      "keywords": [
+        "50音を全部作って繋いだのに"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-06e686e8",
+      "title": "スタックプルリクエスト入門 — gh stackの使い方と、AIエージェントの並列実装での活用 - Findy Tech Blog",
+      "url": "https://tech.findy.co.jp/entry/2026/08/05/070000",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-04T22:49:33.000Z",
+      "summaryJa": [
+        "こんにちは。",
+        "ファインディ株式会社でプリンシパルエンジニアをしている戸田です。",
+        "先日、GitHubのスタックプルリクエスト（Stacked Pull Requests）がpublic previewになりました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "スタックプルリクエスト入門",
+        "gh",
+        "stackの使い方と",
+        "AIエージェントの並列実装での活用",
+        "Findy"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 35,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 8.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-b1fb4ee9",
+      "title": "Microsoft 謹製 デスクトップアプリ「Skill Recorder」で業務効率化スキル（SKILL.md）の作成が捗る？",
+      "url": "https://zenn.dev/benjuwan/articles/c2ba48e7662f92",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-04T16:24:54.000Z",
+      "summaryJa": [
+        "はじめに スキル（SKILL.",
+        "md）で定型業務をAIに移譲したり、特定業務の自動化・半自動化を実現したりといった状況は珍しくなくなってきたと思います。",
+        "例えば、ブラウザ操作のトレースはplaywright-mcpまたはplaywright-cliで行い、そのトレース結果からAIに業務効率化のスキル作成までをして"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Microsoft",
+        "謹製",
+        "デスクトップアプリ",
+        "Skill",
+        "Recorder"
+      ],
+      "heat": {
+        "temperature": 89,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 203,
+          "ageHours": 10,
+          "crossSources": 2,
+          "velocity": 19.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-6d70628e",
+      "title": "libexpat now funded by the City of Munich for up to 6 months",
+      "url": "https://blog.hartwork.org/posts/libexpat-city-of-munich-open-source-sabbatical/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-04T23:18:12.000Z",
+      "summaryJa": [
+        "libexpat now funded by the City of Munich for up t",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "libexpat",
+        "funded",
+        "City",
+        "Munich"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 154,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 44
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-963ec295",
+      "title": "Rust のテストを実行するとき、裏側で何が起きているか",
+      "url": "https://zenn.dev/estie/articles/882e14dcad0d46",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-04T01:00:06.000Z",
+      "summaryJa": [
+        "こんにちは。",
+        "株式会社estie（エスティ）で Rust や Python でデータパイプラインや Web サーバーサイドの開発に取り組んでいる Masaki Miyazak",
+        "前職も含め、これまで様々なアプリケーション Rust プロジェクトを見てきた中で、Rust のテストエコシステムへの理解不足に起因する時間的・金銭的損失を数多く"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Rust",
+        "裏側で何が起きているか"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-a058130e",
+      "title": "【前編】AI駆動開発、用語で挫折していませんか？ ——歴史をたどれば「Skills」も「Hooks」も一本の線でつながる",
+      "url": "https://qiita.com/shou-dev19/items/e1583af614a573e4b245?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-04T08:50:22.000Z",
+      "summaryJa": [
+        "この記事は誰のために書いたのか この記事は、IT業界で働いていて、プログラミングは普通にできる。",
+        "でもAIエージェントを使った開発の経験はほぼゼロ、という人に向けて書いています。",
+        "最近、恐れ多くも同僚や知人にAI駆動開発についてお話しする機会が増えました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "前編",
+        "AI駆動開発",
+        "用語で挫折していませんか",
+        "歴史をたどれば",
+        "Skills"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-f563c8fd",
+      "title": "Liquid Glass effect for GNU/Emacs",
+      "url": "https://github.com/larrasket/emacs-liquid-glass",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-04T17:43:22.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Liquid",
+        "Glass",
+        "effect",
+        "GNU/Emacs"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-20dba9d0",
+      "title": "irken: A tiny hackable full-featured IRC client",
+      "url": "https://codeberg.org/dlowe/irken",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-04T20:30:17.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "irken",
+        "tiny",
+        "hackable",
+        "full",
+        "featured"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-bbc1216f",
+      "title": "designing a query system",
+      "url": "https://bal-e.org/speed/krabby/2026/query-system-design/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-04T21:40:22.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "designing",
+        "query",
+        "system"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-de94282f",
+      "title": "aceinnolab/Inkycal — Create awesome e-paper dashboards within minutes! Modularity? Check! Python3? Check? Works on Raspberry Pi Zero W? Check! Support for own modules? Check! ",
+      "url": "https://github.com/aceinnolab/Inkycal",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-19T13:13:56Z",
+      "summaryJa": [
+        "Create awesome e-paper dashboards within minutes!",
+        "Modularity?",
+        "Check!"
+      ],
+      "category": "oss",
+      "keywords": [
+        "aceinnolab/Inkycal",
+        "Create",
+        "awesome",
+        "paper",
+        "dashboards"
+      ],
+      "heat": {
+        "temperature": 40,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 398,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "Raspberry Pi Zero Wと電子ペーパーを組み合わせ、自作ダッシュボードを部屋に置く楽しさを教えてくれます。手元で動く静かなディスプレイを作る週末プロジェクトとしておすすめの逸品です。"
+  },
+  "unavailableSources": []
+}

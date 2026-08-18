@@ -1,0 +1,412 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 25,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-23",
+  "dateDisplay": "Thursday, July 23, 2026",
+  "pressTimeJst": "2026-07-23 05:00",
+  "generatedAt": "2026-07-22T20:17:14.566Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "シンプルへの回帰",
+    "note": "複雑化するツールや情報空間に対し、単一ファイルや専用端末など質素で堅牢な仕組みに光を当てる朝。"
+  },
+  "editorial": {
+    "comment": "今号の1面で取り上げた『Bento』のように、1つのHTMLファイルでプレゼン資料を完結させるという割り切りは、現代の複雑なWeb開発に対する爽快な回答です。環境構築に時間を溶かす前に、まず動く最小の構造を作る姿勢を自分の創作にも取り入れたくなります。 —— YZRS Times 編集長",
+    "passedOver": "DRAM・NANDメモリ価格の高騰ニュースは業界構造の議論が中心だったため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ時々曇り",
+    "icon": "partly-cloudy",
+    "tempMax": 37,
+    "tempMin": 26,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 33,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 65886,
+        "priceJpy": 10749116,
+        "change24hPct": -0.71,
+        "sparkline7d": [
+          65013.33,
+          64100.19,
+          63928.03,
+          64688.28,
+          63966.74,
+          66504.72,
+          66187.29
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1927.86,
+        "priceJpy": 314528,
+        "change24hPct": 0.34,
+        "sparkline7d": [
+          1926.13,
+          1876.73,
+          1841.54,
+          1867.82,
+          1863.11,
+          1937.76,
+          1937.79
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.187118,
+        "priceJpy": 30.53,
+        "change24hPct": -2.94,
+        "sparkline7d": [
+          0.188434,
+          0.190056,
+          0.185,
+          0.186764,
+          0.185722,
+          0.1925,
+          0.191293
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 219.37,
+        "priceJpy": 35789,
+        "change24hPct": -1.99,
+        "sparkline7d": [
+          227.99,
+          222.37,
+          219.01,
+          218.77,
+          211.67,
+          224.88,
+          220.63
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-c92c0231",
+    "hatebu-it-48434950",
+    "hatebu-it-444f3142"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-cda83706",
+        "nhk-world-090ed44d",
+        "yahoo-topics-809451f4"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-a27f57d1"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-c92c0231",
+      "title": "Show HN: Bento - An entire PowerPoint in one HTML file (edit+view+data+collab)",
+      "url": "https://bento.page/slides/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-22T15:19:23.000Z",
+      "summaryJa": [
+        "Over the past few months, our team has been building more and more slidedecks us",
+        "<p>To avoid this loop, I ended up creat",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "Bento",
+        "An",
+        "entire"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 487,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 98.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-48434950",
+      "title": "Rust に書き直さなくても C 言語をメモリ安全にできる Fil-C を試した",
+      "url": "https://zenn.dev/mattn/articles/cace8c5a00b9cc",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-22T00:54:31.000Z",
+      "summaryJa": [
+        "はじめに 最近「どの言語で書くか」を巡る話題が続いています。",
+        "今年 5 月、Zig で書かれていた JavaScript ランタイム Bun が Rust に移植されました。",
+        "50 万行超の Zig コードを大量の Claude エージェントに書かせるという力技で、理由の一つにメモリ安全性由来のバグが挙げられていました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Rust",
+        "に書き直さなくても",
+        "言語をメモリ安全にできる",
+        "Fil",
+        "を試した"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 122,
+          "ageHours": 19,
+          "crossSources": 2,
+          "velocity": 6.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-444f3142",
+      "title": "ガーミンが画面なし＆ブランド初のバンド型トラッカー「CIRQA Smart Band」発表、約3.3万円",
+      "url": "https://k-tai.watch.impress.co.jp/docs/news/2127036.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-22T09:34:32.000Z",
+      "summaryJa": [
+        "ガーミンが画面なし＆ブランド初のバンド型トラッカー「CIRQA Smart Band」発表、約3.3",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Smart",
+        "Band」発表",
+        "約3.3万円"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 66,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 6.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-cda83706",
+      "title": "三重 静岡 岐阜で40度以上の「酷暑日」に 熱中症に厳重警戒を",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015182151000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-22T13:37:18.000Z",
+      "summaryJa": [
+        "22日は三重県と静岡県、それに岐阜県で最高気温が40度以上と、「酷暑日」となりました。",
+        "23日は東海に加え、京都市や甲府市でも「酷暑日」が予想されています。",
+        "熱中症で運ばれる人は全国で急増していて、厳重な…"
+      ],
+      "category": "news",
+      "keywords": [
+        "三重",
+        "静岡",
+        "岐阜で40度以上の「酷暑日」に",
+        "熱中症に厳重警戒を"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-090ed44d",
+      "title": "折りたたみ式スマホ薄型の新モデル発表 競争激化か",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015183071000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-07-22T20:04:58.000Z",
+      "summaryJa": [
+        "韓国のサムスン電子は、厚さ4ミリ余りと薄型で折りたたみ式のスマートフォンの最新モデルを発表しました。",
+        "折りたたみ式の機種は、IT大手アップルが今後初めて発売する見通しだと報じられていて、メーカーの間でこ…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "折りたたみ式スマホ薄型の新モデル発表",
+        "競争激化か"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-809451f4",
+      "title": "米国務長官 日中関係の悪化に憂慮",
+      "url": "https://news.yahoo.co.jp/pickup/6588959?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-07-22T14:10:40.000Z",
+      "summaryJa": [
+        "米国務長官 日中関係の悪化に憂慮",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "米国務長官",
+        "日中関係の悪化に憂慮"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-a27f57d1",
+      "title": "「第二の脳」とやらについて",
+      "url": "https://anond.hatelabo.jp/20260722172402",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-22T08:27:31.000Z",
+      "summaryJa": [
+        "ClaudeとObsidianを使って「第二の脳」を作る、という話を読んだ。",
+        "（これ↓） https://x.",
+        "com/chizevsm5/status/2079513704870142428 ふーん。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "「第二の脳」とやらについて"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 147,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 12.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "北朝鮮",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-22T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "北朝鮮"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "indieblog-04f0f779",
+      "title": "Amanda Stjerna: A review of the Tangara Open Hardware Hacker iPod Clone",
+      "url": "https://amandastjerna.se/blog/tangara/?utm_source=indieblog.page&utm_medium=random&utm_campaign=indieblog.page",
+      "source": "indieblog.page（個人ブログ）",
+      "sourceId": "indieblog",
+      "publishedAt": "2026-07-22T20:17:14.566Z",
+      "summaryJa": [
+        "Amanda Stjerna: A review of the Tangara Open Hardw",
+        "出典: indieblog.page（個人ブログ）",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "blog",
+      "keywords": [
+        "Amanda",
+        "Stjerna",
+        "review",
+        "of",
+        "the"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "オープンソースハードウェアでiPodを再構築する試みの実機レビュー記事です。音楽と電子工作を愛する作り手の創作意欲を強く刺激します。"
+  },
+  "unavailableSources": []
+}

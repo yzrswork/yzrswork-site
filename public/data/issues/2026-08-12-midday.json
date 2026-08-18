@@ -1,0 +1,505 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 66,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-08-12",
+  "dateDisplay": "Wednesday, August 12, 2026",
+  "pressTimeJst": "2026-08-12 12:00",
+  "generatedAt": "2026-08-12T02:48:13.612Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "手元で動かす計算の足場",
+    "note": "昼休みに自前のハードや低層のコードに触れ、午後の作業で手を動かしたくなる紙面"
+  },
+  "editorial": {
+    "comment": "中古GPUでローカルLLM環境を組む試算（zenn-trend-d59ef4e0）が興味深いです。高価な最新ハードに頼らず、手元の工夫で大容量メモリを手に入れて実験場を整える泥臭さは、午後の作業欲を直撃します。手動で足場を組む楽しさを胸に、手元のコードに向かいましょう。 —— YZRS Times 編集長",
+    "passedOver": "一太郎とWordの歴史物語やAI電子透かしを巡る時事ニュースは、昼休みに技術のインプットを深めたい読者向けではないため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "強い雨",
+    "icon": "rain",
+    "tempMax": 26,
+    "tempMin": 23,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 27,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63711,
+        "priceJpy": 10156115,
+        "change24hPct": -0.3,
+        "sparkline7d": [
+          64328.94,
+          64801.43,
+          64773.68,
+          64973.27,
+          65177.98,
+          64064.61,
+          63689.06
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1883.19,
+        "priceJpy": 300198,
+        "change24hPct": 0.6,
+        "sparkline7d": [
+          1873.01,
+          1911.51,
+          1911.67,
+          1919.03,
+          1922.43,
+          1876.88,
+          1880.72
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.161854,
+        "priceJpy": 25.8,
+        "change24hPct": 0.4,
+        "sparkline7d": [
+          0.167381,
+          0.162472,
+          0.161682,
+          0.164766,
+          0.16311,
+          0.162526,
+          0.161532
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 213.28,
+        "priceJpy": 33999,
+        "change24hPct": -0.2,
+        "sparkline7d": [
+          212.74,
+          214.63,
+          215.56,
+          216.76,
+          217.49,
+          212.7,
+          214.08
+        ]
+      }
+    ]
+  },
+  "top": [
+    "zenn-trend-d59ef4e0",
+    "lobsters-65f13d66",
+    "hatebu-it-ab9bb703"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hatebu-it-7385db15",
+        "hn-front-f1352db8",
+        "hn-front-35a5bcde"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-1195380b",
+        "zenn-trend-846e3207",
+        "qiita-popular-1366561a"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-16d5e0e6",
+        "lobsters-20cd5b07"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "zenn-trend-d59ef4e0",
+      "title": "中古サーバ用GPUでローカルLLM環境を作る試算（MI50 / P40 / P100 / V100 / CMP 170HX）",
+      "url": "https://zenn.dev/phpmyadmin/articles/used-server-gpu-local-llm",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-11T05:19:22.000Z",
+      "summaryJa": [
+        "追記：2026年8月11日 MI50とP40の情報を加えました。",
+        "表では触れていますが本文ではあまり触れられていません。",
+        "データセンターやマイニングで役目を終えた GPU が中古市場に流れている。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "MI50",
+        "P40",
+        "P100",
+        "V100",
+        "CMP"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 21,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-65f13d66",
+      "title": "My Anti AI computer",
+      "url": "https://punkx.org/jackdoe/home.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-11T17:31:53.000Z",
+      "summaryJa": [
+        "I made this computer to have a place where I can calm my mind, and to re-learn p",
+        "Comments",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Anti",
+        "AI",
+        "computer"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-ab9bb703",
+      "title": ".NET 11 Runtime Async はなぜ速いのか - Qiita",
+      "url": "https://qiita.com/hez2010/items/2aff0b2b40b9d0bfda91",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-11T22:29:10.000Z",
+      "summaryJa": [
+        "従来の async/await .",
+        "NET の非同期処理といえば、長いあいだ async/await が中心だった。",
+        "見た目は同期コードに近く、複雑になりやすい非同期処理を素直に書ける。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "NET",
+        "Runtime",
+        "Async",
+        "Qiita"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 32,
+          "ageHours": 4,
+          "crossSources": 2,
+          "velocity": 7.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-7385db15",
+      "title": "BM25を使用してCodexのトークンの消費を30%抑える",
+      "url": "https://zenn.dev/knowledgesense/articles/9e55a3bb67729c",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-11T10:46:19.000Z",
+      "summaryJa": [
+        "導入 こんにちは、株式会社ナレッジセンスの須藤英寿です。",
+        "今回は、コード探索にBM25を組み込むことで、回答品質とトークン消費がどのように変わるのかを、自社のコードベースで検証しました。",
+        "きっかけは、2026年7月に公開された論文「BM25 Wins at Scale」[1]です。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 126,
+          "ageHours": 16,
+          "crossSources": 2,
+          "velocity": 7.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-f1352db8",
+      "title": "Mojo 1.0",
+      "url": "https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-11T16:56:46.000Z",
+      "summaryJa": [
+        "Mojo 1.0",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Mojo"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 304,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 2,
+          "velocity": 30.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-35a5bcde",
+      "title": "Go is an ideal language for AI-assisted software engineering",
+      "url": "https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-11T16:57:09.000Z",
+      "summaryJa": [
+        "Go is an ideal language for AI-assisted software e",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Go",
+        "ideal",
+        "language",
+        "AI",
+        "assisted"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 287,
+          "hatebuCount": 38,
+          "ageHours": 10,
+          "crossSources": 2,
+          "velocity": 29.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-1195380b",
+      "title": "レンタルサーバーを作ってみた話と、これから作りたいもの",
+      "url": "https://zenn.dev/techfish4/articles/0c502382253a4e",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-10T15:43:49.000Z",
+      "summaryJa": [
+        "レンタルサーバーを作ってみた話と、これから作りたいもの こんにちは、さかなです。",
+        "2026年、技術者3人で「SORAHOST」というレンタルサーバーサービスを作り始めました。",
+        "現在は、Discord BotやWebアプリケーション、Minecraftサーバーなどを動かすためのホスティングサービスを提供しています。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "レンタルサーバーを作ってみた話と"
+      ],
+      "heat": {
+        "temperature": 44,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 35,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-846e3207",
+      "title": "N+1 問題を、発行される SQL を数えて理解する",
+      "url": "https://zenn.dev/mtmtdack/articles/2026-08-11-n-plus-one-counting-queries",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-10T16:17:55.000Z",
+      "summaryJa": [
+        "一覧ページが遅い。",
+        "SQL のログを見ると、同じ形のクエリが 100 本並んでいる。",
+        "これが N+1 問題の典型的な現場です。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "N+1",
+        "発行される",
+        "SQL"
+      ],
+      "heat": {
+        "temperature": 44,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 35,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-1366561a",
+      "title": "さくらのAI Engineで自作MCPサーバー×LangGraphエージェントを構築した話",
+      "url": "https://qiita.com/shibacorgi/items/21ec803d0c38980a9f9a?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-11T13:12:45.000Z",
+      "summaryJa": [
+        "〜無料枠で動くAI調査レポート自動生成システムの開発ログ〜 この記事はさくらのAI Engine 使い倒したで賞への応募記事です。",
+        "1.",
+        "はじめに：作ったもの 「テーマを入力するだけで、数分後にMarkdownレポートが完成する」 Webアプリを作りました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 14,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-16d5e0e6",
+      "title": "The fastest double-to-string algorithm you’ve never heard of",
+      "url": "https://vitaut.net/posts/2026/yy-dtoa/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-11T16:42:55.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "fastest",
+        "double",
+        "string",
+        "algorithm",
+        "you’ve"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-20cd5b07",
+      "title": "A noob learns FFT",
+      "url": "https://entropicthoughts.com/fft",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-11T12:41:37.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "noob",
+        "learns",
+        "FFT"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 14,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-43a6fa9c",
+      "title": "generative-design/Code-Package-p5.js — Code package of the book: Generative Design – Creative Coding for the Web with JavaScript in p5.js",
+      "url": "https://github.com/generative-design/Code-Package-p5.js",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-04T18:15:22Z",
+      "summaryJa": [
+        "Code package of the book: Generative Design – Creative Coding for the Web with J",
+        "js",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "generative",
+        "design/Code",
+        "Package",
+        "p5.js",
+        "Code"
+      ],
+      "heat": {
+        "temperature": 40,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 177,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "ジェネラティブデザインの名著をp5.jsで再現したコード集です。数学とコードが作る美しいグラフィックを手元で動かし、午後の創造的な実験に直結できます。"
+  },
+  "unavailableSources": []
+}

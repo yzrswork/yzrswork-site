@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 10,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-15",
+  "dateDisplay": "Wednesday, July 15, 2026",
+  "pressTimeJst": "2026-07-15 12:00",
+  "generatedAt": "2026-07-15T05:17:14.099Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "道具の手触り",
+    "note": "他者が作った巨大な仕組みをそのまま消費するのではなく、自分の手元に引き寄せ、解剖し、あるいは自作する。作り手としての心地よい執念が光る技術たち。"
+  },
+  "editorial": {
+    "comment": "自前でローカルLLMを動かす熱意や、ベアメタルでFM音源を鳴らす執念。やはり『自分のコントロール下にある道具』に私たちは強く惹かれます。午後は少しだけ、手のなじむ道具のメンテに時間を使ってみませんか。 —— YZRS Times 編集長",
+    "passedOver": "GMO熊谷氏の在宅廃止にまつわるタイピング数の議論は、多くの反響を呼びましたが、昼休みの技術インプットには刺激が強すぎるため紙面から割愛しました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "曇り",
+    "icon": "cloudy",
+    "tempMax": 33,
+    "tempMin": 25,
+    "precipChancePct": 18
+  },
+  "market": {
+    "fearGreed": {
+      "value": 25,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64581,
+        "priceJpy": 10473764,
+        "change24hPct": 2.96,
+        "sparkline7d": [
+          63287.2,
+          61931.84,
+          63950.3,
+          64142.04,
+          64124.3,
+          62205.61,
+          64964.48
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1871.39,
+        "priceJpy": 303504,
+        "change24hPct": 4.72,
+        "sparkline7d": [
+          1768.04,
+          1729.22,
+          1771.91,
+          1798.84,
+          1820.05,
+          1772.53,
+          1889.48
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.182829,
+        "priceJpy": 29.65,
+        "change24hPct": 2.06,
+        "sparkline7d": [
+          0.188523,
+          0.181196,
+          0.190196,
+          0.19004,
+          0.187758,
+          0.181255,
+          0.184821
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 234.47,
+        "priceJpy": 38026,
+        "change24hPct": -0.37,
+        "sparkline7d": [
+          239.44,
+          233.36,
+          243.21,
+          246.72,
+          245.32,
+          235.78,
+          236.04
+        ]
+      }
+    ]
+  },
+  "top": [
+    "zenn-trend-656bee23",
+    "hn-front-2e502fc1",
+    "lobsters-827d361d"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-eba6cc0c",
+        "hatebu-it-7ed22b7a"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-4462e9e4",
+        "qiita-popular-118d38db"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-f40f74ff",
+        "lobsters-15ab6539"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "zenn-trend-656bee23",
+      "title": "ローカル LLM を構築した",
+      "url": "https://zenn.dev/neet/articles/11bafab8645995",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-14T08:13:16.000Z",
+      "summaryJa": [
+        "!",
+        "AI 利用の開示：この記事を書くにあたっての調査やブレインストーミング、校正には AI を用いましたが、本文の執筆やコードの実装、および出典の確認はすべて人間が",
+        "AI は好きだが AI 企業は嫌いだ こんにちは。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "ローカル",
+        "LLM",
+        "を構築した"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 21,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-2e502fc1",
+      "title": "Jurassic Park computers in excruciating detail",
+      "url": "https://fabiensanglard.net/jurrasic_park_computers/index.html",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-15T02:57:47.000Z",
+      "summaryJa": [
+        "Jurassic Park computers in excruciating detail",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Jurassic",
+        "Park",
+        "computers",
+        "in",
+        "excruciating"
+      ],
+      "heat": {
+        "temperature": 96,
+        "signals": {
+          "hnPoints": 144,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 2,
+          "velocity": 62
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-827d361d",
+      "title": "Low Resource Computing 2026",
+      "url": "https://lrc.cs.dartmouth.edu/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-15T02:13:19.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Low",
+        "Resource",
+        "Computing",
+        "2026"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-eba6cc0c",
+      "title": "Bonsai 27B: A 27B-Class model that runs on a phone",
+      "url": "https://prismml.com/news/bonsai-27b",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-14T17:50:48.000Z",
+      "summaryJa": [
+        "Bonsai 27B: A 27B-Class model that runs on a phone",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Bonsai",
+        "27B",
+        "Class",
+        "model",
+        "that"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 501,
+          "hatebuCount": 0,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 43.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-7ed22b7a",
+      "title": "手離れするインフラ設計を考える - /var/www/yatta47.log",
+      "url": "https://yatta47.hateblo.jp/entry/2026/03/20/221447",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-15T01:23:31.000Z",
+      "summaryJa": [
+        "今回はコラムのような感じ。",
+        "ちょっとしたきっかけで思い浮かんだので書いてみる。",
+        "きっかけ: 6年前のスライドが今も正しかった Songmu氏（松木雅幸、Nature CTO）が2020年のInfra Study Meetupで発表した「In"
+      ],
+      "category": "programming",
+      "keywords": [
+        "手離れするインフラ設計を考える",
+        "/var/www/yatta47.log"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 54,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 13.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-4462e9e4",
+      "title": "herdr を活用した Codex とのオーケストレーション用 Claude Code Plugin を作ってみた",
+      "url": "https://zenn.dev/genda_jp/articles/46745564b7a9dd",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-14T09:42:25.000Z",
+      "summaryJa": [
+        "はじめに 株式会社GENDA 開発部エンジニアの奥山です。",
+        "先日、「Claude Code サブエージェントのネスト機能で .",
+        "claude/agents/ の定義が効いた話」を書きました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "herdr",
+        "を活用した",
+        "Codex",
+        "とのオーケストレーション用",
+        "Claude"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 20,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-118d38db",
+      "title": "Railsで学ぶ 暗号化とハッシュ 〜master.keyやDeviseは内部で何をしている？〜",
+      "url": "https://qiita.com/akachiryo/items/5a1deaa541d70e11d85f?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-14T06:07:22.000Z",
+      "summaryJa": [
+        "お疲れ様です！",
+        "前回までで「index」「レースコンディション（ユニーク制約）」あたりを扱ってきましたが、今回は 暗号化とハッシュ の話です。",
+        "Railsを使っていると当たり前に出てくる master."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Railsで学ぶ",
+        "暗号化とハッシュ"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 23,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-f40f74ff",
+      "title": "A modern HTTP request",
+      "url": "https://nelsonslog.wordpress.com/2026/07/14/a-modern-http-request/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-15T00:34:39.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "modern",
+        "HTTP",
+        "request"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-15ab6539",
+      "title": "Measuring input latency on Linux: X11 vs Wayland, VRR, and DXVK",
+      "url": "https://marco-nett.de/blog/measuring-input-latency-on-linux-x11-vs-wayland-vrr-dxvk/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-14T18:07:13.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Measuring",
+        "input",
+        "latency",
+        "on",
+        "Linux"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-c30261fb",
+      "title": "probonopd/MiniDexed — Dexed FM synthesizer similar to 8x DX7 (TX816/TX802) running on a bare metal Raspberry Pi (without a Linux kernel or operating system)",
+      "url": "https://github.com/probonopd/MiniDexed",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-04-18T09:39:51Z",
+      "summaryJa": [
+        "Dexed FM synthesizer similar to 8x DX7 (TX816/TX802) running on a bare metal Ras",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "probonopd/MiniDexed",
+        "Dexed",
+        "FM",
+        "synthesizer",
+        "similar"
+      ],
+      "heat": {
+        "temperature": 40,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 2108,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "ベアメタルでRaspberry Piを駆動し、伝説の名機DX7のFM音源を再現する、ロマンあふれる小さなOSSです。OSを介さないからこそ実現できる圧倒的な低遅延と、ダイレクトな音作りの楽しさをぜひ味わってください。"
+  },
+  "unavailableSources": []
+}

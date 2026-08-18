@@ -1,0 +1,502 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 41,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-31",
+  "dateDisplay": "Friday, July 31, 2026",
+  "pressTimeJst": "2026-07-31 05:00",
+  "generatedAt": "2026-07-30T20:18:18.265Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "素朴な質感と開発の足場",
+    "note": "過飾なシステムから距離を置き、古き良き手触りと堅牢な基盤を見つめ直す朝刊です。"
+  },
+  "editorial": {
+    "comment": "本日の紙面で一番心が和んだのは、レトロなUIで素朴な会話を取り戻す「chat.exe」（hatebu-it-a7842ccc）です。アルゴリズムや通知に追われる現代のSNSから離れ、純粋に通信を楽しむ設計には、ものづくりの原点を感じます。慌ただしい朝の始まりに、こうした小さな仕掛けから勇気をもらうのも悪くありません。 —— YZRS Times 編集長",
+    "passedOver": "GPT-5.6に関する広報・実験記事（hn-front-60021f2c, hn-front-4e3d9a11）は、議論が過熱しているものの具体性に乏しいため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "曇り",
+    "icon": "cloudy",
+    "tempMax": 35,
+    "tempMin": 25,
+    "precipChancePct": 92
+  },
+  "market": {
+    "fearGreed": {
+      "value": 28,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64728,
+        "priceJpy": 10317228,
+        "change24hPct": 0.4,
+        "sparkline7d": [
+          64804.78,
+          64099,
+          64484.49,
+          65160.08,
+          63395.99,
+          64063.46,
+          64649.68
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1920.22,
+        "priceJpy": 306071,
+        "change24hPct": 0.2,
+        "sparkline7d": [
+          1874.62,
+          1861.26,
+          1880.14,
+          1964.38,
+          1876.59,
+          1894.36,
+          1914.8
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.1728,
+        "priceJpy": 27.54,
+        "change24hPct": 0,
+        "sparkline7d": [
+          0.182686,
+          0.177735,
+          0.177549,
+          0.181915,
+          0.171115,
+          0.172962,
+          0.172181
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 218.23,
+        "priceJpy": 34785,
+        "change24hPct": 3.4,
+        "sparkline7d": [
+          209.86,
+          210.79,
+          210.77,
+          216.34,
+          212.77,
+          209.94,
+          219.49
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-a7842ccc",
+    "hn-front-11a4288c",
+    "nhk-top-5a22875e"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-c1823849",
+        "nhk-world-4fd00ebd",
+        "yahoo-topics-0c45b1e5"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-c549af4f",
+        "hatebu-it-376044ad",
+        "hn-front-edeb2222",
+        "hatebu-it-a1d71dcf"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-a7842ccc",
+      "title": "chat.exe - あの頃のUIで繋がる、超軽量ビデオ＆音声チャット",
+      "url": "https://chatexe.net/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-30T09:00:39.000Z",
+      "summaryJa": [
+        "■ アプリ概要 インターネットの原風景がここにある。",
+        "Windows 95/98風のレトロなUIと、現代のリアルタイム通信が融合した新感覚チャットアプリ！",
+        "「いいね」もない、「フォロー」もない、広告もない、おすすめアルゴリズムもない、AIに学習されることもない。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "chat.exe",
+        "超軽量ビデオ＆音声チャット"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 75,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 6.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-11a4288c",
+      "title": "Stacked PRs are now live on GitHub",
+      "url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-30T16:26:16.000Z",
+      "summaryJa": [
+        "Stacked PRs are now live on GitHub",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Stacked",
+        "PRs",
+        "live",
+        "GitHub"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 211,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 2,
+          "velocity": 54.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-5a22875e",
+      "title": "【被害状況】熊本地震 関連調査中含め34人死亡 熊本県発表",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015191421000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-30T20:06:47.000Z",
+      "summaryJa": [
+        "熊本県は30日の災害対策本部会議で、今回の地震で亡くなったかどうか調査中の人も含めて34人が死亡したと発表しました。",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "被害状況",
+        "熊本地震",
+        "関連調査中含め34人死亡",
+        "熊本県発表"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-c1823849",
+      "title": "ポーランドに飛しょう体が落下 “ロシアのミサイルの可能性”",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015191301000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-30T20:03:30.000Z",
+      "summaryJa": [
+        "ウクライナの隣国、ポーランドの東部に30日、飛しょう体が落下し、ポーランド政府はロシアのミサイルだった可能性が高いとしたうえで、詳しい調査を進める考えを示しまし",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "ポーランドに飛しょう体が落下",
+        "ロシアのミサイルの可能性"
+      ],
+      "heat": {
+        "temperature": 60,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-4fd00ebd",
+      "title": "アメリカGDP 4月-6月プラス1.5％ 堅調な個人消費やAI投資背景",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015191341000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-07-30T14:21:31.000Z",
+      "summaryJa": [
+        "アメリカのことし4月から6月までのGDP＝国内総生産が発表され、前の3か月と比べた伸び率は、年率に換算してプラス1.",
+        "5％となりました。",
+        "前の期よりも減速したものの底堅い個人消費やAI関連への活発な投資な…"
+      ],
+      "category": "news",
+      "keywords": [
+        "アメリカGDP",
+        "4月",
+        "6月プラス1.5％",
+        "堅調な個人消費やAI投資背景"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-0c45b1e5",
+      "title": "熊本地震 ボラ受け入れ態勢準備中",
+      "url": "https://news.yahoo.co.jp/pickup/6589953?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-07-30T13:01:28.000Z",
+      "summaryJa": [
+        "熊本地震 ボラ受け入れ態勢準備中",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "熊本地震",
+        "ボラ受け入れ態勢準備中"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-c549af4f",
+      "title": "『WindowsユーザーのためのWSLで始めるLinux環境構築術』を公開しました",
+      "url": "https://virtualtech.jp/2026-07-29/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-30T15:36:27.000Z",
+      "summaryJa": [
+        "技術メディア ThinkIT にて連載していた「Windowsユーザーのための WSL2で始める Linux環境構築術」の全29回に渡って執筆を担当いたしました",
+        "執筆完了を記念し、構成・内容・文章をすべて見直し、最新の知見を踏まえて全面的にリライトした再構築版として公開しました。",
+        "連載で培われた知見をもとに、より体系的で実践."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 21,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 4.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-376044ad",
+      "title": "「働くしんどさ」とどう付き合っていくか———『エンジニアのための自己管理入門』著者、小田中育生さんインタビュー",
+      "url": "https://agend.jp/media/ikuo-self-management/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-30T01:42:05.000Z",
+      "summaryJa": [
+        "「働くしんどさ」とどう付き合っていくか———『エンジニアのための自己管理入門』著者、小田中育生さんインタビュー",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "働くしんどさ",
+        "エンジニアのための自己管理入門",
+        "著者",
+        "小田中育生さんインタビュー"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 129,
+          "ageHours": 19,
+          "crossSources": 1,
+          "velocity": 6.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-edeb2222",
+      "title": "Making Postgres queues scale",
+      "url": "https://www.dbos.dev/blog/making-postgres-queues-scale",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-30T18:39:32.000Z",
+      "summaryJa": [
+        "Making Postgres queues scale",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Postgres",
+        "queues",
+        "scale"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 57,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 34.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-a1d71dcf",
+      "title": "ソフトウェアエンジニアとして視野を広げるためのブックガイド",
+      "url": "https://zenn.dev/shotaro_tsuji/articles/091517e89ab17d",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-29T04:45:53.000Z",
+      "summaryJa": [
+        "はじめに 私が読んできたソフトウェアエンジニアリングに関する書籍を紹介しようと思います。",
+        "全てを紹介しているとキリがないので、プログラミング、データベース、アーキテクチャ、プロダクト、組織とマネジメントという括りで、それぞれ何冊か選びました。",
+        "コードを書くところから始めて、徐々にシステム、プロダクト、."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 238,
+          "ageHours": 40,
+          "crossSources": 2,
+          "velocity": 6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "ロシア ウクライナ",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-30T19:40:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "ロシア",
+        "ウクライナ"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-45f6223f",
+      "title": "ad-si/awesome-music-production — A curated list of software, services, and resources to create and distribute music",
+      "url": "https://github.com/ad-si/awesome-music-production",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-19T18:38:38Z",
+      "summaryJa": [
+        "A curated list of software, services, and resources to create and distribute mus",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "ad",
+        "si/awesome",
+        "music",
+        "production",
+        "curated"
+      ],
+      "heat": {
+        "temperature": 40,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 266,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "音楽制作を支えるオープンソースのツールやリソースが網羅されたリストです。プログラミングと音作りを横断して作品を生み出すあなたの創作意欲を、静かに後押ししてくれます。"
+  },
+  "unavailableSources": []
+}

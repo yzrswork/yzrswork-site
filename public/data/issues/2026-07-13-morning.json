@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 6,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-13",
+  "dateDisplay": "Monday, July 13, 2026",
+  "pressTimeJst": "2026-07-13 05:00",
+  "generatedAt": "2026-07-12T20:34:47.891Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "透明な道具",
+    "note": "AIの背後にあるコストから、日常を支えるインフラまで。道具をただ使うのではなく、その裏側を覗き込む日の紙面です。"
+  },
+  "editorial": {
+    "comment": "『Claude Code』のトークン消費の分析記事は、ツールがいかに見えないコストを積み上げているかを可視化しており、エンジニアにとって極めて示唆に富む内容でした。便利さの裏側を疑う眼差しこそ、現代の作り手に必要な資質です。",
+    "passedOver": "ウクライナ関連のニュースは重要ですが、読者の創作への没入を妨げる性質が強いため、今回は優先順位を下げました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "弱い雨",
+    "icon": "rain",
+    "tempMax": 27,
+    "tempMin": 24,
+    "precipChancePct": 71
+  },
+  "market": {
+    "fearGreed": {
+      "value": 26,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64142,
+        "priceJpy": 10368568,
+        "change24hPct": -0.27,
+        "sparkline7d": [
+          62575.48,
+          64371.48,
+          63001.39,
+          62513.23,
+          64212.07,
+          64135.08,
+          64126.8
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1818.17,
+        "priceJpy": 293910,
+        "change24hPct": -0.37,
+        "sparkline7d": [
+          1778.15,
+          1813.46,
+          1754.74,
+          1746.93,
+          1791.12,
+          1800.92,
+          1817.38
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.189497,
+        "priceJpy": 30.63,
+        "change24hPct": -1.29,
+        "sparkline7d": [
+          0.199442,
+          0.201954,
+          0.186031,
+          0.181639,
+          0.193319,
+          0.190203,
+          0.189428
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 246.05,
+        "priceJpy": 39775,
+        "change24hPct": -0.59,
+        "sparkline7d": [
+          239.25,
+          246.92,
+          237.62,
+          237.06,
+          245.34,
+          247.35,
+          244.56
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-c0b2e688",
+    "hatebu-it-a1590a9d",
+    "hatebu-it-f01ed486"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-81648736",
+        "nhk-top-976c81f4",
+        "nhk-top-b5370f3c",
+        "nhk-top-7ee541a0"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-a293ec4e"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-c0b2e688",
+      "title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+      "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-12T18:25:51.000Z",
+      "summaryJa": [
+        "This started based off of a hunch.",
+        "We usually use OpenCode, but were &#x27;forced&#x27; to use Claude Code for a wh",
+        "In that time, we saw the usage meter rise much, much more quickly than when usin"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Claude",
+        "Code",
+        "sends",
+        "33k",
+        "tokens"
+      ],
+      "heat": {
+        "temperature": 91,
+        "signals": {
+          "hnPoints": 223,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 103.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-a1590a9d",
+      "title": "前の客のATM暗証番号も丸見え…日本でも普及し始めた「スマートグラス」を使用してみた結果。“新型盗撮”に悪用の可能性も | 日刊SPA!",
+      "url": "https://nikkan-spa.jp/2172263",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-12T10:36:28.000Z",
+      "summaryJa": [
+        "今年に入り、新たなデバイスが台頭しつつある。",
+        "それはスマートグラスだ。",
+        "5月下旬、レイバンと米メタが共同開発した「Ray-Ban Meta（第2世代）」が国内で正式発売された。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "新型盗撮",
+        "に悪用の可能性も",
+        "日刊SPA!"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 198,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 19.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-f01ed486",
+      "title": "GitHub Actions の parallel でデプロイは8分→3分、CI はコスト3割減になった",
+      "url": "https://zenn.dev/hatsu/articles/github-actions-steps-parallel",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-12T02:12:00.000Z",
+      "summaryJa": [
+        "こんにちは、hatsu です。",
+        "先日、GitHub Actions で同じ job の中にある複数のステップを並列に実行できる parallel / background が 2026-06-",
+        "これまで job の並列化はできましたが、step の並列化はできませんでした。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "GitHub",
+        "Actions",
+        "parallel",
+        "でデプロイは8分→3分",
+        "CI"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 90,
+          "ageHours": 18,
+          "crossSources": 2,
+          "velocity": 4.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-81648736",
+      "title": "タイ バンコクの飲食店で火災 AP通信“少なくとも27人が死亡”",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015175291000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-12T19:45:23.000Z",
+      "summaryJa": [
+        "タイの首都バンコクにある飲食店で13日未明、大規模な火災があり、AP通信によりますと、少なくとも27人が死亡したということです。",
+        "火はすでに消し止められたということで、当局が火災の詳しい原因を調べていま…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "タイ",
+        "バンコクの飲食店で火災",
+        "AP通信",
+        "少なくとも27人が死亡"
+      ],
+      "heat": {
+        "temperature": 60,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-976c81f4",
+      "title": "国会最終盤　与党 残された法案成立を　野党 丁寧な審議を",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015175131000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-12T19:56:10.000Z",
+      "summaryJa": [
+        "国会の会期末が4日後に迫る中、与党は皇室典範改正案や、「副首都」構想の関連法案など残る法案の成立に全力を挙げる方針です。",
+        "これに対し野党は、課題のある法案も多く丁寧な審議が必要だとしていて、会期末を見据…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "国会最終盤",
+        "与党",
+        "残された法案成立を",
+        "野党",
+        "丁寧な審議を"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-b5370f3c",
+      "title": "スマホオプション 気づかず10年以上支払いも 相談相次ぐ",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015171821000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-12T09:01:12.000Z",
+      "summaryJa": [
+        "スマートフォンを購入する際に勧められるオプションサービス。",
+        "「不要なオプションを契約し、長年にわたって支払いが続いていた」などのトラブルの相談が消費生活センターに相次いでいます。",
+        "中には本人が気づかないま…"
+      ],
+      "category": "news",
+      "keywords": [
+        "スマホオプション",
+        "気づかず10年以上支払いも",
+        "相談相次ぐ"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-7ee541a0",
+      "title": "“かぶりたくなるデザイン” の自転車用ヘルメット開発 警視庁",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015175071000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-12T09:19:13.000Z",
+      "summaryJa": [
+        "自転車などのヘルメットの着用率を上げようと、警視庁は「かぶりたくなるデザイン」をテーマにしたヘルメットを大学生などとともに開発し、12日、都内で開かれた交通安全",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "かぶりたくなるデザイン",
+        "の自転車用ヘルメット開発",
+        "警視庁"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-a293ec4e",
+      "title": "ナレッジグラフだけじゃない。AIエージェントが使う5種類のグラフ",
+      "url": "https://zenn.dev/knowledge_graph/articles/ai-agent-five-graph-types",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-11T23:11:58.000Z",
+      "summaryJa": [
+        "本シリーズ 第1部（全3部）: AI エージェント文脈のグラフを Node / Edge の意味で 5 種類に分類します。",
+        "特殊化は 第2部、レイヤー連携と本番構成は第3部（執筆予定）で扱います。",
+        "前提: ナレッジグラフの基礎（エンティティ・関係・GraphRAG との区別）は「ナレッジグラフ入門」「RAG を超える知識統合」で扱っています."
+      ],
+      "category": "programming",
+      "keywords": [
+        "ナレッジグラフだけじゃない",
+        "AIエージェントが使う5種類のグラフ"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 113,
+          "ageHours": 21,
+          "crossSources": 2,
+          "velocity": 5.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "タイガース 対 フィリーズ",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-12T20:20:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "タイガース",
+        "フィリーズ"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-a3671c35",
+      "title": "tobychui/arozos — Web Desktop Operating System for low power platforms, Now written in Go!",
+      "url": "https://github.com/tobychui/arozos",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-12T16:15:28Z",
+      "summaryJa": [
+        "Web Desktop Operating System for low power platforms, Now written in Go!",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "tobychui/arozos",
+        "Web",
+        "Desktop",
+        "Operating",
+        "System"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "低電力プラットフォームで動くWebデスクトップOSという発想に、小型ガジェットへのロマンを感じます。Go言語で書き直されたという技術的経緯も、実験的な試みとして非常に好ましいです。"
+  },
+  "unavailableSources": []
+}

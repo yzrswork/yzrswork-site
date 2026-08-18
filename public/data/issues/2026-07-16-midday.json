@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 12,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-16",
+  "dateDisplay": "Thursday, July 16, 2026",
+  "pressTimeJst": "2026-07-16 12:00",
+  "generatedAt": "2026-07-16T05:27:44.014Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "静かなる設計の美学",
+    "note": "昼下がりのひととき、複雑なシステムを単純な型に還元し、自らの手で制御する喜びを再確認する。"
+  },
+  "editorial": {
+    "comment": "吉里吉里の設計思想に触れ、道具を深く愛する姿勢を思い出しました。複雑な環境をHTMXとサーバーレスで月50円に収める森川氏のような工夫こそ、エンジニアの真骨頂です。",
+    "passedOver": "クレカ障害やサイバー攻撃などの時事ネタは、今の静かな思索を妨げるため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 34,
+    "tempMin": 25,
+    "precipChancePct": 95
+  },
+  "market": {
+    "fearGreed": {
+      "value": 25,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64860,
+        "priceJpy": 10514874,
+        "change24hPct": 0.37,
+        "sparkline7d": [
+          62252.64,
+          63881.12,
+          64110.97,
+          63971.9,
+          62705.62,
+          64526.86,
+          64831.34
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1923.8,
+        "priceJpy": 311881,
+        "change24hPct": 2.79,
+        "sparkline7d": [
+          1736.81,
+          1773.17,
+          1798.2,
+          1803.29,
+          1775.33,
+          1873.77,
+          1921.91
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.189112,
+        "priceJpy": 30.66,
+        "change24hPct": 3.7,
+        "sparkline7d": [
+          0.181255,
+          0.189677,
+          0.189739,
+          0.186157,
+          0.182501,
+          0.184885,
+          0.189147
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 222.6,
+        "priceJpy": 36087,
+        "change24hPct": -5.14,
+        "sparkline7d": [
+          235.14,
+          242.55,
+          244.19,
+          246.21,
+          238.25,
+          236.49,
+          226.97
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-38df8dd7",
+    "hatebu-it-2fe98d05",
+    "qiita-popular-b513ed18"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-9459cd17",
+        "lobsters-39ac7d28"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-1b238512",
+        "qiita-popular-dd8f9abb",
+        "zenn-trend-9c6b5367"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-33408f3b",
+        "lobsters-35daf53c",
+        "lobsters-edf3c4eb"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-38df8dd7",
+      "title": "『Fate』を生んだゲームエンジン「吉里吉里」の設計思想【フォーカス】 - レバテックLAB",
+      "url": "https://levtech.jp/media/detail_891/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-16T00:36:55.000Z",
+      "summaryJa": [
+        "ゲームエンジン「吉里吉里1～3」開発者 W.",
+        "Dee ソフトウェアエンジニア。",
+        "学生だった1999年、ゲームエンジン「吉里吉里」シリーズおよびスクリプト言語「TJS」、シナリオシステム「KAG」の開発を開始する。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "レバテックLAB"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 59,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 12.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-2fe98d05",
+      "title": "デロイトが国に納品したスライド351枚、全部数えたらパターンは7つだけだった｜うちた",
+      "url": "https://note.com/uchita_success/n/n030ad63765d3",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-15T01:04:34.000Z",
+      "summaryJa": [
+        "一番意外だったのは、7つのうち“1つの型”だけで45%を占めていたこと。",
+        "一流ほど、派手な技より“基本の型”を使い倒すんです。",
+        "全部言語化して、AIで再現するプロンプトも作ったので置いておきます。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "デロイトが国に納品したスライド351枚"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 1145,
+          "ageHours": 28,
+          "crossSources": 1,
+          "velocity": 40.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-b513ed18",
+      "title": "ｳﾝ十台の検証環境の管理を1つのWebコンソールに統合した話 〜HTMX + サーバレスで月額50円運用〜",
+      "url": "https://qiita.com/morishio/items/df304e891fb2405a2d30?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-15T00:47:33.000Z",
+      "summaryJa": [
+        "こちらの記事は 「Medley Summer Tech Blog Relay」 の 3日目 の記事です はじめに こんにちは。",
+        "株式会社メドレーの SRE グループ所属の森川です⚙️ 弊社が運営するサービス ジョブメドレー では開発者向けに「sb 環境」と呼ばれる検.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "〜HTMX",
+        "サーバレスで月額50円運用〜"
+      ],
+      "heat": {
+        "temperature": 46,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 29,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-9459cd17",
+      "title": "If you want to create a button from scratch, you must first create the universe",
+      "url": "https://madcampos.dev/blog/2026/07/accessibility-from-scratch/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-16T03:48:43.000Z",
+      "summaryJa": [
+        "If you want to create a button from scratch, you m",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "If",
+        "you",
+        "want",
+        "to",
+        "create"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 37,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 22.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-39ac7d28",
+      "title": "Detecting Full Table Scans With SQLite",
+      "url": "https://tenderlovemaking.com/2026/07/15/detecting-full-table-scans-with-sqlite/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-15T23:57:58.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Detecting",
+        "Full",
+        "Table",
+        "Scans",
+        "With"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-1b238512",
+      "title": "RunCat Neo カスタムメトリクス入門",
+      "url": "https://zenn.dev/kyome/articles/eb4a9f664002ad",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-15T09:00:13.000Z",
+      "summaryJa": [
+        "はじめに RunCat Neo はmacOSのメニューバーでネコが走る常駐アプリです。",
+        "CPU負荷に応じてネコの走る速さが変わるので、直感的にマシンの状態が確認できます。",
+        "このアプリには カスタムメトリクス という機能があります。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "RunCat",
+        "Neo",
+        "カスタムメトリクス入門"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 20,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-dd8f9abb",
+      "title": "コードを書かせるだけは、正直もったいない。Claude Codeを「先生」として使い倒す5つのプロンプト",
+      "url": "https://qiita.com/jqit_suwa/items/2f38d32328996d826d48?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-14T23:29:02.000Z",
+      "summaryJa": [
+        "はじめに Claude Code、コードを書かせるだけで使ってませんか？",
+        "それ、正直めちゃくちゃもったいないです。",
+        "Claude Code のすごいところは、手を動かしてくれる相棒であると同時に、隣に座ってる先生でもあること。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "コードを書かせるだけは",
+        "正直もったいない",
+        "Claude"
+      ],
+      "heat": {
+        "temperature": 46,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 30,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-9c6b5367",
+      "title": "FigmaデザインをReact実装に落とし込むときの確認ポイント",
+      "url": "https://zenn.dev/sre_holdings/articles/c994b1db6ff812",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-15T04:24:34.000Z",
+      "summaryJa": [
+        "SREホールディングス株式会社でエンジニアをしているサティヤです。",
+        "はじめに フロントエンド開発では、Figmaなどで作成されたデザインをもとに、Reactで画面を実装することがよくあります。",
+        "一見すると「デザイン通りに作るだけ」に見えますが、実際に実装してみると確認すべきポイントは意外と多いです。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 25,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-33408f3b",
+      "title": "Linus Torvalds on LLM usage in kernel development",
+      "url": "https://lore.kernel.org/linux-media/CAHk-=wi4zC+Ze8e+p3tMv8TtG_80KzsZ1syL9anBtmEh5Z40vg@mail.gmail.com/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-16T03:19:34.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Linus",
+        "Torvalds",
+        "on",
+        "LLM",
+        "usage"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-35daf53c",
+      "title": "Abstracting effects with continuations",
+      "url": "https://crowdhailer.me/2026-07-15/abstracting-effects-with-continuations/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-15T22:57:15.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Abstracting",
+        "effects",
+        "with",
+        "continuations"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-edf3c4eb",
+      "title": "The Shape of Apps",
+      "url": "https://parakeet.co/blog/the-shape-of-apps/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-16T02:55:49.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "The",
+        "Shape",
+        "of",
+        "Apps"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-f6ae6f69",
+      "title": "usetrmnl/trmnl-firmware — TRMNL ePaper device firmware",
+      "url": "https://github.com/usetrmnl/trmnl-firmware",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-15T19:28:36Z",
+      "summaryJa": [
+        "TRMNL ePaper device firmware",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "usetrmnl/trmnl",
+        "firmware",
+        "TRMNL",
+        "ePaper",
+        "device"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "e-Paperデバイスのファームウェアという、硬派で限定的な対象を扱うプロジェクトです。あなたの机の隅に静かに置かれたガジェットを、自らの手で再構築するための最適な素材となるでしょう。"
+  },
+  "unavailableSources": []
+}

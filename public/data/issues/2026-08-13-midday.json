@@ -1,0 +1,478 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 68,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-08-13",
+  "dateDisplay": "Thursday, August 13, 2026",
+  "pressTimeJst": "2026-08-13 12:00",
+  "generatedAt": "2026-08-13T02:47:37.105Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "実行基盤へ切り込む最適化",
+    "note": "標準メソッドの内部実装からローカルのビルド環境、ハードウェアの通信制御まで、既存の仕組みを分解・最適化して手元で動かす実験的アプローチを集めました。"
+  },
+  "editorial": {
+    "comment": "ChromiumのV8エンジンにおけるcopyWithinメソッドを最大450倍高速化した記事（zenn-trend-9ea22d3f）には頭が下がります。普段ライブラリや言語機能として当たり前に使っているコードの裏側を泥臭く追いかけ、桁違いの性能向上をもぎ取る姿勢は、午後の作業に向けた何よりの刺激になるはずです。手元のコードも、一度その奥底まで覗き込んでみたくさせられます。 —— YZRS Times 編集長",
+    "passedOver": "Grok 4.6やDeepSeek V4などのAIモデル更新発表。午後の作業で手を動かすための実装ノウハウや自作ハックに直結しない最新速報であるため今回は見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "弱い雨",
+    "icon": "rain",
+    "tempMax": 28,
+    "tempMin": 23,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 29,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63433,
+        "priceJpy": 10113547,
+        "change24hPct": -0.4,
+        "sparkline7d": [
+          64518.67,
+          64265.55,
+          64953.65,
+          65154.08,
+          63815.43,
+          63677.41,
+          63504.76
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1874.89,
+        "priceJpy": 298927,
+        "change24hPct": -0.3,
+        "sparkline7d": [
+          1905.61,
+          1898.83,
+          1917.76,
+          1921.36,
+          1868.86,
+          1880.19,
+          1878.93
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.159826,
+        "priceJpy": 25.48,
+        "change24hPct": -1.1,
+        "sparkline7d": [
+          0.161989,
+          0.160751,
+          0.163787,
+          0.162876,
+          0.161872,
+          0.161858,
+          0.160011
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 214.28,
+        "priceJpy": 34163,
+        "change24hPct": 0,
+        "sparkline7d": [
+          213.8,
+          214.33,
+          217.03,
+          217.16,
+          213.03,
+          212.8,
+          213.95
+        ]
+      }
+    ]
+  },
+  "top": [
+    "zenn-trend-9ea22d3f",
+    "qiita-popular-dd34bc22",
+    "lobsters-e24db92b"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hatebu-it-cb9c2175",
+        "hatebu-it-ea455006",
+        "hatebu-it-49d05da8"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "qiita-popular-a3270937",
+        "zenn-trend-44072ee0"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-5d9eb5a2",
+        "lobsters-e3416fac"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "zenn-trend-9ea22d3f",
+      "title": "Chromium(V8)のArray.prototype.copyWithinを最大約450倍高速化した",
+      "url": "https://zenn.dev/dinii/articles/a272b7c3b60ab8",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-12T00:01:18.000Z",
+      "summaryJa": [
+        "はじめに !",
+        "修正や追加等はコメントまたはGitHubで編集リクエストをお待ちしております。",
+        "ダイニーで一番若いエンジニアのriya amemiya(21歳)です。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Chromium",
+        "V8"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 27,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-dd34bc22",
+      "title": "TypeScriptをシングルバイナリ実行ファイルにする。ついでにMCPサーバーもシングルバイナリー化",
+      "url": "https://qiita.com/moritalous/items/8049684e8d746a81af3b?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-12T14:06:40.000Z",
+      "summaryJa": [
+        "こんなTypeScriptのソースがあるとします。",
+        "cli.",
+        "ts console."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 13,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-e24db92b",
+      "title": "GitHub Stacks in Jujutsu",
+      "url": "https://alan.norbauer.com/articles/github-stacks-with-jujutsu/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-13T00:55:03.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "GitHub",
+        "Stacks",
+        "Jujutsu"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-cb9c2175",
+      "title": "オントロジーと知識グラフ入門：URI から RDF、RDFS、OWL、推論、SPARQL まで整理して学ぶ - Qiita",
+      "url": "https://qiita.com/haystacker/items/376d86bcbeefc3885183",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-12T13:22:57.000Z",
+      "summaryJa": [
+        "これを下から順番に理解していくと、「今どの話をしているのか」「何がどの上に乗っているのか」が見えやすくなります。",
+        "この記事で扱う題材 扱う概念は次の 5 つです。",
+        "Animal（動物） Mammal（哺乳類） Cat（猫） Dog（犬） hasLegCount（足の本数） そして、基本となる知識は次の通りです。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "オントロジーと知識グラフ入門：URI",
+        "RDF",
+        "RDFS",
+        "OWL",
+        "推論"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 161,
+          "ageHours": 13,
+          "crossSources": 1,
+          "velocity": 12
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-ea455006",
+      "title": "Claude がテキストに電子透かしを入れ始めたので、LLM ウォーターマーキングの仕組みを調べた",
+      "url": "https://zenn.dev/hellorusk/articles/3328866ca9e922",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-12T13:27:16.000Z",
+      "summaryJa": [
+        "2026年8月、Anthropic が「Claude の生成テキストに機械可読なマーク（電子透かし）を埋め込む」と発表しました[1]。",
+        "EU AI Act 第50条の透明性規範（Code of Practice on Transparency of AI-Generated Content）に署",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Claude",
+        "LLM",
+        "ウォーターマーキングの仕組みを調べた"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 334,
+          "ageHours": 13,
+          "crossSources": 1,
+          "velocity": 25
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-49d05da8",
+      "title": "AIが実装し、AIがテストし、AIが「問題ありません」と言う時代の品質保証 - Qiita",
+      "url": "https://qiita.com/y0us91/items/2feffd2cc6c672717973",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-12T14:26:01.000Z",
+      "summaryJa": [
+        "はじめに Coding Agentの進化によって、ソフトウェア開発の形が大きく変わり始めています。",
+        "少し前までAIによる開発支援といえば、 コード補完 コード生成 リファクタリング テストコード生成 など、「人間が主体で、AIが支援する」使い方が中心でした。",
+        "しかし現在のCoding Agentは、単にコードを生成するだけではあり."
+      ],
+      "category": "programming",
+      "keywords": [
+        "AIが実装し",
+        "AIがテストし",
+        "AIが",
+        "問題ありません",
+        "Qiita"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 205,
+          "ageHours": 12,
+          "crossSources": 2,
+          "velocity": 16.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-a3270937",
+      "title": "IBM Bob × Confluent MCP入門：KafkaとFlinkを自然言語で触ってみた",
+      "url": "https://qiita.com/kaku_zui/items/81af00d831d1a412f953?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-12T05:41:27.000Z",
+      "summaryJa": [
+        "はじめに この記事では IBM Bob に Confluent MCP サーバー を接続することで、日本語のチャットだけで Kafka トピックの作成・データ投",
+        "コマンドはセットアップ時にほんの少し打.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "IBM",
+        "Bob",
+        "Confluent"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 21,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-44072ee0",
+      "title": "ナレッジワークにおけるAI活用をベースとしたQAプロセスの最適化",
+      "url": "https://zenn.dev/knowledgework/articles/2114d46c201da3",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-12T02:50:05.000Z",
+      "summaryJa": [
+        "はじめに ナレッジワークのQAエンジニアのtettanです。",
+        "ナレッジワークでは、マネージャーではなく、いちQAエンジニアという立場で、プロダクトのQA業務や品質施策の横断的な活動を行っています。",
+        "2026年8月5日に開催された「QA Test Talk Vol."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 24,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-5d9eb5a2",
+      "title": "Decrypting Flume Water Monitor Traffic",
+      "url": "https://lithostech.com/2026/08/decrypting-flume-water-monitor-traffic/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-12T16:40:35.000Z",
+      "summaryJa": [
+        "Previously submitted: https://lobste.",
+        "rs/s/vnigrw/diving_into_flume_water_monitor Comments",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Decrypting",
+        "Flume",
+        "Water",
+        "Monitor",
+        "Traffic"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-e3416fac",
+      "title": "I found a KVM guest-to-host heap corruption bug and someone else got there first",
+      "url": "https://blog.himanshuanand.com/2026/08/i-found-a-kvm-guest-to-host-heap-corruption-bug-and-someone-else-got-there-first/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-12T18:05:37.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "found",
+        "KVM",
+        "guest",
+        "host",
+        "heap"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-ba6b50c6",
+      "title": "frain-dev/convoy — The Cloud Native Webhooks Gateway",
+      "url": "https://github.com/frain-dev/convoy",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-12T21:47:10Z",
+      "summaryJa": [
+        "The Cloud Native Webhooks Gateway",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "frain",
+        "dev/convoy",
+        "Cloud",
+        "Native",
+        "Webhooks"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "自作サービスやシステムの外部連携で必須となるWebhook受信・配信基盤を、単一の堅牢なゲートウェイとして独立運用できます。午後の開発で外部API連携の設計に悩んだとき、インフラの強力な選択肢となるはずです。"
+  },
+  "unavailableSources": []
+}

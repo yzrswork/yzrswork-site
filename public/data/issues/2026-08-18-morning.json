@@ -1,0 +1,447 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 77,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-08-18",
+  "dateDisplay": "Tuesday, August 18, 2026",
+  "pressTimeJst": "2026-08-18 05:00",
+  "generatedAt": "2026-08-17T20:17:19.951Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "自動の波間に歪む輪郭",
+    "note": "便利さに潜む自動生成の不整合や、災害後の復興に見る現実の歪みを静かに見つめる朝。"
+  },
+  "editorial": {
+    "comment": "AIを活用した画像生成やプログラムの自動修正は強力ですが、味の素のラベル崩れ（hatebu-it-b9529fbf）が示すように、人間が最後に見落とせば思わぬ歪みを残します。手元で作るものには、常に自分自身の目を通すという基本を忘れたくないものです。 —— YZRS Times 編集長",
+    "passedOver": "北朝鮮IT労働者の採用調査については、内容自体は非常に興味深いものの、朝の忙しい時間帯に読み込むには背景情報が複雑すぎたため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ時々曇り",
+    "icon": "partly-cloudy",
+    "tempMax": 32,
+    "tempMin": 23,
+    "precipChancePct": 54
+  },
+  "market": {
+    "fearGreed": {
+      "value": 31,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64246,
+        "priceJpy": 10247637,
+        "change24hPct": 1.8,
+        "sparkline7d": [
+          64004.52,
+          63537.56,
+          63586.55,
+          62856.05,
+          62969.26,
+          63056.25,
+          64371.15
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1904.5,
+        "priceJpy": 303779,
+        "change24hPct": 1.2,
+        "sparkline7d": [
+          1876.79,
+          1880.49,
+          1885.59,
+          1872.35,
+          1878.69,
+          1881.76,
+          1908.15
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.157397,
+        "priceJpy": 25.11,
+        "change24hPct": 0,
+        "sparkline7d": [
+          0.162725,
+          0.161934,
+          0.162383,
+          0.158595,
+          0.158142,
+          0.157429,
+          0.158033
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 204.02,
+        "priceJpy": 32543,
+        "change24hPct": 0.2,
+        "sparkline7d": [
+          212.98,
+          213.66,
+          215.07,
+          205.55,
+          204.29,
+          204.25,
+          204.48
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-af8f3dfe",
+    "hatebu-it-b9529fbf",
+    "nhk-top-8a9bc57c"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-bcabe1bd",
+        "nhk-world-8f63c084",
+        "yahoo-topics-ad773abf"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hn-front-8d9c48b6",
+        "hatebu-it-571aa591"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-af8f3dfe",
+      "title": "AirTag reveals Amazon is trashing rare books to train AI",
+      "url": "https://arstechnica.com/tech-policy/2026/08/hidden-airtag-reveals-amazon-is-trashing-rare-books-to-train-ai/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-17T19:06:11.000Z",
+      "summaryJa": [
+        "AirTag reveals Amazon is trashing rare books to tr",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "AirTag",
+        "reveals",
+        "Amazon",
+        "trashing",
+        "rare"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 73,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 61.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-b9529fbf",
+      "title": "「ほんだし」のラベルがAIでぐちゃぐちゃに……　味の素、公式Xの投稿画像について謝罪",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2608/17/2000000564/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-17T08:33:12.000Z",
+      "summaryJa": [
+        "味の素は8月16日、レシピサイト「味の素パーク」の公式Xで14日に投稿した画像について謝罪した。",
+        "生成AIによる加工のため、商品のラベルや文字の一部が乱れていたという。",
+        "同社は再発防止に努めるとしている。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "味の素",
+        "公式Xの投稿画像について謝罪"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 134,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 11.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-8a9bc57c",
+      "title": "千葉豪雨 被災店舗の再開や農業被害対応など 生活再建が課題",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260817de44659",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-17T19:51:30.000Z",
+      "summaryJa": [
+        "線状降水帯が相次いで発生し、記録的な豪雨となった千葉県では、10人の死亡が確認され、浸水した住宅は、およそ2000棟にのぼります。",
+        "ガスや水道など、ライフラインの復旧が進む一方、被災した店舗の再開や農業…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "千葉豪雨",
+        "被災店舗の再開や農業被害対応など",
+        "生活再建が課題"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-bcabe1bd",
+      "title": "横浜高校野球部の元監督 渡辺元智さん死去 81歳 春夏計5回優勝",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260817de44622",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-17T12:36:16.000Z",
+      "summaryJa": [
+        "神奈川の横浜高校野球部の元監督で、甲子園で春夏連覇を果たすなど春夏合わせて5回優勝に導いた渡辺元智さんが亡くなりました。",
+        "81歳でした。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "横浜高校野球部の元監督",
+        "渡辺元智さん死去",
+        "81歳",
+        "春夏計5回優勝"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-8f63c084",
+      "title": "中国 7月の「小売売上高」 去年同月比＋0.6％ 内需の停滞続く",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260817de44637",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-08-17T10:29:48.000Z",
+      "summaryJa": [
+        "中国の消費の動向を示す先月の「小売売上高」は去年の同じ月と比べて0.",
+        "6％の増加にとどまり、内需の停滞が続いています。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "中国",
+        "7月の",
+        "小売売上高",
+        "去年同月比＋0.6％",
+        "内需の停滞続く"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-ad773abf",
+      "title": "踏切開いたまま電車通過 東急電鉄",
+      "url": "https://news.yahoo.co.jp/pickup/6592116?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-08-17T14:03:44.000Z",
+      "summaryJa": [
+        "踏切開いたまま電車通過 東急電鉄",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "踏切開いたまま電車通過",
+        "東急電鉄"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-8d9c48b6",
+      "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
+      "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-17T14:18:38.000Z",
+      "summaryJa": [
+        "AI-Generated GitHub Copilot “Autofix” Allowed Comp",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "AI",
+        "Generated",
+        "GitHub",
+        "Copilot",
+        "Autofix"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 248,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 41.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-571aa591",
+      "title": "とまり木 — 各地のカメラから、日本のいま。",
+      "url": "https://tomarigi.me/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-17T06:22:27.000Z",
+      "summaryJa": [
+        "日本各地のYouTubeライブカメラを地図から探して、その場で視聴できるサービス「とまり木」。",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "各地のカメラから",
+        "日本のいま"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 326,
+          "ageHours": 14,
+          "crossSources": 1,
+          "velocity": 23.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "立石 正広",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-08-17T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "立石",
+        "正広"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-551e05b2",
+      "title": "jameshball/osci-render — 〰📺🔊 Synthesiser audio plugin for making music by drawing objects on an oscilloscope using audio.",
+      "url": "https://github.com/jameshball/osci-render",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-17T11:47:04Z",
+      "summaryJa": [
+        "〰📺🔊 Synthesiser audio plugin for making music by drawing objects on an oscillo",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "jameshball/osci",
+        "render",
+        "Synthesiser",
+        "audio",
+        "plugin"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "音の波形を使ってオシロスコープに図形を描き、同時に音楽を演奏するシンセサイザーのプラグインです。数学的な波形制御と視覚表現の融合は、あなたの創作精神を刺激するはずです。"
+  },
+  "unavailableSources": []
+}

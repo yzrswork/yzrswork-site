@@ -1,0 +1,470 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 61,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-08-10",
+  "dateDisplay": "Monday, August 10, 2026",
+  "pressTimeJst": "2026-08-10 05:00",
+  "generatedAt": "2026-08-09T20:18:08.562Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "重力とコードが描く軌道",
+    "note": "物理法則に挑む創造的なハックと、荒天が迫る現実の動きを重ねて見つめる朝。"
+  },
+  "editorial": {
+    "comment": "重力だけで音速を超えるというTom Stanton氏のトレビュシェット（hn-front-003a5859）に、物理演算と工作の美しい融合を見ました。ただの投石機が音速を突破する瞬間の美しさは、朝一番に手元のものづくり欲を刺激してくれます。 —— YZRS Times 編集長",
+    "passedOver": "AI絵を巡る議論（hatebu-it-5f5e4105）は、感情論と断定が絡み合っており、朝の生産的な創作意欲には馴染まないと判断して見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "曇り",
+    "icon": "cloudy",
+    "tempMax": 32,
+    "tempMin": 23,
+    "precipChancePct": 82
+  },
+  "market": {
+    "fearGreed": {
+      "value": 31,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 65046,
+        "priceJpy": 10260352,
+        "change24hPct": 0.2,
+        "sparkline7d": [
+          63402.9,
+          63472.83,
+          64107.65,
+          64754.49,
+          64863.56,
+          65083.31,
+          65157.33
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1917.37,
+        "priceJpy": 302449,
+        "change24hPct": 0.1,
+        "sparkline7d": [
+          1880.44,
+          1858.2,
+          1865.46,
+          1907.92,
+          1912.02,
+          1922.46,
+          1920.16
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.16273,
+        "priceJpy": 25.67,
+        "change24hPct": -1.5,
+        "sparkline7d": [
+          0.17385,
+          0.171144,
+          0.166892,
+          0.161601,
+          0.161189,
+          0.166156,
+          0.161993
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 215.92,
+        "priceJpy": 34059,
+        "change24hPct": -0.2,
+        "sparkline7d": [
+          213.8,
+          212.87,
+          210.85,
+          214.46,
+          215.71,
+          218.24,
+          216.51
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-003a5859",
+    "yahoo-topics-1eebf3c7",
+    "hatebu-it-3f185c2d"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-38fa297f",
+        "nhk-top-56c47729",
+        "nhk-top-958321a5"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-cf845bdb",
+        "hn-front-deccf86b",
+        "hn-front-a1a509b0"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-003a5859",
+      "title": "Tom Stanton's supersonic trebuchet breaks sound barrier with gravity alone",
+      "url": "https://www.techeblog.com/tom-stanton-supersonic-trebuchet/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-09T15:08:51.000Z",
+      "summaryJa": [
+        "Tom Stanton's supersonic trebuchet breaks sound ba",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Tom",
+        "Stanton",
+        "supersonic",
+        "trebuchet",
+        "breaks"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 148,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 28.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-1eebf3c7",
+      "title": "台風15号 列島を横断する可能性",
+      "url": "https://news.yahoo.co.jp/pickup/6591129?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-08-09T12:53:29.000Z",
+      "summaryJa": [
+        "台風15号 列島を横断する可能性",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "台風15号",
+        "列島を横断する可能性"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-3f185c2d",
+      "title": "「AIを全員に配った組織」の生産性が落ちるとき - 🐴 (馬)",
+      "url": "https://blog.takaumada.com/entry/ai-organization-flow",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-08T12:08:46.000Z",
+      "summaryJa": [
+        "「ブライスのパラドックス」と呼ばれる現象があります。",
+        "混雑するネットワークに新しい道を加えたのに、各人が自分にとって最短の経路を選んだ結果、全員の移動時間が逆に長くなることがある、という交通工学のパラドックスです。",
+        "逆に「道をなくす」ことで、移動時間が短縮されることもあります。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "AIを全員に配った組織"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 545,
+          "ageHours": 32,
+          "crossSources": 1,
+          "velocity": 16.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-38fa297f",
+      "title": "大気不安定 関東で激しい雨 浸水や川の増水など警戒を",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260809de42956",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-09T12:35:45.000Z",
+      "summaryJa": [
+        "東日本を中心に大気の状態が非常に不安定になり、この時間は関東で雨が強まっています。",
+        "9日夜遅くにかけて激しい雨が降るおそれがあり、気象庁は低い土地の浸水や川の増水・氾濫に警戒するよう呼びかけています…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "大気不安定",
+        "関東で激しい雨"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-56c47729",
+      "title": "熊本地震 災害関連死の疑い含めて39人死亡 避難所に6183人避難",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260809de42950",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-09T12:45:04.000Z",
+      "summaryJa": [
+        "熊本県内では今回の地震で、9日午後6時の時点で、災害関連死の疑いがある人などを含めて39人が死亡し、避難所には6183人が避難しています。",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "熊本地震",
+        "災害関連死の疑い含めて39人死亡",
+        "避難所に6183人避難"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-958321a5",
+      "title": "イラン ホルムズ海峡開放で米に条件提示 双方で駆け引き続く",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260809de43006",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-09T14:03:12.000Z",
+      "summaryJa": [
+        "イランの最高安全保障委員会は8日、声明で、ホルムズ海峡での船舶の通航再開に向けて、アメリカが海上封鎖を解除することや、武力行使によって生じた被害を補償することな",
+        "海峡の通航再開…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "イラン",
+        "ホルムズ海峡開放で米に条件提示",
+        "双方で駆け引き続く"
+      ],
+      "heat": {
+        "temperature": 58,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-cf845bdb",
+      "title": "Claude Code で「ループエンジニアリング」を実践してみた",
+      "url": "https://zenn.dev/tetsu_don/articles/e40b95dfc726ac",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-08T21:17:01.000Z",
+      "summaryJa": [
+        "Claude Code で「ループエンジニアリング」を実践し、Maker-Checker構成で本物のバグを検出できた話 はじめに てつどんです。",
+        "データエンジニアとして 日々業務をこなしております。",
+        "最近、バズワードのように、いろんなところで「ループエンジニアリング」というのを聞くことが多くなりました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Claude",
+        "Code",
+        "ループエンジニアリング"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 382,
+          "ageHours": 23,
+          "crossSources": 2,
+          "velocity": 16.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-deccf86b",
+      "title": "Ask HN: What are you working on? (August 2026)",
+      "url": "https://news.ycombinator.com/item?id=49233423",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-09T17:23:22.000Z",
+      "summaryJa": [
+        "What are you working on?",
+        "What have you been curious about lately?",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "August"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 86,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 29.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-a1a509b0",
+      "title": "How I use LLMs to learn complex topics",
+      "url": "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-09T19:16:49.000Z",
+      "summaryJa": [
+        "How I use LLMs to learn complex topics",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "LLMs",
+        "learn",
+        "complex",
+        "topics"
+      ],
+      "heat": {
+        "temperature": 90,
+        "signals": {
+          "hnPoints": 78,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 76.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "洪水",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-08-09T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "洪水"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-50496e26",
+      "title": "Ameobea/web-synth — Browser-based DAW and audio synthesis platform with dozens of effects, synths, and modules",
+      "url": "https://github.com/Ameobea/web-synth",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-09T18:56:56Z",
+      "summaryJa": [
+        "Browser-based DAW and audio synthesis platform with dozens of effects, synths, a",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "Ameobea/web",
+        "synth",
+        "Browser",
+        "based",
+        "DAW"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "ブラウザ上で動く多機能なDAWとシンセサイザーのオープンソース実装です。音作りとプログラミングを愛するあなたにとって、ソースコードを追いながらWebオーディオAPIの可能性を拡張する極上の遊び場になるはずです。"
+  },
+  "unavailableSources": []
+}

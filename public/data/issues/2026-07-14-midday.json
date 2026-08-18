@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 8,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-14",
+  "dateDisplay": "Tuesday, July 14, 2026",
+  "pressTimeJst": "2026-07-14 12:00",
+  "generatedAt": "2026-07-14T07:15:50.917Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "静かなる最適化",
+    "note": "AIの波の中でも、足元のツールを磨き直し、自分の手で計算し直す作り手へ捧ぐ昼刊。"
+  },
+  "editorial": {
+    "comment": "『AI臭は語彙よりリズムに出る』という指摘は、AIツールを単なる自動化装置としてではなく、自身の表現を拡張する楽器として使いこなすための重要な視点です。",
+    "passedOver": "セキュリティ関連の注意喚起記事は重要ですが、読者が午後の作業に没頭するためのインプットという本紙の趣旨から外れるため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ時々曇り",
+    "icon": "partly-cloudy",
+    "tempMax": 34,
+    "tempMin": 24,
+    "precipChancePct": 29
+  },
+  "market": {
+    "fearGreed": {
+      "value": 22,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 62504,
+        "priceJpy": 10147567,
+        "change24hPct": -0.41,
+        "sparkline7d": [
+          63295.03,
+          62091.43,
+          62968.05,
+          63799.6,
+          64303.19,
+          64012.31,
+          62668.07
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1780.02,
+        "priceJpy": 288988,
+        "change24hPct": 0.1,
+        "sparkline7d": [
+          1777.5,
+          1737.49,
+          1745.82,
+          1787.87,
+          1822.69,
+          1825,
+          1783.85
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.178835,
+        "priceJpy": 29.03,
+        "change24hPct": -2.46,
+        "sparkline7d": [
+          0.195964,
+          0.182495,
+          0.18234,
+          0.189569,
+          0.191757,
+          0.185297,
+          0.179127
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 235.41,
+        "priceJpy": 38220,
+        "change24hPct": -0.6,
+        "sparkline7d": [
+          239.96,
+          232.98,
+          237.48,
+          247.03,
+          247.77,
+          243.08,
+          233.29
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-8b265505",
+    "lobsters-0adfedc4",
+    "zenn-trend-d0a3ee83"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hatebu-it-6e13ed6b"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "qiita-popular-72f0d178"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-27f768f7",
+        "lobsters-34526ba6"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-8b265505",
+      "title": "AI臭は語彙よりリズムに出る - 自然な日本語を書くAgent Skillと7モデル×406本の実測",
+      "url": "https://zenn.dev/coji/articles/natural-japanese-ai-smell-lint",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-14T01:12:24.000Z",
+      "summaryJa": [
+        "これはなに？",
+        "AIが書いた日本語を自然な日本語に直すAgent Skill、natural-japanese を作りました。",
+        "Claude CodeやCodexで動きます。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "AI臭は語彙よりリズムに出る",
+        "自然な日本語を書くAgent",
+        "Skillと7モデル×406本の実測"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 41,
+          "ageHours": 6,
+          "crossSources": 2,
+          "velocity": 6.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-0adfedc4",
+      "title": "lobste.rs is now running on SQLite",
+      "url": "https://lobste.rs/s/ko1ji1/lobste_rs_is_now_running_on_sqlite",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-13T20:03:24.000Z",
+      "summaryJa": [
+        "This past Saturday, @pushcx and I deployed the SQLite pull request to production",
+        "We were waiting till this morning to see how it would react to the Monday traffi",
+        "Needless to say, SQLite seems to have passed with flying colors: cpu usage is do"
+      ],
+      "category": "tech",
+      "keywords": [
+        "lobste.rs",
+        "is",
+        "now",
+        "running",
+        "on"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-d0a3ee83",
+      "title": "Critを導入したらコーディングAIへのフィードバックがとても楽になった",
+      "url": "https://zenn.dev/tenkei/articles/5ba5c993dfb8d6",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-13T01:24:05.000Z",
+      "summaryJa": [
+        "Crit とは Crit は、ローカルで動くレビュー用の UI ツールです。",
+        "https://github.",
+        "com/tomasz-tomczyk/crit ざっくり言うと、AI が作ったコード差分や画面に対して、GitHub PR のようにコメントを付けられるツール "
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 46,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 30,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-6e13ed6b",
+      "title": "MySQLのスロークエリを調査して、APIのレスポンスタイムを5分から20秒に改善した話 - freee Developers Hub",
+      "url": "https://developers.freee.co.jp/entry/mysql-order-by-limit-slow-query",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-14T02:28:05.000Z",
+      "summaryJa": [
+        "こんにちは。",
+        "freee請求書エンジニアのshunです。",
+        "24卒未経験でfreeeに入社し、freee請求書プロダクトの開発を行っています。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "MySQLのスロークエリを調査して",
+        "freee",
+        "Developers",
+        "Hub"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 48,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 10
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-72f0d178",
+      "title": "あなたの技術ブログの「AI臭さ」を抜くスキル公開します",
+      "url": "https://qiita.com/minorun365/items/699e89544da8b0de300d?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-13T00:56:53.000Z",
+      "summaryJa": [
+        "以下の内容をそのままコピペして、Claude CodeやCodexに「ユーザースコープのスキルに追加しといて」と頼めばOK。",
+        "--- name: writing-guide description: AI臭さを消す汎用執筆ガイド。",
+        "ブログ・スライドなど、あらゆる書き物."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 46,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 30,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-27f768f7",
+      "title": "fred: A text editor that uses C for everything",
+      "url": "https://www.youtube.com/watch?v=xz5aPCRxsv4",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-14T01:15:04.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "fred",
+        "text",
+        "editor",
+        "that",
+        "uses"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-34526ba6",
+      "title": "CSS-DOS — A computer made of CSS",
+      "url": "https://css-dos.ahmedamer.co.uk/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-14T01:00:53.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "CSS",
+        "DOS",
+        "computer",
+        "made",
+        "of"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-6edb6109",
+      "title": "shorepine/tulipcc — The Tulip Creative Computer and AMYboard - portable Python synthesizers",
+      "url": "https://github.com/shorepine/tulipcc",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-13T22:04:01Z",
+      "summaryJa": [
+        "The Tulip Creative Computer and AMYboard - portable Python synthesizers",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "shorepine/tulipcc",
+        "The",
+        "Tulip",
+        "Creative",
+        "Computer"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "可搬性のあるPythonシンセサイザーという響きが、あなたの創作意欲を刺激するはずです。手の中に収まる回路とコードで、午後の隙間に新しい音を鳴らしてみませんか。"
+  },
+  "unavailableSources": []
+}

@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 3,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-11",
+  "dateDisplay": "Saturday, July 11, 2026",
+  "pressTimeJst": "2026-07-11 05:00",
+  "generatedAt": "2026-07-10T20:59:25.523Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "計算の境界線",
+    "note": "AIがツールと環境を再定義し、物理世界とデジタル世界の垣根が曖昧になりつつある日の紙面。"
+  },
+  "editorial": {
+    "comment": "『Claude Code』のサンドボックス環境の記事は必読です。AIに全権を委ねるのではなく、自律的なエージェントの挙動を物理的な境界として封じ込めるという発想は、技術的信頼の構築において非常に重要だと感じました。",
+    "passedOver": "政治・国際情勢の話題は数多くありましたが、個人の創作に直結する技術的な視点を優先して割愛しました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "曇り",
+    "icon": "cloudy",
+    "tempMax": 30,
+    "tempMin": 23,
+    "precipChancePct": 3
+  },
+  "market": {
+    "fearGreed": {
+      "value": 23,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63798,
+        "priceJpy": 10317675,
+        "change24hPct": 0.86,
+        "sparkline7d": [
+          62128.09,
+          63266.55,
+          63517.88,
+          63093.52,
+          61984.2,
+          62570.82,
+          64119.3
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1789.39,
+        "priceJpy": 289389,
+        "change24hPct": 2.4,
+        "sparkline7d": [
+          1736.32,
+          1788.04,
+          1784.47,
+          1769.16,
+          1733.9,
+          1740.6,
+          1795.56
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.189741,
+        "priceJpy": 30.69,
+        "change24hPct": 2.09,
+        "sparkline7d": [
+          0.202454,
+          0.209217,
+          0.201483,
+          0.195964,
+          0.183464,
+          0.180396,
+          0.188881
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 245.4,
+        "priceJpy": 39688,
+        "change24hPct": 3.29,
+        "sparkline7d": [
+          228,
+          233.77,
+          241.82,
+          239.96,
+          232.98,
+          237.48,
+          247.03
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-8efba39a",
+    "hatebu-it-c491e2f6",
+    "hn-front-ebbc46cc"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-5015d46c",
+        "nhk-world-12a6f654",
+        "nhk-world-73c25052",
+        "nhk-top-369a67e3"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hn-front-51a88932"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-8efba39a",
+      "title": "Claude Code・Codex用に、超爆速で超安全なサンドボックスを作る方法 - Qiita",
+      "url": "https://qiita.com/Koukyosyumei/items/3bd4696237ea64c38971",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-10T08:27:48.000Z",
+      "summaryJa": [
+        "こんにちは！",
+        "コロンビア大学の博士課程でAI・セキュリティの研究をしている Koukyosyumei です。",
+        "さて、読者のほとんどの方が Claude Code や Codex を使って開発をしていると思いますが、皆さんは「AIエージェントがシェルコマンドやネットワーク"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Claude",
+        "Code",
+        "Codex用に",
+        "超爆速で超安全なサンドボックスを作る方法",
+        "Qiita"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 93,
+          "ageHours": 13,
+          "crossSources": 2,
+          "velocity": 7.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-c491e2f6",
+      "title": "Cloudflareだけで独自ドメインメールをGmailから送受信できるようになってた",
+      "url": "https://zenn.dev/9m/articles/d08dcc093e1bbf",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-10T03:47:12.000Z",
+      "summaryJa": [
+        "TL;DR メールの受信は Cloudflare Email Routing メールの送信は Cloudflare Email Sending メールの閲覧・作",
+        "独自ドメインのメールアドレスにお金かけたくない問題 個人開発をやっているとポコポコ独.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 169,
+          "ageHours": 17,
+          "crossSources": 2,
+          "velocity": 9.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-ebbc46cc",
+      "title": "QuadRF can spot drones and see WiFi through my wall",
+      "url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-10T15:59:53.000Z",
+      "summaryJa": [
+        "QuadRF can spot drones and see WiFi through my wal",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "QuadRF",
+        "can",
+        "spot",
+        "drones",
+        "and"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 328,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 65.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-5015d46c",
+      "title": "【台風9号情報】沖縄 先島諸島・本島地方暴風域に 厳重警戒を",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015174261000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-10T20:00:20.000Z",
+      "summaryJa": [
+        "大型で強い台風9号は、沖縄県の先島諸島や本島地方を暴風域に巻き込みながら進んでいて、この時間、先島諸島に近づいています。",
+        "先島諸島では風がさらに強まり、11日夜にかけて長時間、暴風となるほか、夕方にかけ…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "【台風9号情報】沖縄",
+        "先島諸島",
+        "本島地方暴風域に",
+        "厳重警戒を"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-12a6f654",
+      "title": "ロシア“緩衝地帯拡大させる” ウクライナの攻撃強化で",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015174251000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-07-10T20:50:10.000Z",
+      "summaryJa": [
+        "ウクライナがロシア領内の石油関連施設への攻撃を強める中、ロシア大統領府の報道官は10日、軍の部隊を前進させ、ウクライナ領内の緩衝地帯を拡大させる考えを示しました",
+        "出典: NHKニュース 国際",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "ロシア",
+        "緩衝地帯拡大させる",
+        "ウクライナの攻撃強化で"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-73c25052",
+      "title": "世界の石油供給量増加も 米イラン応酬で見通し“不透明”IEA",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015174191000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-07-10T20:44:01.000Z",
+      "summaryJa": [
+        "IEA＝国際エネルギー機関は、ホルムズ海峡を通じた輸送の回復により、6月の世界の石油供給量は前の月から一日当たり400万バレル余り増加したとする分析をまとめまし",
+        "一方、アメリカとイランの間で再び攻撃…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "世界の石油供給量増加も",
+        "米イラン応酬で見通し",
+        "不透明",
+        "IEA"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-369a67e3",
+      "title": "皇室典範改正案 今国会で成立の見通し 参議院審議の日程調整へ",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015174171000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-10T20:04:40.000Z",
+      "summaryJa": [
+        "皇族数の確保に向けた皇室典範改正案は、10日、衆議院を通過し、今の国会で成立する見通しとなりました。",
+        "国会の会期末が来週に迫る中、政府・与党が参議院での審議を急ぎ、会期内で確実に成立させたいとしているの…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "皇室典範改正案",
+        "今国会で成立の見通し",
+        "参議院審議の日程調整へ"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-51a88932",
+      "title": "Write code like a human will maintain it",
+      "url": "https://unstack.io/write-code-like-a-human-will-maintain-it",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-10T13:33:00.000Z",
+      "summaryJa": [
+        "Write code like a human will maintain it",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Write",
+        "code",
+        "like",
+        "human",
+        "will"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 297,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 39.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "佐野勇斗",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-10T20:50:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "佐野勇斗"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-6707352f",
+      "title": "Show HN: I built a synth for my daughter",
+      "url": "https://bitsnpieces.dev/posts/a-synth-for-my-daughter/",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2025-11-12T14:12:13.000Z",
+      "summaryJa": [
+        "Show HN: I built a synth for my daughter",
+        "出典: Show HN",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "built",
+        "synth",
+        "for"
+      ],
+      "heat": {
+        "temperature": 72,
+        "signals": {
+          "hnPoints": 1278,
+          "hatebuCount": 0,
+          "ageHours": 5767,
+          "crossSources": 1,
+          "velocity": 0.2
+        }
+      },
+      "image": null
+    },
+    "reason": "娘のために楽器を自作するという行為そのものに、道具を作る喜びの本質が宿っています。回路を設計し音を紡ぐ過程は、まさに私たちが日々行っている創作活動の原点と言えるでしょう。"
+  },
+  "unavailableSources": []
+}

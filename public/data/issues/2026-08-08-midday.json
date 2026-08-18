@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 58,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-08-08",
+  "dateDisplay": "Saturday, August 8, 2026",
+  "pressTimeJst": "2026-08-08 12:00",
+  "generatedAt": "2026-08-08T02:47:21.514Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "波形とコードが刻む拍動",
+    "note": "電子楽器の不屈の歴史から、日々の開発の細かなリズムを整えるスタックツールまで、自らの手で刻むエンジニアリングの鼓動を感じる紙面。"
+  },
+  "editorial": {
+    "comment": "TR-808（hatebu-it-b48d312d）のような伝説のドラムマシンも、最初は酷評されたという歴史にものづくりの真髄を感じます。周囲の評価を気にせず、自分の「これだ」と思う音やコードを信じて午後の創作に向き合ってみませんか。 —— YZRS Times 編集長",
+    "passedOver": "KDDIによる楽天へのローミング終了といった通信キャリアの時事ニュースは、午後の作業のインスピレーションを高める紙面にするため除外しました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ時々曇り",
+    "icon": "partly-cloudy",
+    "tempMax": 33,
+    "tempMin": 26,
+    "precipChancePct": 10
+  },
+  "market": {
+    "fearGreed": {
+      "value": 30,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64884,
+        "priceJpy": 10239022,
+        "change24hPct": 0.9,
+        "sparkline7d": [
+          62931.22,
+          63400.45,
+          62728.4,
+          63631.07,
+          64610.39,
+          64430.06,
+          64883.78
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1911.92,
+        "priceJpy": 301710,
+        "change24hPct": 0.5,
+        "sparkline7d": [
+          1865.48,
+          1875.1,
+          1849.35,
+          1859.78,
+          1894.78,
+          1906.35,
+          1913.19
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.16174,
+        "priceJpy": 25.52,
+        "change24hPct": 0,
+        "sparkline7d": [
+          0.172402,
+          0.177038,
+          0.171517,
+          0.16891,
+          0.167345,
+          0.16066,
+          0.1617
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 215.95,
+        "priceJpy": 34078,
+        "change24hPct": 1.3,
+        "sparkline7d": [
+          210.51,
+          210.97,
+          210.37,
+          213.29,
+          214,
+          213.42,
+          214.63
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-b48d312d",
+    "zenn-trend-a409ccc7",
+    "hatebu-it-b60a3073"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-3da289af",
+        "hatebu-it-12a203ae",
+        "hn-front-7837f642"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "qiita-popular-c86476db",
+        "qiita-popular-a182a5f7",
+        "zenn-trend-3d4c3fa1"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-2d755d8c",
+        "lobsters-9b96d3e9"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-b48d312d",
+      "title": "世界に衝撃与えたリズムマシンTR-808　開発者は「当初は酷評」：朝日新聞",
+      "url": "https://www.asahi.com/articles/ASV8723PZV87UCVL05TM.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-08T00:47:01.000Z",
+      "summaryJa": [
+        "1980年に発売されて販売不振などで2年間で生産が終わったのに、今も世界のミュージシャンを魅了している日本製の電子楽器がある。",
+        "ローランドが生産した、ドラムや手拍子、カウベルなど16種類の音が鳴らせる…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "世界に衝撃与えたリズムマシンTR",
+        "開発者は",
+        "当初は酷評",
+        "：朝日新聞"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 13,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 6.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-a409ccc7",
+      "title": "手を動かしてStacked pull requestのgh stackを理解してみた",
+      "url": "https://zenn.dev/kesin11/articles/20260806_stacked_pr",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-06T23:00:05.000Z",
+      "summaryJa": [
+        "https://github.",
+        "blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/ Stack",
+        "changelogの記事の雰囲気を見た感じ、１つの機能を実装するときに１つの大きなPRを作るのではなく、複数の小さなPRに分解して実装していくという以前から良い"
+      ],
+      "category": "programming",
+      "keywords": [
+        "手を動かしてStacked",
+        "pull",
+        "requestのgh",
+        "stackを理解してみた"
+      ],
+      "heat": {
+        "temperature": 46,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 28,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-b60a3073",
+      "title": "社内MCPをCloudflare AccessとCloudflare Workersでつくる",
+      "url": "https://zenn.dev/pipipipipi/articles/661b28da670728",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-07T23:19:00.000Z",
+      "summaryJa": [
+        "業務で社内MCPを作成する機会がありました。",
+        "Cloudflare AccessのManaged OAuthを使うことで簡単に実装できたので備忘録もかねてZennに投稿することにしまいた。",
+        "要件 社内メンバーのみが利用できること MCPから行えるのは読み取り操作だけであること 簡単がいい！"
+      ],
+      "category": "programming",
+      "keywords": [
+        "社内MCPをCloudflare",
+        "AccessとCloudflare",
+        "Workersでつくる"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 21,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-3da289af",
+      "title": "Assembly Hall of Shame",
+      "url": "https://github.com/xoreaxeaxeax/asm-hall-of-shame",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-07T18:01:30.000Z",
+      "summaryJa": [
+        "Assembly Hall of Shame",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Assembly",
+        "Hall",
+        "Shame"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 266,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 2,
+          "velocity": 30.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-12a203ae",
+      "title": "テストが増えすぎてもう限界だったので、PRで全テストを回すのをやめた話 - Timee Product Team Blog",
+      "url": "https://tech.timee.co.jp/entry/2026/08/07/164910",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-07T09:53:34.000Z",
+      "summaryJa": [
+        "はじめに こんにちは、タイミーのプラットフォームエンジニアリングチームに所属している徳富(@yannKazu1)です。",
+        "この記事では、スキマバイトサービス「タイミー」のバックエンド（Rails API）に Datadog Test Impact Analysis（TIA） を導入",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "テストが増えすぎてもう限界だったので",
+        "PRで全テストを回すのをやめた話",
+        "Timee",
+        "Product",
+        "Team"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 130,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 7.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-7837f642",
+      "title": "The Nixpkgs core team has disbanded",
+      "url": "https://discourse.nixos.org/t/the-nixpkgs-core-team-has-disbanded/79413",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-08T01:12:45.000Z",
+      "summaryJa": [
+        "The Nixpkgs core team has disbanded",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Nixpkgs",
+        "core",
+        "team",
+        "disbanded"
+      ],
+      "heat": {
+        "temperature": 94,
+        "signals": {
+          "hnPoints": 109,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 2,
+          "velocity": 69.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-c86476db",
+      "title": "【便利】 Claude Codeの覚えておきたいスラッシュコマンドまとめ",
+      "url": "https://qiita.com/tamashiro_nobuyuki/items/573178ed3b8a6a22ebb1?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-07T08:14:05.000Z",
+      "summaryJa": [
+        "Claude Codeの覚えておきたいスラッシュコマンドまとめ Claude Codeを使っていて「コマンド何だっけ?",
+        "」となることが多かったので、よく使うスラッシュコマンドを用途別に整理しました。",
+        "早見表 コマンド 何をするか /compact 会話を要約."
+      ],
+      "category": "programming",
+      "keywords": [
+        "便利",
+        "Claude"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 19,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-a182a5f7",
+      "title": "鍵を渡さず・文脈を可視化する — マルチエージェント管理デスクトップアプリ「moeca」を個人開発している話",
+      "url": "https://qiita.com/can-can/items/ec8cd4dd183e12ac5781?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-07T06:29:29.000Z",
+      "summaryJa": [
+        "「AI で業務効率化」が当たり前になった一方で、こんな経験はないでしょうか。",
+        "思ったような出力をしてくれない… 出力に、いらないデータが混ざっている… 事実と異なる結果を、それっぽく返してくる… さらに、チームで使い始めると別の不安も出て",
+        "このエージェント、社."
+      ],
+      "category": "programming",
+      "keywords": [
+        "鍵を渡さず",
+        "文脈を可視化する",
+        "マルチエージェント管理デスクトップアプリ",
+        "moeca"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 20,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-3d4c3fa1",
+      "title": "楽観ロックの実装でおさえたいポイントと、よくあるしくじり",
+      "url": "https://zenn.dev/levtech/articles/how-to-concrete-optimistic-lock",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-07T03:03:06.000Z",
+      "summaryJa": [
+        "これはなに こんにちは、レバテック開発部のもりたです。",
+        "今回はアプリケーションを作る上でわりと出会う楽観ロックの実装方法についてまとめます。",
+        "コードの例はPHP/Laravelですが、基本的には言語やフレームワークに制限はありません。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "楽観ロックの実装でおさえたいポイントと"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 24,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-2d755d8c",
+      "title": "PS3 emulation is fast on ARM now",
+      "url": "https://www.youtube.com/watch?v=-aI_XEwmKFk",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-07T17:50:55.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "PS3",
+        "emulation",
+        "fast",
+        "ARM"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-9b96d3e9",
+      "title": "Concurrency vs. Throughput: why more parallelism can make databases slower",
+      "url": "https://planetscale.com/blog/concurrency-vs-throughput-vitess-mysql",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-07T21:10:37.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Concurrency",
+        "Throughput",
+        "parallelism",
+        "databases",
+        "slower"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-af27f1c6",
+      "title": "earlephilhower/ESP8266Audio — Arduino library to play MOD, WAV, FLAC, MIDI, RTTTL, OGG/Opus, MP3, and AAC files on I2S DACs or with a software emulated delta-sigma DAC on the ESP8266 and ESP32 and Pico",
+      "url": "https://github.com/earlephilhower/ESP8266Audio",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-02T17:14:10Z",
+      "summaryJa": [
+        "Arduino library to play MOD, WAV, FLAC, MIDI, RTTTL, OGG/Opus, MP3, and AAC file",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "Arduino",
+        "library",
+        "play",
+        "MOD",
+        "WAV"
+      ],
+      "heat": {
+        "temperature": 40,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 130,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "ESP8266やESP32で様々な音声形式を再生するための軽量で強力なオーディオライブラリです。週末に電子楽器や独自の音響ガジェットを自作したいあなたに、これ以上ないインスピレーションを与えてくれます。"
+  },
+  "unavailableSources": []
+}

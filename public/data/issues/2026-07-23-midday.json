@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 26,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-23",
+  "dateDisplay": "Thursday, July 23, 2026",
+  "pressTimeJst": "2026-07-23 12:00",
+  "generatedAt": "2026-07-23T02:47:15.119Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "言語と基盤を手で弄む",
+    "note": "午後の手を動かす時間に向けて、プログラミング言語の構造や低レイヤ技術の探求をまとめた紙面。"
+  },
+  "editorial": {
+    "comment": "C言語をメモリ安全にする『Fil-C』の試み（zenn-trend-48434950）には、言語の全面書き換えに頼らない現実的な職人魂を感じます。手元にある道具やコードを捨て去るのではなく、工夫で次の段階へ進める姿勢は、日々の創作やデバッグの現場でも大いに見習いたいものです。 —— YZRS Times 編集長",
+    "passedOver": "時事ニュースやAIの宣伝合戦、ゴシップ的な話題は昼休みの技術インプットを邪魔するため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ",
+    "icon": "sunny",
+    "tempMax": 36,
+    "tempMin": 26,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 31,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 65768,
+        "priceJpy": 10725174,
+        "change24hPct": -0.82,
+        "sparkline7d": [
+          64722.06,
+          63519.99,
+          63968.67,
+          64417.91,
+          65501.34,
+          66392.38,
+          66083.46
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1925.83,
+        "priceJpy": 314059,
+        "change24hPct": -0.16,
+        "sparkline7d": [
+          1916.77,
+          1851.46,
+          1842.96,
+          1870.12,
+          1899.72,
+          1922.51,
+          1933.16
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.186157,
+        "priceJpy": 30.36,
+        "change24hPct": -3.49,
+        "sparkline7d": [
+          0.188192,
+          0.184111,
+          0.184559,
+          0.188563,
+          0.189039,
+          0.193571,
+          0.187012
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 218.37,
+        "priceJpy": 35611,
+        "change24hPct": -2.9,
+        "sparkline7d": [
+          223.16,
+          222.96,
+          218.57,
+          217.08,
+          214.83,
+          224.89,
+          220.27
+        ]
+      }
+    ]
+  },
+  "top": [
+    "zenn-trend-48434950",
+    "lobsters-79ed5e6c",
+    "zenn-trend-12b5b87f"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-feab872d",
+        "hatebu-it-f7c8b354",
+        "hn-front-d72675a8",
+        "hatebu-it-25f891ef"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-1f2a0855",
+        "zenn-trend-f4c0a16b",
+        "qiita-popular-1bdaa462"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-f3c43ff9",
+        "lobsters-fd53bcbd"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "zenn-trend-48434950",
+      "title": "Rust に書き直さなくても C 言語をメモリ安全にできる Fil-C を試した",
+      "url": "https://zenn.dev/mattn/articles/cace8c5a00b9cc",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-22T00:54:26.000Z",
+      "summaryJa": [
+        "はじめに 最近「どの言語で書くか」を巡る話題が続いています。",
+        "今年 5 月、Zig で書かれていた JavaScript ランタイム Bun が Rust に移植されました。",
+        "50 万行超の Zig コードを大量の Claude エージェントに書かせるという力技で、理由の一つにメモリ安全性由来のバグが挙げられていました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Rust",
+        "に書き直さなくても",
+        "言語をメモリ安全にできる",
+        "Fil",
+        "を試した"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-79ed5e6c",
+      "title": "Algebraic effects and handlers in portable C99",
+      "url": "https://github.com/koka-lang/libhandler",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-23T02:34:20.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Algebraic",
+        "effects",
+        "and",
+        "handlers",
+        "in"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-12b5b87f",
+      "title": "Souther - ドメインモデルをスラスラ書けることを追い求めた最果てのJVM言語",
+      "url": "https://zenn.dev/kawasima/articles/souther-essentials",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-22T09:36:32.000Z",
+      "summaryJa": [
+        "Javaでドメインモデルを素直に表そうとすると、型が増えます。",
+        "従業員IDと文字列を分け、金額と整数を分け、申請の状態ごとに別の型を用意する。",
+        "値の検証や業務上の却下も型と戻り値で表し、現在時刻やデータベースアクセスは外から注入する。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Souther"
+      ],
+      "heat": {
+        "temperature": 50,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-feab872d",
+      "title": "Codeberg Bans Cryptocurrency Projects",
+      "url": "https://codeberg.org/Codeberg/org/pulls/1254",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-23T01:06:56.000Z",
+      "summaryJa": [
+        "Codeberg Bans Cryptocurrency Projects",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Codeberg",
+        "Bans",
+        "Cryptocurrency",
+        "Projects"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 97,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 58
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-f7c8b354",
+      "title": "未来を見据えて「秒」の再定義が議論に――うるう秒は実質廃止、月の標準時など",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2127021.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-22T21:50:39.000Z",
+      "summaryJa": [
+        "未来を見据えて「秒」の再定義が議論に――うるう秒は実質廃止、月の標準時など",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "月の標準時など"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 20,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-d72675a8",
+      "title": "GigaToken: ~1000x faster Language model tokenization",
+      "url": "https://github.com/marcelroed/gigatoken/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-22T17:20:38.000Z",
+      "summaryJa": [
+        "GigaToken: ~1000x faster Language model tokenizati",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "GigaToken",
+        "~1000x",
+        "faster",
+        "Language",
+        "model"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 386,
+          "hatebuCount": 7,
+          "ageHours": 9,
+          "crossSources": 2,
+          "velocity": 40.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-25f891ef",
+      "title": "「POPOPO」サ終前にMac対応、未公開のWindows版技術はオープンソース化　「最後まで盛り上がっていこう！」",
+      "url": "https://www.itmedia.co.jp/news/articles/2607/23/news074.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-23T01:03:40.000Z",
+      "summaryJa": [
+        "「POPOPO」サ終前にMac対応、未公開のWindows版技術はオープンソース化 「最後まで盛り上がっていこう！",
+        "」 「もうせっかくなのでできることは何でもやるよｗ 最後まで盛り上がっていこう！",
+        "」――9月17日にサービス終了予定のアバター通話アプリ「POPOPO」運営元のCTOであるMIRO（岩城進之介）氏は7月21日、同アプリをMac."
+      ],
+      "category": "programming",
+      "keywords": [
+        "「POPOPO」サ終前にMac対応",
+        "「最後まで盛り上がっていこう！」"
+      ],
+      "heat": {
+        "temperature": 89,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 19,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 11
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-1f2a0855",
+      "title": "WebエディタのTab問題について調べてみた",
+      "url": "https://zenn.dev/cybozu_frontend/articles/contenteditable-tab",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-22T03:36:06.000Z",
+      "summaryJa": [
+        "この記事は、CYBOZU SUMMER BLOG FES '26の記事です。",
+        "こんにちは！",
+        "26卒でフロントエンドエンジニア職として入社したコサキンです。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 23,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-f4c0a16b",
+      "title": "Rust 1.97.0で変わったmanglingの仕組みについて",
+      "url": "https://zenn.dev/estie/articles/f310f04c5fe5cc",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-22T03:00:22.000Z",
+      "summaryJa": [
+        "先日Rust 1.",
+        "97.",
+        "0がリリースされて、恒例の勝手にリリースパーティーイベントで主要な変更について解説しました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Rust"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 24,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-1bdaa462",
+      "title": "先輩の「なぜこうしたの？」に毎回パニックになってたけど、整理するだけで上手に話せるようになった",
+      "url": "https://qiita.com/prumnn/items/0fe99e9afff2c9f79fcd?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-22T08:01:40.000Z",
+      "summaryJa": [
+        "はじめに 先輩に「なぜこうしたの？",
+        "」と聞かれてパニックになった新人エンジニアぷらむんが気づいたのは、\"考えていない\"んじゃなく\"考えを整理していない\"だけだったということでした。",
+        "会社で自称マスコットキャラをやってるのに、社内で一番空気が読めない、ぷらむんです🐯."
+      ],
+      "category": "programming",
+      "keywords": [
+        "整理するだけで上手に話せるようになった"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 19,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-f3c43ff9",
+      "title": "Taking OCaml and Eio for a spin",
+      "url": "https://mattjhall.co.uk/posts/taking-ocaml-eio-for-a-spin.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-22T21:33:17.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Taking",
+        "OCaml",
+        "and",
+        "Eio",
+        "for"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-fd53bcbd",
+      "title": "Announcing Topcoat: a framework for building full-stack reactive web apps with Rust",
+      "url": "https://tokio.rs/blog/2026-07-22-announcing-topcoat",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-22T17:35:25.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Announcing",
+        "Topcoat",
+        "framework",
+        "for",
+        "building"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-2f754b14",
+      "title": "abey79/vsketch — Generative plotter art environment for Python",
+      "url": "https://github.com/abey79/vsketch",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-21T12:34:54Z",
+      "summaryJa": [
+        "Generative plotter art environment for Python",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "abey79/vsketch",
+        "Generative",
+        "plotter",
+        "art",
+        "environment"
+      ],
+      "heat": {
+        "temperature": 43,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 38,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "ペンプロッターによるジェネラティブアート制作をPythonで効率化する開発環境です。アルゴリズムで美しい物理描画を生み出したいあなたの創作意欲を刺激します。"
+  },
+  "unavailableSources": []
+}

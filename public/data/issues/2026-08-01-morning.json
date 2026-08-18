@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 43,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-08-01",
+  "dateDisplay": "Saturday, August 1, 2026",
+  "pressTimeJst": "2026-08-01 05:00",
+  "generatedAt": "2026-07-31T20:17:47.140Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "実機の操作と画面の応答",
+    "note": "AIによるゲーム画面の認識とコントローラー操作をはじめ、入力と出力のフィードバックループが交差する技術の輪郭を追う朝刊。"
+  },
+  "editorial": {
+    "comment": "スクエニがGeminiでゲームのQAテストを自動化し、画面を見ながらコントローラーを操作させている話（hatebu-it-89097b1a）が実に面白いです。画面という出力をAIの入力に変え、コントローラーという入力をAIの出力に変えるフィードバック環は、ものづくりの原点的な愉しさを刺激してくれます。 —— YZRS Times 編集長",
+    "passedOver": "DeepSeek-V4-Flashのベンチマークや価格分析記事。性能の進展は目覚ましいものの、今朝はより手触りのある実装動向を優先して見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "曇り",
+    "icon": "cloudy",
+    "tempMax": 34,
+    "tempMin": 25,
+    "precipChancePct": 53
+  },
+  "market": {
+    "fearGreed": {
+      "value": 25,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 62946,
+        "priceJpy": 9978029,
+        "change24hPct": -2.7,
+        "sparkline7d": [
+          64186.58,
+          64316.36,
+          65241.19,
+          63453.85,
+          64417.3,
+          64616.04,
+          63048.98
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1867.12,
+        "priceJpy": 295969,
+        "change24hPct": -2.6,
+        "sparkline7d": [
+          1862.5,
+          1874.03,
+          1948.05,
+          1882.26,
+          1910.92,
+          1915.7,
+          1870.19
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.171397,
+        "priceJpy": 27.17,
+        "change24hPct": -0.6,
+        "sparkline7d": [
+          0.177889,
+          0.178042,
+          0.181792,
+          0.172082,
+          0.174028,
+          0.171849,
+          0.171434
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 208.79,
+        "priceJpy": 33097,
+        "change24hPct": -5,
+        "sparkline7d": [
+          209.69,
+          209.54,
+          215.9,
+          212.77,
+          211.55,
+          218.82,
+          209.31
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-89097b1a",
+    "nhk-top-42136e8f",
+    "hn-front-faea7cc4"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-dbc989cc",
+        "nhk-top-e77a22ad",
+        "nhk-world-c1823849"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-1857dfbd",
+        "hn-front-1eba4df0"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-89097b1a",
+      "title": "スクエニ、ゲームの品質テストをGeminiで自動化　AIが画面を見ながらコントローラーを操作、検証作業を自走",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2607/31/2000000322/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-31T04:28:03.000Z",
+      "summaryJa": [
+        "スクウェア・エニックスが、ゲームの品質を検証するQAテストの自動化に米GoogleのAI「Gemini」を活用している。",
+        "同社の荒牧岳志氏（AI＆エンジン開発ディビジョン ジェネラル・マネージャー）が7月30日、「Google Cloud Next Tokyo '26」の基調講演で",
+        "AIがゲーム画面を見て状況を把握し、コントローラーを自動で."
+      ],
+      "category": "programming",
+      "keywords": [
+        "スクエニ",
+        "ゲームの品質テストをGeminiで自動化",
+        "AIが画面を見ながらコントローラーを操作",
+        "検証作業を自走"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 188,
+          "ageHours": 16,
+          "crossSources": 1,
+          "velocity": 11.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-42136e8f",
+      "title": "日米など11か国 北朝鮮IT労働者への注意求める文書公表",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015193011000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-31T13:57:42.000Z",
+      "summaryJa": [
+        "ほかの国の国民になりすまし、海外企業から収入を得る北朝鮮のIT労働者への監視を強めようと、日本やアメリカなど11か国の関係機関が共同で文書を公表し、北朝鮮側の手",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "日米など11か国",
+        "北朝鮮IT労働者への注意求める文書公表"
+      ],
+      "heat": {
+        "temperature": 58,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-faea7cc4",
+      "title": "Tailscale didn't stop the Hugging Face intrusion",
+      "url": "https://tailscale.com/blog/hugging-face-intrusion",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-31T19:03:45.000Z",
+      "summaryJa": [
+        "Tailscale didn't stop the Hugging Face intrusion",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Tailscale",
+        "didn",
+        "stop",
+        "Hugging",
+        "Face"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 93,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 75.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-dbc989cc",
+      "title": "日銀 政策金利を1％程度に据え置き決定",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015191761000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-31T09:56:07.000Z",
+      "summaryJa": [
+        "日銀は、31日まで開いた金融政策決定会合で、今の政策を維持することを決めました。",
+        "6月、利上げに踏み切ったばかりで、家計や企業への影響を見極める必要があると判断したとみられます。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "日銀",
+        "政策金利を1％程度に据え置き決定"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-e77a22ad",
+      "title": "自転車の交通違反 「青切符」導入3か月で全国7000件交付",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015192671000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-31T12:05:44.000Z",
+      "summaryJa": [
+        "自転車の交通違反に対して反則金の納付を通告するいわゆる「青切符」による取り締まりはことし4月の導入後3か月間に全国で7000件余りで、中でもスマホを見ながらの運",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "自転車の交通違反",
+        "青切符",
+        "導入3か月で全国7000件交付"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-c1823849",
+      "title": "ポーランドに飛しょう体が落下 “ロシアのミサイルの可能性”",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015191301000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-07-31T09:36:06.000Z",
+      "summaryJa": [
+        "ウクライナの隣国、ポーランドの東部に30日、飛しょう体が落下し、ポーランド政府はロシアのミサイルだった可能性が高いとしたうえで、詳しい調査を進める考えを示しまし",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "ポーランドに飛しょう体が落下",
+        "ロシアのミサイルの可能性"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-1857dfbd",
+      "title": "\"先に言っといて\"はAIにも効く。OpenAIの新文字起こしは誤認識が半減",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2129506.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-31T04:32:26.000Z",
+      "summaryJa": [
+        "\"先に言っといて\"はAIにも効く。OpenAIの新文字起こしは誤認識が半減",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "先に言っといて",
+        "OpenAIの新文字起こしは誤認識が半減"
+      ],
+      "heat": {
+        "temperature": 77,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 108,
+          "ageHours": 16,
+          "crossSources": 1,
+          "velocity": 6.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-1eba4df0",
+      "title": "Golang proposal: container/: generic collection types",
+      "url": "https://github.com/golang/go/issues/80590",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-31T18:39:47.000Z",
+      "summaryJa": [
+        "Golang proposal: container/: generic collection ty",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Golang",
+        "proposal",
+        "container/",
+        "generic",
+        "collection"
+      ],
+      "heat": {
+        "temperature": 77,
+        "signals": {
+          "hnPoints": 35,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 21.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "市川市動植物園",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-31T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "市川市動植物園"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-f89c7825",
+      "title": "homebridge/docker-homebridge — Homebridge Docker. HomeKit support for the impatient using Docker on x86_64, Raspberry Pi (ARM64). Includes ffmpeg + libfdk-aac. ",
+      "url": "https://github.com/homebridge/docker-homebridge",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-31T12:01:38Z",
+      "summaryJa": [
+        "Homebridge Docker.",
+        "HomeKit support for the impatient using Docker on x86_64, Raspberry Pi (ARM64).",
+        "Includes ffmpeg + libfdk-aac."
+      ],
+      "category": "oss",
+      "keywords": [
+        "homebridge/docker",
+        "homebridge",
+        "Docker",
+        "HomeKit",
+        "support"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "Raspberry PiやDockerで手軽にHomeKit互換環境を立ち上げられる軽量パッケージです。自分の部屋の家電や自作センサーをiOSエコシステムに組み込んで遊びたい時に格好の足場となります。"
+  },
+  "unavailableSources": []
+}

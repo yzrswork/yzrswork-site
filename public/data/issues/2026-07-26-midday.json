@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 32,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-26",
+  "dateDisplay": "Sunday, July 26, 2026",
+  "pressTimeJst": "2026-07-26 12:00",
+  "generatedAt": "2026-07-26T02:47:21.921Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "a2f907d8"
+  },
+  "theme": {
+    "title": "私的空間のインフラを耕す",
+    "note": "自宅サーバーやターミナル環境の整備、実用的なAIプロンプト。他人に頼らず自分の手元を育てるDIY精神が通底しています。"
+  },
+  "editorial": {
+    "comment": "自宅Kubernetesに侵入された記録（zenn-trend-b48df69c）は、ホビイストの自宅ラボならではのリアルな手触りがありました。インフラを自作し、守ることもまた、究極の「手懐けるハック」ですね。 —— YZRS Times 編集長",
+    "passedOver": "AndroidのADB制限に関する記事（hn-front-0be9792a）は関心が高かったですが、時事ニュースとしての性質が強く、昼休みに技術を手元で動かしたい今日の紙面には適さないため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "雨",
+    "icon": "rain",
+    "tempMax": 32,
+    "tempMin": 23,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 26,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64387,
+        "priceJpy": 10548664,
+        "change24hPct": 0.5,
+        "sparkline7d": [
+          64728.75,
+          64079.85,
+          66259.96,
+          65904.71,
+          64748.27,
+          64155.25,
+          64445.77
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1877.3,
+        "priceJpy": 307566,
+        "change24hPct": 0.8,
+        "sparkline7d": [
+          1858.99,
+          1854.53,
+          1941.67,
+          1938.03,
+          1887.92,
+          1859.56,
+          1878.84
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.177045,
+        "priceJpy": 29,
+        "change24hPct": -0.5,
+        "sparkline7d": [
+          0.186877,
+          0.185565,
+          0.192309,
+          0.190633,
+          0.182557,
+          0.17779,
+          0.178263
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 209.25,
+        "priceJpy": 34272,
+        "change24hPct": -0.8,
+        "sparkline7d": [
+          219.55,
+          211.23,
+          223.65,
+          221.53,
+          212.6,
+          209.54,
+          209.19
+        ]
+      }
+    ]
+  },
+  "top": [
+    "zenn-trend-b48df69c",
+    "lobsters-f1a912ac",
+    "qiita-popular-524e1252"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-49704f2c",
+        "hatebu-it-448c7235",
+        "hn-front-af128d53"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "qiita-popular-93fe4e99",
+        "qiita-popular-668d8e37"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-df756f9e",
+        "lobsters-dcf27ffe"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "zenn-trend-b48df69c",
+      "title": "放置していた旧環境で見つけたReact2Shell攻撃の実態",
+      "url": "https://zenn.dev/munenick/articles/b507a9848b6fdd",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-25T08:27:52.000Z",
+      "summaryJa": [
+        "はじめに 本記事は以下のミラーです。",
+        "https://www.",
+        "munenick."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-f1a912ac",
+      "title": "How to self-host servers in your living room on static IPs",
+      "url": "https://vimuser.org/l2tp.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-25T21:32:58.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "How",
+        "to",
+        "self",
+        "host",
+        "servers"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-524e1252",
+      "title": "【2026年最新】Zellijチートシート",
+      "url": "https://qiita.com/ta-061/items/cd8b63e9b4d9f46f758b?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-25T09:19:56.000Z",
+      "summaryJa": [
+        "ターミナルでAIエージェント、エディタ、開発サーバー、ログ監視を並べたい。",
+        "けれど、tmuxは設定やキー操作を覚えるまでが少し大変――そんな人に試してほしいのがZellijです。",
+        "Zellijは、初期状態からタブ、ペイン、マウス操作、画面下のキーヒントが使えるターミナルワーク."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 50,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-49704f2c",
+      "title": "The new rules of context engineering for Claude 5 generation models",
+      "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-25T20:42:35.000Z",
+      "summaryJa": [
+        "The new rules of context engineering for Claude 5 ",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "The",
+        "new",
+        "rules",
+        "of",
+        "context"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 175,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 28.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-448c7235",
+      "title": "AIが迷わず仕事を進められる「型」の作り方 〜10の工夫と638セッションの実測〜｜Yoshihiro Ibayashi (ちゃん)",
+      "url": "https://note.com/chan_san_jp/n/n137415f2ef48",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-24T12:06:16.000Z",
+      "summaryJa": [
+        "このnoteは、「#日めくりLayerX」と題して発信するブログリレーの2026年7月24日の記事として投稿しています。",
+        "はじめまして。",
+        "今年の4月にLayerXへ入社した伊林です。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Ibayashi",
+        "(ちゃん)"
+      ],
+      "heat": {
+        "temperature": 78,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 189,
+          "ageHours": 39,
+          "crossSources": 1,
+          "velocity": 4.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-af128d53",
+      "title": "Open-weight AI is having its Kubernetes moment",
+      "url": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-25T14:49:49.000Z",
+      "summaryJa": [
+        "Open-weight AI is having its Kubernetes moment",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Open",
+        "weight",
+        "AI",
+        "is",
+        "having"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 318,
+          "hatebuCount": 0,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 26.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-93fe4e99",
+      "title": "【Unity】VContainerを利用して安定した拡張性のあるゲーム基盤をつくる！",
+      "url": "https://qiita.com/archeleeds/items/042d8a9ffaf888d90752?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-25T14:05:42.000Z",
+      "summaryJa": [
+        "「ホーム画面から装備画面へ遷移して、確認ダイアログを開いて、前の画面に戻る」 どんなゲームにも必ずある、ごくありふれた処理です。",
+        "それなのに、シーン遷移とダイアログ管理の実装はプロジェクトごとに毎回ゼロから書かれ、毎回少しずつ壊れやすいものが出来上がっていきます。",
+        "なぜでしょう."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 13,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-668d8e37",
+      "title": "AIエージェントがあれば技術書なんてすぐ書けるでしょ、と思ったが無理だった",
+      "url": "https://qiita.com/watany/items/11358e8e8966d5e48a09?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-25T06:46:06.000Z",
+      "summaryJa": [
+        "はじめに 2026年5月2日に『Agentic Coding 生成AI時代のシステム開発入門』という単著を出しました。",
+        "生成AI×システム開発の情報がネットの場当たり的なものばかりで困っている人、エージェントの使い方をどこから学べばいいか分からない人、そして自分は大丈夫でも.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "と思ったが無理だった"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 20,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-df756f9e",
+      "title": "Zig by Example",
+      "url": "https://zigbyexample.neocities.org/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-25T12:58:43.000Z",
+      "summaryJa": [
+        "Inspired by the infamous Go by Example Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Zig",
+        "by",
+        "Example"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 14,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-dcf27ffe",
+      "title": "Himalaya v2.0.0: CLI to manage emails",
+      "url": "https://fosstodon.org/@pimalaya/116983467890532240",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-26T00:45:08.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Himalaya",
+        "v2.0.0",
+        "CLI",
+        "to",
+        "manage"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-f2a17242",
+      "title": "Show HN: A retro video game console I've been working on in my free time",
+      "url": "https://internalregister.github.io/2019/03/14/Homebrew-Console.html",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2019-03-14T20:25:03.000Z",
+      "summaryJa": [
+        "Show HN: A retro video game console I've been work",
+        "出典: Show HN",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "retro",
+        "video",
+        "game"
+      ],
+      "heat": {
+        "temperature": 35,
+        "signals": {
+          "hnPoints": 2690,
+          "hatebuCount": 0,
+          "ageHours": 64566,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "個人の余暇時間だけで設計・実装されたレトロゲームコンソール。電子工作と低レイヤプログラミングのロマンが詰まっており、見ているだけで創作意欲を刺激されます。"
+  },
+  "unavailableSources": []
+}

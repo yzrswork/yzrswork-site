@@ -1,0 +1,412 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 13,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-17",
+  "dateDisplay": "Friday, July 17, 2026",
+  "pressTimeJst": "2026-07-17 05:00",
+  "generatedAt": "2026-07-16T21:15:08.340Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "設計の拡張",
+    "note": "ツールを単なる道具ではなく、自身の思考を拡張するパートナーへと育てる日の記録。"
+  },
+  "editorial": {
+    "comment": "Claude Codeのスキル設計を論じた記事に、道具を使い倒すための真摯な哲学を感じます。単なる効率化ではなく、自分の思考プロセスをどうコードに落とし込むかという問いこそが、作り手の本分です。",
+    "passedOver": "AWS障害関連の記事は、情報の鮮度と実用性が個人の創作に直結しないため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "弱い雨",
+    "icon": "rain",
+    "tempMax": 30,
+    "tempMin": 25,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 25,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64132,
+        "priceJpy": 10416072,
+        "change24hPct": -1.11,
+        "sparkline7d": [
+          63076.73,
+          63955.87,
+          64083.9,
+          62728.01,
+          62622.79,
+          65105.91,
+          64462.13
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1874.81,
+        "priceJpy": 304499,
+        "change24hPct": -2.44,
+        "sparkline7d": [
+          1746.78,
+          1792.86,
+          1805.41,
+          1779.6,
+          1783.95,
+          1924.7,
+          1878.3
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.190805,
+        "priceJpy": 30.99,
+        "change24hPct": 1.84,
+        "sparkline7d": [
+          0.182566,
+          0.189826,
+          0.185954,
+          0.182998,
+          0.178107,
+          0.189638,
+          0.191972
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 221.9,
+        "priceJpy": 36041,
+        "change24hPct": -2.73,
+        "sparkline7d": [
+          237.39,
+          245.91,
+          246.34,
+          236.28,
+          235.7,
+          236.99,
+          221.78
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-4dfe482c",
+    "hatebu-it-78a3d34e",
+    "hatebu-it-82df6924"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-cb688f0a",
+        "nhk-top-34a97d5e",
+        "nhk-top-560a9cf5"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hn-front-8666487d"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-4dfe482c",
+      "title": "Claude Codeのスキル設計で効く4つのポイント —— 「AIへの仕事の任せ方」を意識した設計 - RAKUS Developers Blog | ラクス エンジニアブログ",
+      "url": "https://tech-blog.rakus.co.jp/entry/20260716/claude",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-16T06:03:52.000Z",
+      "summaryJa": [
+        "こんにちは、菊池（akikuchi_rks）です。",
+        "私の所属するチームではClaude Codeを開発フローに取り入れており、私自身も設計書のレビューや定型調査の自動化など、さまざまな業務でスキル（Agent S",
+        "スキルを書き続けていて特に感じるのは、「とりあえず動くスキル」と「安定して業務に組み込め."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Claude",
+        "Codeのスキル設計で効く4つのポイント",
+        "「AIへの仕事の任せ方」を意識した設計",
+        "RAKUS",
+        "Developers"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 118,
+          "ageHours": 15,
+          "crossSources": 1,
+          "velocity": 7.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-78a3d34e",
+      "title": "Claude Codeが化けた。今使っている3つのプラグイン+標準機能の活用法",
+      "url": "https://zenn.dev/sonicmoov/articles/8712598f532b18",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-16T02:38:31.000Z",
+      "summaryJa": [
+        "はじめに 株式会社ソニックムーブでフロントエンドエンジニアとして働いているShoppingSharkです。",
+        "ソニックムーブに入社して業務でAIを使い始めて3ヶ月ほど経ちました。",
+        "昨今はループエンジニアリングが話題ですが、個人ではまだそのレイヤーまで進めておらず、日々の業務はバイブコーディングで回しています。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Claude",
+        "Codeが化けた"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 260,
+          "ageHours": 19,
+          "crossSources": 2,
+          "velocity": 14
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-82df6924",
+      "title": "NVIDIAのジェンスン・フアン氏が秋葉原でセガに賛辞　これは巨大テック企業のトップによる社交辞令ではなく、セガのゲームに脳を焼かれたゲーマーの叫びだ (1/2)",
+      "url": "https://ascii.jp/elem/000/004/420/4420031/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-16T05:23:04.000Z",
+      "summaryJa": [
+        "NVIDIAを「謎の半導体企業」と表現する人は流石にもういないだろう。",
+        "少し前はPCグラフィックス、今はAI業界を牽引するビッグテック企業である。",
+        "そんなNVIDIAも創業期に技術選択に失敗して死にかけており、その窮地を救ったのがセガだ。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "NVIDIAのジェンスン",
+        "フアン氏が秋葉原でセガに賛辞",
+        "(1/2)"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 101,
+          "ageHours": 16,
+          "crossSources": 1,
+          "velocity": 6.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-cb688f0a",
+      "title": "米が6日連続攻撃 イランはバーブルマンデブ海峡封鎖を要請か",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015178751000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-16T21:11:51.000Z",
+      "summaryJa": [
+        "アメリカ軍が連日、イランへの攻撃を続けるなか、ロイター通信は、イランがイエメンの反政府組織フーシ派に対し、ホルムズ海峡の代替ルートにもなっているバーブルマンデブ",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "米が6日連続攻撃",
+        "イランはバーブルマンデブ海峡封鎖を要請か"
+      ],
+      "heat": {
+        "temperature": 60,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-34a97d5e",
+      "title": "イギリス労働党 新党首にバーナム氏選出へ 新首相就任の見込み",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015178741000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-16T20:27:56.000Z",
+      "summaryJa": [
+        "イギリスの与党・労働党の党首選挙は16日、立候補の受け付けが締め切られ、公式の発表はありませんが、イギリスメディアによりますと、マンチェスターの前市長で下院議員",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "イギリス労働党",
+        "新党首にバーナム氏選出へ",
+        "新首相就任の見込み"
+      ],
+      "heat": {
+        "temperature": 60,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-560a9cf5",
+      "title": "北日本～西日本で猛暑日 関東甲信など大気の状態不安定",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015178661000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-16T21:02:38.000Z",
+      "summaryJa": [
+        "17日も、北日本から西日本の各地で猛暑日が予想され、熱中症への対策を徹底するようにしてください。",
+        "一方、湿った空気が流れ込んでいる影響で、関東甲信などでは大気の状態が不安定になっていて、局地的に非常に激…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "北日本～西日本で猛暑日",
+        "関東甲信など大気の状態不安定"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-8666487d",
+      "title": "How Our Rust-to-Zig Rewrite Is Going",
+      "url": "https://rtfeldman.com/rust-to-zig",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-16T11:39:27.000Z",
+      "summaryJa": [
+        "How Our Rust-to-Zig Rewrite Is Going",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "How",
+        "Our",
+        "Rust",
+        "to",
+        "Zig"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 330,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 2,
+          "velocity": 34.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "埼玉新聞",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-16T21:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "埼玉新聞"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-5bd001da",
+      "title": "psmux/psmux — Tmux on Windows Powershell - tmux for PowerShell, Windows Terminal, cmd.exe. Includes psmux, pmux, and tmux commands. This is native Powershell Tmux designed for Windows in Rust 🦀",
+      "url": "https://github.com/psmux/psmux",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-16T15:27:52Z",
+      "summaryJa": [
+        "Tmux on Windows Powershell - tmux for PowerShell, Windows Terminal, cmd.",
+        "exe.",
+        "Includes psmux, pmux, and tmux commands."
+      ],
+      "category": "oss",
+      "keywords": [
+        "psmux/psmux",
+        "Tmux",
+        "on",
+        "Windows",
+        "Powershell"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "Windows環境での作業効率を劇的に改善する、Rust製のネイティブな試みが光ります。OSの壁を超えて快適な環境を自ら構築する姿勢は、多くのエンジニアの共感を呼ぶでしょう。"
+  },
+  "unavailableSources": []
+}

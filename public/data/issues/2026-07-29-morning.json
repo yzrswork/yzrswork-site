@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 37,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-29",
+  "dateDisplay": "Wednesday, July 29, 2026",
+  "pressTimeJst": "2026-07-29 05:00",
+  "generatedAt": "2026-07-28T20:18:11.132Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "動的メカニズムの可視化",
+    "note": "複雑なプロセスの内部構造を直感的に捉え直す視点。"
+  },
+  "editorial": {
+    "comment": "データベースの内部挙動を都市のビジュアルに変換する『PGSimCity』の着想に心を奪われました。見えない裏側のプロセスを可視化することで、システムの挙動を感覚的に理解できるようになります。抽象的なデータ構造に触れるような体験は、創作における新たな閃きを与えてくれるはずです。 —— YZRS Times 編集長",
+    "passedOver": "GMOの中古ドメイン自動選定に関する話題は、今日の技術構造のテーマから外れるため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ時々曇り",
+    "icon": "partly-cloudy",
+    "tempMax": 35,
+    "tempMin": 23,
+    "precipChancePct": 55
+  },
+  "market": {
+    "fearGreed": {
+      "value": 29,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63930,
+        "priceJpy": 10475120,
+        "change24hPct": -1.5,
+        "sparkline7d": [
+          66410.98,
+          66077.06,
+          65393.85,
+          63926.05,
+          64467.76,
+          64597.47,
+          63678.71
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1919.27,
+        "priceJpy": 314476,
+        "change24hPct": -0.9,
+        "sparkline7d": [
+          1922.96,
+          1933.41,
+          1879.31,
+          1853.96,
+          1885.2,
+          1929.7,
+          1909.52
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.172824,
+        "priceJpy": 28.32,
+        "change24hPct": -2.1,
+        "sparkline7d": [
+          0.193574,
+          0.187413,
+          0.18308,
+          0.176765,
+          0.178107,
+          0.175968,
+          0.172306
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 213.74,
+        "priceJpy": 35022,
+        "change24hPct": -0.6,
+        "sparkline7d": [
+          223.94,
+          219.92,
+          211.51,
+          211.23,
+          210.73,
+          214.7,
+          212.58
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-3c2b7e59",
+    "nhk-top-e4bb77d6",
+    "hatebu-it-594636fb"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "yahoo-topics-1b846cfe",
+        "nhk-world-07ce21d8"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-92e9aa85",
+        "hatebu-it-4e8493f8"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-3c2b7e59",
+      "title": "データベース「PostgreSQL」がどのように実際には内部で動いているかがシムシティっぽい3Dでわかる「PGSimCity」",
+      "url": "https://gigazine.net/news/20260728-pgsimcity-postgresql/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-28T11:29:10.000Z",
+      "summaryJa": [
+        "PostgreSQLは世界中で広く使われているデータベース管理システムですが、SQLを実行したときに内部でどのプロセスが動き、データがどのようにメモリやディスク",
+        "そんなPostgreSQLの内部構造を、シムシティのような3D都市として可視化してくれるウェブアプリ.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "データベース",
+        "PostgreSQL",
+        "PGSimCity"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 175,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 19.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-e4bb77d6",
+      "title": "熊本で震度7 地震活動活発 同程度の地震に1週間ほど注意を",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015189251000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-28T19:56:50.000Z",
+      "summaryJa": [
+        "28日に熊本県熊本地方でマグニチュード7.",
+        "1の大地震が発生して熊本県の宇城市と氷川町で震度7の揺れを観測し、熊本県では大きな被害が出ています。",
+        "その後も震度5弱を観測する地震が3回発生するなど地震活動が…"
+      ],
+      "category": "news",
+      "keywords": [
+        "熊本で震度7",
+        "地震活動活発"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-594636fb",
+      "title": "ヤモリの足裏を科学した米軍の装備、粘着剤なしで垂直壁を走る驚異の技術* | Forbes JAPAN 公式サイト（フォーブス ジャパン）",
+      "url": "https://forbesjapan.com/articles/detail/101739",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-28T09:34:23.000Z",
+      "summaryJa": [
+        "米国防高等研究計画局（DARPA）は2014年、「Z-Man」と呼ばれるプログラムの成果を公開した。",
+        "それは、体重90kg超のクライマーが約23kgの荷物を背負い、ロープもハーネスも吸盤も使わず、2つの接着パドルだけを使って、ガラスでできた高さ約7.",
+        "6mの垂直壁を上るというデモンストレーションだった。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "ヤモリの足裏を科学した米軍の装備",
+        "粘着剤なしで垂直壁を走る驚異の技術*",
+        "Forbes",
+        "JAPAN",
+        "公式サイト"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 60,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 5.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-1b846cfe",
+      "title": "電池や通信 スマホの災害時の対策",
+      "url": "https://news.yahoo.co.jp/pickup/6589711?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-07-28T17:27:29.000Z",
+      "summaryJa": [
+        "電池や通信 スマホの災害時の対策",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "電池や通信",
+        "スマホの災害時の対策"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-07ce21d8",
+      "title": "米ウクライナ首脳会談 迎撃ミサイルのライセンス生産など協議",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015189261000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-07-28T20:03:13.000Z",
+      "summaryJa": [
+        "ウクライナのゼレンスキー大統領はアメリカのトランプ大統領と会談し、迎撃ミサイルのライセンス生産などについて協議したことを明らかにするとともに、ロシアとの和平に向",
+        "出典: NHKニュース 国際",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "米ウクライナ首脳会談",
+        "迎撃ミサイルのライセンス生産など協議"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-92e9aa85",
+      "title": "Projektor",
+      "url": "https://tajd.github.io/projektor/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-28T11:53:25.000Z",
+      "summaryJa": [
+        "An issue tracker and wiki your AI coding agent runs as a first-class client - ag",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Projektor"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 26,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 3.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-4e8493f8",
+      "title": "「Xが情報収集に役立たない……」熊本地震で不満の声続出　「Twitterを返して」",
+      "url": "https://www.itmedia.co.jp/news/article/2607/28/2000000249/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-28T13:20:40.000Z",
+      "summaryJa": [
+        "7月28日に発生した令和8年熊本地震。",
+        "政府・自治体や通信各社などが対応や情報発信に動いている一方で、SNSでは「Xが情報収集の役に立たなくなっている」との声が散見される。",
+        "障害が起きていない点を評価する声もあるが、少なくないユーザーから「Twitter（時代の利便性）を返して」という意見が上がっていた。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Xが情報収集に役立たない",
+        "熊本地震で不満の声続出",
+        "Twitterを返して"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 132,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 19
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "最低賃金",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-28T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "最低賃金"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-ebd51f8b",
+      "title": "pschatzmann/arduino-audio-tools — Audio Tools (a powerful Audio library for Arduino, PlatformIO, IDF)",
+      "url": "https://github.com/pschatzmann/arduino-audio-tools",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-28T11:22:34Z",
+      "summaryJa": [
+        "Audio Tools (a powerful Audio library for Arduino, PlatformIO, IDF)",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "pschatzmann/arduino",
+        "audio",
+        "tools",
+        "powerful",
+        "library"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "ArduinoやPlatformIOで高度な音声処理を手軽に扱えるオーディオライブラリです。ハードウェアと音の制作を結びつける強力な道具として、自作楽器や音響実験の幅を大きく広げてくれます。"
+  },
+  "unavailableSources": []
+}

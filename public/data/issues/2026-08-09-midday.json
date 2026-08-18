@@ -1,0 +1,533 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 60,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-08-09",
+  "dateDisplay": "Sunday, August 9, 2026",
+  "pressTimeJst": "2026-08-09 12:00",
+  "generatedAt": "2026-08-09T02:48:12.825Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "休眠ハードウェアの再点火",
+    "note": "机の奥に眠る古いデバイスや、馴染み深いシステムを自らの手で拡張し、再び熱を宿らせるための挑戦。"
+  },
+  "editorial": {
+    "comment": "スマホを即座に常時稼働サーバーに変えてしまうアイデア（hn-front-7d01f154）に、電子工作的な遊び心と実用性を強く感じました。昼休みの間に、引き出しに眠っている古い端末を探したくなります。 —— YZRS Times 編集長",
+    "passedOver": "Hugging Faceのインシデント詳細など、時事色の強いセキュリティ解説や、感情的なフェイクニュースに関する話題は、昼休みの創作インプットに直接繋がらないため今回は見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 33,
+    "tempMin": 23,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 31,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64749,
+        "priceJpy": 10217707,
+        "change24hPct": -0.1,
+        "sparkline7d": [
+          62926.68,
+          62766.19,
+          63500.19,
+          64280.41,
+          64758.27,
+          64932.37,
+          64930.17
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1913.46,
+        "priceJpy": 301953,
+        "change24hPct": 0.1,
+        "sparkline7d": [
+          1854.88,
+          1857.95,
+          1855.65,
+          1873.19,
+          1915.59,
+          1913.7,
+          1916.4
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.163535,
+        "priceJpy": 25.81,
+        "change24hPct": 1.1,
+        "sparkline7d": [
+          0.171885,
+          0.171154,
+          0.1701,
+          0.166653,
+          0.162428,
+          0.162097,
+          0.164339
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 215.54,
+        "priceJpy": 34014,
+        "change24hPct": 0.4,
+        "sparkline7d": [
+          207.71,
+          210.54,
+          212.9,
+          212.73,
+          214.77,
+          216.33,
+          216.81
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-7d01f154",
+    "hatebu-it-cf845bdb",
+    "zenn-trend-b60a3073"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-9d1aeb56",
+        "hatebu-it-3f185c2d",
+        "hn-front-3605192b"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-3d4c3fa1",
+        "qiita-popular-f63632aa",
+        "qiita-popular-cf712d27"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-a1e1ea33",
+        "lobsters-4f7d751b",
+        "lobsters-3dbd5266"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-7d01f154",
+      "title": "My server is a phone now",
+      "url": "https://seg6.space/posts/phone-server/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-08T22:49:23.000Z",
+      "summaryJa": [
+        "My server is a phone now",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "server",
+        "phone"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 123,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 30.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-cf845bdb",
+      "title": "Claude Code で「ループエンジニアリング」を実践してみた",
+      "url": "https://zenn.dev/tetsu_don/articles/e40b95dfc726ac",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-08T21:17:01.000Z",
+      "summaryJa": [
+        "Claude Code で「ループエンジニアリング」を実践し、Maker-Checker構成で本物のバグを検出できた話 はじめに てつどんです。",
+        "データエンジニアとして 日々業務をこなしております。",
+        "最近、バズワードのように、いろんなところで「ループエンジニアリング」というのを聞くことが多くなりました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Claude",
+        "Code",
+        "ループエンジニアリング"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 87,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 15.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-b60a3073",
+      "title": "社内MCPをCloudflare AccessとCloudflare Workersでつくる",
+      "url": "https://zenn.dev/pipipipipi/articles/661b28da670728",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-07T09:29:59.000Z",
+      "summaryJa": [
+        "業務で社内MCPを作成する機会がありました。",
+        "Cloudflare AccessのManaged OAuthを使うことで簡単に実装できたので備忘録もかねてZennに投稿することにしまいた。",
+        "要件 社内メンバーのみが利用できること MCPから行えるのは読み取り操作だけであること 簡単がいい！"
+      ],
+      "category": "programming",
+      "keywords": [
+        "社内MCPをCloudflare",
+        "AccessとCloudflare",
+        "Workersでつくる"
+      ],
+      "heat": {
+        "temperature": 42,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 41,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-9d1aeb56",
+      "title": "Os8088: A powerful Mac-like OS for the IBM XT, 286, 386",
+      "url": "https://os8088.com/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-08T23:37:27.000Z",
+      "summaryJa": [
+        "Os8088: A powerful Mac-like OS for the IBM XT, 286",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Os8088",
+        "powerful",
+        "Mac",
+        "OS",
+        "IBM"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 60,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 18.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-3f185c2d",
+      "title": "「AIを全員に配った組織」の生産性が落ちるとき - 🐴 (馬)",
+      "url": "https://blog.takaumada.com/entry/ai-organization-flow",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-08T12:08:46.000Z",
+      "summaryJa": [
+        "「ブライスのパラドックス」と呼ばれる現象があります。",
+        "混雑するネットワークに新しい道を加えたのに、各人が自分にとって最短の経路を選んだ結果、全員の移動時間が逆に長くなることがある、という交通工学のパラドックスです。",
+        "逆に「道をなくす」ことで、移動時間が短縮されることもあります。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "AIを全員に配った組織"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 263,
+          "ageHours": 15,
+          "crossSources": 1,
+          "velocity": 17.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-3605192b",
+      "title": "“Code was never the hard part” is an insult to all programmers",
+      "url": "https://blog.senko.net/code-was-never-the-hard-part-is-an-insult-to-all-programmers",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-08T14:32:33.000Z",
+      "summaryJa": [
+        "\"Code was never the hard part\" is an insult to all",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Code",
+        "hard",
+        "part",
+        "insult",
+        "programmers"
+      ],
+      "heat": {
+        "temperature": 90,
+        "signals": {
+          "hnPoints": 599,
+          "hatebuCount": 0,
+          "ageHours": 12,
+          "crossSources": 2,
+          "velocity": 48.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-3d4c3fa1",
+      "title": "楽観ロックの実装でおさえたいポイントと、よくあるしくじり",
+      "url": "https://zenn.dev/levtech/articles/how-to-concrete-optimistic-lock",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-07T03:03:06.000Z",
+      "summaryJa": [
+        "これはなに こんにちは、レバテック開発部のもりたです。",
+        "今回はアプリケーションを作る上でわりと出会う楽観ロックの実装方法についてまとめます。",
+        "コードの例はPHP/Laravelですが、基本的には言語やフレームワークに制限はありません。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "楽観ロックの実装でおさえたいポイントと"
+      ],
+      "heat": {
+        "temperature": 40,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 48,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-f63632aa",
+      "title": "Amazon DynamoDBのリアルタイムベクトル検索機能をちょっと整理する",
+      "url": "https://qiita.com/Syoitu/items/068db63a8bf3bb961b2b?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-08T06:15:11.000Z",
+      "summaryJa": [
+        "前書き 2026年8月5日、Amazon DynamoDBがリアルタイムベクトル検索に対応しました。",
+        "これまでAWSでベクトル検索をやりたい場合、AWS Marketplace利用しない場合、選択肢はだいたい次の5つでした。",
+        "Amazon OpenSearch S."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Amazon"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 21,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-cf712d27",
+      "title": "LTできたらバンジー飛べる",
+      "url": "https://qiita.com/tanahiro2010/items/e536eabc73691f87dc0e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-08T12:27:46.000Z",
+      "summaryJa": [
+        "LTをしたことがある人に聞いてみたいことがある。",
+        "登壇の直前、演台に立つ寸前のあの数十秒間、自分の身体に何が起きていたかを覚えているだろうか。",
+        "僕にはある。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "LTできたらバンジー飛べる"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 14,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-a1e1ea33",
+      "title": "Multistack Concatenative Programming Languages",
+      "url": "https://www.sheeeeeeeep.art/multistack-catlangs.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-08T21:11:53.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Multistack",
+        "Concatenative",
+        "Languages"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-4f7d751b",
+      "title": "atomstr - RSS/Atom-to-Nostr bridge",
+      "url": "https://atomstr.data.haus/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-08T21:28:56.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "atomstr",
+        "RSS/Atom",
+        "Nostr",
+        "bridge"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-3dbd5266",
+      "title": "Systemd Dynamic Users (2020)",
+      "url": "https://ethulhu.co.uk/systemd-dynamicuser",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-08T18:52:15.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Systemd",
+        "Dynamic",
+        "Users"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-94f327c8",
+      "title": "Zer0-bit/gaggiuino — A Gaggia Classic control project using microcontrollers.",
+      "url": "https://github.com/Zer0-bit/gaggiuino",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-04T20:08:48Z",
+      "summaryJa": [
+        "A Gaggia Classic control project using microcontrollers.",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "Zer0",
+        "bit/gaggiuino",
+        "Gaggia",
+        "Classic",
+        "control"
+      ],
+      "heat": {
+        "temperature": 40,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 103,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "エスプレッソマシンの内部をArduinoなどでハックし、プロレベルの抽出制御を可能にするプロジェクトです。身近なハードウェアに手を入れ、好みの味を物理的・電気的に追求する喜びが詰まっています。"
+  },
+  "unavailableSources": []
+}

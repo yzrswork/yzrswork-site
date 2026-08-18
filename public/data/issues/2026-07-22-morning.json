@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 23,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-22",
+  "dateDisplay": "Wednesday, July 22, 2026",
+  "pressTimeJst": "2026-07-22 05:00",
+  "generatedAt": "2026-07-21T20:17:15.926Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "道具と地力",
+    "note": "ツールが一巡した今、道具に使われず手足を動かす技術者の地力が試されている。"
+  },
+  "editorial": {
+    "comment": "今朝は『AIコーディングブーム』が去ったUSの動向に目が行きました。ツールが日常に溶け込むほど、それを使う作り手自身の基礎力と手触りのある設計思想が際立ってきます。今日も自分だけのものづくりを進めていきましょう。 —— YZRS Times 編集長",
+    "passedOver": "広告展開が話題となったChatGPT関連（hn-front-8864b359）は商業的な動向が中心であり、ものづくりの視点とは距離があるため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ",
+    "icon": "sunny",
+    "tempMax": 35,
+    "tempMin": 25,
+    "precipChancePct": 88
+  },
+  "market": {
+    "fearGreed": {
+      "value": 25,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 66351,
+        "priceJpy": 10830404,
+        "change24hPct": 1.81,
+        "sparkline7d": [
+          64526.86,
+          64831.34,
+          63491.88,
+          63907.37,
+          64476.48,
+          64572.57,
+          66531.8
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1921.36,
+        "priceJpy": 313623,
+        "change24hPct": 1.16,
+        "sparkline7d": [
+          1869.98,
+          1919.96,
+          1849.65,
+          1844.36,
+          1871.72,
+          1870.84,
+          1925.57
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.192926,
+        "priceJpy": 31.49,
+        "change24hPct": 2.57,
+        "sparkline7d": [
+          0.184885,
+          0.189147,
+          0.183073,
+          0.184456,
+          0.186995,
+          0.187679,
+          0.192417
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 223.82,
+        "priceJpy": 36533,
+        "change24hPct": 2.55,
+        "sparkline7d": [
+          236.49,
+          226.97,
+          222.39,
+          218.66,
+          217.4,
+          215,
+          225.16
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-2d7be904",
+    "hatebu-it-f6019997",
+    "nhk-top-f2474414"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-87cd749d",
+        "nhk-top-c21084bd",
+        "yahoo-topics-1a0c3f98"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-ce0fbec3",
+        "hatebu-it-0febbeb1",
+        "hatebu-it-a33b744c"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-2d7be904",
+      "title": "FreeInk: Open ecosystem for e-readers",
+      "url": "https://freeink.org/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-21T18:39:06.000Z",
+      "summaryJa": [
+        "FreeInk: Open ecosystem for e-readers",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "FreeInk",
+        "Open",
+        "ecosystem",
+        "for",
+        "readers"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 128,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 78.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-f6019997",
+      "title": "「AIコーディングブーム」が去ったUSで、エンジニアに求められる「本体の強さ」",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2607/21/news012.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-20T23:13:38.000Z",
+      "summaryJa": [
+        "「AIコーディングブーム」が去ったUSで、エンジニアに求められる「本体の強さ」：Go AbekawaのGo Global！",
+        "牛尾剛さん AI vs.",
+        "人間編（前編）（1/2 ページ） 米国MS開発の最前線では「コーディングエージェントブーム」は既に終息し、AIは日常の文房具に。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "「AIコーディングブーム」が去ったUSで",
+        "エンジニアに求められる「本体の強さ」"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 394,
+          "ageHours": 21,
+          "crossSources": 1,
+          "velocity": 18.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-f2474414",
+      "title": "ニチレイ ハッカー集団が犯行声明 「ランサムウエア」攻撃か",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015182261000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-21T20:01:00.000Z",
+      "summaryJa": [
+        "システム障害が発生し、出荷などの業務に影響が出た冷凍食品大手「ニチレイ」へのサイバー攻撃について、ハッカー集団が21日夜、犯行声明を出したことがセキュリティー会",
+        "このハッカー集…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "ニチレイ",
+        "ハッカー集団が犯行声明",
+        "「ランサムウエア」攻撃か"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-87cd749d",
+      "title": "岐阜 愛知で40度超 22日も関東甲信や東海で「酷暑日」予想",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015181481000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-21T12:03:04.000Z",
+      "summaryJa": [
+        "21日は、岐阜県と愛知県で、最高気温が40度以上となり、気象庁が運用を始めてから初めての「酷暑日」となりました。",
+        "22日も関東甲信や東海で「酷暑日」が予想されていて、熱中症に厳重に警戒してください。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "岐阜",
+        "愛知で40度超",
+        "22日も関東甲信や東海で「酷暑日」予想"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-c21084bd",
+      "title": "円相場 一時1ドル＝163円台に値下がり 約39年半ぶりの円安水準",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015182211000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-21T17:35:42.000Z",
+      "summaryJa": [
+        "21日のニューヨーク外国為替市場ではイラン情勢の緊迫化を背景に円を売って有事に強いとされるドルを買う動きが進み、円相場は一時、1ドル＝163円台に値下がりしまし",
+        "これは、およそ39年半ぶりの円安ドル…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "円相場",
+        "一時1ドル＝163円台に値下がり",
+        "約39年半ぶりの円安水準"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-1a0c3f98",
+      "title": "梨5000個盗まれ「栽培辞めます」",
+      "url": "https://news.yahoo.co.jp/pickup/6588825?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-07-21T13:21:50.000Z",
+      "summaryJa": [
+        "梨5000個盗まれ「栽培辞めます」",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "梨5000個盗まれ「栽培辞めます」"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-ce0fbec3",
+      "title": "Claude Code Web の Routine で日々の開発を自動化する",
+      "url": "https://zenn.dev/mizchi/scraps/4e5d72496e2bfc",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-21T08:10:33.000Z",
+      "summaryJa": [
+        "自分が気に入ってる Claude Code Web を使った開発の(一部)自動化の手法を紹介します。",
+        "周りにあまり使ってる人がいないのですが、作者のボリスを参考に自分も開発の一部を自動化するのにある程度成功しています。",
+        "Claude Code Web Claude Code は Web 上のダッシュボードからコンテナ環境で開発することができます (一."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Claude",
+        "Code",
+        "Web",
+        "Routine",
+        "で日々の開発を自動化する"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 152,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 12.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-0febbeb1",
+      "title": "LLM の「脳内」をハッキングする技術 - ｼﾞｮｲｼﾞｮｲｼﾞｮｲ",
+      "url": "https://joisino.hatenablog.com/entry/hack",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-21T09:10:55.000Z",
+      "summaryJa": [
+        "LLM の内部状態やパラメータ、いわばLLM の「脳内」を局所的に書き換えることで、LLM の動作に介入する手法が発展を遂げています。",
+        "まずは最も基本的な操舵ベクトルについてみていきましょう。",
+        "操舵ベクトル LLM の内部状態を特定の方向に動かすことで動作を操作できます。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "LLM",
+        "の「脳内」をハッキングする技術",
+        "ｼﾞｮｲｼﾞｮｲｼﾞｮｲ"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 114,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 10.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-a33b744c",
+      "title": "AIに会社の地図を持たせたら、3年目社員のように働き始めた 〜精度とトークン効率を上げるオントロジーの実践〜｜kunpe (ymdpharm)",
+      "url": "https://note.com/ymdpharm3/n/n8515d151e56d",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-21T00:30:45.000Z",
+      "summaryJa": [
+        "AIに会社の地図を持たせたら、3年目社員のように働き始めた 〜精度とトークン効率を上げるオントロジーの実践〜 AI に仕事を頼むと、まず会社のことを説明する仕事",
+        "この困りごとは世界共通のようで、Y Combinator は「Company Brain」というカテゴリを立て、世界のすべての会社が必要とするようになる、と言.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "AIに会社の地図を持たせたら",
+        "3年目社員のように働き始めた",
+        "(ymdpharm)"
+      ],
+      "heat": {
+        "temperature": 76,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 193,
+          "ageHours": 20,
+          "crossSources": 1,
+          "velocity": 9.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "トレード",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-21T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "トレード"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-24c8dccc",
+      "title": "Botspot/pi-apps — Raspberry Pi App Store for Open Source Projects",
+      "url": "https://github.com/Botspot/pi-apps",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-21T12:54:51Z",
+      "summaryJa": [
+        "Raspberry Pi App Store for Open Source Projects",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "Botspot/pi",
+        "apps",
+        "Raspberry",
+        "Pi",
+        "App"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "Raspberry Pi上で各種アプリを簡便に導入できるコミュニティ製のストアです。試作環境の構築手順を大幅に短縮し、電子工作のアイデアをすぐに試す助けになります。"
+  },
+  "unavailableSources": []
+}

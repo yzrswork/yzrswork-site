@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 71,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-08-15",
+  "dateDisplay": "Saturday, August 15, 2026",
+  "pressTimeJst": "2026-08-15 05:00",
+  "generatedAt": "2026-08-14T20:17:39.999Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "言語化の限界と機械の補完",
+    "note": "AIが暗黙知の代弁者となる一方で、人間の感覚とデジタル表現の間に生じる微細な摩擦について考える"
+  },
+  "editorial": {
+    "comment": "ベテランの暗黙知をLLMで解き明かす試み（hatebu-it-225e19f7）は、技術継承の希望であると同時に、言語というフィルターを通す際に失われるニュアンスの重さにも気づかされます。 —— YZRS Times 編集長",
+    "passedOver": "政治的な印象操作に関する議論（hatebu-it-817c29b9）は重要ですが、今朝の技術の機微に焦点を当てる構成からは外しました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "雨",
+    "icon": "rain",
+    "tempMax": 28,
+    "tempMin": 23,
+    "precipChancePct": 94
+  },
+  "market": {
+    "fearGreed": {
+      "value": 29,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 62900,
+        "priceJpy": 10023948,
+        "change24hPct": -0.6,
+        "sparkline7d": [
+          64928.02,
+          64916.01,
+          64952.56,
+          64039.48,
+          64092.91,
+          63864.27,
+          62863.41
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1878.1,
+        "priceJpy": 299298,
+        "change24hPct": -0.3,
+        "sparkline7d": [
+          1917.23,
+          1915.38,
+          1916.49,
+          1876.89,
+          1907.63,
+          1893.2,
+          1873.72
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.158846,
+        "priceJpy": 25.31,
+        "change24hPct": -0.5,
+        "sparkline7d": [
+          0.161911,
+          0.164479,
+          0.16255,
+          0.161036,
+          0.161183,
+          0.161062,
+          0.159127
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 203.28,
+        "priceJpy": 32395,
+        "change24hPct": -1.4,
+        "sparkline7d": [
+          216.36,
+          216.05,
+          215.71,
+          215.31,
+          213.95,
+          213.22,
+          202.29
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-225e19f7",
+    "hatebu-it-198b3d0f",
+    "hatebu-it-77b1cf3b"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-c10e84c9",
+        "nhk-world-84e24864",
+        "nhk-top-f116f985"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-2c221755"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-225e19f7",
+      "title": "なぜベテランの暗黙知は、文書化しても継承できないのか | DevelopersIO",
+      "url": "https://dev.classmethod.jp/articles/why-tacit-knowledge-cannot-be-documented/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-13T22:08:06.000Z",
+      "summaryJa": [
+        "ベテランの判断を若手に引き継ごうとマニュアル化しても、肝心の部分は毎回こぼれ落ちます。",
+        "理由はシンプルで、本人が「言語化できていない・そもそも言語化すべきだと気づいていない」判断こそが価値の中心だからです。",
+        "この記事では、なぜ暗黙知の継承が長年うまくいかなかったのか、その構造と、いまLLMで何が変わりつ."
+      ],
+      "category": "programming",
+      "keywords": [
+        "文書化しても継承できないのか",
+        "DevelopersIO"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 224,
+          "ageHours": 22,
+          "crossSources": 1,
+          "velocity": 10.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-198b3d0f",
+      "title": "夏祭りのポップやポスターをAIで作るの本当にやめた方がいい、ぱっと見は整ってるけど美味しそうに見えない→最近やたら増えてきて違和感を持っている人が多いらしい",
+      "url": "https://togetter.com/li/2732994",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-14T13:40:02.000Z",
+      "summaryJa": [
+        "夏祭りのポップやポスターをAIで作るの本当にやめた方がいい、ぱっと見は整ってるけど美味しそうに見えない→最近やたら増えてきて違和感を持っている人が多いらしい",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 26,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 3.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-77b1cf3b",
+      "title": "ChatGPT、PC操作やWeb閲覧履歴を記録し、作業の自動化を助ける機能",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2132795.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-14T06:38:17.000Z",
+      "summaryJa": [
+        "ChatGPT、PC操作やWeb閲覧履歴を記録し、作業の自動化を助ける機能",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "ChatGPT",
+        "PC操作やWeb閲覧履歴を記録し",
+        "作業の自動化を助ける機能"
+      ],
+      "heat": {
+        "temperature": 78,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 30,
+          "ageHours": 14,
+          "crossSources": 1,
+          "velocity": 2.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-c10e84c9",
+      "title": "千葉など関東 15日明け方にかけ非常に激しい雨のおそれ 警戒を",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260814de44019",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-14T14:56:27.000Z",
+      "summaryJa": [
+        "大雨や土砂災害の特別警報が相次いで発表された千葉県では、14日夕方になって再び局地的に雨雲が発達し、激しい雨が降ったところがあります。",
+        "千葉県を含む関東では15日明け方にかけて激しい雨や非常に激しい雨が…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "千葉など関東",
+        "15日明け方にかけ非常に激しい雨のおそれ"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-84e24864",
+      "title": "フィリピン大統領 日本との海洋境界交渉“2国間で決める”",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260814de44176",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-08-14T13:48:42.000Z",
+      "summaryJa": [
+        "フィリピンのマルコス大統領は、日本との間で海洋の境界を画定するための交渉をめぐり、中国が対象に台湾の東の海域が含まれるなどとして反発していることについて、「2国",
+        "出典: NHKニュース 国際",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "フィリピン大統領",
+        "日本との海洋境界交渉",
+        "2国間で決める"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-f116f985",
+      "title": "米 7月の小売業の売上高 前月比0.6％減 FRB利上げ観測やや後退",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260814de44188",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-14T15:05:27.000Z",
+      "summaryJa": [
+        "アメリカの個人消費の動向を示す小売業の売上高は、先月、前の月と比べて0.",
+        "6％減少しました。",
+        "ネット通販や自動車販売が落ち込んだことが主な要因で、金融市場ではFRB＝連邦準備制度理事会による早期の利上げ観…"
+      ],
+      "category": "news",
+      "keywords": [
+        "7月の小売業の売上高",
+        "前月比0.6％減",
+        "FRB利上げ観測やや後退"
+      ],
+      "heat": {
+        "temperature": 58,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-2c221755",
+      "title": "The 37signals Manager Playbook",
+      "url": "https://basecamp.com/managers",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-14T06:04:57.000Z",
+      "summaryJa": [
+        "Heads up!",
+        "This page uses features your browser doesn’t support.",
+        "Try a modern browser like Firefox or Chrome for the best experience."
+      ],
+      "category": "programming",
+      "keywords": [
+        "37signals",
+        "Manager",
+        "Playbook"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 118,
+          "ageHours": 14,
+          "crossSources": 1,
+          "velocity": 8.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "横浜流星",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-08-14T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "横浜流星"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-9a48ce0c",
+      "title": "Show HN: I made an open-source laptop from scratch",
+      "url": "https://www.byran.ee/posts/creation/",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2025-01-22T20:41:52.000Z",
+      "summaryJa": [
+        "Hello!",
+        "I&#x27;m Byran.",
+        "I spent the past ~6 months engineering a laptop from scratch."
+      ],
+      "category": "tech",
+      "keywords": [
+        "source",
+        "laptop",
+        "scratch"
+      ],
+      "heat": {
+        "temperature": 71,
+        "signals": {
+          "hnPoints": 3237,
+          "hatebuCount": 0,
+          "ageHours": 13656,
+          "crossSources": 1,
+          "velocity": 0.2
+        }
+      },
+      "image": null
+    },
+    "reason": "6ヶ月かけてゼロからラップトップを自作するという狂気的なプロジェクトは、ハードウェアへの真摯な愛情を感じさせます。完成品を買うだけでは決して得られない、物理層からの制御への渇望がここにはあります。"
+  },
+  "unavailableSources": []
+}

@@ -1,0 +1,438 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 55,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-08-07",
+  "dateDisplay": "Friday, August 7, 2026",
+  "pressTimeJst": "2026-08-07 05:00",
+  "generatedAt": "2026-08-06T20:18:12.591Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "インフラの節目と手元の再設計",
+    "note": "長年頼ってきた基盤の変更や安全性の再検証が迫る中、身近なツールと設計を整える朝"
+  },
+  "editorial": {
+    "comment": "Gmailのサードパーティ送信機能廃止（hatebu-it-cf3b3b89）は、既存のメール運用を見直す大きな引き金になります。当たり前のように頼っていた基盤の変更に備え、手元の自動化スクリプトや送信設計を早めに手入れしておきましょう。 —— YZRS Times 編集長",
+    "passedOver": "Qwen3.8 MaxなどAIモデルのベンチマーク更新やxAIの法規問題は見送りました。モデルの数値競争よりも、手元で動かす基盤や実装の実践を優先するためです。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 31,
+    "tempMin": 25,
+    "precipChancePct": 80
+  },
+  "market": {
+    "fearGreed": {
+      "value": 25,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64468,
+        "priceJpy": 10215341,
+        "change24hPct": -0.5,
+        "sparkline7d": [
+          64857.32,
+          62896.51,
+          63452.61,
+          62532.59,
+          63707.06,
+          64484.77,
+          64365.21
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1908.09,
+        "priceJpy": 302350,
+        "change24hPct": -0.4,
+        "sparkline7d": [
+          1924.53,
+          1863.14,
+          1877.74,
+          1840.98,
+          1865.56,
+          1876.07,
+          1904.16
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.160869,
+        "priceJpy": 25.49,
+        "change24hPct": -4.1,
+        "sparkline7d": [
+          0.173288,
+          0.172171,
+          0.174019,
+          0.170337,
+          0.170534,
+          0.167765,
+          0.161394
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 213.33,
+        "priceJpy": 33804,
+        "change24hPct": -0.8,
+        "sparkline7d": [
+          218.78,
+          210.03,
+          209.09,
+          209.69,
+          213.67,
+          213.73,
+          213.35
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-6d1fae24",
+    "hatebu-it-cf3b3b89",
+    "nhk-top-881ebf86"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-8790c0e5",
+        "nhk-top-487c62d3",
+        "yahoo-topics-a1b05035"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-042832b1",
+        "hatebu-it-bd6a03c1"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-6d1fae24",
+      "title": "Launch HN: ProvenMetal (YC S26) delivers circuit boards in days instead of weeks",
+      "url": "https://provenmetal.com",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-06T15:59:15.000Z",
+      "summaryJa": [
+        "Hey HN, we’re Will &amp; Johnny from ProvenMetal (<a href=\"https:&#x2F;&#x2F;pro",
+        "com\">https:&#x2F;&#x2F;provenmetal.",
+        "com</a>)."
+      ],
+      "category": "tech",
+      "keywords": [
+        "ProvenMetal",
+        "YC",
+        "S26",
+        "delivers",
+        "circuit"
+      ],
+      "heat": {
+        "temperature": 77,
+        "signals": {
+          "hnPoints": 136,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 31.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-cf3b3b89",
+      "title": "Gmail、他社メアドを送信元にできる機能を廃止へ",
+      "url": "https://www.itmedia.co.jp/news/article/2608/06/2000000421/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-06T05:25:36.000Z",
+      "summaryJa": [
+        "米Googleは、Web版のGmailで他社メールアドレスを差出人に設定できる機能を2027年1月に終了すると発表した。",
+        "Web版・モバイル版ともに対象。",
+        "「維持に過剰なリソースを必要とする機能」だったため。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Gmail",
+        "他社メアドを送信元にできる機能を廃止へ"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 204,
+          "ageHours": 15,
+          "crossSources": 1,
+          "velocity": 13.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-881ebf86",
+      "title": "大型で強い台風13号 沖縄・奄美に接近へ 厳重警戒を",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015197581000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-06T16:10:47.000Z",
+      "summaryJa": [
+        "大型で強い台風13号は、沖縄県の大東島地方と鹿児島県の奄美地方の一部を暴風域に巻き込みながら西寄りに進んでいます。",
+        "台風が接近する沖縄・奄美では一部の住宅が倒壊するような猛烈な風が吹くおそれがあるほか、…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "大型で強い台風13号",
+        "沖縄",
+        "奄美に接近へ"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-8790c0e5",
+      "title": "経産省 日本製紙の煙突倒壊受け自家発事業者に報告求める通知",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015198631000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-06T14:50:45.000Z",
+      "summaryJa": [
+        "先月28日の地震で、日本製紙の熊本県八代市にある工場の煙突が倒壊するなどして9人が死亡したことを受けて、経済産業省は自家用の火力発電設備の煙突を設置している全国",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "経産省"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-487c62d3",
+      "title": "広島原爆の日 被爆から81年 核兵器廃絶の訴え続く",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015197811000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-06T10:40:49.000Z",
+      "summaryJa": [
+        "広島に原爆が投下されて6日で81年です。",
+        "世界で核による脅しや、核抑止力を強化しようとする動きがみられる中、被爆地・広島では、犠牲者を追悼するとともに、核兵器の廃絶を改めて国内外に訴える1日が続いていま",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "広島原爆の日",
+        "被爆から81年",
+        "核兵器廃絶の訴え続く"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-a1b05035",
+      "title": "太陽表面 過去最高の解像度で観測",
+      "url": "https://news.yahoo.co.jp/pickup/6590795?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-08-06T13:03:06.000Z",
+      "summaryJa": [
+        "太陽表面 過去最高の解像度で観測",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "太陽表面",
+        "過去最高の解像度で観測"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-042832b1",
+      "title": "DESIGN.md を置くと、どこまで「いい感じ」になるのか — 74件を測って確かめた",
+      "url": "https://zenn.dev/ait/articles/google-design-md-measured",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-06T03:07:40.000Z",
+      "summaryJa": [
+        "デザイナー向けに、値の話を抜いた解説も置いています → Wiki 効くところと効かないところ 効く 色や書体の指示がブレなくなる。",
+        "セッションが変わっても、担当者が変わっても同じ値が出る WCAG のコントラスト比を機械でチェックできる Tailwind の設定や CSS 変数として書き出せ",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "DESIGN.md",
+        "74件を測って確かめた"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 91,
+          "ageHours": 17,
+          "crossSources": 2,
+          "velocity": 5.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-bd6a03c1",
+      "title": "中国製ルーター20機種にバックドア、外部から完全制御のおそれ",
+      "url": "https://japan.cnet.com/article/35251353/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-06T02:24:27.000Z",
+      "summaryJa": [
+        "中国企業Zbtlink製のルーターがバックドアを組み込んだ状態で出荷されていることが、サイバーセキュリティ企業VulnCheckの新たな報告で明らかになった。",
+        "VulnCheckはZbtlink製の20機種を調査し、各機種のファームウェアで、中国にあるクラウドサーバーと自動的に通信する不正プログラムを発見した。",
+        "VulnCheckの最高技術."
+      ],
+      "category": "programming",
+      "keywords": [
+        "中国製ルーター20機種にバックドア",
+        "外部から完全制御のおそれ"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 337,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 18.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "日本国債",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-08-06T19:40:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "日本国債"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-1afd0718",
+      "title": "MacRimi/ProxMenux — Menu-driven Proxmox VE toolkit — post-install, backup/restore and a live web dashboard for the homelab.",
+      "url": "https://github.com/MacRimi/ProxMenux",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-06T14:19:02Z",
+      "summaryJa": [
+        "Menu-driven Proxmox VE toolkit — post-install, backup/restore and a live web das",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "MacRimi/ProxMenux",
+        "Menu",
+        "driven",
+        "Proxmox",
+        "VE"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "自宅ラボのProxmox環境をメニュー形式で直感的に操作・バックアップできる実用ツールです。GUI構築の手間を省き、ホスト管理のストレスを極限まで減らしてくれます。"
+  },
+  "unavailableSources": []
+}

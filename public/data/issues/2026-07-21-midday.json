@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 22,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-21",
+  "dateDisplay": "Tuesday, July 21, 2026",
+  "pressTimeJst": "2026-07-21 12:00",
+  "generatedAt": "2026-07-21T05:37:15.482Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "手触りのある技術",
+    "note": "自作サーバー、弾むUI、独自のデジタル空間。自らの手で支配し、触れることのできる技術を磨く日。"
+  },
+  "editorial": {
+    "comment": "A",
+    "passedOver": "AThe   A   F",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "曇り",
+    "icon": "cloudy",
+    "tempMax": 35,
+    "tempMin": 25,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 25,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 65542,
+        "priceJpy": 10650897,
+        "change24hPct": 2.2,
+        "sparkline7d": [
+          62242.25,
+          64756.54,
+          64181.56,
+          63273,
+          64078.97,
+          64345.97,
+          65094.29
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1923.53,
+        "priceJpy": 312584,
+        "change24hPct": 3.61,
+        "sparkline7d": [
+          1773.68,
+          1875.92,
+          1908.13,
+          1838.14,
+          1844.2,
+          1858.47,
+          1894.25
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.189199,
+        "priceJpy": 30.75,
+        "change24hPct": 1.71,
+        "sparkline7d": [
+          0.180311,
+          0.182762,
+          0.186791,
+          0.184053,
+          0.186499,
+          0.188869,
+          0.188257
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 223.96,
+        "priceJpy": 36395,
+        "change24hPct": 6,
+        "sparkline7d": [
+          236.2,
+          233.96,
+          222.85,
+          218.47,
+          220.46,
+          216.1,
+          219.84
+        ]
+      }
+    ]
+  },
+  "top": [
+    "zenn-trend-b789d4c1",
+    "hn-front-0eaeed5a",
+    "lobsters-0829dcd5"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hatebu-it-f6019997",
+        "hatebu-it-7607084d",
+        "hn-front-f731ecbe"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "qiita-popular-57af8df2",
+        "zenn-trend-ff856b81",
+        "zenn-trend-be68aee4"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-23c60ada",
+        "lobsters-4c846771"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "zenn-trend-b789d4c1",
+      "title": "自宅でサーバーを建てたいエンジニアにおすすめの構成",
+      "url": "https://zenn.dev/joeee/articles/048addcc0c2ce6",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-19T11:27:11.000Z",
+      "summaryJa": [
+        "自作サーバー 自宅で開発する際に使う検証機や、開発の際に使うもの、またはVercelなどのようにホスティングで使えるサーバーです。",
+        "画像だけアップロードできるようにしておくのも良さそうです。",
+        "開発サーバーの構成 今回以下のスペックでサーバーを組みました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 42,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 42,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-0eaeed5a",
+      "title": "Jelly UI: Soft-body physics for native HTML form controls",
+      "url": "https://jelly-ui.com/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-20T17:07:39.000Z",
+      "summaryJa": [
+        "Jelly UI: Soft-body physics for native HTML form c",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Jelly",
+        "UI",
+        "Soft",
+        "body",
+        "physics"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 412,
+          "hatebuCount": 10,
+          "ageHours": 12,
+          "crossSources": 2,
+          "velocity": 33
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-0829dcd5",
+      "title": "95 reasons for having your own website",
+      "url": "https://bellkiosk.website/blog/reasons-to-website.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-21T03:02:24.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "95",
+        "reasons",
+        "for",
+        "having",
+        "your"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-f6019997",
+      "title": "「AIコーディングブーム」が去ったUSで、エンジニアに求められる「本体の強さ」",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2607/21/news012.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-20T23:13:38.000Z",
+      "summaryJa": [
+        "「AIコーディングブーム」が去ったUSで、エンジニアに求められる「本体の強さ」：Go AbekawaのGo Global！",
+        "牛尾剛さん AI vs.",
+        "人間編（前編）（1/2 ページ） 米国MS開発の最前線では「コーディングエージェントブーム」は既に終息し、AIは日常の文房具に。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "「AIコーディングブーム」が去ったUSで",
+        "エンジニアに求められる「本体の強さ」"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 148,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 23.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-7607084d",
+      "title": "検索画面のUI設計で、バックエンドエンジニアが早めに口出しすべき3つのこと",
+      "url": "https://zenn.dev/ncdc/articles/6c8eabde83cf0a",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-20T22:50:18.000Z",
+      "summaryJa": [
+        "会議の場で「あいまい検索でお願いします」「部分一致でお願いします」という言葉だけが飛び交うことがよくありますが、この4つのどれを指しているかで、実装コストが変わ",
+        "完全一致・前方一致であればRDBのB-treeインデックスがそのまま使えますが、後方一致・部分一致はLIKE '%〇〇%'の形になり、インデックス.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "検索画面のUI設計で"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 107,
+          "ageHours": 7,
+          "crossSources": 2,
+          "velocity": 15.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-f731ecbe",
+      "title": "Jane Street: Incremental",
+      "url": "https://github.com/janestreet/incremental",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-21T03:50:53.000Z",
+      "summaryJa": [
+        "Jane Street: Incremental",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Jane",
+        "Street",
+        "Incremental"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 67,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 37.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-57af8df2",
+      "title": "個人開発でApp Storeリリースフローを学ぶ ― UIKit + FastAPI + K8sで作るMinecraftサーバー監視アプリ「MineWatch」",
+      "url": "https://qiita.com/jqit-yukiono/items/d33908602fd060f5e1d1?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-19T23:56:10.000Z",
+      "summaryJa": [
+        "個人開発でApp Storeリリースフローを学ぶ ― UIKit + FastAPI + K8sで作るMinecraftサーバー監視アプリ「MineWatch」",
+        ".",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "個人開発でApp",
+        "Storeリリースフローを学ぶ",
+        "UIKit",
+        "FastAPI"
+      ],
+      "heat": {
+        "temperature": 46,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 30,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-ff856b81",
+      "title": "Async React時代の宣言的UI 3: useActionStateでユーザーの操作を妨げないUXを作る",
+      "url": "https://zenn.dev/uhyo/articles/async-react-action-queue",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-20T05:29:51.000Z",
+      "summaryJa": [
+        "useActionStateは、React 19で導入された新しいフックです。",
+        "その挙動を見ると、非同期版useReducerと言えるような挙動をします。",
+        "ただ、筆者は最近、このフックの真髄はユーザーの操作を妨げないUXを作ることにあるのではないかと考えています。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Async",
+        "React時代の宣言的UI"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 24,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-be68aee4",
+      "title": "Linuxのディレクトリ配置ルール（FHS）超入門",
+      "url": "https://zenn.dev/juth/articles/9dc12f2621e2c1",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-20T02:18:03.000Z",
+      "summaryJa": [
+        "Linuxサーバーを触っていて、「あれ、PostgreSQLの設定ファイルってどこだっけ？",
+        "」「アプリのデータってどこに保存されてるの？",
+        "」と迷ったことはありませんか？"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 46,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 27,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-23c60ada",
+      "title": "Using a SSH bastion, but only when I'm touching grass",
+      "url": "https://evertpot.com/ssh-tunnel-if-unresolvable/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-21T02:23:52.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Using",
+        "SSH",
+        "bastion",
+        "but",
+        "only"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-4c846771",
+      "title": "An informal tutorial on Joy",
+      "url": "https://www.kevinalbrecht.com/code/joy-mirror/j01tut.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-20T23:16:36.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "An",
+        "informal",
+        "tutorial",
+        "on",
+        "Joy"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-256ea017",
+      "title": "Show HN: I got laid off from Meta and created a minor hit on Steam",
+      "url": "https://news.ycombinator.com/item?id=43186406",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2025-02-26T18:19:05.000Z",
+      "summaryJa": [
+        "I was at FB&#x2F;Meta from late 2013 to early 2023, mostly working in the compil",
+        "I got hit in the spring 2023 layoff wave.",
+        "I immediately started making games in my newfound free time (a lifelong interest"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "got",
+        "laid",
+        "off"
+      ],
+      "heat": {
+        "temperature": 68,
+        "signals": {
+          "hnPoints": 1581,
+          "hatebuCount": 0,
+          "ageHours": 12227,
+          "crossSources": 1,
+          "velocity": 0.1
+        }
+      },
+      "image": null
+    },
+    "reason": "Show   HN  :   A   In  I  :   M"
+  },
+  "unavailableSources": []
+}

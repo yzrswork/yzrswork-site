@@ -1,0 +1,485 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 30,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-25",
+  "dateDisplay": "Saturday, July 25, 2026",
+  "pressTimeJst": "2026-07-25 12:00",
+  "generatedAt": "2026-07-25T02:47:35.137Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "道具を自作し、設計を飼い慣らす",
+    "note": "出来合の環境や重厚なフレームワークに頼るのをやめ、自らの手で最適解を削り出すアプローチ"
+  },
+  "editorial": {
+    "comment": "ターミナルを自作した話（hatebu-it-32595666）は、既製品に囲まれた日常に心地よい一撃を与えてくれます。午後からのコード書き、あなたもエディタやシェルの「ちょっとした不便」を、自分の手でハックしてみてはいかがでしょうか。 —— YZRS Times 編集長",
+    "passedOver": "Claude Opus 5に関する速報。昼刊は時事速報ではなく、読者が手を動かしたくなる技術を優先するため今回は見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "弱い雨",
+    "icon": "rain",
+    "tempMax": 35,
+    "tempMin": 25,
+    "precipChancePct": 84
+  },
+  "market": {
+    "fearGreed": {
+      "value": 27,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63992,
+        "priceJpy": 10486968,
+        "change24hPct": -1.41,
+        "sparkline7d": [
+          63892.11,
+          64654.54,
+          64192.59,
+          66275.56,
+          65712.26,
+          64808.75,
+          64113.12
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1858.85,
+        "priceJpy": 304724,
+        "change24hPct": -0.3,
+        "sparkline7d": [
+          1840.9,
+          1865.29,
+          1862.3,
+          1933.77,
+          1929.77,
+          1879.43,
+          1858.26
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.179058,
+        "priceJpy": 29.33,
+        "change24hPct": -1.44,
+        "sparkline7d": [
+          0.185646,
+          0.1872,
+          0.185411,
+          0.192379,
+          0.188937,
+          0.182046,
+          0.177434
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 210.44,
+        "priceJpy": 34488,
+        "change24hPct": 0.35,
+        "sparkline7d": [
+          219.77,
+          218.36,
+          212.39,
+          225.11,
+          220.15,
+          210.46,
+          210.03
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-32595666",
+    "lobsters-c12c04c4",
+    "qiita-popular-852eea3a"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-26775501",
+        "hn-front-e40b61b5"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-70728894",
+        "zenn-trend-63393eae",
+        "zenn-trend-6d91274d"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-99ec6698",
+        "lobsters-b2c9dd2e"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-32595666",
+      "title": "ターミナルを自作したら、1日のコミット数が500を超えて、生産性がバグった話",
+      "url": "https://zenn.dev/singularity/articles/diy-terminal-500-commits",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-24T04:52:21.000Z",
+      "summaryJa": [
+        "僕は長いこと、ターミナルの中で暮らしています。",
+        "エディタは emacs、VS Code や GUI 系のツールはどうにも手に馴染まない。",
+        "Web 上の開発環境も、あの「ちょっとした不便」が積もって結局使わなくなる。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "ターミナルを自作したら",
+        "1日のコミット数が500を超えて",
+        "生産性がバグった話"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 303,
+          "ageHours": 22,
+          "crossSources": 2,
+          "velocity": 13.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-c12c04c4",
+      "title": "weblings: Compiling Rust to WASM from inside WASM",
+      "url": "https://github.com/AngelOnFira/weblings",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-24T20:19:12.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "weblings",
+        "Compiling",
+        "Rust",
+        "to",
+        "WASM"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-852eea3a",
+      "title": "Flutterに\"存在しないネイティブブリッジ\"をAIに書かせて、iOS/Androidで動かすまで検証してみた",
+      "url": "https://qiita.com/ma-shiratori/items/2d6eaea260e8d223b49b?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-24T09:09:51.000Z",
+      "summaryJa": [
+        "Flutter公式のバインディングが存在しないサードパーティ製Cライブラリを、AIエージェント(Claude Code)に「Native Assets(Hook",
+        ".",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Flutterに",
+        "存在しないネイティブブリッジ",
+        "をAIに書かせて"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-26775501",
+      "title": "Postgres LISTEN/NOTIFY actually scales",
+      "url": "https://www.dbos.dev/blog/postgres-listen-notify-scalability",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-24T19:05:53.000Z",
+      "summaryJa": [
+        "Postgres LISTEN/NOTIFY actually scales",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Postgres",
+        "LISTEN/NOTIFY",
+        "actually",
+        "scales"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 215,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 2,
+          "velocity": 27.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-e40b61b5",
+      "title": "My security camera shipped a GitHub admin token in its login page",
+      "url": "https://hhh.hn/hanwha-github-token/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-24T11:54:41.000Z",
+      "summaryJa": [
+        "My security camera shipped a GitHub admin token in",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "My",
+        "security",
+        "camera",
+        "shipped",
+        "GitHub"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 521,
+          "hatebuCount": 0,
+          "ageHours": 15,
+          "crossSources": 1,
+          "velocity": 35
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-70728894",
+      "title": "ソフトウェア設計は、「誰がどこまで考えるか」を決める仕事である - 変数名からDDD、DB設計、マイクロサービス、組織構造までを同じ枠組みで",
+      "url": "https://zenn.dev/kanaria007/articles/c392cbd1c1fc21",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-23T09:00:06.000Z",
+      "summaryJa": [
+        "ソフトウェア開発には、多くの設計原則があります。",
+        "わかりやすい変数名を付ける 関数を小さくする 単一責任にする 凝集度を高くする 結合度を低くする 情報を隠蔽する DBを正規化する ドメインの言葉を使う Bou",
+        "しかし、実際に設計していると、こういう疑問が出てきます。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "ソフトウェア設計は",
+        "変数名からDDD",
+        "DB設計",
+        "マイクロサービス",
+        "組織構造までを同じ枠組みで"
+      ],
+      "heat": {
+        "temperature": 42,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 42,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-63393eae",
+      "title": "Go の設計、どこまでやる？〜小さく作って、壊さず育てる〜",
+      "url": "https://zenn.dev/135yshr/books/go-service-design",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-23T03:08:48.000Z",
+      "summaryJa": [
+        "「クリーンアーキテクチャというアーキテクチャはない」——大事なのは図の形を真似ることではなく、依存の向きを設計し、変更に強いサービスを育てることです。",
+        "本書は、Go でサービスを設計・運用する中で得た判断基準を、原則の理解、層ごとの設計判断、ドメインの表現、CI での維持、そして読書ログサービスを題材にしたハン",
+        "読み終えたとき、自分のサービスを設計して作りはじめられる状態になることがゴールです。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Go",
+        "の設計",
+        "どこまでやる？〜小さく作って",
+        "壊さず育てる〜"
+      ],
+      "heat": {
+        "temperature": 40,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 48,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-6d91274d",
+      "title": "受託小規模向けの技術選定と考えたこと",
+      "url": "https://zenn.dev/fukke/articles/20260723_nextjs-structure",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-23T08:02:36.000Z",
+      "summaryJa": [
+        "なぜ使い回せる技術構成が必要か 受託開発では、短い期間で成果を出しつつ品質の高いものを作ることが大切です。",
+        "そのためには、案件ごとに技術スタックの検討にかける時間をなるべく減らし、その分を要件定義や設計に充てられる状態が理想です。",
+        "品質の高いものを低コストで出せる技術構成には、それ自体に価値があります。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "受託小規模向けの技術選定と考えたこと"
+      ],
+      "heat": {
+        "temperature": 42,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 43,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-99ec6698",
+      "title": "Watching Go's new garbage collector move through the heap",
+      "url": "https://theconsensus.dev/p/2026/07/19/observing-gos-garbage-collector-old-and-new.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-24T20:34:19.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Watching",
+        "Go",
+        "new",
+        "garbage",
+        "collector"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-b2c9dd2e",
+      "title": "Delightful integration tests in Rust",
+      "url": "https://github.com/alexpusch/rust-magic-patterns/blob/master/delightful-integration-tests/Readme.md",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-24T20:24:48.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Delightful",
+        "integration",
+        "tests",
+        "in",
+        "Rust"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-d3100b5a",
+      "title": "Show HN: Tetris in a PDF",
+      "url": "https://th0mas.nl/downloads/pdftris.pdf",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2025-01-09T13:31:33.000Z",
+      "summaryJa": [
+        "I realized that the PDF engines of modern desktop browsers (PDFium and PDF.",
+        "js) support JavaScript with enough I&#x2F;O primitives to make a basic game like",
+        "<p>It was a bit tricky to find a union of features that work in both engines, bu"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "Tetris",
+        "in",
+        "PDF"
+      ],
+      "heat": {
+        "temperature": 68,
+        "signals": {
+          "hnPoints": 1289,
+          "hatebuCount": 0,
+          "ageHours": 13477,
+          "crossSources": 1,
+          "velocity": 0.1
+        }
+      },
+      "image": null
+    },
+    "reason": "ブラウザのPDFプレビュー上で動くテトリスをJavaScriptで実装したハック。仕様の隙間を突き、一見不可能な環境でゲームを再現する執念があなたのハッカー精神をくすぐるはずです。"
+  },
+  "unavailableSources": []
+}

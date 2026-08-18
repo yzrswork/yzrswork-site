@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 78,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-08-18",
+  "dateDisplay": "Tuesday, August 18, 2026",
+  "pressTimeJst": "2026-08-18 12:00",
+  "generatedAt": "2026-08-18T02:48:15.299Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "機構の解剖と描画の工夫",
+    "note": "スクショへのロゴ描画からDBやコンパイラの内部機構まで、制約に向き合う実装の知恵を集めました。"
+  },
+  "editorial": {
+    "comment": "Blueskyがスクリーンショット検知時にロゴを重ねる仕組み（hn-front-7b69d1f2）のように、OSの挙動や制約を逆手に取った小さな実装ハックには作り手の工夫が詰まっています。午後の開発でも、仕様の壁を軽やかに飛び越える発想を持ち寄りたいところです。 —— YZRS Times 編集長",
+    "passedOver": "マクロ経済や金利動向に関する記事は、昼休みの技術的インプットという版方針に合わないため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ時々曇り",
+    "icon": "partly-cloudy",
+    "tempMax": 32,
+    "tempMin": 23,
+    "precipChancePct": 6
+  },
+  "market": {
+    "fearGreed": {
+      "value": 41,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64054,
+        "priceJpy": 10216870,
+        "change24hPct": 1.8,
+        "sparkline7d": [
+          64015.78,
+          63782.07,
+          63652.99,
+          62552.9,
+          63036.62,
+          63009.73,
+          64321.13
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1890.52,
+        "priceJpy": 301544,
+        "change24hPct": 0.8,
+        "sparkline7d": [
+          1876.9,
+          1889.82,
+          1883.77,
+          1866.2,
+          1883.3,
+          1880.53,
+          1908.07
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.154764,
+        "priceJpy": 24.69,
+        "change24hPct": -0.2,
+        "sparkline7d": [
+          0.162547,
+          0.161062,
+          0.160778,
+          0.159622,
+          0.158902,
+          0.157037,
+          0.157545
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 202.92,
+        "priceJpy": 32367,
+        "change24hPct": 0,
+        "sparkline7d": [
+          214.84,
+          213.05,
+          214.81,
+          202.85,
+          206.48,
+          203.34,
+          204.66
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-2e745fe0",
+    "hn-front-7b69d1f2",
+    "zenn-trend-c3421db3"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-ab4691e8",
+        "hn-front-d6fe2581",
+        "hatebu-it-5662d2ab"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-33097263",
+        "zenn-trend-132942b7",
+        "qiita-popular-91d7a9c0"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-a7af7af5",
+        "lobsters-1c255fcd",
+        "lobsters-e3ef5c21"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-2e745fe0",
+      "title": "Pythonライクで高速な「Mojo言語」がバージョン1.0に到達、今後はコンパイラをオープンソース化すると表明",
+      "url": "https://www.publickey1.jp/blog/26/pythonmojo10.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-17T22:58:19.000Z",
+      "summaryJa": [
+        "Pythonライクで高速な「Mojo言語」がバージョン1.",
+        "0に到達、今後はコンパイラをオープンソース化すると表明 Modular社は、AIを高速に実行することを目指したPythonライクなプログラミング言語「Mojo」",
+        "0に到達したことを発表しました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Pythonライクで高速な",
+        "Mojo言語"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 28,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 7.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-7b69d1f2",
+      "title": "How Bluesky draws its logo on screenshots",
+      "url": "https://timmarinin.net/2026/bluesky-screenshots/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-17T22:20:40.000Z",
+      "summaryJa": [
+        "How Bluesky draws its logo on screenshots",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Bluesky",
+        "draws",
+        "logo",
+        "screenshots"
+      ],
+      "heat": {
+        "temperature": 92,
+        "signals": {
+          "hnPoints": 256,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 2,
+          "velocity": 57.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-c3421db3",
+      "title": "RDS Proxyを導入して、数ヶ月で撤去した話",
+      "url": "https://zenn.dev/dress_code/articles/da536c39873876",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-17T00:00:14.000Z",
+      "summaryJa": [
+        "こんにちは。",
+        "Dress Code株式会社でプロダクトエンジニアをしているぽこひで（@pokohide）です。",
+        "アプリ用のAurora PostgreSQLにRDS Proxyを導入し、数ヶ月運用した末に撤去しました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "RDS",
+        "Proxyを導入して",
+        "数ヶ月で撤去した話"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 27,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-ab4691e8",
+      "title": "A Preview of DuckDB v2.0",
+      "url": "https://duckdb.org/2026/08/17/duckdb-20-highlights",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-17T13:46:27.000Z",
+      "summaryJa": [
+        "A Preview of DuckDB v2.0",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Preview",
+        "DuckDB",
+        "v2.0"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 556,
+          "hatebuCount": 0,
+          "ageHours": 13,
+          "crossSources": 2,
+          "velocity": 42.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-d6fe2581",
+      "title": "Quake Shareware, a CD-ROM just a little too full",
+      "url": "https://fabiensanglard.net/quake_shareware_cd/index.html",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-17T22:06:14.000Z",
+      "summaryJa": [
+        "Quake Shareware, a CD-ROM just a little too full",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Quake",
+        "Shareware",
+        "CD",
+        "ROM",
+        "little"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 175,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 2,
+          "velocity": 37.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-5662d2ab",
+      "title": "攻撃手法から学ぶ OAuth セキュリティベストプラクティス",
+      "url": "https://zenn.dev/hidebike712/books/oauth-attacks-and-bcp",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-17T07:38:12.000Z",
+      "summaryJa": [
+        "OAuth における代表的な攻撃手法とその対抗策を最新のベストプラクティスに基づいて解説します。",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "攻撃手法から学ぶ",
+        "OAuth",
+        "セキュリティベストプラクティス"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 236,
+          "ageHours": 19,
+          "crossSources": 2,
+          "velocity": 12.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-33097263",
+      "title": "Webサービスのスクショ付きガイドブックをPlaywright + LLMで自動生成・更新できるようにした",
+      "url": "https://zenn.dev/dev_commune/articles/acb91817341f8f",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-17T09:25:27.000Z",
+      "summaryJa": [
+        "こんにちは、コミューンでプロダクトマネージャーをしているひぐ(@zerebom_3)です。",
+        "Webサービスを多くの方に使っていただくには、わかりやすく網羅的なガイドブックが欠かせません。",
+        "https://learn."
+      ],
+      "category": "programming",
+      "keywords": [
+        "LLMで自動生成",
+        "更新できるようにした"
+      ],
+      "heat": {
+        "temperature": 50,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-132942b7",
+      "title": "セキュリティ・キャンプ 2026 ネクスト 応募課題晒し",
+      "url": "https://zenn.dev/n4mlz/articles/fec8711345dd70",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-17T04:50:21.000Z",
+      "summaryJa": [
+        "はじめに 先日、セキュリティ・キャンプ 2026 ネクストを修了しました。",
+        "https://x.",
+        "com/n4mlz/status/2088274277854527578 セキュリティキャンプ・ネクストでは、全国大会と異なって本人の得意不得意に関係なく参加者"
+      ],
+      "category": "programming",
+      "keywords": [
+        "セキュリティ",
+        "キャンプ",
+        "ネクスト",
+        "応募課題晒し"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 22,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-91d7a9c0",
+      "title": "Mermaidで書いた過去記事の図を、話題の図解スキルに食わせてみた — 色指定が全部捨てられた",
+      "url": "https://qiita.com/jqit_suwa/items/3906db61d153fe8691aa?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-17T07:26:51.000Z",
+      "summaryJa": [
+        "Qiita で Mermaid を使うと、日本語で崩れます。",
+        "ノードのラベルが変な位置で折り返される ダークテーマで文字が見えなくなる subgraph のラベルが枠を突き抜ける 自分は毎回これを踏んでいて、対策として で",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "話題の図解スキルに食わせてみた",
+        "色指定が全部捨てられた"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 19,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-a7af7af5",
+      "title": "Why BQN Wins",
+      "url": "https://github.com/codereport/max-odd-binary/blob/main/WHY_BQN_WINS.md",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-18T00:57:16.000Z",
+      "summaryJa": [
+        "All BQN solutions outperformed everything else in this perf wars video, this fil",
+        "Comments",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "BQN",
+        "Wins"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-1c255fcd",
+      "title": "Retrofitting a build system into a compiler",
+      "url": "https://www.dra27.uk/blog/platform/2025/09/25/building-with-effects.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-17T22:42:21.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Retrofitting",
+        "system",
+        "compiler"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-e3ef5c21",
+      "title": "When the Down Arrow is not an Upside-Down Up Arrow (2022)",
+      "url": "https://thefloatingcontinent.com/blog/upside-down-arrow-unicode/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-17T13:33:00.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Down",
+        "Arrow",
+        "Upside"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 13,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-6edb6109",
+      "title": "shorepine/tulipcc — The Tulip Creative Computer and AMYboard - portable Python synthesizers",
+      "url": "https://github.com/shorepine/tulipcc",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-17T01:06:56Z",
+      "summaryJa": [
+        "The Tulip Creative Computer and AMYboard - portable Python synthesizers",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "shorepine/tulipcc",
+        "Tulip",
+        "Creative",
+        "Computer",
+        "AMYboard"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "Pythonで音作りができるポータブルシンセサイザーの設計一式です。ハードウェア自作と音楽プログラミングの交差点として、週末の工作欲を刺激してくれます。"
+  },
+  "unavailableSources": []
+}

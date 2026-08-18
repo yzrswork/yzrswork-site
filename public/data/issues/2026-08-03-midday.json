@@ -1,0 +1,515 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 48,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-08-03",
+  "dateDisplay": "Monday, August 3, 2026",
+  "pressTimeJst": "2026-08-03 12:00",
+  "generatedAt": "2026-08-03T02:48:07.435Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "手元のハードウェアを叩き起こす",
+    "note": "Mac Studioで巨大LLMを走らせ、メモリ安全性を捨てて最速ターミナルを作る。手元にある道具の極限を引き出すエンジニアたちの執念。"
+  },
+  "editorial": {
+    "comment": "Kimi K3を441GBに枝刈りしてMac Studioで動かした（zenn-trend-5f8ccbbe）という荒業に、ものづくりの狂気を感じます。クラウドの巨大コンピュートをあざ笑うかのように、手元のマシンを限界までしゃぶり尽くす。この野生こそが、私たちの創作の原点ではないでしょうか。午後の作業の前に、あなたのマシンの設定を少しだけ研ぎ澄ましてみませんか。 —— YZRS Times 編集長",
+    "passedOver": "時事や倫理的な議論を呼ぶ中国の遺伝子編集による死亡事故（hatebu-it-bd48629b）は、昼刊の技術的探求にふさわしくないため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 26,
+    "tempMin": 23,
+    "precipChancePct": 90
+  },
+  "market": {
+    "fearGreed": {
+      "value": 28,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63120,
+        "priceJpy": 9873191,
+        "change24hPct": 0.6,
+        "sparkline7d": [
+          65143.04,
+          63379.83,
+          64634.93,
+          64926.99,
+          62833.52,
+          62723.11,
+          63244.53
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1865.24,
+        "priceJpy": 291762,
+        "change24hPct": 1.1,
+        "sparkline7d": [
+          1946.78,
+          1880.6,
+          1920.04,
+          1926.88,
+          1864.8,
+          1839.67,
+          1871.67
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.172063,
+        "priceJpy": 26.91,
+        "change24hPct": 1,
+        "sparkline7d": [
+          0.181555,
+          0.172254,
+          0.174485,
+          0.173443,
+          0.172922,
+          0.170383,
+          0.173503
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 211.67,
+        "priceJpy": 33110,
+        "change24hPct": 2.1,
+        "sparkline7d": [
+          215.64,
+          212.51,
+          212.87,
+          219.66,
+          208.6,
+          207.59,
+          212.37
+        ]
+      }
+    ]
+  },
+  "top": [
+    "zenn-trend-5f8ccbbe",
+    "hn-front-d4529009",
+    "zenn-trend-f5e04389"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-76888b60",
+        "hn-front-c9368e0b",
+        "hatebu-it-983dfa34"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "qiita-popular-0bb0f063",
+        "zenn-trend-cc4516f2"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-540bc495",
+        "lobsters-bf09ce46",
+        "lobsters-7ac036a3"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "zenn-trend-5f8ccbbe",
+      "title": "Kimi K3を441GBに枝刈りして、Mac Studio 1台で動かした",
+      "url": "https://zenn.dev/hellohazime/articles/kimi_k3_reap640_512gb_mac",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-02T00:43:07.000Z",
+      "summaryJa": [
+        "お疲れ様です波浪です。",
+        "今回は、最近流行りのKimi K3です。",
+        "前回の失敗を活かして自分の中でも熱があるうちにBLOGにしました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Kimi",
+        "K3を441GBに枝刈りして",
+        "Mac",
+        "Studio",
+        "1台で動かした"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-d4529009",
+      "title": "Show HN: Shitty – fast terminal. Memory-unsafe and faster than yours",
+      "url": "https://github.com/pg83/shitty",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-02T23:05:41.000Z",
+      "summaryJa": [
+        "Show HN: Shitty – fast terminal. Memory-unsafe and",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Shitty",
+        "fast",
+        "terminal",
+        "Memory",
+        "unsafe"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 90,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 24.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-f5e04389",
+      "title": "AI フレンドリーな CLI を開発するテクニック",
+      "url": "https://zenn.dev/shunsuke_suzuki/articles/make-cli-ai-friendly",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-01T01:35:46.000Z",
+      "summaryJa": [
+        "自分は趣味で様々な CLI を OSS として公開しています (aqua, pinact, tfcmt, ghalint, ghir, etc)。",
+        "昨今では AI がこれらを扱うことも増えてきていますが、それなりに知られた OSS でないかぎり AI はその OSS に関する質問に答えたりトラブルシューティ",
+        "そのため Co."
+      ],
+      "category": "programming",
+      "keywords": [
+        "AI",
+        "フレンドリーな",
+        "CLI"
+      ],
+      "heat": {
+        "temperature": 40,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 49,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-76888b60",
+      "title": "Show HN: Isopolis – isometric pixel map of SF",
+      "url": "https://sf.isopolis.city/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-03T00:46:38.000Z",
+      "summaryJa": [
+        "Show HN: Isopolis – isometric pixel map of SF",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Isopolis",
+        "isometric",
+        "pixel",
+        "map",
+        "SF"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 38,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 18.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-c9368e0b",
+      "title": "CP/M-386 – CP/M for 386 protected mode, derived from CP/M‑68K",
+      "url": "https://github.com/johnsonjh/cpm386",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-03T00:38:10.000Z",
+      "summaryJa": [
+        "CP/M-386 – CP/M for 386 protected mode, derived fr",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "CP/M",
+        "protected",
+        "mode",
+        "derived",
+        "CP/M‑68K"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 34,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 2,
+          "velocity": 15.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-983dfa34",
+      "title": "これはTailscaleか？　国産WireGuardメッシュ「ロリポップ！ゼロトラストリンク byGMOペパボ」を実測で確かめた【イニシャルB】",
+      "url": "https://internet.watch.impress.co.jp/docs/column/shimizu/2128634.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-02T23:17:25.000Z",
+      "summaryJa": [
+        "これはTailscaleか？　国産WireGuardメッシュ「ロリポップ！ゼロトラストリンク byG",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "国産WireGuardメッシュ",
+        "ロリポップ！ゼロトラストリンク",
+        "byGMOペパボ",
+        "イニシャルB"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 29,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 8.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-0bb0f063",
+      "title": "AIが書いたsort()、元の配列が書き換わって画面が意図せず変わる件",
+      "url": "https://qiita.com/ennagara128/items/5bcc4e448048a1e15f5d?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-02T09:27:00.000Z",
+      "summaryJa": [
+        "起きたこと Reactでリストを日付順に並べ替えて表示する処理をAIに書いてもらったところ、なぜか元のstateの並び順まで変わってしまう不具合が起きました。",
+        "const [items, setItems] = useState(originalItems); func.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "AIが書いたsort"
+      ],
+      "heat": {
+        "temperature": 50,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-cc4516f2",
+      "title": "ローカルタスク管理アプリを設計してみた",
+      "url": "https://zenn.dev/headwaters/articles/76f20490b76952",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-31T23:36:46.000Z",
+      "summaryJa": [
+        "背景 今まではタスクは自分の頭で整理するか、メモ帳のようなものに書き留めていました。",
+        "それくらいの管理で十分でした。",
+        "しかし最近、案件業務・社内業務とタスクが増え、整理していかないと厳しい状態になってきました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "ローカルタスク管理アプリを設計してみた"
+      ],
+      "heat": {
+        "temperature": 40,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 51,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-540bc495",
+      "title": "Faster floating point math with Rust’s new API",
+      "url": "https://pythonspeed.com/articles/faster-float-math-rust/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-02T20:27:23.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Faster",
+        "floating",
+        "point",
+        "math",
+        "Rust’s"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-bf09ce46",
+      "title": "The rooting, firmware analysis and hardcoded, reset-persistent credentials of the TP-Link TL-841N",
+      "url": "https://blog.juni-mp4.com/posts/42/rooting-the-tplink-tl841n-pt1/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-02T18:32:34.000Z",
+      "summaryJa": [
+        "Rooting, firmware analysis and persistent credenti",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "rooting",
+        "firmware",
+        "analysis",
+        "hardcoded",
+        "reset"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-7ac036a3",
+      "title": "Controlling Your Environment Makes You Happy (2000)",
+      "url": "https://www.joelonsoftware.com/2000/04/10/controlling-your-environment-makes-you-happy/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-02T21:10:35.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Controlling",
+        "Environment",
+        "Happy"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-5b453f22",
+      "title": "schellingb/TinySoundFont — SoundFont2 synthesizer library in a single C/C++ file",
+      "url": "https://github.com/schellingb/TinySoundFont",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-19T05:23:36Z",
+      "summaryJa": [
+        "SoundFont2 synthesizer library in a single C/C++ file",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "SoundFont2",
+        "synthesizer",
+        "library",
+        "single",
+        "C/C++"
+      ],
+      "heat": {
+        "temperature": 40,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 357,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "単一のC/C++ファイルでSoundFont2形式の音源を再生できる、極めてコンパクトなシンセサイザーライブラリです。電子工作での音声出力や、ミニマルなゲーム開発に、この軽快な道具が新たなインスピレーションをもたらすでしょう。"
+  },
+  "unavailableSources": []
+}

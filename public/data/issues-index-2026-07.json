@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "month": "2026-07",
+  "issues": [
+    {
+      "issueNo": 1,
+      "date": "2026-07-10",
+      "edition": "morning",
+      "theme": "透明な道具たち",
+      "path": "issues/2026-07-10-morning.json"
+    },
+    {
+      "issueNo": 2,
+      "date": "2026-07-11",
+      "edition": "midday",
+      "theme": "自律的な道具たち",
+      "path": "issues/2026-07-11-midday.json"
+    },
+    {
+      "issueNo": 3,
+      "date": "2026-07-11",
+      "edition": "morning",
+      "theme": "計算の境界線",
+      "path": "issues/2026-07-11-morning.json"
+    },
+    {
+      "issueNo": 4,
+      "date": "2026-07-12",
+      "edition": "morning",
+      "theme": "道具を飼い慣らす",
+      "path": "issues/2026-07-12-morning.json"
+    },
+    {
+      "issueNo": 5,
+      "date": "2026-07-12",
+      "edition": "midday",
+      "theme": "手懐ける思考",
+      "path": "issues/2026-07-12-midday.json"
+    },
+    {
+      "issueNo": 6,
+      "date": "2026-07-13",
+      "edition": "morning",
+      "theme": "透明な道具",
+      "path": "issues/2026-07-13-morning.json"
+    },
+    {
+      "issueNo": 7,
+      "date": "2026-07-14",
+      "edition": "morning",
+      "theme": "手の内にある道具",
+      "path": "issues/2026-07-14-morning.json"
+    },
+    {
+      "issueNo": 8,
+      "date": "2026-07-14",
+      "edition": "midday",
+      "theme": "静かなる最適化",
+      "path": "issues/2026-07-14-midday.json"
+    },
+    {
+      "issueNo": 9,
+      "date": "2026-07-15",
+      "edition": "morning",
+      "theme": "創造の境界",
+      "path": "issues/2026-07-15-morning.json"
+    },
+    {
+      "issueNo": 10,
+      "date": "2026-07-15",
+      "edition": "midday",
+      "theme": "道具の手触り",
+      "path": "issues/2026-07-15-midday.json"
+    },
+    {
+      "issueNo": 11,
+      "date": "2026-07-16",
+      "edition": "morning",
+      "theme": "創る人の足元",
+      "path": "issues/2026-07-16-morning.json"
+    },
+    {
+      "issueNo": 12,
+      "date": "2026-07-16",
+      "edition": "midday",
+      "theme": "静かなる設計の美学",
+      "path": "issues/2026-07-16-midday.json"
+    },
+    {
+      "issueNo": 13,
+      "date": "2026-07-17",
+      "edition": "morning",
+      "theme": "設計の拡張",
+      "path": "issues/2026-07-17-morning.json"
+    },
+    {
+      "issueNo": 14,
+      "date": "2026-07-17",
+      "edition": "midday",
+      "theme": "自作の精神",
+      "path": "issues/2026-07-17-midday.json"
+    },
+    {
+      "issueNo": 15,
+      "date": "2026-07-18",
+      "edition": "morning",
+      "theme": "限られた器で創る",
+      "path": "issues/2026-07-18-morning.json"
+    },
+    {
+      "issueNo": 16,
+      "date": "2026-07-18",
+      "edition": "midday",
+      "theme": "制約と実装の愉しみ",
+      "path": "issues/2026-07-18-midday.json"
+    },
+    {
+      "issueNo": 17,
+      "date": "2026-07-19",
+      "edition": "morning",
+      "theme": "道具と自律",
+      "path": "issues/2026-07-19-morning.json"
+    },
+    {
+      "issueNo": 18,
+      "date": "2026-07-19",
+      "edition": "midday",
+      "theme": "設計の手触り",
+      "path": "issues/2026-07-19-midday.json"
+    },
+    {
+      "issueNo": 19,
+      "date": "2026-07-20",
+      "edition": "morning",
+      "theme": "手の中の物語",
+      "path": "issues/2026-07-20-morning.json"
+    },
+    {
+      "issueNo": 20,
+      "date": "2026-07-20",
+      "edition": "midday",
+      "theme": "自分で組み立てる",
+      "path": "issues/2026-07-20-midday.json"
+    },
+    {
+      "issueNo": 21,
+      "date": "2026-07-21",
+      "edition": "morning",
+      "theme": "静かな技術",
+      "path": "issues/2026-07-21-morning.json"
+    },
+    {
+      "issueNo": 22,
+      "date": "2026-07-21",
+      "edition": "midday",
+      "theme": "手触りのある技術",
+      "path": "issues/2026-07-21-midday.json"
+    },
+    {
+      "issueNo": 23,
+      "date": "2026-07-22",
+      "edition": "morning",
+      "theme": "道具と地力",
+      "path": "issues/2026-07-22-morning.json"
+    },
+    {
+      "issueNo": 24,
+      "date": "2026-07-22",
+      "edition": "midday",
+      "theme": "手で動かす仕組み",
+      "path": "issues/2026-07-22-midday.json"
+    },
+    {
+      "issueNo": 25,
+      "date": "2026-07-23",
+      "edition": "morning",
+      "theme": "シンプルへの回帰",
+      "path": "issues/2026-07-23-morning.json"
+    },
+    {
+      "issueNo": 26,
+      "date": "2026-07-23",
+      "edition": "midday",
+      "theme": "言語と基盤を手で弄む",
+      "path": "issues/2026-07-23-midday.json"
+    },
+    {
+      "issueNo": 27,
+      "date": "2026-07-24",
+      "edition": "morning",
+      "theme": "手で触れる構造",
+      "path": "issues/2026-07-24-morning.json"
+    },
+    {
+      "issueNo": 28,
+      "date": "2026-07-24",
+      "edition": "midday",
+      "theme": "骨組みを暴く",
+      "path": "issues/2026-07-24-midday.json"
+    },
+    {
+      "issueNo": 29,
+      "date": "2026-07-25",
+      "edition": "morning",
+      "theme": "プロトコルを分解する",
+      "path": "issues/2026-07-25-morning.json"
+    },
+    {
+      "issueNo": 30,
+      "date": "2026-07-25",
+      "edition": "midday",
+      "theme": "道具を自作し、設計を飼い慣らす",
+      "path": "issues/2026-07-25-midday.json"
+    },
+    {
+      "issueNo": 31,
+      "date": "2026-07-26",
+      "edition": "morning",
+      "theme": "手のひらのハックと街角のAI",
+      "path": "issues/2026-07-26-morning.json"
+    },
+    {
+      "issueNo": 32,
+      "date": "2026-07-26",
+      "edition": "midday",
+      "theme": "私的空間のインフラを耕す",
+      "path": "issues/2026-07-26-midday.json"
+    },
+    {
+      "issueNo": 33,
+      "date": "2026-07-27",
+      "edition": "morning",
+      "theme": "指示の変容と道具の手綱",
+      "path": "issues/2026-07-27-morning.json"
+    },
+    {
+      "issueNo": 34,
+      "date": "2026-07-27",
+      "edition": "midday",
+      "theme": "ブラックボックスに手を突っ込む",
+      "path": "issues/2026-07-27-midday.json"
+    },
+    {
+      "issueNo": 35,
+      "date": "2026-07-28",
+      "edition": "morning",
+      "theme": "設計の規律と信頼の再定義",
+      "path": "issues/2026-07-28-morning.json"
+    },
+    {
+      "issueNo": 36,
+      "date": "2026-07-28",
+      "edition": "midday",
+      "theme": "泥臭い試行とシンプルな構造",
+      "path": "issues/2026-07-28-midday.json"
+    },
+    {
+      "issueNo": 37,
+      "date": "2026-07-29",
+      "edition": "morning",
+      "theme": "動的メカニズムの可視化",
+      "path": "issues/2026-07-29-morning.json"
+    },
+    {
+      "issueNo": 38,
+      "date": "2026-07-29",
+      "edition": "midday",
+      "theme": "わずかな不便への自作の回答",
+      "path": "issues/2026-07-29-midday.json"
+    },
+    {
+      "issueNo": 39,
+      "date": "2026-07-30",
+      "edition": "morning",
+      "theme": "制御の境界を押し広げる",
+      "path": "issues/2026-07-30-morning.json"
+    },
+    {
+      "issueNo": 40,
+      "date": "2026-07-30",
+      "edition": "midday",
+      "theme": "自分だけが動かせる道具を組み上げる",
+      "path": "issues/2026-07-30-midday.json"
+    },
+    {
+      "issueNo": 41,
+      "date": "2026-07-31",
+      "edition": "morning",
+      "theme": "素朴な質感と開発の足場",
+      "path": "issues/2026-07-31-morning.json"
+    },
+    {
+      "issueNo": 42,
+      "date": "2026-07-31",
+      "edition": "midday",
+      "theme": "開発の手応えを手入れする",
+      "path": "issues/2026-07-31-midday.json"
+    }
+  ]
+}

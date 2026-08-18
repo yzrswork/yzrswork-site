@@ -1,0 +1,531 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 33,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-27",
+  "dateDisplay": "Monday, July 27, 2026",
+  "pressTimeJst": "2026-07-27 05:00",
+  "generatedAt": "2026-07-26T20:18:09.113Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "a2f907d8"
+  },
+  "theme": {
+    "title": "指示の変容と道具の手綱",
+    "note": "モデルの変化と作り手の向き合い方に注目する朝。"
+  },
+  "editorial": {
+    "comment": "Opus 5での指示作法の変化（hatebu-it-3695d67b）は大変興味深い示唆です。道具の進化に合わせて人間側の手綱の握り方を軽やかに変えていく柔軟性を持ちたいものです。 —— YZRS Times 編集長",
+    "passedOver": "大リーグの打撃記録やドラマのキャスト情報などエンタメ系の話題は朝の集中を優先し見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 31,
+    "tempMin": 24,
+    "precipChancePct": 66
+  },
+  "market": {
+    "fearGreed": {
+      "value": 26,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64637,
+        "priceJpy": 10577943,
+        "change24hPct": 0.4,
+        "sparkline7d": [
+          64412.04,
+          65184.92,
+          66165.65,
+          65398.21,
+          64929.36,
+          64137.57,
+          64689.56
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1911.5,
+        "priceJpy": 312831,
+        "change24hPct": 2,
+        "sparkline7d": [
+          1861.27,
+          1901.77,
+          1928.14,
+          1914.48,
+          1881.93,
+          1865.75,
+          1913.17
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.179503,
+        "priceJpy": 29.38,
+        "change24hPct": 0.3,
+        "sparkline7d": [
+          0.190639,
+          0.188374,
+          0.191107,
+          0.183617,
+          0.182518,
+          0.178205,
+          0.179474
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 216.55,
+        "priceJpy": 35480,
+        "change24hPct": 3.5,
+        "sparkline7d": [
+          217.69,
+          219.82,
+          224.28,
+          215.85,
+          210.15,
+          209.78,
+          218.41
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-3695d67b",
+    "hatebu-it-86e61e2b",
+    "hatebu-it-aff71a6b"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-b390111e",
+        "nhk-top-aa9b8ec7",
+        "nhk-world-2a40275b",
+        "yahoo-topics-71a8b8f2"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-be196a41",
+        "hn-front-b7d5fc28",
+        "hatebu-it-25b54def",
+        "hn-front-5303d65e"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-3695d67b",
+      "title": "Opus5が思考が浅いように感じる問題への対策",
+      "url": "https://zenn.dev/u1/articles/claude5-rules-collapse-and-fix",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-26T04:18:08.000Z",
+      "summaryJa": [
+        "Claude Code を Opus 5 に切り替えた直後から、応答の散文傾向が急に強まり、思考が浅くなる (構造化して考えられない) 変化が出ました。",
+        "長年育ててきた rules (CLAUDE.",
+        "md や常時ロードの指示ファイル群) は何も変えていないのに、です。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 269,
+          "ageHours": 16,
+          "crossSources": 2,
+          "velocity": 16.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-86e61e2b",
+      "title": "理解を手放さない - Shin x Blog",
+      "url": "https://blog.shin1x1.com/entry/dont-let-go-of-understanding",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-26T11:28:59.000Z",
+      "summaryJa": [
+        "AI コーディングエージェントに実装を任せると、あっという間に成果物が出来上がってきます。",
+        "この速度を活かすなら、人間の理解を待たずにどんどん先へ進めるのが合理的にも見えます。",
+        "人間が理解していなくても AI が理解していれば良く、分からないことが出てきたらその時に AI に聞けば良い、という考え方です。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "理解を手放さない",
+        "Shin",
+        "Blog"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 116,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 13.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-aff71a6b",
+      "title": "ニチレイ物流システムが全面復旧、なぜ10日でサイバー攻撃から復旧できたのか？",
+      "url": "https://www.sbbit.jp/article/cont1/186262",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-26T02:29:43.000Z",
+      "summaryJa": [
+        "2026年7月、冷凍食品および低温物流最大手のニチレイがランサムウェア攻撃を受け、全国の食品サプライチェーンは混乱に陥った。",
+        "しかし、アサヒやアスクルの障害では数か月を要した復旧を同社は約10日で完了させた。",
+        "強固なバックアップ体制と現場のアナログな事業継続力がもたらした早期復旧までの舞台裏を探る。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "ニチレイ物流システムが全面復旧"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 181,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 10.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-b390111e",
+      "title": "米FRB会合 イラン情勢によるインフレ再加速懸念で判断注目",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015186781000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-26T20:02:21.000Z",
+      "summaryJa": [
+        "アメリカのFRB＝連邦準備制度理事会は、28日からウォーシュ議長のもとで2回目となる金融政策を決める会合を開きます。",
+        "金融市場ではFRBが政策金利を据え置くとの見方が出る一方、イラン情勢を背景にインフレ…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "米FRB会合"
+      ],
+      "heat": {
+        "temperature": 60,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-aa9b8ec7",
+      "title": "食料品の消費税減税 高市首相が判断するとの見方強まる",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015186841000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-26T20:01:30.000Z",
+      "summaryJa": [
+        "食料品の消費税減税をめぐり超党派の「国民会議」の実務者会議は、今週、中間とりまとめに向けて詰めの議論を行うことにしています。",
+        "政府・与党内では各党の隔たりが埋まらず実務者会議が方向性を打ち出さない場合、…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "食料品の消費税減税",
+        "高市首相が判断するとの見方強まる"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-2a40275b",
+      "title": "ヨーロッパ山火事拡大 フランスとスペインで30万人以上が避難",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015186461000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-07-26T10:05:12.000Z",
+      "summaryJa": [
+        "ヨーロッパでは、各地で山火事が発生して火が燃え広がっていて、フランスとスペインで合わせて30万人以上が避難する事態となっているほか、スペイン東部では1人が死亡し",
+        "出典: NHKニュース 国際",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "ヨーロッパ山火事拡大",
+        "フランスとスペインで30万人以上が避難"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-71a8b8f2",
+      "title": "イラン報復休止 米軍攻撃停止受け",
+      "url": "https://news.yahoo.co.jp/pickup/6589421?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-07-26T13:20:03.000Z",
+      "summaryJa": [
+        "イラン報復休止 米軍攻撃停止受け",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "イラン報復休止",
+        "米軍攻撃停止受け"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-be196a41",
+      "title": "Opus 5では今までのプロンプトが逆効果に。「検証して」を消して「簡潔に」と書くべし。公式プロンプトガイドを読み解く",
+      "url": "https://zenn.dev/little_hand_s/articles/72646a09f49d2a",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-26T04:07:12.000Z",
+      "summaryJa": [
+        "こんにちは、ログラスの松岡(@little_hand_s)です。",
+        "3行まとめ Opus 5は放っておくと応答が前より長くなる。",
+        "「簡潔さの指示」を基本セットとして書いておこう（effortでは短くならない） 公式ガイドは、プロンプト内の検証指示を 「削除してください」とまで明言。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Opus",
+        "5では今までのプロンプトが逆効果に",
+        "「検証して」を消して「簡潔に」と書くべし",
+        "公式プロンプトガイドを読み解く"
+      ],
+      "heat": {
+        "temperature": 75,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 65,
+          "ageHours": 16,
+          "crossSources": 1,
+          "velocity": 4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-b7d5fc28",
+      "title": "Decker, a platform that builds on the legacy of Hypercard and classic macOS",
+      "url": "https://beyondloom.com/decker/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-26T18:23:06.000Z",
+      "summaryJa": [
+        "Decker, a platform that builds on the legacy of Hy",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Decker",
+        "platform",
+        "that",
+        "builds",
+        "on"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 61,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 31.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-25b54def",
+      "title": "デスクに欲しい情報を集約　SwitchBot電子ペーパー端末の”そこにある”魅力【いつモノコト】",
+      "url": "https://www.watch.impress.co.jp/docs/series/itsmo/2127783.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-26T00:34:47.000Z",
+      "summaryJa": [
+        "デスクに欲しい情報を集約　SwitchBot電子ペーパー端末の”そこにある”魅力【いつモノコト】",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "デスクに欲しい情報を集約",
+        "SwitchBot電子ペーパー端末の",
+        "そこにある",
+        "魅力【いつモノコト】"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 114,
+          "ageHours": 20,
+          "crossSources": 1,
+          "velocity": 5.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-5303d65e",
+      "title": "Design is compromise",
+      "url": "https://stephango.com/design-is-compromise",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-26T15:51:12.000Z",
+      "summaryJa": [
+        "Design is compromise",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Design",
+        "is",
+        "compromise"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 112,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 25.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "エメット・シーハン",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-26T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "エメット",
+        "シーハン"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-103552e9",
+      "title": "Show HN: Redbean – Single-file distributable web server",
+      "url": "https://justine.lol/redbean/index.html",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2021-02-26T03:33:56.000Z",
+      "summaryJa": [
+        "Show HN: Redbean – Single-file distributable web s",
+        "出典: Show HN",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "Redbean",
+        "Single",
+        "file"
+      ],
+      "heat": {
+        "temperature": 35,
+        "signals": {
+          "hnPoints": 1998,
+          "hatebuCount": 0,
+          "ageHours": 47441,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "単一ファイルで完結するWebサーバーRedbeanは、環境構築の煩わしさを削ぎ落としてくれます。不要な複雑さを排除した設計は、手軽なプロトタイピングの心強い相棒になります。"
+  },
+  "unavailableSources": []
+}

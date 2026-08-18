@@ -1,0 +1,413 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 11,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-16",
+  "dateDisplay": "Thursday, July 16, 2026",
+  "pressTimeJst": "2026-07-16 05:00",
+  "generatedAt": "2026-07-15T21:14:54.516Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "創る人の足元",
+    "note": "効率化の先にある「自分の手で何を作るか」を問う朝刊。"
+  },
+  "editorial": {
+    "comment": "デロイトの膨大な資料から7つの型を見出すような観察眼こそ、今のクリエイターに必要です。無駄な作業を省き、本質的な表現へ時間を割きましょう。",
+    "passedOver": "スポーツや政治の速報は、読者の創作活動に直接影響しないため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ時々曇り",
+    "icon": "partly-cloudy",
+    "tempMax": 34,
+    "tempMin": 25,
+    "precipChancePct": 93
+  },
+  "market": {
+    "fearGreed": {
+      "value": 25,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64852,
+        "priceJpy": 10516758,
+        "change24hPct": 0.43,
+        "sparkline7d": [
+          62048.01,
+          63233.96,
+          63983.97,
+          63941.15,
+          63140.68,
+          63863.66,
+          65022.63
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1922.62,
+        "priceJpy": 311780,
+        "change24hPct": 2.42,
+        "sparkline7d": [
+          1730.99,
+          1747.1,
+          1788.6,
+          1802.71,
+          1788.1,
+          1856.34,
+          1917.36
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.187213,
+        "priceJpy": 30.36,
+        "change24hPct": 1.58,
+        "sparkline7d": [
+          0.181256,
+          0.186074,
+          0.190765,
+          0.186865,
+          0.183877,
+          0.183804,
+          0.187243
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 228.03,
+        "priceJpy": 36978,
+        "change24hPct": -3.47,
+        "sparkline7d": [
+          234.08,
+          237.73,
+          244.6,
+          243.81,
+          238.72,
+          239.76,
+          230.49
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-2fe98d05",
+    "hn-front-0cba4353",
+    "hatebu-it-656bee23"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-64b32c3f",
+        "nhk-top-244046ab",
+        "hatebu-it-c7808fa7"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hn-front-ff0acc0b"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-2fe98d05",
+      "title": "デロイトが国に納品したスライド351枚、全部数えたらパターンは7つだけだった｜うちた",
+      "url": "https://note.com/uchita_success/n/n030ad63765d3",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-15T01:04:34.000Z",
+      "summaryJa": [
+        "一番意外だったのは、7つのうち“1つの型”だけで45%を占めていたこと。",
+        "一流ほど、派手な技より“基本の型”を使い倒すんです。",
+        "全部言語化して、AIで再現するプロンプトも作ったので置いておきます。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "デロイトが国に納品したスライド351枚"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 686,
+          "ageHours": 20,
+          "crossSources": 1,
+          "velocity": 34
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-0cba4353",
+      "title": "Running Gemma 4 26B at 5 tokens/sec on a 13-year-old Xeon with no GPU",
+      "url": "https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-15T15:34:05.000Z",
+      "summaryJa": [
+        "Running Gemma 4 26B at 5 tokens/sec on a 13-year-o",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Running",
+        "Gemma",
+        "26B",
+        "at",
+        "tokens/sec"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 183,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 32.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-656bee23",
+      "title": "ローカル LLM を構築した",
+      "url": "https://zenn.dev/neet/articles/11bafab8645995",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-15T04:15:17.000Z",
+      "summaryJa": [
+        "!",
+        "AI 利用の開示：この記事を書くにあたっての調査やブレインストーミング、校正には AI を用いましたが、本文の執筆やコードの実装、および出典の確認はすべて人間が",
+        "AI は好きだが AI 企業は嫌いだ こんにちは。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "ローカル",
+        "LLM",
+        "を構築した"
+      ],
+      "heat": {
+        "temperature": 76,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 101,
+          "ageHours": 17,
+          "crossSources": 2,
+          "velocity": 5.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-64b32c3f",
+      "title": "アメリカ軍 イランに追加攻撃を開始したと発表",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015178061000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-15T20:18:54.000Z",
+      "summaryJa": [
+        "中東地域を管轄するアメリカ中央軍はアメリカ東部時間の15日午後3時、日本時間の16日午前4時からイランに対する追加攻撃を開始したと発表しました。",
+        "イランへの攻撃は5日連続で行われ、15日に入ってからは2…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "アメリカ軍",
+        "イランに追加攻撃を開始したと発表"
+      ],
+      "heat": {
+        "temperature": 60,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-244046ab",
+      "title": "芥川賞に小砂川チトさん 直木賞に朝倉かすみさん",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015176901000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-15T13:51:52.000Z",
+      "summaryJa": [
+        "第175回芥川賞と直木賞の選考会が15日、都内で開かれ、芥川賞に小砂川チトさんの「ゾンビ回収婦」が、直木賞に朝倉かすみさんの「けんぐゎい」がそれぞれ選ばれました",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "芥川賞に小砂川チトさん",
+        "直木賞に朝倉かすみさん"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-c7808fa7",
+      "title": "ニチレイ サイバー攻撃を公表 外食企業や食品メーカーに影響 | NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015177751000",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-15T09:34:55.000Z",
+      "summaryJa": [
+        "冷凍食品大手の「ニチレイ」でシステム障害が発生し、外食チェーンなどの間で商品の欠品などの影響が出ている問題で、会社はサイバー攻撃を受けたと公表しました。",
+        "ニチレイは13日、不正アクセスによるシステ…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "ニチレイ",
+        "サイバー攻撃を公表",
+        "外食企業や食品メーカーに影響",
+        "NHKニュース"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 99,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 8.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-ff0acc0b",
+      "title": "Inkling: Our Open-Weights Model",
+      "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-15T18:12:45.000Z",
+      "summaryJa": [
+        "Inkling: Our Open-Weights Model",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Inkling",
+        "Our",
+        "Open",
+        "Weights",
+        "Model"
+      ],
+      "heat": {
+        "temperature": 89,
+        "signals": {
+          "hnPoints": 344,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 113.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "ワールドカップ 日程",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-15T21:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "ワールドカップ",
+        "日程"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-ac0e96d5",
+      "title": "dmellok/tesserae — E-ink dashboard companion. Compose dashboards in a browser, render server-side, and push to e-ink panels over REST or MQTT.",
+      "url": "https://github.com/dmellok/tesserae",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-15T10:55:20Z",
+      "summaryJa": [
+        "E-ink dashboard companion.",
+        "Compose dashboards in a browser, render server-side, and push to e-ink panels ov",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "dmellok/tesserae",
+        "ink",
+        "dashboard",
+        "companion.",
+        "Compose"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "ブラウザで構成してE-inkへ送るこの設計は、まさに作り手の実験室そのものです。余計な機能が削ぎ落とされた、静かで力強いツールに出会えます。"
+  },
+  "unavailableSources": []
+}

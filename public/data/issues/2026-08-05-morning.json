@@ -1,0 +1,416 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 51,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-08-05",
+  "dateDisplay": "Wednesday, August 5, 2026",
+  "pressTimeJst": "2026-08-05 05:00",
+  "generatedAt": "2026-08-04T20:18:02.773Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "計算が紡ぐ色彩と歴史の年譜",
+    "note": "アルゴリズムで肌色を描く試みと、技術の歴史を辿る年譜が、表現者の想像力を広げる朝。"
+  },
+  "editorial": {
+    "comment": "アルゴリズムで肌色を自在に定義する試み（hn-front-2c934f74）に、創作と数学の美しい交点を見ました。規則から自由な色彩を生み出すツールは、手元での表現をさらに広げてくれるはずです。 —— YZRS Times 編集長",
+    "passedOver": "IT業界の衰退を巡る感情的な謝罪談義は、朝の集中力を削ぐため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 29,
+    "tempMin": 22,
+    "precipChancePct": 21
+  },
+  "market": {
+    "fearGreed": {
+      "value": 25,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64075,
+        "priceJpy": 10107236,
+        "change24hPct": 0.7,
+        "sparkline7d": [
+          63824.74,
+          63934.1,
+          64340.47,
+          63020.85,
+          63129.65,
+          63854.92,
+          64253.35
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1869.33,
+        "priceJpy": 294870,
+        "change24hPct": 0.5,
+        "sparkline7d": [
+          1917.87,
+          1907.78,
+          1907.05,
+          1867.76,
+          1866.65,
+          1869.34,
+          1873.63
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.169834,
+        "priceJpy": 26.79,
+        "change24hPct": -0.8,
+        "sparkline7d": [
+          0.172471,
+          0.171787,
+          0.170569,
+          0.171235,
+          0.174755,
+          0.172109,
+          0.169891
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 213.33,
+        "priceJpy": 33650,
+        "change24hPct": 0.5,
+        "sparkline7d": [
+          213.34,
+          210.99,
+          214.48,
+          210.41,
+          211.82,
+          211.03,
+          213.79
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-2c934f74",
+    "hatebu-it-7491297a",
+    "nhk-top-82a091ca"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-6ac31f6f",
+        "nhk-world-0d9c512c"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-59288e74",
+        "hn-front-4ee48932"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-2c934f74",
+      "title": "Show HN: Simple algorithm and color space to generate diverse skin tones",
+      "url": "https://toneyalexander.github.io/inclusive-color-space/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-04T15:16:22.000Z",
+      "summaryJa": [
+        "Hello HN!",
+        "<p>I found that picking out plausible but diverse skin tones for my digital art ",
+        "<p>I&#x27;ve built a color picker and procedural generation algorithm bas"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Simple",
+        "algorithm",
+        "color",
+        "space",
+        "generate"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 334,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 66.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-7491297a",
+      "title": "SF・コンピューター技術ライフライン",
+      "url": "https://matsuo-koya.github.io/sf-tech-lifeline/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-04T02:44:13.000Z",
+      "summaryJa": [
+        "生年を入れると、SFとコンピューター技術の年表があなたの学齢期にマッピングされます。",
+        "1822年から2026年、全171項目。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "SF",
+        "コンピューター技術ライフライン"
+      ],
+      "heat": {
+        "temperature": 78,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 165,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 9.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-82a091ca",
+      "title": "熊本 地震の影響で河川堤防に被害 増水にいつも以上に警戒を",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015196421000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-04T20:11:23.000Z",
+      "summaryJa": [
+        "熊本県内では、地震の影響で河川の堤防が沈下したり亀裂が入ったりする被害が相次いでいます。",
+        "6日以降、台風13号の影響で熊本県内でも雨が降るおそれがあり、国土交通省は応急的な復旧を急ぐとともに、川が増水し…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "熊本",
+        "地震の影響で河川堤防に被害"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-6ac31f6f",
+      "title": "米 ベッセント財務長官 “協調介入は象徴的な意味合い”",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015196511000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-04T18:15:30.000Z",
+      "summaryJa": [
+        "アメリカのベッセント財務長官がNHKの単独インタビューに応じました。",
+        "日米の通貨当局が歴史的な円安を阻止するために先週、実施した円買いの協調介入について、日米連携の象徴的な意味合いだったと述べたうえで、…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "ベッセント財務長官",
+        "協調介入は象徴的な意味合い"
+      ],
+      "heat": {
+        "temperature": 59,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-0d9c512c",
+      "title": "安保3文書の有識者会議 経済的威圧に対処 法整備求める意見も",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015196301000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-08-04T11:59:59.000Z",
+      "summaryJa": [
+        "安全保障関連の3文書の改定に向けた政府の有識者会議が開かれ、中国による重要鉱物の輸出規制を念頭に、出席者から、経済的な威圧を受けた場合に対処するための法整備を求",
+        "出典: NHKニュース 国際",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "安保3文書の有識者会議",
+        "経済的威圧に対処",
+        "法整備求める意見も"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-59288e74",
+      "title": "デスクトップ操作を記録してAIのスキル・自動化を生成。Microsoft、「Skill Recorder」を公開／Windows 11、macOS、Ubuntuに対応するオープンソースアプリ",
+      "url": "https://forest.watch.impress.co.jp/docs/news/2130221.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-03T23:37:53.000Z",
+      "summaryJa": [
+        "デスクトップ操作を記録してAIのスキル・自動化を生成。Microsoft、「Skill Record",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "デスクトップ操作を記録してAIのスキル",
+        "自動化を生成",
+        "Microsoft",
+        "Skill",
+        "Recorder"
+      ],
+      "heat": {
+        "temperature": 78,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 208,
+          "ageHours": 21,
+          "crossSources": 1,
+          "velocity": 10.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-4ee48932",
+      "title": "Xbox goes down. You can't play games you own on disc",
+      "url": "https://birchtree.me/blog/xbox-goes-down-you-cant-play-games-you-own-on-disc/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-04T12:01:02.000Z",
+      "summaryJa": [
+        "Xbox goes down. You can't play games you own on di",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Xbox",
+        "goes",
+        "down",
+        "play",
+        "games"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 480,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 57.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "漫画",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-08-04T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "漫画"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-73f3428a",
+      "title": "agent-of-empires/agent-of-empires — Manage multiple Claude Code, OpenCode agents from either TUI or Web for easy access on mobile. Also supports Mistral Vibe, Codex CLI, Gemini CLI, Pi.dev, Copilot CLI, Factory Droid Coding.",
+      "url": "https://github.com/agent-of-empires/agent-of-empires",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-04T20:00:49Z",
+      "summaryJa": [
+        "Manage multiple Claude Code, OpenCode agents from either TUI or Web for easy acc",
+        "Also supports Mistral Vibe, Codex CLI, Gemini CLI, Pi.",
+        "dev, Copilot CLI, Factory Droid Coding."
+      ],
+      "category": "oss",
+      "keywords": [
+        "agent",
+        "empires/agent",
+        "empires",
+        "Manage",
+        "multiple"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "複数のCLI AIエージェントをTUIやWeb経由で一元管理し、スマホから指示を送れるツールです。端末の制約を超えていつでも手元のコード生成環境を操作したい作り手に響きます。"
+  },
+  "unavailableSources": [
+    "Qiita 人気記事"
+  ]
+}

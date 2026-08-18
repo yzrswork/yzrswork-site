@@ -1,0 +1,542 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 17,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-19",
+  "dateDisplay": "Sunday, July 19, 2026",
+  "pressTimeJst": "2026-07-19 05:00",
+  "generatedAt": "2026-07-18T21:05:47.993Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "道具と自律",
+    "note": "AIが意思を持ち始め、ハードウェアが牙を剥く時代に、人間が手綱を握り続けるための思索。"
+  },
+  "editorial": {
+    "comment": "キース・エマーソンへの憧れをClaudeで昇華させた試み（hatebu-it-5660ef9e）は、技術を「できないことを補う翼」として使っていて最高に痛快です。道具が自律し始めた今だからこそ、人間の「こうあってほしい」という初期衝動が何よりも尊いのだと、コーヒーを啜りながら思いました。 —— YZRS Times 編集長",
+    "passedOver": "WordPressの深刻な脆弱性（wp2shell）に関する速報は重要ですが、読者の朝の創作へのモチベーションを削ぐ懸念があるため今回は見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ時々曇り",
+    "icon": "partly-cloudy",
+    "tempMax": 31,
+    "tempMin": 25,
+    "precipChancePct": 39
+  },
+  "market": {
+    "fearGreed": {
+      "value": 25,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64654,
+        "priceJpy": 10502787,
+        "change24hPct": 0.83,
+        "sparkline7d": [
+          64263.64,
+          63892.4,
+          62468.13,
+          64863.53,
+          64055.42,
+          63067.05,
+          64240.47
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1856.49,
+        "priceJpy": 301579,
+        "change24hPct": 0.7,
+        "sparkline7d": [
+          1822.91,
+          1811.44,
+          1783.04,
+          1879.84,
+          1883.39,
+          1828.36,
+          1844.58
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.187925,
+        "priceJpy": 30.53,
+        "change24hPct": 0.69,
+        "sparkline7d": [
+          0.191134,
+          0.186363,
+          0.179158,
+          0.183588,
+          0.188342,
+          0.183972,
+          0.18788
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 220.24,
+        "priceJpy": 35777,
+        "change24hPct": -0.06,
+        "sparkline7d": [
+          247.66,
+          244.3,
+          235.9,
+          235.13,
+          223.1,
+          218.47,
+          219.53
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-5660ef9e",
+    "nhk-top-b3345d82",
+    "hatebu-it-62c726fc"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-a992589f",
+        "nhk-world-3f7afa22",
+        "yahoo-topics-75a9413b",
+        "nhk-top-579eb160"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hn-front-59bdf38e",
+        "hatebu-it-bbfc8858",
+        "hn-front-76a8b26f",
+        "hatebu-it-1f878da6"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-5660ef9e",
+      "title": "キース・エマーソンみたいに弾けないので、無限にシンセソロを弾き続けるアプリをClaude Fable 5に作ってもらった。（CloseBox） | テクノエッジ TechnoEdge",
+      "url": "https://www.techno-edge.net/article/2026/07/18/5311.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-18T10:13:25.000Z",
+      "summaryJa": [
+        "Claude Fable 5を使い、シンセサイザーソロを無限に演奏してくれるプログラムを作りました。",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "キース",
+        "エマーソンみたいに弾けないので",
+        "Fable",
+        "5に作ってもらった",
+        "（CloseBox）"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 78,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 7.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-b3345d82",
+      "title": "栃木 足利 住宅に土砂流入し倒壊 行方不明者の捜索続く",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015180561000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-18T20:21:51.000Z",
+      "summaryJa": [
+        "栃木県と群馬県では18日未明にかけて記録的な大雨となり、土砂災害や浸水被害が相次ぎました。",
+        "栃木県足利市では住宅に土砂が流れ込んで建物が倒壊し、この家に住む60代の夫婦と連絡が取れていませんが市は18日…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "栃木",
+        "足利",
+        "住宅に土砂流入し倒壊",
+        "行方不明者の捜索続く"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-62c726fc",
+      "title": "最近の AI コーディングで実践している、設計を中心とした開発の進め方",
+      "url": "https://azukiazusa.dev/blog/recent-ai-coding-development-process-centered-on-design/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-18T04:23:35.000Z",
+      "summaryJa": [
+        "AI コーディングエージェントの自律性が向上し、複数のエージェントを並行して動かすことが日常になったことで、開発の中で最も時間を使う工程が実装から設計へ移りつつ",
+        "この記事では、設計セッション、Git worktree を使った並列実行、自律的な検証、AI によるコードレビューなど、最近の私が実践している開発.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "最近の",
+        "AI",
+        "コーディングで実践している",
+        "設計を中心とした開発の進め方"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 506,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 30.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-a992589f",
+      "title": "きょうから世界遺産委員会「飛鳥・藤原の宮都」登録の見通し",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015180351000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-18T20:04:49.000Z",
+      "summaryJa": [
+        "新たな世界遺産の登録を審議するユネスコ＝国連教育科学文化機関の世界遺産委員会が、19日から韓国南部のプサン（釜山）で始まります。",
+        "日本政府が推薦している奈良県内の飛鳥時代の遺跡群、「飛鳥・藤原の宮都」の…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "きょうから世界遺産委員会「飛鳥",
+        "藤原の宮都」登録の見通し"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-3f7afa22",
+      "title": "アメリカとイラン 覚書署名から1か月 合意形がい化で被害拡大",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015179971000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-07-18T13:36:42.000Z",
+      "summaryJa": [
+        "アメリカとイランが戦闘終結に向けた覚書に署名して1か月となりますが、この1週間は連日、攻撃の応酬が続いています。",
+        "湾岸諸国でもインフラ施設が被害を受け、覚書が形がい化しつつあるなか、さらなる事態の悪化が…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "アメリカとイラン",
+        "覚書署名から1か月",
+        "合意形がい化で被害拡大"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-75a9413b",
+      "title": "iPhone値上げ 中古の需要急増か",
+      "url": "https://news.yahoo.co.jp/pickup/6588448?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-07-18T14:03:34.000Z",
+      "summaryJa": [
+        "iPhone値上げ 中古の需要急増か",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "iPhone値上げ",
+        "中古の需要急増か"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-579eb160",
+      "title": "北海道 青森で大雨 レベル4危険警報も 土砂災害など厳重警戒",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015180531000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-18T20:56:31.000Z",
+      "summaryJa": [
+        "前線と低気圧の影響で、北海道や青森県では18日夜から局地的に大雨となり、「レベル4危険警報」が発表されている地域があります。",
+        "このあとも激しい雨が降るおそれがあり、土砂災害などに厳重な警戒が必要です。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "北海道",
+        "青森で大雨",
+        "レベル4危険警報も",
+        "土砂災害など厳重警戒"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-59bdf38e",
+      "title": "LG monitors silently install software through Windows Update without consent",
+      "url": "https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-18T10:21:19.000Z",
+      "summaryJa": [
+        "LG monitors silently install software through Wind",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "LG",
+        "monitors",
+        "silently",
+        "install",
+        "software"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 871,
+          "hatebuCount": 0,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 81.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-bbfc8858",
+      "title": "最近はAIで参考を作ってデザイナーに渡すが、デザイナーが「ここからどうデザインしろと？」となってしまい、結果的に相当細かく指示してあげないといけなくなる→デザイナー側の引っ掛かりポイントはどこにあるのか",
+      "url": "https://togetter.com/li/2721800",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-18T02:31:11.000Z",
+      "summaryJa": [
+        "横坂 拓也_Webディレクター｜群馬の制作会社emo planning LLC @taku_coco9 デザイン参考はPinterest使いますが 最近はAIで",
+        "」 となる だから相当に細かく指示してあげないと デザイナー.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 218,
+          "ageHours": 19,
+          "crossSources": 1,
+          "velocity": 11.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-76a8b26f",
+      "title": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+      "url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-18T13:00:52.000Z",
+      "summaryJa": [
+        "GPT-5.6 used a prompt to close a 30-year gap in co",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "GPT",
+        "5.6",
+        "used",
+        "prompt",
+        "to"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 435,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 53.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-1f878da6",
+      "title": "Playwright on GitHub Actions: The setup that actually runs fast",
+      "url": "https://endform.dev/blog/playwright-github-actions",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-17T23:52:15.000Z",
+      "summaryJa": [
+        "Treat the table as a starting point rather than a prescription.",
+        "Begin at 50%, look at the actual wall-clock time on your suite, and raise the va",
+        "There is no single correct number, because it depends on your core count,."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Playwright",
+        "on",
+        "GitHub",
+        "Actions",
+        "The"
+      ],
+      "heat": {
+        "temperature": 75,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 108,
+          "ageHours": 21,
+          "crossSources": 1,
+          "velocity": 5.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "ワイルドベリーズ",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-18T20:50:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "ワイルドベリーズ"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-aef1d765",
+      "title": "jgromes/RadioLib — Universal wireless communication library for embedded devices",
+      "url": "https://github.com/jgromes/RadioLib",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-18T15:54:17Z",
+      "summaryJa": [
+        "Universal wireless communication library for embedded devices",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "jgromes/RadioLib",
+        "Universal",
+        "wireless",
+        "communication",
+        "library"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "電子工作での無線通信を極限までシンプルにする、組み込み向けのユニバーサルライブラリです。多種多様なモジュールを統一されたAPIで制御できる、あなたの次のハードウェア創作を強力に支える一石です。"
+  },
+  "unavailableSources": []
+}

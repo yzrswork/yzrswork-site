@@ -1,0 +1,452 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 14,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-17",
+  "dateDisplay": "Friday, July 17, 2026",
+  "pressTimeJst": "2026-07-17 12:00",
+  "generatedAt": "2026-07-17T05:29:33.698Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "自作の精神",
+    "note": "買って済ませるのではなく、自分でコードを書き、仕組みを組み立てる喜びを共有する紙面。"
+  },
+  "editorial": {
+    "comment": "Google Workspace非対応という制約を、内製SCIMブリッジという手売りの道具で乗り越えた挑戦（qiita-popular-5e9dd21d）に、本物のDIY精神を見ました。誰かが作ったルールに縛られず、なければ自作して殴る。この姿勢こそが、私たちの創作の原点です。午後も手元のコードに、一筋縄ではいかない自分だけの味を込めていきましょう。 —— YZRS Times 編集長",
+    "passedOver": "キオクシアの株価急落のような純粋な経済・投資関連ニュースは、お昼休みの私たちが手を動かしたい技術の創作には影響しないため、本日の紙面からは見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "弱い雨",
+    "icon": "rain",
+    "tempMax": 30,
+    "tempMin": 25,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 27,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63259,
+        "priceJpy": 10275485,
+        "change24hPct": -2.48,
+        "sparkline7d": [
+          63201.09,
+          64115.38,
+          63849.18,
+          62843.21,
+          64030.3,
+          64818.89,
+          63920.25
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1838.81,
+        "priceJpy": 298687,
+        "change24hPct": -4.38,
+        "sparkline7d": [
+          1744.79,
+          1796.05,
+          1797.35,
+          1779.51,
+          1874.82,
+          1922.52,
+          1867.66
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.183565,
+        "priceJpy": 29.82,
+        "change24hPct": -3.04,
+        "sparkline7d": [
+          0.185168,
+          0.189747,
+          0.185322,
+          0.183987,
+          0.184178,
+          0.186705,
+          0.187745
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 223.3,
+        "priceJpy": 36271,
+        "change24hPct": 0.37,
+        "sparkline7d": [
+          237.49,
+          244.44,
+          244.27,
+          237.63,
+          239.02,
+          228.67,
+          221.26
+        ]
+      }
+    ]
+  },
+  "top": [
+    "qiita-popular-5e9dd21d",
+    "hn-front-8666487d",
+    "zenn-trend-1b4f461b"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-741e9f39",
+        "hatebu-it-694c3b77"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-9e3f0256",
+        "qiita-popular-500e37b5"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-50777748",
+        "lobsters-a7644ea9"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "qiita-popular-5e9dd21d",
+      "title": "【買わずに作る】GitHub EMU の SCIM、Google Workspace 非対応の壁を内製で越えてコストを殴った話",
+      "url": "https://qiita.com/sakai_satoshi/items/5f88f214c5ca1912e587?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-16T06:28:38.000Z",
+      "summaryJa": [
+        "Google Workspace × GitHub EMU、公式非対応の壁を内製SCIMブリッジで越えた話 「Google Workspace 一本の会社が G",
+        "でも公式にサポートされてない…」 ——そんな詰みかけた状況を、SCIM ブリ.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "【買わずに作る】GitHub",
+        "EMU",
+        "SCIM",
+        "Google",
+        "Workspace"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 23,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-8666487d",
+      "title": "How Our Rust-to-Zig Rewrite Is Going",
+      "url": "https://rtfeldman.com/rust-to-zig",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-16T11:39:27.000Z",
+      "summaryJa": [
+        "How Our Rust-to-Zig Rewrite Is Going",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "How",
+        "Our",
+        "Rust",
+        "to",
+        "Zig"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 452,
+          "hatebuCount": 0,
+          "ageHours": 18,
+          "crossSources": 2,
+          "velocity": 25.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-1b4f461b",
+      "title": "GoMLX による Go 単独での手書き数字分類 ― 学習から推論まで Python を用いない実装",
+      "url": "https://zenn.dev/c6h1ocao6/articles/7e41873f3a9668",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-16T02:38:21.000Z",
+      "summaryJa": [
+        "概要 機械学習は、モデルの学習・推論ともにPythonが事実上の標準である。",
+        "しかし、単一バイナリ配布・省メモリ・低レイテンシといった運用上の理由から、これを別言語で完結させたい場面が想定される。",
+        "本稿では、手書き数字（8×8画素）分類用の多層パーセプトロン（MLP）について、データ読み込み・学習・推論のすべてをGo単独で実装・評価した事例研究を報告する。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "GoMLX",
+        "による",
+        "Go",
+        "単独での手書き数字分類",
+        "学習から推論まで"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 27,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-741e9f39",
+      "title": "Decoy Font",
+      "url": "https://www.mixfont.com/experiments/decoy-font",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-16T16:18:21.000Z",
+      "summaryJa": [
+        "Decoy Font",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Decoy",
+        "Font"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 476,
+          "hatebuCount": 0,
+          "ageHours": 13,
+          "crossSources": 1,
+          "velocity": 36.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-694c3b77",
+      "title": "なぜAI臭さを消したいのか？｜laiso",
+      "url": "https://sizu.me/laiso/posts/mcerekex7091",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-16T22:33:19.000Z",
+      "summaryJa": [
+        "前に「AIの作文はなぜつまらないのか」という記事を書いた。",
+        "AIの文章は分量のわりに情報量が少ないし、面白さを自動で評価する仕組みもないから、みたいな話だった。",
+        "今回は逆に書き手としての話をしたい。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "なぜAI臭さを消したいのか？｜laiso"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 87,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 12.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-9e3f0256",
+      "title": "Claude Code の Plan モードをループエンジニアリングで楽にする",
+      "url": "https://zenn.dev/k_yoshiya/articles/claude-code-plan-mode-loop",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-16T07:40:05.000Z",
+      "summaryJa": [
+        "はじめに Claude Code の Plan モードを、人間の労力を少なくして使いこなすためのループエンジニアリングをしてみました。",
+        "この記事を読むと、hook を使って Plan モードに「質問による要件詰め」「実装のサブエージェント委譲」「計画の HTML 確認」を自動で組み込む方法がわか",
+        "ねらい Plan モードの運用に、次の 3 つを組み込みます。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Claude",
+        "Code",
+        "Plan",
+        "モードをループエンジニアリングで楽にする"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 22,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-500e37b5",
+      "title": "Claude CodeでVue2→3をやってみたら、Javaのメジャーアップより苦労した話",
+      "url": "https://qiita.com/ntaka329/items/47b45beeb283bb989de5?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-16T03:39:02.000Z",
+      "summaryJa": [
+        "はじめに GMOコネクトの永田です。",
+        "少し前、Java のメジャーアップ（11→21）を Claude Code でやったら、かなり楽でした。",
+        "「これなら、ずっと後回しにしていた Vue 2→3 もいけるのでは」——そう思って手を付けたら、意外と苦労した、という話です😇。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Claude",
+        "CodeでVue2→3をやってみたら",
+        "Javaのメジャーアップより苦労した話"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-50777748",
+      "title": "Here's how I host my own AIM server",
+      "url": "https://veronicaexplains.net/open-oscar-server/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-17T00:18:37.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Here",
+        "how",
+        "host",
+        "my",
+        "own"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-a7644ea9",
+      "title": "The Zilog Z80 has turned 50",
+      "url": "https://goliath32.com/blog/z80.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-16T22:03:22.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "The",
+        "Zilog",
+        "Z80",
+        "has",
+        "turned"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-2afbb1c1",
+      "title": "SolderedElectronics/Inkplate-Arduino-library — Inkplate family Arduino library. The easiest way to add e-paper to your project. ",
+      "url": "https://github.com/SolderedElectronics/Inkplate-Arduino-library",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-16T12:30:36Z",
+      "summaryJa": [
+        "Inkplate family Arduino library.",
+        "The easiest way to add e-paper to your project.",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "Arduino",
+        "library",
+        "Inkplate",
+        "family",
+        "library."
+      ],
+      "heat": {
+        "temperature": 50,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "電子ペーパーを使った美しいガジェットやアートクロックを自作したくなる、直感的で使いやすいArduinoライブラリです。物理的な手触りを持つデバイス作りに、この週末さっそく挑んでみませんか。"
+  },
+  "unavailableSources": []
+}

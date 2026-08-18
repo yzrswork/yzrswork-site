@@ -1,0 +1,503 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 27,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-24",
+  "dateDisplay": "Friday, July 24, 2026",
+  "pressTimeJst": "2026-07-24 05:00",
+  "generatedAt": "2026-07-23T20:17:21.927Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "手で触れる構造",
+    "note": "ブラックボックスを解剖し、自分の手で仕組みを確かめる朝"
+  },
+  "editorial": {
+    "comment": "500行のC++で描画エンジンを組む『Software rendering in 500 lines of bare C++』（hn-front-92638247）には、ブラックボックスを剥ぎ取り自分の手で制御する作風の原点があります。複雑なライブラリに頼る前に仕組みを解剖する姿勢は、電子工作でもソフトウェア開発でも普遍的な創作の喜びを思い出させてくれます。 —— YZRS Times 編集長",
+    "passedOver": "海外のAI規制論争や複雑な為替・経済指標の深追いを見送り、手元で動かせる技術の実践に紙面を割きました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ時々曇り",
+    "icon": "partly-cloudy",
+    "tempMax": 33,
+    "tempMin": 24,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 31,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 65007,
+        "priceJpy": 10649671,
+        "change24hPct": -1.6,
+        "sparkline7d": [
+          64216.52,
+          63918.38,
+          64659.03,
+          64244.32,
+          66151.18,
+          65791.23,
+          64821.72
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1882.34,
+        "priceJpy": 308373,
+        "change24hPct": -2.9,
+        "sparkline7d": [
+          1873.98,
+          1840.46,
+          1867.43,
+          1864.16,
+          1933.12,
+          1933.35,
+          1880.2
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.183501,
+        "priceJpy": 30.06,
+        "change24hPct": -3,
+        "sparkline7d": [
+          0.1897,
+          0.185677,
+          0.187207,
+          0.185702,
+          0.191629,
+          0.189029,
+          0.182302
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 210.88,
+        "priceJpy": 34548,
+        "change24hPct": -4.4,
+        "sparkline7d": [
+          222.28,
+          219.88,
+          218.29,
+          212.42,
+          224.35,
+          220.5,
+          210.46
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-92638247",
+    "hn-front-3d941e3f",
+    "hatebu-it-2fa1961a"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-b400a62f",
+        "nhk-top-40f4111e",
+        "yahoo-topics-996adb97"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-cb3b27ae",
+        "hn-front-ac98279d",
+        "hatebu-it-825ac5d8",
+        "hn-front-71874433"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-92638247",
+      "title": "Software rendering in 500 lines of bare C++",
+      "url": "https://haqr.eu/tinyrenderer/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-23T14:17:40.000Z",
+      "summaryJa": [
+        "Software rendering in 500 lines of bare C++",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Software",
+        "rendering",
+        "in",
+        "500",
+        "lines"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 189,
+          "hatebuCount": 8,
+          "ageHours": 6,
+          "crossSources": 2,
+          "velocity": 31.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-3d941e3f",
+      "title": "Writing by hand is good for your brain",
+      "url": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-23T14:24:43.000Z",
+      "summaryJa": [
+        "Writing by hand is good for your brain",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Writing",
+        "by",
+        "hand",
+        "is",
+        "good"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 682,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 116
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-2fa1961a",
+      "title": "Markdownファイルが、AI時代の負債に？　Googleが提案する「ナレッジ標準化」の一手",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2607/23/news055.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-23T04:39:27.000Z",
+      "summaryJa": [
+        "Google Cloudは2026年6月12日（米国時間）、大規模言語モデル（LLM）を活用するAIエージェントが必要とするナレッジを表現するためのオープンフォ",
+        "1を公開した。",
+        "OKFは、YAMLフロントマター（YAML形式のメタデータ）を持つMarkdownファイルのディレクトリとしてナ."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Markdownファイルが",
+        "AI時代の負債に？"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 144,
+          "ageHours": 16,
+          "crossSources": 1,
+          "velocity": 9.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-b400a62f",
+      "title": "円安加速 1ドル164円に迫る 39年8か月ぶりの水準に",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015184691000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-23T18:47:41.000Z",
+      "summaryJa": [
+        "23日のニューヨーク外国為替市場では、中東情勢が一段と悪化することへの懸念から円を売ってドルを買う動きが進み、円相場は一時、1ドル＝163円90銭台後半まで値下",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "円安加速",
+        "1ドル164円に迫る",
+        "39年8か月ぶりの水準に"
+      ],
+      "heat": {
+        "temperature": 60,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-40f4111e",
+      "title": "ベネチア国際映画祭コンペに是枝裕和監督 塚本晋也監督の作品",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015184541000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-23T15:28:05.000Z",
+      "summaryJa": [
+        "9月にイタリアで開幕する世界3大映画祭の1つ、ベネチア国際映画祭で、最優秀賞の金獅子賞を競う部門に日本からは是枝裕和監督と塚本晋也監督の2作品が出品されることに",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "ベネチア国際映画祭コンペに是枝裕和監督",
+        "塚本晋也監督の作品"
+      ],
+      "heat": {
+        "temperature": 58,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-996adb97",
+      "title": "入国警備官に退職自衛官を活用へ",
+      "url": "https://news.yahoo.co.jp/pickup/6589084?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-07-23T14:49:58.000Z",
+      "summaryJa": [
+        "入国警備官に退職自衛官を活用へ",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "入国警備官に退職自衛官を活用へ"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-cb3b27ae",
+      "title": "Palantir Foundryのオントロジーをミニマムに再現したOSSを実測検証した",
+      "url": "https://zenn.dev/mskbhd/articles/lab-198-gura105-operational-ontology-o",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-23T12:27:20.000Z",
+      "summaryJa": [
+        "はじめに Palantir Foundry の「オントロジー（Ontology）」—— 物理データを意味のあるビジネスオブジェクトに抽象化し、Read/Writ",
+        "あの概念を ミニマム実装した OSS が公開されていたので、動かして検証した。",
+        "本家リポジトリ: gura105/operational-ontology (MIT, 22★) この記事では、実際."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Palantir"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 32,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 4.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-ac98279d",
+      "title": "Building on ATProto",
+      "url": "https://lukekanies.com/writing/building-on-atproto/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-23T18:23:50.000Z",
+      "summaryJa": [
+        "Building on ATProto",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Building",
+        "on",
+        "ATProto"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 67,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 35.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-825ac5d8",
+      "title": "サイバー被害のニチレイがバックアップからシステム復旧に成功→セキュリティ業界の人から早期復旧に疑問の声「仮にランサムウェアならバックアップデータから破壊する」",
+      "url": "https://togetter.com/li/2723874",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-23T09:04:08.000Z",
+      "summaryJa": [
+        "サイバー被害のニチレイ、バックアップで早期再開 システム復旧成功 - 日本経済新聞 ニチレイで発生したシステム障害で、ハッカー集団がインターネット上で犯行声明を",
+        "同社はバックアップデータからのシステム復旧に成功しており、週内にも通常稼働に戻る見込み… 3 users 日本経済新.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 54,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 4.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-71874433",
+      "title": "The arguments against open source AI are bad",
+      "url": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-23T16:49:57.000Z",
+      "summaryJa": [
+        "The arguments against open source AI are bad",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "The",
+        "arguments",
+        "against",
+        "open",
+        "source"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 106,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 30.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "魔法のプリンセス ミンキーモモ",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-23T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "魔法のプリンセス",
+        "ミンキーモモ"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-d4a9ebeb",
+      "title": "aitjcize/esp32-photoframe — Feature-rich firmware for ESP32-based e-paper displays with superior image quality.",
+      "url": "https://github.com/aitjcize/esp32-photoframe",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-23T02:48:11Z",
+      "summaryJa": [
+        "Feature-rich firmware for ESP32-based e-paper displays with superior image quali",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "aitjcize/esp32",
+        "photoframe",
+        "Feature",
+        "rich",
+        "firmware"
+      ],
+      "heat": {
+        "temperature": 50,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "ESP32を用いた電子ペーパー用ファームウェアであり、低消費電力と美しい描写の両立を目指しています。自作ハードウェアのディスプレイ表示を極めたいあなたの実験心をくすぐる逸品です。"
+  },
+  "unavailableSources": []
+}

@@ -1,0 +1,409 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 7,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-14",
+  "dateDisplay": "Tuesday, July 14, 2026",
+  "pressTimeJst": "2026-07-14 05:00",
+  "generatedAt": "2026-07-13T21:06:17.410Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "手の内にある道具",
+    "note": "AI駆動開発から自作シンセまで、自分の指先で環境を制御する喜びについての考察。"
+  },
+  "editorial": {
+    "comment": "『Claude Code、とりあえずこれ読んどけばOKなまとめ』は、ツールに振り回されるのではなく、自らのワークフローへどう組み込むかを新卒視点で整理しており非常に好感が持てました。",
+    "passedOver": "ニチレイのシステム障害記事は重要ですが、今回の作り手向けという紙面のカラーに馴染まなかったため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "曇り",
+    "icon": "cloudy",
+    "tempMax": 34,
+    "tempMin": 24,
+    "precipChancePct": 20
+  },
+  "market": {
+    "fearGreed": {
+      "value": 28,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 62124,
+        "priceJpy": 10089219,
+        "change24hPct": -3.18,
+        "sparkline7d": [
+          63542.08,
+          63372.6,
+          61855.58,
+          64060.62,
+          64210,
+          63985.68,
+          62212.98
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1763.49,
+        "priceJpy": 286399,
+        "change24hPct": -3.12,
+        "sparkline7d": [
+          1786.68,
+          1772.7,
+          1730.25,
+          1777.48,
+          1799.89,
+          1805.87,
+          1770.27
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.180424,
+        "priceJpy": 29.3,
+        "change24hPct": -4.61,
+        "sparkline7d": [
+          0.199633,
+          0.188768,
+          0.180237,
+          0.189704,
+          0.189404,
+          0.186083,
+          0.181895
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 235.02,
+        "priceJpy": 38168,
+        "change24hPct": -4.7,
+        "sparkline7d": [
+          243.53,
+          240.19,
+          233.87,
+          242.88,
+          245.19,
+          246.27,
+          236.14
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-632e4540",
+    "hatebu-it-4937eaad",
+    "hn-front-d92d3c2a"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-a7ba0a46",
+        "nhk-top-f33b31a5",
+        "yahoo-topics-940e1d25"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-8c1ae148"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-632e4540",
+      "title": "Claude Code、とりあえずこれ読んどけばOKなまとめ（2026年版） - Qiita",
+      "url": "https://qiita.com/fuyunoki/items/5818688d20225aa8088a?utm_campaign=popular_items&utm_medium=twitter&utm_source=dlvr.it",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-12T12:13:01.000Z",
+      "summaryJa": [
+        "はじめに はじめまして、新卒エンジニアのfuyunokiです。",
+        "この度、新卒として入社した会社でClaudeを使えるようになったので、自分用に調べたことをまとめてみました。",
+        "せっかくなので記事として公開します。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Claude",
+        "Code",
+        "Qiita"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 1005,
+          "ageHours": 33,
+          "crossSources": 2,
+          "velocity": 30.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-4937eaad",
+      "title": "AI駆動開発_ワークフロー設計",
+      "url": "https://speakerdeck.com/mae616/aiqu-dong-kai-fa-wakuhuroshe-ji",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-13T13:45:10.000Z",
+      "summaryJa": [
+        "Claude Codeで考える AI駆動開発のしくみづくりワークショップ セッション",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "AI駆動開発_ワークフロー設計"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 21,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 2.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-d92d3c2a",
+      "title": "Building and Shipping Mac and iOS Apps Without Ever Opening Xcode",
+      "url": "https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-13T18:22:16.000Z",
+      "summaryJa": [
+        "Building and Shipping Mac and iOS Apps Without Eve",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Building",
+        "and",
+        "Shipping",
+        "Mac",
+        "iOS"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 102,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 37.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-a7ba0a46",
+      "title": "トランプ大統領「海上封鎖再開 20％対価も」 イラン反発",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015176161000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-13T20:34:27.000Z",
+      "summaryJa": [
+        "アメリカのトランプ大統領は、ホルムズ海峡の航行をめぐり、イランに対する海上封鎖を再開し、新たに、すべての通過貨物に20％分の対価を課すと主張しました。",
+        "イラン側は、海峡を管理するのはイランだと主張して、…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "トランプ大統領「海上封鎖再開",
+        "20％対価も」",
+        "イラン反発"
+      ],
+      "heat": {
+        "temperature": 60,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-f33b31a5",
+      "title": "歴史的な円安「経済に悪い影響」61％ NHK世論調査",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015175471000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-13T20:02:25.000Z",
+      "summaryJa": [
+        "歴史的な水準が続いている円安について、NHKの世論調査で、日本経済への影響をどう考えるか聞いたところ、「良い影響がある」が22％だったのに対し、「悪い影響がある",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "歴史的な円安「経済に悪い影響」61％",
+        "NHK世論調査"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-940e1d25",
+      "title": "EUも子のSNS制限へ 13歳未満対象",
+      "url": "https://news.yahoo.co.jp/pickup/6587832?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-07-13T14:09:06.000Z",
+      "summaryJa": [
+        "EUも子のSNS制限へ 13歳未満対象",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "EUも子のSNS制限へ",
+        "13歳未満対象"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-8c1ae148",
+      "title": "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可　国内AIベンチャーAIdeaLab",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2607/13/2000000187/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-13T07:09:42.000Z",
+      "summaryJa": [
+        "アニメ特化動画生成AI「AnimeGen」無償公開、商用利用も可 国内AIベンチャーAIdeaLab（1/2 ページ） AI開発企業のAIdeaLab（東京都千",
+        "ライセンスは商用利用もできる「Apache-2.",
+        "0」。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "商用利用も可",
+        "国内AIベンチャーAIdeaLab"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 157,
+          "ageHours": 14,
+          "crossSources": 1,
+          "velocity": 11.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "nhk bs",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-13T20:50:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "nhk",
+        "bs"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-551e05b2",
+      "title": "jameshball/osci-render — 〰📺🔊 Synthesiser audio plugin for making music by drawing objects on an oscilloscope using audio.",
+      "url": "https://github.com/jameshball/osci-render",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-13T20:41:57Z",
+      "summaryJa": [
+        "〰📺🔊 Synthesiser audio plugin for making music by drawing objects on an oscillo",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "jameshball/osci",
+        "render",
+        "〰📺🔊",
+        "Synthesiser",
+        "audio"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "オシロスコープに波形を描いて音楽を生成するという発想は、技術と芸術が衝突する美しい境界線上にあります。電子工作と音響を愛するあなたの午後の遊びに最適です。"
+  },
+  "unavailableSources": []
+}

@@ -1,0 +1,533 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 54,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-08-06",
+  "dateDisplay": "Thursday, August 6, 2026",
+  "pressTimeJst": "2026-08-06 12:00",
+  "generatedAt": "2026-08-06T02:48:09.425Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "現場の足場を固める設計思想",
+    "note": "開発ツールや運用の足元を見直し、午後の手戻りを減らす技術的アプローチを集めました。"
+  },
+  "editorial": {
+    "comment": "Zedが独自に開発した協調編集DB『DeltaDB』（hn-front-accea404）の仕組みには、ローカルファーストなソフトを作るヒントが詰まっています。ツールそのものを支える足場に目を向けると、午後のコーディングにも新しい視点が得られるはずです。 —— YZRS Times 編集長",
+    "passedOver": "秋田のAIデータセンター建設や英機関のAIセキュリティ報告などの時事・速報記事は、昼休憩の技術インプットに集中するため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 33,
+    "tempMin": 23,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 25,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64527,
+        "priceJpy": 10172156,
+        "change24hPct": 0.9,
+        "sparkline7d": [
+          64197.11,
+          64283.82,
+          62986.67,
+          63032.56,
+          63692.06,
+          64269.4,
+          64592.28
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1898.2,
+        "priceJpy": 299236,
+        "change24hPct": 2.4,
+        "sparkline7d": [
+          1914.16,
+          1903.81,
+          1864.38,
+          1852.24,
+          1863.54,
+          1874.02,
+          1908.83
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.161772,
+        "priceJpy": 25.5,
+        "change24hPct": -2,
+        "sparkline7d": [
+          0.172508,
+          0.170823,
+          0.170356,
+          0.174201,
+          0.171465,
+          0.169801,
+          0.164971
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 212.88,
+        "priceJpy": 33559,
+        "change24hPct": 0.8,
+        "sparkline7d": [
+          210.37,
+          213.95,
+          208.95,
+          212.04,
+          212.21,
+          213.44,
+          213.59
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-accea404",
+    "hatebu-it-2048ae2a",
+    "zenn-trend-1ba4b940"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-a31787e3",
+        "hn-front-a079c9d6",
+        "hatebu-it-cadc0b24"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "qiita-popular-aeca0366",
+        "qiita-popular-733a4b00",
+        "zenn-trend-3eb8f5bb"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-dfbf2e88",
+        "lobsters-c438a7f7",
+        "lobsters-9d424c0a"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-accea404",
+      "title": "Zed DeltaDB",
+      "url": "https://zed.dev/deltadb",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-05T18:52:54.000Z",
+      "summaryJa": [
+        "Zed DeltaDB",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Zed",
+        "DeltaDB"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 322,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 40.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-2048ae2a",
+      "title": "ふとした出会いで生まれたSkillが、 社内利用1位になるまで",
+      "url": "https://speakerdeck.com/mikimhk/how-a-skill-born-from-a-chance-encounter-became-the-most-used-tool-in-the-company",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-05T11:10:17.000Z",
+      "summaryJa": [
+        "『Claude Code Skills利用Skill Top5 誕生と運用の苦労も大公開！",
+        "』登壇資料 https://findy-aiplus.",
+        "connpass."
+      ],
+      "category": "programming",
+      "keywords": [
+        "社内利用1位になるまで"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 206,
+          "ageHours": 16,
+          "crossSources": 1,
+          "velocity": 13.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-1ba4b940",
+      "title": "散らばった議論を LLM-Wiki でフル活用する AI 時代のデザインシステムのカタチ",
+      "url": "https://zenn.dev/cybozu_frontend/articles/llm-wiki-for-design-systems",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-05T03:00:09.000Z",
+      "summaryJa": [
+        "!",
+        "この記事は、CYBOZU SUMMER BLOG FES '26の記事です。",
+        "筆者が携わる kDS (kintone Design System) Team は、kintone、Slack、GitHub、Confluence など、さまざ"
+      ],
+      "category": "programming",
+      "keywords": [
+        "LLM",
+        "Wiki",
+        "AI",
+        "時代のデザインシステムのカタチ"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 24,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-a31787e3",
+      "title": "I'm switching my phone from Android to Linux",
+      "url": "https://runarcn.no/android-to-linux/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-05T19:50:13.000Z",
+      "summaryJa": [
+        "I'm switching my phone from Android to Linux",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "switching",
+        "phone",
+        "Android",
+        "Linux"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 224,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 32.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-a079c9d6",
+      "title": "The title cards in Blade Runner are amazing",
+      "url": "https://randsinrepose.com/archives/blade-runner-title-cards/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-05T21:29:23.000Z",
+      "summaryJa": [
+        "The title cards in Blade Runner are amazing",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "title",
+        "cards",
+        "Blade",
+        "Runner",
+        "amazing"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 162,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 30.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-cadc0b24",
+      "title": "社内Slackのtimesで「お気持ち」を書くな｜Chujo",
+      "url": "https://note.com/chujo/n/n8b7c8aee1619",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-06T00:05:26.000Z",
+      "summaryJa": [
+        "timesに流れてくる「あれ」「はぁ……」 「なんでこうなるかなあ」 「もういいや、こっちが我慢すれば済む話なんで」 社内Slackのtimes（分報チャンネル",
+        "主語がない。",
+        "宛先がない。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "社内Slackのtimesで"
+      ],
+      "heat": {
+        "temperature": 89,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 70,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 25.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-aeca0366",
+      "title": "【新卒エンジニアが考える】「読みやすさ」の正体とは？大学で学んだ認知心理学をUI実装とJavaのコード設計にあてはめてみた",
+      "url": "https://qiita.com/tkmrtkm/items/f6f6c10b802372a53c0d?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-05T06:31:13.000Z",
+      "summaryJa": [
+        "2026年度新卒エンジニアとして入社した花です。",
+        "突然ですが、まず以下の画像をご覧ください。",
+        "（自作図） いかがでしょうか？"
+      ],
+      "category": "programming",
+      "keywords": [
+        "新卒エンジニアが考える",
+        "読みやすさ"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 20,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-733a4b00",
+      "title": "ずぼらAI駆動開発、爆誕",
+      "url": "https://qiita.com/nobu34/items/224f55bc85b813930f61?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-05T00:22:29.000Z",
+      "summaryJa": [
+        "スキル、自分で作るのめんどくさくないですか？",
+        "同僚の @masa-asa さんが AI を活用した開発に「いちエンジニア」が向き合い、実践している 3 つの仕組み という記事を上げていました。",
+        "素直にすごいと思いつつ、正直な気持ちはこうです。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "爆誕"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-3eb8f5bb",
+      "title": "タイムボクシングのすすめ",
+      "url": "https://zenn.dev/tokium_dev/articles/timeboxing-design-and-practice",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-05T01:00:05.000Z",
+      "summaryJa": [
+        "株式会社TOKIUMでエンジニアをしているあのです。",
+        "今年の3月から、開発チームのリーダーとして業務しています。",
+        "私のチームは、会計ソフトへ連携するためのフォーマットをお客様ごとにカスタマイズしています。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "タイムボクシングのすすめ"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-dfbf2e88",
+      "title": "Symbolics OpenGenera to go free for non-commercial use",
+      "url": "https://hachyderm.io/@gmpalter/117044268951603975",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-05T22:23:42.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Symbolics",
+        "OpenGenera",
+        "go",
+        "non",
+        "commercial"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-c438a7f7",
+      "title": "C++26: #embed",
+      "url": "https://www.sandordargo.com/blog/2026/08/05/cpp26-embed",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-05T16:28:57.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "C++26",
+        "#embed"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-9d424c0a",
+      "title": "How to Find Bugs in Systems That Don't Exist",
+      "url": "https://www.youtube.com/watch?v=zSZkLyD9ILI",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-05T16:16:10.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Find",
+        "Bugs",
+        "Systems",
+        "Exist"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-9c117b9c",
+      "title": "Show HN: Airmash – Multiplayer Missile Warfare HTML5 Game",
+      "url": "https://airma.sh/",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2017-12-10T16:23:16.000Z",
+      "summaryJa": [
+        "Show HN: Airmash – Multiplayer Missile Warfare HTM",
+        "出典: Show HN",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Airmash",
+        "Multiplayer",
+        "Missile",
+        "Warfare",
+        "HTML5"
+      ],
+      "heat": {
+        "temperature": 35,
+        "signals": {
+          "hnPoints": 1535,
+          "hatebuCount": 0,
+          "ageHours": 75850,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "ブラウザ上で滑らかに動く対戦型ミサイルアクションゲームの実装です。HTML5とWebSocketsを用いたリアルタイム処理の工夫は、Webでの表現やゲーム開発への意欲を刺激してくれます。"
+  },
+  "unavailableSources": []
+}

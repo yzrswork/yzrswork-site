@@ -1,0 +1,519 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 5,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-12",
+  "dateDisplay": "Sunday, July 12, 2026",
+  "pressTimeJst": "2026-07-12 12:00",
+  "generatedAt": "2026-07-12T05:48:08.011Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "手懐ける思考",
+    "note": "AIと環境をただ享受するのではなく、エッジケースや最適化の細部までを自分の支配下に戻すための知恵を共有する。"
+  },
+  "editorial": {
+    "comment": "『Claude Fable 5』を活用した『FastEnum』の高速化手法は、まさにAIを道具として極限まで飼い慣らす好例です。既存のライブラリに満足せず、生成AIの提案をトリガーにして深淵な最適化へ踏み出す姿勢は、我々が目指すべきエンジニアリングの形だと感じます。",
+    "passedOver": "会計事務所の自動化記事は論点が他メディアで既出かつ議論が拡散しすぎているため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 28,
+    "tempMin": 23,
+    "precipChancePct": 67
+  },
+  "market": {
+    "fearGreed": {
+      "value": 26,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63932,
+        "priceJpy": 10335579,
+        "change24hPct": -0.27,
+        "sparkline7d": [
+          63094.24,
+          63214.4,
+          63043.64,
+          62246.1,
+          62947.94,
+          63756.88,
+          64154.88
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1803.93,
+        "priceJpy": 291633,
+        "change24hPct": 0.39,
+        "sparkline7d": [
+          1778.96,
+          1776.61,
+          1769.78,
+          1746.35,
+          1740.76,
+          1783.48,
+          1812.44
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.186925,
+        "priceJpy": 30.22,
+        "change24hPct": -2,
+        "sparkline7d": [
+          0.206588,
+          0.199366,
+          0.19515,
+          0.183351,
+          0.181738,
+          0.1895,
+          0.190557
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 243.6,
+        "priceJpy": 39381,
+        "change24hPct": -0.65,
+        "sparkline7d": [
+          236.08,
+          240.77,
+          238.62,
+          234.1,
+          237.93,
+          245.36,
+          246.95
+        ]
+      }
+    ]
+  },
+  "top": [
+    "zenn-trend-074dae8e",
+    "hatebu-it-3d0a56b6",
+    "zenn-trend-f01ed486"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hatebu-it-36e3fd27",
+        "hn-front-47f03bbd",
+        "hn-front-8b89716b",
+        "lobsters-3a784e34"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-d381fcbd"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-164cdebc",
+        "lobsters-cc651a50",
+        "lobsters-e4f8f2af"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "zenn-trend-074dae8e",
+      "title": "Claude Fable 5 が教えてくれた FastEnum の高速化テクニック (1) - 文字列のハッシュ値生成",
+      "url": "https://zenn.dev/xin9le/articles/6fb2045805996c",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-11T09:28:41.000Z",
+      "summaryJa": [
+        "数日前、@neuecc 先生が Claude Fable 5 を利用したパフォーマンスチューニング手法を投稿してました。",
+        "それを読んで「できるところから真似してみよう！",
+        "」と思い立ち、早速やってみました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Claude",
+        "Fable",
+        "が教えてくれた",
+        "FastEnum",
+        "の高速化テクニック"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 20,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-3d0a56b6",
+      "title": "「AI臭くない文章」を書かせることができる執筆エディタを作った｜なつ (生活者/デザイナー/リサーチャー)",
+      "url": "https://note.com/art_reflection/n/n7ffd5ce3320c",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-11T10:37:44.000Z",
+      "summaryJa": [
+        "ここ最近、いかに「AIでAI臭くない文章を書かせられるか？",
+        "」を試行錯誤しています。",
+        "書かれた文章は自分としてもそれなりに思考を凝らせたものとなっていますが、実のところそろそろアイディアが枯渇し、頭打ちになってきまし。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "(生活者/デザイナー/リサーチャー)"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 275,
+          "ageHours": 19,
+          "crossSources": 1,
+          "velocity": 14.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-f01ed486",
+      "title": "GitHub Actions の parallel でデプロイは8分→3分、CI はコスト3割減になった",
+      "url": "https://zenn.dev/hatsu/articles/github-actions-steps-parallel",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-11T00:19:29.000Z",
+      "summaryJa": [
+        "こんにちは、hatsu です。",
+        "先日、GitHub Actions で同じ job の中にある複数のステップを並列に実行できる parallel / background が 2026-06-",
+        "これまで job の並列化はできましたが、step の並列化はできませんでした。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "GitHub",
+        "Actions",
+        "parallel",
+        "でデプロイは8分→3分",
+        "CI"
+      ],
+      "heat": {
+        "temperature": 46,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 29,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-36e3fd27",
+      "title": "AI-DLC Workflows 2.0 とは何か、そしてどう実装されているか",
+      "url": "https://zenn.dev/aws_japan/articles/aidlc-workflows-v2-harness-engineering",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-12T02:07:23.000Z",
+      "summaryJa": [
+        "はじめに AI コーディングエージェントが日々の開発に浸透するにつれ、多くのチームが同じ壁に行き着きます。",
+        "エージェント向けのワークフローが「バグ修正でも新規開発でも同じ重厚な手順」を強制してくる一方で、自動化に慣れるほど人間側は「AI に全部決めさせる」受動的な姿勢",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "AI",
+        "DLC",
+        "Workflows",
+        "2.0",
+        "とは何か"
+      ],
+      "heat": {
+        "temperature": 90,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 22,
+          "ageHours": 4,
+          "crossSources": 2,
+          "velocity": 6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-47f03bbd",
+      "title": "Prefer strict tables in SQLite",
+      "url": "https://evanhahn.com/prefer-strict-tables-in-sqlite/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-11T17:33:55.000Z",
+      "summaryJa": [
+        "Prefer strict tables in SQLite",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Prefer",
+        "strict",
+        "tables",
+        "in",
+        "SQLite"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 250,
+          "hatebuCount": 0,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 20.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-8b89716b",
+      "title": "Show HN: Ant – A JavaScript runtime and ecosystem",
+      "url": "https://antjs.org",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-11T20:07:18.000Z",
+      "summaryJa": [
+        "Hello HN!",
+        "<p>I&#x27;m the author of Ant, a JavaScript ecosystem built around a runtime wit",
+        "Ant also includes a package manager, the ants."
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "Ant",
+        "JavaScript",
+        "runtime"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 223,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 23
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-3a784e34",
+      "title": "reaction: A daemon that scans program outputs for repeated patterns, and takes action",
+      "url": "https://framagit.org/ppom/reaction",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-12T01:15:49.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "reaction",
+        "daemon",
+        "that",
+        "scans",
+        "program"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-d381fcbd",
+      "title": "ボードゲーム「ナショナルエコノミー」をブラウザで遊べる非公式サービスを作った",
+      "url": "https://zenn.dev/lambdalisue/articles/introduce-unofficial-national-economy",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-11T08:22:04.000Z",
+      "summaryJa": [
+        "どうも、健康診断で良い判定を受けつづけ、医者から「酒を控えて痩せろ」と言われてしまった、ありすえです。",
+        "突然ですが、皆さんは ナショナルエコノミー というボードゲームをご存知でしょうか。",
+        "ナショナルエコノミーとは ゲーム工房スパ帝国 さんが出している 2〜4 人用のワーカープレイスメントです。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 21,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-164cdebc",
+      "title": "Today I Rescued 7,234 Old GIFs",
+      "url": "https://danq.me/2026/07/10/rescuing-7234-gifs/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-11T23:54:53.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Today",
+        "Rescued",
+        "234",
+        "Old",
+        "GIFs"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-cc651a50",
+      "title": "gap: UI text diff",
+      "url": "https://github.com/cdacamar/gap",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-12T00:31:03.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "gap",
+        "UI",
+        "text",
+        "diff"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-e4f8f2af",
+      "title": "Full-Pipeline Inference Optimization for MiMo-V2.5 Series",
+      "url": "https://mimo.xiaomi.com/blog/mimo-v2-5-inference",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-11T23:22:20.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Full",
+        "Pipeline",
+        "Inference",
+        "Optimization",
+        "for"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-52414d83",
+      "title": "davidmonterocrespo24/velxio — Emulate Arduino, ESP32 & Raspberry Pi. in your browser. Write code, compile, and run on 19 real boards — Arduino Uno, ESP32, ESP32-C3, Raspberry Pi Pico, Raspberry Pi 3, and more. No hardware, no cloud, no limits.. Discord: https://discord.gg/3mARjJrh4E",
+      "url": "https://github.com/davidmonterocrespo24/velxio",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-11T03:11:12Z",
+      "summaryJa": [
+        "Emulate Arduino, ESP32 & Raspberry Pi.",
+        "in your browser.",
+        "Write code, compile, and run on 19 real boards — Arduino Uno, ESP32, ESP32-C3, R"
+      ],
+      "category": "oss",
+      "keywords": [
+        "Emulate",
+        "Arduino",
+        "ESP32",
+        "Raspberry",
+        "Pi."
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 27,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "ブラウザ上でハードウェアをシミュレートするこのツールは、ふと思いついた電子工作を即座に試すための良き相棒になります。実機が手元になくとも回路の論理を脳内で組む際、強力な実験場を提供してくれるはずです。"
+  },
+  "unavailableSources": []
+}

@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 59,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-08-09",
+  "dateDisplay": "Sunday, August 9, 2026",
+  "pressTimeJst": "2026-08-09 05:00",
+  "generatedAt": "2026-08-08T20:17:26.048Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "コードの本質と標準の更新",
+    "note": "生成AI時代における泥臭い実装の価値と、移り変わる技術規律を再確認する朝。"
+  },
+  "editorial": {
+    "comment": "「コードを書くのは簡単」という言葉に異議を唱える記事（hn-front-3605192b）に強く共感します。どんなに便利なツールが登場しても、ロジックを泥臭く組み立てる手応えこそがものづくりの核心です。 —— YZRS Times 編集長",
+    "passedOver": "韓国サッカー協会の疑惑報道や芸能界の慶事トピックスは、読者の手元にある創作活動との結びつきが薄いため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 33,
+    "tempMin": 24,
+    "precipChancePct": 91
+  },
+  "market": {
+    "fearGreed": {
+      "value": 30,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 65030,
+        "priceJpy": 10262060,
+        "change24hPct": 0.4,
+        "sparkline7d": [
+          62457.34,
+          63466.47,
+          63738.89,
+          64135.02,
+          64512.35,
+          64912.92,
+          64996.36
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1918.87,
+        "priceJpy": 302807,
+        "change24hPct": 0.5,
+        "sparkline7d": [
+          1835.29,
+          1881.71,
+          1862.29,
+          1871.33,
+          1897.7,
+          1912.64,
+          1919.65
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.165025,
+        "priceJpy": 26.04,
+        "change24hPct": 2.6,
+        "sparkline7d": [
+          0.169631,
+          0.174187,
+          0.170897,
+          0.16686,
+          0.160063,
+          0.159919,
+          0.165303
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 216.44,
+        "priceJpy": 34156,
+        "change24hPct": 0.8,
+        "sparkline7d": [
+          206.44,
+          212.56,
+          213.11,
+          210.52,
+          211.37,
+          214.89,
+          216.75
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-3605192b",
+    "hatebu-it-e69d0d9c",
+    "nhk-top-fe00ccb3"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-7823ebc6",
+        "yahoo-topics-dfd7da73"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-5beaadc8",
+        "hatebu-it-3f185c2d"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-3605192b",
+      "title": "\"Code was never the hard part\" is an insult to all programmers",
+      "url": "https://blog.senko.net/code-was-never-the-hard-part-is-an-insult-to-all-programmers",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-08T14:32:33.000Z",
+      "summaryJa": [
+        "\"Code was never the hard part\" is an insult to all",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Code",
+        "hard",
+        "part",
+        "insult",
+        "programmers"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 268,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 46.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-e69d0d9c",
+      "title": "Web API設計の現在地2026 - Qiita",
+      "url": "https://qiita.com/tatsuya582/items/a800739c02eadff68c70",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-07T08:18:49.000Z",
+      "summaryJa": [
+        "Web API設計の現在地 2026、いま従うべき標準とデファクトの一覧 Web API設計を調べると、検索上位に出てくる記事が2015〜2019年あたりで止ま",
+        "その間にエラーレスポンスの標準ができ、OAuthのグラントタイプは選択基準が変わり、APIの廃止告知にまでRFCが生えました。",
+        "この記事では、Web API設計."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Web",
+        "API設計の現在地2026",
+        "Qiita"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 480,
+          "ageHours": 36,
+          "crossSources": 2,
+          "velocity": 13.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-fe00ccb3",
+      "title": "原爆投下から81年 “長崎を最後の被爆地に”",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260809de42887",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-08T20:13:06.000Z",
+      "summaryJa": [
+        "長崎に原爆が投下されて、9日で81年です。",
+        "「被爆者なき時代」が刻々と近づき、核兵器をめぐる国際情勢が厳しさを増す中、被爆地・長崎は、原爆のすべての犠牲者に祈りをささげ、「長崎を最後の被爆地に」とい…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "原爆投下から81年",
+        "長崎を最後の被爆地に"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-7823ebc6",
+      "title": "台風13号 次第に離れるも高波に厳重警戒 台風15号 進路に注意",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260808de42871",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-08T20:04:45.000Z",
+      "summaryJa": [
+        "大型で非常に強い台風13号は次第に沖縄から離れていますが、波は高く、風も強い見込みで、気象庁は高波に厳重に警戒し、強風に十分注意するよう呼びかけています。",
+        "一方、大型の台風15号は火曜日ごろ、北日本や東…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "台風13号",
+        "次第に離れるも高波に厳重警戒",
+        "台風15号",
+        "進路に注意"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-dfd7da73",
+      "title": "戦時中 複数大学で輸血の人体実験",
+      "url": "https://news.yahoo.co.jp/pickup/6591027?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-08-08T13:19:53.000Z",
+      "summaryJa": [
+        "戦時中 複数大学で輸血の人体実験",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "戦時中",
+        "複数大学で輸血の人体実験"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-5beaadc8",
+      "title": "わかるようでわからないssh接続について - Qiita",
+      "url": "https://qiita.com/hrfm1623/items/91115760e4bd66f7995a",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-07T23:11:12.000Z",
+      "summaryJa": [
+        "この記事の使い方 先に問題を出します。",
+        "鍵をまだ交換していないのに、どうやって暗号化を始めているのですか 公開鍵認証で、サーバに送っているものは何ですか ssh を3回叩いたら、TCP 接続は3本にな",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Qiita"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 99,
+          "ageHours": 21,
+          "crossSources": 2,
+          "velocity": 4.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-3f185c2d",
+      "title": "「AIを全員に配った組織」の生産性が落ちるとき - 🐴 (馬)",
+      "url": "https://blog.takaumada.com/entry/ai-organization-flow",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-08T12:08:46.000Z",
+      "summaryJa": [
+        "「ブライスのパラドックス」と呼ばれる現象があります。",
+        "混雑するネットワークに新しい道を加えたのに、各人が自分にとって最短の経路を選んだ結果、全員の移動時間が逆に長くなることがある、という交通工学のパラドックスです。",
+        "逆に「道をなくす」ことで、移動時間が短縮されることもあります。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "AIを全員に配った組織"
+      ],
+      "heat": {
+        "temperature": 77,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 19,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 2.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "週間天気",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-08-08T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "週間天気"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-fbb33e73",
+      "title": "earlephilhower/arduino-pico — Raspberry Pi Pico Arduino core, for all RP2040 and RP2350 boards",
+      "url": "https://github.com/earlephilhower/arduino-pico",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-02T20:24:04Z",
+      "summaryJa": [
+        "Raspberry Pi Pico Arduino core, for all RP2040 and RP2350 boards",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "pico",
+        "Raspberry",
+        "Pi",
+        "Arduino",
+        "core"
+      ],
+      "heat": {
+        "temperature": 40,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 144,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "RP2040やRP2350をArduino環境で自在に扱うための極めて完成度の高いサードパーティコアです。手元のマイコンで自作音源やハードウェアを組む際の強力な足場になってくれます。"
+  },
+  "unavailableSources": []
+}

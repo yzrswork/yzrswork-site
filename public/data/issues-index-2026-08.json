@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "month": "2026-08",
+  "issues": [
+    {
+      "issueNo": 43,
+      "date": "2026-08-01",
+      "edition": "morning",
+      "theme": "実機の操作と画面の応答",
+      "path": "issues/2026-08-01-morning.json"
+    },
+    {
+      "issueNo": 44,
+      "date": "2026-08-01",
+      "edition": "midday",
+      "theme": "対話的な開発の手応え",
+      "path": "issues/2026-08-01-midday.json"
+    },
+    {
+      "issueNo": 45,
+      "date": "2026-08-02",
+      "edition": "morning",
+      "theme": "言葉で組み立てる独自のシステム",
+      "path": "issues/2026-08-02-morning.json"
+    },
+    {
+      "issueNo": 46,
+      "date": "2026-08-02",
+      "edition": "midday",
+      "theme": "肥大化を削ぎ落とす開発の余白",
+      "path": "issues/2026-08-02-midday.json"
+    },
+    {
+      "issueNo": 47,
+      "date": "2026-08-03",
+      "edition": "morning",
+      "theme": "余剰を削ぎ、骨格を際立たせる",
+      "path": "issues/2026-08-03-morning.json"
+    },
+    {
+      "issueNo": 48,
+      "date": "2026-08-03",
+      "edition": "midday",
+      "theme": "手元のハードウェアを叩き起こす",
+      "path": "issues/2026-08-03-midday.json"
+    },
+    {
+      "issueNo": 49,
+      "date": "2026-08-04",
+      "edition": "morning",
+      "theme": "自動化の波間に残る手作業の足跡",
+      "path": "issues/2026-08-04-morning.json"
+    },
+    {
+      "issueNo": 50,
+      "date": "2026-08-04",
+      "edition": "midday",
+      "theme": "道具を作り、道具に作られる",
+      "path": "issues/2026-08-04-midday.json"
+    },
+    {
+      "issueNo": 51,
+      "date": "2026-08-05",
+      "edition": "morning",
+      "theme": "計算が紡ぐ色彩と歴史の年譜",
+      "path": "issues/2026-08-05-morning.json"
+    },
+    {
+      "issueNo": 52,
+      "date": "2026-08-05",
+      "edition": "midday",
+      "theme": "制御と音声を自ら組み上げる",
+      "path": "issues/2026-08-05-midday.json"
+    },
+    {
+      "issueNo": 53,
+      "date": "2026-08-06",
+      "edition": "morning",
+      "theme": "工芸の領域と自動化の境界",
+      "path": "issues/2026-08-06-morning.json"
+    },
+    {
+      "issueNo": 54,
+      "date": "2026-08-06",
+      "edition": "midday",
+      "theme": "現場の足場を固める設計思想",
+      "path": "issues/2026-08-06-midday.json"
+    },
+    {
+      "issueNo": 55,
+      "date": "2026-08-07",
+      "edition": "morning",
+      "theme": "インフラの節目と手元の再設計",
+      "path": "issues/2026-08-07-morning.json"
+    },
+    {
+      "issueNo": 56,
+      "date": "2026-08-07",
+      "edition": "midday",
+      "theme": "試行の美意識と小さな実装",
+      "path": "issues/2026-08-07-midday.json"
+    },
+    {
+      "issueNo": 57,
+      "date": "2026-08-08",
+      "edition": "morning",
+      "theme": "規律の境界と時を越える道具",
+      "path": "issues/2026-08-08-morning.json"
+    },
+    {
+      "issueNo": 58,
+      "date": "2026-08-08",
+      "edition": "midday",
+      "theme": "波形とコードが刻む拍動",
+      "path": "issues/2026-08-08-midday.json"
+    },
+    {
+      "issueNo": 59,
+      "date": "2026-08-09",
+      "edition": "morning",
+      "theme": "コードの本質と標準の更新",
+      "path": "issues/2026-08-09-morning.json"
+    },
+    {
+      "issueNo": 60,
+      "date": "2026-08-09",
+      "edition": "midday",
+      "theme": "休眠ハードウェアの再点火",
+      "path": "issues/2026-08-09-midday.json"
+    },
+    {
+      "issueNo": 61,
+      "date": "2026-08-10",
+      "edition": "morning",
+      "theme": "重力とコードが描く軌道",
+      "path": "issues/2026-08-10-morning.json"
+    },
+    {
+      "issueNo": 62,
+      "date": "2026-08-10",
+      "edition": "midday",
+      "theme": "極小環境と制御の骨格",
+      "path": "issues/2026-08-10-midday.json"
+    },
+    {
+      "issueNo": 63,
+      "date": "2026-08-11",
+      "edition": "morning",
+      "theme": "独立した箱に宿る自律",
+      "path": "issues/2026-08-11-morning.json"
+    },
+    {
+      "issueNo": 64,
+      "date": "2026-08-11",
+      "edition": "midday",
+      "theme": "極限まで引き締まるデータと数理",
+      "path": "issues/2026-08-11-midday.json"
+    },
+    {
+      "issueNo": 65,
+      "date": "2026-08-12",
+      "edition": "morning",
+      "theme": "モデルが捕らえる現象の輪郭",
+      "path": "issues/2026-08-12-morning.json"
+    },
+    {
+      "issueNo": 66,
+      "date": "2026-08-12",
+      "edition": "midday",
+      "theme": "手元で動かす計算の足場",
+      "path": "issues/2026-08-12-midday.json"
+    },
+    {
+      "issueNo": 67,
+      "date": "2026-08-13",
+      "edition": "morning",
+      "theme": "静かに潜むバグと個人の創出力",
+      "path": "issues/2026-08-13-morning.json"
+    },
+    {
+      "issueNo": 68,
+      "date": "2026-08-13",
+      "edition": "midday",
+      "theme": "実行基盤へ切り込む最適化",
+      "path": "issues/2026-08-13-midday.json"
+    },
+    {
+      "issueNo": 69,
+      "date": "2026-08-14",
+      "edition": "morning",
+      "theme": "長く残るコードと、変わりゆく土台",
+      "path": "issues/2026-08-14-morning.json"
+    },
+    {
+      "issueNo": 70,
+      "date": "2026-08-14",
+      "edition": "midday",
+      "theme": "見えない構造の解剖と速度の追求",
+      "path": "issues/2026-08-14-midday.json"
+    },
+    {
+      "issueNo": 71,
+      "date": "2026-08-15",
+      "edition": "morning",
+      "theme": "言語化の限界と機械の補完",
+      "path": "issues/2026-08-15-morning.json"
+    },
+    {
+      "issueNo": 72,
+      "date": "2026-08-15",
+      "edition": "midday",
+      "theme": "最小の構成、最大の掌握",
+      "path": "issues/2026-08-15-midday.json"
+    },
+    {
+      "issueNo": 73,
+      "date": "2026-08-16",
+      "edition": "morning",
+      "theme": "実行基盤の切り詰めと個人の実装力",
+      "path": "issues/2026-08-16-morning.json"
+    },
+    {
+      "issueNo": 74,
+      "date": "2026-08-16",
+      "edition": "midday",
+      "theme": "設計の骨格とローカルの手触り",
+      "path": "issues/2026-08-16-midday.json"
+    },
+    {
+      "issueNo": 75,
+      "date": "2026-08-17",
+      "edition": "morning",
+      "theme": "AIの浸透と工芸的知性の境界",
+      "path": "issues/2026-08-17-morning.json"
+    },
+    {
+      "issueNo": 76,
+      "date": "2026-08-17",
+      "edition": "midday",
+      "theme": "指先と基盤のチューニング",
+      "path": "issues/2026-08-17-midday.json"
+    },
+    {
+      "issueNo": 77,
+      "date": "2026-08-18",
+      "edition": "morning",
+      "theme": "自動の波間に歪む輪郭",
+      "path": "issues/2026-08-18-morning.json"
+    },
+    {
+      "issueNo": 78,
+      "date": "2026-08-18",
+      "edition": "midday",
+      "theme": "機構の解剖と描画の工夫",
+      "path": "issues/2026-08-18-midday.json"
+    }
+  ]
+}

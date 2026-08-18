@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 67,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-08-13",
+  "dateDisplay": "Thursday, August 13, 2026",
+  "pressTimeJst": "2026-08-13 05:00",
+  "generatedAt": "2026-08-12T20:18:17.469Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "静かに潜むバグと個人の創出力",
+    "note": "極小の信頼された基盤に潜む永年のバグを暴く執念と、わずか二人で世界を沸かせたゲーム開発の熱量。システムの深淵とインディスピリットが交錯する朝。"
+  },
+  "editorial": {
+    "comment": "SQLiteの16年前のWALリセットバグを特定したTailscaleの調査（hn-front-04e20642）が実に刺激的です。日常的に信頼している極小のライブラリであっても、稀有な条件で発現するバグが16年間も潜み続けている事実は、ソフトウェアの深淵を感じさせます。手元のコードに潜む不具合にも、まだ見ぬ物語があるかもしれません。 —— YZRS Times 編集長",
+    "passedOver": "乱立する多数のLLMアップデート（DeepSeek V4、Grok 4.6、Qwen3.8等）は、変化が激しく朝の5分で俯瞰するには情報過多のため今回はすべて見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "弱い雨",
+    "icon": "rain",
+    "tempMax": 28,
+    "tempMin": 23,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 27,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63374,
+        "priceJpy": 10108461,
+        "change24hPct": 0.1,
+        "sparkline7d": [
+          64796.2,
+          64289.46,
+          65007.09,
+          64817.42,
+          64945.77,
+          63758.71,
+          63330.7
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1877.8,
+        "priceJpy": 299516,
+        "change24hPct": 0.8,
+        "sparkline7d": [
+          1915.67,
+          1901.8,
+          1917.69,
+          1919.28,
+          1915.44,
+          1872.67,
+          1884.1
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.158873,
+        "priceJpy": 25.34,
+        "change24hPct": -1.4,
+        "sparkline7d": [
+          0.166942,
+          0.161343,
+          0.163736,
+          0.163326,
+          0.163414,
+          0.159279,
+          0.159145
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 213.51,
+        "priceJpy": 34055,
+        "change24hPct": 1.1,
+        "sparkline7d": [
+          215.42,
+          212.58,
+          216.55,
+          215.33,
+          215.7,
+          212.27,
+          213.64
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-04e20642",
+    "hatebu-it-0f3953ab",
+    "nhk-top-9fa98967"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-world-0dc8faf4",
+        "nhk-world-39ff1db3",
+        "nhk-world-c5d58f99"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-da4772e0",
+        "hn-front-42aafadc"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-04e20642",
+      "title": "Tailscale Traces Database Corruption to 16y/o SQLite WAL-Reset Bug",
+      "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-12T14:22:30.000Z",
+      "summaryJa": [
+        "Tailscale Traces Database Corruption to 16y/o SQLi",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Tailscale",
+        "Traces",
+        "Database",
+        "Corruption",
+        "16y/o"
+      ],
+      "heat": {
+        "temperature": 91,
+        "signals": {
+          "hnPoints": 566,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 2,
+          "velocity": 95.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-0f3953ab",
+      "title": "「めっちゃカメレオン」2000万本突破　日本の2人が開発、発売から2カ月で",
+      "url": "https://www.itmedia.co.jp/news/article/2608/12/2000000507/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-12T06:25:37.000Z",
+      "summaryJa": [
+        "日本の個人が開発したかくれんぼゲーム「めっちゃカメレオン」（790円／Steam向け）の販売本数が、6月10日の発売から約2カ月で2000万本を突破した。",
+        "開発者の1人・LEMORION（レモリオン）氏が12日、自身のXで明らかにした。",
+        "個人開発として異次元とも言える“超大ヒット”が続いている。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "2000万本突破",
+        "日本の2人が開発",
+        "発売から2カ月で"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 83,
+          "ageHours": 14,
+          "crossSources": 1,
+          "velocity": 6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-9fa98967",
+      "title": "熱帯低気圧 広い範囲で大気不安定 関東では危険警報も",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260811de43217",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-12T12:03:55.000Z",
+      "summaryJa": [
+        "11日夜、茨城県に上陸した台風15号の影響で、関東では強風による被害が相次ぎました。",
+        "関東ではこの時間も激しい雨が降っていて、気象庁は、台風から離れた東北などでも土砂災害や低い土地の浸水、川の氾濫などに…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "熱帯低気圧",
+        "広い範囲で大気不安定",
+        "関東では危険警報も"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-0dc8faf4",
+      "title": "中国 朱鎔基元首相が死去 97歳 「鉄腕宰相」とも呼ばれる",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260812de43497",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-08-12T13:31:33.000Z",
+      "summaryJa": [
+        "中国国営の新華社通信は、1990年代に経済改革に取り組み、江沢民元国家主席のもとで、首相を務めた朱鎔基氏が12日死去したと伝えました。",
+        "97歳でした。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "中国",
+        "朱鎔基元首相が死去",
+        "97歳",
+        "鉄腕宰相"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-39ff1db3",
+      "title": "中国 国家プロジェクト開発 新型旅客機「C919」初の国際線就航",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260812de43537",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-08-12T16:01:42.000Z",
+      "summaryJa": [
+        "中国の国家プロジェクトとして開発された新型の旅客機が初めて国際線に就航しました。",
+        "欧米メーカーが世界の市場で高いシェアを占めるなか、今後、存在感を示すことができるのか注目されています。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "中国",
+        "国家プロジェクト開発",
+        "新型旅客機",
+        "C919",
+        "初の国際線就航"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-c5d58f99",
+      "title": "米物価上昇率3.4％ 伸び率縮小 利上げ観測やや後退",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260812de43517",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-08-12T18:44:58.000Z",
+      "summaryJa": [
+        "為替相場や株価に影響を及ぼすアメリカの消費者物価指数は、7月、去年の同じ月と比べて3.",
+        "4％の上昇となりました。",
+        "伸び率は前の月を2か月連続で下回り、金融市場では、FRB＝連邦準備制度理事会による早期の利…"
+      ],
+      "category": "news",
+      "keywords": [
+        "米物価上昇率3.4％",
+        "伸び率縮小",
+        "利上げ観測やや後退"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-da4772e0",
+      "title": "Microphone Test",
+      "url": "https://vaaaaanquish.github.io/MicrophoneTest/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-12T00:54:56.000Z",
+      "summaryJa": [
+        "Free online microphone test.",
+        "Record a few seconds of speech and get a literature-based quality score: noise (",
+        "Runs entirely in your browser — マイクの音質をブラウザでチェック。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Microphone",
+        "Test"
+      ],
+      "heat": {
+        "temperature": 77,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 95,
+          "ageHours": 19,
+          "crossSources": 1,
+          "velocity": 4.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-42aafadc",
+      "title": "Zed: Delta",
+      "url": "https://zed.dev/blog/introducing-delta",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-12T18:19:59.000Z",
+      "summaryJa": [
+        "Zed: Delta",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Zed",
+        "Delta"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 160,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 81.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "apple iphone 18 pro",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-08-12T19:50:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "apple",
+        "iphone",
+        "pro"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-aaad82ae",
+      "title": "Show HN: Homebrew 6.0.0",
+      "url": "https://brew.sh/2026/06/11/homebrew-6.0.0/",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2026-06-11T13:24:29.000Z",
+      "summaryJa": [
+        "Today, I’m proud to announce Homebrew 6.",
+        "0.",
+        "0."
+      ],
+      "category": "tech",
+      "keywords": [
+        "Homebrew"
+      ],
+      "heat": {
+        "temperature": 78,
+        "signals": {
+          "hnPoints": 1481,
+          "hatebuCount": 0,
+          "ageHours": 1495,
+          "crossSources": 1,
+          "velocity": 1
+        }
+      },
+      "image": null
+    },
+    "reason": "あなたが毎日使う道具であるHomebrewがメジャーアップデートしました。内部APIの高速軽量化やセキュリティの堅実な改善は、普段使いのツールだからこそ手触りとして響くハックです。"
+  },
+  "unavailableSources": []
+}

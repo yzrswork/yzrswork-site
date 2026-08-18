@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 44,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-08-01",
+  "dateDisplay": "Saturday, August 1, 2026",
+  "pressTimeJst": "2026-08-01 12:00",
+  "generatedAt": "2026-08-01T02:48:04.106Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "対話的な開発の手応え",
+    "note": "手元で即座に動かし、フィードバックを得ながら環境やコードを作り込む記事を集めました。"
+  },
+  "editorial": {
+    "comment": "Livebook上でElixir製の推論エンジンを動かす記事（qiita-popular-56db7c64）に強く惹かれます。外部APIを叩くだけではなく、最小限のコードで推論パイプラインそのものを手元で可視化・操作する感覚は、ものづくりの好奇心をダイレクトに刺激してくれます。 —— YZRS Times 編集長",
+    "passedOver": "社会的な論争や時事性の強いニュース記事は、昼休みにおける創作意欲の維持と技術的インプットを重視するためすべて見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "曇り",
+    "icon": "cloudy",
+    "tempMax": 35,
+    "tempMin": 25,
+    "precipChancePct": 84
+  },
+  "market": {
+    "fearGreed": {
+      "value": 27,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63012,
+        "priceJpy": 9920297,
+        "change24hPct": -3,
+        "sparkline7d": [
+          64022.44,
+          64366.44,
+          65207.53,
+          63108.02,
+          63741.91,
+          64747.47,
+          62882.76
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1866.32,
+        "priceJpy": 293825,
+        "change24hPct": -2.9,
+        "sparkline7d": [
+          1859.02,
+          1883.39,
+          1963.72,
+          1873.39,
+          1894.21,
+          1920.9,
+          1862.99
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.172679,
+        "priceJpy": 27.19,
+        "change24hPct": 0.2,
+        "sparkline7d": [
+          0.178751,
+          0.17799,
+          0.181931,
+          0.170408,
+          0.17149,
+          0.172136,
+          0.171866
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 211.04,
+        "priceJpy": 33226,
+        "change24hPct": -2.7,
+        "sparkline7d": [
+          210.06,
+          210.11,
+          216.1,
+          210.31,
+          210.58,
+          217.56,
+          208.87
+        ]
+      }
+    ]
+  },
+  "top": [
+    "qiita-popular-56db7c64",
+    "hatebu-it-4434ccf9",
+    "lobsters-874a930f"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hatebu-it-4efe3997",
+        "hn-front-77c27ff7",
+        "hatebu-it-a4cbcf4d"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-b70f4919",
+        "zenn-trend-770eb154",
+        "zenn-trend-836a2ad4"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-08c7c058",
+        "lobsters-d82d72d5"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "qiita-popular-56db7c64",
+      "title": "Elixir 製 LLM 推論エンジン Llamex を Livebook で動かす",
+      "url": "https://qiita.com/RyoWakabayashi/items/4095d86be797008d799e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-31T08:58:38.000Z",
+      "summaryJa": [
+        "はじめに Llamex は、 @piacerex さんが作っている Elixir で書かれた LLM 推論エンジン です LLM の API クライアントではあ",
+        "cpp のような推論パイプラインそのものを Elixir で最小構成に書いたものです.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Elixir",
+        "LLM",
+        "推論エンジン",
+        "Llamex",
+        "Livebook"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-4434ccf9",
+      "title": "GitHubにスタックプルリクエストが登場。gh stackでPRを分割して積み上げよう",
+      "url": "https://zenn.dev/ubie_dev/articles/gh-stack-introduction",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-31T13:51:43.000Z",
+      "summaryJa": [
+        "GitHubでPRを細かく作り、前のブランチに対して数珠つなぎのようにPRを作る私が大歓喜！",
+        "GitHubに「スタックプルリクエスト」機能が来ました💐 3行まとめ 大きな変更を、順序付きの小さなPR群（スタック）に分割して扱える機能がGitHub公式で",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "gh",
+        "stackでPRを分割して積み上げよう"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 77,
+          "ageHours": 13,
+          "crossSources": 2,
+          "velocity": 6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-874a930f",
+      "title": "Interactive Raylib with Common Lisp",
+      "url": "https://www.youtube.com/watch?v=yeJRK_1rS4Y",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-31T18:57:57.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Interactive",
+        "Raylib",
+        "Common",
+        "Lisp"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-4efe3997",
+      "title": "動画編集ソフトを使わずにカンファレンスRecap動画を作った話 ~AIと共に~｜Yoshihiro Ibayashi (ちゃん)",
+      "url": "https://note.com/chan_san_jp/n/n3c72de4fedd9",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-01T00:09:47.000Z",
+      "summaryJa": [
+        "はじめにこんにちは、ちゃんさんです。",
+        "大吉祥寺.",
+        "pm 2026で、すどうさんと一緒にコアスタッフ（広報）をやりましたが、Recap動画を絶対作りたい！"
+      ],
+      "category": "programming",
+      "keywords": [
+        "~AIと共に~｜Yoshihiro",
+        "Ibayashi"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 18,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 6.8
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-77c27ff7",
+      "title": "June in Servo: real world compat, media queries, SharedWorker, and more",
+      "url": "https://servo.org/blog/2026/07/31/june-in-servo/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-31T18:17:52.000Z",
+      "summaryJa": [
+        "June in Servo: real world compat, media queries, S",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "June",
+        "Servo",
+        "real",
+        "world",
+        "compat"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 112,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 2,
+          "velocity": 13.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-a4cbcf4d",
+      "title": "AI時代の強いチームの作り方",
+      "url": "https://speakerdeck.com/yuukiyo/building-strong-teams-in-the-age-of-ai",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-31T13:23:13.000Z",
+      "summaryJa": [
+        "「それ、どこに出しても恥ずかしくないTerraformコードになってるか？",
+        "」 / Terraform AWS Best Practices",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "AI時代の強いチームの作り方"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 187,
+          "ageHours": 13,
+          "crossSources": 1,
+          "velocity": 13.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-b70f4919",
+      "title": "生成AIにおけるHTML/画像出力の必要性と改善案としてのRHW(reviewable-html-workbench)の紹介",
+      "url": "https://zenn.dev/u1/articles/rhw-reviewable-html-workbench",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-30T12:16:48.000Z",
+      "summaryJa": [
+        "出力量が増えると何が起きるか 2026 年 4 月の CHI ワークショップで発表された研究が、この負荷の分布を実際に観察しています(Catalan et al",
+        ")。",
+        "Samsung R&D Institute Philippines と York University のグループが、経験 1 年未満から 10 年超まで 4 "
+      ],
+      "category": "programming",
+      "keywords": [
+        "reviewable",
+        "html",
+        "workbench"
+      ],
+      "heat": {
+        "temperature": 43,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 39,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-770eb154",
+      "title": "0.5くらいから始めるPersonal Knowledge Base 構築実践",
+      "url": "https://zenn.dev/mkj/articles/claudian-orchestra-build_20260720",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-30T08:00:05.000Z",
+      "summaryJa": [
+        "こんにちは，松尾研究所の尾崎です．25卒でデータサイエンティストをやっています． このところ，ObsidianのVaultを人間とAIの共有メモリに据えたPer",
+        ".",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "0.5くらいから始めるPersonal",
+        "Knowledge",
+        "Base",
+        "構築実践"
+      ],
+      "heat": {
+        "temperature": 42,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 43,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-836a2ad4",
+      "title": "メテオフォール開発",
+      "url": "https://zenn.dev/hisaju01/books/meteorfall-development",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-31T06:16:08.000Z",
+      "summaryJa": [
+        "AIエージェントで粗い初期実装をまず落とし、人間が観測・分解・修正していく開発手法「メテオフォール開発」の考え方と実践をまとめた本。",
+        "依頼設計・レビュー・タスク分解・ジュニア参加・品質ゲート・ケーススタディ・テンプレートまでを扱う。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "メテオフォール開発"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 21,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-08c7c058",
+      "title": "Guix shell now inside Emacs",
+      "url": "https://tusharhero.codeberg.page/guix-shell-in-emacs.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-31T17:58:24.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Guix",
+        "shell",
+        "inside",
+        "Emacs"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-d82d72d5",
+      "title": "Accepting a messy git history",
+      "url": "https://beza1e1.tuxen.de/git_two_users.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-31T18:27:28.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Accepting",
+        "messy",
+        "git",
+        "history"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-9e8382e2",
+      "title": "simplefoc/Arduino-FOC — Arduino FOC for BLDC and Stepper motors - Arduino Based Field Oriented Control Algorithm Library",
+      "url": "https://github.com/simplefoc/Arduino-FOC",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-09T13:12:06Z",
+      "summaryJa": [
+        "Arduino FOC for BLDC and Stepper motors - Arduino Based Field Oriented Control A",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "simplefoc/Arduino",
+        "FOC",
+        "Arduino",
+        "BLDC",
+        "Stepper"
+      ],
+      "heat": {
+        "temperature": 40,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 542,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "Arduinoでモーターの磁界指向制御（FOC）を実現するこのライブラリは、自作ロボティクスやハードウェア制御の世界を大きく広げてくれます。精密な位置決めや滑らかな回転を手元で試したい作りの人に強くお勧めします。"
+  },
+  "unavailableSources": []
+}

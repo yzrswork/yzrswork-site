@@ -1,0 +1,412 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 45,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-08-02",
+  "dateDisplay": "Sunday, August 2, 2026",
+  "pressTimeJst": "2026-08-02 05:00",
+  "generatedAt": "2026-08-01T20:18:04.745Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "言葉で組み立てる独自のシステム",
+    "note": "コードが書けるかどうかを超えて、AIを強力な補佐役として自分だけのインフラやツールを仕立て上げる。現代のものづくりの静かな熱気を追います。"
+  },
+  "editorial": {
+    "comment": "宮本佳林氏の10時間配信システムの解説記事（hatebu-it-b001beb1）にはものづくりの原点を感じます。コードそのものは書けなくても、仕様と設計をAIに正しく伝え、自分のシステムを完全に手懐けて運用する姿に、現代における自作のあり方が鮮烈に示されています。 —— YZRS Times 編集長",
+    "passedOver": "NetBSD 11.0のリリースは喜ばしい話題ですが、本日の「AIと言葉で編み上げる自作システム」というストーリーを際立たせるため、今回は掲載を見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "強い霧雨",
+    "icon": "rain",
+    "tempMax": 35,
+    "tempMin": 24,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 27,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 62524,
+        "priceJpy": 9843510,
+        "change24hPct": -0.9,
+        "sparkline7d": [
+          64321.17,
+          65310.39,
+          63263.25,
+          64472.38,
+          64477.01,
+          62562.73,
+          62527.49
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1836.78,
+        "priceJpy": 289174,
+        "change24hPct": -1.9,
+        "sparkline7d": [
+          1873.49,
+          1951.79,
+          1879.24,
+          1919.69,
+          1915.4,
+          1856.48,
+          1834.95
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.169877,
+        "priceJpy": 26.74,
+        "change24hPct": -0.9,
+        "sparkline7d": [
+          0.178926,
+          0.182204,
+          0.171919,
+          0.173432,
+          0.172082,
+          0.171799,
+          0.169593
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 206.83,
+        "priceJpy": 32563,
+        "change24hPct": -1.2,
+        "sparkline7d": [
+          209.29,
+          217.23,
+          213.45,
+          213.77,
+          210.11,
+          206.43,
+          206.74
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-b001beb1",
+    "hatebu-it-f5e04389",
+    "nhk-top-2fcbfb14"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-00b5624a",
+        "nhk-world-db247b70"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-1c20b495",
+        "hn-front-877b7d8c"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-b001beb1",
+      "title": "宮本佳林『HANAKIN配信システムの技術構成』",
+      "url": "https://ameblo.jp/miyamotokarin-official/entry-12974440752.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-01T08:05:57.000Z",
+      "summaryJa": [
+        "HANAKIN配信システムの技術構成2026年7月31日、5thシングル「HANAKIN／シャニカマー」の発売週に、10時間のYouTube生配信をやりました。",
+        "企画は「みんなと協力して家にあるものでMV再現配信」。",
+        "視聴者がCDを買ってハッシュタグで投稿するたびに、メイク・衣装・編集アプリが解禁されていく参加型の配信です。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "宮本佳林",
+        "HANAKIN配信システムの技術構成"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 187,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 15.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-f5e04389",
+      "title": "AI フレンドリーな CLI を開発するテクニック",
+      "url": "https://zenn.dev/shunsuke_suzuki/articles/make-cli-ai-friendly",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-01T03:10:46.000Z",
+      "summaryJa": [
+        "自分は趣味で様々な CLI を OSS として公開しています (aqua, pinact, tfcmt, ghalint, ghir, etc)。",
+        "昨今では AI がこれらを扱うことも増えてきていますが、それなりに知られた OSS でないかぎり AI はその OSS に関する質問に答えたりトラブルシューティ",
+        "そのため Co."
+      ],
+      "category": "programming",
+      "keywords": [
+        "AI",
+        "フレンドリーな",
+        "CLI"
+      ],
+      "heat": {
+        "temperature": 76,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 98,
+          "ageHours": 17,
+          "crossSources": 2,
+          "velocity": 5.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-2fcbfb14",
+      "title": "熊本地震 関連調査中含め36人死亡 住宅被害3400超 県発表",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015193131000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-01T12:36:07.000Z",
+      "summaryJa": [
+        "熊本県は今回の地震で県内では災害との関連を調査している2人を含めて36人が死亡し、3400を超える住宅に被害があったと発表しました。",
+        "建物の調査が進んでいない地域もあるため今後被害が大きく増えるおそれが…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "熊本地震",
+        "関連調査中含め36人死亡",
+        "住宅被害3400超",
+        "県発表"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-00b5624a",
+      "title": "40度に迫る暑さ 2日は大分で酷暑日予想 熱中症対策の徹底を",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015193191000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-01T13:47:05.000Z",
+      "summaryJa": [
+        "1日も広い範囲で気温が上がり、東海や九州では40度に迫る危険な暑さとなりました。",
+        "2日は暑さがさらに厳しく、大分県日田市では40度と「酷暑日」が予想されるほか、熊本県の地震の被災地でも猛暑が続く見込みで…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "40度に迫る暑さ",
+        "2日は大分で酷暑日予想"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-db247b70",
+      "title": "米報道“週末にも攻撃計画” イランもけん制 攻撃応酬に懸念",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015193951000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-08-01T20:12:18.000Z",
+      "summaryJa": [
+        "アメリカのメディアは、トランプ政権がこの週末にもイスラエルとともにイランへの攻撃を計画していると報じました。",
+        "一方、イラン側も「アメリカの盾となる国は戦火で焼かれることになる」などと強くけん制し、攻撃の…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "米報道",
+        "週末にも攻撃計画",
+        "イランもけん制",
+        "攻撃応酬に懸念"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-1c20b495",
+      "title": "Claude Codeの使い方を分析して最適化するcclensが良さげかも | kawarimidoll.com",
+      "url": "https://kawarimidoll.com/posts/202608011/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-01T00:13:28.000Z",
+      "summaryJa": [
+        "cclens — a lens onto your Claude Code usage.",
+        "Contribute to lambdalisue/cclens development by creating an account on GitHub.",
+        "機能 cclensはClaude Codeの使い方を分析するCLIツールです。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Claude",
+        "kawarimidoll.com"
+      ],
+      "heat": {
+        "temperature": 78,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 150,
+          "ageHours": 20,
+          "crossSources": 1,
+          "velocity": 7.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-877b7d8c",
+      "title": "A directory of people who love RSS",
+      "url": "https://andrewshell.org/2026/07/i-%e2%99%a5-rss/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-01T16:52:41.000Z",
+      "summaryJa": [
+        "A directory of people who love RSS",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "directory",
+        "people",
+        "love",
+        "RSS"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 133,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 38.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "t シャツ 乾く まで",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-08-01T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "シャツ",
+        "乾く"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-1388008e",
+      "title": "cncjs/cncjs — A web-based interface for CNC milling controller running Grbl, Marlin, Smoothieware, or TinyG.",
+      "url": "https://github.com/cncjs/cncjs",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-01T17:11:28Z",
+      "summaryJa": [
+        "A web-based interface for CNC milling controller running Grbl, Marlin, Smoothiew",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "cncjs/cncjs",
+        "web",
+        "based",
+        "interface",
+        "CNC"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "削り出しやミリングなど、自宅のワークスペースで物理的な素材を加工する楽しさに満ちたWeb UIです。MarlinやGrblを搭載した自作のCNCマシンをブラウザから手軽に制御し、ものづくりの精度と実感を高めてくれます。"
+  },
+  "unavailableSources": []
+}

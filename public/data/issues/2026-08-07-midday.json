@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 56,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-08-07",
+  "dateDisplay": "Friday, August 7, 2026",
+  "pressTimeJst": "2026-08-07 12:00",
+  "generatedAt": "2026-08-07T02:48:15.694Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "試行の美意識と小さな実装",
+    "note": "コード生成時代における個人の美意識や、独自言語・ツールの手元での実装など、午後の創作意欲を刺激する技術的探求を集めました。"
+  },
+  "editorial": {
+    "comment": "Taste Is All That's Left（hn-front-226fdca6）が突くように、コードが自動生成される時代だからこそ「何を作り、どう削ぎ落とすか」という個人の美意識が問われています。午後の作業では、単なる効率化だけでなく手触りや美しさに少しこだわってみませんか。 —— YZRS Times 編集長",
+    "passedOver": "AI作成による新規ウイルスの発表など社会的なニュースが上位を占めましたが、昼休みに手を動かす創作の時間を優先し、本日の紙面からは見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 32,
+    "tempMin": 25,
+    "precipChancePct": 80
+  },
+  "market": {
+    "fearGreed": {
+      "value": 29,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64360,
+        "priceJpy": 10190927,
+        "change24hPct": -0.3,
+        "sparkline7d": [
+          64469.11,
+          62974.67,
+          63197.91,
+          63112.26,
+          63989.58,
+          64718.35,
+          64262.91
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1900.94,
+        "priceJpy": 300998,
+        "change24hPct": -0.4,
+        "sparkline7d": [
+          1907.64,
+          1865.44,
+          1868.59,
+          1851.9,
+          1871.53,
+          1909.64,
+          1902.1
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.161838,
+        "priceJpy": 25.63,
+        "change24hPct": -1.6,
+        "sparkline7d": [
+          0.171152,
+          0.170888,
+          0.175215,
+          0.172161,
+          0.169081,
+          0.166618,
+          0.161786
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 213.84,
+        "priceJpy": 33859,
+        "change24hPct": -0.2,
+        "sparkline7d": [
+          216.63,
+          210.32,
+          212.63,
+          210.88,
+          212.72,
+          216.27,
+          212.82
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-226fdca6",
+    "lobsters-0c4b52da",
+    "zenn-trend-c48585f0"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hatebu-it-680afa7c",
+        "hn-front-5373c102",
+        "hatebu-it-74b19e69"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-6ac58a7c",
+        "qiita-popular-d0995676",
+        "qiita-popular-c0a615d8"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-0b5b2fb8",
+        "lobsters-dc1864f9"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-226fdca6",
+      "title": "Taste Is All That's Left",
+      "url": "https://notashelf.dev/posts/taste-is-all-thats-left",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-06T17:01:33.000Z",
+      "summaryJa": [
+        "Taste Is All That's Left",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Taste",
+        "Left"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 228,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 2,
+          "velocity": 23.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-0c4b52da",
+      "title": "cl-forth: Forth 2012 Standard in CL",
+      "url": "https://github.com/gmpalter/cl-forth",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-06T19:01:58.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "cl",
+        "forth",
+        "Standard"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-c48585f0",
+      "title": "SkillをGitHub Copilotで\"育てる\" — 実証的プロンプト改善の実践レポート",
+      "url": "https://zenn.dev/aiforall/articles/cb36b724e20a43",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-05T08:23:13.000Z",
+      "summaryJa": [
+        "はじめに プロンプトの細かな差異（空白の有無、指示の構造など）は、LLM の回答の質を大きく左右します。",
+        "「なんとなく書いたら動いた／動かなかった」を卒業するには、勘ではなくテスト駆動で Skill を育てていく発想が有効です。",
+        "この記事では、mizchi 氏が提唱する「empirical-prompt-tuning」の手法を GitHub Copilot 環境で試し、意図的に品質を落と"
+      ],
+      "category": "programming",
+      "keywords": [
+        "SkillをGitHub",
+        "Copilotで",
+        "育てる",
+        "実証的プロンプト改善の実践レポート"
+      ],
+      "heat": {
+        "temperature": 42,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 42,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-680afa7c",
+      "title": "LLM Wikiパターンの標準化 OKF(Open Knowledge Format)",
+      "url": "https://zenn.dev/finatext/articles/2ea88e4b1c2e5b",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-06T22:30:23.000Z",
+      "summaryJa": [
+        "Open Knowledge Format（OKF）— LLM Wikiパターンの標準化 ナウキャストで長期LLMインターンをしている北川です。",
+        "LLM系のタスクのキャッチアップをする中で、最近「OKF」という技術を耳にする機会が増えました。",
+        "OKFはまだ登場したばかりの仕様で、その概念を理解するにはRAGやLLM wikiといった周辺技術への理解が欠かせ."
+      ],
+      "category": "programming",
+      "keywords": [
+        "LLM",
+        "Wikiパターンの標準化",
+        "OKF",
+        "Knowledge",
+        "Format"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 30,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-5373c102",
+      "title": "Mario Meets Pareto",
+      "url": "https://www.mayerowitz.io/blog/mario-meets-pareto",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-06T11:24:53.000Z",
+      "summaryJa": [
+        "Mario Meets Pareto",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Mario",
+        "Meets",
+        "Pareto"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 897,
+          "hatebuCount": 0,
+          "ageHours": 15,
+          "crossSources": 1,
+          "velocity": 58.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-74b19e69",
+      "title": "リクルート、新卒エンジニア向け研修資料を無料公開　“AI時代の生き残り方”など紹介する13本",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2608/06/2000000418/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-06T08:36:10.000Z",
+      "summaryJa": [
+        "リクルートは8月5日、2026年度の新卒エンジニア向けの研修資料を公開した。",
+        "エンジニアとして生き残るためのAIの活用法や、AIによるソフトウェア開発の考え方の変化など、業務やキャリア形成に必要な知見を幅広く紹介している。",
+        "26年度の研修で利用した13の資料を公開した。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "リクルート",
+        "新卒エンジニア向け研修資料を無料公開",
+        "AI時代の生き残り方"
+      ],
+      "heat": {
+        "temperature": 81,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 242,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 13.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-6ac58a7c",
+      "title": "脆弱性を作り込まないために、Claude公式「Security Guidance Plugin」を導入した話",
+      "url": "https://zenn.dev/rakko_inc/articles/claude-code-security-guidance-intro",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-05T09:25:00.000Z",
+      "summaryJa": [
+        "AI にコードを書かせるようになって、実装のスピードが上がりました。",
+        "一方で次なる課題も山のようにありますよね。",
+        "今日はその中から「セキュリティ対策」をテーマに選びました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "脆弱性を作り込まないために",
+        "Claude公式",
+        "Security",
+        "Guidance",
+        "Plugin"
+      ],
+      "heat": {
+        "temperature": 42,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 41,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-d0995676",
+      "title": "AI が原因を当てても、「思いついた」わけじゃない —— 推論の3分類で見分ける",
+      "url": "https://qiita.com/jqit_suwa/items/aefb1adac27a34646cf3?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-06T00:29:03.000Z",
+      "summaryJa": [
+        "AI にバグの原因を聞くと、けっこう当ててきます。",
+        "でも、たまにとんでもなく的外れなことを言う。",
+        "しかも自信満々で。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "AI",
+        "思いついた",
+        "推論の3分類で見分ける"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-c0a615d8",
+      "title": "システム設計視点の行動経済学 全10回 総復習",
+      "url": "https://qiita.com/maskot1977/items/198f98dbbdce80c1790e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-06T16:03:23.000Z",
+      "summaryJa": [
+        "user: 「システム設計視点の行動経済学」も 10回目まで連載しました。",
+        "ここで、これまでの内容の振り返りをしたいと思います。",
+        "Claude Codeさん、まとめを作ってください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "システム設計視点の行動経済学",
+        "全10回",
+        "総復習"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-0b5b2fb8",
+      "title": "celld — Durable Objects, self-hosted",
+      "url": "https://celld.dev/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-06T22:21:00.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "celld",
+        "Durable",
+        "Objects",
+        "self",
+        "hosted"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-dc1864f9",
+      "title": "I got a 1998 CD-ROM world atlas running on Windows 11",
+      "url": "https://trevmex.com/post/824245295374303232/my-son-found-a-world-atlas-in-a-thrift-store-so-i",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-07T00:36:39.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "CD",
+        "ROM",
+        "world",
+        "atlas",
+        "Windows"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-e85a54e6",
+      "title": "Devin-AXIS/iPolloWork — A source-available, local-first alternative to Codex and Claude Code: an AI workspace for code, files, docs, websites, presentations, design, and video—with editable results and user-controlled tools.",
+      "url": "https://github.com/Devin-AXIS/iPolloWork",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-07T02:25:28Z",
+      "summaryJa": [
+        "A source-available, local-first alternative to Codex and Claude Code: an AI work",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "Devin",
+        "AXIS/iPolloWork",
+        "source",
+        "available",
+        "local"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "クラウドに頼らず手元でコードや文書をAIと共に捏ね上げるローカルファーストなワークスペース実装です。環境を自分の手元に引き戻し、じっくり道具を作り込みたい読者の実験場として強い魅力を放ちます。"
+  },
+  "unavailableSources": []
+}

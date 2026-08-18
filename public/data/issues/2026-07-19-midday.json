@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 18,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-19",
+  "dateDisplay": "Sunday, July 19, 2026",
+  "pressTimeJst": "2026-07-19 12:00",
+  "generatedAt": "2026-07-19T05:38:14.559Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "設計の手触り",
+    "note": "AIが実装を自動化する今だからこそ、設計や基盤、ローカルでの試行錯誤といった『手触り』にフォーカスする昼休みの一冊。"
+  },
+  "editorial": {
+    "comment": "AIが高度な実装を自律的にこなす今日（hatebu-it-62c726fc）、私たちの役割はますます『設計の美しさ』に収斂していきます。泥だらけの運河から引き揚げられた古いコンピュータを愛おしく洗うように（lobsters-063708cf）、コードの一つ一つ、設計の意志そのものに手触りを感じていたいものです。 —— YZRS Times 編集長",
+    "passedOver": "AWSのコスト見積もりエラー騒動などの時事ニュースやエヌビディアCEOの政治的発言は、午後の創作活動を刺激するインスピレーションとしては遠いと判断し、今回は掲載を見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ時々曇り",
+    "icon": "partly-cloudy",
+    "tempMax": 31,
+    "tempMin": 25,
+    "precipChancePct": 16
+  },
+  "market": {
+    "fearGreed": {
+      "value": 28,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64640,
+        "priceJpy": 10500480,
+        "change24hPct": 1.1,
+        "sparkline7d": [
+          63785.02,
+          62775.56,
+          62483.67,
+          64689.15,
+          64672.2,
+          64110.57,
+          64793.26
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1864.93,
+        "priceJpy": 302950,
+        "change24hPct": 1.02,
+        "sparkline7d": [
+          1787.45,
+          1779.82,
+          1778.89,
+          1883.53,
+          1880.67,
+          1842.11,
+          1861.16
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.186711,
+        "priceJpy": 30.33,
+        "change24hPct": 1.03,
+        "sparkline7d": [
+          0.186508,
+          0.182864,
+          0.178647,
+          0.185367,
+          0.189885,
+          0.186802,
+          0.188048
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 219.01,
+        "priceJpy": 35576,
+        "change24hPct": 0.01,
+        "sparkline7d": [
+          244.09,
+          236.09,
+          234.69,
+          235.1,
+          222.79,
+          220.16,
+          219.98
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-62c726fc",
+    "zenn-trend-04a2c715",
+    "hn-front-76a8b26f"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-ed006009",
+        "hatebu-it-ebdb659d",
+        "hn-front-59bdf38e"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-fb116aff",
+        "qiita-popular-c038f9b1",
+        "qiita-popular-a5cf6c27"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-063708cf",
+        "lobsters-2c21f72f",
+        "lobsters-ca481fe5"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-62c726fc",
+      "title": "最近の AI コーディングで実践している、設計を中心とした開発の進め方",
+      "url": "https://azukiazusa.dev/blog/recent-ai-coding-development-process-centered-on-design/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-18T04:23:35.000Z",
+      "summaryJa": [
+        "AI コーディングエージェントの自律性が向上し、複数のエージェントを並行して動かすことが日常になったことで、開発の中で最も時間を使う工程が実装から設計へ移りつつ",
+        "この記事では、設計セッション、Git worktree を使った並列実行、自律的な検証、AI によるコードレビューなど、最近の私が実践している開発.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "最近の",
+        "AI",
+        "コーディングで実践している",
+        "設計を中心とした開発の進め方"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 572,
+          "ageHours": 25,
+          "crossSources": 1,
+          "velocity": 22.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-04a2c715",
+      "title": "個人開発のLaravelサイトにOpenTelemetry+Grafanaで可観測性基盤を作った（Docker無し・systemd運用）",
+      "url": "https://zenn.dev/shim_03248/articles/5094579401a468",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-18T04:26:35.000Z",
+      "summaryJa": [
+        "はじめに 個人で運営しているPHP8技術者認定初級試験の模擬試験サイト（Laravel製）に、OpenTelemetry + Grafanaスタックで可観測性基",
+        "アプリコードほぼ変更なし（ゼロコード自動計装） 本番はDockerを使わず、全部バイナリ + systemd 可視化は日本語UIのGrafanaに一元化（Jae",
+        "単一VPSで運用する個人開発サイトを想定した内容ですが、小規模チームのLaravelアプリでもそのまま使えるはずです。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "systemd運用）"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 25,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-76a8b26f",
+      "title": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+      "url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-18T13:00:52.000Z",
+      "summaryJa": [
+        "GPT-5.6 used a prompt to close a 30-year gap in co",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "GPT",
+        "5.6",
+        "used",
+        "prompt",
+        "to"
+      ],
+      "heat": {
+        "temperature": 78,
+        "signals": {
+          "hnPoints": 532,
+          "hatebuCount": 0,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 32
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-ed006009",
+      "title": "Transcribe.cpp",
+      "url": "https://workshop.cjpais.com/projects/transcribe-cpp",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-19T00:38:26.000Z",
+      "summaryJa": [
+        "Transcribe.cpp",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Transcribe.cpp"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 287,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 57.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-ebdb659d",
+      "title": "アニメ・映画・ドラマで見かけた「Emacs」いろいろまとめ",
+      "url": "https://gigazine.net/news/20260719-emacs-in-pop-culture/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-19T03:58:12.000Z",
+      "summaryJa": [
+        "Emacsはオリジナルが1976年にリリースされ、50年経った記事作成時点でも脈々と更新が続いている古参かつ現役のテキストエディタです。",
+        "歴史の長さゆえに根強い愛好者が多く、同じく長い歴史を持つviとの「エディタ戦争」に代表されるミームにも事欠きません。",
+        "そんなEmacsは映画などのワンシーンを演出するツールとしても."
+      ],
+      "category": "programming",
+      "keywords": [
+        "アニメ",
+        "映画"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 7,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 4.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-59bdf38e",
+      "title": "LG monitors silently install software through Windows Update without consent",
+      "url": "https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-18T10:21:19.000Z",
+      "summaryJa": [
+        "LG monitors silently install software through Wind",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "LG",
+        "monitors",
+        "silently",
+        "install",
+        "software"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 1067,
+          "hatebuCount": 0,
+          "ageHours": 19,
+          "crossSources": 1,
+          "velocity": 55.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-fb116aff",
+      "title": "オープンLLMをLambdaで動かしてみる",
+      "url": "https://zenn.dev/edash_tech_blog/articles/528ab6bd044c35",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-18T03:00:52.000Z",
+      "summaryJa": [
+        "はじめに Zenn 読者のみなさん、こんにちは。",
+        "e-dash VPoE の伊藤です。",
+        "最近、AI コーディングエージェントや LLM ベースの自動化を業務に組み込む機会がぐっと増えました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 27,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-c038f9b1",
+      "title": "AI時代のドキュメント駆動開発のすすめ",
+      "url": "https://qiita.com/Asahi_tech_dev/items/5a3c6420cb0b2fa0e823?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-18T02:44:30.000Z",
+      "summaryJa": [
+        "はじめに この数年、AIの登場によって開発現場は大きく様変わりした。",
+        "バイブコーディングをはじめ、未経験者が開発に参入するハードルは一気に下がり、参入者は急増している。",
+        "もはやプロダクトの「インフレ状態」と言ってもいいかもしれない。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "AI時代のドキュメント駆動開発のすすめ"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 27,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-a5cf6c27",
+      "title": "なぜ業務システムは「確認しました」にチェックさせるのか――責任をユーザーへ移すUIの正体",
+      "url": "https://qiita.com/Shiro_Shihi/items/dc923fc9ae3ffbc1ec03?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-18T05:46:35.000Z",
+      "summaryJa": [
+        "業務システムで申請や登録をしようとすると、かなりの確率でこのような画面に遭遇します。",
+        "□ 入力内容に誤りがないことを確認しました □ 上記の注意事項を確認しました □ 本操作を取り消せないことを理解しました ［申請する］ チェックを入れなければ、",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 24,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-063708cf",
+      "title": "The computer at the bottom of a canal",
+      "url": "https://negroniventurestudios.com/2026/07/18/the-computer-at-the-bottom-of-a-canal/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-19T04:32:58.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "The",
+        "computer",
+        "at",
+        "the",
+        "bottom"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-2c21f72f",
+      "title": "A better bitset for enum flags",
+      "url": "https://www.elbeno.com/blog/?p=1836",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-18T18:50:14.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "better",
+        "bitset",
+        "for",
+        "enum",
+        "flags"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-ca481fe5",
+      "title": "Studying Linux Schedulers, and Why Metrics Matter",
+      "url": "https://pradyun.net/blog/metrics_matter.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-19T00:45:01.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Studying",
+        "Linux",
+        "Schedulers",
+        "and",
+        "Why"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-247159c1",
+      "title": "Show HN: I may have created a new type of puzzle",
+      "url": "http://www.dogbunnypuzzle.com/",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2022-09-18T04:37:58.000Z",
+      "summaryJa": [
+        "Show HN: I may have created a new type of puzzle",
+        "出典: Show HN",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "may",
+        "have",
+        "created"
+      ],
+      "heat": {
+        "temperature": 68,
+        "signals": {
+          "hnPoints": 1859,
+          "hatebuCount": 0,
+          "ageHours": 33601,
+          "crossSources": 1,
+          "velocity": 0.1
+        }
+      },
+      "image": null
+    },
+    "reason": "ルールを自らデザインし、新しい遊びの形を発明する。その純粋な創作の初期衝動が、このシンプルなパズルの中に美しく結晶化しています。"
+  },
+  "unavailableSources": []
+}

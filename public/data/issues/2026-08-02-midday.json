@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 46,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-08-02",
+  "dateDisplay": "Sunday, August 2, 2026",
+  "pressTimeJst": "2026-08-02 12:00",
+  "generatedAt": "2026-08-02T02:48:02.679Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "肥大化を削ぎ落とす開発の余白",
+    "note": "AIへの指示の肥大化、PRの巨大化、ライブラリの重厚化に対し、小さく、削ぎ落としてコントロールを取り戻す技術が集まった紙面。"
+  },
+  "editorial": {
+    "comment": "GitHub公式の「gh stack」（zenn-trend-4434ccf9）は、個人開発であっても設計の粒度を細かく保つための強力な相棒になります。大きなアイデアを一度に形にしようとせず、小さなコミットとPRを積み上げていくリズムが、午後の実装に心地よい秩序をもたらしてくれます。 —— YZRS Times 編集長",
+    "passedOver": "宮本佳林氏のHANAKIN配信システム（hatebu-it-b001beb1）は前号で大きく特集したため、今日の技術的な深掘りからは外しました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 33,
+    "tempMin": 25,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 27,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63297,
+        "priceJpy": 9965195,
+        "change24hPct": 0.1,
+        "sparkline7d": [
+          64418.11,
+          65438.55,
+          63340,
+          64516.7,
+          64785.98,
+          62841.07,
+          62778.41
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1871.45,
+        "priceJpy": 294632,
+        "change24hPct": -0.5,
+        "sparkline7d": [
+          1877.47,
+          1964.15,
+          1876.08,
+          1905.75,
+          1917.99,
+          1858.45,
+          1844.43
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.173218,
+        "priceJpy": 27.27,
+        "change24hPct": -0.2,
+        "sparkline7d": [
+          0.177816,
+          0.181773,
+          0.171212,
+          0.173921,
+          0.172455,
+          0.171539,
+          0.170755
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 208.96,
+        "priceJpy": 32898,
+        "change24hPct": -0.7,
+        "sparkline7d": [
+          209.4,
+          218.19,
+          213.89,
+          210.55,
+          220.11,
+          208.32,
+          207.11
+        ]
+      }
+    ]
+  },
+  "top": [
+    "zenn-trend-4434ccf9",
+    "hn-front-ba37df63",
+    "qiita-popular-7d01337b"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hatebu-it-66ab2bb7",
+        "hn-front-bb7b7353"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-836a2ad4",
+        "qiita-popular-dcf645ce"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-0d5ec0fd"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "zenn-trend-4434ccf9",
+      "title": "GitHubにスタック型プルリクエストが登場。gh stackでPRを分割して積み上げよう",
+      "url": "https://zenn.dev/ubie_dev/articles/gh-stack-introduction",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-31T13:33:10.000Z",
+      "summaryJa": [
+        "GitHubでPRを細かく作り、前のブランチに対して数珠つなぎのようにPRを作る私が大歓喜！",
+        "GitHubに「スタックプルリクエスト」機能が来ました💐 3行まとめ 大きな変更を、順序付きの小さなPR群（スタック）に分割して扱える機能がGitHub公式で",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "gh",
+        "stackでPRを分割して積み上げよう"
+      ],
+      "heat": {
+        "temperature": 43,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 37,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-ba37df63",
+      "title": "Anime User Interfaces",
+      "url": "https://animeuserinterface.tumblr.com",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-01T22:47:24.000Z",
+      "summaryJa": [
+        "Anime User Interfaces",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Anime",
+        "User",
+        "Interfaces"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 113,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 28.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-7d01337b",
+      "title": "AppleのUIをSkill化して「AI臭いUI」を脱しようとチャレンジした",
+      "url": "https://qiita.com/t2murata/items/0f6a7551da98464cc54e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-01T01:45:32.000Z",
+      "summaryJa": [
+        "背景 世の中にはいわゆる「AI臭いUI」というのが存在します。",
+        "絵文字が多用されている／丸すぎる角丸／中央寄せ／過度な余白／揃っていないアイテム／問題ないが、なんか臭う・・・などなど 私が以前AIで作った「ゆめぐり帳」という",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "AppleのUIをSkill化して",
+        "AI臭いUI"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 25,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-66ab2bb7",
+      "title": "CLAUDE.mdとAGENTS.mdを削ったら、AIコーディングがグンと賢くなった｜白井暁彦 aka しらいはかせ",
+      "url": "https://note.com/o_ob/n/nd19cba8e11d7",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-01T13:32:46.000Z",
+      "summaryJa": [
+        "Claude CodeやCodexのようなコーディングエージェントを使い続けていると、いつの間にかCLAUDE.",
+        "mdやAGENTS.",
+        "mdが巨大化していきます。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "aka"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 121,
+          "ageHours": 13,
+          "crossSources": 1,
+          "velocity": 9.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-bb7b7353",
+      "title": "Go 1.27 Interactive Tour",
+      "url": "https://victoriametrics.com/blog/go-1-27/index.html",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-02T01:35:51.000Z",
+      "summaryJa": [
+        "Go 1.27 Interactive Tour",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Go",
+        "Interactive",
+        "Tour"
+      ],
+      "heat": {
+        "temperature": 91,
+        "signals": {
+          "hnPoints": 43,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 35.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-836a2ad4",
+      "title": "メテオフォール開発",
+      "url": "https://zenn.dev/hisaju01/books/meteorfall-development",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-31T06:16:08.000Z",
+      "summaryJa": [
+        "AIエージェントで粗い初期実装をまず落とし、人間が観測・分解・修正していく開発手法「メテオフォール開発」の考え方と実践をまとめた本。",
+        "依頼設計・レビュー・タスク分解・ジュニア参加・品質ゲート・ケーススタディ・テンプレートまでを扱う。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "メテオフォール開発"
+      ],
+      "heat": {
+        "temperature": 41,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 45,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-dcf645ce",
+      "title": "個人開発で踏みやすいパフォーマンス・アンチパターン 5 点 — Prisma N+1 から useMemo 漏れまで",
+      "url": "https://qiita.com/teppei19980914/items/8d0ec908a7943725ec98?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-01T10:31:36.000Z",
+      "summaryJa": [
+        "この記事は約 5 分で読めます。",
+        "筆者プロフィール: ソフトウェアエンジニア。",
+        "「知った気にならない。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "個人開発で踏みやすいパフォーマンス",
+        "アンチパターン",
+        "Prisma",
+        "N+1",
+        "useMemo"
+      ],
+      "heat": {
+        "temperature": 50,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 16,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-0d5ec0fd",
+      "title": "An old-new take on argument parsing in Rust",
+      "url": "https://jmmv.dev/2026/07/hello-getoptsargs.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-01T19:31:15.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "old",
+        "take",
+        "argument",
+        "parsing",
+        "Rust"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-463502d7",
+      "title": "DBraun/DawDreamer — Digital Audio Workstation with Python; VST instruments/effects, parameter automation, FAUST, JAX, Warp Markers, and JUCE processors",
+      "url": "https://github.com/DBraun/DawDreamer",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-31T22:58:57Z",
+      "summaryJa": [
+        "Digital Audio Workstation with Python; VST instruments/effects, parameter automa",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "DBraun/DawDreamer",
+        "Digital",
+        "Audio",
+        "Workstation",
+        "Python"
+      ],
+      "heat": {
+        "temperature": 46,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 28,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "PythonでDAWを構築・制御できる、音楽とコードを愛するあなたにぴったりのライブラリです。FAUSTやJUCEといった音響処理の仕組みをスクリプトから動かし、独自の自動作曲システムを組み立てられます。"
+  },
+  "unavailableSources": []
+}

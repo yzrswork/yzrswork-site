@@ -1,0 +1,483 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 28,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-24",
+  "dateDisplay": "Friday, July 24, 2026",
+  "pressTimeJst": "2026-07-24 12:00",
+  "generatedAt": "2026-07-24T02:47:23.433Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "骨組みを暴く",
+    "note": "ライブラリやシステムの皮を一枚剥ぎ、内部の駆動原理と手触りを取り戻すための昼刊。"
+  },
+  "editorial": {
+    "comment": "98.css（hn-front-2c896f4f）を眺めていると、デザインが単なる画面上のグラフィックではなく「手で押せるボタン」という物理的な手触りを模倣していた時代の構造美が蘇ります。ブラックボックス化した洗練されたUIの裏で、素朴なCSSで再現される仕組みに触れることは、午後のプログラミングやモノづくりのアイデアを刺激してくれるはずです。 —— YZRS Times 編集長",
+    "passedOver": "AI企業の巨大な負債や規制の議論など、政治・金融寄りの話題は午後の作業で手を動かすインプットを重視する昼刊の趣旨にそぐわないため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "強い霧雨",
+    "icon": "rain",
+    "tempMax": 33,
+    "tempMin": 24,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 28,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 65013,
+        "priceJpy": 10647032,
+        "change24hPct": -1.5,
+        "sparkline7d": [
+          63496.16,
+          63922.88,
+          64478.9,
+          64283.72,
+          66516.61,
+          65888.67,
+          64924.63
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1869.61,
+        "priceJpy": 306182,
+        "change24hPct": -3.1,
+        "sparkline7d": [
+          1850.46,
+          1845.23,
+          1866.52,
+          1861.2,
+          1925.81,
+          1926.26,
+          1869.77
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.181806,
+        "priceJpy": 29.77,
+        "change24hPct": -2.5,
+        "sparkline7d": [
+          0.183173,
+          0.184536,
+          0.187132,
+          0.186255,
+          0.192467,
+          0.186905,
+          0.182136
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 210,
+        "priceJpy": 34392,
+        "change24hPct": -4.4,
+        "sparkline7d": [
+          222.81,
+          218.59,
+          217.48,
+          214.35,
+          225.3,
+          218.95,
+          210.55
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-2c896f4f",
+    "qiita-popular-1fbd7862",
+    "lobsters-0a63079e"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hatebu-it-0d394cbc",
+        "hn-front-3d941e3f"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-421b9ac2",
+        "zenn-trend-63393eae",
+        "qiita-popular-a3e24ad4"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-46ab755f",
+        "lobsters-93dfe7d0"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-2c896f4f",
+      "title": "98.css",
+      "url": "https://jdan.github.io/98.css/#status-bar",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-23T22:30:29.000Z",
+      "summaryJa": [
+        "98.css",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "98.css"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 264,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 61.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-1fbd7862",
+      "title": "狩野英孝さんのポストは、なぜ1992年へ飛んだのか？整数オーバーフローが起こす時刻バグ",
+      "url": "https://qiita.com/miruky/items/4be4d7e683632ba8c396?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-23T14:58:14.000Z",
+      "summaryJa": [
+        "はじめに こんばんは。",
+        "2026年3月、お笑い芸人の狩野英孝さんがXへ投稿したはずのポストに、なぜか1992年9月2日と表示されて話題になりました。",
+        "彼は笑いの神様に愛されるあまり、時空まで操れるようになったのでしょうか。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "狩野英孝さんのポストは"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-0a63079e",
+      "title": "Jolt: running Clojure on Chez Scheme",
+      "url": "https://yogthos.net/posts/2026-07-02-jolt.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-23T20:54:31.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Jolt",
+        "running",
+        "Clojure",
+        "on",
+        "Chez"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-0d394cbc",
+      "title": "『動くだけ』のその先へ — AI駆動開発で品質と速度を両取りする温故知新な新手法 / Beyond Just Vibe Coding - Combining Classic Principles with AI-Driven Development",
+      "url": "https://speakerdeck.com/itohiro73/beyond-just-vibe-coding-combining-classic-principles-with-ai-driven-development",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-23T14:55:51.000Z",
+      "summaryJa": [
+        "『動くだけ』のその先へ — AI駆動開発で品質と速度を両取りする温故知新な新手法 / Beyond Just Vibe Coding - Combining C",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "『動くだけ』のその先へ",
+        "Beyond",
+        "Just",
+        "Vibe",
+        "Coding"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 82,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 6.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-3d941e3f",
+      "title": "Writing by hand is good for your brain",
+      "url": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-23T14:24:43.000Z",
+      "summaryJa": [
+        "Writing by hand is good for your brain",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Writing",
+        "by",
+        "hand",
+        "is",
+        "good"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 1005,
+          "hatebuCount": 0,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 81.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-421b9ac2",
+      "title": "Go 1.27 から uuid 実装がサポートされる！ので個人的に気になった議論とその着地をまとめてみた",
+      "url": "https://zenn.dev/layerx/articles/f7124d4e761c1f",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-23T06:03:17.000Z",
+      "summaryJa": [
+        "はじめに こんにちは、バクラク事業部アカウント基盤開発部IDチームの @convto です。",
+        "各種利用サービスのIDに一貫性があり、 GitHub も X も大体 convto を確保できているのが密かな自慢です。",
+        "やはりIDチーム所属なので、自分のIDにも一貫性が必要とされています。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Go",
+        "1.27",
+        "から",
+        "uuid"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 21,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-63393eae",
+      "title": "Go の設計、どこまでやる？〜小さく作って、壊さず育てる〜",
+      "url": "https://zenn.dev/135yshr/books/go-service-design",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-23T03:08:48.000Z",
+      "summaryJa": [
+        "「クリーンアーキテクチャというアーキテクチャはない」——大事なのは図の形を真似ることではなく、依存の向きを設計し、変更に強いサービスを育てることです。",
+        "本書は、Go でサービスを設計・運用する中で得た判断基準を、原則の理解、層ごとの設計判断、ドメインの表現、CI での維持、そして読書ログサービスを題材にしたハン",
+        "読み終えたとき、自分のサービスを設計して作りはじめられる状態になることがゴールです。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Go",
+        "の設計",
+        "どこまでやる？〜小さく作って",
+        "壊さず育てる〜"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 24,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-a3e24ad4",
+      "title": "Railsで学ぶ Rubyの実行モデル入門 〜「1行ずつ翻訳」は誤解だった！〜",
+      "url": "https://qiita.com/akachiryo/items/0dea3706713f90e7ef7d?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-23T04:02:12.000Z",
+      "summaryJa": [
+        "お疲れ様です！",
+        "「Rubyってインタプリタ言語だから、1行ずつ翻訳しながら実行してるんでしょ？",
+        "」と思っていませんか？"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Railsで学ぶ",
+        "Rubyの実行モデル入門",
+        "〜「1行ずつ翻訳」は誤解だった！〜"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 23,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-46ab755f",
+      "title": "Fil-C: Garbage In, Memory Safety Out",
+      "url": "https://www.youtube.com/watch?v=5F-2Y1LPRek",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-23T21:20:10.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Fil",
+        "Garbage",
+        "In",
+        "Memory",
+        "Safety"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-93dfe7d0",
+      "title": "You should selfhost your mail (in 2026)",
+      "url": "https://blog.haschek.at/2026/you-should-selfhost-your-mail.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-23T21:10:09.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "You",
+        "should",
+        "selfhost",
+        "your",
+        "mail"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-09bae87e",
+      "title": "zeeyado/koassistant.koplugin — A powerful AI assistant integrated into KOReader.",
+      "url": "https://github.com/zeeyado/koassistant.koplugin",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-22T21:21:22Z",
+      "summaryJa": [
+        "A powerful AI assistant integrated into KOReader.",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "powerful",
+        "AI",
+        "assistant",
+        "integrated",
+        "into"
+      ],
+      "heat": {
+        "temperature": 46,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 29,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "電子書籍リーダーKOReaderにAIアシスタントを融合させる、ハッカー精神溢れるプラグインです。既存ツールを自分好みに拡張して遊ぶDIY精神は、あなたの電子工作や個人開発のインスピレーションになるでしょう。"
+  },
+  "unavailableSources": []
+}

@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 69,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-08-14",
+  "dateDisplay": "Friday, August 14, 2026",
+  "pressTimeJst": "2026-08-14 05:00",
+  "generatedAt": "2026-08-13T20:17:46.610Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "長く残るコードと、変わりゆく土台",
+    "note": "45年動くBASIC、変化するモバイルの自由度、そして終末設計。持続する仕組みのあり方を考えます。"
+  },
+  "editorial": {
+    "comment": "「Donkey.bas」（hn-front-5061ff1b）の131行という数字に胸が熱くなります。45年が経過しても、極限まで削ぎ落とされたシンプルなコードは、動く歴史として語り継がれます。現代の複雑なスタックの中で、我々が本当に残したいものは何なのかを問いかけてくるようです。 —— YZRS Times 編集長",
+    "passedOver": "Gemini 3.7 Flashなどの最新AIモデル。今朝は日々の道具よりも、インフラとしての自由の終わりや古典的なコードの持つ美学を優先して紙面を構成したため。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "雨",
+    "icon": "rain",
+    "tempMax": 26,
+    "tempMin": 23,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 29,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63356,
+        "priceJpy": 10107278,
+        "change24hPct": 0,
+        "sparkline7d": [
+          64459.42,
+          64872.6,
+          64746.82,
+          65219.94,
+          64281.72,
+          63317.67,
+          63253.26
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1885.32,
+        "priceJpy": 300769,
+        "change24hPct": 0.1,
+        "sparkline7d": [
+          1908.23,
+          1912.16,
+          1912.61,
+          1925.65,
+          1888.68,
+          1885.2,
+          1883.74
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.160008,
+        "priceJpy": 25.53,
+        "change24hPct": 0.3,
+        "sparkline7d": [
+          0.160776,
+          0.16123,
+          0.163476,
+          0.165503,
+          0.160775,
+          0.158813,
+          0.159834
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 206.11,
+        "priceJpy": 32882,
+        "change24hPct": -3.5,
+        "sparkline7d": [
+          213.46,
+          214.68,
+          214.92,
+          216.81,
+          214.54,
+          213.15,
+          205.87
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-5061ff1b",
+    "hatebu-it-6ad448b2",
+    "nhk-top-fce6c2d8"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-dcf70a23",
+        "nhk-world-a002b466",
+        "nhk-world-928546a3"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-24b61a1e",
+        "hatebu-it-3458c3c8"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-5061ff1b",
+      "title": "Donkey.bas is 45 Years Old – 131 line of Glory",
+      "url": "https://donkeybas.com/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-13T17:45:50.000Z",
+      "summaryJa": [
+        "Donkey.bas is 45 Years Old – 131 line of Glory",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Donkey.bas",
+        "Years",
+        "Old",
+        "line",
+        "Glory"
+      ],
+      "heat": {
+        "temperature": 78,
+        "signals": {
+          "hnPoints": 95,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 37.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-6ad448b2",
+      "title": "Webサービスの終わらせ方",
+      "url": "https://zenn.dev/kibe/articles/df74c2e9fe76b6",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-13T08:51:42.000Z",
+      "summaryJa": [
+        "作るより消すほうが大変 Webサービスは、作るときより終わらせるときのほうが面倒です。",
+        "少なくとも私はそうでした。",
+        "作り始めたころは、 「Cloudflare Workers便利！"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Webサービスの終わらせ方"
+      ],
+      "heat": {
+        "temperature": 90,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 100,
+          "ageHours": 11,
+          "crossSources": 2,
+          "velocity": 8.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-fce6c2d8",
+      "title": "千葉県 レベル5の大雨と土砂災害の特別警報 命助かる行動を",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260813de43577",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-13T20:07:58.000Z",
+      "summaryJa": [
+        "湿った空気や上空の寒気の影響で千葉県では13日夕方以降、線状降水帯が相次いで発生して1時間に100ミリを超える猛烈な雨が降り続き、記録的な大雨となっています。",
+        "気象庁は、千葉県の22の市町にレベル5大雨…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "千葉県",
+        "レベル5の大雨と土砂災害の特別警報"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-dcf70a23",
+      "title": "【大雨被害】市川市 八千代市 2人死亡確認",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260813de43748",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-13T20:00:53.000Z",
+      "summaryJa": [
+        "レベル５大雨特別警報が出された千葉県内の大雨被害についてまとめました。",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "大雨被害",
+        "市川市",
+        "八千代市",
+        "2人死亡確認"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-a002b466",
+      "title": "ロシア プーチン大統領 北方領土初めて訪問",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260813de43566",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-08-13T12:52:11.000Z",
+      "summaryJa": [
+        "ロシア大統領府は13日、プーチン大統領が北方領土の択捉島を訪問したと発表しました。",
+        "プーチン氏の北方領土訪問は初めてで、ウクライナ侵攻を続けるロシアに制裁を科す日本を強くけん制するねらいがあるとみられま…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "ロシア",
+        "プーチン大統領",
+        "北方領土初めて訪問"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-928546a3",
+      "title": "中国 朱鎔基元首相 死去 中国の日本関係者も追悼",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260813de43766",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-08-13T16:56:39.000Z",
+      "summaryJa": [
+        "中国で経済改革に取り組み、江沢民元国家主席のもとで首相を務めた、朱鎔基氏が12日、死去したことを受けて、北京にある日本大使館で半旗が掲げられるなど、日本の関係者",
+        "出典: NHKニュース 国際",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "中国",
+        "朱鎔基元首相",
+        "死去",
+        "中国の日本関係者も追悼"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-24b61a1e",
+      "title": "Androidの「自由」が終わる。2027年、野良アプリが入れられなくなる | ライフハッカー・ジャパン",
+      "url": "https://www.lifehacker.jp/article/2509android-is-making-it-more-difficult-to-sideload-apps-pai/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-13T01:27:35.000Z",
+      "summaryJa": [
+        "AndroidとiOS、それぞれに長所と短所があるのはご存知の通り。",
+        "これまでAndroidがAppleのプラットフォームに対して持っていた最大の利点の一つは、その「オープンさ」でした。",
+        "GoogleのPlayストアからアプリをダウンロードできるだけでなく、インターネットから直接アプリをダウンロードすることも可能です。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Androidの",
+        "自由",
+        "2027年",
+        "野良アプリが入れられなくなる",
+        "ライフハッカー"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 160,
+          "ageHours": 19,
+          "crossSources": 1,
+          "velocity": 8.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-3458c3c8",
+      "title": "オールドファン歓喜、ブラウザー上で動作するX68000エミュレーターが登場。ライセンスもクリア【やじうまWatch】",
+      "url": "https://internet.watch.impress.co.jp/docs/yajiuma/2132479.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-13T08:18:39.000Z",
+      "summaryJa": [
+        "オールドファン歓喜、ブラウザー上で動作するX68000エミュレーターが登場。ライセンスもクリア【やじ",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "オールドファン歓喜",
+        "ライセンスもクリア"
+      ],
+      "heat": {
+        "temperature": 76,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 36,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "マーリンズ 対 パイレーツ",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-08-13T19:40:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "マーリンズ",
+        "パイレーツ"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-50b1136f",
+      "title": "Show HN: Gemini Pro 3 imagines the HN front page 10 years from now",
+      "url": "https://dosaygo-studio.github.io/hn-front-page-2035/news",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2025-12-09T15:00:38.000Z",
+      "summaryJa": [
+        "Show HN: Gemini Pro 3 imagines the HN front page 1",
+        "出典: Show HN",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Gemini",
+        "Pro",
+        "imagines",
+        "front",
+        "page"
+      ],
+      "heat": {
+        "temperature": 77,
+        "signals": {
+          "hnPoints": 3346,
+          "hatebuCount": 0,
+          "ageHours": 5933,
+          "crossSources": 1,
+          "velocity": 0.6
+        }
+      },
+      "image": null
+    },
+    "reason": "10年後のHacker NewsのトップページをAIに妄想させた、思わずクスリとする実験的試みです。未来の開発者たちの関心事がどう変化しているか、創作の合間の息抜きに覗いてみてください。"
+  },
+  "unavailableSources": []
+}

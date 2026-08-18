@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 40,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-30",
+  "dateDisplay": "Thursday, July 30, 2026",
+  "pressTimeJst": "2026-07-30 12:00",
+  "generatedAt": "2026-07-30T02:48:09.131Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "自分だけが動かせる道具を組み上げる",
+    "note": "手元で動かす、自分だけの仕組み"
+  },
+  "editorial": {
+    "comment": "本日の紙面で一番手が止まったのは、ラズパイを並べてMAGIを作る試み（hatebu-it-7767f127）です。ただの技術デモを超えて、アニメのロマンを現実のマルチエージェントに落とし込む執念に胸が熱くなりました。昼休みにこの記事を眺めながら、週末にほこりをかぶっているラズパイを取り出してみるのもいいかもしれません。 —— YZRS Times 編集長",
+    "passedOver": "AIスタートアップの論文未公開の増加に関する話題。時事を扱わない昼刊の性質上、深掘り技術情報や実践的ハックを優先しました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "曇り",
+    "icon": "cloudy",
+    "tempMax": 35,
+    "tempMin": 24,
+    "precipChancePct": 63
+  },
+  "market": {
+    "fearGreed": {
+      "value": 28,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64215,
+        "priceJpy": 10497949,
+        "change24hPct": 0.57,
+        "sparkline7d": [
+          66028.04,
+          65225.72,
+          63968.9,
+          64447.27,
+          64486.41,
+          63663.25,
+          63862.03
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1911.85,
+        "priceJpy": 312551,
+        "change24hPct": 0.23,
+        "sparkline7d": [
+          1932.03,
+          1873.65,
+          1854.68,
+          1883.97,
+          1926.41,
+          1909.02,
+          1904.86
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.172219,
+        "priceJpy": 28.15,
+        "change24hPct": -1.24,
+        "sparkline7d": [
+          0.186906,
+          0.18351,
+          0.176848,
+          0.177661,
+          0.17542,
+          0.172111,
+          0.17169
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 209.95,
+        "priceJpy": 34323,
+        "change24hPct": -2.34,
+        "sparkline7d": [
+          219.92,
+          211.52,
+          211.59,
+          210.74,
+          215.24,
+          213.36,
+          211.04
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-8b8a4c26",
+    "hatebu-it-7767f127",
+    "lobsters-fd95e3bf"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-8e047add",
+        "hatebu-it-19b4765e",
+        "hatebu-it-75ed2a4d"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-663f9eb5",
+        "zenn-trend-622c2de9",
+        "zenn-trend-392cccab",
+        "qiita-popular-589bc9f9"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-a1a1d04a",
+        "lobsters-32e26296"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-8b8a4c26",
+      "title": "Show HN: Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac",
+      "url": "https://github.com/drumih/turbo-fieldfare",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-29T15:05:43.000Z",
+      "summaryJa": [
+        "Hi HN,<p>I built a specialized inference engine for running 4-bit Gemma 4 26B-A4",
+        "It is called TurboFieldfare and is written in Swift and Metal.",
+        "<p>I have always adored on-device AI."
+      ],
+      "category": "tech",
+      "keywords": [
+        "source",
+        "engine",
+        "Gemma",
+        "26B",
+        "GB"
+      ],
+      "heat": {
+        "temperature": 90,
+        "signals": {
+          "hnPoints": 666,
+          "hatebuCount": 10,
+          "ageHours": 12,
+          "crossSources": 2,
+          "velocity": 56.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-7767f127",
+      "title": "ラズパイ3台でエヴァのMAGIを作る｜ローカルLLMで動く合議AIシステム | SIOS Tech Lab",
+      "url": "https://tech-lab.sios.jp/archives/53583",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-29T23:08:39.000Z",
+      "summaryJa": [
+        "こんな方へ特におすすめ エヴァンゲリオンが好きな方 ローカルLLM（Ollama）や Raspberry Pi で、何か動くものを作ってみたい方 LangGra",
+        "サイオステクノロジーのはらちゃんです！",
+        "今回はOSCの展示ブース用開発として、『新世紀エヴァンゲリオン』の意思決定コンピ."
+      ],
+      "category": "programming",
+      "keywords": [
+        "SIOS",
+        "Lab"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 77,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 21
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-fd95e3bf",
+      "title": "Overengineered calculator: Zig + QBE",
+      "url": "https://tomekw.com/overengineered-calculator-zig-qbe/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-29T13:22:18.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Overengineered",
+        "calculator",
+        "Zig",
+        "QBE"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 13,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-8e047add",
+      "title": "Superlogical",
+      "url": "https://www.superlogical.com/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-29T15:41:33.000Z",
+      "summaryJa": [
+        "<a href=\"https:&#x2F;&#x2F;mitchellh.",
+        "com&#x2F;writing&#x2F;superlogical\" rel=\"nofollow\">https:&#x2F;&#x2F;mitchellh.",
+        "com&#x2F;writing&#x2F;superlogical</a>"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Superlogical"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 545,
+          "hatebuCount": 0,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 49.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-19b4765e",
+      "title": "GitHub Actionsのコストが増えているなら、Namespaceを使えばいいじゃない",
+      "url": "https://zenn.dev/aircloset/articles/6b47018589df0f",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-30T02:20:54.000Z",
+      "summaryJa": [
+        "みなさまこんにちは！",
+        "エアークローゼットでCTOをしている辻です。",
+        "GitHub ActionsのランナーをGitHub hosted→Blacksmith→Namespaceと2回乗り換えました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "GitHub",
+        "Actionsのコストが増えているなら",
+        "Namespaceを使えばいいじゃない"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 6,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 12
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-75ed2a4d",
+      "title": "深刻度「緊急」のRails脆弱性「KindaRails2Shell」（CVE-2026-66066）の概要と対応指針 - GMO Flatt Security Blog",
+      "url": "https://blog.flatt.tech/entry/kindarails2shell_rails",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-29T15:19:18.000Z",
+      "summaryJa": [
+        "2026年7月29日、認証を必要とせず、リモートからの任意コード実行（RCE）につながり得る脆弱性「CVE-2026-66066」を修正したRuby on Ra",
+        "2.",
+        "3."
+      ],
+      "category": "programming",
+      "keywords": [
+        "深刻度",
+        "緊急",
+        "KindaRails2Shell",
+        "CVE",
+        "GMO"
+      ],
+      "heat": {
+        "temperature": 80,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 100,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 8.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-663f9eb5",
+      "title": "GPT-5.6とBlender MCPで、多少マシな3Dモデリングをさせるまで",
+      "url": "https://zenn.dev/test_myname/articles/gpt-5-6-blender-mcp-modeling",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-29T00:57:38.000Z",
+      "summaryJa": [
+        "Vtuberの「ぷらむらいす」です。",
+        "GPT-5.",
+        "6とBlender MCPを使い、1枚の見本画像から「銀装飾の黒いアンティーク鍵」を3Dモデリングさせました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "GPT",
+        "5.6とBlender",
+        "MCPで",
+        "多少マシな3Dモデリングをさせるまで"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-622c2de9",
+      "title": "自作APIをChatGPTからアクセス可能にする「Super MCP」",
+      "url": "https://zenn.dev/reizt/articles/super-mcp-chatgpt",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-29T00:00:05.000Z",
+      "summaryJa": [
+        "こちらの記事は「MEDLEY Summer Tech Blog Relay」の12日目の記事です。",
+        "はじめに こんにちは、株式会社メドレーの高橋です。",
+        "メドレーは「医療ヘルスケアの未来をつくる」をミッションに掲げ、テクノロジーを活用した事業やプロジェクトを通じて「納得できる医療」の実現を目指しています。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Super",
+        "MCP"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 27,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-392cccab",
+      "title": "自分で作るクラウド競技",
+      "url": "https://zenn.dev/bull/books/cloud-competition",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-29T00:15:14.000Z",
+      "summaryJa": [
+        "AWS GameDayに着想を得た実践型クラウド演習を、自分で設計・実装・開催する本です。",
+        "参加者の体験とストーリーを起点に、ローカルChallenge、AWS Challenge、AWS Battleを簡単な順に一から作り、TenkaCloudで複数",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "自分で作るクラウド競技"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 27,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-589bc9f9",
+      "title": "オーダーメイドで九九の計算プリントを作ろう（ローテクAI）",
+      "url": "https://qiita.com/Kaitou/items/33e9a09af8ea5bdeebeb?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-29T11:27:10.000Z",
+      "summaryJa": [
+        "夏休み中で小学生が家に居るおとうさん、おかあさん。",
+        "暑い中でなかなか外では遊べませんが、動画視聴やゲームばかりというのも気になります。",
+        "せっかくの機会なので、お子さんの苦手分野のプリントを作って、クイズ的に一緒にやってみませんか？"
+      ],
+      "category": "programming",
+      "keywords": [
+        "ローテクAI"
+      ],
+      "heat": {
+        "temperature": 50,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 15,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-a1a1d04a",
+      "title": "What side projects have you enjoyed the most?",
+      "url": "https://lobste.rs/s/mbk56v/what_side_projects_have_you_enjoyed_most",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-30T01:40:31.000Z",
+      "summaryJa": [
+        "In the spirit of https://blog.",
+        "jsbarretto.",
+        "com/post/software-is-joy, what side projects have you enjoyed working on the mos"
+      ],
+      "category": "tech",
+      "keywords": [
+        "side",
+        "projects",
+        "enjoyed"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-32e26296",
+      "title": "Setting timers in simple games (feat. the frame rule)",
+      "url": "https://lynn.github.io/blog/pico-timers/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-29T16:26:11.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Setting",
+        "timers",
+        "simple",
+        "games",
+        "feat"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-c4db0d0b",
+      "title": "raspberrypi/rpi-imager — The home of Raspberry Pi Imager, a user-friendly tool for creating bootable media for Raspberry Pi devices.",
+      "url": "https://github.com/raspberrypi/rpi-imager",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-29T12:44:59Z",
+      "summaryJa": [
+        "The home of Raspberry Pi Imager, a user-friendly tool for creating bootable medi",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "raspberrypi/rpi",
+        "imager",
+        "home",
+        "Raspberry",
+        "Pi"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 14,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "電子工作の最初の関門であるOS書き込みを、劇的にシンプルにしてくれる影の立役者です。手元のSDカードに命を吹き込むその一歩が、次の創作への最短経路になります。"
+  },
+  "unavailableSources": []
+}

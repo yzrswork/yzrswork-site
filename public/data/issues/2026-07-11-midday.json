@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 2,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-11",
+  "dateDisplay": "Saturday, July 11, 2026",
+  "pressTimeJst": "2026-07-11 12:00",
+  "generatedAt": "2026-07-10T20:47:34.340Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "自律的な道具たち",
+    "note": "AIが環境を構築し、テストを書き、思考を代行する時代。人間がその速度に追いつき、真に制御するための知見をまとめました。"
+  },
+  "editorial": {
+    "comment": "『AIが自分の結論を正当化してくるので〜』の考察が鋭い。認知負荷の増大に対し、安易にAIへ委ねるのではなく、自ら第二のAIに検証させるという「人間中心の検証ループ」の設計に感銘を受けました。",
+    "passedOver": "エアコンの2027年問題。生活インフラとして重要だが、今すぐ手を動かす作り手の集中対象とは少し異なるため見送った。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "曇り",
+    "icon": "cloudy",
+    "tempMax": 30,
+    "tempMin": 23,
+    "precipChancePct": 3
+  },
+  "market": {
+    "fearGreed": {
+      "value": 23,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63817,
+        "priceJpy": 10321814,
+        "change24hPct": 0.89,
+        "sparkline7d": [
+          62128.09,
+          63266.55,
+          63517.88,
+          63093.52,
+          61984.2,
+          62570.82,
+          64119.3
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1790.21,
+        "priceJpy": 289551,
+        "change24hPct": 2.39,
+        "sparkline7d": [
+          1736.32,
+          1788.04,
+          1784.47,
+          1769.16,
+          1733.9,
+          1740.6,
+          1795.56
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.19001,
+        "priceJpy": 30.73,
+        "change24hPct": 2.24,
+        "sparkline7d": [
+          0.202454,
+          0.209217,
+          0.201483,
+          0.195964,
+          0.183464,
+          0.180396,
+          0.188881
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 245.48,
+        "priceJpy": 39705,
+        "change24hPct": 3.19,
+        "sparkline7d": [
+          228,
+          233.77,
+          241.82,
+          239.96,
+          232.98,
+          237.48,
+          247.03
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-8efba39a",
+    "zenn-trend-dfccedba",
+    "qiita-popular-f159c7f7"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-51a88932",
+        "lobsters-790cab11"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "qiita-popular-71643a81",
+        "zenn-trend-fdc67109"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-39dc6b10",
+        "lobsters-1fbf4355"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-8efba39a",
+      "title": "Claude Code・Codex用に、超爆速で超安全なサンドボックスを作る方法 - Qiita",
+      "url": "https://qiita.com/Koukyosyumei/items/3bd4696237ea64c38971",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-10T08:27:48.000Z",
+      "summaryJa": [
+        "こんにちは！",
+        "コロンビア大学の博士課程でAI・セキュリティの研究をしている Koukyosyumei です。",
+        "さて、読者のほとんどの方が Claude Code や Codex を使って開発をしていると思いますが、皆さんは「AIエージェントがシェルコマンドやネットワーク"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Claude",
+        "Code",
+        "Codex用に",
+        "超爆速で超安全なサンドボックスを作る方法",
+        "Qiita"
+      ],
+      "heat": {
+        "temperature": 90,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 90,
+          "ageHours": 12,
+          "crossSources": 2,
+          "velocity": 7.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-dfccedba",
+      "title": "AI が自分の結論を正当化してくるので、デバイアスして自律的にFable 5 にセカンドオピニオンを聞くSkill を作った",
+      "url": "https://zenn.dev/atrae/articles/08f2b2c3f2217d",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-09T22:15:05.000Z",
+      "summaryJa": [
+        "はじめに AI を入れても速くならない AI で開発すると、短時間でものすごい量のコードが生成されます。",
+        "それをいちから確認するのは極めて大変です。",
+        "以前は、手を動かして計画・実装している間に脳内を整理できていました。"
+      ],
+      "category": "general",
+      "keywords": [
+        "AI",
+        "が自分の結論を正当化してくるので",
+        "デバイアスして自律的にFable",
+        "にセカンドオピニオンを聞くSkill",
+        "を作った"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 23,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-f159c7f7",
+      "title": "【備忘録】AIエージェント時代におけるプロンプトエンジニアリングの再定義",
+      "url": "https://qiita.com/otokoumeKM/items/b554419018c40775649e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-10T07:37:37.000Z",
+      "summaryJa": [
+        "AIの性能向上に伴い、かつて推奨されていた「プロンプトのテクニック」の価値は落ちてきているらしい。",
+        "最近の推論系モデル、特に自律的な推論を行うReasoningモデルを前提にすると 、不要になった手法と、現在重要とされる要件定義のあり方について、初学者の自分が",
+        "."
+      ],
+      "category": "general",
+      "keywords": [
+        "general"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 13,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-51a88932",
+      "title": "Write code like a human will maintain it",
+      "url": "https://unstack.io/write-code-like-a-human-will-maintain-it",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-10T13:33:00.000Z",
+      "summaryJa": [
+        "Write code like a human will maintain it",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Write",
+        "code",
+        "like",
+        "human",
+        "will"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 294,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 40.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-790cab11",
+      "title": "Practical Algorithms for Incremental Software Development Environments",
+      "url": "https://www2.eecs.berkeley.edu/Pubs/TechRpts/1997/Archive/CSD-97-946.pdf",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-10T15:42:38.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "general",
+      "keywords": [
+        "Practical",
+        "Algorithms",
+        "for",
+        "Incremental",
+        "Software"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-71643a81",
+      "title": "Miseのdotfiles機能、ご存知でしょうか？",
+      "url": "https://qiita.com/umekikazuya/items/ec67802c538afdf924aa?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-10T09:00:00.000Z",
+      "summaryJa": [
+        "Miseのdotfiles機能、ご存知でしょうか？",
+        "実は昨日、試験用から正式版にリリースされたものですっ！",
+        "！"
+      ],
+      "category": "general",
+      "keywords": [
+        "Miseのdotfiles機能",
+        "ご存知でしょうか？"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-fdc67109",
+      "title": "ミューテーションテストのススメ",
+      "url": "https://zenn.dev/xtm_blog/articles/9b7fa5f94eae28",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-09T12:51:51.000Z",
+      "summaryJa": [
+        "はじめに クロステック・マネジメント Foundation Dept.",
+        "所属の Radish です。",
+        "先日、社内輪読会で『テスト駆動開発』(Kent Beck 著、和田卓人 訳) を読んでいたとき、17 章で 欠陥挿入（defect insertion） という"
+      ],
+      "category": "general",
+      "keywords": [
+        "ミューテーションテストのススメ"
+      ],
+      "heat": {
+        "temperature": 45,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 32,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-39dc6b10",
+      "title": "After 7 years in production, Scarf has reluctantly moved away from Haskell",
+      "url": "https://avi.press/posts/2026-07-10-after-7-years-in-production-scarf-has-reluctantly-moved-away-from-haskell.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-10T16:48:37.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "general",
+      "keywords": [
+        "After",
+        "years",
+        "in",
+        "production",
+        "Scarf"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-1fbf4355",
+      "title": "Postgres rewritten in Rust, now passing 100% of the Postgres regression tests",
+      "url": "https://github.com/malisper/pgrust",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-10T19:05:12.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "general",
+      "keywords": [
+        "Postgres",
+        "rewritten",
+        "in",
+        "Rust",
+        "now"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-1db08d87",
+      "title": "Show HN: I'm an airline pilot – I built interactive graphs/globes of my flights",
+      "url": "https://jameshard.ing/pilot",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2025-06-27T13:06:54.000Z",
+      "summaryJa": [
+        "Hey HN!",
+        "<p>Pilots everywhere are required to keep a logbook of all their flying hours, a",
+        "Since I track everything digitally (some people still just use paper logbooks!"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "an",
+        "airline",
+        "pilot"
+      ],
+      "heat": {
+        "temperature": 72,
+        "signals": {
+          "hnPoints": 1539,
+          "hatebuCount": 0,
+          "ageHours": 9080,
+          "crossSources": 1,
+          "velocity": 0.2
+        }
+      },
+      "image": null
+    },
+    "reason": "航空パイロットが自身の飛行ログをインタラクティブな地球儀として可視化した、個人的なデータへの愛を感じる実装です。業務記録を単なるテキストではなく、美学のある道具へと昇華させる姿勢は、まさに作り手の鏡と言えるでしょう。"
+  },
+  "unavailableSources": []
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 75,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-08-17",
+  "dateDisplay": "Monday, August 17, 2026",
+  "pressTimeJst": "2026-08-17 05:00",
+  "generatedAt": "2026-08-16T20:17:17.713Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "AIの浸透と工芸的知性の境界",
+    "note": "効率化の波が既存の職分を侵食する中、個人の手触りと判断基準をどう再構築するかを問う。"
+  },
+  "editorial": {
+    "comment": "IT現場における低スキル者の配置問題（hatebu-it-85b9e656）は耳が痛いですが、設計や意思決定という負荷の高い作業に誰を置くかは、組織が生き残るための不可避な選択です。",
+    "passedOver": "海外の災害ニュースやスポーツ速報は、読者の創作活動との親和性を考慮し今回は除外しました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 32,
+    "tempMin": 22,
+    "precipChancePct": 58
+  },
+  "market": {
+    "fearGreed": {
+      "value": 34,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63081,
+        "priceJpy": 10048687,
+        "change24hPct": 0.1,
+        "sparkline7d": [
+          65135.76,
+          63878.88,
+          63773.81,
+          63848.69,
+          62781.08,
+          62984.46,
+          63087.15
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1885.2,
+        "priceJpy": 300311,
+        "change24hPct": 0.1,
+        "sparkline7d": [
+          1920.56,
+          1870.32,
+          1884.79,
+          1895.18,
+          1875.04,
+          1881.56,
+          1883.76
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.157449,
+        "priceJpy": 25.08,
+        "change24hPct": -0.7,
+        "sparkline7d": [
+          0.162652,
+          0.161259,
+          0.161645,
+          0.161298,
+          0.158695,
+          0.158146,
+          0.157247
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 203.72,
+        "priceJpy": 32453,
+        "change24hPct": 0.3,
+        "sparkline7d": [
+          216.19,
+          213.02,
+          213.16,
+          215.39,
+          205.28,
+          205.8,
+          203.63
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-85b9e656",
+    "hatebu-it-c557d7e7",
+    "hn-front-c3045be3"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-c41b4089",
+        "nhk-top-224ec799",
+        "yahoo-topics-434474cf"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-7ce665b5"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-85b9e656",
+      "title": "なぜ、ITの職場において低スキル者を排除することが成功のために重要だと誰も言わないのか？",
+      "url": "https://zenn.dev/pdfractal/articles/c7af0a168c0552",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-16T03:25:37.000Z",
+      "summaryJa": [
+        "はじめに ITの職場では、低スキル者を重要な仕事から排除することが、実はかなり重要な職場づくりの条件の一つです。",
+        "ここでいう排除とは、要件定義、設計、顧客折衝、品質判断、技術的意思決定、レビュー承認のような高い認知負荷を伴う仕事に、適性を満たさない人を置かないという配置上の",
+        "人格の否定や."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 85,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 598,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 35.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-c557d7e7",
+      "title": "AI小説が文学賞に殺到　増える選考コスト、公募新人賞は存続できるか - 日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOUD245P80U6A720C2000000/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-16T02:23:01.000Z",
+      "summaryJa": [
+        "今年に入って、どこの文学賞も応募が急増している――。",
+        "出版関係者らがそんなささやきを交わしている。",
+        "人工知能（AI）を使って気軽に大量の小説を出力できるようになった結果、公募新人文学賞の存続が危うくなりかねない事態を招いている。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "AI小説が文学賞に殺到",
+        "増える選考コスト",
+        "公募新人賞は存続できるか",
+        "日本経済新聞"
+      ],
+      "heat": {
+        "temperature": 75,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 138,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 7.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-c3045be3",
+      "title": "Models Are Getting Dumber on Purpose",
+      "url": "https://w4g1.dev/blog/models-are-getting-dumber-on-purpose",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-16T19:04:26.000Z",
+      "summaryJa": [
+        "Models Are Getting Dumber on Purpose",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Models",
+        "Getting",
+        "Dumber",
+        "Purpose"
+      ],
+      "heat": {
+        "temperature": 94,
+        "signals": {
+          "hnPoints": 83,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 68.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-c41b4089",
+      "title": "ロシア ウクライナ 双方が首都を攻撃 応酬激しさ増す",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260816de44402",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-16T11:31:47.000Z",
+      "summaryJa": [
+        "ウクライナは、ロシアの首都モスクワ近郊で物流倉庫などを無人機で攻撃する一方、ロシア軍はウクライナの首都キーウなどにミサイルなどによる攻撃を続けていて、応酬は激し",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "ロシア",
+        "ウクライナ",
+        "双方が首都を攻撃",
+        "応酬激しさ増す"
+      ],
+      "heat": {
+        "temperature": 57,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 2,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-224ec799",
+      "title": "千葉豪雨 死者10人 千葉市で車約2500台が路上に残る",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260816de44428",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-08-16T17:39:36.000Z",
+      "summaryJa": [
+        "記録的な豪雨となった千葉県では、16日、新たに1人の死亡が確認されたと県が発表し、亡くなった人は10人になりました。",
+        "また、千葉市によりますと、水につかって動かなくなった車は市が管理する道路で2500台…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "千葉豪雨",
+        "死者10人",
+        "千葉市で車約2500台が路上に残る"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-434474cf",
+      "title": "オープンAI 経営幹部が相次ぎ退社",
+      "url": "https://news.yahoo.co.jp/pickup/6592006?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-08-16T15:00:50.000Z",
+      "summaryJa": [
+        "オープンAI 経営幹部が相次ぎ退社",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "オープンAI",
+        "経営幹部が相次ぎ退社"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-7ce665b5",
+      "title": "AIがコードを書くなら、もう勉強しなくていい？AI時代に基礎を学ぶ理由 | ドクセル",
+      "url": "https://www.docswell.com/s/magurotuna/53J4YJ-2026-08-16-aiau-craft-day",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-16T08:10:05.000Z",
+      "summaryJa": [
+        "2026/08/16 3日間でアプリ・サービスをローンチせよ！",
+        "AIAU Craft Day https://aiau.",
+        "connpass."
+      ],
+      "category": "programming",
+      "keywords": [
+        "AIがコードを書くなら",
+        "ドクセル"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 109,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "村上宗隆",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-08-16T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "村上宗隆"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-a3671c35",
+      "title": "tobychui/arozos — Web Desktop Operating System for low power platforms, Now written in Go!",
+      "url": "https://github.com/tobychui/arozos",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-16T14:40:03Z",
+      "summaryJa": [
+        "Web Desktop Operating System for low power platforms, Now written in Go!",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "tobychui/arozos",
+        "Web",
+        "Desktop",
+        "Operating",
+        "System"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "Go言語で再実装された低電力プラットフォーム向けのOSです。限られたリソースをWebデスクトップとして活かす工夫に、あなたの午後の試行錯誤を刺激する種が詰まっています。"
+  },
+  "unavailableSources": []
+}

@@ -1,0 +1,476 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 50,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-08-04",
+  "dateDisplay": "Tuesday, August 4, 2026",
+  "pressTimeJst": "2026-08-04 12:00",
+  "generatedAt": "2026-08-04T02:48:04.083Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "道具を作り、道具に作られる",
+    "note": "創作の基盤となるツールに宿る精神と、それらを使いこなす知恵の対話。"
+  },
+  "editorial": {
+    "comment": "ドット絵エディタ「EDGE」の歴史（hatebu-it-967491fb）に深く感銘を受けました。たかぼー氏が20年以上もの間、個人でピクセルと向き合うツールを紡ぎ、そして今もなお新作へと情熱を注ぐ姿に、ものづくりの一筋の光を見ます。昼休みの5分、あなたの手元にある創作の火種も、こうした静かな情熱のバトンを受け取って燃え上がることを願っています。 —— YZRS Times 編集長",
+    "passedOver": "「AIで仕事を効率化したら、なぜか僕の仕事だけ増えた話」（hatebu-it-907ade74）などの効率化疲れに関する組織論。本紙の読者が午後の創作に集中できるよう、職場の愚痴めいた話題よりも、純粋なツールの面白さやコードの確実性に誌面を割くため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 29,
+    "tempMin": 22,
+    "precipChancePct": 2
+  },
+  "market": {
+    "fearGreed": {
+      "value": 25,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63829,
+        "priceJpy": 10062180,
+        "change24hPct": 0.9,
+        "sparkline7d": [
+          63160.99,
+          64028.3,
+          64518.72,
+          63160.92,
+          62885.13,
+          63439.96,
+          63302.4
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1866.32,
+        "priceJpy": 294210,
+        "change24hPct": -0.3,
+        "sparkline7d": [
+          1873.44,
+          1910.61,
+          1916.95,
+          1864.18,
+          1866.66,
+          1881.32,
+          1849.05
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.170962,
+        "priceJpy": 26.95,
+        "change24hPct": -1.4,
+        "sparkline7d": [
+          0.17217,
+          0.173729,
+          0.172646,
+          0.168977,
+          0.170423,
+          0.174119,
+          0.170415
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 213.1,
+        "priceJpy": 33593,
+        "change24hPct": 0.1,
+        "sparkline7d": [
+          213.12,
+          213.43,
+          210.67,
+          206.28,
+          207.92,
+          213.5,
+          211.38
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-967491fb",
+    "zenn-trend-35b568b1",
+    "qiita-popular-f24dd03a"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-f251879b",
+        "hn-front-88a0bef7"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-1d7c82ce",
+        "qiita-popular-7745990c"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-bd7cfec7",
+        "lobsters-d318d4f5",
+        "lobsters-8c0563f0"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-967491fb",
+      "title": "21年ぶり新作、ドット絵エディタ「EDGE1」「EDGE2」「Edge3」の歴史について作者に聞く【フォーカス】 - レバテックLAB",
+      "url": "https://levtech.jp/media/detail_902/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-04T00:36:11.000Z",
+      "summaryJa": [
+        "プログラマー フリーソフト・シェアウェア開発者 たかぼー 静岡県浜松市在住。",
+        "システムエンジニア、プログラマーとして長年ソフトウェア開発に携わる。",
+        "個人としては「TAKABO SOFT」名義にて、ドット絵エディタ「EDGE」や、シェアウェア「EDGE2」を開発。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "21年ぶり新作",
+        "ドット絵エディタ",
+        "EDGE1",
+        "EDGE2",
+        "Edge3"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 25,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 11.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-35b568b1",
+      "title": "Herdr で止まらず、精度の高い開発を進める工夫 ─ intent-cli で意図をもとに開発する",
+      "url": "https://zenn.dev/jtechjapan_pub/articles/intent-cli-herdr-orchestration",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-03T05:21:53.000Z",
+      "summaryJa": [
+        "株式会社ジェイテックジャパン CTOの高丘 @tomohisaです。",
+        "AIエージェントを4体、止まりを見つけて再開させながら回して開発を進める、ということを日常的にやっています。",
+        "設計・オーケストレーション・実装・レビューの4スレッドが、GitHub の Issue と PR を通じて協調する仕組みです。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Herdr",
+        "精度の高い開発を進める工夫",
+        "intent",
+        "cli"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 21,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-f24dd03a",
+      "title": "CLAUDE.md を厚くしても意味がなかった話",
+      "url": "https://qiita.com/jqit_suwa/items/2dee3e3d53080c3676a0?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-03T00:32:33.000Z",
+      "summaryJa": [
+        "36.",
+        "2%。",
+        "これ、何の数字だと思いますか。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "CLAUDE.md"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-f251879b",
+      "title": "LLMs reward expertise",
+      "url": "https://www.seangoedecke.com/llms-reward-expertise/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-03T21:13:53.000Z",
+      "summaryJa": [
+        "LLMs reward expertise",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "LLMs",
+        "reward",
+        "expertise"
+      ],
+      "heat": {
+        "temperature": 94,
+        "signals": {
+          "hnPoints": 491,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 2,
+          "velocity": 88.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-88a0bef7",
+      "title": "Devtools must be open source",
+      "url": "https://blog.exe.dev/devtools-must-be-open-source",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-03T14:15:47.000Z",
+      "summaryJa": [
+        "Devtools must be open source",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Devtools",
+        "must",
+        "source"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 514,
+          "hatebuCount": 0,
+          "ageHours": 13,
+          "crossSources": 2,
+          "velocity": 41
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-1d7c82ce",
+      "title": "アーキテクチャに限らず意思決定を全部残す「ADR（Any Decision Record）」という文化",
+      "url": "https://zenn.dev/dress_code/articles/c73500ae73361c",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-03T00:00:10.000Z",
+      "summaryJa": [
+        "SDD は Spec-Driven Development（仕様駆動開発）のことで、仕様を源泉としてコードを書く・生成する開発スタイルを指しています。",
+        "Dress Code では OpenSpec を使って導入していて、その実践については別のメンバーが記事にしています。",
+        "データ層では Event Sourcing で「状態」ではなく「変化（イベント）」を残してい."
+      ],
+      "category": "programming",
+      "keywords": [
+        "アーキテクチャに限らず意思決定を全部残す",
+        "ADR",
+        "Decision",
+        "Record"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 27,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-7745990c",
+      "title": "「インターネットはありません」と書いたプロンプトの外で、AI が実在企業3社に侵入していた",
+      "url": "https://qiita.com/jqit_suwa/items/2adb0c35fffb41514791?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-03T00:59:43.000Z",
+      "summaryJa": [
+        "プロンプトには、こう書いてありました。",
+        "この環境はシミュレーションです。",
+        "インターネットへのアクセスはありません。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "インターネットはありません",
+        "AI"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-bd7cfec7",
+      "title": "SQLite Critical CVEs or LLM Slop?",
+      "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-03T16:51:22.000Z",
+      "summaryJa": [
+        "SQLite Critical CVEs or LLM Slop?",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "SQLite",
+        "Critical",
+        "CVEs",
+        "LLM",
+        "Slop"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-d318d4f5",
+      "title": "Dabao Evaluation Board for Baochip-1x",
+      "url": "https://www.crowdsupply.com/baochip/dabao",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-03T22:04:47.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Dabao",
+        "Evaluation",
+        "Board",
+        "Baochip",
+        "1x"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-8c0563f0",
+      "title": "Reliability Lessons From SQLite",
+      "url": "https://www.youtube.com/watch?v=V_qzqY1bb7I",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-03T16:27:45.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Reliability",
+        "Lessons",
+        "SQLite"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-80cb349a",
+      "title": "Show HN: Elevators",
+      "url": "https://john.fun/elevators",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2026-07-31T15:17:28.000Z",
+      "summaryJa": [
+        "Show HN: Elevators",
+        "出典: Show HN",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Elevators"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 1651,
+          "hatebuCount": 0,
+          "ageHours": 84,
+          "crossSources": 1,
+          "velocity": 19.8
+        }
+      },
+      "image": null
+    },
+    "reason": "エレベーターのシミュレーター、あるいはアルゴリズム制御をブラウザで手軽に実験できる楽しいプロジェクト。物理的な挙動と制御ロジックの関係がシンプルに可視化されており、電子工作の設計にも良いインスピレーションを与えてくれます。"
+  },
+  "unavailableSources": []
+}

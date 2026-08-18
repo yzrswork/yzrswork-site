@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 1,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-10",
+  "dateDisplay": "Friday, July 10, 2026",
+  "pressTimeJst": "2026-07-10 05:00",
+  "generatedAt": "2026-07-10T14:13:58.661Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "973ff54d"
+  },
+  "theme": {
+    "title": "透明な道具たち",
+    "note": "技術が複雑さを隠し、ただ手足のように馴染む感覚を追い求めて。"
+  },
+  "editorial": {
+    "comment": "『Good Tools Are Invisible』を読みました。道具を意識させないことこそが、ものづくりにおける究極の洗練だと改めて感じます。",
+    "passedOver": "時事ニュースは災害関連以外、どれも今の私たちが深掘りすべき熱量に欠けていたため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "晴れ",
+    "icon": "sunny",
+    "tempMax": 31,
+    "tempMin": 23,
+    "precipChancePct": 0
+  },
+  "market": {
+    "fearGreed": {
+      "value": 23,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64218,
+        "priceJpy": 10390428,
+        "change24hPct": 2.13,
+        "sparkline7d": [
+          61907.59,
+          62876.14,
+          62724.49,
+          63994.68,
+          62716.95,
+          62820.15,
+          64369.17
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1795.12,
+        "priceJpy": 290450,
+        "change24hPct": 3.1,
+        "sparkline7d": [
+          1734.19,
+          1785.86,
+          1779.54,
+          1797.47,
+          1749.99,
+          1752.05,
+          1796.43
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.189622,
+        "priceJpy": 30.68,
+        "change24hPct": 3.87,
+        "sparkline7d": [
+          0.200693,
+          0.210383,
+          0.200681,
+          0.200018,
+          0.18549,
+          0.181144,
+          0.19298
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 251.49,
+        "priceJpy": 40691,
+        "change24hPct": 5.74,
+        "sparkline7d": [
+          226.14,
+          231.21,
+          248.44,
+          241.79,
+          238.93,
+          238.65,
+          246.84
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-e00b471d",
+    "hatebu-it-c491e2f6",
+    "hn-front-51a88932"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-0c6eb1c1",
+        "nhk-world-a553610a"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-02c0e865"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": []
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-e00b471d",
+      "title": "Good Tools Are Invisible",
+      "url": "https://www.gingerbill.org/article/2026/07/10/good-tools-are-invisible/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-10T10:32:41.000Z",
+      "summaryJa": [
+        "Good Tools Are Invisible",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Good",
+        "Tools",
+        "Are",
+        "Invisible"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 94,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 25.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-c491e2f6",
+      "title": "Cloudflareだけで独自ドメインメールをGmailから送受信できるようになってた",
+      "url": "https://zenn.dev/9m/articles/d08dcc093e1bbf",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-10T03:47:12.000Z",
+      "summaryJa": [
+        "TL;DR メールの受信は Cloudflare Email Routing メールの送信は Cloudflare Email Sending メールの閲覧・作",
+        "独自ドメインのメールアドレスにお金かけたくない問題 個人開発をやっているとポコポコ独.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 90,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 8.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-51a88932",
+      "title": "Write code like a human will maintain it",
+      "url": "https://unstack.io/write-code-like-a-human-will-maintain-it",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-10T13:33:00.000Z",
+      "summaryJa": [
+        "Write code like a human will maintain it",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Write",
+        "code",
+        "like",
+        "human",
+        "will"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 41,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 60
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-0c6eb1c1",
+      "title": "台風9号 沖縄 先島諸島が暴風域に 厳重警戒を",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015173061000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-10T13:13:22.000Z",
+      "summaryJa": [
+        "大型で非常に強い台風9号は沖縄県の先島諸島を暴風域に巻き込みながら北寄りに進んでいて沖縄県では非常に強い風が吹いています。",
+        "先島諸島では風がさらに強まり11日の夜にかけて長時間暴風となる見込みで、頑丈な…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "台風9号",
+        "沖縄",
+        "先島諸島が暴風域に",
+        "厳重警戒を"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-a553610a",
+      "title": "フィリピン 台風9号などの影響で大雨 土砂崩れで16人死亡",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015174081000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-07-10T12:52:00.000Z",
+      "summaryJa": [
+        "フィリピンでは台風9号などの影響で大雨となっていて、南部のミンダナオ島では土砂崩れが発生し、これまでに16人が死亡しました。",
+        "出典: NHKニュース 国際",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "フィリピン",
+        "台風9号などの影響で大雨",
+        "土砂崩れで16人死亡"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-02c0e865",
+      "title": "AWSの強い権限は使い捨てに ── ZOZOがJITアクセスを全社導入した設計と運用 - ZOZO TECH BLOG",
+      "url": "https://techblog.zozo.com/entry/just-in-time-access-company-wide-rollout-at-zozo",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-10T02:03:48.000Z",
+      "summaryJa": [
+        "はじめに こんにちは、全社AWS管理部門の江島です。",
+        "社内で利用されているAWS環境を全社横断的に管理する役割を担っています。",
+        "全社AWS管理部門では、AWSを安全に運用するために日頃からさまざまな取り組みを行っています。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "AWSの強い権限は使い捨てに",
+        "──",
+        "ZOZO",
+        "TECH",
+        "BLOG"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 114,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 9.4
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-5293a25e",
+      "title": "Show HN: isometric.nyc – giant isometric pixel art map of NYC",
+      "url": "https://cannoneyed.com/isometric-nyc/",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2026-01-22T16:52:35.000Z",
+      "summaryJa": [
+        "Hey HN!",
+        "I wanted to share something I built over the last few weeks: isometric.",
+        "nyc is a massive isometric pixel art map of NYC, built with nano banana and codi"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "isometric.nyc",
+        "giant",
+        "isometric"
+      ],
+      "heat": {
+        "temperature": 75,
+        "signals": {
+          "hnPoints": 1325,
+          "hatebuCount": 0,
+          "ageHours": 4053,
+          "crossSources": 1,
+          "velocity": 0.3
+        }
+      },
+      "image": null
+    },
+    "reason": "コーディングを全くせずにピクセルアートマップを構築したという過程に、現代の「作る」ことの変容を見ました。この手法は個人の表現の限界を拡張してくれるはずです。"
+  },
+  "unavailableSources": []
+}

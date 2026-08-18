@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 72,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-08-15",
+  "dateDisplay": "Saturday, August 15, 2026",
+  "pressTimeJst": "2026-08-15 12:00",
+  "generatedAt": "2026-08-15T02:47:41.072Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "最小の構成、最大の掌握",
+    "note": "制約の中で頭を絞り、独自の足場を組み立てる作り手の意志"
+  },
+  "editorial": {
+    "comment": "「富豪プログラミング」（hatebu-it-8de5d458）という言葉にハッとさせられます。無限のリソースを前提にするのではなく、エッジの冷徹な制約の中で知恵を絞って最小限のコードを組む。それこそが、ものづくりの本当の楽しさを思い出させてくれるはずです。 —— YZRS Times 編集長",
+    "passedOver": "地震に関する速報やマクロ経済の考察記事は、5分間の技術インプットと創作への集中を阻害すると判断し、本号では見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "雨",
+    "icon": "rain",
+    "tempMax": 29,
+    "tempMin": 24,
+    "precipChancePct": 100
+  },
+  "market": {
+    "fearGreed": {
+      "value": 34,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63061,
+        "priceJpy": 10045838,
+        "change24hPct": -0.8,
+        "sparkline7d": [
+          64875.69,
+          64759.06,
+          64959.15,
+          64181.06,
+          63434.34,
+          63378.8,
+          62959.02
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1882.66,
+        "priceJpy": 299916,
+        "change24hPct": -0.2,
+        "sparkline7d": [
+          1913.51,
+          1913.09,
+          1916.44,
+          1888.87,
+          1888.95,
+          1885.71,
+          1880.72
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.15911,
+        "priceJpy": 25.35,
+        "change24hPct": -0.9,
+        "sparkline7d": [
+          0.161914,
+          0.162784,
+          0.163893,
+          0.160969,
+          0.158674,
+          0.159453,
+          0.157849
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 205.52,
+        "priceJpy": 32740,
+        "change24hPct": -0.5,
+        "sparkline7d": [
+          215.64,
+          214.9,
+          215.5,
+          213.23,
+          213.1,
+          205.53,
+          205.44
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-e09d799f",
+    "hatebu-it-8de5d458",
+    "lobsters-1e0de7f7"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-89849907",
+        "hn-front-73b412f7",
+        "hatebu-it-e85652d7"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "qiita-popular-17eff0a2",
+        "zenn-trend-789cb576",
+        "qiita-popular-f8304d2a",
+        "qiita-popular-605d15b5"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-6e4bb9f8",
+        "lobsters-e795fb28"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-e09d799f",
+      "title": "概念設計が、その後のコードの命運を左右する",
+      "url": "https://zenn.dev/takeshi_teshima/articles/bae79b2f0f97be",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-14T19:21:13.000Z",
+      "summaryJa": [
+        "最近、ソフトウェア開発における概念設計の威力と重要さについて人に伝えたい機会が何度かあった。",
+        "[1] しかし、概念の整理がなぜどのように重要なのか、という一点を取り上げて書かれたものは少ないようで、人に渡すのにちょうどよい文章や書籍が見つからなかったので",
+        "そのアプ."
+      ],
+      "category": "programming",
+      "keywords": [
+        "概念設計が"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 109,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 14.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-8de5d458",
+      "title": "我々は富豪プログラミングをしていた。Cloudflare Workersで実装はどう変わるか",
+      "url": "https://zenn.dev/rdlabo/articles/cloudflare-workers-after-rich-programming",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-15T01:37:14.000Z",
+      "summaryJa": [
+        "Cloudflareへ移るまで、我々が富豪プログラミングをしているとは気づきませんでした。",
+        "EC2で動かしていたNestJSをHono + Cloudflare Workersへ移しました。",
+        "RDSはそのまま使い、ElastiCacheの役割はCloudflare側へ移しています。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "我々は富豪プログラミングをしていた",
+        "Cloudflare",
+        "Workersで実装はどう変わるか"
+      ],
+      "heat": {
+        "temperature": 86,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 5,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 4.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-1e0de7f7",
+      "title": "What You Gain by Building Your Own Game Engine",
+      "url": "https://eliasfarhan.ch/gamedev/cpp/2026/08/14/srnative-01-why-a-custom-engine.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-14T22:04:19.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Gain",
+        "Game",
+        "Engine"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-89849907",
+      "title": "Firefox is now the last major browser that still supports uBlock Origin",
+      "url": "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-14T19:03:20.000Z",
+      "summaryJa": [
+        "Firefox is now the last major browser that still s",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Firefox",
+        "last",
+        "major",
+        "browser",
+        "supports"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 468,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 60.5
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-73b412f7",
+      "title": "Why does Opus 5 feel worse to work with?",
+      "url": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-08-14T10:12:48.000Z",
+      "summaryJa": [
+        "Why does Opus 5 feel worse to work with?",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Opus",
+        "feel",
+        "worse",
+        "work"
+      ],
+      "heat": {
+        "temperature": 78,
+        "signals": {
+          "hnPoints": 801,
+          "hatebuCount": 0,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 48.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-e85652d7",
+      "title": "「Qwen3.8-27B」ついに公開！3.6を大きく上回る性能でローカルAIの定番になるか",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2132909.html",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-08-14T16:26:39.000Z",
+      "summaryJa": [
+        "「Qwen3.8-27B」ついに公開！3.6を大きく上回る性能でローカルAIの定番になるか",
+        "出典: はてなブックマーク テクノロジー",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Qwen3.8",
+        "27B"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 53,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 5.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-17eff0a2",
+      "title": "エラーを 3 秒で AI に丸投げする若手を見て、AI から答えを取り上げることにした",
+      "url": "https://qiita.com/jksoft/items/65f7824679ddf171a93d?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-14T00:15:04.000Z",
+      "summaryJa": [
+        "「見事な手さばき」を笑えなかった話 先日、隣の席の若手エンジニアの画面をたまたま見て、手が止まりました。",
+        "エラーが出る。",
+        "コピーする。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "秒で",
+        "AI"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 27,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-789cb576",
+      "title": "続・貧者のアークテクチャ：Next.js + Cloudflare Workers + Turso 本番運用で踏んだ罠ぜんぶ",
+      "url": "https://zenn.dev/nabettu/articles/a964f988e7cc75",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-08-13T05:44:16.000Z",
+      "summaryJa": [
+        "こんにちは、@nabettuです。",
+        "Webサービスの運営コストは、安ければ安いほど嬉しいですね！",
+        "以前「貧者のアークテクチャ」という記事で、Next."
+      ],
+      "category": "programming",
+      "keywords": [
+        "貧者のアークテクチャ：Next.js",
+        "Cloudflare",
+        "Workers",
+        "Turso",
+        "本番運用で踏んだ罠ぜんぶ"
+      ],
+      "heat": {
+        "temperature": 41,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 45,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-f8304d2a",
+      "title": "エラーレスポンス設計の現在地2026",
+      "url": "https://qiita.com/tatsuya582/items/e5c56a2f7b976cfc17ea?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-14T04:36:16.000Z",
+      "summaryJa": [
+        "エラーレスポンス設計の現在地 2026、標準はコードに焼いて規約は最小にする 前回の記事「Web API設計の現在地 2026、いま従うべき標準とデファクトの一",
+        "この記事はその深掘りです。",
+        "エ."
+      ],
+      "category": "programming",
+      "keywords": [
+        "エラーレスポンス設計の現在地2026"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 22,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-605d15b5",
+      "title": "[AWS]DynamoDBをセマンティックキャッシュとして使ってみた",
+      "url": "https://qiita.com/kikuziro/items/6a1e8a7de067a8f9973a?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-08-14T03:13:43.000Z",
+      "summaryJa": [
+        "TL:DR ベクトル検索対応したDynamoDBでセマンティックキャッシュは機能した コストは実質「ミス率 × クエリ数」で決まる。",
+        "間欠トラフィックならDynamoDBが圧倒的に安い サーバーレス構成ならDynamoDB、常時高トラフィックや最速レイテンシ狙いならVal.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "AWS"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 24,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-6e4bb9f8",
+      "title": "My comment section is static HTML",
+      "url": "https://jva.lol/weblog/my-comment-section-is-static-html/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-14T23:58:27.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "comment",
+        "section",
+        "static",
+        "HTML"
+      ],
+      "heat": {
+        "temperature": 54,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-e795fb28",
+      "title": "ActivityPub Won by Being Boring",
+      "url": "https://o.ee/blog/activitypub-won-by-being-boring/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-08-14T18:44:17.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "ActivityPub",
+        "Won",
+        "Boring"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-52414d83",
+      "title": "davidmonterocrespo24/velxio — Emulate Arduino, ESP32 & Raspberry Pi. in your browser. Write code, compile, and run on 19 real boards — Arduino Uno, ESP32, ESP32-C3, Raspberry Pi Pico, Raspberry Pi 3, and more. No hardware, no cloud, no limits.. Discord: https://discord.gg/3mARjJrh4E",
+      "url": "https://github.com/davidmonterocrespo24/velxio",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-08-15T02:19:22Z",
+      "summaryJa": [
+        "Emulate Arduino, ESP32 & Raspberry Pi.",
+        "in your browser.",
+        "Write code, compile, and run on 19 real boards — Arduino Uno, ESP32, ESP32-C3, R"
+      ],
+      "category": "oss",
+      "keywords": [
+        "Emulate",
+        "Arduino",
+        "ESP32",
+        "Raspberry",
+        "Pi"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "実機が手元になくても、ブラウザ上で19種類ものマイコンボードをエミュレートしてコードを動かせます。電子工作のプロトタイピングの敷居を劇的に下げ、創作の実験をどこでも可能にしてくれます。"
+  },
+  "unavailableSources": []
+}

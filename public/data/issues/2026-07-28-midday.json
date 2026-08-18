@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 36,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-28",
+  "dateDisplay": "Tuesday, July 28, 2026",
+  "pressTimeJst": "2026-07-28 12:00",
+  "generatedAt": "2026-07-28T02:48:18.928Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "泥臭い試行とシンプルな構造",
+    "note": "午後の手を動かす創作意欲を刺激する、プロトコル解析や言語・設計の解剖学。"
+  },
+  "editorial": {
+    "comment": "古い感熱プリンタと格闘した『古い機器が AI で蘇る逆説』の泥臭い8時間に胸が熱くなりました。不完全な仕様書やプロトコルの壁をAIとの対話と試行錯誤で突破していく過程にはものづくりの手触りがあります。午後の作業に向けて手元のコードや機器を動かす衝動を呼び覚ましてくれる良記事です。 —— YZRS Times 編集長",
+    "passedOver": "米国の政治選挙におけるAI説得術や新卒向け技術研修など、時事や組織向けの話題は昼刊の趣旨に鑑み見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "弱い雨",
+    "icon": "rain",
+    "tempMax": 29,
+    "tempMin": 22,
+    "precipChancePct": 86
+  },
+  "market": {
+    "fearGreed": {
+      "value": 29,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 63077,
+        "priceJpy": 10328265,
+        "change24hPct": -3,
+        "sparkline7d": [
+          65194.41,
+          65940.27,
+          65610.54,
+          64058.64,
+          64158.59,
+          64621.86,
+          63438.99
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1872.85,
+        "priceJpy": 306662,
+        "change24hPct": -3.6,
+        "sparkline7d": [
+          1906.73,
+          1918.62,
+          1924.26,
+          1856.07,
+          1866.87,
+          1913.77,
+          1877.3
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.172103,
+        "priceJpy": 28.18,
+        "change24hPct": -5.5,
+        "sparkline7d": [
+          0.1873,
+          0.189256,
+          0.184663,
+          0.180442,
+          0.179009,
+          0.178618,
+          0.171719
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 213.34,
+        "priceJpy": 34932,
+        "change24hPct": -1.8,
+        "sparkline7d": [
+          220.69,
+          221.7,
+          216.31,
+          209.13,
+          209.83,
+          215.19,
+          212.97
+        ]
+      }
+    ]
+  },
+  "top": [
+    "qiita-popular-d59ee014",
+    "zenn-trend-4308f999",
+    "lobsters-00ae3b18"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-2c21a3d8",
+        "hatebu-it-ca1fe089"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "qiita-popular-97218f4e",
+        "zenn-trend-0c66e078"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-623b3e91",
+        "lobsters-5ab88eba"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "qiita-popular-d59ee014",
+      "title": "古い機器が AI で蘇る逆説——廃盤感熱プリンタとの泥臭い8時間",
+      "url": "https://qiita.com/TSA2019/items/b46853dfef5690470a6a?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-27T03:15:35.000Z",
+      "summaryJa": [
+        "この記事は IBM Bob（AI コーディングアシスタント）と実際にペアプログラミングして感熱プリンタの USB 印刷アプリを作った体験記です。",
+        "うまくいったこと、全くうまくいかなかったこと、人間が悩んで試行錯誤した過程を包み隠さず書きます。",
+        "なぜこんなことをしたのか 発."
+      ],
+      "category": "programming",
+      "keywords": [
+        "古い機器が",
+        "AI",
+        "廃盤感熱プリンタとの泥臭い8時間"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 24,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-4308f999",
+      "title": "「Simple Made Easy」の観点から、UI/UXはどうあるべきか",
+      "url": "https://zenn.dev/pksha/articles/6cdf19e5fe8065",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-27T07:22:43.000Z",
+      "summaryJa": [
+        "要約 Rich Hickey の講演「Simple Made Easy」の考え方を、UI/UX に当てはめて整理した記事です。",
+        "「シンプル(Simple)」と「簡単(Easy)」は別物で、Simple は「モノの構造」の話、Easy は「人との親近性」の話です。",
+        "Easy を優先した UI は「Easy but Complex」の罠に陥りがちです。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "Simple",
+        "Easy",
+        "UI/UXはどうあるべきか"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 19,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-00ae3b18",
+      "title": "Quick & Easy Parser Combinators",
+      "url": "https://www.cyan.sh/blog/posts/tutorial-quick-easy-parser-combinators.html",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-27T16:35:19.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Quick",
+        "Easy",
+        "Parser",
+        "Combinators"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-2c21a3d8",
+      "title": "Benchmarking Opus 5 on SlopCodeBench",
+      "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-27T22:37:52.000Z",
+      "summaryJa": [
+        "Benchmarking Opus 5 on SlopCodeBench",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Benchmarking",
+        "Opus",
+        "SlopCodeBench"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 149,
+          "hatebuCount": 0,
+          "ageHours": 4,
+          "crossSources": 1,
+          "velocity": 35.7
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-ca1fe089",
+      "title": "DEEPCORE x OpenAI Hackathon で優勝しました ━━ 短時間で作り切る AI エージェント時代のハッカソンとは - Techtouch Developers Blog",
+      "url": "https://tech.techtouch.jp/entry/dc-oai-hackathon",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-28T00:05:13.000Z",
+      "summaryJa": [
+        "どんなイベントだったのか 作ったもの ━━ 配信を盛り上げる実況・コメントアプリ 1 時間半をどう戦ったか 勝因を振り返る ハッカソンから持ち帰った学び 先日開",
+        "制限時間はわずか 1 時間半。",
+        "テーマは自由で、「Codex を使う."
+      ],
+      "category": "programming",
+      "keywords": [
+        "DEEPCORE",
+        "OpenAI",
+        "Hackathon",
+        "短時間で作り切る",
+        "AI"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 16,
+          "ageHours": 3,
+          "crossSources": 1,
+          "velocity": 5.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-97218f4e",
+      "title": "PHPで常駐サーバーを動かす「Swoole」入門 ── なぜ速いのかを仕組みから理解する",
+      "url": "https://qiita.com/Fukuda_Genee/items/e348eee25fc2b75e84ae?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-27T03:17:04.000Z",
+      "summaryJa": [
+        "PHPで常駐サーバーを動かす「Swoole」入門 ── なぜ速いのかを仕組みから理解する この記事で伝えたいこと 「PHPは1リクエストごとに毎回ゼロから起動す",
+        "ところが Swoole という拡張を入れると、その前提そのものがひ.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "PHPで常駐サーバーを動かす",
+        "Swoole",
+        "入門"
+      ],
+      "heat": {
+        "temperature": 48,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 24,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-0c66e078",
+      "title": "ステージング環境をセルフサービス化しチームの開発速度を向上させた方法",
+      "url": "https://zenn.dev/fusic/articles/83c6b9a1e7c7d0",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-27T09:46:14.000Z",
+      "summaryJa": [
+        "はじめに 現在、複数人の開発メンバーで新規のWebアプリケーションを開発しています。",
+        "開発メンバーは5人、さらに、仕様駆動開発の考えを導入した上でDevinも実装者に加わっています。",
+        "インフラの構築が落ち着き、ある程度の開発基盤も整った段階で、運用上以下の状況が発生していました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 50,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 17,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-623b3e91",
+      "title": "Towards a Theory of Bugs: The Ruliology of the Unexpected",
+      "url": "https://writings.stephenwolfram.com/2026/07/towards-a-theory-of-bugs-the-ruliology-of-the-unexpected/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-27T20:10:59.000Z",
+      "summaryJa": [
+        "Wolfram uses his own notation for TMs here, which I figured out by looking at th",
+        "wolframscience.",
+        "com/nks/p78--turing-machines/ It's basically a cellular-automata-ized TM where t"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Towards",
+        "Theory",
+        "Bugs",
+        "Ruliology",
+        "Unexpected"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-5ab88eba",
+      "title": "Finding bugs in Raft implementations",
+      "url": "https://antithesis.com/blog/2026/finding-bugs-in-raft-implementations/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-27T16:40:05.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Finding",
+        "bugs",
+        "Raft",
+        "implementations"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-4a992d3e",
+      "title": "pschatzmann/ESP32-A2DP — A Simple ESP32 Bluetooth A2DP Library (to implement a Music Receiver or Sender) that supports Arduino, PlatformIO and Espressif IDF",
+      "url": "https://github.com/pschatzmann/ESP32-A2DP",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-27T20:12:52Z",
+      "summaryJa": [
+        "A Simple ESP32 Bluetooth A2DP Library (to implement a Music Receiver or Sender) ",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "pschatzmann/ESP32",
+        "A2DP",
+        "Simple",
+        "ESP32",
+        "Bluetooth"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "ESP32でBluetoothオーディオの送信・受信機能をシンプルに実装できるライブラリです。デスク周りの古いスピーカーや自作オーディオに新しい命を吹き込みたい午後の工作に重宝します。"
+  },
+  "unavailableSources": []
+}

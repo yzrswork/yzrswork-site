@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 35,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-28",
+  "dateDisplay": "Tuesday, July 28, 2026",
+  "pressTimeJst": "2026-07-28 05:00",
+  "generatedAt": "2026-07-27T20:18:11.091Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptHash": "a2f907d8"
+  },
+  "theme": {
+    "title": "設計の規律と信頼の再定義",
+    "note": "開発の現場でAIがコードを生成し、あるいはレビューを省略する現代において、私たちは何を信じて手を動かすべきか。日々の実装の中に潜む正しさと責任について考える朝。"
+  },
+  "editorial": {
+    "comment": "「1日500コミットは、もう読めない」という率直な告白は、現代の肥大化した開発環境に対するひとつの極端な回答です。効率を追求しすぎて「中身」への信頼を放棄するのではなく、私たちはどのような設計判断を経てコードの整合性を保つべきか。本書『ソフトウェアアーキテクチャの基礎』が示すように、設計判断の引き出しこそが、AIに代われない私たちの持ち分であるはずです。 —— YZRS Times 編集長",
+    "passedOver": "海外のAI関連リリースは数が多いものの、どれも既存の巨大なエコシステムの延長に留まっているため割愛しました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 29,
+    "tempMin": 22,
+    "precipChancePct": 92
+  },
+  "market": {
+    "fearGreed": {
+      "value": 30,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64873,
+        "priceJpy": 10622539,
+        "change24hPct": 0.4,
+        "sparkline7d": [
+          65104.57,
+          66520.98,
+          65626.22,
+          65423.64,
+          64010.36,
+          64673.19,
+          64804.27
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1943.16,
+        "priceJpy": 318180,
+        "change24hPct": 1.8,
+        "sparkline7d": [
+          1897.79,
+          1928.66,
+          1919.92,
+          1894.12,
+          1858.05,
+          1896.58,
+          1936.97
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.176701,
+        "priceJpy": 28.93,
+        "change24hPct": -1.7,
+        "sparkline7d": [
+          0.187619,
+          0.192016,
+          0.183939,
+          0.184192,
+          0.177065,
+          0.17868,
+          0.176456
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 215.54,
+        "priceJpy": 35293,
+        "change24hPct": -0.9,
+        "sparkline7d": [
+          217.69,
+          223.75,
+          218.03,
+          212.24,
+          210.45,
+          211.36,
+          214.85
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-054d6afb",
+    "hatebu-it-783e91ed",
+    "nhk-top-7d9084c7"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "yahoo-topics-5560b294",
+        "nhk-top-80f476ad",
+        "nhk-top-47d46f5b"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hatebu-it-f0c45d8c",
+        "hn-front-223ab77c"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-054d6afb",
+      "title": "1日500コミットは、もう読めない ── だからコードレビューをやめた",
+      "url": "https://zenn.dev/singularity/articles/stopped-reviewing-my-code",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-26T21:56:15.000Z",
+      "summaryJa": [
+        "最近、マージボタンを押すとき、僕はその diff を読んでいないことのほうが多くなりました。",
+        "コードレビューをしていません。",
+        "場合によっては、動作確認もしていません。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "1日500コミットは",
+        "もう読めない",
+        "──",
+        "だからコードレビューをやめた"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 176,
+          "ageHours": 22,
+          "crossSources": 2,
+          "velocity": 7.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-783e91ed",
+      "title": "「ソフトウェアアーキテクチャの基礎」を読んで設計判断の引き出しが増えた",
+      "url": "https://zenn.dev/raamenwakamatu/articles/software-architecture-fundamentals-review",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-27T01:05:18.000Z",
+      "summaryJa": [
+        "書籍情報 書名：ソフトウェアアーキテクチャの基礎 第2版 ―エンジニアリングに基づく体系的アプローチ 著者：Mark Richards, Neal Ford 訳",
+        "AIエージェントの普及によって、開発者一人がカバーする範囲が広がっている.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 77,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 70,
+          "ageHours": 19,
+          "crossSources": 2,
+          "velocity": 3.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-7d9084c7",
+      "title": "声にも無断使用されない権利 法務省検討会が報告書案",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015187371000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-27T12:25:52.000Z",
+      "summaryJa": [
+        "生成AIが普及する中、法務省の有識者検討会は、著名人が名前や写真を無断で使われない権利「パブリシティ権」が肖像と同様に声についても認められるなどとした報告書の案",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "声にも無断使用されない権利",
+        "法務省検討会が報告書案"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "yahoo-topics-5560b294",
+      "title": "食品消費税1% 政府・与党が方針",
+      "url": "https://news.yahoo.co.jp/pickup/6589556?source=rss",
+      "source": "Yahoo!ニュース トピックス",
+      "sourceId": "yahoo-topics",
+      "publishedAt": "2026-07-27T13:39:24.000Z",
+      "summaryJa": [
+        "食品消費税1% 政府・与党が方針",
+        "出典: Yahoo!ニュース トピックス",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "食品消費税1%",
+        "政府",
+        "与党が方針"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-80f476ad",
+      "title": "作家 東野圭吾さん 68歳で死去 「容疑者Xの献身」「白夜行」",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015187291000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-27T11:55:02.000Z",
+      "summaryJa": [
+        "「容疑者Xの献身」や「白夜行」など、数々のベストセラー小説で知られる直木賞作家の東野圭吾さんが、大腸がんのため、今月23日に亡くなりました。",
+        "68歳でした。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "作家",
+        "東野圭吾さん",
+        "68歳で死去",
+        "「容疑者Xの献身」「白夜行」"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-47d46f5b",
+      "title": "辺野古沖転覆事故 遺族が校長や船長所属団体共同代表など告訴",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015187641000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-27T20:14:18.000Z",
+      "summaryJa": [
+        "アメリカ軍基地の移設工事が進む沖縄県名護市辺野古の沖合で船が転覆し、研修旅行中の同志社国際高校の女子生徒など2人が死亡した事故で、女子生徒の遺族が、高校の校長や",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "辺野古沖転覆事故",
+        "遺族が校長や船長所属団体共同代表など告訴"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-f0c45d8c",
+      "title": "MIXI、新卒エンジニア向け研修資料＆動画を無料公開　「実践的なAI活用術」を12科目で紹介",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2607/27/2000000223/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-27T06:47:19.000Z",
+      "summaryJa": [
+        "MIXIは7月27日、2026年度入社の新卒エンジニア向けに実施した技術研修の資料とアーカイブ動画を公開した。",
+        "全12科目を通じ、業務におけるAIの活用法などを紹介している。",
+        "Gitやコンテナ技術、セキュリティ、モバイルアプリ開発、データ活用などのテーマごとに実施した全12科目の研修資料と一部のアーカイブ動画を公開した."
+      ],
+      "category": "programming",
+      "keywords": [
+        "MIXI",
+        "「実践的なAI活用術」を12科目で紹介"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 151,
+          "ageHours": 14,
+          "crossSources": 1,
+          "velocity": 11.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-223ab77c",
+      "title": "Judge Rejects Google's Attempt to DMCA Its Way Out of Being Scraped",
+      "url": "https://www.techdirt.com/2026/07/27/judge-rejects-googles-attempt-to-dmca-its-way-out-of-being-scraped/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-27T18:15:35.000Z",
+      "summaryJa": [
+        "Judge Rejects Google's Attempt to DMCA Its Way Out",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Judge",
+        "Rejects",
+        "Google",
+        "Attempt",
+        "to"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 92,
+          "hatebuCount": 0,
+          "ageHours": 2,
+          "crossSources": 1,
+          "velocity": 45
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "sp500",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-27T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "sp500"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-338ddf1b",
+      "title": "atomvm/AtomVM — Tiny Erlang VM",
+      "url": "https://github.com/atomvm/AtomVM",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-27T08:30:17Z",
+      "summaryJa": [
+        "Tiny Erlang VM",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "atomvm/AtomVM",
+        "Tiny",
+        "Erlang",
+        "VM"
+      ],
+      "heat": {
+        "temperature": 51,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 12,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "マイクロコントローラ上でErlangを動かすという試みは、組み込み特有の並行処理の難しさを解決する美しい実験です。あなたの次なるハードウェアプロジェクトに、堅牢な分散設計の思想を吹き込んでみませんか。"
+  },
+  "unavailableSources": []
+}

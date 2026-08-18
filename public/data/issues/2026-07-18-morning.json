@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 15,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-18",
+  "dateDisplay": "Saturday, July 18, 2026",
+  "pressTimeJst": "2026-07-18 05:00",
+  "generatedAt": "2026-07-17T21:07:06.838Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "限られた器で創る",
+    "note": "少ないリソースや古い仕組みの中にある、知恵と工夫の美学を見つめ直す朝。"
+  },
+  "editorial": {
+    "comment": "RAMわずか40KBという極限の制約の中に、13万ドメインもの判定処理をねじ込んだアイデア（hatebu-it-a66b6c91）に深く感銘を受けました。潤沢なハードウェア資源に甘えず、構造の工夫で圧倒的な安さを実現する。これこそが、ハッカーであり作り手である私たちの心を最も熱くさせるDIYの結晶です。今日も自分の手元にある道具と知恵を信じて、新しい一歩を踏み出していきましょう。 —— YZRS Times 編集長",
+    "passedOver": "今回は皇室関連の法案や政界の動きなど、個人の自作精神や静かな生活のテンポとは距離がある永田町の政治ニュース（nhk-top-03943818など）をすべて見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "霧雨",
+    "icon": "rain",
+    "tempMax": 29,
+    "tempMin": 24,
+    "precipChancePct": 84
+  },
+  "market": {
+    "fearGreed": {
+      "value": 27,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64118,
+        "priceJpy": 10416411,
+        "change24hPct": 0,
+        "sparkline7d": [
+          63799.6,
+          64303.19,
+          63421.28,
+          62638.25,
+          64718.69,
+          63924.93,
+          63544.11
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1843.43,
+        "priceJpy": 299477,
+        "change24hPct": -1.65,
+        "sparkline7d": [
+          1787.87,
+          1822.69,
+          1806.26,
+          1784.75,
+          1877.36,
+          1872.29,
+          1834.46
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.186671,
+        "priceJpy": 30.33,
+        "change24hPct": -1.97,
+        "sparkline7d": [
+          0.189569,
+          0.191757,
+          0.185297,
+          0.179127,
+          0.182937,
+          0.189674,
+          0.186765
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 220.43,
+        "priceJpy": 35810,
+        "change24hPct": -0.66,
+        "sparkline7d": [
+          245.36,
+          246.95,
+          241.42,
+          236.02,
+          235.52,
+          221.57,
+          217.37
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hn-front-0b4a0b29",
+    "hatebu-it-a66b6c91",
+    "hatebu-it-c7cdee20"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-1c6e26b1",
+        "nhk-world-081ce90e",
+        "nhk-world-1448cfe2",
+        "nhk-top-ca3ddac1"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hn-front-721ed7fb",
+        "hatebu-it-3317f451",
+        "hatebu-it-a6305fb0",
+        "hn-front-d7a3c6fa"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hn-front-0b4a0b29",
+      "title": "The Zilog Z80 has turned 50",
+      "url": "https://goliath32.com/blog/z80.html",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-17T19:41:02.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "The",
+        "Zilog",
+        "Z80",
+        "has",
+        "turned"
+      ],
+      "heat": {
+        "temperature": 90,
+        "signals": {
+          "hnPoints": 66,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 46
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-a66b6c91",
+      "title": "ルーターに挿す約320円の広告ブロッカー、13万ドメインをRAM40KBで判定 - FabScene（ファブシーン）",
+      "url": "https://fabscene.com/new/make/esp32-c3-dns-adblock-hash-in-flash/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-17T02:48:53.000Z",
+      "summaryJa": [
+        "自宅のネットワーク全体で広告をブロックするなら、Pi-holeを入れたRaspberry Piを常時動かすのが定番だ。",
+        "もっと小さく安くと考えてESP32でやろうとすると、ブロック対象のドメインを覚えておくメモリーが足りず、PSRAMを積んだ高い方のチップが要る。",
+        "M-Abozaid氏は、覚え方を変えることで、200円台のESP32-C3で同じこと."
+      ],
+      "category": "programming",
+      "keywords": [
+        "ルーターに挿す約320円の広告ブロッカー",
+        "13万ドメインをRAM40KBで判定",
+        "FabScene（ファブシーン）"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 346,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 18.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-c7cdee20",
+      "title": "世界一わかりみの深いasync/awaitによる非同期処理 | SIOS Tech Lab",
+      "url": "https://tech-lab.sios.jp/archives/53462",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-17T11:28:14.000Z",
+      "summaryJa": [
+        "こんにちは、サイオステクノロジー武井です。",
+        "今回はasync/awaitの動きをOSカーネルのレイヤーから追うことで理解を深めようとしてみます。",
+        "1."
+      ],
+      "category": "programming",
+      "keywords": [
+        "SIOS",
+        "Tech",
+        "Lab"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 124,
+          "ageHours": 10,
+          "crossSources": 1,
+          "velocity": 12.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-1c6e26b1",
+      "title": "栃木 群馬で記録的大雨 きょうも北～西日本で雷雨か 十分注意",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015179941000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-17T19:42:47.000Z",
+      "summaryJa": [
+        "湿った空気の影響で、栃木県と群馬県では17日夕方から雨雲がかかり続けて記録的な大雨になり、土砂災害や浸水被害が相次いでいます。",
+        "18日も北日本から西日本で雷雨のおそれがあり、特に北海道では月曜日にかけて…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "栃木",
+        "群馬で記録的大雨",
+        "きょうも北～西日本で雷雨か",
+        "十分注意"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-081ce90e",
+      "title": "インド 初の“水素列車” 運行開始",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015179761000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-07-17T14:31:37.000Z",
+      "summaryJa": [
+        "インドでは脱炭素社会の実現を目指す中、水素を使った燃料電池で動き二酸化炭素を排出しない列車が開発され、17日から運行を開始しました。",
+        "出典: NHKニュース 国際",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "インド",
+        "初の",
+        "水素列車",
+        "運行開始"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-1448cfe2",
+      "title": "メキシコ チアパス州沿岸で大地震 M7.4 日本へ津波の影響なし",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015179891000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-07-17T15:33:25.000Z",
+      "summaryJa": [
+        "ハワイにある太平洋津波警報センターから気象庁に入った連絡によりますと、日本時間の17日午後11時49分ごろ、メキシコのチアパス州沿岸を震源とするマグニチュード7",
+        "4の大きな地震がありました。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "メキシコ",
+        "チアパス州沿岸で大地震",
+        "M7.4",
+        "日本へ津波の影響なし"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-ca3ddac1",
+      "title": "「人気キャラのおもちゃ譲ります」 不審なSNS投稿に注意",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015179621000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-17T20:43:33.000Z",
+      "summaryJa": [
+        "SNS上で「人気キャラクターのおもちゃを無料で譲る」などとして偽の大手運送会社のサイトに誘導し、電話番号や住所などの個人情報を入力させる不審な投稿が相次いでいま",
+        "安易に入力すると情報を取られて悪用さ…",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "「人気キャラのおもちゃ譲ります」",
+        "不審なSNS投稿に注意"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-721ed7fb",
+      "title": "Learning a few things about running SQLite",
+      "url": "https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-17T17:45:41.000Z",
+      "summaryJa": [
+        "Learning a few things about running SQLite",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Learning",
+        "few",
+        "things",
+        "about",
+        "running"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 88,
+          "hatebuCount": 0,
+          "ageHours": 3,
+          "crossSources": 2,
+          "velocity": 26.2
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-3317f451",
+      "title": "AIに「レビューして」はもう古い？「敵対的検証」のすすめ",
+      "url": "https://zenn.dev/loglass/articles/6aa18c80496ec6",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-17T06:06:34.000Z",
+      "summaryJa": [
+        "この記事は毎週必ず記事がでるテックブログ Loglass Tech Blog Sprint の152週目の記事です！",
+        "3年間連続達成まで残り7週となりました！",
+        "こんにちは、ログラスの松岡(@little_hand_s)です。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 89,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 195,
+          "ageHours": 15,
+          "crossSources": 2,
+          "velocity": 13
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-a6305fb0",
+      "title": "エスカレーターで歩く人を半分に減らしたAI──名古屋発、駅の見守りシステムを支えるLiDAR技術とreComputer Jetson - FabScene（ファブシーン）",
+      "url": "https://fabscene.com/new/pr/escalator-lidar-recomputer-jetson/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-17T08:05:21.000Z",
+      "summaryJa": [
+        "エスカレーターで歩く人を半分に減らしたAI──名古屋発、駅の見守りシステムを支えるLiDAR技術とreComputer Jetson 2026 7/17 エスカ",
+        "しかし近年、その慣習を見直す動きが各地で広がっている。",
+        "2023年10月、名古屋市は政令指定都市として全国初となる、."
+      ],
+      "category": "programming",
+      "keywords": [
+        "Jetson",
+        "FabScene（ファブシーン）"
+      ],
+      "heat": {
+        "temperature": 77,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 69,
+          "ageHours": 13,
+          "crossSources": 1,
+          "velocity": 5.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-d7a3c6fa",
+      "title": "AWS: Inaccurate Estimated Billing Data – $1.7 billion",
+      "url": "https://news.ycombinator.com/item?id=48945241",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-17T09:42:05.000Z",
+      "summaryJa": [
+        "URL already posted: <a href=\"https:&#x2F;&#x2F;health.",
+        "aws.",
+        "amazon."
+      ],
+      "category": "tech",
+      "keywords": [
+        "AWS",
+        "Inaccurate",
+        "Estimated",
+        "Billing",
+        "Data"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 895,
+          "hatebuCount": 0,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 78.4
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "ワンダーフェスティバル",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-17T20:50:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "ワンダーフェスティバル"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-fe18a579",
+      "title": "Show HN: Non.io, a Reddit-like platform Ive been working on for the last 4 years",
+      "url": "https://non.io",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2023-06-12T16:54:38.000Z",
+      "summaryJa": [
+        "Heya HN, I&#x27;ve been working on a reddit-like platform as my primary side pro",
+        "Doing a (very) soft launch today, mainly because I want to use it to encourage d",
+        "<p>How non."
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "Non.io",
+        "Reddit",
+        "like"
+      ],
+      "heat": {
+        "temperature": 68,
+        "signals": {
+          "hnPoints": 1943,
+          "hatebuCount": 0,
+          "ageHours": 27148,
+          "crossSources": 1,
+          "velocity": 0.1
+        }
+      },
+      "image": null
+    },
+    "reason": "4年間もの歳月をかけてコツコツと個人で育ててきた、もう一つのReddit代替プラットフォームへの挑戦です。大規模な資金力ではなく、一人の作り手の粘り強さと静かな執念が細部にまで宿るプロダクトは、あなたの創作活動に必ずや火を灯してくれるでしょう。"
+  },
+  "unavailableSources": []
+}

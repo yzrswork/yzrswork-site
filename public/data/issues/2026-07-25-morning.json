@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 29,
+  "edition": "morning",
+  "editionTitle": "Morning Edition",
+  "date": "2026-07-25",
+  "dateDisplay": "Saturday, July 25, 2026",
+  "pressTimeJst": "2026-07-25 05:00",
+  "generatedAt": "2026-07-24T20:17:25.698Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "a9d9b01c"
+  },
+  "theme": {
+    "title": "プロトコルを分解する",
+    "note": "地デジのストリーム解析から自作ターミナルまで、ブラックボックスを開けて手を動かす朝。"
+  },
+  "editorial": {
+    "comment": "自宅で地上デジタル放送のストリームを自作した記事（hatebu-it-4f13ae8b）は、規格の裏側を泥臭く解読するモノづくりの原点を感じさせます。完成されたサービスを消費するだけでなく、そのプロトコルを手元で再現してみる実験精神は今朝のあなたの創作にも通じるはずです。 —— YZRS Times 編集長",
+    "passedOver": "Claude Opus 5などAI関連の大型ニュースは話題性が高いものの、投機的な議論が多く今朝の手作業に直接繋がりにくいため見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "弱い雨",
+    "icon": "rain",
+    "tempMax": 34,
+    "tempMin": 24,
+    "precipChancePct": 88
+  },
+  "market": {
+    "fearGreed": {
+      "value": 28,
+      "label": "Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64152,
+        "priceJpy": 10511585,
+        "change24hPct": -1,
+        "sparkline7d": [
+          64095.8,
+          64795.7,
+          64798.49,
+          66144.11,
+          65995.09,
+          64863,
+          64211.29
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1862.24,
+        "priceJpy": 305135,
+        "change24hPct": -1,
+        "sparkline7d": [
+          1841.89,
+          1862.32,
+          1878.42,
+          1933.24,
+          1929.89,
+          1895.27,
+          1861.54
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.177787,
+        "priceJpy": 29.13,
+        "change24hPct": -2.6,
+        "sparkline7d": [
+          0.187053,
+          0.187698,
+          0.187303,
+          0.191744,
+          0.190156,
+          0.181599,
+          0.177434
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 209.66,
+        "priceJpy": 34354,
+        "change24hPct": -0.5,
+        "sparkline7d": [
+          219.94,
+          220.08,
+          213.95,
+          223.77,
+          222,
+          214.4,
+          209.52
+        ]
+      }
+    ]
+  },
+  "top": [
+    "hatebu-it-4f13ae8b",
+    "hatebu-it-32595666",
+    "nhk-top-ae45ce14"
+  ],
+  "sections": [
+    {
+      "id": "news",
+      "title": "時事",
+      "articleIds": [
+        "nhk-top-28de80e8",
+        "nhk-top-8e758342",
+        "nhk-world-4f563224"
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "世界のテック",
+      "articleIds": [
+        "hn-front-26775501",
+        "hn-front-e40b61b5"
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "トレンド",
+      "articleIds": [
+        "gtrends-jp-ccbd37e7"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "hatebu-it-4f13ae8b",
+      "title": "自宅でローカルなテレビ局を開局してみた 【地上デジタル放送の仕組みに迫る】 - Qiita",
+      "url": "https://qiita.com/Rabbit_Program/items/7c3b004ff56ec4cc6b06",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-24T09:47:05.000Z",
+      "summaryJa": [
+        "はじめに 地上デジタル放送のテレビ局が送出しているものは、突き詰めると「MPEG-TS ストリーム」と「その中に埋め込まれた PSI/SI テーブル」の2つに集",
+        "であれば、同じ構造のストリームを自前で組み立てれば、市販のテレビ録画ソフトがそれを \"本物のチャンネル\" として認識するのではないか —— そう思い立ち.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "自宅でローカルなテレビ局を開局してみた",
+        "【地上デジタル放送の仕組みに迫る】",
+        "Qiita"
+      ],
+      "heat": {
+        "temperature": 83,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 140,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 13.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-32595666",
+      "title": "ターミナルを自作したら、1日のコミット数が500を超えて、生産性がバグった話",
+      "url": "https://zenn.dev/singularity/articles/diy-terminal-500-commits",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-24T04:52:21.000Z",
+      "summaryJa": [
+        "僕は長いこと、ターミナルの中で暮らしています。",
+        "エディタは emacs、VS Code や GUI 系のツールはどうにも手に馴染まない。",
+        "Web 上の開発環境も、あの「ちょっとした不便」が積もって結局使わなくなる。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "ターミナルを自作したら",
+        "1日のコミット数が500を超えて",
+        "生産性がバグった話"
+      ],
+      "heat": {
+        "temperature": 84,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 152,
+          "ageHours": 15,
+          "crossSources": 2,
+          "velocity": 9.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-ae45ce14",
+      "title": "「全東信」経営破綻 経産省と金融庁が調査を開始",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015185721000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-24T20:08:39.000Z",
+      "summaryJa": [
+        "クレジットカードの決済代行サービスを行う「全東信」が経営破綻し、利用していた飲食店を中心に影響が広がっていることを受けて、経済産業省と金融庁は、決済代行サービス",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "「全東信」経営破綻",
+        "経産省と金融庁が調査を開始"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-28de80e8",
+      "title": "コメの民間在庫量 243万トン 6月末時点で過去最大に",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015185671000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-24T20:06:26.000Z",
+      "summaryJa": [
+        "6月末時点の民間のコメの在庫量は243万トンと、過去最大となったことが農林水産省の調査で分かりました。",
+        "適正な水準とされる量を大幅に上回る状況で、新米の価格に与える影響が焦点です。",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "コメの民間在庫量",
+        "243万トン",
+        "6月末時点で過去最大に"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-top-8e758342",
+      "title": "愛知県が「副首都」目指すと表明 県知事と名古屋市長が会見",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015185791000",
+      "source": "NHKニュース 主要",
+      "sourceId": "nhk-top",
+      "publishedAt": "2026-07-24T14:53:28.000Z",
+      "summaryJa": [
+        "大規模災害の際に首都の代替機能を担う「副首都」構想の関連法が成立したことを受けて、愛知県の大村知事と名古屋市の広沢市長が24日、そろって記者会見を開き、愛知県と",
+        "出典: NHKニュース 主要",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "愛知県が「副首都」目指すと表明",
+        "県知事と名古屋市長が会見"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 5,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "nhk-world-4f563224",
+      "title": "英 首相官邸の機能の一部をマンチェスターに移転 初めて訪問",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015185751000",
+      "source": "NHKニュース 国際",
+      "sourceId": "nhk-world",
+      "publishedAt": "2026-07-24T20:15:47.000Z",
+      "summaryJa": [
+        "イギリスのバーナム首相は、地方分権を進める政策の一環として、首相官邸の機能の一部を首都ロンドンからイングランド北部に移すため、新たに設けられた官邸を初めて訪れま",
+        "出典: NHKニュース 国際",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "news",
+      "keywords": [
+        "初めて訪問"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-26775501",
+      "title": "Postgres LISTEN/NOTIFY actually scales",
+      "url": "https://www.dbos.dev/blog/postgres-listen-notify-scalability",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-24T19:05:53.000Z",
+      "summaryJa": [
+        "Postgres LISTEN/NOTIFY actually scales",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Postgres",
+        "LISTEN/NOTIFY",
+        "actually",
+        "scales"
+      ],
+      "heat": {
+        "temperature": 88,
+        "signals": {
+          "hnPoints": 58,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 2,
+          "velocity": 48.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-e40b61b5",
+      "title": "My security camera shipped a GitHub admin token in its login page",
+      "url": "https://hhh.hn/hanwha-github-token/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-24T11:54:41.000Z",
+      "summaryJa": [
+        "My security camera shipped a GitHub admin token in",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "My",
+        "security",
+        "camera",
+        "shipped",
+        "GitHub"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 416,
+          "hatebuCount": 0,
+          "ageHours": 8,
+          "crossSources": 1,
+          "velocity": 49.6
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "gtrends-jp-ccbd37e7",
+      "title": "村重杏奈",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "source": "Google トレンド",
+      "sourceId": "gtrends-jp",
+      "publishedAt": "2026-07-24T20:00:00.000Z",
+      "summaryJa": [
+        "arthur fery",
+        "出典: Google トレンド",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "trends",
+      "keywords": [
+        "村重杏奈"
+      ],
+      "heat": {
+        "temperature": 55,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 1,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "show-hn-1f47465a",
+      "title": "Show HN: If YouTube had actual channels",
+      "url": "https://ytch.xyz",
+      "source": "Show HN",
+      "sourceId": "show-hn",
+      "publishedAt": "2024-08-14T15:10:06.000Z",
+      "summaryJa": [
+        "Show HN: If YouTube had actual channels",
+        "出典: Show HN",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Show",
+        "HN",
+        "If",
+        "YouTube",
+        "had"
+      ],
+      "heat": {
+        "temperature": 72,
+        "signals": {
+          "hnPoints": 2741,
+          "hatebuCount": 0,
+          "ageHours": 17021,
+          "crossSources": 1,
+          "velocity": 0.2
+        }
+      },
+      "image": null
+    },
+    "reason": "テレビのチャンネルをザッピングするような感覚をYouTube動画で再現した個人的実験プロダクトです。既成の動画プラットフォームのUIを自分の都合に合わせて自由に作り直す姿勢は、創作の面白さを思い出させてくれます。"
+  },
+  "unavailableSources": []
+}

@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 1,
+  "issueNo": 42,
+  "edition": "midday",
+  "editionTitle": "Midday Edition",
+  "date": "2026-07-31",
+  "dateDisplay": "Friday, July 31, 2026",
+  "pressTimeJst": "2026-07-31 12:00",
+  "generatedAt": "2026-07-31T02:47:43.601Z",
+  "generator": {
+    "appVersion": "0.1.0",
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "promptHash": "85949c92"
+  },
+  "theme": {
+    "title": "開発の手応えを手入れする",
+    "note": "日常の作業環境からAIレビューの仕組み、自作ハードウェアまで、手を動かして手応えを確かめる記事を集めました。"
+  },
+  "editorial": {
+    "comment": "本日の昼刊で特に目を引いたのは、CIランナーの乗り換え実測を記録した「GitHub Actionsのコストが増えているなら、Namespaceを使えばいいじゃない」（zenn-trend-19b4765e）です。単に費用を削るだけでなく、実行速度の向上とトラブルゼロを1行の修正で達成する泥臭い試行錯誤は、午後の作業環境を見直す良い刺激になります。 —— YZRS Times 編集長",
+    "passedOver": "FIFAとUEFAの権利対立に関するニュースやTVストリーミング端末の解説記事など、一般的な時事や消費話題は見送りました。",
+    "signature": "—— YZRS Times 編集長"
+  },
+  "weather": {
+    "location": "Tokyo",
+    "summary": "曇り",
+    "icon": "cloudy",
+    "tempMax": 33,
+    "tempMin": 25,
+    "precipChancePct": 96
+  },
+  "market": {
+    "fearGreed": {
+      "value": 25,
+      "label": "Extreme Fear"
+    },
+    "coins": [
+      {
+        "id": "bitcoin",
+        "symbol": "BTC",
+        "priceUsd": 64190,
+        "priceJpy": 10309892,
+        "change24hPct": 1.4,
+        "sparkline7d": [
+          65059.43,
+          63976.08,
+          64468.09,
+          65293.49,
+          63950.76,
+          63418.14,
+          64685.44
+        ]
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "priceUsd": 1901.63,
+        "priceJpy": 305430,
+        "change24hPct": 0.6,
+        "sparkline7d": [
+          1872.88,
+          1857.96,
+          1882.62,
+          1961.87,
+          1921.71,
+          1881.98,
+          1915.26
+        ]
+      },
+      {
+        "id": "stellar",
+        "symbol": "XLM",
+        "priceUsd": 0.170254,
+        "priceJpy": 27.35,
+        "change24hPct": 0.2,
+        "sparkline7d": [
+          0.182427,
+          0.177369,
+          0.177822,
+          0.180694,
+          0.172626,
+          0.169128,
+          0.171714
+        ]
+      },
+      {
+        "id": "bitcoin-cash",
+        "symbol": "BCH",
+        "priceUsd": 215.18,
+        "priceJpy": 34562,
+        "change24hPct": 3.6,
+        "sparkline7d": [
+          210.02,
+          210.45,
+          210.49,
+          218.14,
+          213.14,
+          205.35,
+          215.75
+        ]
+      }
+    ]
+  },
+  "top": [
+    "zenn-trend-19b4765e",
+    "hatebu-it-b70f4919",
+    "lobsters-865ead93"
+  ],
+  "sections": [
+    {
+      "id": "deep-tech",
+      "title": "技術の深掘り",
+      "articleIds": [
+        "hn-front-11a4288c",
+        "hatebu-it-998e566f",
+        "hatebu-it-c549af4f"
+      ]
+    },
+    {
+      "id": "jp-tech",
+      "title": "日本語の技術記事",
+      "articleIds": [
+        "zenn-trend-5bf70fae",
+        "qiita-popular-b01c6a08",
+        "qiita-popular-c49ec0f1"
+      ]
+    },
+    {
+      "id": "global-tech",
+      "title": "海外の技術記事",
+      "articleIds": [
+        "lobsters-ccb52241",
+        "lobsters-4c631287"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "zenn-trend-19b4765e",
+      "title": "GitHub Actionsのコストが増えているなら、Namespaceを使えばいいじゃない",
+      "url": "https://zenn.dev/aircloset/articles/6b47018589df0f",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-29T23:52:26.000Z",
+      "summaryJa": [
+        "みなさまこんにちは！",
+        "エアークローゼットでCTOをしている辻です。",
+        "GitHub ActionsのランナーをGitHub hosted→Blacksmith→Namespaceと2回乗り換えました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "GitHub",
+        "Actionsのコストが増えているなら",
+        "Namespaceを使えばいいじゃない"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 27,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-b70f4919",
+      "title": "生成AIにおけるHTML/画像出力の必要性と改善案としてのRHW(reviewable-html-workbench)の紹介",
+      "url": "https://zenn.dev/u1/articles/rhw-reviewable-html-workbench",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-30T12:42:54.000Z",
+      "summaryJa": [
+        "出力量が増えると何が起きるか 2026 年 4 月の CHI ワークショップで発表された研究が、この負荷の分布を実際に観察しています(Catalan et al",
+        ")。",
+        "Samsung R&D Institute Philippines と York University のグループが、経験 1 年未満から 10 年超まで 4 "
+      ],
+      "category": "programming",
+      "keywords": [
+        "reviewable",
+        "html",
+        "workbench"
+      ],
+      "heat": {
+        "temperature": 82,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 69,
+          "ageHours": 14,
+          "crossSources": 2,
+          "velocity": 4.9
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-865ead93",
+      "title": "New keyboard: Alicjav2",
+      "url": "https://marcin.juszkiewicz.com.pl/2026/07/29/new-keyboard-alicja-v2/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-30T21:05:48.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "keyboard",
+        "Alicjav2"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 6,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hn-front-11a4288c",
+      "title": "Stacked PRs are now live on GitHub",
+      "url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
+      "source": "Hacker News",
+      "sourceId": "hn-front",
+      "publishedAt": "2026-07-30T16:26:16.000Z",
+      "summaryJa": [
+        "Stacked PRs are now live on GitHub",
+        "出典: Hacker News",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Stacked",
+        "PRs",
+        "live",
+        "GitHub"
+      ],
+      "heat": {
+        "temperature": 91,
+        "signals": {
+          "hnPoints": 488,
+          "hatebuCount": 24,
+          "ageHours": 10,
+          "crossSources": 3,
+          "velocity": 47.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-998e566f",
+      "title": "ホーム — 5GC教科書 - 5GC教科書 — 世界最高品質の無料5G Coreオンライン教材",
+      "url": "https://5gctextbook.com/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-30T09:10:42.000Z",
+      "summaryJa": [
+        "5GC教科書 — 世界最高品質の無料5G Coreオンライン教材¶ このサイトのゴールは「仕様書を要約すること」ではありません。",
+        "あなたが 5G Core Network（5GC）を 本当に理解し、自分の言葉で説明でき、実務で使えるようになること を最優先にした教科書です。",
+        "なぜこのサイトを作ったのか（Why）¶ 3GPP仕様書（TS 23."
+      ],
+      "category": "programming",
+      "keywords": [
+        "ホーム",
+        "5GC教科書",
+        "世界最高品質の無料5G",
+        "Coreオンライン教材"
+      ],
+      "heat": {
+        "temperature": 79,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 89,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 5.1
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "hatebu-it-c549af4f",
+      "title": "『WindowsユーザーのためのWSLで始めるLinux環境構築術』を公開しました",
+      "url": "https://virtualtech.jp/2026-07-29/",
+      "source": "はてなブックマーク テクノロジー",
+      "sourceId": "hatebu-it",
+      "publishedAt": "2026-07-30T15:36:27.000Z",
+      "summaryJa": [
+        "技術メディア ThinkIT にて連載していた「Windowsユーザーのための WSL2で始める Linux環境構築術」の全29回に渡って執筆を担当いたしました",
+        "執筆完了を記念し、構成・内容・文章をすべて見直し、最新の知見を踏まえて全面的にリライトした再構築版として公開しました。",
+        "連載で培われた知見をもとに、より体系的で実践."
+      ],
+      "category": "programming",
+      "keywords": [
+        "programming"
+      ],
+      "heat": {
+        "temperature": 87,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 249,
+          "ageHours": 11,
+          "crossSources": 1,
+          "velocity": 22.3
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "zenn-trend-5bf70fae",
+      "title": "リリース前チェックをAIで行う「プロダクトリリースハーネス」のつくり方",
+      "url": "https://zenn.dev/estie/articles/c5503dfe56f7a1",
+      "source": "Zenn トレンド",
+      "sourceId": "zenn-trend",
+      "publishedAt": "2026-07-30T00:45:05.000Z",
+      "summaryJa": [
+        "こんにちは、株式会社estie（エスティ） 取締役CTO の Nari（@tiwanari）です。",
+        "みなさんは、新しいプロダクトを世に出す前に、「抜け漏れ」がないか不安になった経験はないですか？",
+        "先日、あるプロダクトのリリース前チェックで「個人情報がエラー監視ツールへ送られる実装になっている」と指摘されました。"
+      ],
+      "category": "programming",
+      "keywords": [
+        "リリース前チェックをAIで行う",
+        "プロダクトリリースハーネス"
+      ],
+      "heat": {
+        "temperature": 47,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 26,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-b01c6a08",
+      "title": "C#で new を差し替える実験的モックツールを作っている話",
+      "url": "https://qiita.com/kaneko_desu/items/a75831913a96757444fa?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-30T06:43:45.000Z",
+      "summaryJa": [
+        "C#で new を差し替える実験的モックツールを作っている話 C# のテストで、次のようなコードに出会うことがあります。",
+        "namespace TargetApp; public class UserService { public string GetDispl.",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "C#で"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 20,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "qiita-popular-c49ec0f1",
+      "title": "結婚式準備をAIでハックしてみた",
+      "url": "https://qiita.com/ikageso17g/items/734ee24a5cd1c203b835?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita 人気記事",
+      "sourceId": "qiita-popular",
+      "publishedAt": "2026-07-30T08:28:50.000Z",
+      "summaryJa": [
+        "TL;DR Web版Claude(claude.",
+        "ai)のプロジェクト機能＋MCPコネクタ（Gmail・Notion・Google Drive）だけで、結婚式準備の情報集約ハブを構築しました プロジェクトのカス",
+        "."
+      ],
+      "category": "programming",
+      "keywords": [
+        "結婚式準備をAIでハックしてみた"
+      ],
+      "heat": {
+        "temperature": 49,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 18,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-ccb52241",
+      "title": "std.Io.Writer.Allocating ate all my memory",
+      "url": "https://www.openmymind.net/std-io-writer-allocating-ate-my-memory/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-30T19:19:14.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "ate",
+        "memory"
+      ],
+      "heat": {
+        "temperature": 53,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 7,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    {
+      "id": "lobsters-4c631287",
+      "title": "Progress toward compiling Linux with gccrs",
+      "url": "https://lwn.net/SubscriberLink/1083202/f1ba926cd57ac5c5/",
+      "source": "Lobsters",
+      "sourceId": "lobsters",
+      "publishedAt": "2026-07-30T18:06:16.000Z",
+      "summaryJa": [
+        "Comments",
+        "出典: Lobsters",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "tech",
+      "keywords": [
+        "Progress",
+        "toward",
+        "compiling",
+        "Linux",
+        "gccrs"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    }
+  ],
+  "hiddenGem": {
+    "article": {
+      "id": "github-gems-f9f3b3d1",
+      "title": "raphaelameaume/fragment — [alpha] A modern toolkit for creative coding",
+      "url": "https://github.com/raphaelameaume/fragment",
+      "source": "GitHub 小さなOSS",
+      "sourceId": "github-gems",
+      "publishedAt": "2026-07-30T17:27:29Z",
+      "summaryJa": [
+        "[alpha] A modern toolkit for creative coding",
+        "出典: GitHub 小さなOSS",
+        "詳細は元記事を参照してください。"
+      ],
+      "category": "oss",
+      "keywords": [
+        "alpha",
+        "modern",
+        "toolkit",
+        "creative",
+        "coding"
+      ],
+      "heat": {
+        "temperature": 52,
+        "signals": {
+          "hnPoints": 0,
+          "hatebuCount": 0,
+          "ageHours": 9,
+          "crossSources": 1,
+          "velocity": 0
+        }
+      },
+      "image": null
+    },
+    "reason": "クリエイティブコーディングに特化した、モダンで拡張性の高いオープンソースのツールキットです。コードでグラフィックや表現を組み立てる創作活動に、新たなインスピレーションをもたらします。"
+  },
+  "unavailableSources": []
+}
