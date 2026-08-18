@@ -38,7 +38,7 @@ Timesのデータ/content ownerは `yzrswork/yzrs-times`、TimesのUI/site owner
 
 - `public/times/` と `public/evening.html` はSiteへCOPY済みで、以後Siteが所有します。
 - `.github/workflows/sync-times.yml` は `workflow_dispatch` の手動receiverです。指定された `source_run_id` の `times-delivery` artifactだけを取得し、latest artifact探索はしません。
-- artifactは `delivery-manifest.json` と `data/**/*.json` だけを許可します。HTML、JS、CSS、YAML、workflow、script、package等はFail Closedで拒否します。
+- artifactは `delivery-manifest.json`、`data/latest.json`、`data/graph.json`、`data/index-manifest.json`、`data/issues-index-YYYY-MM.json`、および `data/issues/YYYY-MM-DD-{morning|midday}.json` だけを許可します。その他のJSON、HTML、JS、CSS、YAML、workflow、script、package等はFail Closedで拒否します。
 - manifestのsource repository、source SHA、run ID、edition、publishedAtとworkflow入力を一致検証し、JSONと既存配信時刻を確認してから `public/data/` と `times-sync-state.json` を更新します。
 - `data/times-sync-state.json` はSite管理で、同一runはNO-OP、古いdeliveryは拒否、新しいdeliveryだけを受け入れます。
 
