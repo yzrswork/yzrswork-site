@@ -13,5 +13,8 @@
     "test": "node --test test/times-delivery.test.mjs"
   },
   "engines": { "node": ">=20" },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "wrangler": "4.124.0"
+  }
 }
