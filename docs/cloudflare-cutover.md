@@ -16,8 +16,11 @@
 
 - Repository: `yzrswork/yzrswork-site`
 - default branch: `main`
-- status: `SHADOW / NOT DEPLOYED`
+- status: `SHADOW / NOT PRODUCTION`
 - 本体サイト資産、Guide source/build、LP-01、verify-only CIを保持
+- Cross-Repo Delivery D v0.1: `IMPLEMENTED / VERIFIED`
+- `SITE_SYNC_ENABLED=true`
+- `/times/` がcanonicalなTimes UIで、`/evening.html` は `/times/` へのlegacy compatibility redirect
 - `wrangler.jsonc`、Cloudflare deploy script、Cloudflare workflow、Secretsは保持しない
 
 ## 3. 本番切替前の承認条件
@@ -28,25 +31,21 @@ Cloudflare変更とProduction切替にはOwner explicit approval requiredです�
 
 - Owner review完了
 - URL parityとaccessibility確認完了
-- Times cross-repo publishing方式の選定・検証完了
+- Times cross-repo publishing方式の実装・検証完了（Cross-Repo Delivery D v0.1）
 - Preview相当の安全な検証方法の承認
 - rollback担当・時間枠・監視項目の合意
 - Cloudflare変更の明示承認
 - Cloudflare変更前の最終diff確認
 
-## 4. Timesの未解決事項
+## 4. Times deliveryの現状
 
-現在 `/times/` は `yzrs-times` から配信されています。新RepositoryにTimesの自動生成・AI処理・schedulerをコピーしていません。
+Productionの配信元は引き続き `yzrswork/yzrs-times` です。Cross-Repo Delivery D v0.1は実装済みで、Issue #80（2026-08-19 Midday Edition）でgenuine automatic Shadow E2Eが成功しました。Times publication SHAは`33d3fe245f9a608cd937d56061e7391768ac8423`、Times runは`32209846895`、Site automatic sync commitは`901d7185c04468db369df9dae96e6c2cac527c3e`です。
 
-未解決候補:
+Times dataは次の経路で自動配信されます。
 
-- `repository_dispatch`
-- reusable workflow
-- GitHub APIによるcommit
-- build artifactの受け渡し
-- Timesのsubdomain分離
+`yzrs-times` → `times-delivery` artifact → workflow dispatch → `yzrswork-site` receiver → Fail Closed validation → Site-owned `public/data/`
 
-この文書では候補を決定しません。
+`SITE_SYNC_ENABLED=true`です。`/times/`が唯一の通常Times UIかつcanonical URLで、`/evening.html`は`/times/`へ転送するlegacy compatibility pageです。Timesの生成、AI処理、scheduler、Production publishingは`yzrs-times`に残します。
 
 ## 5. Cloudflareで最終的に変更が必要な項目
 
@@ -73,7 +72,7 @@ Shadow Migration自体のrollbackは「何もしない」です。現行Producti
 
 ## 8. Verification checklist
 
-- [ ] `yzrs-times` のgit status、PR #14状態、既存main SHAを記録
+- [x] Cross-Repo Delivery D v0.1の実装とIssue #80のgenuine automatic Shadow E2Eを確認
 - [ ] Shadowの`npm ci`が成功
 - [ ] `npm run build`が成功
 - [ ] `npm run check`が成功
@@ -83,11 +82,11 @@ Shadow Migration自体のrollbackは「何もしない」です。現行Producti
 - [ ] LPが`noindex,follow`でsitemapに入っていないことを確認
 - [ ] secret scanが成功
 - [ ] verify-only CIにDeploy / Cloudflare / scheduled publishingがないことを確認
-- [ ] Times cross-repo publishing方式がOwner承認済み
+- [x] `/times/`をcanonical UI、`/evening.html`をlegacy compatibility redirectとして確認
 - [ ] Cloudflare変更がOwner承認済み
 
 ## Gate
 
 `CUTOVER_READY = false`
 
-Owner review、Times cross-repo publishing、Cloudflare変更承認が未完了のためです。
+Owner review、Preview相当の安全な検証方法、rollback条件、Cloudflare変更承認が未完了のためです。

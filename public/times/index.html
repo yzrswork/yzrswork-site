@@ -10,23 +10,6 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8467165715973366"
      crossorigin="anonymous"></script>
 <script src="/analytics.js"></script>
-<script>
-(function () {
-  // 19:00-翌5:00は夕刊(探索版/グラフビュー)へ自動誘導する。
-  // ?mode=day で明示的に一面へ戻ってきた場合と、過去号(?issue=)を読んでいる場合は対象外。
-  var params = new URLSearchParams(location.search);
-  if (params.get('mode') === 'day') {
-    try { sessionStorage.setItem('yzrsTimesForceDay', '1'); } catch (e) {}
-    return;
-  }
-  if (params.get('issue')) return;
-  try {
-    if (sessionStorage.getItem('yzrsTimesForceDay') === '1') return;
-  } catch (e) {}
-  var h = new Date().getHours();
-  if (h >= 19 || h < 5) location.replace('/evening.html');
-})();
-</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -549,9 +532,6 @@
   .back-issue-item a { text-decoration: none; color: var(--ink-soft); }
   .back-issue-item a:hover { color: var(--accent); }
   .back-issue-item .biq-date { color: var(--muted); white-space: nowrap; }
-  .evening-link { margin-top: 14px; font-size: 13px; }
-  .evening-link a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
-  .evening-link a:hover { border-bottom-color: var(--accent); }
   .back-issues-empty {
     font-family: var(--sans-jp);
     font-size: 12px;
@@ -650,7 +630,6 @@
       <div class="section-head">縮刷版 <span class="en">Back Issues</span></div>
       <hr class="rule">
       <div id="back-issues-list"><p class="back-issues-empty">読み込み中…</p></div>
-      <p class="evening-link"><a href="/evening.html">夕刊（探索版）を開く — 編集長の目次と、全号がつながる星図</a></p>
     </footer>
 
     <footer class="colophon">

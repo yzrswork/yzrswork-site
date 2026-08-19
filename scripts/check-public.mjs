@@ -11,6 +11,7 @@ const GUIDE_URL = `${BASE}/guides/hajimete-no-denshi-kousaku-starter-guide/`;
 const LP = 'lp/electronics-starter/index.html';
 const LP_URL = `${BASE}/lp/electronics-starter/`;
 const TIMES = 'times/index.html';
+const TIMES_URL = `${BASE}/times/`;
 const EVENING = 'evening.html';
 const pages = ['index.html', 'about/index.html', 'privacy/index.html', GUIDE, LP];
 const uiPages = [TIMES, EVENING];
@@ -111,8 +112,8 @@ const canonicalExpectations = {
   'privacy/index.html': `${BASE}/privacy/`,
   [GUIDE]: GUIDE_URL,
   [LP]: LP_URL,
-  [TIMES]: `${BASE}/times/`,
-  [EVENING]: `${BASE}/evening.html`,
+  [TIMES]: TIMES_URL,
+  [EVENING]: TIMES_URL,
 };
 for (const [page, canonical] of Object.entries(canonicalExpectations)) {
   const html = uiHtmlByPage.get(page) ?? htmlByPage.get(page);
@@ -150,10 +151,10 @@ if (lp.includes('https://amzn.to/') || lp.includes('target="_blank"')) errors.pu
 const robots = read('robots.txt');
 if (!robots.includes('Sitemap: https://yzrswork.com/sitemap.xml')) errors.push('robots.txtのSitemap指定がない');
 const sitemap = read('sitemap.xml');
-for (const url of [BASE + '/', `${BASE}/about/`, `${BASE}/privacy/`, GUIDE_URL]) {
+for (const url of [BASE + '/', TIMES_URL, `${BASE}/about/`, `${BASE}/privacy/`, GUIDE_URL]) {
   if (!sitemap.includes(`<loc>${url}</loc>`)) errors.push(`sitemapにURLがない: ${url}`);
 }
-if (sitemap.includes('/lp/electronics-starter/') || sitemap.includes('/times/')) errors.push('sitemapにnoindexまたはDEFER URLがある');
+if (sitemap.includes('/lp/electronics-starter/') || sitemap.includes('/evening.html')) errors.push('sitemapにnoindexまたはlegacy URLがある');
 
 const analytics = read('analytics.js');
 if (!/G-[A-Z0-9]+/.test(analytics)) errors.push('GA4 measurement IDがない');
@@ -177,9 +178,12 @@ for (const file of siteFiles) {
 const times = uiHtmlByPage.get(TIMES);
 if (!times.includes("'/data/latest.json'")) errors.push('Timesのlatest.json参照がない');
 if (!times.includes("fetch('/data/index-manifest.json')")) errors.push('Timesのindex-manifest.json参照がない');
+if (times.includes('/evening.html')) errors.push('通常Timesにlegacy evening URL参照がある');
+if (times.includes('yzrsTimesForceDay') || times.includes("location.replace('/evening.html')")) errors.push('Timesに旧夜間リダイレクトが残っている');
 
 const evening = uiHtmlByPage.get(EVENING);
-if (!evening.includes('href="/times/?mode=day"')) errors.push('EveningのTimes戻り導線がない');
+if (!evening.includes('<meta http-equiv="refresh" content="0; url=https://yzrswork.com/times/">')) errors.push('EveningのTimesリダイレクトがない');
+if (!evening.includes('href="/times/"')) errors.push('EveningのTimesフォールバック導線がない');
 if (errors.length) {
   console.error(`[check] ${errors.length}件のエラー`);
   for (const error of errors) console.error(`  - ${error}`);
