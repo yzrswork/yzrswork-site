@@ -24,7 +24,7 @@
 - `yzrswork_apps`: 電子工作・自作PC・DIY向けのWebツール群。Siteから外部リンクで参照しますが、今回のCOPY対象でもbuild対象でもありません。
 - `obsidian-vault`: Ownerのローカル知識・制作メモ。Repositoryの公開コンテンツやProduction配信のSSoTではなく、今回のMigration対象外です。
 
-SiteとTimesの公開成果物の受け渡し、およびAppsやVaultとの同期は今回実装しません。
+SiteとTimesの公開成果物の受け渡しはCross-Repo Delivery D v0.1で実装済みです。AppsやVaultとの同期は今回の対象外です。
 
 ## Source and generated output
 
@@ -36,10 +36,11 @@ Guideのsource of truthは `content/guides/*.md` です。`npm run build` によ
 
 Timesのデータ/content ownerは `yzrswork/yzrs-times`、TimesのUI/site ownerは `yzrswork/yzrswork-site` です。Siteが自身のRepositoryへの唯一のwriterであり、TimesへSite contents:write権限を渡しません。
 
-- `public/times/` と `public/evening.html` はSiteへCOPY済みで、以後Siteが所有します。
-- `.github/workflows/sync-times.yml` は `workflow_dispatch` の手動receiverです。指定された `source_run_id` の `times-delivery` artifactだけを取得し、latest artifact探索はしません。
+- `public/times/` はcanonicalなTimes UIとしてSiteが所有します。`public/evening.html`は旧夕刊UIを廃止したlegacy compatibility redirectです。
+- `.github/workflows/sync-times.yml` は `workflow_dispatch` を受けるreceiverです。`yzrs-times`から自動dispatchされた指定 `source_run_id` の `times-delivery` artifactだけを取得し、latest artifact探索はしません。
 - artifactは `delivery-manifest.json`、`data/latest.json`、`data/graph.json`、`data/index-manifest.json`、`data/issues-index-YYYY-MM.json`、および `data/issues/YYYY-MM-DD-{morning|midday}.json` だけを許可します。その他のJSON、HTML、JS、CSS、YAML、workflow、script、package等はFail Closedで拒否します。
 - manifestのsource repository、source SHA、run ID、edition、publishedAtとworkflow入力を一致検証し、JSONと既存配信時刻を確認してから `public/data/` と `times-sync-state.json` を更新します。
 - `data/times-sync-state.json` はSite管理で、同一runはNO-OP、古いdeliveryは拒否、新しいdeliveryだけを受け入れます。
+- `SITE_SYNC_ENABLED=true`です。Issue #80（2026-08-19 Midday Edition）でgenuine automatic Shadow E2Eが成功しました。
 
-このreceiverでTimesの生成・AI処理・scheduler・senderは実装しません。Cloudflare操作、deploy、Production変更は0で、`CUTOVER_READY = false` です。
+Timesの生成・AI処理・scheduler・sender・Production publishingは`yzrs-times`に残ります。このreceiverはFail ClosedでSite-owned `public/data/`だけを更新します。Cloudflare操作、DNS、custom domain、deploy、Production変更は0で、`CUTOVER_READY = false`です。

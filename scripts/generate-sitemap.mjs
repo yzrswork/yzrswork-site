@@ -6,6 +6,7 @@ const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const OUTPUT = join(ROOT, 'public', 'sitemap.xml');
 const urls = [
   'https://yzrswork.com/',
+  'https://yzrswork.com/times/',
   'https://yzrswork.com/about/',
   'https://yzrswork.com/privacy/',
   'https://yzrswork.com/guides/hajimete-no-denshi-kousaku-starter-guide/',
