@@ -12,6 +12,9 @@
     "check": "node scripts/check-public.mjs",
     "test": "node --test test/times-delivery.test.mjs"
   },
-  "engines": { "node": ">=20" },
-  "dependencies": {}
+  "engines": { "node": ">=22" },
+  "dependencies": {},
+  "devDependencies": {
+    "wrangler": "4.124.0"
+  }
 }

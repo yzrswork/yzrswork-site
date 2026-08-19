@@ -15,8 +15,8 @@
 - Productionは現在も `yzrswork/yzrs-times` が配信します。
 - `yzrs-times` のファイルは削除・移動せず、COPYで扱います。
 - `yzrs-times` のTimes生成、AI編集、scheduler、publish workflowは本Repositoryに移しません。
-- `public/times/` と `public/evening.html` はSite-owned UIです。両方ともSite CIでcanonical、必要なTimes data参照、戻り導線、inline JavaScriptを検証します。
-- `wrangler.jsonc`、Cloudflare deploy script、Cloudflare deploy workflow、Secretsは含めません。
+- `public/times/` と `public/evening.html` はSite-owned UIです。Site CIでcanonical、必要なTimes data参照、戻り導線、Times UIのinline JavaScriptを検証します。
+- `wrangler.jsonc` は既存Worker `yzrs-times` のrepository-side dry-run用設定だけを含み、Cloudflare deploy script、Cloudflare deploy workflow、Secretsは含めません。
 - Cutover条件は `CUTOVER_READY = false` です。
 
 ## Local verification

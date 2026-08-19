@@ -21,7 +21,7 @@
 - Cross-Repo Delivery D v0.1: `IMPLEMENTED / VERIFIED`
 - `SITE_SYNC_ENABLED=true`
 - `/times/` がcanonicalなTimes UIで、`/evening.html` は `/times/` へのlegacy compatibility redirect
-- `wrangler.jsonc`、Cloudflare deploy script、Cloudflare workflow、Secretsは保持しない
+- `wrangler.jsonc` は既存Worker `yzrs-times` のrepository-side dry-run用設定だけを保持し、Cloudflare deploy script、Cloudflare workflow、Secretsは保持しない
 
 ## 3. 本番切替前の承認条件
 
