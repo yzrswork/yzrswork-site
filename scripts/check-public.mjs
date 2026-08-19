@@ -178,6 +178,7 @@ for (const file of siteFiles) {
 const times = uiHtmlByPage.get(TIMES);
 if (!times.includes("'/data/latest.json'")) errors.push('Timesのlatest.json参照がない');
 if (!times.includes("fetch('/data/index-manifest.json')")) errors.push('Timesのindex-manifest.json参照がない');
+if (times.includes('/evening.html')) errors.push('通常Timesにlegacy evening URL参照がある');
 if (times.includes('yzrsTimesForceDay') || times.includes("location.replace('/evening.html')")) errors.push('Timesに旧夜間リダイレクトが残っている');
 
 const evening = uiHtmlByPage.get(EVENING);
