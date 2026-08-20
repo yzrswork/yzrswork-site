@@ -2,7 +2,7 @@
 
 ## Repository responsibility
 
-`yzrswork/yzrswork-site` は `yzrswork.com` 本体の静的サイトだけを扱うShadow Repositoryです。
+`yzrswork/yzrswork-site` は `yzrswork.com` 本体のProduction sourceです。Production branchは `main` です。
 
 担当範囲:
 
@@ -15,12 +15,12 @@
 - OGPと本体サイト共通asset
 - 本体サイトのbuild/check
 
-`yzrswork/yzrs-times` は、引き続きProduction配信元であり、YZRS Times生成エンジンです。Timesのprompt、source収集、scheduler、edition生成、AI処理、publish workflowは移しません。
+`yzrswork/yzrs-times` はYZRS Timesの生成・編集・scheduler・edition生成・publication artifact作成・workflow dispatchを担当します。Timesのprompt、source収集、scheduler、edition生成、AI処理、publish workflowはSiteへ移しません。Production Site sourceは `yzrswork-site` です。
 
 ## 周辺システムとの境界
 
 - `yzrswork/yzrswork-site`: `yzrswork.com` の静的なTop、Guide、LP、About、Privacy、SEO、Analytics、assetとbuild/check。
-- `yzrswork/yzrs-times`: YZRS Timesの候補収集、編集、edition生成、発行、および現行Production配信。
+- `yzrswork/yzrs-times`: YZRS Timesの候補収集、編集、edition生成、発行、delivery artifact作成、および `yzrswork-site` へのworkflow dispatch。
 - `yzrswork_apps`: 電子工作・自作PC・DIY向けのWebツール群。Siteから外部リンクで参照しますが、今回のCOPY対象でもbuild対象でもありません。
 - `obsidian-vault`: Ownerのローカル知識・制作メモ。Repositoryの公開コンテンツやProduction配信のSSoTではなく、今回のMigration対象外です。
 
@@ -43,4 +43,4 @@ Timesのデータ/content ownerは `yzrswork/yzrs-times`、TimesのUI/site owner
 - `data/times-sync-state.json` はSite管理で、同一runはNO-OP、古いdeliveryは拒否、新しいdeliveryだけを受け入れます。
 - `SITE_SYNC_ENABLED=true`です。Issue #80（2026-08-19 Midday Edition）でgenuine automatic Shadow E2Eが成功しました。
 
-Timesの生成・AI処理・scheduler・sender・Production publishingは`yzrs-times`に残ります。このreceiverはFail ClosedでSite-owned `public/data/`だけを更新します。Cloudflare操作、DNS、custom domain、deploy、Production変更は0で、`CUTOVER_READY = false`です。
+Timesの生成・AI処理・scheduler・sender・delivery artifact作成・Site dispatchは `yzrs-times` に残ります。このreceiverはFail ClosedでSite-owned `public/data/`だけを更新します。Production Site deploymentは `yzrswork-site/main` をsourceとするWorkers Buildsが担い、`CUTOVER_READY = false` はreadiness / Owner approval gateです。
