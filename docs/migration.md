@@ -1,5 +1,12 @@
 # Migration Manifest
 
+> **SUPERSEDED — 2026-08-19 Production Cutover完了**
+>
+> 本文書はShadow Migrationおよびcutover前のGate状態を記録したhistorical transition documentです。
+> 表とGate記録は履歴・証拠として保持しますが、現在のProduction authorityを判断するための現行文書ではありません。
+>
+> 現在のProduction authority: `Cloudflare Workers Builds` → `yzrswork/yzrswork-site/main` → `yzrswork.com`
+
 Production Repositoryは変更せず、以下のsourceをShadow RepositoryへCOPYまたはShadow専用に整備しました。
 
 | Source path | Destination path | Category | Reason | Migration status |

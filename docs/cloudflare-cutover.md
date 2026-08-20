@@ -1,5 +1,12 @@
 # Cloudflare Cutover Document
 
+> **SUPERSEDED — 2026-08-19 Production Cutover完了**
+>
+> 本文書はcutover前のProduction構成、Shadow構成、承認条件を記録したhistorical transition documentです。
+> 現在のProduction authorityを判断するための現行手順ではありません。歴史記録およびrollback/referenceとして保持します。
+>
+> 現在のProduction authority: `Cloudflare Workers Builds` → `yzrswork/yzrswork-site/main` → `yzrswork.com`
+
 この文書は将来のcutover手順を記録するためのものです。Shadow Migration中にCloudflare操作を実行する手順ではありません。
 
 ## 1. Current Production構成
