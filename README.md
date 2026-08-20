@@ -1,23 +1,23 @@
 # yzrswork-site
 
-`yzrswork.com` 本体サイトを管理するためのShadow Repositoryです。
+`yzrswork.com` 本体サイトのProduction sourceを管理するRepositoryです。
 
 ## Status
 
-**SHADOW / NOT PRODUCTION**
+**PRODUCTION / CURRENT**
 
-現在のProduction配信元は `yzrswork/yzrs-times` です。`yzrswork.com` のcustom domain、DNS、Route、Cloudflare設定は、このRepositoryには接続しません。
+現在のProduction sourceは `yzrswork/yzrswork-site` の `main` です。既存Worker名 `yzrs-times`、custom domain、DNS、Routeは維持し、Workers Buildsのsource repositoryのみ切り替えています。
 
 本Repositoryの目的は、Top・Guide・LP・About・Privacy・SEO・Analyticsなど、本体サイトの責務を `yzrs-times` から分離し、ローカルとCIで独立検証できる状態にすることです。
 
 ## Production safety
 
-- Productionは現在も `yzrswork/yzrs-times` が配信します。
+- Production Siteは `yzrswork/yzrswork-site` の `main` から配信されます。
 - `yzrs-times` のファイルは削除・移動せず、COPYで扱います。
 - `yzrs-times` のTimes生成、AI編集、scheduler、publish workflowは本Repositoryに移しません。
 - `public/times/` と `public/evening.html` はSite-owned UIです。Site CIでcanonical、必要なTimes data参照、戻り導線、Times UIのinline JavaScriptを検証します。
-- `wrangler.jsonc` は既存Worker `yzrs-times` のrepository-side dry-run用設定だけを含み、Cloudflare deploy script、Cloudflare deploy workflow、Secretsは含めません。
-- Cutover条件は `CUTOVER_READY = false` です。
+- `wrangler.jsonc` はrepository-side設定として保持し、通常のProduction deployはWorkers Buildsが担います。Cloudflare deploy script、Cloudflare deploy workflow、SecretsはこのRepositoryに含めません。
+- `CUTOVER_READY = false` はProduction ownershipではなく、readiness / Owner approval gateです。
 
 ## Local verification
 
@@ -45,7 +45,7 @@ git diff --check
 
 Times data/contentのownerは `yzrswork/yzrs-times`、Times UI/siteのownerは本Repositoryです。`sync-times.yml` は指定runのJSON-only artifactを受け取るSite receiverです。入力・manifest・provenance・path/type・Times snapshot・orderingをFail Closedで検証し、Siteだけが自身のmainへ直接commitします。
 
-受信に使う `TIMES_ARTIFACT_READ_TOKEN` の実値は保存しません。Cloudflare操作・deploy・Production変更は行わず、`CUTOVER_READY = false` のままです。
+受信に使う `TIMES_ARTIFACT_READ_TOKEN` の実値は保存しません。このRepositoryのworkflowはCloudflare設定を直接変更しません。Production sourceは `yzrswork/yzrswork-site/main` とし、`CUTOVER_READY = false` はreadiness / Owner approval gateとして維持します。
 
 ## Cross-repo permission model
 
@@ -57,6 +57,6 @@ Times data/contentのownerは `yzrswork/yzrs-times`、Times UI/siteのownerは�
 
 `yzrswork-site/public/data/` は、Times delivery snapshotとSite-ownedの `times-sync-state.json` 専用です。無関係なSiteアプリケーションデータを置きません。receiverは受け入れたTimes snapshotを単位として意図的に置き換えます。
 
-## Cutover rule
+## Post-cutover rule
 
-Cloudflare cutoverは別タスクです。Owner review、Times cross-repo publishing、Cloudflare変更の承認が完了するまで、custom domainを接続しないでください。
+2026-08-19にProduction sourceを `yzrswork-site` へ切替済みです。今後のProduction変更はOwner reviewと明示承認の下で行います。`yzrs-times` からSiteへの配送はartifactとworkflow dispatchを経由します。
