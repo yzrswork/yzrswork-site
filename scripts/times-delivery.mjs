@@ -367,6 +367,91 @@ export async function validateArtifact(stagingRoot) {
   return { files, manifest, latest };
 }
 
+function issuePathsFromIndex(index, displayPath) {
+  if (!isRecord(index) || !Array.isArray(index.issues)) {
+    fail(`${displayPath} must contain an issues array`);
+  }
+  const paths = new Set();
+  for (const entry of index.issues) {
+    if (!isRecord(entry) || typeof entry.path !== 'string' || !/^issues\/[^/]+\.json$/.test(entry.path)) {
+      fail(`${displayPath} contains an issue without a canonical path`);
+    }
+    paths.add(entry.path);
+  }
+  return paths;
+}
+
+async function inspectAcceptedArchive(dataRoot) {
+  let stats;
+  try {
+    stats = await lstat(dataRoot);
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      return { issuePaths: new Set(), monthIndexes: new Map(), manifestMonths: new Set() };
+    }
+    fail(`cannot inspect the accepted archive: ${error.message}`);
+  }
+  if (!stats.isDirectory()) fail('accepted public/data is not a directory');
+
+  const walked = await walkFiles(dataRoot);
+  const issuePaths = new Set();
+  const monthIndexes = new Map();
+  let manifestMonths = new Set();
+  for (const file of walked.files) {
+    const artifactPath = `data/${file.path}`;
+    if (ISSUE_PATH_PATTERN.test(artifactPath)) {
+      issuePaths.add(artifactPath);
+      continue;
+    }
+    if (MONTH_INDEX_PATH_PATTERN.test(artifactPath)) {
+      const index = await readJson(file.fullPath, `accepted ${file.path}`);
+      monthIndexes.set(artifactPath, issuePathsFromIndex(index, file.path));
+      continue;
+    }
+    if (file.path === 'index-manifest.json') {
+      const manifest = await readJson(file.fullPath, 'accepted index-manifest.json');
+      if (!isRecord(manifest) || !Array.isArray(manifest.months)) {
+        fail('index-manifest.json in the accepted archive is invalid');
+      }
+      manifestMonths = new Set(manifest.months);
+    }
+  }
+  return { issuePaths, monthIndexes, manifestMonths };
+}
+
+export async function validateNonShrinkingArchive(dataRoot, incomingFiles) {
+  const accepted = await inspectAcceptedArchive(dataRoot);
+  const incomingByPath = new Map(incomingFiles.map((file) => [file.path, file]));
+  const incomingPaths = new Set(incomingByPath.keys());
+
+  for (const issuePath of accepted.issuePaths) {
+    if (!incomingPaths.has(issuePath)) {
+      fail(`incoming delivery removes previously accepted issue file: ${issuePath.slice('data/'.length)}`);
+    }
+  }
+
+  for (const [indexPath, acceptedIssuePaths] of accepted.monthIndexes) {
+    const incomingIndex = incomingByPath.get(indexPath);
+    if (!incomingIndex) {
+      fail(`incoming delivery removes previously accepted month index: ${indexPath.slice('data/'.length)}`);
+    }
+    const incomingIssuePaths = issuePathsFromIndex(incomingIndex.value, indexPath.slice('data/'.length));
+    for (const issuePath of acceptedIssuePaths) {
+      if (!incomingIssuePaths.has(issuePath)) {
+        fail(`incoming delivery removes previously accepted issue from ${indexPath.slice('data/'.length)}: ${issuePath}`);
+      }
+    }
+  }
+
+  const incomingManifest = incomingByPath.get('data/index-manifest.json')?.value;
+  const incomingMonths = new Set(Array.isArray(incomingManifest?.months) ? incomingManifest.months : []);
+  for (const month of accepted.manifestMonths) {
+    if (!incomingMonths.has(month)) {
+      fail(`incoming delivery removes previously accepted month from index-manifest.json: ${String(month)}`);
+    }
+  }
+}
+
 export function normalizeState(raw) {
   if (!isRecord(raw)) fail('times-sync-state.json must contain a JSON object');
   if (raw.schemaVersion !== undefined && raw.schemaVersion !== DELIVERY_SCHEMA_VERSION) {
@@ -421,6 +506,9 @@ export async function validateStaging(stagingRoot, inputs, statePath) {
   validateInputs(manifest, inputs);
   const state = await readState(statePath);
   const decision = classifyDelivery(manifest, state);
+  if (decision.status === 'ACCEPT') {
+    await validateNonShrinkingArchive(dirname(statePath), files);
+  }
   return { files, manifest, state, ...decision };
 }
 

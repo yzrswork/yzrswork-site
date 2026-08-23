@@ -6,6 +6,7 @@ import { test } from 'node:test';
 
 import {
   classifyDelivery,
+  digestDirectory,
   installDelivery,
   validateStaging,
   verifySourceRunProvenance,
@@ -15,6 +16,7 @@ const SOURCE_SHA = '0123456789abcdef0123456789abcdef01234567';
 const RUN_HEAD_SHA = 'fedcba9876543210fedcba9876543210fedcba98';
 const OTHER_SHA = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
 const PUBLISHED_AT = '2026-08-17T08:00:00.000Z';
+const NEXT_PUBLISHED_AT = '2026-08-18T08:00:00.000Z';
 
 async function writeJson(root, path, value) {
   const file = join(root, path);
@@ -27,15 +29,17 @@ async function makeArtifact({
   sha = SOURCE_SHA,
   publishedAt = PUBLISHED_AT,
   edition = 'morning',
+  issues,
 } = {}) {
   const root = await mkdtemp(join(tmpdir(), 'times-artifact-'));
-  const latest = {
+  const issueList = issues ?? [{
     schemaVersion: 1,
     issueNo: 1,
     edition,
     date: '2026-08-17',
     generatedAt: publishedAt,
-  };
+  }];
+  const latest = issueList.at(-1);
   await writeJson(root, 'delivery-manifest.json', {
     schemaVersion: 1,
     sourceRepository: 'yzrswork/yzrs-times',
@@ -46,13 +50,29 @@ async function makeArtifact({
   });
   await writeJson(root, 'data/latest.json', latest);
   await writeJson(root, 'data/graph.json', { schemaVersion: 2, issues: [], articles: [] });
-  await writeJson(root, 'data/index-manifest.json', { schemaVersion: 1, months: ['2026-08'] });
-  await writeJson(root, 'data/issues-index-2026-08.json', {
+  const byMonth = new Map();
+  for (const issue of issueList) {
+    const month = issue.date.slice(0, 7);
+    if (!byMonth.has(month)) byMonth.set(month, []);
+    byMonth.get(month).push({
+      issueNo: issue.issueNo,
+      date: issue.date,
+      edition: issue.edition,
+      path: `issues/${issue.date}-${issue.edition}.json`,
+    });
+    await writeJson(root, `data/issues/${issue.date}-${issue.edition}.json`, issue);
+  }
+  await writeJson(root, 'data/index-manifest.json', {
     schemaVersion: 1,
-    month: '2026-08',
-    issues: [{ issueNo: 1, date: latest.date, edition, path: `issues/${latest.date}-${edition}.json` }],
+    months: [...byMonth.keys()].sort(),
   });
-  await writeJson(root, `data/issues/${latest.date}-${edition}.json`, latest);
+  for (const [month, monthIssues] of byMonth) {
+    await writeJson(root, `data/issues-index-${month}.json`, {
+      schemaVersion: 1,
+      month,
+      issues: monthIssues,
+    });
+  }
   return root;
 }
 
@@ -62,12 +82,42 @@ async function makeState(root, state) {
   return path;
 }
 
-const inputsFor = (runId = '100', sha = SOURCE_SHA, edition = '') => ({
+const inputsFor = (runId = '100', sha = SOURCE_SHA, edition = '', publishedAt = PUBLISHED_AT) => ({
   sourceRunId: runId,
   sourceSha: sha,
   edition,
-  publishedAt: edition ? PUBLISHED_AT : '',
+  publishedAt: edition ? publishedAt : '',
 });
+
+function archiveIssues(dates, latestGeneratedAt) {
+  return dates.map((date, index) => ({
+    schemaVersion: 1,
+    issueNo: index + 1,
+    edition: 'morning',
+    date,
+    generatedAt: index === dates.length - 1
+      ? latestGeneratedAt
+      : `${date}T08:00:00.000Z`,
+  }));
+}
+
+async function installAcceptedArchive(dates, publishedAt = PUBLISHED_AT) {
+  const artifact = await makeArtifact({
+    runId: '90',
+    publishedAt,
+    issues: archiveIssues(dates, publishedAt),
+  });
+  const siteRoot = await mkdtemp(join(tmpdir(), 'times-site-'));
+  const destination = join(siteRoot, 'public', 'data');
+  const statePath = join(destination, 'times-sync-state.json');
+  await installDelivery(
+    artifact,
+    inputsFor('90', SOURCE_SHA, 'morning', publishedAt),
+    destination,
+    statePath,
+  );
+  return { destination, statePath };
+}
 
 function sourceRun(overrides = {}) {
   return {
@@ -309,4 +359,139 @@ test('P: publication commit parent mismatch is rejected', () => {
     sourceSha: SOURCE_SHA,
     edition: 'morning',
   }), /not created from the source run head/);
+});
+
+test('Q: append-only archive transition is accepted', async () => {
+  const currentDates = ['2026-08-14', '2026-08-15', '2026-08-16'];
+  const { statePath } = await installAcceptedArchive(currentDates);
+  const incoming = await makeArtifact({
+    runId: '100',
+    sha: OTHER_SHA,
+    publishedAt: NEXT_PUBLISHED_AT,
+    issues: archiveIssues([...currentDates, '2026-08-17'], NEXT_PUBLISHED_AT),
+  });
+
+  const result = await validateStaging(
+    incoming,
+    inputsFor('100', OTHER_SHA, 'morning', NEXT_PUBLISHED_AT),
+    statePath,
+  );
+  assert.equal(result.status, 'ACCEPT');
+});
+
+test('R: identical archive set is accepted for a newer valid delivery', async () => {
+  const currentDates = ['2026-08-14', '2026-08-15', '2026-08-16'];
+  const { statePath } = await installAcceptedArchive(currentDates);
+  const incoming = await makeArtifact({
+    runId: '100',
+    sha: OTHER_SHA,
+    publishedAt: NEXT_PUBLISHED_AT,
+    issues: archiveIssues(currentDates, NEXT_PUBLISHED_AT),
+  });
+
+  const result = await validateStaging(
+    incoming,
+    inputsFor('100', OTHER_SHA, 'morning', NEXT_PUBLISHED_AT),
+    statePath,
+  );
+  assert.equal(result.status, 'ACCEPT');
+});
+
+test('S: historical issue removal is rejected without changing accepted data', async () => {
+  const currentDates = ['2026-08-14', '2026-08-15', '2026-08-16'];
+  const { destination, statePath } = await installAcceptedArchive(currentDates);
+  const incoming = await makeArtifact({
+    runId: '100',
+    sha: OTHER_SHA,
+    publishedAt: NEXT_PUBLISHED_AT,
+    issues: archiveIssues(currentDates.slice(1), NEXT_PUBLISHED_AT),
+  });
+  const before = await digestDirectory(destination);
+
+  await assert.rejects(
+    installDelivery(
+      incoming,
+      inputsFor('100', OTHER_SHA, 'morning', NEXT_PUBLISHED_AT),
+      destination,
+      statePath,
+    ),
+    /removes previously accepted issue file: issues\/2026-08-14-morning\.json/,
+  );
+  assert.equal(await digestDirectory(destination), before);
+});
+
+test('T: deletion from the middle of accepted history is rejected', async () => {
+  const currentDates = ['2026-08-14', '2026-08-15', '2026-08-16', '2026-08-17'];
+  const { statePath } = await installAcceptedArchive(currentDates);
+  const incomingDates = ['2026-08-14', '2026-08-15', '2026-08-17'];
+  const incoming = await makeArtifact({
+    runId: '100',
+    sha: OTHER_SHA,
+    publishedAt: NEXT_PUBLISHED_AT,
+    issues: archiveIssues(incomingDates, NEXT_PUBLISHED_AT),
+  });
+
+  await assert.rejects(
+    validateStaging(
+      incoming,
+      inputsFor('100', OTHER_SHA, 'morning', NEXT_PUBLISHED_AT),
+      statePath,
+    ),
+    /removes previously accepted issue file: issues\/2026-08-16-morning\.json/,
+  );
+});
+
+test('U: a month index cannot silently drop an accepted historical issue', async () => {
+  const currentDates = ['2026-08-14', '2026-08-15', '2026-08-16'];
+  const { statePath } = await installAcceptedArchive(currentDates);
+  const incomingIssues = archiveIssues(currentDates, NEXT_PUBLISHED_AT);
+  const incoming = await makeArtifact({
+    runId: '100',
+    sha: OTHER_SHA,
+    publishedAt: NEXT_PUBLISHED_AT,
+    issues: incomingIssues,
+  });
+  await writeJson(incoming, 'data/issues-index-2026-08.json', {
+    schemaVersion: 1,
+    month: '2026-08',
+    issues: [incomingIssues[0], incomingIssues[2]].map((issue) => ({
+      issueNo: issue.issueNo,
+      date: issue.date,
+      edition: issue.edition,
+      path: `issues/${issue.date}-${issue.edition}.json`,
+    })),
+  });
+
+  await assert.rejects(
+    validateStaging(
+      incoming,
+      inputsFor('100', OTHER_SHA, 'morning', NEXT_PUBLISHED_AT),
+      statePath,
+    ),
+    /removes previously accepted issue from issues-index-2026-08\.json: issues\/2026-08-15-morning\.json/,
+  );
+});
+
+test('V: index manifest cannot silently hide a previously accepted month', async () => {
+  const currentDates = ['2026-07-31', '2026-08-01'];
+  const { statePath } = await installAcceptedArchive(currentDates);
+  const incoming = await makeArtifact({
+    runId: '100',
+    sha: OTHER_SHA,
+    publishedAt: NEXT_PUBLISHED_AT,
+    issues: archiveIssues(currentDates, NEXT_PUBLISHED_AT),
+  });
+  await writeJson(incoming, 'data/index-manifest.json', {
+    schemaVersion: 1,
+    months: ['2026-08'],
+  });
+
+  await assert.rejects(
+    validateStaging(
+      incoming,
+      inputsFor('100', OTHER_SHA, 'morning', NEXT_PUBLISHED_AT),
+      statePath,
+    ),
+    /removes previously accepted month from index-manifest\.json: 2026-07/,
+  );
 });
