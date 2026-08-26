@@ -3,6 +3,8 @@
 
   const app = document.getElementById('app');
   const camera = document.getElementById('camera');
+  const linkLayer = document.getElementById('linkLayer');
+  const signalLost = document.getElementById('signalLost');
   const entryPanel = document.getElementById('entryPanel');
   const activeHeader = document.getElementById('activeHeader');
   const activePanel = document.getElementById('activePanel');
@@ -17,6 +19,7 @@
 
   let stream = null;
   let currentState = 'ready';
+  let lostTimer = null;
   const cameraSupported = Boolean(navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
 
   const stateCopy = {
@@ -45,24 +48,39 @@
       message: 'ERROR / MAINTENANCE DATA ONLY',
       detail: 'Live camera is unavailable. The system snapshot remains available on this screen.',
     },
+    lost: {
+      badge: 'LOST',
+      message: 'SIGNAL LOST',
+      detail: 'The local link closed. Reopen the camera to continue.',
+    },
   };
 
   function setState(nextState, detail = null) {
     currentState = nextState;
     const copy = stateCopy[nextState] || stateCopy.error;
+    const isActive = nextState === 'active';
     app.dataset.state = nextState;
     entryStateBadge.textContent = copy.badge;
     activeStateBadge.textContent = copy.badge;
     stateMessage.textContent = copy.message;
     stateDetail.textContent = detail ?? copy.detail;
-    entryPanel.hidden = nextState === 'active';
-    activeHeader.hidden = nextState !== 'active';
-    activePanel.hidden = nextState !== 'active';
+    entryPanel.hidden = isActive || nextState === 'lost';
+    activeHeader.hidden = !isActive;
+    activePanel.hidden = !isActive;
+    linkLayer.hidden = !isActive;
+    signalLost.hidden = nextState !== 'lost';
     startButton.disabled = nextState === 'requesting' || !cameraSupported;
 
     if (nextState === 'ready') startButton.textContent = 'CAMERA START';
     if (nextState === 'requesting') startButton.textContent = 'REQUESTING…';
     if (nextState === 'denied' || nextState === 'error') startButton.textContent = cameraSupported ? 'TRY CAMERA AGAIN' : 'CAMERA UNAVAILABLE';
+  }
+
+  function clearLostTimer() {
+    if (lostTimer) {
+      window.clearTimeout(lostTimer);
+      lostTimer = null;
+    }
   }
 
   function stopCameraTracks() {
@@ -88,8 +106,20 @@
     };
   }
 
+  function showSignalLost() {
+    if (currentState !== 'active') return;
+    setState('lost');
+    stopCameraTracks();
+    clearLostTimer();
+    lostTimer = window.setTimeout(() => {
+      if (currentState === 'lost') setState('ready');
+    }, 1700);
+  }
+
   async function startCamera() {
     if (currentState === 'requesting' || currentState === 'active') return;
+
+    clearLostTimer();
 
     if (!cameraSupported) {
       setState('error', 'This browser does not provide camera access. The system snapshot remains available on this screen.');
@@ -122,12 +152,11 @@
   }
 
   function handleCameraEnded() {
-    if (currentState !== 'active') return;
-    stopCameraTracks();
-    setState('error', 'The camera ended unexpectedly. The system snapshot remains available on this screen.');
+    showSignalLost();
   }
 
   function exitCamera() {
+    clearLostTimer();
     stopCameraTracks();
     setState('ready');
   }
@@ -149,11 +178,11 @@
   tabs.forEach((tab) => tab.addEventListener('click', () => selectMode(tab.dataset.mode)));
 
   document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'hidden' && currentState === 'active') exitCamera();
+    if (document.visibilityState === 'hidden' && currentState === 'active') showSignalLost();
   });
   window.addEventListener('pagehide', () => {
+    clearLostTimer();
     stopCameraTracks();
-    if (currentState === 'active') setState('ready');
   });
 
   selectMode('system');
