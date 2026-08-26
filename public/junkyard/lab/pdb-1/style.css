@@ -58,9 +58,7 @@ button:focus-visible {
 
 .camera-stage,
 .camera-stage video,
-.standby-surface,
-.screen-vignette,
-.inspection-frame {
+.standby-surface {
   position: absolute;
   inset: 0;
 }
@@ -134,76 +132,6 @@ button:focus-visible {
 .standby-mark strong {
   font: 700 clamp(52px, 17vw, 86px)/0.95 var(--mono);
   letter-spacing: -0.09em;
-}
-
-.inspection-frame {
-  z-index: 2;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 180ms ease;
-}
-
-.terminal[data-state="active"] .inspection-frame {
-  opacity: 0.86;
-}
-
-.frame-corner {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border-color: rgba(255, 253, 247, 0.86);
-  border-style: solid;
-}
-
-.corner-top-left {
-  top: 22%;
-  left: 9%;
-  border-width: 1px 0 0 1px;
-}
-
-.corner-top-right {
-  top: 22%;
-  right: 9%;
-  border-width: 1px 1px 0 0;
-}
-
-.corner-bottom-left {
-  bottom: 42%;
-  left: 9%;
-  border-width: 0 0 1px 1px;
-}
-
-.corner-bottom-right {
-  right: 9%;
-  bottom: 42%;
-  border-width: 0 1px 1px 0;
-}
-
-.frame-crosshair {
-  position: absolute;
-  top: 38%;
-  left: 50%;
-  display: block;
-  background: rgba(255, 253, 247, 0.25);
-  transform: translate(-50%, -50%);
-}
-
-.frame-crosshair-horizontal {
-  width: 44px;
-  height: 1px;
-}
-
-.frame-crosshair-vertical {
-  width: 1px;
-  height: 44px;
-}
-
-.screen-vignette {
-  z-index: 1;
-  pointer-events: none;
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.34), transparent 25%, transparent 58%, rgba(0, 0, 0, 0.44)),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.25), transparent 26%, transparent 74%, rgba(0, 0, 0, 0.25));
 }
 
 .camera-note {
