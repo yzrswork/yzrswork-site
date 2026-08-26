@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>PDB-1 Access Terminal | JUNK YARD 2026</title>
   <meta name="description" content="A local camera maintenance view for the PDB-1 artwork at JUNK YARD 2026." />
-  <meta name="theme-color" content="#101211" />
+  <meta name="theme-color" content="#050b07" />
   <link rel="canonical" href="https://yzrswork.com/junkyard/lab/pdb-1/" />
   <link rel="stylesheet" href="./style.css" />
   <script defer src="./app.js"></script>
@@ -25,33 +25,59 @@
       <div class="standby-surface" aria-hidden="true">
         <div class="standby-grid"></div>
         <div class="standby-mark">
-          <span>JUNK YARD / FIELD ACCESS</span>
+          <span>YZRS // FIELD COMMS</span>
           <strong>PDB-1</strong>
-          <small>CAMERA STANDBY</small>
+          <small>CAMERA STANDBY / LOCAL CHANNEL</small>
+        </div>
+      </div>
+
+      <div class="link-layer" id="linkLayer" aria-hidden="true" hidden>
+        <div class="asset-frame">
+          <i class="frame-corner frame-corner-tl"></i>
+          <i class="frame-corner frame-corner-tr"></i>
+          <i class="frame-corner frame-corner-bl"></i>
+          <i class="frame-corner frame-corner-br"></i>
+        </div>
+
+        <div class="callout callout-mo">
+          <span class="callout-label">MO-1</span>
+        </div>
+        <div class="callout callout-im">
+          <span class="callout-label">IM-1</span>
+        </div>
+        <div class="callout callout-volt">
+          <span class="callout-label">volt-1</span>
         </div>
       </div>
 
       <p class="camera-note" id="cameraNote">LIVE CAMERA / LOCAL ONLY</p>
+      <div class="signal-lost" id="signalLost" role="status" aria-live="polite" hidden>
+        <span>SIGNAL LOST</span>
+        <small>LINK CLOSED</small>
+      </div>
     </section>
 
     <header class="top-header" id="activeHeader" hidden>
       <div>
-        <p class="header-brand">YZRS JUNK YARD</p>
-        <p class="header-title">PDB-1 / MAINTENANCE VIEW</p>
+        <p class="header-brand">YZRS // FIELD COMMS</p>
+        <p class="header-title">PDB-1 / LINK CHANNEL</p>
       </div>
-      <span class="state-badge" id="activeStateBadge">ACTIVE</span>
+      <div class="header-status">
+        <span class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="state-badge" id="activeStateBadge">ACTIVE</span>
+      </div>
     </header>
 
     <section class="entry-panel" id="entryPanel" aria-labelledby="entryTitle">
       <div class="panel-strip">
-        <span>YZRS JUNK YARD</span>
+        <span>FIELD ACCESS / 01</span>
         <span id="entryStateBadge">READY</span>
       </div>
 
       <div class="entry-body">
-        <p class="eyebrow">SALVAGE / MAINTENANCE ACCESS</p>
-        <h1 id="entryTitle">PDB-1 ACCESS TERMINAL</h1>
-        <p class="entry-lead">Open a local service view while looking at the PDB-1 artwork.</p>
+        <p class="eyebrow">SALVAGE / COMMS LINK</p>
+        <h1 id="entryTitle">PDB-1</h1>
+        <p class="entry-lead">Open a local support channel while looking at the physical unit.</p>
 
         <dl class="asset-facts">
           <div>
@@ -59,7 +85,7 @@
             <dd>PDB-1</dd>
           </div>
           <div>
-            <dt>SYSTEM</dt>
+            <dt>BUS</dt>
             <dd>5V MAIN</dd>
           </div>
           <div>
@@ -72,18 +98,7 @@
           </div>
         </dl>
 
-        <div class="entry-system" aria-label="PDB-1 downstream nodes">
-          <div class="entry-system-heading">
-            <span>5V MAIN DISTRIBUTION</span>
-            <span>DOWNSTREAM</span>
-          </div>
-          <ul class="mini-node-list">
-            <li><span>01</span><strong>MO-1</strong></li>
-            <li><span>02</span><strong>IM-1</strong></li>
-            <li><span>03</span><strong>volt-1</strong></li>
-          </ul>
-        </div>
-
+        <p class="route-line"><span>DOWNSTREAM</span> MO-1 / IM-1 / volt-1</p>
         <p class="state-message" id="stateMessage" role="status" aria-live="polite">READY / CAMERA STANDBY</p>
         <p class="state-detail" id="stateDetail">Tap CAMERA START to request the rear camera.</p>
 
@@ -93,16 +108,36 @@
       </div>
     </section>
 
-    <section class="active-panel" id="activePanel" aria-label="PDB-1 maintenance information" hidden>
+    <section class="active-panel" id="activePanel" aria-label="PDB-1 communications panel" hidden>
       <div class="active-panel-header">
         <div>
-          <p class="panel-kicker">ASSET / PDB-1</p>
-          <h1>PDB-1 / MAINTENANCE VIEW</h1>
+          <p class="panel-kicker">INCOMING OBJECT / PDB-1</p>
+          <h1>PDB-1 IDENTIFIED</h1>
         </div>
-        <button class="exit-button" id="exitButton" type="button">EXIT CAMERA</button>
+        <span class="link-state"><i aria-hidden="true"></i>LINK ESTABLISHED</span>
       </div>
 
-      <div class="mode-tabs" role="tablist" aria-label="Maintenance information modes">
+      <div class="signal-rule" aria-hidden="true">
+        <span>CHANNEL 05</span>
+        <i class="waveform"><b></b><b></b><b></b><b></b><b></b><b></b><b></b></i>
+      </div>
+
+      <div class="readout-grid">
+        <div><span>ASSET</span><strong>PDB-1</strong></div>
+        <div><span>BUS</span><strong>5V MAIN</strong></div>
+        <div><span>INPUT</span><strong>DC 5V</strong></div>
+        <div><span>SIGNAL</span><strong>ACTIVE</strong></div>
+      </div>
+
+      <div class="link-route" aria-label="PDB-1 downstream nodes">
+        <span class="route-root">5V MAIN</span>
+        <span class="route-arrow" aria-hidden="true">→</span>
+        <span class="route-node">MO-1</span>
+        <span class="route-node">IM-1</span>
+        <span class="route-node">volt-1</span>
+      </div>
+
+      <div class="mode-tabs" role="tablist" aria-label="Communications information modes">
         <button class="mode-tab is-active" id="tab-system" type="button" role="tab" aria-selected="true" aria-controls="panel-system" data-mode="system">SYSTEM</button>
         <button class="mode-tab" id="tab-outputs" type="button" role="tab" aria-selected="false" aria-controls="panel-outputs" data-mode="outputs">OUTPUTS</button>
         <button class="mode-tab" id="tab-info" type="button" role="tab" aria-selected="false" aria-controls="panel-info" data-mode="info">INFO</button>
@@ -110,46 +145,27 @@
 
       <div class="tab-content">
         <section class="tab-panel" id="panel-system" role="tabpanel" aria-labelledby="tab-system" data-panel="system">
-          <div class="readout-grid">
-            <div><span>ASSET</span><strong>PDB-1</strong></div>
-            <div><span>BUS</span><strong>5V MAIN</strong></div>
-            <div><span>INPUT</span><strong>DC 5V</strong></div>
-            <div><span>POLARITY</span><strong>CENTER POSITIVE</strong></div>
-          </div>
-
-          <div class="system-map" aria-label="PDB-1 branches to MO-1, IM-1, and volt-1">
-            <div class="map-root">
-              <span>ASSET</span>
-              <strong>PDB-1</strong>
-              <small>5V MAIN DISTRIBUTION</small>
-            </div>
-            <div class="map-rail" aria-hidden="true"></div>
-            <div class="map-nodes" role="list">
-              <div class="map-node" role="listitem"><span>01</span><strong>MO-1</strong><small>PDB-1 OUTPUT</small></div>
-              <div class="map-node" role="listitem"><span>02</span><strong>IM-1</strong><small>PDB-1 OUTPUT</small></div>
-              <div class="map-node" role="listitem"><span>03</span><strong>volt-1</strong><small>PDB-1 OUTPUT</small></div>
-            </div>
+          <div class="compact-list">
+            <p><span>POLARITY</span><strong>CENTER POSITIVE</strong></p>
+            <p><span>STATUS</span><strong>LINKED / LOCAL</strong></p>
           </div>
         </section>
 
         <section class="tab-panel" id="panel-outputs" role="tabpanel" aria-labelledby="tab-outputs" data-panel="outputs" hidden>
           <ul class="output-list">
-            <li><span class="output-index">01</span><div><strong>MO-1</strong><small>DOWNSTREAM NODE</small></div><span class="output-tag">5V MAIN</span></li>
-            <li><span class="output-index">02</span><div><strong>IM-1</strong><small>DOWNSTREAM NODE</small></div><span class="output-tag">5V MAIN</span></li>
-            <li><span class="output-index">03</span><div><strong>volt-1</strong><small>DOWNSTREAM NODE</small></div><span class="output-tag">5V MAIN</span></li>
+            <li><span>01</span><strong>MO-1</strong><small>5V MAIN</small></li>
+            <li><span>02</span><strong>IM-1</strong><small>5V MAIN</small></li>
+            <li><span>03</span><strong>volt-1</strong><small>5V MAIN</small></li>
           </ul>
         </section>
 
         <section class="tab-panel info-panel" id="panel-info" role="tabpanel" aria-labelledby="tab-info" data-panel="info" hidden>
-          <div class="info-grid">
-            <div><span>VIEW TYPE</span><strong>FIXED OVERLAY</strong></div>
-            <div><span>DATA PATH</span><strong>LOCAL ONLY</strong></div>
-            <div><span>TRACKING</span><strong>NOT USED</strong></div>
-          </div>
-          <p>Point the iPhone at the physical PDB-1 artwork. This maintenance view keeps the center clear so the object remains visible.</p>
-          <p class="info-note">No video is uploaded, recorded, photographed, or stored by this page.</p>
+          <p>Local camera view. No upload, recording, photo capture, or storage.</p>
+          <p class="info-note">PSEUDO-AR / NO LIVE OBJECT TRACKING</p>
         </section>
       </div>
+
+      <button class="exit-button" id="exitButton" type="button">END LINK / EXIT CAMERA</button>
     </section>
   </main>
 </body>
