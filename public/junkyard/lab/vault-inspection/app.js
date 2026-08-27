@@ -132,6 +132,7 @@
   const restartButton = document.getElementById('restartButton');
   const progressDock = document.getElementById('progressDock');
   const continueButton = document.getElementById('continueButton');
+  const traversalButton = document.getElementById('traversalButton');
   const sectorCount = document.getElementById('sectorCount');
   const sectorCode = document.getElementById('sectorCode');
   const sectorTitle = document.getElementById('sectorTitle');
@@ -155,6 +156,7 @@
   let sectorIndex = 0;
   let score = 0;
   let inputLocked = false;
+  let traversalReady = false;
   let session = 0;
   let timers = [];
 
@@ -172,11 +174,26 @@
     timers = [];
   }
 
+  function setTraversalReady(ready) {
+    traversalReady = ready;
+    vault.dataset.traversalReady = String(ready);
+    const available = ready && phase === 'traversing';
+    traversalButton.hidden = !available;
+    traversalButton.disabled = !available;
+    if (available) inputLocked = false;
+  }
+
   function setPhase(nextPhase) {
     phase = nextPhase;
     vault.dataset.phase = nextPhase;
     document.body.classList.toggle('vault-traversing', nextPhase === 'traversing');
     progressDock.hidden = nextPhase !== 'answered';
+    if (nextPhase !== 'traversing') {
+      setTraversalReady(false);
+    } else {
+      traversalButton.hidden = !traversalReady;
+      traversalButton.disabled = !traversalReady;
+    }
   }
 
   function showOnly(panel) {
@@ -218,6 +235,7 @@
   function renderSector() {
     const sector = sectors[sectorIndex];
     setPhase('question');
+    setTraversalReady(false);
     inputLocked = false;
     vault.dataset.sector = String(sectorIndex + 1);
     vault.dataset.traversal = 'none';
@@ -263,6 +281,7 @@
     vaultNote.textContent = sector.vaultNote;
     continueButton.textContent = sectorIndex === sectors.length - 1 ? '最深部へ' : '次の区画へ';
     feedback.hidden = false;
+    revealPanelOnMobile(feedback);
     inputLocked = false;
   }
 
@@ -273,21 +292,29 @@
     const currentSession = session;
 
     setPhase('traversing');
+    setTraversalReady(false);
     vault.dataset.traversal = sector.traversal;
     setTraversalDestination(sectorIndex + 1);
     traversalLabel.textContent = sector.traversalLabel;
+    traversalButton.textContent = sectorIndex === sectors.length - 1 ? '点検を完了する' : '区画へ進む';
     continueButton.disabled = true;
 
     schedule(() => {
-      continueButton.disabled = false;
-      if (sectorIndex < sectors.length - 1) {
-        sectorIndex += 1;
-        renderSector();
-        revealPanelOnMobile(questionPanel);
-      } else {
-        showResult();
-      }
+      setTraversalReady(true);
     }, TRAVERSAL_MS, currentSession);
+  }
+
+  function advanceAfterTraversal() {
+    if (phase !== 'traversing' || !traversalReady || inputLocked) return;
+    inputLocked = true;
+    setTraversalReady(false);
+    if (sectorIndex < sectors.length - 1) {
+      sectorIndex += 1;
+      renderSector();
+      revealPanelOnMobile(questionPanel);
+    } else {
+      showResult();
+    }
   }
 
   function showResult() {
@@ -306,6 +333,7 @@
     inputLocked = true;
     session += 1;
     clearTimers();
+    setTraversalReady(false);
     score = 0;
     sectorIndex = 0;
     vault.dataset.sector = '0';
@@ -324,6 +352,7 @@
   startButton.addEventListener('click', startGame);
   answerButtons.forEach((button) => button.addEventListener('click', answerQuestion));
   continueButton.addEventListener('click', continueDeeper);
+  traversalButton.addEventListener('click', advanceAfterTraversal);
   restartButton.addEventListener('click', restartGame);
 
   document.addEventListener('visibilitychange', () => {

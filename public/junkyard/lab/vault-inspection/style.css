@@ -531,6 +531,31 @@ body.vault-traversing {
 .traversal-readout span { color: var(--cyan); font-size: 9px; }
 .traversal-readout strong { font-size: 13px; }
 
+.traversal-button {
+  position: absolute;
+  z-index: 35;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  left: max(16px, env(safe-area-inset-left));
+  width: auto;
+  max-width: 680px;
+  min-height: 64px;
+  margin: 0 auto;
+  padding: 15px 18px;
+  border: 2px solid var(--navy-950);
+  background: var(--paper);
+  color: var(--navy-950);
+  box-shadow: 5px 5px 0 var(--sector-accent);
+  font-size: clamp(16px, 4.5vw, 19px);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.traversal-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 var(--sector-accent);
+}
+
 .console {
   position: relative;
   z-index: 40;
@@ -847,6 +872,20 @@ body.vault-traversing {
 
 .vault[data-phase="traversing"] .traversal-readout {
   position: fixed;
+}
+
+.vault[data-phase="traversing"][data-traversal-ready="true"] .traversal-readout {
+  animation: none;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.vault[data-phase="traversing"][data-traversal-ready="true"] .world-status {
+  bottom: calc(96px + env(safe-area-inset-bottom));
+}
+
+.vault[data-phase="traversing"][data-traversal-ready="true"][data-traversal="lights"] .service-lights i {
+  animation-play-state: paused;
 }
 
 .vault[data-phase="traversing"][data-traversal="door"] .door { opacity: 1; }
