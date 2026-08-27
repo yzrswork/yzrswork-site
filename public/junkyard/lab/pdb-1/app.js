@@ -10,6 +10,7 @@
   const activeHeader = document.getElementById('activeHeader');
   const activeHeaderTitle = document.getElementById('activeHeaderTitle');
   const activePanel = document.getElementById('activePanel');
+  const activeLinkState = document.getElementById('activeLinkState');
   const activeStateBadge = document.getElementById('activeStateBadge');
   const entryStateBadge = document.getElementById('entryStateBadge');
   const stateMessage = document.getElementById('stateMessage');
@@ -22,8 +23,14 @@
   const targetSource = './pdb-1-target.mind';
   const mindarSource = 'https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-three.prod.js';
   const css3dSource = 'three/addons/renderers/CSS3DRenderer.js';
+  const LINK_HOLD_MS = 6500;
+  const TARGET_ACQUIRED_MS = 480;
+  const CAMERA_STATES = new Set(['scanning', 'acquired', 'active', 'hold', 'lost']);
+  const LINKED_STATES = new Set(['acquired', 'active', 'hold']);
 
   let currentState = 'ready';
+  let acquisitionTimer = null;
+  let holdTimer = null;
   let lostTimer = null;
   let sessionId = 0;
   let isStopping = false;
@@ -48,10 +55,20 @@
       message: 'SCANNING / AWAITING PDB-1',
       detail: 'Point the rear camera at PDB-1 to establish a link.',
     },
+    acquired: {
+      badge: 'ACQUIRED',
+      message: 'TARGET ACQUIRED',
+      detail: 'PDB-1 image registered. Opening the link channel.',
+    },
     active: {
       badge: 'ACTIVE',
       message: 'ACTIVE / PDB-1 LINKED',
       detail: '',
+    },
+    hold: {
+      badge: 'HOLD',
+      message: 'LINK HOLD / REACQUIRE',
+      detail: 'Target signal paused. Screen link held briefly.',
     },
     denied: {
       badge: 'DENIED',
@@ -78,17 +95,40 @@
   function setState(nextState, detail = null) {
     currentState = nextState;
     const copy = stateCopy[nextState] || stateCopy.error;
-    const isLinked = nextState === 'active';
-    const isCameraSession = ['scanning', 'active', 'lost'].includes(nextState);
+    const isLinked = LINKED_STATES.has(nextState);
+    const hasTrackedGeometry = nextState === 'acquired' || nextState === 'active';
+    const isCameraSession = CAMERA_STATES.has(nextState);
     const showEntry = ['ready', 'requesting', 'denied', 'error'].includes(nextState);
+    const headerTitle = nextState === 'acquired'
+      ? 'PDB-1 / TARGET ACQUIRED'
+      : nextState === 'hold'
+        ? 'PDB-1 / LINK HOLD'
+        : isLinked
+          ? 'PDB-1 / LINK CHANNEL'
+          : 'PDB-1 / IMAGE SEARCH';
+    const cameraStatus = nextState === 'acquired'
+      ? 'LIVE CAMERA / TARGET ACQUIRED'
+      : nextState === 'hold'
+        ? 'LIVE CAMERA / LINK HOLD'
+        : nextState === 'lost'
+          ? 'LIVE CAMERA / SIGNAL LOST'
+          : isLinked
+            ? 'LIVE CAMERA / LINKED'
+            : 'LIVE CAMERA / SCANNING';
+    const linkStatus = nextState === 'acquired'
+      ? 'TARGET ACQUIRED'
+      : nextState === 'hold'
+        ? 'LINK HOLD'
+        : 'LINK ESTABLISHED';
 
     app.dataset.state = nextState;
     entryStateBadge.textContent = copy.badge;
     activeStateBadge.textContent = copy.badge;
     stateMessage.textContent = copy.message;
     stateDetail.textContent = detail ?? copy.detail;
-    activeHeaderTitle.textContent = isLinked ? 'PDB-1 / LINK CHANNEL' : 'PDB-1 / IMAGE SEARCH';
-    cameraNote.textContent = isLinked ? 'LIVE CAMERA / LINKED' : 'LIVE CAMERA / SCANNING';
+    activeHeaderTitle.textContent = headerTitle;
+    activeLinkState.textContent = linkStatus;
+    cameraNote.textContent = cameraStatus;
 
     entryPanel.hidden = !showEntry;
     activeHeader.hidden = !isCameraSession;
@@ -103,7 +143,21 @@
       startButton.textContent = cameraSupported ? 'TRY CAMERA AGAIN' : 'CAMERA UNAVAILABLE';
     }
 
-    if (!isLinked) setTrackedOverlayVisible(false);
+    setTrackedOverlayVisible(hasTrackedGeometry);
+  }
+
+  function clearAcquisitionTimer() {
+    if (acquisitionTimer) {
+      window.clearTimeout(acquisitionTimer);
+      acquisitionTimer = null;
+    }
+  }
+
+  function clearHoldTimer() {
+    if (holdTimer) {
+      window.clearTimeout(holdTimer);
+      holdTimer = null;
+    }
   }
 
   function clearLostTimer() {
@@ -111,6 +165,12 @@
       window.clearTimeout(lostTimer);
       lostTimer = null;
     }
+  }
+
+  function clearLinkTimers() {
+    clearAcquisitionTimer();
+    clearHoldTimer();
+    clearLostTimer();
   }
 
   function readCameraPermission() {
@@ -144,6 +204,29 @@
     return trackingModulePromise;
   }
 
+  function closeLostLink() {
+    clearAcquisitionTimer();
+    clearHoldTimer();
+    clearLostTimer();
+    setState('lost');
+    lostTimer = window.setTimeout(() => {
+      if (currentState === 'lost') setState('scanning');
+    }, 1200);
+  }
+
+  function holdLinkAfterTargetLoss() {
+    if (!['acquired', 'active'].includes(currentState)) return;
+
+    clearAcquisitionTimer();
+    clearLostTimer();
+    clearHoldTimer();
+    setState('hold');
+    holdTimer = window.setTimeout(() => {
+      holdTimer = null;
+      if (currentState === 'hold') closeLostLink();
+    }, LINK_HOLD_MS);
+  }
+
   function createTrackingEngine({ MindARThree, CSS3DObject }) {
     const engine = new MindARThree({
       container: cameraStage,
@@ -171,20 +254,27 @@
 
     anchor.onTargetFound = () => {
       if (trackingEngine !== engine) return;
+      clearAcquisitionTimer();
+      clearHoldTimer();
       clearLostTimer();
-      setState('active');
-      setTrackedOverlayVisible(true);
+
+      // The screen-space panel resumes during the hold window without replaying acquisition.
+      if (currentState === 'hold' || currentState === 'lost') {
+        setState('active');
+        return;
+      }
+
+      if (currentState === 'scanning') {
+        setState('acquired');
+        acquisitionTimer = window.setTimeout(() => {
+          if (trackingEngine === engine && currentState === 'acquired') setState('active');
+        }, TARGET_ACQUIRED_MS);
+      }
     };
 
     anchor.onTargetLost = () => {
-      if (trackingEngine !== engine || currentState !== 'active') return;
-
-      setTrackedOverlayVisible(false);
-      setState('lost');
-      clearLostTimer();
-      lostTimer = window.setTimeout(() => {
-        if (currentState === 'lost') setState('scanning');
-      }, 1200);
+      if (trackingEngine !== engine) return;
+      holdLinkAfterTargetLoss();
     };
 
     return engine;
@@ -200,7 +290,11 @@
 
   function stopTrackingEngine() {
     const engine = trackingEngine;
-    if (!engine) return;
+    clearLinkTimers();
+    if (!engine) {
+      trackingAnchor = null;
+      return;
+    }
 
     isStopping = true;
     setTrackedOverlayVisible(false);
@@ -232,6 +326,8 @@
       video.remove();
     }
 
+    trackingEngine = null;
+    trackingAnchor = null;
     isStopping = false;
   }
 
@@ -250,9 +346,9 @@
   }
 
   function showCameraLoss() {
-    if (!['scanning', 'active', 'lost'].includes(currentState)) return;
+    if (!CAMERA_STATES.has(currentState)) return;
 
-    clearLostTimer();
+    clearLinkTimers();
     setState('lost', 'The camera signal ended. Reopen CAMERA START to retry.');
     stopTrackingEngine();
     lostTimer = window.setTimeout(() => {
@@ -266,9 +362,9 @@
   }
 
   async function startCamera() {
-    if (['requesting', 'scanning', 'active'].includes(currentState)) return;
+    if (CAMERA_STATES.has(currentState) || currentState === 'requesting') return;
 
-    clearLostTimer();
+    clearLinkTimers();
     const thisSession = ++sessionId;
 
     if (!cameraSupported) {
@@ -317,7 +413,7 @@
 
   function exitCamera() {
     ++sessionId;
-    clearLostTimer();
+    clearLinkTimers();
     stopTrackingEngine();
     setState('ready');
   }
@@ -339,9 +435,9 @@
   tabs.forEach((tab) => tab.addEventListener('click', () => selectMode(tab.dataset.mode)));
 
   document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'hidden' && ['scanning', 'active', 'lost'].includes(currentState)) {
+    if (document.visibilityState === 'hidden' && CAMERA_STATES.has(currentState)) {
       ++sessionId;
-      clearLostTimer();
+      clearLinkTimers();
       stopTrackingEngine();
       setState('ready', 'Camera paused when this page was hidden. Tap CAMERA START to resume.');
     }
@@ -349,11 +445,11 @@
 
   window.addEventListener('pagehide', () => {
     ++sessionId;
-    clearLostTimer();
+    clearLinkTimers();
     stopTrackingEngine();
   });
 
-  selectMode('system');
+  selectMode('link');
   setState('ready');
   loadTrackingModules().catch(() => {
     // Loading is retried through the explicit CAMERA START action.

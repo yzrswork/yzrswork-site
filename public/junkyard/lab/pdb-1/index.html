@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>PDB-1 Access Terminal | JUNK YARD 2026</title>
-  <meta name="description" content="An image-tracked local communications view for the PDB-1 artwork at JUNK YARD 2026." />
+  <meta name="description" content="An image-tracked machine-side information view for the PDB-1 artwork at JUNK YARD 2026." />
   <meta name="theme-color" content="#050b07" />
   <link rel="canonical" href="https://yzrswork.com/junkyard/lab/pdb-1/" />
   <link rel="stylesheet" href="./style.css" />
@@ -30,7 +30,16 @@
         </div>
       </div>
 
-      <div class="tracked-overlay" id="linkLayer" aria-hidden="true">
+      <div class="tracked-overlay" id="linkLayer" data-layer="object-linked" aria-hidden="true">
+        <svg class="residual-route" viewBox="0 0 800 800" aria-hidden="true">
+          <path class="residual-route-base" d="M400 394 V560 H744 V176 M400 560 H56 V400 M400 560 H744 V644"></path>
+          <path class="residual-route-pulse" d="M400 394 V560 H744 V176 M400 560 H56 V400 M400 560 H744 V644"></path>
+          <circle class="residual-route-node" cx="400" cy="394" r="7"></circle>
+          <circle class="residual-route-node" cx="744" cy="176" r="5"></circle>
+          <circle class="residual-route-node" cx="56" cy="400" r="5"></circle>
+          <circle class="residual-route-node" cx="744" cy="644" r="5"></circle>
+        </svg>
+
         <div class="asset-frame">
           <i class="frame-corner frame-corner-tl"></i>
           <i class="frame-corner frame-corner-tr"></i>
@@ -109,60 +118,56 @@
       </div>
     </section>
 
-    <section class="active-panel" id="activePanel" aria-label="PDB-1 communications panel" hidden>
+    <section class="active-panel" id="activePanel" data-layer="screen-space" aria-label="PDB-1 communications panel" hidden>
       <div class="active-panel-header">
         <div>
-          <p class="panel-kicker">INCOMING OBJECT / PDB-1</p>
-          <h1>PDB-1 IDENTIFIED</h1>
+          <p class="panel-kicker">OBJECT CHANNEL / PDB-1</p>
+          <h1>PDB-1 LINKED</h1>
         </div>
-        <span class="link-state"><i aria-hidden="true"></i>LINK ESTABLISHED</span>
+        <span class="link-state"><i aria-hidden="true"></i><span id="activeLinkState">LINK ESTABLISHED</span></span>
       </div>
 
       <div class="signal-rule" aria-hidden="true">
-        <span>CHANNEL 05</span>
+        <span>CH 05 / LOCAL</span>
         <i class="waveform"><b></b><b></b><b></b><b></b><b></b><b></b><b></b></i>
       </div>
 
-      <div class="readout-grid">
-        <div><span>ASSET</span><strong>PDB-1</strong></div>
-        <div><span>BUS</span><strong>5V MAIN</strong></div>
-        <div><span>INPUT</span><strong>DC 5V</strong></div>
-        <div><span>SIGNAL</span><strong>ACTIVE</strong></div>
-      </div>
-
-      <div class="link-route" aria-label="PDB-1 downstream nodes">
-        <span class="route-root">5V MAIN</span>
-        <span class="route-arrow" aria-hidden="true">→</span>
-        <span class="route-node">MO-1</span>
-        <span class="route-node">IM-1</span>
-        <span class="route-node">volt-1</span>
-      </div>
-
       <div class="mode-tabs" role="tablist" aria-label="Communications information modes">
-        <button class="mode-tab is-active" id="tab-system" type="button" role="tab" aria-selected="true" aria-controls="panel-system" data-mode="system">SYSTEM</button>
-        <button class="mode-tab" id="tab-outputs" type="button" role="tab" aria-selected="false" aria-controls="panel-outputs" data-mode="outputs">OUTPUTS</button>
-        <button class="mode-tab" id="tab-info" type="button" role="tab" aria-selected="false" aria-controls="panel-info" data-mode="info">INFO</button>
+        <button class="mode-tab is-active" id="tab-link" type="button" role="tab" aria-selected="true" aria-controls="panel-link" data-mode="link">LINK</button>
+        <button class="mode-tab" id="tab-system" type="button" role="tab" aria-selected="false" aria-controls="panel-system" data-mode="system">SYSTEM</button>
+        <button class="mode-tab" id="tab-trace" type="button" role="tab" aria-selected="false" aria-controls="panel-trace" data-mode="trace">TRACE</button>
       </div>
 
       <div class="tab-content">
-        <section class="tab-panel" id="panel-system" role="tabpanel" aria-labelledby="tab-system" data-panel="system">
-          <div class="compact-list">
-            <p><span>POLARITY</span><strong>CENTER POSITIVE</strong></p>
-            <p><span>STATUS</span><strong>LINKED / LOCAL</strong></p>
+        <section class="tab-panel" id="panel-link" role="tabpanel" aria-labelledby="tab-link" data-panel="link">
+          <div class="link-readout">
+            <p class="link-readout-primary"><span>PDB-1</span><strong>LINK ESTABLISHED</strong></p>
+            <p><span>BUS</span><strong>5V MAIN</strong></p>
+            <p><span>SIGNAL</span><strong class="signal-level" aria-label="strong signal">████</strong></p>
           </div>
+          <p class="layer-note">OBJECT CHANNEL / LOCAL</p>
         </section>
 
-        <section class="tab-panel" id="panel-outputs" role="tabpanel" aria-labelledby="tab-outputs" data-panel="outputs" hidden>
-          <ul class="output-list">
-            <li><span>01</span><strong>MO-1</strong><small>5V MAIN</small></li>
-            <li><span>02</span><strong>IM-1</strong><small>5V MAIN</small></li>
-            <li><span>03</span><strong>volt-1</strong><small>5V MAIN</small></li>
-          </ul>
+        <section class="tab-panel" id="panel-system" role="tabpanel" aria-labelledby="tab-system" data-panel="system">
+          <div class="topology" role="img" aria-label="PDB-1 connects to 5V MAIN and three downstream nodes">
+            <div class="topology-node topology-root">PDB-1</div>
+            <div class="topology-bus">5V MAIN</div>
+            <div class="topology-children">
+              <span class="topology-node">MO-1</span>
+              <span class="topology-node">IM-1</span>
+              <span class="topology-node">volt-1</span>
+            </div>
+          </div>
+          <p class="topology-status">3 NODES RESPONDING</p>
         </section>
 
-        <section class="tab-panel info-panel" id="panel-info" role="tabpanel" aria-labelledby="tab-info" data-panel="info" hidden>
-          <p>Local camera view. No upload, recording, photo capture, or storage.</p>
-          <p class="info-note">IMAGE TRACK / PDB-1 TARGET</p>
+        <section class="tab-panel trace-panel" id="panel-trace" role="tabpanel" aria-labelledby="tab-trace" data-panel="trace" hidden>
+          <p class="trace-title">TRACE / RECOVERED</p>
+          <div class="trace-log">
+            <p><span>LOG 0031</span><strong>OUTPUT PATH RESTORED</strong></p>
+            <p><span>LOG 0046</span><strong>IM-1 RESPONSE VERIFIED</strong></p>
+            <p class="trace-anomaly"><span>LOG ----</span><strong>UNREGISTERED RESPONSE</strong></p>
+          </div>
         </section>
       </div>
     </section>
