@@ -47,6 +47,7 @@ function walkFiles(directory, output = []) {
 function checkInlineScripts(page, html) {
   for (const match of html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/gi)) {
     if (/\ssrc\s*=/.test(match[1])) continue;
+    if (/\stype=["']importmap["']/i.test(match[1])) continue;
     if (/type=["']application\/ld\+json["']/.test(match[1])) {
       try { JSON.parse(match[2]); } catch (error) { errors.push(`JSON-LDが不正: ${page}: ${error.message}`); }
       continue;
