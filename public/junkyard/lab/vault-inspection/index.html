@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>VAULT INSPECTION | JUNK YARD 2026</title>
+  <meta name="description" content="稼働中の巨大保守施設 YZRS VAULT を10区画だけ点検する、JUNK YARD 2026の静的ゲームプロトタイプ。" />
+  <meta name="theme-color" content="#18343b" />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="canonical" href="https://yzrswork.com/junkyard/lab/vault-inspection/" />
+  <link rel="stylesheet" href="./style.css" />
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <main class="vault" id="vault" data-phase="intro" data-sector="0" data-traversal="none">
+    <section class="world" aria-label="YZRS VAULT 内部">
+      <div class="daylight" aria-hidden="true"></div>
+
+      <div class="depth-field" id="depthField" aria-hidden="true">
+        <div class="far-wall"></div>
+        <div class="floor-grid"></div>
+
+        <div class="stack stack-left">
+          <i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="stack stack-right">
+          <i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+
+        <div class="frame frame-1"></div>
+        <div class="frame frame-2"></div>
+        <div class="frame frame-3"></div>
+        <div class="frame frame-4"></div>
+
+        <div class="pipe pipe-a"></div>
+        <div class="pipe pipe-b"></div>
+        <div class="pipe pipe-c"></div>
+        <div class="cable-tray"></div>
+
+        <div class="service-lights">
+          <i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="archive-rack rack-left"></div>
+        <div class="archive-rack rack-right"></div>
+        <div class="machine machine-left"></div>
+        <div class="machine machine-right"></div>
+        <div class="plant plant-left"></div>
+        <div class="plant plant-right"></div>
+
+        <div class="door door-left"></div>
+        <div class="door door-right"></div>
+        <div class="shutter"></div>
+        <div class="lift-mark"><span>−09</span></div>
+      </div>
+
+      <div class="world-chrome" aria-hidden="true">
+        <div class="facility-mark">
+          <span>YZRS VAULT</span>
+          <strong id="visualSector">ACCESS GATE</strong>
+        </div>
+        <div class="depth-meter">
+          <span>DEPTH</span>
+          <i id="depthFill"></i>
+        </div>
+        <div class="world-status"><i></i><span id="worldStatus">稼働状況：だいたい正常</span></div>
+      </div>
+
+      <div class="traversal-readout" id="traversalReadout" aria-hidden="true">
+        <span id="traversalCode">GATE RELEASE</span>
+        <strong id="traversalLabel">入構記録を作成中</strong>
+      </div>
+    </section>
+
+    <section class="console" aria-live="off">
+      <header class="console-header">
+        <div>
+          <p>JUNK YARD 2026 / FIELD ACCESS</p>
+          <h1>VAULT INSPECTION</h1>
+        </div>
+        <span class="sector-count" id="sectorCount">ENTRY</span>
+      </header>
+
+      <section class="intro-panel" id="introPanel" aria-labelledby="introTitle">
+        <p class="panel-kicker">臨時点検員用・簡易入構手続</p>
+        <h2 id="introTitle">奥まで、10区画だけ。</h2>
+        <p>表示された記録を○か×で判定してください。相談・回覧・飲み物の保持は、いずれも業務に含まれます。</p>
+        <dl class="entry-facts">
+          <div><dt>所要</dt><dd>2–4分</dd></div>
+          <div><dt>操作</dt><dd>指1本</dd></div>
+          <div><dt>失敗</dt><dd>進行に影響なし</dd></div>
+        </dl>
+        <button class="primary-button" id="startButton" type="button">VAULT に入る</button>
+        <small>STATUS: 入構可能（暫定）</small>
+      </section>
+
+      <section class="question-panel" id="questionPanel" aria-labelledby="sectorTitle" hidden>
+        <div class="question-heading">
+          <p class="panel-kicker" id="sectorCode">SECTOR 01 / 10</p>
+          <h2 id="sectorTitle">POWER</h2>
+        </div>
+
+        <p class="question" id="questionText"></p>
+
+        <div class="answers" id="answerButtons" aria-label="回答を選択">
+          <button class="answer-button" type="button" data-answer="true">
+            <span aria-hidden="true">○</span><strong>そう思う</strong>
+          </button>
+          <button class="answer-button" type="button" data-answer="false">
+            <span aria-hidden="true">×</span><strong>ちがうと思う</strong>
+          </button>
+        </div>
+
+        <section class="feedback" id="feedback" tabindex="-1" aria-live="polite" hidden>
+          <p class="judgement" id="judgement"></p>
+          <p class="explanation" id="explanation"></p>
+          <p class="vault-note"><span>VAULT NOTE</span><strong id="vaultNote"></strong></p>
+          <button class="continue-button" id="continueButton" type="button">次の区画へ</button>
+        </section>
+      </section>
+
+      <section class="core-panel" id="corePanel" aria-labelledby="coreTitle" hidden>
+        <p class="panel-kicker">VAULT CORE / DEVICE RECONCILIATION</p>
+        <h2 id="coreTitle">機器台帳を照合しています。</h2>
+
+        <div class="device-counts">
+          <p><span>REGISTERED DEVICES</span><strong>147</strong></p>
+          <p class="detected-count" id="detectedCount"><span>DETECTED DEVICES</span><strong>147</strong></p>
+        </div>
+
+        <p class="core-alert" id="coreAlert" role="status">照合中</p>
+        <ol class="core-dialogue" id="coreDialogue" aria-label="SYSTEM と未登録機器の会話"></ol>
+        <button class="continue-button" id="closeCoreButton" type="button" hidden>検査記録を閉じる</button>
+      </section>
+
+      <section class="result-panel" id="resultPanel" aria-labelledby="resultTitle" hidden>
+        <p class="panel-kicker">VAULT INSPECTION COMPLETE</p>
+        <h2 id="resultTitle">点検は完了したことになりました。</h2>
+        <dl class="result-list">
+          <div><dt>正解</dt><dd><span id="scoreValue">0</span> / 10</dd></div>
+          <div><dt>通過区画</dt><dd>10</dd></div>
+          <div><dt>未登録設備</dt><dd>1</dd></div>
+        </dl>
+        <p class="final-status">STATUS: 正常（暫定）</p>
+        <button class="primary-button" id="restartButton" type="button">もう一度入る</button>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
