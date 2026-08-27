@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#050906" />
+  <title>Multi-Target Recognition Trial | JUNK YARD 2026</title>
+  <meta name="description" content="A bounded six-artwork MindAR recognition trial for JUNK YARD 2026." />
+  <link rel="canonical" href="https://yzrswork.com/junkyard/lab/multi-target/" />
+  <link rel="stylesheet" href="./style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <main class="trial" id="app" data-state="ready">
+    <section class="camera-stage" aria-label="JUNK YARD artwork recognition camera">
+      <div class="standby" aria-hidden="true">
+        <span>JUNK YARD 2026</span>
+        <strong>6 TARGET TRIAL</strong>
+      </div>
+
+      <div class="scan-status" id="scanStatus" role="status" aria-live="polite" hidden>
+        <span id="statusPrimary">SCANNING</span>
+        <strong id="statusSecondary">0 / 6</strong>
+      </div>
+
+      <button class="exit-button" id="exitButton" type="button" hidden>EXIT</button>
+    </section>
+
+    <section class="entry" id="entryPanel" aria-labelledby="entryTitle">
+      <p class="eyebrow">MINDAR / TARGET BENCH</p>
+      <h1 id="entryTitle">JUNK YARD<br />RECOGNITION TRIAL</h1>
+      <p id="stateMessage" role="status" aria-live="polite">READY / CAMERA STANDBY</p>
+      <p class="state-detail" id="stateDetail">Six existing artwork images. One target is tracked at a time.</p>
+      <button class="start-button" id="startButton" type="button">CAMERA START</button>
+      <small>Camera video stays local in this browser.</small>
+    </section>
+  </main>
+</body>
+</html>
