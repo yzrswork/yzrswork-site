@@ -77,14 +77,31 @@ button:focus-visible {
   object-fit: cover;
   background: #111710;
   opacity: 0;
+  z-index: 0 !important;
   transition: opacity 180ms ease;
 }
 
-.terminal[data-state="active"] .camera-stage video {
+.terminal[data-state="scanning"] .camera-stage video,
+.terminal[data-state="active"] .camera-stage video,
+.terminal[data-state="lost"] .camera-stage video {
   opacity: 1;
 }
 
+.tracking-renderer,
+.tracking-css-renderer {
+  pointer-events: none;
+}
+
+.tracking-renderer {
+  z-index: 1;
+}
+
+.tracking-css-renderer {
+  z-index: 2;
+}
+
 .standby-surface {
+  z-index: 0;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -94,7 +111,9 @@ button:focus-visible {
   transition: opacity 180ms ease;
 }
 
-.terminal[data-state="active"] .standby-surface {
+.terminal[data-state="scanning"] .standby-surface,
+.terminal[data-state="active"] .standby-surface,
+.terminal[data-state="lost"] .standby-surface {
   opacity: 0;
 }
 
@@ -136,112 +155,108 @@ button:focus-visible {
   letter-spacing: -0.09em;
 }
 
-.link-layer {
+.tracked-overlay {
   position: absolute;
-  z-index: 2;
-  inset: 0;
+  width: 800px;
+  height: 800px;
   color: var(--green);
   pointer-events: none;
-  opacity: 0;
-  transition: opacity 180ms ease;
-}
-
-.terminal[data-state="active"] .link-layer {
-  opacity: 1;
+  transform-origin: 50% 50%;
+  visibility: hidden;
 }
 
 .asset-frame {
   position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 50%;
-  height: 50%;
-  border: 1px solid rgba(185, 255, 115, 0.16);
+  top: 7%;
+  left: 7%;
+  width: 86%;
+  height: 86%;
+  border: 3px solid rgba(185, 255, 115, 0.24);
 }
 
 .frame-corner {
   position: absolute;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 48px;
+  height: 48px;
   border-color: var(--green);
   border-style: solid;
-  filter: drop-shadow(0 0 5px rgba(185, 255, 115, 0.22));
+  filter: drop-shadow(0 0 8px rgba(185, 255, 115, 0.22));
 }
 
 .frame-corner-tl {
   top: -1px;
   left: -1px;
-  border-width: 2px 0 0 2px;
+  border-width: 5px 0 0 5px;
 }
 
 .frame-corner-tr {
   top: -1px;
   right: -1px;
-  border-width: 2px 2px 0 0;
+  border-width: 5px 5px 0 0;
 }
 
 .frame-corner-bl {
   bottom: -1px;
   left: -1px;
-  border-width: 0 0 2px 2px;
+  border-width: 0 0 5px 5px;
 }
 
 .frame-corner-br {
   right: -1px;
   bottom: -1px;
-  border-width: 0 2px 2px 0;
+  border-width: 0 5px 5px 0;
 }
 
 .callout {
   position: absolute;
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 14px;
   color: var(--green-bright);
-  font: 700 9px/1 var(--mono);
+  font: 700 24px/1 var(--mono);
   letter-spacing: 0.05em;
 }
 
 .callout::before {
   display: block;
-  width: 40px;
-  height: 1px;
+  width: 105px;
+  height: 3px;
   content: "";
   background: var(--green);
-  box-shadow: 0 0 5px rgba(185, 255, 115, 0.18);
+  box-shadow: 0 0 8px rgba(185, 255, 115, 0.18);
 }
 
 .callout::after {
   display: block;
-  width: 4px;
-  height: 4px;
+  width: 8px;
+  height: 8px;
   content: "";
-  border: 1px solid var(--green);
+  border: 2px solid var(--green);
   background: var(--screen);
 }
 
 .callout-label {
-  padding: 4px 6px;
-  border: 1px solid var(--line);
-  background: rgba(2, 8, 4, 0.72);
+  padding: 8px 11px;
+  border: 2px solid var(--line);
+  background: rgba(2, 8, 4, 0.88);
   white-space: nowrap;
 }
 
 .callout-mo {
-  top: 34%;
-  right: 8%;
+  top: 22%;
+  right: -8%;
 }
 
 .callout-im {
   top: 50%;
-  left: 8%;
+  left: -8%;
   flex-direction: row-reverse;
 }
 
 .callout-volt {
-  right: 8%;
-  bottom: 29%;
+  right: -8%;
+  bottom: 20%;
 }
 
 .camera-note {
@@ -260,7 +275,9 @@ button:focus-visible {
   transition: opacity 180ms ease;
 }
 
-.terminal[data-state="active"] .camera-note {
+.terminal[data-state="scanning"] .camera-note,
+.terminal[data-state="active"] .camera-note,
+.terminal[data-state="lost"] .camera-note {
   opacity: 1;
 }
 
@@ -279,6 +296,7 @@ button:focus-visible {
   color: var(--green-bright);
   box-shadow: 0 0 22px rgba(80, 145, 53, 0.14);
   text-align: center;
+  pointer-events: none;
 }
 
 .signal-lost span {
@@ -326,7 +344,7 @@ button:focus-visible {
 .compact-list strong,
 .output-list,
 .info-note,
-.exit-button {
+.camera-exit {
   font-family: var(--mono);
 }
 
@@ -530,7 +548,6 @@ button:focus-visible {
 }
 
 .action-button,
-.exit-button,
 .mode-tab {
   min-height: 38px;
   border: 1px solid var(--line);
@@ -571,7 +588,7 @@ button:focus-visible {
   top: calc(62px + env(safe-area-inset-top));
   left: 12px;
   z-index: 6;
-  width: min(60vw, 270px);
+  width: min(54vw, 232px);
   max-height: calc(100svh - 82px - env(safe-area-inset-top));
   overflow-y: auto;
   color: var(--green-bright);
@@ -807,19 +824,24 @@ button:focus-visible {
   letter-spacing: 0.04em;
 }
 
-.exit-button {
-  width: calc(100% - 20px);
+.camera-exit {
+  position: absolute;
+  right: 12px;
+  bottom: calc(12px + env(safe-area-inset-bottom));
+  z-index: 5;
   min-height: 31px;
-  margin: 0 10px 10px;
   padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 0;
   color: var(--green);
-  background: transparent;
-  font-size: 8px;
+  background: rgba(2, 8, 4, 0.72);
+  cursor: pointer;
+  font: 8px/1.2 var(--mono);
   letter-spacing: 0.05em;
 }
 
-.exit-button:hover,
-.exit-button:active {
+.camera-exit:hover,
+.camera-exit:active {
   color: var(--ink);
   background: var(--green);
 }
@@ -835,7 +857,7 @@ button:focus-visible {
   .active-panel {
     top: 74px;
     left: 20px;
-    width: min(280px, 34vw);
+    width: min(242px, 30vw);
   }
 
   .top-header {
@@ -846,26 +868,7 @@ button:focus-visible {
 
 @media (orientation: landscape) and (max-height: 560px) {
   .active-panel {
-    width: min(310px, 38vw);
-  }
-
-  .asset-frame {
-    top: 17%;
-    left: 36%;
-    width: 28%;
-    height: 66%;
-  }
-
-  .callout-mo {
-    top: 29%;
-  }
-
-  .callout-im {
-    top: 50%;
-  }
-
-  .callout-volt {
-    bottom: 25%;
+    width: min(242px, 32vw);
   }
 }
 
