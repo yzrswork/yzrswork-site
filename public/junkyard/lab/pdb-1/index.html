@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>PDB-1 Access Terminal | JUNK YARD 2026</title>
-  <meta name="description" content="An image-tracked machine-side information view for the PDB-1 artwork at JUNK YARD 2026." />
+  <meta name="description" content="An image-tracked route restoration prototype for the PDB-1 artwork at JUNK YARD 2026." />
   <meta name="theme-color" content="#050b07" />
   <link rel="canonical" href="https://yzrswork.com/junkyard/lab/pdb-1/" />
   <link rel="stylesheet" href="./style.css" />
@@ -31,31 +31,44 @@
       </div>
 
       <div class="tracked-overlay" id="linkLayer" data-layer="object-linked" aria-hidden="true">
-        <svg class="residual-route" viewBox="0 0 800 800" aria-hidden="true">
-          <path class="residual-route-base" d="M400 394 V560 H744 V176 M400 560 H56 V400 M400 560 H744 V644"></path>
-          <path class="residual-route-pulse" d="M400 394 V560 H744 V176 M400 560 H56 V400 M400 560 H744 V644"></path>
-          <circle class="residual-route-node" cx="400" cy="394" r="7"></circle>
-          <circle class="residual-route-node" cx="744" cy="176" r="5"></circle>
-          <circle class="residual-route-node" cx="56" cy="400" r="5"></circle>
-          <circle class="residual-route-node" cx="744" cy="644" r="5"></circle>
+        <svg class="route-map" id="routeMap" viewBox="0 0 800 800" aria-hidden="true">
+          <path class="route-path route-path-0" data-route-path="0" d="M400 394 V560 H744 V176"></path>
+          <path class="route-path route-path-1" data-route-path="1" d="M400 394 V560 H56 V400"></path>
+          <path class="route-path route-path-2" data-route-path="2" d="M400 394 V560 H744 V644"></path>
+          <path class="route-fourth-path" id="fourthRoutePath" d="M400 394 H784 V92"></path>
+          <circle class="route-node route-node-root" cx="400" cy="394" r="7"></circle>
+          <circle class="route-node" cx="744" cy="176" r="5"></circle>
+          <circle class="route-node" cx="56" cy="400" r="5"></circle>
+          <circle class="route-node" cx="744" cy="644" r="5"></circle>
+          <circle class="route-node route-node-fourth" cx="784" cy="92" r="5"></circle>
         </svg>
 
-        <div class="asset-frame">
-          <i class="frame-corner frame-corner-tl"></i>
-          <i class="frame-corner frame-corner-tr"></i>
-          <i class="frame-corner frame-corner-bl"></i>
-          <i class="frame-corner frame-corner-br"></i>
-        </div>
-
-        <div class="callout callout-mo">
+        <div class="callout callout-mo" data-route-callout="0">
           <span class="callout-label">MO-1</span>
         </div>
-        <div class="callout callout-im">
+        <div class="callout callout-im" data-route-callout="1">
           <span class="callout-label">IM-1</span>
         </div>
-        <div class="callout callout-volt">
+        <div class="callout callout-volt" data-route-callout="2">
           <span class="callout-label">volt-1</span>
         </div>
+
+        <div class="route-flow route-flow-0" data-route-flow="0" aria-hidden="true"><span>→ → → →</span></div>
+        <div class="route-flow route-flow-1" data-route-flow="1" aria-hidden="true"><span>← ← ← ←</span></div>
+        <div class="route-flow route-flow-2" data-route-flow="2" aria-hidden="true"><span>→ → → →</span></div>
+        <div class="route-flow route-flow-fourth" id="fourthRouteFlow" aria-hidden="true"><span>→ → → →</span></div>
+        <div class="route-response" id="fourthRouteResponse" aria-hidden="true"><span>← ←</span></div>
+        <div class="route-fourth-label" id="fourthRouteLabel" aria-hidden="true">ROUTE 04<span>DEST: —</span></div>
+
+        <button class="route-hit-area route-hit-area-0" data-route-index="0" type="button" aria-label="Activate OUT-01 for MO-1">
+          <span class="route-hit-marker"><small>OUT-01</small></span>
+        </button>
+        <button class="route-hit-area route-hit-area-1" data-route-index="1" type="button" aria-label="Activate OUT-02 for IM-1">
+          <span class="route-hit-marker"><small>OUT-02</small></span>
+        </button>
+        <button class="route-hit-area route-hit-area-2" data-route-index="2" type="button" aria-label="Activate OUT-03 for volt-1">
+          <span class="route-hit-marker"><small>OUT-03</small></span>
+        </button>
       </div>
 
       <p class="camera-note" id="cameraNote">LIVE CAMERA / SCANNING</p>
@@ -118,57 +131,42 @@
       </div>
     </section>
 
-    <section class="active-panel" id="activePanel" data-layer="screen-space" aria-label="PDB-1 communications panel" hidden>
+    <section class="active-panel" id="activePanel" data-layer="screen-space" aria-label="PDB-1 route restoration panel" hidden>
       <div class="active-panel-header">
         <div>
           <p class="panel-kicker">OBJECT CHANNEL / PDB-1</p>
-          <h1>PDB-1 LINKED</h1>
+          <h1 id="gameTitle">PDB-1 / LINKED</h1>
         </div>
         <span class="link-state"><i aria-hidden="true"></i><span id="activeLinkState">LINK ESTABLISHED</span></span>
       </div>
 
       <div class="signal-rule" aria-hidden="true">
-        <span>CH 05 / LOCAL</span>
+        <span>BUS 5V MAIN / CH 05</span>
         <i class="waveform"><b></b><b></b><b></b><b></b><b></b><b></b><b></b></i>
       </div>
 
-      <div class="mode-tabs" role="tablist" aria-label="Communications information modes">
-        <button class="mode-tab is-active" id="tab-link" type="button" role="tab" aria-selected="true" aria-controls="panel-link" data-mode="link">LINK</button>
-        <button class="mode-tab" id="tab-system" type="button" role="tab" aria-selected="false" aria-controls="panel-system" data-mode="system">SYSTEM</button>
-        <button class="mode-tab" id="tab-trace" type="button" role="tab" aria-selected="false" aria-controls="panel-trace" data-mode="trace">TRACE</button>
+      <div class="game-progress">
+        <span id="gameInstruction">RESTORE OUTPUT 01</span>
+        <strong id="gameProgress">01 / 03</strong>
       </div>
 
-      <div class="tab-content">
-        <section class="tab-panel" id="panel-link" role="tabpanel" aria-labelledby="tab-link" data-panel="link">
-          <div class="link-readout">
-            <p class="link-readout-primary"><span>PDB-1</span><strong>LINK ESTABLISHED</strong></p>
-            <p><span>BUS</span><strong>5V MAIN</strong></p>
-            <p><span>SIGNAL</span><strong class="signal-level" aria-label="strong signal">████</strong></p>
-          </div>
-          <p class="layer-note">OBJECT CHANNEL / LOCAL</p>
-        </section>
+      <div class="route-status-list" aria-label="PDB-1 output routes">
+        <div class="route-status-row" data-route-status="0">
+          <span>OUT-01</span><strong>MO-1</strong><em data-route-state>OPEN</em>
+        </div>
+        <div class="route-status-row" data-route-status="1">
+          <span>OUT-02</span><strong>IM-1</strong><em data-route-state>OPEN</em>
+        </div>
+        <div class="route-status-row" data-route-status="2">
+          <span>OUT-03</span><strong>volt-1</strong><em data-route-state>OPEN</em>
+        </div>
+      </div>
 
-        <section class="tab-panel" id="panel-system" role="tabpanel" aria-labelledby="tab-system" data-panel="system">
-          <div class="topology" role="img" aria-label="PDB-1 connects to 5V MAIN and three downstream nodes">
-            <div class="topology-node topology-root">PDB-1</div>
-            <div class="topology-bus">5V MAIN</div>
-            <div class="topology-children">
-              <span class="topology-node">MO-1</span>
-              <span class="topology-node">IM-1</span>
-              <span class="topology-node">volt-1</span>
-            </div>
-          </div>
-          <p class="topology-status">3 NODES RESPONDING</p>
-        </section>
+      <p class="game-feedback" id="gameFeedback" role="status" aria-live="polite">TOUCH ARMED OUTPUT</p>
 
-        <section class="tab-panel trace-panel" id="panel-trace" role="tabpanel" aria-labelledby="tab-trace" data-panel="trace" hidden>
-          <p class="trace-title">TRACE / RECOVERED</p>
-          <div class="trace-log">
-            <p><span>LOG 0031</span><strong>OUTPUT PATH RESTORED</strong></p>
-            <p><span>LOG 0046</span><strong>IM-1 RESPONSE VERIFIED</strong></p>
-            <p class="trace-anomaly"><span>LOG ----</span><strong>UNREGISTERED RESPONSE</strong></p>
-          </div>
-        </section>
+      <div class="anomaly-readout" id="anomalyReadout" hidden>
+        <span>RSP-04</span>
+        <strong>UNREGISTERED RESPONSE</strong>
       </div>
     </section>
   </main>
