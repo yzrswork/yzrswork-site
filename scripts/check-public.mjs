@@ -88,6 +88,11 @@ const expectedFiles = [
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/parts-amazon-stock-set.png',
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/parts-domestic-stock-set.png',
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/parts-china-stock-set.png',
+  'junkyard/lab/multi-target/index.html',
+  'junkyard/lab/multi-target/style.css',
+  'junkyard/lab/multi-target/app.js',
+  'junkyard/lab/multi-target/targets.json',
+  'junkyard/lab/multi-target/junkyard-six-targets.mind',
 ];
 for (const file of expectedFiles) read(file);
 

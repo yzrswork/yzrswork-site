@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "compiler": {
+    "name": "MindAR image target compiler",
+    "version": "1.2.5",
+    "artifact": "./junkyard-six-targets.mind",
+    "maxDimension": 800,
+    "targetIndexOrder": "array order"
+  },
+  "targets": [
+    {
+      "targetIndex": 0,
+      "artwork": "PDB-1",
+      "control": true,
+      "sourceFilename": "1779332293-2jkxb45JtWSNTwORf0l7sXFQ.png",
+      "sourceUrl": "https://assets.st-note.com/img/1779332293-2jkxb45JtWSNTwORf0l7sXFQ.png?width=1200",
+      "articleUrl": "https://note.com/yzrswork/n/nf10af42494eb",
+      "sourceSha256": "881ccd1c8a1545c1ba99e6309bd5824d403ff041135a221c667ee3e7f5a94194",
+      "sourceDimensions": [1200, 1200],
+      "compiledDimensions": [800, 800],
+      "matchingFeatures": 1447,
+      "trackingFeatures": 29
+    },
+    {
+      "targetIndex": 1,
+      "artwork": "Strings-1",
+      "control": false,
+      "sourceFilename": "1780844435-uMBKFatPEYzlQmjngpkNihXd.png",
+      "sourceUrl": "https://assets.st-note.com/img/1780844435-uMBKFatPEYzlQmjngpkNihXd.png?width=1200",
+      "articleUrl": "https://note.com/yzrswork/n/n96e120a4d8ac",
+      "sourceSha256": "62013be8b48e276d57779ba04ba77f50929602c85e4efec87196fd4a394686fd",
+      "sourceDimensions": [750, 1334],
+      "compiledDimensions": [450, 800],
+      "matchingFeatures": 1449,
+      "trackingFeatures": 56
+    },
+    {
+      "targetIndex": 2,
+      "artwork": "COMPO-1",
+      "control": false,
+      "sourceFilename": "1786451868-YH54SA0fOGjgivFQoNwtpzU3.png",
+      "sourceUrl": "https://assets.st-note.com/img/1786451868-YH54SA0fOGjgivFQoNwtpzU3.png?width=1200",
+      "sourceSha256": "535577d57e5b22f8998a3ca505b0eac273f866ec7887388dc99db890cff79cea",
+      "sourceDimensions": [750, 965],
+      "compiledDimensions": [622, 800],
+      "matchingFeatures": 1623,
+      "trackingFeatures": 28
+    },
+    {
+      "targetIndex": 3,
+      "artwork": "SPEV-1",
+      "control": false,
+      "sourceFilename": "1777278622-Md3PyvHNSXLc7CeEabFJYtKi.png",
+      "sourceUrl": "https://assets.st-note.com/img/1777278622-Md3PyvHNSXLc7CeEabFJYtKi.png?width=1200",
+      "articleUrl": "https://note.com/yzrswork/n/nb8b0f1ece577",
+      "sourceSha256": "574f503fb3a4d727a6d59032c52274925770cd5f9f5b3817da6ce0db47d6ddd9",
+      "sourceDimensions": [667, 890],
+      "compiledDimensions": [600, 800],
+      "matchingFeatures": 878,
+      "trackingFeatures": 31
+    },
+    {
+      "targetIndex": 4,
+      "artwork": "volt-1",
+      "control": false,
+      "sourceFilename": "1777005105-s3djINk71yeQZt8OoxbMmwD5.png",
+      "sourceUrl": "https://assets.st-note.com/img/1777005105-s3djINk71yeQZt8OoxbMmwD5.png?width=1200",
+      "articleUrl": "https://note.com/yzrswork/n/nf4fd6d490cdb",
+      "sourceSha256": "ff49bf8c0848599e39419644f6cce15b8680f4b107d358a200937430906dbd8c",
+      "sourceDimensions": [672, 896],
+      "compiledDimensions": [600, 800],
+      "matchingFeatures": 1145,
+      "trackingFeatures": 30
+    },
+    {
+      "targetIndex": 5,
+      "artwork": "IM-1",
+      "control": false,
+      "sourceFilename": "1778282975-u0JZ51Vzi6qA7OGTskQ8Keyr.jpg",
+      "sourceUrl": "https://assets.st-note.com/img/1778282975-u0JZ51Vzi6qA7OGTskQ8Keyr.jpg?width=1200",
+      "articleUrl": "https://note.com/yzrswork/n/n546adc606ab9",
+      "sourceSha256": "6cacb96424bf44dc85211bbfd4dfe1c9fe09142a9bdcf422a061069118a8cebe",
+      "sourceDimensions": [1200, 900],
+      "compiledDimensions": [800, 600],
+      "matchingFeatures": 1036,
+      "trackingFeatures": 46
+    }
+  ]
+}
