@@ -82,6 +82,7 @@ button:focus-visible {
 }
 
 .terminal[data-state="scanning"] .camera-stage video,
+.terminal[data-state="acquired"] .camera-stage video,
 .terminal[data-state="active"] .camera-stage video,
 .terminal[data-state="lost"] .camera-stage video {
   opacity: 1;
@@ -112,6 +113,7 @@ button:focus-visible {
 }
 
 .terminal[data-state="scanning"] .standby-surface,
+.terminal[data-state="acquired"] .standby-surface,
 .terminal[data-state="active"] .standby-surface,
 .terminal[data-state="lost"] .standby-surface {
   opacity: 0;
@@ -163,6 +165,51 @@ button:focus-visible {
   pointer-events: none;
   transform-origin: 50% 50%;
   visibility: hidden;
+}
+
+.residual-route {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.residual-route-base,
+.residual-route-pulse {
+  fill: none;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+
+.residual-route-base {
+  stroke: rgba(185, 255, 115, 0.16);
+  stroke-width: 3;
+}
+
+.residual-route-pulse {
+  stroke: var(--green);
+  stroke-width: 4;
+  stroke-dasharray: 18 48;
+  stroke-dashoffset: 0;
+  opacity: 0;
+}
+
+.residual-route-node {
+  fill: var(--green);
+  opacity: 0.5;
+}
+
+.terminal[data-state="acquired"] .residual-route-pulse,
+.terminal[data-state="active"] .residual-route-pulse {
+  opacity: 0.82;
+  animation: residual-flow 2.8s linear infinite;
+}
+
+@keyframes residual-flow {
+  to {
+    stroke-dashoffset: -180;
+  }
 }
 
 .asset-frame {
@@ -276,6 +323,7 @@ button:focus-visible {
 }
 
 .terminal[data-state="scanning"] .camera-note,
+.terminal[data-state="acquired"] .camera-note,
 .terminal[data-state="active"] .camera-note,
 .terminal[data-state="lost"] .camera-note {
   opacity: 1;
@@ -336,14 +384,17 @@ button:focus-visible {
 .privacy-note,
 .route-line,
 .mode-tab,
-.readout-grid span,
+.link-readout span,
+.link-readout strong,
 .asset-facts dt,
 .signal-rule,
 .link-state,
-.compact-list span,
-.compact-list strong,
-.output-list,
-.info-note,
+.layer-note,
+.topology,
+.topology-status,
+.trace-panel,
+.trace-title,
+.trace-log,
 .camera-exit {
   font-family: var(--mono);
 }
@@ -477,8 +528,7 @@ button:focus-visible {
   line-height: 1.5;
 }
 
-.asset-facts,
-.readout-grid {
+.asset-facts {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 0;
@@ -486,16 +536,14 @@ button:focus-visible {
   border-left: 1px solid var(--line-soft);
 }
 
-.asset-facts > div,
-.readout-grid > div {
+.asset-facts > div {
   min-width: 0;
   padding: 8px 9px 7px;
   border-right: 1px solid var(--line-soft);
   border-bottom: 1px solid var(--line-soft);
 }
 
-.asset-facts dt,
-.readout-grid span {
+.asset-facts dt {
   display: block;
   color: var(--green-dim);
   font-size: 8px;
@@ -588,7 +636,7 @@ button:focus-visible {
   top: calc(62px + env(safe-area-inset-top));
   left: 12px;
   z-index: 6;
-  width: min(54vw, 232px);
+  width: min(218px, calc(100vw - 24px));
   max-height: calc(100svh - 82px - env(safe-area-inset-top));
   overflow-y: auto;
   color: var(--green-bright);
@@ -603,7 +651,7 @@ button:focus-visible {
 }
 
 .active-panel h1 {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .link-state {
@@ -681,53 +729,6 @@ button:focus-visible {
   }
 }
 
-.readout-grid {
-  margin: 0 10px;
-}
-
-.readout-grid > div {
-  padding: 7px 8px 6px;
-}
-
-.readout-grid strong {
-  display: block;
-  margin-top: 4px;
-  color: var(--green-bright);
-  font: 700 9px/1.2 var(--mono);
-  overflow-wrap: anywhere;
-}
-
-.link-route {
-  display: grid;
-  grid-template-columns: auto 10px repeat(3, minmax(0, 1fr));
-  align-items: center;
-  gap: 3px;
-  margin: 9px 10px 0;
-  padding: 6px;
-  border: 1px solid var(--line-soft);
-  color: var(--green-bright);
-  font: 8px/1 var(--mono);
-}
-
-.route-root {
-  color: var(--green);
-  white-space: nowrap;
-}
-
-.route-arrow {
-  color: var(--green-dim);
-  text-align: center;
-}
-
-.route-node {
-  min-width: 0;
-  padding: 5px 3px;
-  border-left: 1px solid var(--line-soft);
-  color: var(--green-bright);
-  text-align: center;
-  white-space: nowrap;
-}
-
 .mode-tabs {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -736,11 +737,11 @@ button:focus-visible {
 }
 
 .mode-tab {
-  min-height: 29px;
+  min-height: 32px;
   padding: 6px 3px;
   color: var(--green-dim);
   background: rgba(2, 8, 4, 0.36);
-  font-size: 8px;
+  font-size: 9px;
   letter-spacing: 0.06em;
 }
 
@@ -754,74 +755,197 @@ button:focus-visible {
   padding: 8px 10px 9px;
 }
 
-.compact-list {
+.link-readout {
   border-top: 1px solid var(--line-soft);
 }
 
-.compact-list p {
+.link-readout p {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 9px;
+  gap: 10px;
   margin: 0;
-  padding: 7px 1px 6px;
+  padding: 8px 1px 7px;
   border-bottom: 1px solid var(--line-soft);
 }
 
-.compact-list span {
+.link-readout-primary {
+  display: grid !important;
+  justify-content: start !important;
+  gap: 4px;
+  padding-top: 10px !important;
+  padding-bottom: 9px !important;
+}
+
+.link-readout span {
+  color: var(--green-dim);
+  font-size: 9px;
+  letter-spacing: 0.06em;
+}
+
+.link-readout strong {
+  color: var(--green-bright);
+  font-size: 11px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: right;
+}
+
+.link-readout-primary span {
+  color: var(--green);
+  font-size: 10px;
+}
+
+.link-readout-primary strong {
+  color: var(--green-bright);
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.signal-level {
+  color: var(--green) !important;
+  letter-spacing: 0.12em !important;
+}
+
+.layer-note,
+.topology-status {
+  margin: 8px 0 0;
+  color: var(--green-dim);
+  font-size: 8px;
+  letter-spacing: 0.08em;
+}
+
+.topology {
+  position: relative;
+  min-height: 139px;
+  padding-top: 1px;
+  color: var(--green-bright);
+  font-size: 9px;
+}
+
+.topology-root,
+.topology-bus {
+  position: relative;
+  width: max-content;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  color: var(--green-bright);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.topology-root::after {
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 1px);
+  width: 1px;
+  height: 10px;
+  content: "";
+  background: var(--line);
+}
+
+.topology-bus {
+  margin-top: 10px;
+  color: var(--green);
+}
+
+.topology-bus::after {
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 1px);
+  width: 1px;
+  height: 13px;
+  content: "";
+  background: var(--line);
+}
+
+.topology-children {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3px;
+  margin-top: 13px;
+}
+
+.topology-children::before {
+  position: absolute;
+  top: -7px;
+  right: 16.5%;
+  left: 16.5%;
+  height: 1px;
+  content: "";
+  background: var(--line);
+}
+
+.topology-children .topology-node {
+  position: relative;
+  min-width: 0;
+  padding: 7px 2px 6px;
+  border: 1px solid var(--line-soft);
+  color: var(--green-bright);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.topology-children .topology-node::before {
+  position: absolute;
+  top: -7px;
+  left: calc(50% - 1px);
+  width: 1px;
+  height: 7px;
+  content: "";
+  background: var(--line);
+}
+
+.topology-status {
+  padding-top: 7px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.trace-title {
+  margin: 0;
+  color: var(--green-dim);
+  font-size: 8px;
+  letter-spacing: 0.08em;
+}
+
+.trace-log {
+  margin-top: 7px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.trace-log p {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 8px 1px 7px;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.trace-log span {
   color: var(--green-dim);
   font-size: 8px;
   letter-spacing: 0.06em;
 }
 
-.compact-list strong {
+.trace-log strong {
   color: var(--green-bright);
-  font-size: 8px;
-  letter-spacing: 0.03em;
-  text-align: right;
+  font-size: 10px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
 }
 
-.output-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border-top: 1px solid var(--line-soft);
+.trace-anomaly {
+  padding-left: 7px !important;
+  border-left: 2px solid var(--green);
+  background: rgba(185, 255, 115, 0.05);
 }
 
-.output-list li {
-  display: grid;
-  grid-template-columns: 22px minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 5px;
-  min-height: 30px;
-  padding: 5px 1px;
-  border-bottom: 1px solid var(--line-soft);
-  color: var(--green-dim);
-  font-size: 8px;
-}
-
-.output-list strong {
-  color: var(--green-bright);
-  font-size: 9px;
-}
-
-.output-list small {
-  font-size: 7px;
-  letter-spacing: 0.03em;
-}
-
-.info-panel p {
-  margin: 0;
-  color: var(--paper);
-  font-size: 9px;
-  line-height: 1.5;
-}
-
-.info-panel .info-note {
-  margin-top: 8px;
-  color: var(--green-dim);
-  font-size: 7px;
-  letter-spacing: 0.04em;
+.trace-anomaly strong {
+  color: var(--green);
 }
 
 .camera-exit {
@@ -857,7 +981,7 @@ button:focus-visible {
   .active-panel {
     top: 74px;
     left: 20px;
-    width: min(242px, 30vw);
+    width: min(224px, 28vw);
   }
 
   .top-header {
@@ -868,7 +992,7 @@ button:focus-visible {
 
 @media (orientation: landscape) and (max-height: 560px) {
   .active-panel {
-    width: min(242px, 32vw);
+    width: min(224px, 30vw);
   }
 }
 
