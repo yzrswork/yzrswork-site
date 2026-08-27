@@ -12,7 +12,7 @@
   <script defer src="./app.js"></script>
 </head>
 <body>
-  <main class="vault" id="vault" data-phase="intro" data-sector="0" data-traversal="none">
+  <main class="vault" id="vault" data-phase="intro" data-sector="0" data-traversal="none" data-traversal-ready="false">
     <section class="world" aria-label="YZRS VAULT 内部">
       <div class="daylight" aria-hidden="true"></div>
 
@@ -69,6 +69,8 @@
         <span id="traversalCode">GATE RELEASE</span>
         <strong id="traversalLabel">入構記録を作成中</strong>
       </div>
+
+      <button class="traversal-button" id="traversalButton" type="button" hidden disabled>区画へ進む</button>
     </section>
 
     <section class="console" aria-live="off">
