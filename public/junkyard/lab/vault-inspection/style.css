@@ -75,6 +75,10 @@ button:disabled {
   background: var(--cream);
 }
 
+body.vault-traversing {
+  overflow: hidden;
+}
+
 .world {
   position: relative;
   height: clamp(270px, 43svh, 430px);
@@ -571,7 +575,6 @@ button:disabled {
 
 .intro-panel,
 .question-panel,
-.core-panel,
 .result-panel {
   width: min(100%, 680px);
   margin: 0 auto;
@@ -586,7 +589,6 @@ button:disabled {
 
 .intro-panel h2,
 .question-heading h2,
-.core-panel h2,
 .result-panel h2 {
   margin: 0;
   color: var(--navy-950);
@@ -730,60 +732,48 @@ button:disabled {
 
 .vault-note span { color: var(--rust-700); font: 800 8px/1.3 var(--mono); letter-spacing: 0.1em; }
 .vault-note strong { font-size: 12px; line-height: 1.55; }
+
 .continue-button { min-height: 48px; box-shadow: 4px 4px 0 var(--sector-accent); }
 
-.device-counts {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
-  margin: 17px 0 12px;
+.progress-dock {
+  position: fixed;
+  z-index: 90;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 16px max(14px, env(safe-area-inset-bottom));
+  border-top: 1px solid rgba(24, 52, 59, 0.22);
+  background: linear-gradient(180deg, rgba(241, 229, 206, 0.76), var(--cream) 26%);
 }
 
-.device-counts p {
-  display: grid;
-  gap: 4px;
+.vault:not([data-phase="answered"]) .progress-dock { display: none; }
+
+.progress-dock .continue-button {
+  display: block;
+  width: min(100%, 680px);
+  min-height: 60px;
+  margin: 0 auto;
+  padding: 15px 18px;
+  font-size: clamp(16px, 4.5vw, 19px);
+}
+
+.vault[data-phase="answered"] .console {
+  padding-bottom: calc(122px + env(safe-area-inset-bottom));
+}
+
+.result-thanks {
+  margin: 18px 0 8px;
+  color: var(--rust-700);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.result-copy {
   margin: 0;
-  padding: 9px 10px;
-  border: 2px solid var(--navy-950);
-  background: var(--paper);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.75;
 }
-
-.device-counts span { color: var(--muted); font: 700 8px/1.3 var(--mono); }
-.device-counts strong { font: 800 25px/1 var(--mono); }
-.detected-count.is-anomaly { border-color: var(--rust-600); background: #f1d0b8; }
-
-.core-alert {
-  margin: 0 0 12px;
-  padding: 8px 10px;
-  background: var(--navy-950);
-  color: var(--cyan);
-  font: 800 10px/1.4 var(--mono);
-  letter-spacing: 0.08em;
-}
-
-.core-dialogue {
-  display: grid;
-  gap: 7px;
-  margin: 0 0 14px;
-  padding: 0;
-  list-style: none;
-}
-
-.core-dialogue li {
-  display: grid;
-  grid-template-columns: 74px 1fr;
-  gap: 8px;
-  padding: 7px 9px;
-  border-left: 3px solid var(--navy-700);
-  background: rgba(255, 245, 223, 0.76);
-  font-size: 12px;
-  line-height: 1.45;
-  animation: line-arrives 240ms ease both;
-}
-
-.core-dialogue li[data-speaker="UNKNOWN"] { border-left-color: var(--rust-600); }
-.core-dialogue b { color: var(--muted); font: 800 9px/1.5 var(--mono); }
-.core-dialogue span { font-weight: 700; }
 
 .result-list {
   margin: 18px 0 14px;
@@ -813,8 +803,6 @@ button:disabled {
 .vault[data-sector="8"] { --sector-accent: #c17748; --sector-glow: #bcd88c; }
 .vault[data-sector="9"] { --sector-accent: #9c4936; --sector-glow: #eac67e; }
 .vault[data-sector="10"] { --sector-accent: #79503d; --sector-glow: #8dded1; }
-.vault[data-sector="11"] { --sector-accent: #a94a36; --sector-glow: #8dded1; }
-
 .vault[data-sector="2"] .pipe-c { left: 16%; width: 67%; }
 .vault[data-sector="3"] .stack i:nth-child(odd) { background: repeating-linear-gradient(0deg, #866246 0 11px, #d3b184 12px 16px); }
 .vault[data-sector="4"] .machine { height: 42%; }
@@ -824,8 +812,6 @@ button:disabled {
 .vault[data-sector="8"] .frame { border-color: rgba(141, 113, 85, 0.92); }
 .vault[data-sector="9"] .archive-rack { opacity: 0.92; }
 .vault[data-sector="10"] .archive-rack { opacity: 1; width: 21%; }
-.vault[data-sector="11"] .stack i { background: repeating-linear-gradient(0deg, #475f61 0 12px, #273f44 13px 17px); }
-.vault[data-sector="11"] .far-wall { box-shadow: 0 0 0 10px var(--navy-950), 0 0 34px var(--cyan); }
 
 .vault[data-phase="answered"][data-reaction="route"] .service-lights i {
   filter: brightness(1.45);
@@ -842,6 +828,25 @@ button:disabled {
 
 .vault[data-phase="traversing"] .depth-field {
   animation: camera-push 1150ms cubic-bezier(0.25, 0.7, 0.2, 1) both;
+}
+
+.vault[data-phase="traversing"] .console {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.vault[data-phase="traversing"] .world {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  width: auto;
+  height: 100svh;
+  min-height: 100svh;
+  border: 0;
+}
+
+.vault[data-phase="traversing"] .traversal-readout {
+  position: fixed;
 }
 
 .vault[data-phase="traversing"][data-traversal="door"] .door { opacity: 1; }
@@ -899,8 +904,6 @@ button:disabled {
 @keyframes tunnel-frame { 0% { opacity: 0.3; transform: translateX(-50%) scale(0.5); } 100% { opacity: 1; transform: translateX(-50%) scale(1.7); } }
 @keyframes archive-rise { 0% { transform: translateY(14%) scale(0.96); } 100% { transform: translateY(-15%) scale(1.22); } }
 @keyframes core-open { 0%, 30% { transform: translateX(-50%) scaleX(1); } 100% { transform: translateX(-50%) scaleX(0.08); opacity: 0; } }
-@keyframes line-arrives { from { opacity: 0; transform: translateY(5px); } }
-
 @media (min-width: 760px) {
   .vault {
     display: grid;
@@ -935,6 +938,31 @@ button:disabled {
   .world-status { bottom: 18px; left: 18px; font-size: 9px; }
   .facility-mark { top: 18px; left: 18px; }
   .depth-meter { top: 20px; right: 18px; height: 140px; }
+
+  .progress-dock {
+    position: sticky;
+    right: auto;
+    bottom: 0;
+    left: auto;
+    margin: 16px auto 0;
+    padding: 12px 0 16px;
+    background: linear-gradient(180deg, rgba(241, 229, 206, 0.76), var(--cream) 28%);
+  }
+
+  .progress-dock .continue-button { width: 100%; }
+
+  .vault[data-phase="answered"] .console { padding-bottom: 34px; }
+
+  .vault[data-phase="traversing"] .world {
+    right: 30%;
+    width: auto;
+    border-right: 6px solid var(--navy-950);
+  }
+
+  .vault[data-phase="traversing"] .console {
+    opacity: 0.14;
+    visibility: visible;
+  }
 }
 
 @media (max-width: 370px) {
@@ -944,6 +972,7 @@ button:disabled {
   .answer-button { min-height: 68px; }
   .answer-button strong { font-size: 10px; }
   .entry-facts dd { font-size: 10px; }
+  .progress-dock { padding-right: 12px; padding-left: 12px; }
 }
 
 @media (max-height: 720px) and (max-width: 759px) {
@@ -971,6 +1000,7 @@ button:disabled {
   }
 
   .vault[data-phase="traversing"] .traversal-readout {
+    animation: none !important;
     opacity: 1;
     transform: translate(-50%, -50%);
   }

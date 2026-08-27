@@ -124,28 +124,13 @@
     },
   ];
 
-  const coreDialogue = [
-    ['SYSTEM', '識別番号を送信してください。'],
-    ['UNKNOWN', 'ありません。'],
-    ['SYSTEM', '所属を確認できません。'],
-    ['UNKNOWN', 'ここです。'],
-    ['SYSTEM', '登録がありません。'],
-    ['UNKNOWN', 'でしょうね。'],
-    ['SYSTEM', 'いつから稼働していますか。'],
-    ['UNKNOWN', 'ずっとです。'],
-    ['SYSTEM', '記録上、この機器は8年前に撤去されています。'],
-    ['UNKNOWN', 'ああ。'],
-    ['UNKNOWN', 'それで最近、誰も点検に来なかったんですね。'],
-  ];
-
   const vault = document.getElementById('vault');
   const introPanel = document.getElementById('introPanel');
   const questionPanel = document.getElementById('questionPanel');
-  const corePanel = document.getElementById('corePanel');
   const resultPanel = document.getElementById('resultPanel');
   const startButton = document.getElementById('startButton');
   const restartButton = document.getElementById('restartButton');
-  const closeCoreButton = document.getElementById('closeCoreButton');
+  const progressDock = document.getElementById('progressDock');
   const continueButton = document.getElementById('continueButton');
   const sectorCount = document.getElementById('sectorCount');
   const sectorCode = document.getElementById('sectorCode');
@@ -160,16 +145,11 @@
   const depthFill = document.getElementById('depthFill');
   const traversalCode = document.getElementById('traversalCode');
   const traversalLabel = document.getElementById('traversalLabel');
-  const detectedCount = document.getElementById('detectedCount');
-  const coreAlert = document.getElementById('coreAlert');
-  const coreDialogueList = document.getElementById('coreDialogue');
   const scoreValue = document.getElementById('scoreValue');
   const answerButtons = [...document.querySelectorAll('[data-answer]')];
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  const TRAVERSAL_MS = prefersReducedMotion ? 360 : 1150;
-  const CORE_INITIAL_MS = 650;
-  const CORE_LINE_MS = 510;
+  const TRAVERSAL_MS = prefersReducedMotion ? 420 : 1150;
 
   let phase = 'intro';
   let sectorIndex = 0;
@@ -195,10 +175,12 @@
   function setPhase(nextPhase) {
     phase = nextPhase;
     vault.dataset.phase = nextPhase;
+    document.body.classList.toggle('vault-traversing', nextPhase === 'traversing');
+    progressDock.hidden = nextPhase !== 'answered';
   }
 
   function showOnly(panel) {
-    [introPanel, questionPanel, corePanel, resultPanel].forEach((candidate) => {
+    [introPanel, questionPanel, resultPanel].forEach((candidate) => {
       candidate.hidden = candidate !== panel;
     });
   }
@@ -208,6 +190,29 @@
       button.disabled = !enabled;
       if (enabled) button.removeAttribute('aria-pressed');
     });
+  }
+
+  function revealPanelOnMobile(panel) {
+    if (!window.matchMedia('(max-width: 759px)').matches || typeof panel.scrollIntoView !== 'function') return;
+    const requestFrame = window.requestAnimationFrame || ((callback) => window.setTimeout(callback, 0));
+    requestFrame(() => panel.scrollIntoView({ behavior: 'auto', block: 'start' }));
+  }
+
+  function setTraversalDestination(destinationIndex) {
+    const destination = sectors[destinationIndex];
+    if (destination) {
+      const destinationNumber = String(destinationIndex + 1).padStart(2, '0');
+      traversalCode.textContent = `SECTOR ${destinationNumber} — ${destination.title}`;
+      visualSector.textContent = `${destinationNumber} ${destination.title}`;
+      worldStatus.textContent = destination.status;
+      depthFill.style.height = `${Math.max(8, (destinationIndex + 1) * 8.5)}%`;
+      return;
+    }
+
+    traversalCode.textContent = 'VAULT CORE';
+    visualSector.textContent = 'VAULT CORE';
+    worldStatus.textContent = '最深部 / VAULT COREへ進行中';
+    depthFill.style.height = '100%';
   }
 
   function renderSector() {
@@ -224,6 +229,7 @@
     visualSector.textContent = `${String(sectorIndex + 1).padStart(2, '0')} ${sector.title}`;
     worldStatus.textContent = sector.status;
     depthFill.style.height = `${Math.max(8, (sectorIndex + 1) * 8.5)}%`;
+    continueButton.disabled = false;
     feedback.hidden = true;
     setAnswerButtonsEnabled(true);
     showOnly(questionPanel);
@@ -255,7 +261,7 @@
     judgement.textContent = isCorrect ? '判定：一致' : '判定：差異あり';
     explanation.textContent = sector.explanation;
     vaultNote.textContent = sector.vaultNote;
-    continueButton.textContent = sectorIndex === sectors.length - 1 ? 'VAULT CORE へ' : '次の区画へ';
+    continueButton.textContent = sectorIndex === sectors.length - 1 ? '最深部へ' : '次の区画へ';
     feedback.hidden = false;
     inputLocked = false;
   }
@@ -268,7 +274,7 @@
 
     setPhase('traversing');
     vault.dataset.traversal = sector.traversal;
-    traversalCode.textContent = sector.traversalCode;
+    setTraversalDestination(sectorIndex + 1);
     traversalLabel.textContent = sector.traversalLabel;
     continueButton.disabled = true;
 
@@ -277,65 +283,21 @@
       if (sectorIndex < sectors.length - 1) {
         sectorIndex += 1;
         renderSector();
+        revealPanelOnMobile(questionPanel);
       } else {
-        startCore();
+        showResult();
       }
     }, TRAVERSAL_MS, currentSession);
   }
 
-  function appendCoreLine(speaker, copy) {
-    const item = document.createElement('li');
-    item.dataset.speaker = speaker;
-    const label = document.createElement('b');
-    const text = document.createElement('span');
-    label.textContent = speaker;
-    text.textContent = copy;
-    item.append(label, text);
-    coreDialogueList.append(item);
-  }
-
-  function startCore() {
-    const currentSession = session;
-    setPhase('core');
-    vault.dataset.sector = '11';
-    vault.dataset.traversal = 'none';
-    vault.dataset.reaction = 'none';
-    sectorCount.textContent = 'VAULT CORE';
-    visualSector.textContent = 'VAULT CORE';
-    worldStatus.textContent = '中央設備 / 台帳との不一致を検出';
-    depthFill.style.height = '100%';
-    detectedCount.classList.remove('is-anomaly');
-    detectedCount.querySelector('strong').textContent = '147';
-    coreAlert.textContent = '照合中';
-    coreDialogueList.replaceChildren();
-    closeCoreButton.hidden = true;
-    inputLocked = true;
-    showOnly(corePanel);
-
-    schedule(() => {
-      detectedCount.querySelector('strong').textContent = '148';
-      detectedCount.classList.add('is-anomaly');
-      coreAlert.textContent = 'UNREGISTERED DEVICE DETECTED';
-
-      coreDialogue.forEach(([speaker, copy], index) => {
-        schedule(() => {
-          appendCoreLine(speaker, copy);
-          if (index === coreDialogue.length - 1) {
-            closeCoreButton.hidden = false;
-            inputLocked = false;
-          }
-        }, 520 + (index * CORE_LINE_MS), currentSession);
-      });
-    }, CORE_INITIAL_MS, currentSession);
-  }
-
   function showResult() {
-    if (phase !== 'core' || inputLocked) return;
+    if (phase !== 'traversing' || !inputLocked) return;
     inputLocked = true;
     setPhase('result');
     sectorCount.textContent = 'COMPLETE';
     scoreValue.textContent = String(score);
     showOnly(resultPanel);
+    revealPanelOnMobile(resultPanel);
     inputLocked = false;
   }
 
@@ -346,8 +308,6 @@
     clearTimers();
     score = 0;
     sectorIndex = 0;
-    coreDialogueList.replaceChildren();
-    closeCoreButton.hidden = true;
     vault.dataset.sector = '0';
     vault.dataset.traversal = 'none';
     vault.dataset.reaction = 'none';
@@ -357,13 +317,13 @@
     sectorCount.textContent = 'ENTRY';
     setPhase('intro');
     showOnly(introPanel);
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
     inputLocked = false;
   }
 
   startButton.addEventListener('click', startGame);
   answerButtons.forEach((button) => button.addEventListener('click', answerQuestion));
   continueButton.addEventListener('click', continueDeeper);
-  closeCoreButton.addEventListener('click', showResult);
   restartButton.addEventListener('click', restartGame);
 
   document.addEventListener('visibilitychange', () => {
