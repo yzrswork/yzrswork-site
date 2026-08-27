@@ -167,94 +167,6 @@ button:focus-visible {
   visibility: hidden;
 }
 
-.residual-route {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-}
-
-.residual-route-base,
-.residual-route-pulse {
-  fill: none;
-  stroke-linecap: square;
-  stroke-linejoin: miter;
-}
-
-.residual-route-base {
-  stroke: rgba(185, 255, 115, 0.16);
-  stroke-width: 3;
-}
-
-.residual-route-pulse {
-  stroke: var(--green);
-  stroke-width: 4;
-  stroke-dasharray: 18 48;
-  stroke-dashoffset: 0;
-  opacity: 0;
-}
-
-.residual-route-node {
-  fill: var(--green);
-  opacity: 0.5;
-}
-
-.terminal[data-state="acquired"] .residual-route-pulse,
-.terminal[data-state="active"] .residual-route-pulse {
-  opacity: 0.82;
-  animation: residual-flow 2.8s linear infinite;
-}
-
-@keyframes residual-flow {
-  to {
-    stroke-dashoffset: -180;
-  }
-}
-
-.asset-frame {
-  position: absolute;
-  top: 7%;
-  left: 7%;
-  width: 86%;
-  height: 86%;
-  border: 3px solid rgba(185, 255, 115, 0.24);
-}
-
-.frame-corner {
-  position: absolute;
-  display: block;
-  width: 48px;
-  height: 48px;
-  border-color: var(--green);
-  border-style: solid;
-  filter: drop-shadow(0 0 8px rgba(185, 255, 115, 0.22));
-}
-
-.frame-corner-tl {
-  top: -1px;
-  left: -1px;
-  border-width: 5px 0 0 5px;
-}
-
-.frame-corner-tr {
-  top: -1px;
-  right: -1px;
-  border-width: 5px 5px 0 0;
-}
-
-.frame-corner-bl {
-  bottom: -1px;
-  left: -1px;
-  border-width: 0 0 5px 5px;
-}
-
-.frame-corner-br {
-  right: -1px;
-  bottom: -1px;
-  border-width: 0 5px 5px 0;
-}
-
 .callout {
   position: absolute;
   display: flex;
@@ -383,18 +295,9 @@ button:focus-visible {
 .state-detail,
 .privacy-note,
 .route-line,
-.mode-tab,
-.link-readout span,
-.link-readout strong,
 .asset-facts dt,
 .signal-rule,
 .link-state,
-.layer-note,
-.topology,
-.topology-status,
-.trace-panel,
-.trace-title,
-.trace-log,
 .camera-exit {
   font-family: var(--mono);
 }
@@ -595,8 +498,7 @@ button:focus-visible {
   color: #e2c77c;
 }
 
-.action-button,
-.mode-tab {
+.action-button {
   min-height: 38px;
   border: 1px solid var(--line);
   border-radius: 0;
@@ -729,225 +631,6 @@ button:focus-visible {
   }
 }
 
-.mode-tabs {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 3px;
-  padding: 9px 10px 0;
-}
-
-.mode-tab {
-  min-height: 32px;
-  padding: 6px 3px;
-  color: var(--green-dim);
-  background: rgba(2, 8, 4, 0.36);
-  font-size: 9px;
-  letter-spacing: 0.06em;
-}
-
-.mode-tab.is-active,
-.mode-tab[aria-selected="true"] {
-  color: var(--ink);
-  background: var(--green);
-}
-
-.tab-content {
-  padding: 8px 10px 9px;
-}
-
-.link-readout {
-  border-top: 1px solid var(--line-soft);
-}
-
-.link-readout p {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 10px;
-  margin: 0;
-  padding: 8px 1px 7px;
-  border-bottom: 1px solid var(--line-soft);
-}
-
-.link-readout-primary {
-  display: grid !important;
-  justify-content: start !important;
-  gap: 4px;
-  padding-top: 10px !important;
-  padding-bottom: 9px !important;
-}
-
-.link-readout span {
-  color: var(--green-dim);
-  font-size: 9px;
-  letter-spacing: 0.06em;
-}
-
-.link-readout strong {
-  color: var(--green-bright);
-  font-size: 11px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: right;
-}
-
-.link-readout-primary span {
-  color: var(--green);
-  font-size: 10px;
-}
-
-.link-readout-primary strong {
-  color: var(--green-bright);
-  font-size: 14px;
-  letter-spacing: -0.02em;
-  text-align: left;
-}
-
-.signal-level {
-  color: var(--green) !important;
-  letter-spacing: 0.12em !important;
-}
-
-.layer-note,
-.topology-status {
-  margin: 8px 0 0;
-  color: var(--green-dim);
-  font-size: 8px;
-  letter-spacing: 0.08em;
-}
-
-.topology {
-  position: relative;
-  min-height: 139px;
-  padding-top: 1px;
-  color: var(--green-bright);
-  font-size: 9px;
-}
-
-.topology-root,
-.topology-bus {
-  position: relative;
-  width: max-content;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 6px 8px;
-  border: 1px solid var(--line);
-  color: var(--green-bright);
-  text-align: center;
-  white-space: nowrap;
-}
-
-.topology-root::after {
-  position: absolute;
-  top: 100%;
-  left: calc(50% - 1px);
-  width: 1px;
-  height: 10px;
-  content: "";
-  background: var(--line);
-}
-
-.topology-bus {
-  margin-top: 10px;
-  color: var(--green);
-}
-
-.topology-bus::after {
-  position: absolute;
-  top: 100%;
-  left: calc(50% - 1px);
-  width: 1px;
-  height: 13px;
-  content: "";
-  background: var(--line);
-}
-
-.topology-children {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 3px;
-  margin-top: 13px;
-}
-
-.topology-children::before {
-  position: absolute;
-  top: -7px;
-  right: 16.5%;
-  left: 16.5%;
-  height: 1px;
-  content: "";
-  background: var(--line);
-}
-
-.topology-children .topology-node {
-  position: relative;
-  min-width: 0;
-  padding: 7px 2px 6px;
-  border: 1px solid var(--line-soft);
-  color: var(--green-bright);
-  text-align: center;
-  white-space: nowrap;
-}
-
-.topology-children .topology-node::before {
-  position: absolute;
-  top: -7px;
-  left: calc(50% - 1px);
-  width: 1px;
-  height: 7px;
-  content: "";
-  background: var(--line);
-}
-
-.topology-status {
-  padding-top: 7px;
-  border-top: 1px solid var(--line-soft);
-}
-
-.trace-title {
-  margin: 0;
-  color: var(--green-dim);
-  font-size: 8px;
-  letter-spacing: 0.08em;
-}
-
-.trace-log {
-  margin-top: 7px;
-  border-top: 1px solid var(--line-soft);
-}
-
-.trace-log p {
-  display: grid;
-  gap: 4px;
-  margin: 0;
-  padding: 8px 1px 7px;
-  border-bottom: 1px solid var(--line-soft);
-}
-
-.trace-log span {
-  color: var(--green-dim);
-  font-size: 8px;
-  letter-spacing: 0.06em;
-}
-
-.trace-log strong {
-  color: var(--green-bright);
-  font-size: 10px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
-}
-
-.trace-anomaly {
-  padding-left: 7px !important;
-  border-left: 2px solid var(--green);
-  background: rgba(185, 255, 115, 0.05);
-}
-
-.trace-anomaly strong {
-  color: var(--green);
-}
-
 .camera-exit {
   position: absolute;
   right: 12px;
@@ -1003,5 +686,545 @@ button:focus-visible {
     scroll-behavior: auto !important;
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Phase 4: the object-linked layer is an interaction surface, not a passive HUD. */
+.terminal[data-state="hold"] .camera-stage video,
+.terminal[data-state="restored"] .camera-stage video,
+.terminal[data-state="fourth"] .camera-stage video,
+.terminal[data-state="complete"] .camera-stage video,
+.terminal[data-state="hold"] .standby-surface,
+.terminal[data-state="restored"] .standby-surface,
+.terminal[data-state="fourth"] .standby-surface,
+.terminal[data-state="complete"] .standby-surface {
+  opacity: 1;
+}
+
+.terminal[data-state="hold"] .camera-note,
+.terminal[data-state="restored"] .camera-note,
+.terminal[data-state="fourth"] .camera-note,
+.terminal[data-state="complete"] .camera-note {
+  opacity: 1;
+}
+
+.tracking-css-renderer {
+  pointer-events: auto;
+}
+
+.tracked-overlay {
+  pointer-events: auto;
+}
+
+.route-map {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.route-path,
+.route-fourth-path {
+  fill: none;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  vector-effect: non-scaling-stroke;
+}
+
+.route-path {
+  stroke: rgba(185, 255, 115, 0.18);
+  stroke-width: 2.5;
+  stroke-dasharray: 4 13;
+  opacity: 0.8;
+  transition: stroke 160ms ease, opacity 160ms ease;
+}
+
+.route-path[data-state="armed"] {
+  stroke: var(--green);
+  opacity: 0.92;
+  filter: drop-shadow(0 0 6px rgba(185, 255, 115, 0.22));
+}
+
+.route-path[data-state="pulsing"] {
+  stroke: var(--green-bright);
+  stroke-width: 5;
+  stroke-dasharray: 20 14;
+  opacity: 1;
+  animation: route-line-flow 420ms linear infinite;
+  filter: drop-shadow(0 0 8px rgba(185, 255, 115, 0.38));
+}
+
+.route-path[data-state="ack"] {
+  stroke: var(--green);
+  stroke-width: 3;
+  stroke-dasharray: none;
+  opacity: 0.56;
+}
+
+@keyframes route-line-flow {
+  to {
+    stroke-dashoffset: -34;
+  }
+}
+
+.route-node {
+  fill: var(--green);
+  opacity: 0.36;
+}
+
+.route-node-root {
+  opacity: 0.9;
+  filter: drop-shadow(0 0 7px rgba(185, 255, 115, 0.36));
+}
+
+.route-map.is-synchronized .route-node {
+  animation: system-flash 850ms ease-out both;
+}
+
+@keyframes system-flash {
+  0%,
+  100% {
+    opacity: 0.38;
+  }
+
+  45% {
+    opacity: 1;
+  }
+}
+
+.callout {
+  pointer-events: none;
+}
+
+.route-flow,
+.route-response,
+.route-fourth-label {
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  font-family: var(--mono);
+}
+
+.route-flow {
+  color: var(--green-bright);
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  opacity: 0;
+  white-space: nowrap;
+}
+
+.route-flow-0 {
+  top: 66%;
+  left: 52%;
+}
+
+.route-flow-1 {
+  top: 66%;
+  left: 17%;
+}
+
+.route-flow-2 {
+  top: 76%;
+  left: 52%;
+}
+
+.route-flow.is-running,
+.route-flow.is-ack {
+  opacity: 0.96;
+}
+
+.route-flow.is-running span {
+  display: block;
+}
+
+.route-flow-0.is-running span,
+.route-flow-2.is-running span {
+  animation: route-arrows-forward 1.2s ease-out both;
+}
+
+.route-flow-1.is-running span {
+  animation: route-arrows-back 1.2s ease-out both;
+}
+
+@keyframes route-arrows-forward {
+  from {
+    opacity: 0.25;
+    transform: translateX(-18px);
+  }
+
+  35% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.92;
+    transform: translateX(126px);
+  }
+}
+
+@keyframes route-arrows-back {
+  from {
+    opacity: 0.25;
+    transform: translateX(18px);
+  }
+
+  35% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.92;
+    transform: translateX(-126px);
+  }
+}
+
+.route-flow.is-ack {
+  color: var(--green);
+  font-size: 23px;
+  opacity: 0.62;
+}
+
+.route-flow.is-ack span {
+  animation: none;
+}
+
+.route-fourth-path {
+  stroke: var(--green-bright);
+  stroke-width: 3;
+  stroke-dasharray: 4 15;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.route-map.is-fourth-active .route-fourth-path {
+  opacity: 0.86;
+}
+
+.route-map.is-fourth-active .route-node-fourth {
+  opacity: 0.86;
+  filter: drop-shadow(0 0 8px rgba(185, 255, 115, 0.4));
+}
+
+.route-flow-fourth {
+  top: 26%;
+  left: 55%;
+  color: var(--green-bright);
+}
+
+.route-flow-fourth.is-visible {
+  opacity: 0;
+}
+
+.route-flow-fourth.is-visible.is-running {
+  opacity: 1;
+}
+
+.route-flow-fourth.is-running span {
+  display: block;
+  animation: route-fourth-outbound 1.2s ease-out both;
+}
+
+.route-flow-fourth.is-complete {
+  opacity: 0.52;
+}
+
+.route-flow-fourth.is-complete span {
+  animation: none;
+}
+
+@keyframes route-fourth-outbound {
+  from {
+    opacity: 0.2;
+    transform: translateX(-12px);
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.9;
+    transform: translateX(128px);
+  }
+}
+
+.route-response {
+  top: 20%;
+  left: 69%;
+  color: var(--green);
+  font-size: 23px;
+  font-weight: 700;
+  opacity: 0;
+  white-space: nowrap;
+}
+
+.route-response.is-visible {
+  opacity: 0.78;
+  animation: route-response-return 650ms ease-out both;
+}
+
+@keyframes route-response-return {
+  from {
+    opacity: 0;
+    transform: translateX(35px);
+  }
+
+  45% {
+    opacity: 0.9;
+  }
+
+  to {
+    opacity: 0.78;
+    transform: translateX(0);
+  }
+}
+
+.route-fourth-label {
+  top: 8%;
+  left: 70%;
+  display: grid;
+  gap: 4px;
+  color: var(--green-bright);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.route-fourth-label span {
+  color: var(--green-dim);
+  font-size: 9px;
+  font-weight: 400;
+}
+
+.route-fourth-label.is-visible {
+  opacity: 0.9;
+  transform: translateY(0);
+}
+
+.route-hit-area {
+  position: absolute;
+  z-index: 5;
+  display: grid;
+  width: 112px;
+  height: 112px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: var(--green-bright);
+  background: transparent;
+  cursor: pointer;
+  place-items: center;
+  pointer-events: auto;
+}
+
+.route-hit-area-0 {
+  top: 12%;
+  left: 80%;
+}
+
+.route-hit-area-1 {
+  top: 37%;
+  left: -1%;
+}
+
+.route-hit-area-2 {
+  top: 70%;
+  left: 80%;
+}
+
+.route-hit-marker {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  border: 1px solid rgba(185, 255, 115, 0.12);
+  color: var(--green);
+  opacity: 0;
+  place-items: center;
+  transform: rotate(45deg);
+  transition: opacity 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.route-hit-marker small {
+  display: block;
+  color: var(--green-bright);
+  font: 700 8px/1 var(--mono);
+  letter-spacing: 0.04em;
+  transform: rotate(-45deg);
+}
+
+.route-hit-area.is-armed .route-hit-marker {
+  border-color: var(--green);
+  background: rgba(5, 20, 8, 0.3);
+  opacity: 0.98;
+  animation: armed-marker 1.5s ease-in-out infinite;
+}
+
+@keyframes armed-marker {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(185, 255, 115, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 16px rgba(185, 255, 115, 0.2);
+  }
+}
+
+.route-hit-area.is-pulsing .route-hit-marker {
+  border-color: var(--green-bright);
+  background: rgba(185, 255, 115, 0.16);
+  opacity: 0.95;
+}
+
+.route-hit-area.is-ack {
+  pointer-events: none;
+}
+
+.route-hit-area.is-nudge .route-hit-marker {
+  border-color: var(--green-bright);
+  opacity: 1;
+  transform: rotate(45deg) scale(1.08);
+}
+
+.active-panel {
+  width: min(214px, calc(100vw - 24px));
+  max-height: calc(100svh - 82px - env(safe-area-inset-top));
+}
+
+.active-panel-header {
+  padding: 10px 11px 8px;
+}
+
+.active-panel h1 {
+  font-size: 15px;
+  letter-spacing: -0.04em;
+}
+
+.game-progress {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 11px 8px;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.game-progress span {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--green-bright);
+  font: 700 10px/1.25 var(--mono);
+  letter-spacing: 0.02em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.game-progress strong {
+  flex: 0 0 auto;
+  color: var(--green);
+  font: 700 13px/1 var(--mono);
+  letter-spacing: 0.02em;
+}
+
+.route-status-list {
+  display: grid;
+  gap: 0;
+  padding: 4px 10px 0;
+}
+
+.route-status-row {
+  display: grid;
+  grid-template-columns: 49px minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 5px;
+  min-height: 27px;
+  padding: 6px 1px 5px;
+  border-bottom: 1px solid var(--line-soft);
+  font-family: var(--mono);
+}
+
+.route-status-row span,
+.route-status-row em {
+  color: var(--green-dim);
+  font-size: 8px;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+.route-status-row strong {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--green-bright);
+  font-size: 10px;
+  letter-spacing: 0.01em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.route-status-row[data-state="armed"] {
+  background: rgba(185, 255, 115, 0.06);
+}
+
+.route-status-row[data-state="armed"] em,
+.route-status-row[data-state="pulsing"] em,
+.route-status-row[data-state="ack"] em {
+  color: var(--green);
+}
+
+.route-status-row[data-state="pulsing"] strong {
+  color: var(--green-bright);
+}
+
+.game-feedback {
+  min-height: 1.2em;
+  margin: 8px 11px 9px;
+  color: var(--green-dim);
+  font: 8px/1.4 var(--mono);
+  letter-spacing: 0.05em;
+}
+
+.anomaly-readout {
+  display: grid;
+  gap: 4px;
+  margin: 0 10px 10px;
+  padding: 8px 9px 7px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--green);
+  background: rgba(185, 255, 115, 0.05);
+}
+
+.anomaly-readout span {
+  color: var(--green-dim);
+  font: 8px/1 var(--mono);
+  letter-spacing: 0.08em;
+}
+
+.anomaly-readout strong {
+  color: var(--green-bright);
+  font: 700 10px/1.25 var(--mono);
+  letter-spacing: 0.01em;
+}
+
+@media (min-width: 640px) {
+  .active-panel {
+    width: min(214px, 28vw);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-path[data-state="pulsing"],
+  .route-map.is-synchronized .route-node,
+  .route-hit-area.is-armed .route-hit-marker,
+  .route-flow.is-running span,
+  .route-flow-fourth.is-running span,
+  .route-response.is-visible {
+    animation: none;
   }
 }
