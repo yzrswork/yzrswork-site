@@ -260,6 +260,7 @@
     score = 0;
     sectorIndex = 0;
     renderSector();
+    world.scrollIntoView({ behavior: 'auto', block: 'start' });
   }
 
   function answerQuestion(event) {
@@ -292,7 +293,6 @@
     const sector = sectors[sectorIndex];
     const currentSession = session;
 
-    world.scrollIntoView({ behavior: 'auto', block: 'start' });
     setPhase('traversing');
     setTraversalReady(false);
     vault.dataset.traversal = sector.traversal;
@@ -347,7 +347,7 @@
     sectorCount.textContent = 'ENTRY';
     setPhase('intro');
     showOnly(introPanel);
-    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    world.scrollIntoView({ behavior: 'auto', block: 'start' });
     inputLocked = false;
   }
 
