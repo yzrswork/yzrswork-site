@@ -1,0 +1,79 @@
+.world::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  content: "";
+  background-image: url("./assets/vault-upper.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: scale(1.005);
+  transform-origin: 50% 50%;
+}
+
+.world::after {
+  position: absolute;
+  z-index: 10;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(16, 42, 49, 0.08) 0%, transparent 28%),
+    linear-gradient(0deg, rgba(16, 42, 49, 0.07) 0%, transparent 24%);
+}
+
+/* The approved artwork now provides the facility geometry. Keep the existing
+   world chrome/readouts and a light trace of the original daylight overlay. */
+.daylight {
+  opacity: 0.16;
+}
+
+.depth-field {
+  display: none;
+}
+
+.vault[data-sector="0"] .world::before,
+.vault[data-sector="1"] .world::before,
+.vault[data-sector="2"] .world::before,
+.vault[data-sector="3"] .world::before {
+  background-image: url("./assets/vault-upper.webp");
+}
+
+.vault[data-sector="4"] .world::before,
+.vault[data-sector="5"] .world::before,
+.vault[data-sector="6"] .world::before,
+.vault[data-sector="7"] .world::before {
+  background-image: url("./assets/vault-mid.webp");
+}
+
+.vault[data-sector="8"] .world::before,
+.vault[data-sector="9"] .world::before,
+.vault[data-sector="10"] .world::before,
+.vault[data-phase="result"] .world::before {
+  background-image: url("./assets/vault-deep.webp");
+}
+
+.vault[data-phase="traversing"] .world::before {
+  background-image: url("./assets/vault-traversal.webp");
+  animation: vault-image-push 1150ms cubic-bezier(0.25, 0.7, 0.2, 1) both;
+}
+
+.vault[data-phase="traversing"] .world::after {
+  background:
+    linear-gradient(180deg, rgba(16, 42, 49, 0.11) 0%, transparent 30%),
+    linear-gradient(0deg, rgba(16, 42, 49, 0.14) 0%, transparent 30%);
+}
+
+@keyframes vault-image-push {
+  0% { transform: scale(1.005); filter: brightness(1); }
+  58% { transform: scale(1.045); filter: brightness(1.03); }
+  100% { transform: scale(1.075); filter: brightness(0.94); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vault[data-phase="traversing"] .world::before {
+    animation: none !important;
+    transform: scale(1.005);
+    filter: none;
+  }
+}
