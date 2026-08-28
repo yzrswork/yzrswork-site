@@ -125,6 +125,7 @@
   ];
 
   const vault = document.getElementById('vault');
+  const world = vault.querySelector('.world');
   const introPanel = document.getElementById('introPanel');
   const questionPanel = document.getElementById('questionPanel');
   const resultPanel = document.getElementById('resultPanel');
@@ -291,6 +292,7 @@
     const sector = sectors[sectorIndex];
     const currentSession = session;
 
+    world.scrollIntoView({ behavior: 'auto', block: 'start' });
     setPhase('traversing');
     setTraversalReady(false);
     vault.dataset.traversal = sector.traversal;
