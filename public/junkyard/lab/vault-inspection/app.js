@@ -25,7 +25,7 @@
       vaultNote: '端子が同じだからといって、中身まで仲良しとは限りません。',
       traversal: 'lift',
       traversalCode: 'FREIGHT LIFT / DOWN',
-      traversalLabel: 'バックアップのつもりでした。現在は、変更するたびに審査が入ります。',
+      traversalLabel: '失敗しても戻せるので安心です。試す回数と検証で、時間が溶けていきます。',
       status: '幹線層 / 同じ顔のケーブルが多数勤務中',
     },
     {
@@ -38,7 +38,7 @@
       vaultNote: '見た目だけで配線すると、あとあともう一度全バラが待ってます。',
       traversal: 'stairs',
       traversalCode: 'SERVICE STAIR / UP',
-      traversalLabel: '作業記録を書き始めました。気づけば、週刊誌になっています。',
+      traversalLabel: 'コツコツ積み上がると嬉しいです。投稿しなきゃの圧も、一緒に積み上がります。',
       status: '音響層 / 左右とは限らない3端子',
     },
     {
@@ -90,7 +90,7 @@
       vaultNote: 'ヒューズが切れるときは、回路がキレ散らかしてます。危険。',
       traversal: 'bridge',
       traversalCode: 'OVERHEAD PASSAGE',
-      traversalLabel: 'その結果、管理するための仕事が増えています。',
+      traversalLabel: 'スキルを作るたびに、AIに任せられることが増えます。人間側の取扱説明書も、同じだけ増えていきます。',
       status: '規定層 / 保護装置は抗議を継続中',
     },
     {
