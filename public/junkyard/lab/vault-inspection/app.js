@@ -125,6 +125,7 @@
   ];
 
   const vault = document.getElementById('vault');
+  const world = vault.querySelector('.world');
   const introPanel = document.getElementById('introPanel');
   const questionPanel = document.getElementById('questionPanel');
   const resultPanel = document.getElementById('resultPanel');
@@ -259,6 +260,7 @@
     score = 0;
     sectorIndex = 0;
     renderSector();
+    world.scrollIntoView({ behavior: 'auto', block: 'start' });
   }
 
   function answerQuestion(event) {
@@ -345,7 +347,7 @@
     sectorCount.textContent = 'ENTRY';
     setPhase('intro');
     showOnly(introPanel);
-    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    world.scrollIntoView({ behavior: 'auto', block: 'start' });
     inputLocked = false;
   }
 
