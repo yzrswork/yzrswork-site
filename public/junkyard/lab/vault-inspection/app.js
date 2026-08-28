@@ -156,6 +156,7 @@
   const worldStatus = document.getElementById('worldStatus');
   const depthFill = document.getElementById('depthFill');
   const traversalCode = document.getElementById('traversalCode');
+  const traversalTitle = document.getElementById('traversalTitle');
   const traversalLabel = document.getElementById('traversalLabel');
   const scoreValue = document.getElementById('scoreValue');
   const answerButtons = [...document.querySelectorAll('[data-answer]')];
@@ -230,14 +231,16 @@
     const destination = sectors[destinationIndex];
     if (destination) {
       const destinationNumber = String(destinationIndex + 1).padStart(2, '0');
-      traversalCode.textContent = `SECTOR ${destinationNumber} — ${destination.vaultTitle}`;
+      traversalCode.textContent = `SECTOR ${destinationNumber}`;
+      traversalTitle.textContent = destination.vaultTitle;
       visualSector.textContent = `${destinationNumber} ${destination.vaultTitle}`;
       worldStatus.textContent = destination.status;
       depthFill.style.height = `${Math.max(8, (destinationIndex + 1) * 8.5)}%`;
       return;
     }
 
-    traversalCode.textContent = 'VAULT CORE';
+    traversalCode.textContent = 'VAULT';
+    traversalTitle.textContent = 'CORE';
     visualSector.textContent = 'VAULT CORE';
     worldStatus.textContent = '最深部 / VAULT COREへ進行中';
     depthFill.style.height = '100%';
