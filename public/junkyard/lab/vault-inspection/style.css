@@ -528,8 +528,23 @@ body.vault-traversing {
   pointer-events: none;
 }
 
-.traversal-readout span { color: var(--cyan); font-size: 9px; }
-.traversal-readout strong { font-size: 13px; }
+.traversal-readout .traversal-sector {
+  color: var(--cyan);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.traversal-readout .traversal-title {
+  font-size: clamp(18px, 5vw, 28px);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.traversal-readout .traversal-caption {
+  font-size: clamp(14px, 3.6vw, 17px);
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
 
 .traversal-button {
   position: absolute;
