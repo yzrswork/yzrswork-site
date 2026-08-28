@@ -23,8 +23,11 @@
 }
 
 /* The approved artwork now provides the facility geometry. Keep the existing
-   world chrome/readouts, but retire the CSS-built duplicate scene. */
-.daylight,
+   world chrome/readouts and a light trace of the original daylight overlay. */
+.daylight {
+  opacity: 0.16;
+}
+
 .depth-field {
   display: none;
 }
