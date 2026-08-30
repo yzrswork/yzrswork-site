@@ -10,6 +10,7 @@ const urls = [
   'https://yzrswork.com/about/',
   'https://yzrswork.com/privacy/',
   'https://yzrswork.com/guides/hajimete-no-denshi-kousaku-starter-guide/',
+  'https://yzrswork.com/junkyard/works/mo-1/',
 ];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>

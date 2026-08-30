@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { dirname, extname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -13,7 +14,13 @@ const LP_URL = `${BASE}/lp/electronics-starter/`;
 const TIMES = 'times/index.html';
 const TIMES_URL = `${BASE}/times/`;
 const EVENING = 'evening.html';
-const pages = ['index.html', 'about/index.html', 'privacy/index.html', GUIDE, LP];
+const WORK = 'junkyard/works/mo-1/index.html';
+const WORK_URL = `${BASE}/junkyard/works/mo-1/`;
+const WORK_ASSET = 'junkyard/works/mo-1/mo-1.jpeg';
+const WORK_ASSET_SIZE = 190049;
+const WORK_ASSET_SHA256 = 'c5fe94b74d733f28fc181666364f5f1f97493f49e8df71d445c0a6c1e12dbac5';
+const WORK_NOTE_URL = 'https://note.com/yzrswork/n/n1d2d7c27e061';
+const pages = ['index.html', 'about/index.html', 'privacy/index.html', GUIDE, LP, WORK];
 const uiPages = [TIMES, EVENING];
 const analyticsPages = new Set(pages);
 const errors = [];
@@ -88,6 +95,8 @@ const expectedFiles = [
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/parts-amazon-stock-set.png',
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/parts-domestic-stock-set.png',
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/parts-china-stock-set.png',
+  WORK,
+  WORK_ASSET,
   'junkyard/lab/multi-target/index.html',
   'junkyard/lab/multi-target/style.css',
   'junkyard/lab/multi-target/app.js',
@@ -118,6 +127,7 @@ const canonicalExpectations = {
   'privacy/index.html': `${BASE}/privacy/`,
   [GUIDE]: GUIDE_URL,
   [LP]: LP_URL,
+  [WORK]: WORK_URL,
   [TIMES]: TIMES_URL,
   [EVENING]: TIMES_URL,
 };
@@ -154,6 +164,24 @@ for (const forbidden of ['__manus__', 'Manus Analytics', 'OWNER_OPEN_ID', 'acces
 }
 if (lp.includes('https://amzn.to/') || lp.includes('target="_blank"')) errors.push('LPに不要な外部遷移がある');
 
+const work = htmlByPage.get(WORK);
+for (const [label, expected] of [
+  ['MO-1のnote URL', `href="${WORK_NOTE_URL}"`],
+  ['MO-1の画像参照', `src="/${WORK_ASSET}"`],
+  ['MO-1の縦画像表示', 'aspect-ratio: 3 / 4;'],
+]) if (!work.includes(expected)) errors.push(`${label}がない`);
+if (work.includes('IMAGE ASSET PENDING')) errors.push('MO-1に画像保留表示が残っている');
+if (/\{\{[^}]+\}\}/.test(work)) errors.push('MO-1に未解決placeholderがある');
+if (work.includes('height: 210mm')) errors.push('MO-1にA5固定高さがある');
+
+const workAssetPath = join(PUBLIC, WORK_ASSET);
+if (existsSync(workAssetPath)) {
+  const workAsset = readFileSync(workAssetPath);
+  const sha256 = createHash('sha256').update(workAsset).digest('hex');
+  if (workAsset.length !== WORK_ASSET_SIZE) errors.push(`MO-1画像サイズが不一致: ${workAsset.length}`);
+  if (sha256 !== WORK_ASSET_SHA256) errors.push(`MO-1画像SHA-256が不一致: ${sha256}`);
+}
+
 const robots = read('robots.txt');
 if (!robots.includes('Sitemap: https://yzrswork.com/sitemap.xml')) errors.push('robots.txtのSitemap指定がない');
 const sitemap = read('sitemap.xml');
@@ -166,7 +194,7 @@ const analytics = read('analytics.js');
 if (!/G-[A-Z0-9]+/.test(analytics)) errors.push('GA4 measurement IDがない');
 if (/document\.cookie|localStorage|sessionStorage|email|phone|user_id/i.test(analytics)) errors.push('AnalyticsにPII収集の実装がある');
 
-const siteFiles = walkFiles(ROOT).filter((file) => extname(file).toLowerCase() !== '.png' && extname(file).toLowerCase() !== '.jpg');
+const siteFiles = walkFiles(ROOT).filter((file) => !['.png', '.jpg', '.jpeg'].includes(extname(file).toLowerCase()));
 const secretPatterns = [
   /-----BEGIN [A-Z ]*PRIVATE KEY-----/,
   /(?:gh[pousr]|github_pat)_[A-Za-z0-9_]{20,}/,
