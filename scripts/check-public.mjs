@@ -14,13 +14,29 @@ const LP_URL = `${BASE}/lp/electronics-starter/`;
 const TIMES = 'times/index.html';
 const TIMES_URL = `${BASE}/times/`;
 const EVENING = 'evening.html';
-const WORK = 'junkyard/works/mo-1/index.html';
-const WORK_URL = `${BASE}/junkyard/works/mo-1/`;
-const WORK_ASSET = 'junkyard/works/mo-1/mo-1.jpeg';
-const WORK_ASSET_SIZE = 190049;
-const WORK_ASSET_SHA256 = 'c5fe94b74d733f28fc181666364f5f1f97493f49e8df71d445c0a6c1e12dbac5';
-const WORK_NOTE_URL = 'https://note.com/yzrswork/n/n1d2d7c27e061';
-const pages = ['index.html', 'about/index.html', 'privacy/index.html', GUIDE, LP, WORK];
+const WORKS = [
+  {
+    name: 'MO-1',
+    page: 'junkyard/works/mo-1/index.html',
+    url: `${BASE}/junkyard/works/mo-1/`,
+    asset: 'junkyard/works/mo-1/mo-1.jpeg',
+    assetSize: 190049,
+    assetSha256: 'c5fe94b74d733f28fc181666364f5f1f97493f49e8df71d445c0a6c1e12dbac5',
+    noteUrl: 'https://note.com/yzrswork/n/n1d2d7c27e061',
+    imageRatio: 'aspect-ratio: 3 / 4;',
+  },
+  {
+    name: 'COMPO-1',
+    page: 'junkyard/works/compo-1/index.html',
+    url: `${BASE}/junkyard/works/compo-1/`,
+    asset: 'junkyard/works/compo-1/compo-1.png',
+    assetSize: 1890167,
+    assetSha256: '1bc21a464ffeb8c70a70ee3636397f6869e5f8764d8a911a7f1d3d920736c2b4',
+    noteUrl: 'https://note.com/yzrswork/n/n7ed9240f28cd',
+    imageRatio: 'aspect-ratio: 4 / 3;',
+  },
+];
+const pages = ['index.html', 'about/index.html', 'privacy/index.html', GUIDE, LP, ...WORKS.map(({ page }) => page)];
 const uiPages = [TIMES, EVENING];
 const analyticsPages = new Set(pages);
 const errors = [];
@@ -95,8 +111,7 @@ const expectedFiles = [
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/parts-amazon-stock-set.png',
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/parts-domestic-stock-set.png',
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/parts-china-stock-set.png',
-  WORK,
-  WORK_ASSET,
+  ...WORKS.flatMap(({ page, asset }) => [page, asset]),
   'junkyard/lab/multi-target/index.html',
   'junkyard/lab/multi-target/style.css',
   'junkyard/lab/multi-target/app.js',
@@ -127,7 +142,7 @@ const canonicalExpectations = {
   'privacy/index.html': `${BASE}/privacy/`,
   [GUIDE]: GUIDE_URL,
   [LP]: LP_URL,
-  [WORK]: WORK_URL,
+  ...Object.fromEntries(WORKS.map(({ page, url }) => [page, url])),
   [TIMES]: TIMES_URL,
   [EVENING]: TIMES_URL,
 };
@@ -164,22 +179,24 @@ for (const forbidden of ['__manus__', 'Manus Analytics', 'OWNER_OPEN_ID', 'acces
 }
 if (lp.includes('https://amzn.to/') || lp.includes('target="_blank"')) errors.push('LPに不要な外部遷移がある');
 
-const work = htmlByPage.get(WORK);
-for (const [label, expected] of [
-  ['MO-1のnote URL', `href="${WORK_NOTE_URL}"`],
-  ['MO-1の画像参照', `src="/${WORK_ASSET}"`],
-  ['MO-1の縦画像表示', 'aspect-ratio: 3 / 4;'],
-]) if (!work.includes(expected)) errors.push(`${label}がない`);
-if (work.includes('IMAGE ASSET PENDING')) errors.push('MO-1に画像保留表示が残っている');
-if (/\{\{[^}]+\}\}/.test(work)) errors.push('MO-1に未解決placeholderがある');
-if (work.includes('height: 210mm')) errors.push('MO-1にA5固定高さがある');
+for (const spec of WORKS) {
+  const work = htmlByPage.get(spec.page);
+  for (const [label, expected] of [
+    [`${spec.name}のnote URL`, `href="${spec.noteUrl}"`],
+    [`${spec.name}の画像参照`, `src="/${spec.asset}"`],
+    [`${spec.name}の画像表示比率`, spec.imageRatio],
+  ]) if (!work.includes(expected)) errors.push(`${label}がない`);
+  if (work.includes('IMAGE ASSET PENDING')) errors.push(`${spec.name}に画像保留表示が残っている`);
+  if (/\{\{[^}]+\}\}/.test(work)) errors.push(`${spec.name}に未解決placeholderがある`);
+  if (work.includes('height: 210mm')) errors.push(`${spec.name}にA5固定高さがある`);
 
-const workAssetPath = join(PUBLIC, WORK_ASSET);
-if (existsSync(workAssetPath)) {
-  const workAsset = readFileSync(workAssetPath);
-  const sha256 = createHash('sha256').update(workAsset).digest('hex');
-  if (workAsset.length !== WORK_ASSET_SIZE) errors.push(`MO-1画像サイズが不一致: ${workAsset.length}`);
-  if (sha256 !== WORK_ASSET_SHA256) errors.push(`MO-1画像SHA-256が不一致: ${sha256}`);
+  const workAssetPath = join(PUBLIC, spec.asset);
+  if (existsSync(workAssetPath)) {
+    const workAsset = readFileSync(workAssetPath);
+    const sha256 = createHash('sha256').update(workAsset).digest('hex');
+    if (workAsset.length !== spec.assetSize) errors.push(`${spec.name}画像サイズが不一致: ${workAsset.length}`);
+    if (sha256 !== spec.assetSha256) errors.push(`${spec.name}画像SHA-256が不一致: ${sha256}`);
+  }
 }
 
 const robots = read('robots.txt');
