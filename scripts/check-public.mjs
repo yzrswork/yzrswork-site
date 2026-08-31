@@ -35,6 +35,17 @@ const WORKS = [
     noteUrl: 'https://note.com/yzrswork/n/n7ed9240f28cd',
     imageRatio: 'aspect-ratio: 4 / 3;',
   },
+  {
+    name: 'PDB-1',
+    page: 'junkyard/works/pdb-1/index.html',
+    url: `${BASE}/junkyard/works/pdb-1/`,
+    asset: 'junkyard/works/pdb-1/pdb-1.jpeg',
+    assetSize: 216676,
+    assetSha256: 'ff7b503a878ba7f1825c471cb29bc029e362bb227a456a270fd4ef13979ade76',
+    noteUrl: 'https://note.com/yzrswork/n/nf10af42494eb',
+    imageRatio: 'aspect-ratio: 1 / 1;',
+    requiredText: ['PDB-1', '配電盤', '180 × 238 mm', 'DC power distribution / exhibition source: 5V MAIN', 'WAGO SPL-2'],
+  },
 ];
 const pages = ['index.html', 'about/index.html', 'privacy/index.html', GUIDE, LP, ...WORKS.map(({ page }) => page)];
 const uiPages = [TIMES, EVENING];
@@ -189,6 +200,9 @@ for (const spec of WORKS) {
   if (work.includes('IMAGE ASSET PENDING')) errors.push(`${spec.name}に画像保留表示が残っている`);
   if (/\{\{[^}]+\}\}/.test(work)) errors.push(`${spec.name}に未解決placeholderがある`);
   if (work.includes('height: 210mm')) errors.push(`${spec.name}にA5固定高さがある`);
+  for (const expected of spec.requiredText ?? []) {
+    if (!work.includes(expected)) errors.push(`${spec.name}に必要な内容がない: ${expected}`);
+  }
 
   const workAssetPath = join(PUBLIC, spec.asset);
   if (existsSync(workAssetPath)) {

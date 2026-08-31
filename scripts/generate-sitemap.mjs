@@ -12,6 +12,7 @@ const urls = [
   'https://yzrswork.com/guides/hajimete-no-denshi-kousaku-starter-guide/',
   'https://yzrswork.com/junkyard/works/mo-1/',
   'https://yzrswork.com/junkyard/works/compo-1/',
+  'https://yzrswork.com/junkyard/works/pdb-1/',
 ];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
