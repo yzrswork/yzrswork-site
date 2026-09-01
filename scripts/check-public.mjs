@@ -50,10 +50,11 @@ const WORKS = [
     name: 'IM-1',
     page: 'junkyard/works/im-1/index.html',
     url: `${BASE}/junkyard/works/im-1/`,
-    asset: null,
+    asset: 'junkyard/works/im-1/im-1.jpg',
+    assetSize: 78987,
+    assetSha256: '6cacb96424bf44dc85211bbfd4dfe1c9fe09142a9bdcf422a061069118a8cebe',
     noteUrl: 'https://note.com/yzrswork/n/n546adc606ab9',
     imageRatio: 'aspect-ratio: 4 / 3;',
-    allowPending: true,
     requiredText: ['IM-1', 'インフィニティミラー', '120 × 165 mm', '5V / DC 5.5×2.1mm center positive', 'Digispark (ATtiny85)'],
   },
 ];
