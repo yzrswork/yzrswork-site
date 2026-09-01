@@ -51,11 +51,11 @@ const WORKS = [
     page: 'junkyard/works/im-1/index.html',
     url: `${BASE}/junkyard/works/im-1/`,
     asset: 'junkyard/works/im-1/im-1.jpg',
-    assetSize: 78987,
-    assetSha256: '6cacb96424bf44dc85211bbfd4dfe1c9fe09142a9bdcf422a061069118a8cebe',
+    assetSize: 228878,
+    assetSha256: '550747b4448ba4cd65654f9654ce7311826d80c97eca5bc24d272b1f0214bbd6',
     noteUrl: 'https://note.com/yzrswork/n/n546adc606ab9',
     imageRatio: 'aspect-ratio: 4 / 3;',
-    requiredText: ['IM-1', 'インフィニティミラー', '120 × 165 mm', '5V / DC 5.5×2.1mm center positive', 'Digispark (ATtiny85)'],
+    requiredText: ['IM-1', 'インフィニティミラー', '120 × 165 mm', '5V / DC 5.5×2.1mm center positive', 'Digispark (ATtiny85)', '前面ガラスを約10度傾けた', 'Arduino Nanoはハーフミラーに映り込むためDigispark（ATtiny85）へ変更しました。内壁を黒にして余計な乱反射を抑え、3ポジションSWのフローティング問題に詰まった結果、2ポジションの演出へ絞るようにしています。'],
   },
 ];
 const pages = ['index.html', 'about/index.html', 'privacy/index.html', GUIDE, LP, ...WORKS.map(({ page }) => page)];
