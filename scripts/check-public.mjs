@@ -46,6 +46,16 @@ const WORKS = [
     imageRatio: 'aspect-ratio: 1 / 1;',
     requiredText: ['PDB-1', '配電盤', '180 × 238 mm', 'DC power distribution / exhibition source: 5V MAIN', 'WAGO SPL-2'],
   },
+  {
+    name: 'IM-1',
+    page: 'junkyard/works/im-1/index.html',
+    url: `${BASE}/junkyard/works/im-1/`,
+    asset: null,
+    noteUrl: 'https://note.com/yzrswork/n/n546adc606ab9',
+    imageRatio: 'aspect-ratio: 4 / 3;',
+    allowPending: true,
+    requiredText: ['IM-1', 'インフィニティミラー', '120 × 165 mm', '5V / DC 5.5×2.1mm center positive', 'Digispark (ATtiny85)'],
+  },
 ];
 const pages = ['index.html', 'about/index.html', 'privacy/index.html', GUIDE, LP, ...WORKS.map(({ page }) => page)];
 const uiPages = [TIMES, EVENING];
@@ -122,7 +132,7 @@ const expectedFiles = [
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/parts-amazon-stock-set.png',
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/parts-domestic-stock-set.png',
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/parts-china-stock-set.png',
-  ...WORKS.flatMap(({ page, asset }) => [page, asset]),
+  ...WORKS.flatMap(({ page, asset }) => [page, ...(asset ? [asset] : [])]),
   'junkyard/lab/multi-target/index.html',
   'junkyard/lab/multi-target/style.css',
   'junkyard/lab/multi-target/app.js',
@@ -194,22 +204,31 @@ for (const spec of WORKS) {
   const work = htmlByPage.get(spec.page);
   for (const [label, expected] of [
     [`${spec.name}のnote URL`, `href="${spec.noteUrl}"`],
-    [`${spec.name}の画像参照`, `src="/${spec.asset}"`],
     [`${spec.name}の画像表示比率`, spec.imageRatio],
   ]) if (!work.includes(expected)) errors.push(`${label}がない`);
-  if (work.includes('IMAGE ASSET PENDING')) errors.push(`${spec.name}に画像保留表示が残っている`);
+  if (spec.asset) {
+    if (!work.includes(`src="/${spec.asset}"`)) errors.push(`${spec.name}の画像参照がない`);
+    if (work.includes('IMAGE ASSET PENDING')) errors.push(`${spec.name}に画像保留表示が残っている`);
+  } else {
+    if (!work.includes('IMAGE ASSET PENDING')) errors.push(`${spec.name}の画像保留表示がない`);
+    if (/<img\b/i.test(work)) errors.push(`${spec.name}に未提供画像のimg要素がある`);
+  }
   if (/\{\{[^}]+\}\}/.test(work)) errors.push(`${spec.name}に未解決placeholderがある`);
   if (work.includes('height: 210mm')) errors.push(`${spec.name}にA5固定高さがある`);
   for (const expected of spec.requiredText ?? []) {
     if (!work.includes(expected)) errors.push(`${spec.name}に必要な内容がない: ${expected}`);
   }
 
-  const workAssetPath = join(PUBLIC, spec.asset);
-  if (existsSync(workAssetPath)) {
-    const workAsset = readFileSync(workAssetPath);
-    const sha256 = createHash('sha256').update(workAsset).digest('hex');
-    if (workAsset.length !== spec.assetSize) errors.push(`${spec.name}画像サイズが不一致: ${workAsset.length}`);
-    if (sha256 !== spec.assetSha256) errors.push(`${spec.name}画像SHA-256が不一致: ${sha256}`);
+  if (spec.asset) {
+    const workAssetPath = join(PUBLIC, spec.asset);
+    if (!existsSync(workAssetPath)) {
+      errors.push(`${spec.name}画像ファイルがない: ${spec.asset}`);
+    } else {
+      const workAsset = readFileSync(workAssetPath);
+      const sha256 = createHash('sha256').update(workAsset).digest('hex');
+      if (workAsset.length !== spec.assetSize) errors.push(`${spec.name}画像サイズが不一致: ${workAsset.length}`);
+      if (sha256 !== spec.assetSha256) errors.push(`${spec.name}画像SHA-256が不一致: ${sha256}`);
+    }
   }
 }
 
