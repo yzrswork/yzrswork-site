@@ -219,6 +219,12 @@ for (const spec of WORKS) {
     if (!work.includes('IMAGE ASSET PENDING')) errors.push(`${spec.name}の画像保留表示がない`);
     if (/<img\b/i.test(work)) errors.push(`${spec.name}に未提供画像のimg要素がある`);
   }
+  if (/\{\{[^}]+\}\}/.test(work)) errors.push(`${spec.name}に未解決placeholderがある`);
+  if (work.includes('height: 210mm')) errors.push(`${spec.name}にA5固定高さがある`);
+  for (const expected of spec.requiredText ?? []) {
+    if (!work.includes(expected)) errors.push(`${spec.name}に必要な内容がない: ${expected}`);
+  }
+
   const localAsset = spec.asset ?? spec.legacyAsset;
   if (localAsset) {
     const workAssetPath = join(PUBLIC, localAsset);
