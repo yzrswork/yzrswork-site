@@ -19,9 +19,10 @@ const WORKS = [
     name: 'MO-1',
     page: 'junkyard/works/mo-1/index.html',
     url: `${BASE}/junkyard/works/mo-1/`,
-    asset: 'junkyard/works/mo-1/mo-1.jpeg',
-    assetSize: 190049,
-    assetSha256: 'c5fe94b74d733f28fc181666364f5f1f97493f49e8df71d445c0a6c1e12dbac5',
+    assetUrl: 'https://assets.yzrswork.com/junkyard/2026/works/mo-1/official/c5fe94b74d73.jpeg',
+    legacyAsset: 'junkyard/works/mo-1/mo-1.jpeg',
+    legacyAssetSize: 190049,
+    legacyAssetSha256: 'c5fe94b74d733f28fc181666364f5f1f97493f49e8df71d445c0a6c1e12dbac5',
     noteUrl: 'https://note.com/yzrswork/n/n1d2d7c27e061',
     imageRatio: 'aspect-ratio: 3 / 4;',
   },
@@ -133,7 +134,7 @@ const expectedFiles = [
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/parts-amazon-stock-set.png',
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/parts-domestic-stock-set.png',
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/parts-china-stock-set.png',
-  ...WORKS.flatMap(({ page, asset }) => [page, ...(asset ? [asset] : [])]),
+  ...WORKS.flatMap(({ page, asset, legacyAsset }) => [page, ...(asset ? [asset] : []), ...(legacyAsset ? [legacyAsset] : [])]),
   'junkyard/lab/multi-target/index.html',
   'junkyard/lab/multi-target/style.css',
   'junkyard/lab/multi-target/app.js',
@@ -207,7 +208,11 @@ for (const spec of WORKS) {
     [`${spec.name}のnote URL`, `href="${spec.noteUrl}"`],
     [`${spec.name}の画像表示比率`, spec.imageRatio],
   ]) if (!work.includes(expected)) errors.push(`${label}がない`);
-  if (spec.asset) {
+  if (spec.assetUrl) {
+    if (!work.includes(`src="${spec.assetUrl}"`)) errors.push(`${spec.name}のR2画像参照がない`);
+    if (spec.legacyAsset && work.includes(`src="/${spec.legacyAsset}"`)) errors.push(`${spec.name}が旧ローカル画像を参照している`);
+    if (work.includes('IMAGE ASSET PENDING')) errors.push(`${spec.name}に画像保留表示が残っている`);
+  } else if (spec.asset) {
     if (!work.includes(`src="/${spec.asset}"`)) errors.push(`${spec.name}の画像参照がない`);
     if (work.includes('IMAGE ASSET PENDING')) errors.push(`${spec.name}に画像保留表示が残っている`);
   } else {
@@ -220,15 +225,18 @@ for (const spec of WORKS) {
     if (!work.includes(expected)) errors.push(`${spec.name}に必要な内容がない: ${expected}`);
   }
 
-  if (spec.asset) {
-    const workAssetPath = join(PUBLIC, spec.asset);
+  const localAsset = spec.asset ?? spec.legacyAsset;
+  if (localAsset) {
+    const workAssetPath = join(PUBLIC, localAsset);
     if (!existsSync(workAssetPath)) {
-      errors.push(`${spec.name}画像ファイルがない: ${spec.asset}`);
+      errors.push(`${spec.name}画像ファイルがない: ${localAsset}`);
     } else {
       const workAsset = readFileSync(workAssetPath);
       const sha256 = createHash('sha256').update(workAsset).digest('hex');
-      if (workAsset.length !== spec.assetSize) errors.push(`${spec.name}画像サイズが不一致: ${workAsset.length}`);
-      if (sha256 !== spec.assetSha256) errors.push(`${spec.name}画像SHA-256が不一致: ${sha256}`);
+      const expectedSize = spec.asset ? spec.assetSize : spec.legacyAssetSize;
+      const expectedSha256 = spec.asset ? spec.assetSha256 : spec.legacyAssetSha256;
+      if (workAsset.length !== expectedSize) errors.push(`${spec.name}画像サイズが不一致: ${workAsset.length}`);
+      if (sha256 !== expectedSha256) errors.push(`${spec.name}画像SHA-256が不一致: ${sha256}`);
     }
   }
 }
