@@ -7,7 +7,12 @@ import vm from 'node:vm';
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const PUBLIC = join(ROOT, 'public');
 const BASE = 'https://yzrswork.com';
+const APPS_HOST = 'apps.yzrswork.com';
+const APPS_BASE = `https://${APPS_HOST}`;
+const ROUTE_KEY_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const GUIDE = 'guides/hajimete-no-denshi-kousaku-starter-guide/index.html';
+const GUIDE_SOURCE = 'content/guides/hajimete-no-denshi-kousaku-starter-guide.md';
+const GUIDE_BUILD = 'scripts/build-guide.mjs';
 const GUIDE_URL = `${BASE}/guides/hajimete-no-denshi-kousaku-starter-guide/`;
 const LP = 'lp/electronics-starter/index.html';
 const LP_URL = `${BASE}/lp/electronics-starter/`;
@@ -74,6 +79,56 @@ function read(relativePath) {
     return '';
   }
   return readFileSync(path, 'utf8').replaceAll('\r\n', '\n');
+}
+
+function readRoot(relativePath) {
+  const path = join(ROOT, relativePath);
+  if (!existsSync(path)) {
+    errors.push(`required source fileがない: ${relativePath}`);
+    return '';
+  }
+  return readFileSync(path, 'utf8').replaceAll('\r\n', '\n');
+}
+
+function appUrl(pathname, routeKey) {
+  return `${APPS_BASE}${pathname}?yzrs_ref=${routeKey}`;
+}
+
+function checkAppUrl(page, rawUrl) {
+  let url;
+  try {
+    url = new URL(rawUrl);
+  } catch {
+    errors.push(`apps URLが不正: ${page}: ${rawUrl}`);
+    return;
+  }
+  if (url.protocol !== 'https:' || url.hostname !== APPS_HOST) {
+    errors.push(`apps URLのoriginが不正: ${page}: ${rawUrl}`);
+    return;
+  }
+  for (const parameter of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content']) {
+    if (url.searchParams.has(parameter)) errors.push(`appsリンクにmarketing UTMがある: ${page}: ${rawUrl}`);
+  }
+  const routeKeys = url.searchParams.getAll('yzrs_ref');
+  if (routeKeys.length !== 1 || !routeKeys[0] || routeKeys[0].length > 64 || !ROUTE_KEY_PATTERN.test(routeKeys[0])) {
+    errors.push(`appsリンクのyzrs_refが不正: ${page}: ${rawUrl}`);
+  }
+}
+
+function checkAppLinks(page, html) {
+  for (const match of html.matchAll(/<a\b[^>]*\shref=["']((?:https?:)\/\/apps\.yzrswork\.com[^"']*)["']/gi)) {
+    checkAppUrl(page, match[1]);
+  }
+}
+
+function checkExpectedRoute(page, content, pathname, routeKey, markdown = false) {
+  const expected = appUrl(pathname, routeKey);
+  const marker = markdown ? `](${expected})` : `href="${expected}"`;
+  if (!content.includes(marker)) errors.push(`apps routeがない: ${page}: ${expected}`);
+}
+
+function countOccurrences(content, needle) {
+  return content.split(needle).length - 1;
 }
 
 function localPathExists(pathname) {
@@ -158,6 +213,55 @@ for (const [page, html] of htmlByPage) {
   checkImages(page, html);
   checkLinks(page, html);
 }
+
+const rootAppRoutes = [
+  ['/', 'home-hero-toolbox'],
+  ['/kit/', 'home-guide01-kit'],
+  ['/bench/', 'home-tool-bench'],
+  ['/haisen/', 'home-tool-haisen'],
+  ['/handa/', 'home-tool-handa'],
+  ['/build/', 'home-tool-build'],
+  ['/usbc/', 'home-tool-usbc'],
+  ['/hdd/', 'home-tool-hdd'],
+  ['/mem/', 'home-tool-mem'],
+  ['/glue/', 'home-tool-glue'],
+  ['/nurerukun/', 'home-tool-nurerukun'],
+  ['/', 'home-all-tools'],
+  ['/', 'home-closing-tools'],
+  ['/', 'home-footer-tools'],
+];
+const rootApp = htmlByPage.get('index.html');
+const about = htmlByPage.get('about/index.html');
+const guideSource = readRoot(GUIDE_SOURCE);
+const guideBuild = readRoot(GUIDE_BUILD);
+const guideApp = htmlByPage.get(GUIDE);
+
+checkAppLinks('index.html', rootApp);
+checkAppLinks('about/index.html', about);
+checkAppLinks(GUIDE, guideApp);
+for (const [pathname, routeKey] of rootAppRoutes) checkExpectedRoute('index.html', rootApp, pathname, routeKey);
+checkExpectedRoute('about/index.html', about, '/', 'about-toolbox');
+for (const [pathname, routeKey] of [
+  ['/', 'guide01-toolbox'],
+  ['/kit/', 'guide01-kit'],
+  ['/handa/', 'guide01-handa'],
+  ['/bench/', 'guide01-bench'],
+]) checkExpectedRoute(GUIDE, guideApp, pathname, routeKey);
+for (const [pathname, routeKey] of [
+  ['/kit/', 'guide01-kit'],
+  ['/handa/', 'guide01-handa'],
+  ['/bench/', 'guide01-bench'],
+]) checkExpectedRoute(GUIDE_SOURCE, guideSource, pathname, routeKey, true);
+checkExpectedRoute(GUIDE_BUILD, guideBuild, '/', 'guide01-toolbox');
+checkExpectedRoute(GUIDE_BUILD, guideBuild, '/kit/', 'guide01-kit');
+
+for (const [page, content] of [[GUIDE_SOURCE, guideSource], [GUIDE_BUILD, guideBuild]]) {
+  for (const match of content.matchAll(/https?:\/\/apps\.yzrswork\.com\/[^"'\s)]+/gi)) checkAppUrl(page, match[0]);
+}
+const sourceKitUrl = appUrl('/kit/', 'guide01-kit');
+const generatedKitMarker = `href="${sourceKitUrl}"`;
+if (countOccurrences(guideSource, sourceKitUrl) !== 2) errors.push('Guide sourceのkit route数が2ではない');
+if (countOccurrences(guideApp, generatedKitMarker) !== 3) errors.push('Generated Guideのkit route数が3ではない');
 
 const uiHtmlByPage = new Map(uiPages.map((page) => [page, read(page)]));
 for (const [page, html] of uiHtmlByPage) checkInlineScripts(page, html);
@@ -254,7 +358,87 @@ if (sitemap.includes('/lp/electronics-starter/') || sitemap.includes('/evening.h
 
 const analytics = read('analytics.js');
 if (!/G-[A-Z0-9]+/.test(analytics)) errors.push('GA4 measurement IDがない');
+if (!analytics.includes('var ID = "G-56D3SSB529";')) errors.push('GA4 measurement IDが変更されている');
 if (/document\.cookie|localStorage|sessionStorage|email|phone|user_id/i.test(analytics)) errors.push('AnalyticsにPII収集の実装がある');
+for (const expected of [
+  'tool_link_click',
+  'url.protocol !== "https:"',
+  'url.hostname !== APP_HOST',
+  'url.searchParams.getAll("yzrs_ref")',
+  'route_key: routeKey',
+  'tool_slug: toolSlug',
+  'destination_path: url.pathname',
+]) if (!analytics.includes(expected)) errors.push(`tool_link_click実装要素がない: ${expected}`);
+if (/\bpreventDefault\s*\(|\bsetTimeout\s*\(/.test(analytics)) errors.push('Analyticsに遷移遅延またはpreventDefaultがある');
+
+function checkToolLinkClickBehavior() {
+  const listeners = {};
+  const dataLayer = [];
+  const document = {
+    baseURI: 'https://yzrswork.com/',
+    createElement: () => ({}),
+    head: { appendChild: () => {} },
+    addEventListener: (type, listener) => { listeners[type] = listener; },
+  };
+  const context = {
+    Date,
+    URL,
+    console,
+    dataLayer,
+    document,
+    window: { dataLayer: [] },
+  };
+  try {
+    vm.runInNewContext(analytics, context, { filename: 'public/analytics.js' });
+  } catch (error) {
+    errors.push(`Analytics fixtureの実行に失敗: ${error.message}`);
+    return;
+  }
+  if (typeof listeners.click !== 'function') {
+    errors.push('tool_link_clickのclick listenerがない');
+    return;
+  }
+
+  const makeLink = (href) => ({
+    href,
+    closest(selector) { return selector === 'a[href]' ? this : null; },
+  });
+  const eventEntries = () => dataLayer
+    .map((entry) => Array.from(entry))
+    .filter(([kind, name]) => kind === 'event' && name === 'tool_link_click');
+  const click = (href) => listeners.click({ target: makeLink(href) });
+
+  click('https://apps.yzrswork.com/hdd/?yzrs_ref=home-tool-hdd');
+  const events = eventEntries();
+  if (events.length !== 1) {
+    errors.push('tagged apps linkでtool_link_clickが1件発火しない');
+  } else {
+    const params = events[0][2];
+    if (params?.route_key !== 'home-tool-hdd' || params?.tool_slug !== 'hdd' || params?.destination_path !== '/hdd/') {
+      errors.push('tool_link_clickのpayloadが不正');
+    }
+    if (Object.keys(params ?? {}).sort().join(',') !== 'destination_path,route_key,tool_slug') {
+      errors.push('tool_link_clickに想定外parameterがある');
+    }
+  }
+
+  const before = eventEntries().length;
+  for (const href of [
+    'https://amazon.co.jp/example',
+    'https://note.com/yzrswork',
+    'https://apps.yzrswork.com/hdd/',
+    'http://apps.yzrswork.com/hdd/?yzrs_ref=home-tool-hdd',
+    'https://apps.yzrswork.com.evil.example/hdd/?yzrs_ref=home-tool-hdd',
+  ]) click(href);
+  if (eventEntries().length !== before) errors.push('除外対象リンクでtool_link_clickが発火した');
+}
+
+checkToolLinkClickBehavior();
+
+const sourceAmazonUrls = [...new Set([...guideSource.matchAll(/https:\/\/amzn\.to\/[A-Za-z0-9]+/g)].map((match) => match[0]))];
+for (const url of sourceAmazonUrls) {
+  if (!guideApp.includes(`href="${url}"`)) errors.push(`Generated GuideからAmazon URLが失われた: ${url}`);
+}
 
 const siteFiles = walkFiles(ROOT).filter((file) => !['.png', '.jpg', '.jpeg'].includes(extname(file).toLowerCase()));
 const secretPatterns = [
