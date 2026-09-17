@@ -14,4 +14,34 @@
   window.gtag = gtag;
   gtag("js", new Date());
   gtag("config", ID);
+
+  var APP_HOST = "apps.yzrswork.com";
+  var ROUTE_KEY_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+
+  document.addEventListener("click", function (event) {
+    var target = event.target;
+    var link = target && typeof target.closest === "function" ? target.closest("a[href]") : null;
+    if (!link) return;
+
+    var url;
+    try {
+      url = new URL(link.href, document.baseURI || "https://yzrswork.com/");
+    } catch (_) {
+      return;
+    }
+
+    if (url.protocol !== "https:" || url.hostname !== APP_HOST) return;
+
+    var routeKeys = url.searchParams.getAll("yzrs_ref");
+    var routeKey = routeKeys.length === 1 ? routeKeys[0] : "";
+    if (!routeKey || routeKey.length > 64 || !ROUTE_KEY_PATTERN.test(routeKey)) return;
+
+    var pathSegments = url.pathname.split("/").filter(Boolean);
+    var toolSlug = pathSegments[0] || "root";
+    gtag("event", "tool_link_click", {
+      route_key: routeKey,
+      tool_slug: toolSlug,
+      destination_path: url.pathname,
+    });
+  });
 })();
