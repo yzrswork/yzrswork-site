@@ -49,22 +49,23 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,500;1,400&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/styles/yzrs-ui.css" />
 <style>
   :root {
-    --desk: #e6dfd0;
-    --paper: #f0ebe3;
-    --paper-light: #f6f1e8;
-    --paper-deep: #ede5d4;
-    --ink: #1c1a16;
-    --ink-soft: #2b2823;
-    --muted: #6f675b;
+    --desk: var(--yzrs-desk, #e6dfd0);
+    --paper: var(--yzrs-paper, #f0ebe3);
+    --paper-light: var(--yzrs-paper-raised, #f6f1e8);
+    --paper-deep: var(--yzrs-paper-deep, #ede5d4);
+    --ink: var(--yzrs-ink, #1c1a16);
+    --ink-soft: var(--yzrs-ink-soft, #2b2823);
+    --muted: var(--yzrs-muted, #6f675b);
     --line: #3a342c;
-    --line-soft: #c8bfae;
-    --accent: #b5451b;
+    --line-soft: var(--yzrs-separator, #c8bfae);
+    --accent: var(--yzrs-accent, #b5451b);
     --accent-light: #f6f1e8;
-    --sans: "Noto Sans JP", "Yu Gothic", sans-serif;
-    --mono: "DM Mono", "SFMono-Regular", Consolas, monospace;
-    --serif: "EB Garamond", Georgia, serif;
+    --sans: var(--yzrs-sans, "Noto Sans JP", "Yu Gothic", sans-serif);
+    --mono: var(--yzrs-mono, "DM Mono", "SFMono-Regular", Consolas, monospace);
+    --serif: var(--yzrs-serif, "EB Garamond", Georgia, serif);
   }
 
   * { box-sizing: border-box; }
@@ -809,7 +810,7 @@
   }
 </style>
 </head>
-<body>
+<body class="yzrs-ui">
 <a class="skip-link" href="#main">本文へ移動</a>
 <div class="blueprint-label" aria-hidden="true">
   <span>yzrswork.com ／ top page — FIG.01</span>
