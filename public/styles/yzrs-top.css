@@ -59,7 +59,7 @@ body.yzrs-ui { margin: 0; background: var(--yzrs-desk); }
 .yzrs-top .hero { position: relative; isolation: isolate; }
 .yzrs-top .hero::before {
   content: ""; position: absolute; inset: 0 0 0 62%; z-index: -1; pointer-events: none;
-  opacity: 0.12; background-image:
+  opacity: 0.04; background-image:
     linear-gradient(var(--yzrs-separator) 1px, transparent 1px),
     linear-gradient(90deg, var(--yzrs-separator) 1px, transparent 1px);
   background-size: 24px 24px;
@@ -210,7 +210,7 @@ body.yzrs-ui { margin: 0; background: var(--yzrs-desk); }
   .yzrs-top .global-nav a { justify-content: center; text-align: center; }
   .yzrs-top .yzrs-nav-more { grid-column: 2; grid-row: 1; max-width: 110px; font-size: 12px; }
   .yzrs-top .yzrs-nav-more summary { padding-inline: 0; }
-  .yzrs-top .hero::before { inset: 0 0 0 75%; opacity: 0.08; }
+  .yzrs-top .hero::before { inset: 0 0 0 75%; }
   .yzrs-top .yzrs-hero-mark { display: none; }
   .yzrs-top .hero-grid { padding-block: 36px 40px; }
   .yzrs-top .eyebrow { font-size: 11px; }
