@@ -16,7 +16,7 @@
   <link rel="canonical" href="https://yzrswork.com/lp/electronics-starter/" />
   <script src="/analytics.js"></script>
   <style>
-    :root { --paper:#f5f2e9; --paper-deep:#e9e3d5; --ink:#1b1f23; --navy:#0e2340; --brick:#b9523d; --brick-light:#e07b63; --muted:#686b6d; --line:rgba(14,35,64,.24); --line-light:rgba(245,242,233,.3); --sans:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif; --display:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif; --mono:"IBM Plex Mono","Roboto Mono",ui-monospace,SFMono-Regular,Consolas,monospace; --ease:cubic-bezier(.23,1,.32,1); }
+    :root { --paper:var(--yzrs-paper,#f5f2e9); --paper-deep:var(--yzrs-paper-deep,#e9e3d5); --ink:var(--yzrs-ink,#1b1f23); --navy:#0e2340; --brick:var(--yzrs-accent,#b9523d); --brick-light:#e07b63; --muted:var(--yzrs-muted,#686b6d); --line:rgba(14,35,64,.24); --line-light:rgba(245,242,233,.3); --sans:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif; --display:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif; --mono:"IBM Plex Mono","Roboto Mono",ui-monospace,SFMono-Regular,Consolas,monospace; --ease:cubic-bezier(.23,1,.32,1); }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
     body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.85 var(--sans); overflow-x:hidden; }
@@ -192,8 +192,9 @@
     @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; scroll-behavior:auto !important; transition-duration:.01ms !important; } }
     @keyframes rise { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
   </style>
+<link rel="stylesheet" href="/styles/yzrs-ui.css" />
 </head>
-<body>
+<body class="yzrs-ui">
   <a class="skip-link" href="#main-content">本文へ移動</a>
   <div class="site-shell">
     <header class="site-header">
