@@ -1,6 +1,6 @@
 # YZRS Site Renovation 2026 — Wave 0 / UI Contract v0.1
 
-2026-10-05 JST。状態: **Owner review用の監査・提案。UI実装、公開、mergeは未実施。**
+2026-10-05 JST。状態: **Wave 0 Owner承認済み。PR #46をmergeし、Wave 1 Global Foundationへ移行。**
 
 結論: 現行の静的HTML / CSS / Vanilla JSを維持し、小さな共通Visual Languageを明示的に導入する。本体SiteとAppsは別Repository・別build・別配信であり、DEALS / NavigatorをSiteへ移管しない。まずSiteのGlobal Foundationを整え、次にAppsのDEALSで表示規則を検証する。Times、出版物、AR/game、入力・計算ロジックはDomainとして保護する。
 
@@ -299,3 +299,10 @@ renderはChromium desktop viewport、reduced motion有効、analytics/ads通信�
 Wave1承認後、DEALS UI pilotは別Apps PRへ進める。推薦・SALE・offer契約を維持したrow / disclosure / Safety / provenance改善を先にreviewし、Creators API画像は適用契約とpipeline/public-contractの別reviewを経る。
 
 各変更の採用条件は二つ: **初心者が次の行動を前より早く判断できること。技術的に詳しい人が必要な情報へ辿れること。** 片方を満たさない変更は採用しない。
+
+
+## Owner approval / Wave 1 gate
+
+2026-10-05: Wave 0をOwner承認。PR #46をmergeし、Wave 1を開始する。
+
+Wave 1は§10の9 path allowlistを維持する。TopのIA再編はWave 3、DEALS / Navigatorの表示変更はApps側のWave 2 / 4へ分離し、Wave 1ではSiteのscoped foundation、focus / tap target、reading base、Guide 320px overflow修正に限定する。想定外にdiffが広がる場合は同一PRへ詰め込まず、scopeを再確認する。

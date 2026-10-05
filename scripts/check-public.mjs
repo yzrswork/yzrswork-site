@@ -16,6 +16,7 @@ const GUIDE_BUILD = 'scripts/build-guide.mjs';
 const GUIDE_URL = `${BASE}/guides/hajimete-no-denshi-kousaku-starter-guide/`;
 const LP = 'lp/electronics-starter/index.html';
 const LP_URL = `${BASE}/lp/electronics-starter/`;
+const FOUNDATION = 'styles/yzrs-ui.css';
 const TIMES = 'times/index.html';
 const TIMES_URL = `${BASE}/times/`;
 const EVENING = 'evening.html';
@@ -183,7 +184,7 @@ function checkLinks(page, html) {
 }
 
 const expectedFiles = [
-  'index.html', 'about/index.html', 'privacy/index.html', 'analytics.js', 'ads.txt', 'robots.txt', 'sitemap.xml', 'og.png',
+  'index.html', 'about/index.html', 'privacy/index.html', 'analytics.js', 'ads.txt', 'robots.txt', 'sitemap.xml', 'og.png', FOUNDATION,
   GUIDE, LP,
   TIMES, EVENING,
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/tools-step1-set.jpg',
@@ -213,6 +214,20 @@ for (const [page, html] of htmlByPage) {
   checkImages(page, html);
   checkLinks(page, html);
 }
+
+const foundationPages = ['index.html', 'about/index.html', 'privacy/index.html', GUIDE, LP];
+const foundationCss = read(FOUNDATION);
+for (const page of foundationPages) {
+  const html = htmlByPage.get(page);
+  if (!html.includes('<link rel="stylesheet" href="/styles/yzrs-ui.css"')) errors.push(`YZRS foundation stylesheetがない: ${page}`);
+  if (!html.includes('class="yzrs-ui"')) errors.push(`YZRS foundation opt-inがない: ${page}`);
+}
+for (const token of ['--yzrs-paper:', '--yzrs-ink:', '--yzrs-accent:', '--yzrs-sans:', 'min-height: 44px']) {
+  if (!foundationCss.includes(token)) errors.push(`YZRS foundation token/contractがない: ${token}`);
+}
+const foundationGuide = htmlByPage.get(GUIDE);
+if (!foundationGuide.includes('grid-template-columns:minmax(0,1fr)')) errors.push('Guide mobile layoutがminmax(0,1fr)ではない');
+if (!foundationGuide.includes('.article-body a{overflow-wrap:anywhere;word-break:break-word}')) errors.push('Guide long URL wrap契約がない');
 
 const rootAppRoutes = [
   ['/', 'home-hero-toolbox'],
