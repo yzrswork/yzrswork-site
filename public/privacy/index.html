@@ -9,7 +9,7 @@
 <link rel="canonical" href="https://yzrswork.com/privacy/" />
 <script src="/analytics.js"></script>
 <style>
-  :root { --paper:#f3ede0; --ink:#211d16; --muted:#746a58; --rule:#b9ad96; --accent:#7d2318; }
+  :root { --paper:var(--yzrs-paper,#f3ede0); --ink:var(--yzrs-ink,#211d16); --muted:var(--yzrs-muted,#746a58); --rule:var(--yzrs-separator,#b9ad96); --accent:var(--yzrs-accent,#7d2318); }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--paper); color:var(--ink); font-family:"Noto Serif JP","Yu Mincho",serif; line-height:1.9; }
   main { width:min(720px,100%); margin:auto; padding:40px 20px 64px; }
@@ -20,9 +20,10 @@
   .updated,nav,footer { color:var(--muted); font-size:.88rem; }
   nav,footer { margin-top:2rem; padding-top:1rem; border-top:1px solid var(--rule); }
 </style>
+<link rel="stylesheet" href="/styles/yzrs-ui.css" />
 </head>
-<body>
-<main>
+<body class="yzrs-ui">
+<main class="yzrs-reading">
   <h1>プライバシーポリシー</h1>
 
   <h2>運営者</h2>
