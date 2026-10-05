@@ -225,8 +225,9 @@ for (const page of foundationPages) {
 for (const token of ['--yzrs-paper:', '--yzrs-ink:', '--yzrs-accent:', '--yzrs-sans:', 'min-height: 44px']) {
   if (!foundationCss.includes(token)) errors.push(`YZRS foundation token/contractがない: ${token}`);
 }
-if (!guideApp.includes('grid-template-columns:minmax(0,1fr)')) errors.push('Guide mobile layoutがminmax(0,1fr)ではない');
-if (!guideApp.includes('.article-body a{overflow-wrap:anywhere;word-break:break-word}')) errors.push('Guide long URL wrap契約がない');
+const foundationGuide = htmlByPage.get(GUIDE);
+if (!foundationGuide.includes('grid-template-columns:minmax(0,1fr)')) errors.push('Guide mobile layoutがminmax(0,1fr)ではない');
+if (!foundationGuide.includes('.article-body a{overflow-wrap:anywhere;word-break:break-word}')) errors.push('Guide long URL wrap契約がない');
 
 const rootAppRoutes = [
   ['/', 'home-hero-toolbox'],
