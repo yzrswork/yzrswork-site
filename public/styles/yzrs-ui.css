@@ -1,0 +1,106 @@
+:root {
+  --yzrs-desk: #e6dfd0;
+  --yzrs-paper: #f0ebe3;
+  --yzrs-paper-raised: #f6f1e8;
+  --yzrs-paper-deep: #ede5d4;
+  --yzrs-ink: #1c1a16;
+  --yzrs-ink-soft: #2b2823;
+  --yzrs-muted: #6f675b;
+  --yzrs-separator: #c8bfae;
+  --yzrs-accent: #b5451b;
+  --yzrs-space-1: 4px;
+  --yzrs-space-2: 8px;
+  --yzrs-space-3: 12px;
+  --yzrs-space-4: 16px;
+  --yzrs-space-6: 24px;
+  --yzrs-space-8: 32px;
+  --yzrs-space-12: 48px;
+  --yzrs-space-16: 64px;
+  --yzrs-reading: 72ch;
+  --yzrs-utility: 1120px;
+  --yzrs-shell: 1240px;
+  --yzrs-sans: "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  --yzrs-mono: "DM Mono", "SFMono-Regular", Consolas, ui-monospace, monospace;
+  --yzrs-serif: "EB Garamond", Georgia, "Yu Mincho", serif;
+}
+
+body.yzrs-ui {
+  text-rendering: optimizeLegibility;
+}
+
+body.yzrs-ui :where(a, button, input, select, textarea, summary):focus-visible {
+  outline: 3px solid var(--yzrs-accent);
+  outline-offset: 3px;
+}
+
+body.yzrs-ui :where(.global-nav a, .site-header nav a, .yzrs-control, summary) {
+  min-height: 44px;
+}
+
+body.yzrs-ui :where(.global-nav a, .site-header nav a, .yzrs-control) {
+  display: inline-flex;
+  align-items: center;
+}
+
+body.yzrs-ui summary {
+  cursor: pointer;
+}
+
+body.yzrs-ui .yzrs-reading {
+  width: min(var(--yzrs-reading), 100%);
+  margin-inline: auto;
+  color: var(--yzrs-ink);
+  font-family: var(--yzrs-sans);
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+body.yzrs-ui .yzrs-reading :where(h1, h2, h3) {
+  line-height: 1.45;
+}
+
+body.yzrs-ui .yzrs-reading a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+body.yzrs-ui .yzrs-reading :where(nav a, .yzrs-control) {
+  min-height: 44px;
+  align-items: center;
+}
+
+body.yzrs-ui .yzrs-meta {
+  color: var(--yzrs-muted);
+  font-size: 14px;
+}
+
+body.yzrs-ui .yzrs-warning {
+  padding: var(--yzrs-space-4);
+  border-left: 3px solid var(--yzrs-accent);
+  background: var(--yzrs-paper-raised);
+}
+
+body.yzrs-ui .yzrs-status {
+  color: var(--yzrs-muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+body.yzrs-ui .yzrs-separator {
+  border-top: 1px solid var(--yzrs-separator);
+}
+
+@media (max-width: 680px) {
+  body.yzrs-ui :where(.global-nav a, .site-header nav a, .yzrs-control) {
+    min-height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.yzrs-ui,
+  body.yzrs-ui *,
+  body.yzrs-ui *::before,
+  body.yzrs-ui *::after {
+    scroll-behavior: auto !important;
+  }
+}
