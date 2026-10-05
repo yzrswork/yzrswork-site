@@ -1,0 +1,21 @@
+schema_version: "0.1"
+title: yzrswork-site
+kind: website
+status: active
+authority: >-
+  Production site source, UI, guide Markdown/build outputs, SEO/analytics assets
+  and repository-side Worker asset configuration; Times delivery receiver and
+  Site-owned accepted data/sync state. Times generation, editorial logic,
+  canonical issue content and sender artifacts belong to yzrswork/yzrs-times.
+  Production deployment is performed by Cloudflare Workers Builds from this
+  repository's main.
+verification: >-
+  verify passed for revision 72bee9cb220833eb7ad83644105c39b515e7fe47 on GitHub
+  Actions (ubuntu-latest, Node.js 22): npm run build, npm run check, npm test and
+  git diff --check passed. Public evidence:
+  https://github.com/yzrswork/yzrswork-site/actions/runs/36954724782 Scope:
+  guide/sitemap generation, static site/SEO/link/asset/inline-script checks and
+  fixture-based Times receiver validation, ordering and idempotency tests. This
+  run does not verify subsequent delivered Times snapshots, production Cloudflare
+  deployment, real cross-repo/API delivery, DNS/CDN behavior or physical devices.
+live_url: https://yzrswork.com/
