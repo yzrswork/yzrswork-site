@@ -1,3 +1,17 @@
+<!-- YZRS:REPOSITORY-STATE:START -->
+## Repository State
+
+| | |
+| --- | --- |
+| What this repository is | Production website and portal source for yzrswork.com, including guides, site pages and the YZRS Times reading UI. |
+| Status | active |
+| Authority | Production site source, UI, guide Markdown/build outputs, SEO/analytics assets and repository-side Worker asset configuration; Times delivery receiver and Site-owned accepted data/sync state. Times generation, editorial logic, canonical issue content and sender artifacts belong to yzrswork/yzrs-times. Production deployment is performed by Cloudflare Workers Builds from this repository's main. |
+| Live | https://yzrswork.com/ |
+| Verification / Evidence | [verify](https://github.com/yzrswork/yzrswork-site/actions/runs/36954724782) passed at `72bee9cb220833eb7ad83644105c39b515e7fe47` (GitHub Actions, Ubuntu, Node.js 22): site build/checks and fixture-based receiver tests. Subsequent Times snapshots, production deployment, real delivery/API/DNS/CDN behavior and physical devices are outside this evidence. |
+
+State source: [.github/yzrs-repository.yml](.github/yzrs-repository.yml).
+<!-- YZRS:REPOSITORY-STATE:END -->
+
 # yzrswork-site
 
 `yzrswork.com` 本体サイトのProduction sourceを管理するRepositoryです。
