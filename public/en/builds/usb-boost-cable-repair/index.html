@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>USB boost cable repair: why the 9V two-fan failure stayed unresolved | YZRS WORK</title>
+<meta name="description" content="A USB fan cable repair restored 5V and 7V operation, but two fans still stopped at 9V. Reported measurements, repair details, unknowns, and the decision to stop troubleshooting." />
+<link rel="canonical" href="https://yzrswork.com/en/builds/usb-boost-cable-repair/" />
+<meta name="robots" content="index,follow" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:title" content="USB boost cable repair: the unresolved 9V two-fan failure" />
+<meta property="og:description" content="What recovered, what was measured, and why troubleshooting stopped without a confirmed root cause." />
+<meta property="og:url" content="https://yzrswork.com/en/builds/usb-boost-cable-repair/" />
+<script src="/analytics.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=EB+Garamond:ital,wght@0,500;1,400&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/styles/yzrs-ui.css" />
+<link rel="stylesheet" href="/styles/yzrs-top.css" />
+<style>
+  .repair-content { padding-block: 40px 56px; }
+  .repair-content h1 { margin: 12px 0 16px; font-size: clamp(30px, 4vw, 44px); }
+  .repair-content h2 { margin: 36px 0 12px; padding-top: 20px; border-top: 1px solid var(--yzrs-separator); font-size: 24px; }
+  .repair-content h3 { margin: 24px 0 8px; font-size: 19px; }
+  .repair-content p, .repair-content li { color: var(--yzrs-ink-soft); }
+  .repair-content .lead { max-width: 68ch; font-size: 18px; }
+  .repair-content .eyebrow { color: var(--yzrs-muted); font: 12px/1.8 var(--yzrs-mono); letter-spacing: .06em; }
+  .repair-content ul { padding-left: 1.4em; }
+  .repair-content li + li { margin-top: 8px; }
+  .repair-content a { overflow-wrap: anywhere; }
+  .repair-content .table-scroll { max-width: 100%; overflow-x: auto; }
+  .repair-content table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .repair-content th, .repair-content td { padding: 10px 12px; border-bottom: 1px solid var(--yzrs-separator); text-align: left; vertical-align: top; }
+  .repair-content th { background: var(--yzrs-paper-raised); }
+  .repair-content caption { text-align: left; margin-bottom: 12px; }
+  .repair-content .measurement-table { min-width: 620px; }
+  .repair-content .meta, .repair-content .page-footer { color: var(--yzrs-muted); font-size: 14px; }
+  .repair-content .page-footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--yzrs-separator); }
+  @media (max-width: 680px) { .repair-content { padding-block: 28px 40px; } }
+</style>
+</head>
+<body class="yzrs-ui">
+<div class="yzrs-top">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="site">
+  <header class="site-header">
+    <div class="inner header-inner">
+      <a class="brand" href="/" aria-label="YZRS WORK home">
+        <span class="brand-name">YZRS WORK</span>
+        <span class="brand-mark">maker tools &amp; notes</span>
+      </a>
+      <nav class="global-nav" aria-label="Page links">
+        <a href="/">Home</a>
+        <a href="https://note.com/yzrswork/n/nb8a6f101033a" lang="ja">日本語記事</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="inner repair-content">
+    <article class="yzrs-reading">
+      <p class="eyebrow">REPAIR / TROUBLESHOOTING · WB-05 / PILOT B</p>
+      <h1>USB boost cable repair: 5V and 7V recovered. Two fans still stopped at 9V.</h1>
+      <p class="lead" id="what-failed">I repaired the wiring and connections on a USB boost cable used with fan-cooled workwear. Operation returned at 5V and 7V. At 9V, one fan ran, but two-fan operation remained unreliable. I recorded what I could measure and stopped short of naming a root cause.</p>
+      <p class="meta">By YZRS WORK · Original repair record: August 5, 2026 · English adaptation: October 7, 2026</p>
+
+      <h2 id="audience">Who this record is for</h2>
+      <p>This is for makers dealing with intermittent fan power or a repair that restores only part of a device's operation. It shows how far the recorded evidence goes, and where I decided further troubleshooting was no longer worthwhile. It is a record of one unit, not a universal repair guide.</p>
+
+      <aside class="yzrs-warning" aria-labelledby="safety">
+        <h2 id="safety">Safety and limits</h2>
+        <p>This is a troubleshooting record of one repaired unit, not a verified repair procedure for other cables or fans. Disconnect USB power before soldering, verify polarity before reconnecting power, and prevent shorts. Connector dimensions alone do not establish electrical compatibility. Damaged USB or power wiring can heat up. Follow known component and cable ratings where available; unknown ratings are not permission to exceed them. Stop using the setup if the converter, connector, wiring, or power bank becomes abnormally hot. A near-nominal voltage reading, especially with no load, does not establish current capability or long-term safety.</p>
+        <p>No-load operation does not prove loaded capability. These precautions are editorial guidance, not evidence that every precaution was documented during the original repair.</p>
+      </aside>
+
+      <h2 id="hardware">Tested hardware</h2>
+      <ul>
+        <li>A USB-input boost cable with selectable 5V, 7V, and 9V output, connected to workwear fans. The fan model and current rating are unknown.</li>
+        <li>Two USB power banks: <strong>Anker PowerCore Essential 20000</strong> and <strong>UGREEN PB312</strong>. These names identify the tested hardware; no port ratings or substitute-product specifications are established here.</li>
+        <li>A purchased male/female DC extension lead, nominally 3.8 mm OD / 1.4 mm ID, and an existing Anker four-conductor cable reused on the USB side.</li>
+      </ul>
+
+      <h2 id="initial-symptoms">Before the repair</h2>
+      <p>Intermittent contact was repeatedly stopping the fans. Shaking the female jack produced a rattling sound, which initially made it seem suspect. The case also felt warm during use, but no temperature was measured; that observation does not establish a thermal shutdown.</p>
+      <p>The newly purchased replacement female jack made the same rattling sound. The sound therefore did not prove that the original jack was defective. I also could not establish that the sound was normal by design. Its meaning remains unknown.</p>
+
+      <h2 id="disassembly">What was inside</h2>
+      <p>The recorded arrangement was USB input → boost board → DC fan output. The board carried markings reported as <code>100</code>, <code>SS34</code> on two components, and a marking that appeared to read <code>NCE3018AS</code>. There was also an unmarked eight-pin IC, LEDs, and a switch.</p>
+      <p>These are reported markings, not an independently verified schematic or a set of board ratings. The controller IC remains unidentified. No component data sheet is used here to infer the complete converter's capability.</p>
+
+      <h2 id="repair">The repair I actually performed</h2>
+      <ul>
+        <li>Cut the female end from the purchased extension lead and used it to replace the DC jack.</li>
+        <li>Reused the male end on the fan side, where the existing plug was loose.</li>
+        <li>Reused an Anker four-conductor cable for the USB input wiring.</li>
+        <li>Checked polarity and resoldered the wiring to the board.</li>
+        <li>Protected the wire roots with flexible hot-melt glue, then remeasured the no-load outputs.</li>
+      </ul>
+      <p>This was a wiring and connection repair, not a converter redesign. Several connections changed together, so the record does not isolate which individual repair restored operation. The glue application is not a claim of waterproofing, certification, or verified strain-relief performance.</p>
+
+      <h2 id="connector-wiring">Connector and wire details</h2>
+      <p>The purchased connector's nominal dimensions were <strong>3.8 mm OD / 1.4 mm ID</strong>. They are a starting dimensional reference only. Tolerance, insertion length, polarity, current rating, mechanical retention, and actual fit still need checking for any substitution.</p>
+      <p>The existing and replacement wires were approximately <strong>0.5–0.6 mm in outside diameter, including insulation</strong>. This is not conductor diameter. It does not establish conductor cross-section, AWG, or current rating, and does not support a claim that thicker wiring improved performance.</p>
+      <p>Polarity was checked during the repair, but a verified polarity diagram is not available in this record. Do not infer a center-positive connection from the dimensions.</p>
+
+      <h2 id="conditions">How to read the measurements</h2>
+      <p>These are the owner's reported measurements after the repair, not new measurements for this English page. The setup was a USB power source feeding the converter and then the fans. No-load readings, loaded output voltage, and USB input current are kept separate below. All numerical readings are approximate; displayed digits do not establish instrument accuracy.</p>
+      <p>Inserting a USB power meter in series changed the measurement setup. At 9V, the setup stopped with the meter inserted, so no steady input-current reading was obtained. The meter's resistance and its effect on the circuit were not measured.</p>
+      <p>The record does not establish meter model, accuracy, measurement duration, ambient temperature, simultaneous readings, power-bank charge level, wire length, fan ratings, or trial counts. The fan count for each individual loaded 5V and 7V measurement is also unconfirmed. The USB source voltage must not be assumed to have been measured simultaneously with each load reading.</p>
+
+      <h2 id="measurements">Reported measurements</h2>
+      <p class="meta">On a narrow screen, scroll the table horizontally. “Not measured” is not a zero reading.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Reported measurement table, horizontally scrollable">
+        <table class="measurement-table">
+          <caption>Post-repair measurements. IDs refer to the approved evidence record.</caption>
+          <thead><tr><th scope="col">Evidence / condition</th><th scope="col">USB source voltage</th><th scope="col">DC output voltage</th><th scope="col">USB input current</th></tr></thead>
+          <tbody>
+            <tr data-evidence="E01"><th scope="row">E01 · Anker USB source</th><td>≈5.09 V</td><td>Not specified for this reading</td><td>Not specified for this reading</td></tr>
+            <tr data-evidence="E02"><th scope="row">E02 · 5V, no load</th><td>Simultaneity unconfirmed</td><td>≈4.99 V</td><td>Not reported</td></tr>
+            <tr data-evidence="E03"><th scope="row">E03 · 7V, no load</th><td>Simultaneity unconfirmed</td><td>≈6.98 V</td><td>Not reported</td></tr>
+            <tr data-evidence="E04"><th scope="row">E04 · 9V, no load</th><td>Simultaneity unconfirmed</td><td>≈8.98–8.99 V</td><td>Not reported</td></tr>
+            <tr data-evidence="E05"><th scope="row">E05 · 5V, fan load; count unconfirmed</th><td>Simultaneity unconfirmed</td><td>≈4.92 V</td><td>Separate reading below</td></tr>
+            <tr data-evidence="E06"><th scope="row">E06 · 7V, fan load; count unconfirmed</th><td>Simultaneity unconfirmed</td><td>≈6.90 V</td><td>Separate reading below</td></tr>
+            <tr data-evidence="E07"><th scope="row">E07 · 9V, one fan</th><td>Simultaneity unconfirmed</td><td>≈8.86 V</td><td>Not reported</td></tr>
+            <tr data-evidence="E08"><th scope="row">E08 · 9V, two fans</th><td>Simultaneity unconfirmed</td><td>No valid steady measurement; usually stopped before voltage could be checked</td><td>No valid steady measurement</td></tr>
+            <tr data-evidence="E09"><th scope="row">E09 · 5V, USB input-current check; fan count unconfirmed</th><td>Simultaneity unconfirmed</td><td>Separate reading above</td><td>≈0.6 A</td></tr>
+            <tr data-evidence="E10"><th scope="row">E10 · 7V, USB input-current check; fan count unconfirmed</th><td>Simultaneity unconfirmed</td><td>Separate reading above</td><td>≈1.32–1.6 A</td></tr>
+            <tr data-evidence="E11"><th scope="row">E11 · 9V, USB meter inserted in series</th><td>Simultaneity unconfirmed</td><td>No steady reading established</td><td>No valid steady measurement; setup stopped</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The current readings are at the USB input, not the fan output. The reported 7V current span is not a statistical range or an accuracy specification. There is no valid steady voltage or current measurement for 9V with two fans. No power, efficiency, startup-current, or protection-threshold calculation is added.</p>
+
+      <h2 id="remaining-failure">The remaining 9V / two-fan failure</h2>
+      <p>With two fans at 9V, stopping occurred at startup or when the second fan was connected. Occasionally both continued running, but that result was not reproducible. Trial counts and a success rate are unavailable. Near-nominal no-load output and one-fan operation did not establish two-fan capability.</p>
+
+      <h2 id="power-banks">The two-power-bank comparison</h2>
+      <p>The 9V / two-fan stop was reproduced with both the Anker PowerCore Essential 20000 and UGREEN PB312. This comparison does not establish perfectly matched test conditions or prove that either source met the system's unknown requirements.</p>
+      <p>On the UGREEN PB312, after the 9V failure, switching back to 5V or 7V could restart the fans without unplugging and reconnecting USB. That is the confirmed recovery observation. Continuous power availability was not measured, and power-bank protection or automatic recovery was not ruled out.</p>
+
+      <h2 id="interpretation">What the evidence suggests</h2>
+      <p><strong>Interpretation:</strong> The measurements narrow the problem toward the boost-converter/load side, but the exact limiting mechanism was not identified.</p>
+      <ul>
+        <li>The no-load 9V output and one-fan result do not fit an explanation that 9V mode can never produce output.</li>
+        <li>Reproducing the stop on two power banks weakens an explanation unique to only one of them. Shared source limitations, wiring, contact resistance, and load variation remain possible.</li>
+        <li>The UGREEN recovery shows that USB reconnection was not always necessary. It does not show that power was uninterrupted or that source protection never activated.</li>
+      </ul>
+      <p>These are bounded interpretations of the observations, not a component diagnosis.</p>
+
+      <h2 id="unknowns">What remains unknown</h2>
+      <p>The root cause, controller identity, detailed circuit, board maximum current, and protection thresholds remain unknown. So do fan current ratings, steady two-fan current at 9V, startup waveforms, quantitative temperature, thermal margin, and durability. Connector electrical ratings, conductor size, tolerances, and a publishable polarity diagram are also unresolved. The warm case alone does not identify the limiting mechanism.</p>
+
+      <h2 id="stop-decision">Why I stopped troubleshooting</h2>
+      <p>The goal was to recover a practical work tool, not reverse-engineer the board. With 5V and 7V operation restored, I decided further board analysis was not worth the time for this repair. I left the two-fan 9V failure unresolved instead of turning a plausible explanation into a diagnosis.</p>
+      <h3 id="operating-decision">The operating decision for this unit</h3>
+      <p><strong>On this repaired unit, I chose 7V as the practical operating limit.</strong></p>
+      <p>That is my decision for this unit, not a safety rating or a recommendation for other converters, fans, cables, batteries, or repair leads. Restored operation is not a passed long-duration or temperature test.</p>
+
+      <h2 id="product-intent">Product Intent: requirements before products</h2>
+      <p>These categories explain the jobs the parts need to do. Unknown specifications stay marked for review; this is not an approved shopping list. <strong>US product examples: None.</strong></p>
+      <h3 id="pi01">PI01 — USB power source</h3>
+      <p><strong>Purpose:</strong> provide 5V USB power to the converter and fans. The actual port must supply 5V and match the cable and connection method. <strong>REVIEW:</strong> required continuous current, startup margin, port specifications, and the 9V operating load. Observed input current does not establish a sufficient source rating.</p>
+      <h3 id="pi02">PI02 — Boost cable</h3>
+      <p><strong>Purpose:</strong> convert USB 5V input to selectable output suitable for the target fans. Check output modes, connector, and polarity against the fans. <strong>REVIEW:</strong> current capability, thermal and protection behavior, target-fan compatibility, and test conditions. The tested unit's 5V / 7V / 9V modes do not establish compatibility for another cable.</p>
+      <h3 id="pi03">PI03 — DC repair lead</h3>
+      <p><strong>Purpose:</strong> replace the existing connection with a mechanically and electrically suitable lead. Start from the purchased lead's nominal 3.8 mm OD / 1.4 mm ID dimensions and distinguish the male and female ends. <strong>REVIEW:</strong> tolerance, insertion length, polarity, current rating, conductor size, mechanical retention, and actual fit. Dimensions alone do not prove compatibility.</p>
+      <h3 id="pi04">PI04 — Repair materials</h3>
+      <p><strong>Purpose:</strong> make the connections and provide suitable insulation and strain relief, using flexible wire, solder, and materials appropriate to the application. <strong>REVIEW:</strong> wire ratings, material temperature limits, and suitability of the finished work. Hot-melt glue was used in this repair. Heat-shrink tubing is only a possible alternative material, not something documented as used here.</p>
+
+      <h2 id="alternatives">Alternatives and substitutions</h2>
+      <ul>
+        <li>Replace the complete cable with one whose specifications and compatibility with the target fans can be verified.</li>
+        <li>Use a repair lead only after checking dimensions, polarity, ratings, and mechanical fit together.</li>
+        <li>My decision to operate this repaired unit up to 7V is part of the historical record, not a substitute for those checks on another setup.</li>
+      </ul>
+      <p>No US SKU or supplier is recommended, and no US-market hardware test is claimed.</p>
+
+      <h2 id="sources">Evidence and source bundle</h2>
+      <ul>
+        <li><strong>S01 — Original Japanese repair record:</strong> <a href="https://note.com/yzrswork/n/nb8a6f101033a">USB boost cable repair and the remaining 9V failure</a>, August 5, 2026. This is the primary repair and measurement record.</li>
+        <li><strong>Measurement provenance:</strong> E01–E11 correspond to the original “実測結果” (measurements) section. The remaining failure and power-bank comparison come from “9V・2ファンだけ残った問題.” Wire and connector dimensions come from “メスジャックは新品でも同じ音がした”; the stop decision comes from “原因究明はここで打ち切りました.”</li>
+        <li><strong>English editorial authority:</strong> the owner-approved Pilot B Preflight Pack v0.1, October 7, 2026, fixes the reported values and the fact/interpretation boundaries. It is an internal review document, not an additional experiment.</li>
+        <li><strong>Source limits:</strong> this page does not reuse photographs or claim independent visual verification. No manufacturer data sheets or retailer product-card specifications are adopted. The tested Anker name comes from the article body; its later card names a different product and is not used as hardware evidence.</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/yzrswork/yzrswork-site/blob/main/public/en/builds/usb-boost-cable-repair/index.html" data-source-repo="yzrswork-site">English page source and revision history</a>. This records the implementation, not a new hardware investigation. A separate public hardware-evidence URL is not established.</li>
+      </ul>
+      <p class="meta">Turning ideas into things, and keeping the how and why for next time.</p>
+      <div class="page-footer"><a href="/">YZRS WORK home</a> · <a href="https://note.com/yzrswork/n/nb8a6f101033a">Original Japanese record</a></div>
+    </article>
+  </main>
+</div>
+</div>
+</body>
+</html>

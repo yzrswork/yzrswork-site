@@ -18,6 +18,8 @@ const LP = 'lp/electronics-starter/index.html';
 const LP_URL = `${BASE}/lp/electronics-starter/`;
 const MAKERS_BENCH_EN = 'en/tools/makers-bench/index.html';
 const MAKERS_BENCH_EN_URL = `${BASE}/en/tools/makers-bench/`;
+const REPAIR_EN = 'en/builds/usb-boost-cable-repair/index.html';
+const REPAIR_EN_URL = `${BASE}/en/builds/usb-boost-cable-repair/`;
 const FOUNDATION = 'styles/yzrs-ui.css';
 const TIMES = 'times/index.html';
 const TIMES_URL = `${BASE}/times/`;
@@ -70,7 +72,7 @@ const WORKS = [
     requiredText: ['IM-1', 'インフィニティミラー', '120 × 165 mm', '5V / DC 5.5×2.1mm center positive', 'Digispark (ATtiny85)', '前面ガラスを約10度傾けた', 'Arduino Nanoはハーフミラーに映り込むためDigispark（ATtiny85）へ変更しました。内壁を黒にして余計な乱反射を抑え、3ポジションSWのフローティング問題に詰まった結果、2ポジションの演出へ絞るようにしています。'],
   },
 ];
-const pages = ['index.html', 'about/index.html', 'privacy/index.html', MAKERS_BENCH_EN, GUIDE, LP, ...WORKS.map(({ page }) => page)];
+const pages = ['index.html', 'about/index.html', 'privacy/index.html', MAKERS_BENCH_EN, REPAIR_EN, GUIDE, LP, ...WORKS.map(({ page }) => page)];
 const uiPages = [TIMES, EVENING];
 const analyticsPages = new Set(pages);
 const errors = [];
@@ -307,6 +309,7 @@ const canonicalExpectations = {
   'about/index.html': `${BASE}/about/`,
   'privacy/index.html': `${BASE}/privacy/`,
   [MAKERS_BENCH_EN]: MAKERS_BENCH_EN_URL,
+  [REPAIR_EN]: REPAIR_EN_URL,
   [GUIDE]: GUIDE_URL,
   [LP]: LP_URL,
   ...Object.fromEntries(WORKS.map(({ page, url }) => [page, url])),
@@ -388,7 +391,7 @@ for (const spec of WORKS) {
 const robots = read('robots.txt');
 if (!robots.includes('Sitemap: https://yzrswork.com/sitemap.xml')) errors.push('robots.txtのSitemap指定がない');
 const sitemap = read('sitemap.xml');
-for (const url of [BASE + '/', TIMES_URL, `${BASE}/about/`, `${BASE}/privacy/`, MAKERS_BENCH_EN_URL, GUIDE_URL]) {
+for (const url of [BASE + '/', TIMES_URL, `${BASE}/about/`, `${BASE}/privacy/`, MAKERS_BENCH_EN_URL, REPAIR_EN_URL, GUIDE_URL]) {
   if (!sitemap.includes(`<loc>${url}</loc>`)) errors.push(`sitemapにURLがない: ${url}`);
 }
 if (sitemap.includes('/lp/electronics-starter/') || sitemap.includes('/evening.html')) errors.push('sitemapにnoindexまたはlegacy URLがある');
