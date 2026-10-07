@@ -73,7 +73,7 @@ test('causal uncertainty, hardware identities, and recovery/noise boundaries rem
   for (const pattern of [/(?<![\d.])2\s*A\b/i, /7\s*V is safe/i, /the board blocked (?:the )?current/i, /87\s*W/i, /24\s*V\s*3\s*A/i, /(?:≈|approximately\s+)0\s*[VA]\b/i]) assert.doesNotMatch(text, pattern);
 });
 
-test('Product Intent retains review fields without shopping, affiliates, new input or image claims', () => {
+test('Product Intent retains review fields without shopping, affiliates or new input claims', () => {
   for (const id of ['pi01', 'pi02', 'pi03', 'pi04']) {
     const section = html.split(`id="${id}"`)[1].split('<h')[0];
     assert.ok(section.includes('REVIEW:'));
@@ -81,7 +81,16 @@ test('Product Intent retains review fields without shopping, affiliates, new inp
   }
   assert.ok(text.includes('US product examples: None.'));
   assert.ok(text.includes('Dimensions alone do not prove compatibility.'));
-  assert.doesNotMatch(html, /affiliate\.js|amazon\.(?:com|co\.jp)|amzn\.to|link\.amazon|skimlinks|sparkfun|<img\b|<input\b|<textarea\b|<form\b/i);
-  assert.ok(text.includes('this page does not reuse photographs or claim independent visual verification'));
+  assert.doesNotMatch(html, /affiliate\.js|amazon\.(?:com|co\.jp)|amzn\.to|link\.amazon|skimlinks|sparkfun|<input\b|<textarea\b|<form\b/i);
+  assert.ok(text.includes('They are historical evidence, not new measurements or an independent hardware investigation.'));
+  const images = [...html.matchAll(/<img\b[^>]*>/g)];
+  assert.equal(images.length, 6);
+  for (const [tag] of images) {
+    assert.match(tag, /alt="[^"]+"/);
+    assert.match(tag, /width="\d+" height="\d+"/);
+    const src = tag.match(/src="([^"]+)"/)[1];
+    assert.ok(src.startsWith('/en/builds/usb-boost-cable-repair/assets/'));
+    assert.ok(readFileSync(new URL(`../public${src}`, import.meta.url)).length > 0);
+  }
   assert.ok(html.includes('data-source-repo="yzrswork-site"'));
 });
