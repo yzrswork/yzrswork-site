@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>volt-1: a broken digital watch becomes a tiny 5V voltmeter | YZRS WORK</title>
+<meta name="description" content="A salvaged ALBA SPOON watch case becomes a green 5V voltmeter. Acrylic mounting, copper-wire retention, a broken drill bit, bounded tests, and reproducible parts requirements." />
+<link rel="canonical" href="https://yzrswork.com/en/builds/volt-1/" />
+<meta name="robots" content="index,follow" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:title" content="volt-1: from time display to voltage display" />
+<meta property="og:description" content="A practical salvage build with real photographs, mounting decisions, failures, and clearly bounded tests." />
+<meta property="og:url" content="https://yzrswork.com/en/builds/volt-1/" />
+<script src="/analytics.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=EB+Garamond:ital,wght@0,500;1,400&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/styles/yzrs-ui.css" />
+<link rel="stylesheet" href="/styles/yzrs-top.css" />
+<style>
+  .salvage-content { padding-block: 40px 56px; }
+  .salvage-content h1 { margin: 12px 0 16px; font-size: clamp(30px, 4vw, 44px); }
+  .salvage-content h2 { margin: 36px 0 12px; padding-top: 20px; border-top: 1px solid var(--yzrs-separator); font-size: 24px; }
+  .salvage-content h3 { margin: 24px 0 8px; font-size: 19px; }
+  .salvage-content p, .salvage-content li { color: var(--yzrs-ink-soft); }
+  .salvage-content .lead { max-width: 68ch; font-size: 18px; }
+  .salvage-content .eyebrow { color: var(--yzrs-muted); font: 12px/1.8 var(--yzrs-mono); letter-spacing: .06em; }
+  .salvage-content ul { padding-left: 1.4em; }
+  .salvage-content li + li { margin-top: 8px; }
+  .salvage-content a { overflow-wrap: anywhere; }
+  .salvage-content .table-scroll { max-width: 100%; overflow-x: auto; }
+  .salvage-content table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .salvage-content th, .salvage-content td { padding: 10px 12px; border-bottom: 1px solid var(--yzrs-separator); text-align: left; vertical-align: top; }
+  .salvage-content th { background: var(--yzrs-paper-raised); }
+  .salvage-content caption { text-align: left; margin-bottom: 12px; }
+  .salvage-content .measurement-table { min-width: 620px; }
+  .salvage-content .meta, .salvage-content .page-footer { color: var(--yzrs-muted); font-size: 14px; }
+  .salvage-content .page-footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--yzrs-separator); }
+  .salvage-content .evidence-figure { margin: 24px 0; }
+  .salvage-content .evidence-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--yzrs-separator); }
+  .salvage-content .evidence-figure--portrait { max-width: 440px; margin-inline: auto; }
+  .salvage-content .evidence-figure figcaption { padding: 9px 0; border-bottom: 1px solid var(--yzrs-separator); color: var(--yzrs-muted); font-size: 14px; }
+  @media (max-width: 680px) { .salvage-content { padding-block: 28px 40px; } }
+  .salvage-content code { overflow-wrap: anywhere; }
+  .salvage-content .evidence-figure--detail { max-width: 634px; margin-inline: auto; }
+</style>
+</head>
+<body class="yzrs-ui">
+<div class="yzrs-top">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="site">
+  <header class="site-header">
+    <div class="inner header-inner">
+      <a class="brand" href="/" aria-label="YZRS WORK home">
+        <span class="brand-name">YZRS WORK</span>
+        <span class="brand-mark">maker tools &amp; notes</span>
+      </a>
+      <nav class="global-nav" aria-label="Page links">
+        <a href="/">Home</a>
+        <a href="https://note.com/yzrswork/n/nf4fd6d490cdb" lang="ja">日本語記事</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="inner salvage-content">
+
+    <article class="yzrs-reading">
+      <p class="eyebrow">SALVAGE / OBSOLETE / JUNK · WB-05 / PILOT C</p>
+      <h1>How I turned a broken digital watch into a tiny 5V voltmeter</h1>
+      <p class="lead" id="what-it-does">volt-1 reuses the circular silver case of a broken ALBA SPOON digital watch as the visible bezel for a small green DC voltmeter. It no longer tells time: it displays the voltage of the supply powering it. A tool that measured time became a tool that measures voltage.</p>
+      <p class="meta">By YZRS WORK · Original build article: April 24, 2026 · English adaptation: October 7, 2026</p>
+<figure class="evidence-figure evidence-figure--portrait"><img src="/en/builds/volt-1/assets/finished.png" alt="Completed volt-1 in a silver frame, with a green voltage display visible through the salvaged watch opening." width="672" height="896" loading="eager" decoding="async" /><figcaption>The completed build with its green display working. This published photograph is visual evidence of the object, not a calibrated measurement.</figcaption></figure>
+      <h2 id="audience">What it does / who it is for</h2>
+      <p>This is a small supply-voltage display and a salvage build for makers who want to reuse an interesting enclosure. It is not a restored watch or a calibrated handheld tester. The useful pattern is keeping a donor object's opening and building an insulating mount behind it; you do not need this exact Japanese watch to reproduce that idea.</p>
+      <h2 id="tested-status">Tested status at a glance</h2>
+      <ul><li><strong>Original build:</strong> powered from 5 V USB; the owner reported approximately <code>5.1X</code> on the display. Initial functional confirmation only.</li><li><strong>October 4, 2026:</strong> the production exhibition configuration including volt-1 ran approximately 2–3 hours with no abnormality recorded. Cold start, voltage / voltage-drop, mobile-battery auto-off, and backup-supply checks passed.</li><li><strong>Limits:</strong> practical exhibition acceptance, not laboratory qualification. Calibration accuracy, standalone current draw, efficiency, startup surge, and protection thresholds remain unknown. Detailed numeric voltage readings were not preserved for the October acceptance.</li></ul>
+      <h2 id="donor">Why keep the broken watch?</h2>
+      <p>The donor was an ALBA SPOON digital watch, recorded as W620-4140. Its LCD had missing segments. I took it apart and attempted a repair, then abandoned restoring the watch function. The published account describes the difficulty and parts-sourcing burden; it does not establish an exact technical reason that repair was impossible.</p>
+      <p>The circular opening and silver case were still worth keeping. I had a small voltmeter on hand, so the question changed from “Can I repair this watch?” to “Can this opening become a useful display again?” The watch's physical identity stayed; its job changed.</p>
+<figure class="evidence-figure "><img src="/en/builds/volt-1/assets/donor.jpg" alt="Disassembled ALBA SPOON watch with the silver circular case, removed movement, battery, band, and tools laid out on a blue work surface." width="1920" height="1547" loading="lazy" decoding="async" /><figcaption>The donor after disassembly. Its circular case was retained; the original timekeeping function was not restored.</figcaption></figure>
+      <h2 id="tools">Required tools</h2>
+      <ul><li>Small screwdrivers and suitable tools for disassembling your donor object.</li><li>Acrylic scoring cutter, cutting mat, and layout tools for the mount plate.</li><li>Drill press, suitable metal drill bits, secure clamping, and eye protection for small metal parts.</li><li>Tools for the selected M2 screws and spacers, wire cutters / pliers, and a hot-glue tool.</li><li>A means to verify supply polarity before powering. A separate suitable meter is useful for your own checks; no comparison-meter accuracy test is documented for this build.</li></ul>
+      <h2 id="product-intent">BOM / Product Intent</h2>
+      <p>Choose requirements before products. The actual YZRS-used materials below are evidence of this build, not a promise that another part will fit. No US SKU is presented as tested, identical, equivalent, or a drop-in replacement.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Product Intent bill of materials, horizontally scrollable"><table class="measurement-table"><caption>Actual build materials and requirements for a reproduction</caption><thead><tr><th scope="col">Intent</th><th scope="col">Actual YZRS build</th><th scope="col">Replacement requirement / review</th></tr></thead><tbody>
+      <tr id="pi01"><th scope="row">PI01 · Donor enclosure</th><td>ALBA SPOON W620-4140 case, in a small silver photo frame.</td><td>A broken or obsolete small object with a useful visible opening, rear mounting space, and material that safely supports modification. The same watch and frame are not required. REVIEW: opening, clearances, fastening points, and material.</td></tr>
+      <tr id="pi02"><th scope="row">PI02 · Voltage display</th><td>Green two-wire mini DC voltmeter operating in this 5 V build.</td><td>Two-wire self-powered topology; supported operation and readable display around 5 V; size suited to your donor. REVIEW: documented voltage range, polarity, dimensions, and fit. Exact installed model and accuracy are not established here.</td></tr>
+      <tr id="pi03"><th scope="row">PI03 · Insulating mount</th><td>2 mm black acrylic replacing the frame's glass plate.</td><td>Workable insulating sheet with suitable thickness, stiffness, and safe clearances. REVIEW: match your frame and fasteners; 2 mm is not universally required.</td></tr>
+      <tr id="pi04"><th scope="row">PI04 · Meter fastening</th><td>M2 screws, spacer adjustment, hot-glue reinforcement.</td><td>Fasteners and spacers chosen for the meter and donor geometry. REVIEW: retention, height, and rear clearance. Hot glue reinforced this build; it is not a general primary fastener for heavy loads.</td></tr>
+      <tr id="pi05"><th scope="row">PI05 · Case retention</th><td>0.6 mm copper wire through the modified lug area.</td><td>A suitable mechanical retention method for your donor. REVIEW: secure fixation without damaging the plate or shorting wiring. The copper-wire diameter is a mechanical / aesthetic choice, not an electrical requirement.</td></tr>
+      <tr id="pi06"><th scope="row">PI06 · Power</th><td>5 V USB initially; PDB-1 5V MAIN via SPL-2 currently.</td><td>USB 5 V or a regulated 5 V maker supply compatible with the selected meter. REVIEW: polarity, supported range, and insulated connections. PDB-1 is not required.</td></tr>
+      </tbody></table></div>
+      <h2 id="build-steps">Build steps / design decisions</h2>
+      <p>This is the recorded sequence with reproduction checks added. Layout and dimensions must follow your own donor; there is no universal drilling template.</p>
+      <h3 id="preparation">Prepare the salvaged case</h3>
+      <p>The watch was disassembled and the circular case retained. For reproduction, remove the watch battery and unnecessary original electronics before any drilling. Inspect the empty case and plan the opening, plate, meter position, and wire route before cutting.</p>
+      <h3 id="acrylic">Make the insulating mounting plate</h3>
+      <p>I cut 2 mm black acrylic to replace the glass plate in the small silver frame. The published method used an acrylic cutter to score and snap the sheet. Use a cutting mat: the original build account also records a cutter slipping and marking the desk. The black plate provided the mount behind the silver case.</p>
+      <h3 id="mounting">Position and retain the voltmeter</h3>
+      <p>I used M2 screws to retain the mini voltmeter on the acrylic, adjusted spacers until the digits could be read through the watch opening, and added hot-glue reinforcement. Check position and rear clearance before committing to the mount. The source does not preserve a transferable spacer height or a verified mounting-hole pattern.</p>
+<figure class="evidence-figure evidence-figure--detail"><img src="/en/builds/volt-1/assets/mounting.png" alt="Unpowered mini voltmeter with inactive segments visible through the ALBA SPOON opening, positioned against the black mounting plate." width="634" height="476" loading="lazy" decoding="async" /><figcaption>The meter aligned behind the original opening before the powered result. This front view shows display placement; the M2 screws, spacers, and glue are documented in the build account rather than fully visible here.</figcaption></figure>
+      <h3 id="retention">Use the existing lug area for case retention</h3>
+      <p>I drilled through the watch's existing lug area and passed 0.6 mm copper wire through it to retain the case on the acrylic. This reused the watch's attachment area instead of treating the case as a glued-on decoration. The wire serves a mechanical role here.</p>
+<figure class="evidence-figure "><img src="/en/builds/volt-1/assets/drilling.jpg" alt="Empty silver watch case resting on a wood block, with modified holes visible at the lug area." width="1920" height="1440" loading="lazy" decoding="async" /><figcaption>The lug-area modification used for copper-wire retention. The photograph does not show the bit breaking or prove its cause.</figcaption></figure>
+      <h3 id="failure">Failure: the small drill bit broke</h3>
+      <p>The 1 mm bit broke during the work. I switched to a 2 mm bit and finished the holes, but I did not isolate whether the failure came from bit size, technique, material, or a combination. A successful continuation does not prove that 2 mm is the right size for every donor. Clamp small metal parts securely and wear eye protection; thin bits can break.</p>
+      <h2 id="wiring">Wiring / connection</h2>
+      <p>The meter is two-wire and self-powered: it displays the voltage of the DC supply connected to it. For reproduction, the connection is <strong>5 V DC source → voltmeter</strong>. Identify the selected meter's positive and negative connections from its own documentation and verify polarity before power-up. No source-confirmed connector pinout or wire-color polarity diagram is provided here.</p>
+      <p>The current exhibition path is <strong>PDB-1 5V/GND → SPL-2 → volt-1</strong>. It uses the exhibition's 5V MAIN supply, with exposed connections requiring short prevention and insulation where necessary. PDB-1 and SPL-2 describe this configuration; neither is a reproduction requirement.</p>
+      <h2 id="measurements">Measurements / test conditions</h2>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Historical and exhibition tests, horizontally scrollable"><table class="measurement-table"><caption>Historical tests, kept separate from specifications and new measurements</caption><thead><tr><th scope="col">Record</th><th scope="col">Supply / condition</th><th scope="col">Observed result</th><th scope="col">Evidence limit</th></tr></thead><tbody>
+      <tr data-evidence="initial"><th scope="row">Original build, published April 24, 2026</th><td>5 V USB</td><td>Approximately <code>5.1X</code> displayed; green digits working.</td><td>Functional confirmation only. The final digit was not recorded as a fixed value. No calibrated comparison or meter accuracy claim.</td></tr>
+      <tr data-evidence="acceptance"><th scope="row">October 4, 2026 production acceptance</th><td>PDB-1 → SPL-2 → volt-1, on 5V MAIN; production configuration including volt-1.</td><td>Approximately 2–3 hours operating; no abnormality recorded. Cold start PASS; voltage / voltage-drop check PASS; mobile-battery auto-off check PASS; backup supply PASS.</td><td>Practical exhibition acceptance, not laboratory qualification or a standalone endurance test. Detailed numeric voltage values were not preserved.</td></tr>
+      </tbody></table></div>
+      <h2 id="current-configuration">Current exhibition configuration</h2>
+      <p>The current JUNK YARD record gives the work's dimensions as <strong>76 × 100 × 12 mm</strong>. These are exhibition dimensions for the completed work, not donor dimensions or a template for another enclosure. volt-1 now displays the exhibition supply rather than operating as an independent tester. The October acceptance above covers the production configuration.</p>
+      <h2 id="troubleshooting">Failure / troubleshooting boundaries</h2>
+      <ul><li><strong>Missing watch segments:</strong> repair was attempted and abandoned. The exact failure mechanism remains unknown; this page does not diagnose watch LCD faults.</li><li><strong>Broken drill bit:</strong> the recorded recovery was switching from 1 mm to 2 mm. The cause was not isolated.</li><li><strong>Reproduction checks:</strong> if your chosen meter does not start or cannot be read, disconnect power and check documented range, polarity, connections, and opening alignment. These are editorial checks, not additional failures observed on volt-1.</li></ul>
+      <h2 id="alternatives">Alternatives / substitutions</h2>
+      <p>A discarded instrument bezel or another small obsolete enclosure is a possible starting point if it meets PI01. A different insulating sheet or fastening method may work if stiffness, clearances, and retention suit the selected parts. These are design options, not YZRS-tested substitute builds; physical fit is not verified.</p>
+      <p>For US sourcing, first obtain the meter documentation and dimensions, then compare the donor opening and rear space. A generic mini-meter listing without a confirmed two-wire topology and supported 5 V operation is not enough. No US candidate was adequately verified for this implementation, so no SKU is listed.</p>
+      <aside class="yzrs-warning" aria-labelledby="safety"><h2 id="safety">Safety / limits / do not do</h2>
+      <p><strong>This article's scope is 5 V DC only. Do not connect this build directly to mains or AC.</strong> Verify the selected voltmeter's supported voltage range and do not exceed it. Confirm polarity before powering; disconnect power during wiring and mechanical work. Remove the donor watch battery and unnecessary original electronics before drilling. Clamp small metal parts securely and wear eye protection; thin drill bits can break. Avoid shorts between exposed 5 V and GND, and insulate exposed conductors where necessary.</p>
+      <p>These are reproduction precautions added for readers, not proof that each precaution was documented in the original build. Passing exhibition checks does not establish calibration, protective behavior, certification, or suitability for other electrical systems.</p></aside>
+      <h2 id="parts-sources">Parts &amp; Sources</h2>
+      <p>The actual build used a salvaged watch case, an existing small silver photo frame, a green two-wire mini DC voltmeter, black acrylic, M2 screws, spacers, hot glue, and copper wire. Use the Product Intent table to choose your own parts. US product candidates: none. No affiliate links or monetization are included on this page.</p>
+      <h2 id="sources">Source bundle / technical evidence</h2>
+      <ul class="source-list"><li><a href="https://note.com/yzrswork/n/nf4fd6d490cdb" lang="ja">Original Japanese build article — April 24, 2026</a>: the primary published account and all four photographs.</li><li>Owner's supporting project records: archived volt-1 build note; April 16–17 fabrication logs; current JUNK YARD work data and editorial bundle; October 4 project log and launch acceptance checklist. These are historical records, not new measurements. Private records are not republished here.</li><li><a href="https://github.com/yzrswork/yzrswork-site/blob/main/public/en/builds/volt-1/index.html" data-source-repo="yzrswork-site">English article implementation</a>.</li><li><a href="https://github.com/yzrswork/yzrswork-site/blob/main/public/en/builds/volt-1/assets/README.md" data-source-repo="yzrswork-site">Photograph provenance, dimensions, and original-file hashes</a>.</li></ul>
+      <p>Historical internal meter metadata is inconsistent, so exact model, range, accuracy, and current are deliberately omitted. ALBA SPOON series history is not used to identify this W620-4140 as a particular launch or sales milestone model. Numerical gaps stay unknown.</p>
+      <div class="page-footer"><a href="/">YZRS WORK home</a> · <a href="/en/tools/makers-bench/">Maker's Bench</a> · <a href="/en/builds/usb-boost-cable-repair/">USB boost cable repair</a></div>
+    </article>
+  </main>
+</div>
+</div>
+</body>
+</html>
