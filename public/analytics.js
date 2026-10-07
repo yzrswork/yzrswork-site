@@ -17,6 +17,10 @@
 
   var APP_HOST = "apps.yzrswork.com";
   var ROUTE_KEY_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+  var SOURCE_REPOSITORIES = Object.freeze({
+    yzrswork_apps: "/yzrswork/yzrswork_apps/",
+    "yzrswork-site": "/yzrswork/yzrswork-site/",
+  });
 
   document.addEventListener("click", function (event) {
     var target = event.target;
@@ -27,6 +31,13 @@
     try {
       url = new URL(link.href, document.baseURI || "https://yzrswork.com/");
     } catch (_) {
+      return;
+    }
+
+    var sourceRepo = link.getAttribute("data-source-repo");
+    var sourcePath = SOURCE_REPOSITORIES[sourceRepo];
+    if (url.protocol === "https:" && url.hostname === "github.com" && sourcePath && url.pathname.startsWith(sourcePath)) {
+      gtag("event", "source_link_click", { source_repo: sourceRepo });
       return;
     }
 

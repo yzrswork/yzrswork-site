@@ -16,6 +16,8 @@ const GUIDE_BUILD = 'scripts/build-guide.mjs';
 const GUIDE_URL = `${BASE}/guides/hajimete-no-denshi-kousaku-starter-guide/`;
 const LP = 'lp/electronics-starter/index.html';
 const LP_URL = `${BASE}/lp/electronics-starter/`;
+const MAKERS_BENCH_EN = 'en/tools/makers-bench/index.html';
+const MAKERS_BENCH_EN_URL = `${BASE}/en/tools/makers-bench/`;
 const FOUNDATION = 'styles/yzrs-ui.css';
 const TIMES = 'times/index.html';
 const TIMES_URL = `${BASE}/times/`;
@@ -68,7 +70,7 @@ const WORKS = [
     requiredText: ['IM-1', 'インフィニティミラー', '120 × 165 mm', '5V / DC 5.5×2.1mm center positive', 'Digispark (ATtiny85)', '前面ガラスを約10度傾けた', 'Arduino Nanoはハーフミラーに映り込むためDigispark（ATtiny85）へ変更しました。内壁を黒にして余計な乱反射を抑え、3ポジションSWのフローティング問題に詰まった結果、2ポジションの演出へ絞るようにしています。'],
   },
 ];
-const pages = ['index.html', 'about/index.html', 'privacy/index.html', GUIDE, LP, ...WORKS.map(({ page }) => page)];
+const pages = ['index.html', 'about/index.html', 'privacy/index.html', MAKERS_BENCH_EN, GUIDE, LP, ...WORKS.map(({ page }) => page)];
 const uiPages = [TIMES, EVENING];
 const analyticsPages = new Set(pages);
 const errors = [];
@@ -254,6 +256,25 @@ const guideApp = htmlByPage.get(GUIDE);
 checkAppLinks('index.html', rootApp);
 checkAppLinks('about/index.html', about);
 checkAppLinks(GUIDE, guideApp);
+const makersBenchEn = htmlByPage.get(MAKERS_BENCH_EN);
+checkAppLinks(MAKERS_BENCH_EN, makersBenchEn);
+checkExpectedRoute(MAKERS_BENCH_EN, makersBenchEn, '/bench/en.html', 'makers-bench-en');
+const makersBenchToolIds = [...makersBenchEn.matchAll(/<li data-pilot-tool="([^"]+)"/g)].map((match) => match[1]);
+if (makersBenchToolIds.join(',') !== 'ohm,led,color,555,battery') {
+  errors.push('English Maker\'s Bench authority page must document exactly the five Pilot A tools');
+}
+for (const deferredToolId of ['tool-vdiv', 'tool-eng']) {
+  if (makersBenchEn.includes(`id="${deferredToolId}"`)) errors.push(`Deferred calculator is exposed in English Pilot: ${deferredToolId}`);
+}
+if (/affiliate\.js|amazon\.co\.jp|amazon\.com|skimlinks|sparkfun/i.test(makersBenchEn)) {
+  errors.push('English Maker\'s Bench includes an affiliate integration or destination');
+}
+if (!makersBenchEn.includes('Theoretical estimate. Real battery runtime has not been physically validated by this calculator.')) {
+  errors.push('English Battery Life physical-validation boundary is missing');
+}
+if (!makersBenchEn.includes('data-source-repo="yzrswork_apps"') || !makersBenchEn.includes('data-source-repo="yzrswork-site"')) {
+  errors.push('English Maker\'s Bench source links are not analytics-labeled');
+}
 for (const [pathname, routeKey] of rootAppRoutes) checkExpectedRoute('index.html', rootApp, pathname, routeKey);
 checkExpectedRoute('about/index.html', about, '/', 'about-toolbox');
 for (const [pathname, routeKey] of [
@@ -285,6 +306,7 @@ const canonicalExpectations = {
   'index.html': `${BASE}/`,
   'about/index.html': `${BASE}/about/`,
   'privacy/index.html': `${BASE}/privacy/`,
+  [MAKERS_BENCH_EN]: MAKERS_BENCH_EN_URL,
   [GUIDE]: GUIDE_URL,
   [LP]: LP_URL,
   ...Object.fromEntries(WORKS.map(({ page, url }) => [page, url])),
@@ -366,7 +388,7 @@ for (const spec of WORKS) {
 const robots = read('robots.txt');
 if (!robots.includes('Sitemap: https://yzrswork.com/sitemap.xml')) errors.push('robots.txtのSitemap指定がない');
 const sitemap = read('sitemap.xml');
-for (const url of [BASE + '/', TIMES_URL, `${BASE}/about/`, `${BASE}/privacy/`, GUIDE_URL]) {
+for (const url of [BASE + '/', TIMES_URL, `${BASE}/about/`, `${BASE}/privacy/`, MAKERS_BENCH_EN_URL, GUIDE_URL]) {
   if (!sitemap.includes(`<loc>${url}</loc>`)) errors.push(`sitemapにURLがない: ${url}`);
 }
 if (sitemap.includes('/lp/electronics-starter/') || sitemap.includes('/evening.html')) errors.push('sitemapにnoindexまたはlegacy URLがある');
@@ -383,6 +405,8 @@ for (const expected of [
   'route_key: routeKey',
   'tool_slug: toolSlug',
   'destination_path: url.pathname',
+  'source_link_click',
+  'source_repo: sourceRepo',
 ]) if (!analytics.includes(expected)) errors.push(`tool_link_click実装要素がない: ${expected}`);
 if (/\bpreventDefault\s*\(|\bsetTimeout\s*\(/.test(analytics)) errors.push('Analyticsに遷移遅延またはpreventDefaultがある');
 
@@ -414,14 +438,18 @@ function checkToolLinkClickBehavior() {
     return;
   }
 
-  const makeLink = (href) => ({
+  const makeLink = (href, attributes = {}) => ({
     href,
+    getAttribute(name) { return attributes[name] ?? null; },
     closest(selector) { return selector === 'a[href]' ? this : null; },
   });
   const eventEntries = () => dataLayer
     .map((entry) => Array.from(entry))
     .filter(([kind, name]) => kind === 'event' && name === 'tool_link_click');
-  const click = (href) => listeners.click({ target: makeLink(href) });
+  const sourceEventEntries = () => dataLayer
+    .map((entry) => Array.from(entry))
+    .filter(([kind, name]) => kind === 'event' && name === 'source_link_click');
+  const click = (href, attributes) => listeners.click({ target: makeLink(href, attributes) });
 
   click('https://apps.yzrswork.com/hdd/?yzrs_ref=home-tool-hdd');
   const events = eventEntries();
@@ -446,6 +474,20 @@ function checkToolLinkClickBehavior() {
     'https://apps.yzrswork.com.evil.example/hdd/?yzrs_ref=home-tool-hdd',
   ]) click(href);
   if (eventEntries().length !== before) errors.push('除外対象リンクでtool_link_clickが発火した');
+
+  click('https://github.com/yzrswork/yzrswork_apps/tree/main/bench', { 'data-source-repo': 'yzrswork_apps' });
+  const sourceEvents = sourceEventEntries();
+  if (sourceEvents.length !== 1) {
+    errors.push('Maker\'s Bench GitHub source linkでsource_link_clickが1件発火しない');
+  } else {
+    const params = sourceEvents[0][2];
+    if (params?.source_repo !== 'yzrswork_apps' || Object.keys(params ?? {}).join(',') !== 'source_repo') {
+      errors.push('source_link_clickにURLや想定外parameterが含まれている');
+    }
+  }
+  click('https://example.com/yzrswork/yzrswork_apps/tree/main/bench', { 'data-source-repo': 'yzrswork_apps' });
+  click('https://github.com/other/repository', { 'data-source-repo': 'yzrswork_apps' });
+  if (sourceEventEntries().length !== 1) errors.push('許可されていないリンクでsource_link_clickが発火した');
 }
 
 checkToolLinkClickBehavior();

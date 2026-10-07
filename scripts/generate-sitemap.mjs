@@ -9,6 +9,7 @@ const urls = [
   'https://yzrswork.com/times/',
   'https://yzrswork.com/about/',
   'https://yzrswork.com/privacy/',
+  'https://yzrswork.com/en/tools/makers-bench/',
   'https://yzrswork.com/guides/hajimete-no-denshi-kousaku-starter-guide/',
   'https://yzrswork.com/junkyard/works/mo-1/',
   'https://yzrswork.com/junkyard/works/compo-1/',

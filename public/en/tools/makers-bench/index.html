@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Maker's Bench — English Pilot A | YZRS WORK</title>
+<meta name="description" content="Scope, validation status, limits, and technical sources for the English Maker's Bench Pilot A." />
+<link rel="canonical" href="https://yzrswork.com/en/tools/makers-bench/" />
+<meta name="robots" content="index,follow" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:title" content="Maker's Bench — English Pilot A" />
+<meta property="og:description" content="Five electronics calculators, their limits, and the evidence behind them." />
+<meta property="og:url" content="https://yzrswork.com/en/tools/makers-bench/" />
+<script src="/analytics.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=EB+Garamond:ital,wght@0,500;1,400&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/styles/yzrs-ui.css" />
+<link rel="stylesheet" href="/styles/yzrs-top.css" />
+<style>
+  .makers-bench-content { padding-block: 40px 56px; }
+  .makers-bench-content h1 { margin: 12px 0 16px; font-size: clamp(30px, 4vw, 44px); }
+  .makers-bench-content h2 { margin: 36px 0 12px; padding-top: 20px; border-top: 1px solid var(--yzrs-separator); font-size: 24px; }
+  .makers-bench-content p, .makers-bench-content li { color: var(--yzrs-ink-soft); }
+  .makers-bench-content .lead { max-width: 68ch; font-size: 18px; }
+  .makers-bench-content .eyebrow { color: var(--yzrs-muted); font: 12px/1.8 var(--yzrs-mono); letter-spacing: .06em; }
+  .makers-bench-content .status { margin: 24px 0; padding: 16px 20px; border-left: 3px solid var(--yzrs-accent); background: var(--yzrs-paper-raised); }
+  .makers-bench-content .status p { margin: 4px 0; }
+  .makers-bench-content ul { padding-left: 1.4em; }
+  .makers-bench-content li + li { margin-top: 8px; }
+  .makers-bench-content .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 24px; }
+  .makers-bench-content .button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; max-width: 100%; padding: 12px 20px; border: 1px solid var(--yzrs-ink); text-decoration: none; font-weight: 500; }
+  .makers-bench-content .button.primary { background: var(--yzrs-accent); border-color: var(--yzrs-accent); color: var(--yzrs-paper-raised); }
+  .makers-bench-content .text-link { min-height: 44px; display: inline-flex; align-items: center; color: var(--yzrs-accent); text-underline-offset: .2em; }
+  .makers-bench-content .source-list { overflow-wrap: anywhere; }
+  .makers-bench-content .meta { color: var(--yzrs-muted); font-size: 14px; }
+  .makers-bench-content .page-footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--yzrs-separator); color: var(--yzrs-muted); font-size: 14px; }
+  @media (max-width: 680px) {
+    .makers-bench-content { padding-block: 28px 40px; }
+    .makers-bench-content .actions { align-items: stretch; flex-direction: column; }
+    .makers-bench-content .button { width: 100%; }
+  }
+</style>
+</head>
+<body class="yzrs-ui">
+<div class="yzrs-top">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="site">
+  <header class="site-header">
+    <div class="inner header-inner">
+      <a class="brand" href="/" aria-label="YZRS WORK home">
+        <span class="brand-name">YZRS WORK</span>
+        <span class="brand-mark">maker tools &amp; notes</span>
+      </a>
+      <nav class="global-nav" aria-label="Page links">
+        <a href="/">Home</a>
+        <a href="https://apps.yzrswork.com/bench/?yzrs_ref=makers-bench-ja">日本語版</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="inner makers-bench-content">
+    <article class="yzrs-reading">
+      <p class="eyebrow">UTILITY PILOT · WB-05 / PILOT A · REVIEWED 2026-10-07</p>
+      <h1>Maker's Bench</h1>
+      <p class="lead">A small set of electronics calculators for makers who need a quick first-pass estimate at the workbench. This page documents what the English Pilot includes, what has been checked, and where each technical rule comes from.</p>
+
+      <div class="actions">
+        <a class="button primary" href="https://apps.yzrswork.com/bench/en.html?yzrs_ref=makers-bench-en">Open the English calculator</a>
+        <a class="text-link" href="https://apps.yzrswork.com/bench/?yzrs_ref=makers-bench-ja">Open the Japanese Maker's Bench</a>
+      </div>
+
+      <h2>Included in Pilot A</h2>
+      <ul>
+        <li data-pilot-tool="ohm"><strong>Ohm's Law:</strong> solve voltage, current, resistance, or power from a supported pair.</li>
+        <li data-pilot-tool="led"><strong>LED Series Resistor:</strong> estimate a series resistor, choose the next supported E12 value at or above the calculation, and review a power-rating candidate.</li>
+        <li data-pilot-tool="color"><strong>Resistor Color Code:</strong> convert between resistance values and four-band or five-band colors.</li>
+        <li data-pilot-tool="555"><strong>555 Astable:</strong> estimate frequency, period, and output duty cycle from R1, R2, and C.</li>
+        <li data-pilot-tool="battery"><strong>Battery Life:</strong> calculate the ideal capacity-to-average-current runtime estimate.</li>
+      </ul>
+      <p><strong>Deferred from the English Pilot:</strong> Voltage Divider and Engineering Notation remain available in the Japanese Maker's Bench. They are not part of this five-tool English surface.</p>
+
+      <h2>Validation status and limits</h2>
+      <div class="status" aria-label="Validation status">
+        <p><strong>Pilot decision:</strong> Conditional Pass.</p>
+        <p><strong>Mathematics:</strong> deterministically verified for the supported inputs and stated equations.</p>
+        <p><strong>Implementation:</strong> automated tests and repository checks are run on the reviewed source revision.</p>
+        <p><strong>Browser/UI:</strong> desktop and 390 px mobile acceptance is recorded for the reviewed revision.</p>
+        <p><strong>Physical testing:</strong> no circuit or battery-runtime measurements are claimed.</p>
+      </div>
+      <p>The calculators are estimates. Confirm component ratings, tolerances, operating conditions, and manufacturer data sheets before building a circuit.</p>
+      <p><strong>Battery Life is theoretical.</strong> Theoretical estimate. Real battery runtime has not been physically validated by this calculator. Actual runtime can vary with battery chemistry, discharge characteristics, load variation, temperature, battery age, converter efficiency, and cutoff voltage. No generic efficiency or runtime correction factor is applied.</p>
+      <p>The English utility does not include affiliate product links or product recommendations. Calculator inputs and result text stay out of analytics events; usage events contain only fixed tool identifiers and the English-language marker.</p>
+
+      <h2>Technical evidence</h2>
+      <ul class="source-list">
+        <li><strong>LED current limiting:</strong> the resistor estimate uses the supply-to-LED voltage difference divided by target current. <a href="https://www.analog.com/en/resources/technical-articles/guide-to-led-circuit-designs-and-led-basics-and-operation.html">Analog Devices, Guide to LED Circuit Designs and LED Basics &amp; Operation</a>.</li>
+        <li><strong>E12 values:</strong> the preferred-number series is defined by <a href="https://webstore.iec.ch/en/publication/22011">IEC 60063:2015</a>. Pilot behavior selects the smallest supported E12 value not below the calculated resistance to keep the estimate at or below the target current.</li>
+        <li><strong>Resistor color coding:</strong> color assignments and value/tolerance marking are covered by <a href="https://webstore.iec.ch/en/publication/65655">IEC 60062:2016+A1:2019</a>.</li>
+        <li><strong>555 astable equations:</strong> frequency, high/low timing, period, and output duty-cycle equations follow the <a href="https://www.ti.com/document-viewer/NE555/datasheet">Texas Instruments xx555 Precision Timers data sheet</a>.</li>
+        <li><strong>Battery estimate:</strong> the capacity/current model is an ideal arithmetic estimate. <a href="https://www.panasonic.com/global/energy/products/battery/dry_batteries_faq.html">Panasonic Energy's battery FAQ</a> explains that usable capacity and runtime vary with device and usage conditions.</li>
+      </ul>
+
+      <h2>Source and implementation boundary</h2>
+      <p>This English page owns the Pilot scope, validation status, limitations, and technical references. The English calculator is a localized interface backed by the existing Maker's Bench calculation module in <code>yzrswork_apps/bench</code>; formulas are not copied into this site repository.</p>
+      <ul class="source-list">
+        <li><a href="https://github.com/yzrswork/yzrswork_apps/tree/main/bench" data-source-repo="yzrswork_apps">Maker's Bench calculator source</a></li>
+        <li><a href="https://github.com/yzrswork/yzrswork-site/blob/main/public/en/tools/makers-bench/index.html" data-source-repo="yzrswork-site">This Authority page source</a></li>
+      </ul>
+
+      <p class="meta">Last reviewed: 2026-10-07 · English Utility Pilot A · Source revision status is described in the associated repository pull requests.</p>
+      <div class="page-footer"><a href="/">YZRS WORK home</a> · <a href="https://apps.yzrswork.com/bench/?yzrs_ref=makers-bench-ja">Japanese Maker's Bench</a></div>
+    </article>
+  </main>
+</div>
+</div>
+</body>
+</html>
