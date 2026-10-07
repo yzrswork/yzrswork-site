@@ -37,6 +37,10 @@
   .repair-content .measurement-table { min-width: 620px; }
   .repair-content .meta, .repair-content .page-footer { color: var(--yzrs-muted); font-size: 14px; }
   .repair-content .page-footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--yzrs-separator); }
+  .repair-content .evidence-figure { margin: 24px 0; }
+  .repair-content .evidence-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--yzrs-separator); }
+  .repair-content .evidence-figure--portrait { max-width: 440px; margin-inline: auto; }
+  .repair-content .evidence-figure figcaption { padding: 9px 0; border-bottom: 1px solid var(--yzrs-separator); color: var(--yzrs-muted); font-size: 14px; }
   @media (max-width: 680px) { .repair-content { padding-block: 28px 40px; } }
 </style>
 </head>
@@ -87,7 +91,17 @@
       <p>The recorded arrangement was USB input → boost board → DC fan output. The board carried markings reported as <code>100</code>, <code>SS34</code> on two components, and a marking that appeared to read <code>NCE3018AS</code>. There was also an unmarked eight-pin IC, LEDs, and a switch.</p>
       <p>These are reported markings, not an independently verified schematic or a set of board ratings. The controller IC remains unidentified. No component data sheet is used here to infer the complete converter's capability.</p>
 
+      <figure class="evidence-figure evidence-figure--portrait">
+        <img src="/en/builds/usb-boost-cable-repair/assets/boost-converter-pcb.jpg" alt="Exposed boost-converter PCB with an inductor marked 100, surface-mounted components, an eight-pin IC, LEDs, and a push button." width="1080" height="1920" loading="lazy" decoding="async" />
+        <figcaption>The disassembled boost-converter board. Visible markings are inspection evidence, not verified board ratings.</figcaption>
+      </figure>
+
       <h2 id="repair">The repair I actually performed</h2>
+      <figure class="evidence-figure">
+        <img src="/en/builds/usb-boost-cable-repair/assets/original-and-replacement-cable.jpg" alt="Original boost cable and replacement DC extension lead laid out beside the exposed converter board." width="1920" height="1440" loading="lazy" decoding="async" />
+        <figcaption>The original cable and the purchased replacement extension lead used in the connection repair.</figcaption>
+      </figure>
+
       <ul>
         <li>Cut the female end from the purchased extension lead and used it to replace the DC jack.</li>
         <li>Reused the male end on the fan side, where the existing plug was loose.</li>
@@ -96,6 +110,11 @@
         <li>Protected the wire roots with flexible hot-melt glue, then remeasured the no-load outputs.</li>
       </ul>
       <p>This was a wiring and connection repair, not a converter redesign. Several connections changed together, so the record does not isolate which individual repair restored operation. The glue application is not a claim of waterproofing, certification, or verified strain-relief performance.</p>
+
+      <figure class="evidence-figure">
+        <img src="/en/builds/usb-boost-cable-repair/assets/resoldered-wiring.jpg" alt="Resoldered red and black wires connected to both ends of the exposed boost-converter board." width="1920" height="1440" loading="lazy" decoding="async" />
+        <figcaption>The reworked wiring after soldering. Several connections were changed together during this repair.</figcaption>
+      </figure>
 
       <h2 id="connector-wiring">Connector and wire details</h2>
       <p>The purchased connector's nominal dimensions were <strong>3.8 mm OD / 1.4 mm ID</strong>. They are a starting dimensional reference only. Tolerance, insertion length, polarity, current rating, mechanical retention, and actual fit still need checking for any substitution.</p>
@@ -108,6 +127,11 @@
       <p>The record does not establish meter model, accuracy, measurement duration, ambient temperature, simultaneous readings, power-bank charge level, wire length, fan ratings, or trial counts. The fan count for each individual loaded 5V and 7V measurement is also unconfirmed. The USB source voltage must not be assumed to have been measured simultaneously with each load reading.</p>
 
       <h2 id="measurements">Reported measurements</h2>
+      <figure class="evidence-figure">
+        <img src="/en/builds/usb-boost-cable-repair/assets/5v-measurement.jpg" alt="Multimeter showing 4.99 V at the repaired cable's 5 V setting." width="1920" height="1440" loading="lazy" decoding="async" />
+        <figcaption>The post-repair 5V no-load check displays 4.99 V, corresponding to E02 below. This reading does not establish loaded capability.</figcaption>
+      </figure>
+
       <p class="meta">On a narrow screen, scroll the table horizontally. “Not measured” is not a zero reading.</p>
       <div class="table-scroll" tabindex="0" role="region" aria-label="Reported measurement table, horizontally scrollable">
         <table class="measurement-table">
@@ -129,6 +153,11 @@
         </table>
       </div>
       <p>The current readings are at the USB input, not the fan output. The reported 7V current span is not a statistical range or an accuracy specification. There is no valid steady voltage or current measurement for 9V with two fans. No power, efficiency, startup-current, or protection-threshold calculation is added.</p>
+
+      <figure class="evidence-figure">
+        <img src="/en/builds/usb-boost-cable-repair/assets/usb-meter-load-test.webp" alt="Two load-test photographs of a USB power meter connected between a power bank and the repaired cable." width="1609" height="1514" loading="lazy" decoding="async" />
+        <figcaption>The USB meter inserted during load testing. These photographs do not establish the cause of the 9V / two-fan stop or a valid steady current reading for that failure state.</figcaption>
+      </figure>
 
       <h2 id="remaining-failure">The remaining 9V / two-fan failure</h2>
       <p>With two fans at 9V, stopping occurred at startup or when the second fan was connected. Occasionally both continued running, but that result was not reproducible. Trial counts and a success rate are unavailable. Near-nominal no-load output and one-fan operation did not establish two-fan capability.</p>
@@ -155,6 +184,11 @@
       <p><strong>On this repaired unit, I chose 7V as the practical operating limit.</strong></p>
       <p>That is my decision for this unit, not a safety rating or a recommendation for other converters, fans, cables, batteries, or repair leads. Restored operation is not a passed long-duration or temperature test.</p>
 
+      <figure class="evidence-figure">
+        <img src="/en/builds/usb-boost-cable-repair/assets/completed-repaired-cable.jpg" alt="Completed repaired cable with the converter enclosure closed, a USB plug, and a DC connector." width="1920" height="1440" loading="lazy" decoding="async" />
+        <figcaption>The completed repaired cable. The decision to use this unit up to 7V remains an owner decision, not a general safety recommendation.</figcaption>
+      </figure>
+
       <h2 id="product-intent">Product Intent: requirements before products</h2>
       <p>These categories explain the jobs the parts need to do. Unknown specifications stay marked for review; this is not an approved shopping list. <strong>US product examples: None.</strong></p>
       <h3 id="pi01">PI01 — USB power source</h3>
@@ -179,7 +213,7 @@
         <li><strong>S01 — Original Japanese repair record:</strong> <a href="https://note.com/yzrswork/n/nb8a6f101033a">USB boost cable repair and the remaining 9V failure</a>, August 5, 2026. This is the primary repair and measurement record.</li>
         <li><strong>Measurement provenance:</strong> E01–E11 correspond to the original “実測結果” (measurements) section. The remaining failure and power-bank comparison come from “9V・2ファンだけ残った問題.” Wire and connector dimensions come from “メスジャックは新品でも同じ音がした”; the stop decision comes from “原因究明はここで打ち切りました.”</li>
         <li><strong>English editorial authority:</strong> the owner-approved Pilot B Preflight Pack v0.1, October 7, 2026, fixes the reported values and the fact/interpretation boundaries. It is an internal review document, not an additional experiment.</li>
-        <li><strong>Source limits:</strong> this page does not reuse photographs or claim independent visual verification. No manufacturer data sheets or retailer product-card specifications are adopted. The tested Anker name comes from the article body; its later card names a different product and is not used as hardware evidence.</li>
+        <li><strong>Source limits:</strong> this page reuses six photographs from the original Japanese repair record, served as local site assets. They are historical evidence, not new measurements or an independent hardware investigation. No manufacturer data sheets or retailer product-card specifications are adopted. The tested Anker name comes from the article body; its later card names a different product and is not used as hardware evidence.</li>
         <li><strong>GitHub:</strong> <a href="https://github.com/yzrswork/yzrswork-site/blob/main/public/en/builds/usb-boost-cable-repair/index.html" data-source-repo="yzrswork-site">English page source and revision history</a>. This records the implementation, not a new hardware investigation. A separate public hardware-evidence URL is not established.</li>
       </ul>
       <p class="meta">Turning ideas into things, and keeping the how and why for next time.</p>
