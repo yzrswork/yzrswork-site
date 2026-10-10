@@ -159,6 +159,9 @@
   const traversalTitle = document.getElementById('traversalTitle');
   const traversalLabel = document.getElementById('traversalLabel');
   const scoreValue = document.getElementById('scoreValue');
+  const reviewList = document.getElementById('reviewList');
+  const reviewFilter = document.getElementById('reviewFilter');
+  const reviewStatus = document.getElementById('reviewStatus');
   const answerButtons = [...document.querySelectorAll('[data-answer]')];
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -167,6 +170,7 @@
   let phase = 'intro';
   let sectorIndex = 0;
   let score = 0;
+  let answers = [];
   let inputLocked = false;
   let traversalReady = false;
   let session = 0;
@@ -271,6 +275,7 @@
     if (phase !== 'intro' || inputLocked) return;
     inputLocked = true;
     score = 0;
+    answers = [];
     sectorIndex = 0;
     renderSector();
     world.scrollIntoView({ behavior: 'auto', block: 'start' });
@@ -285,6 +290,7 @@
     const sector = sectors[sectorIndex];
     const isCorrect = selected === sector.correct;
 
+    answers[sectorIndex] = { selected, isCorrect };
     if (isCorrect) score += 1;
     setPhase('answered');
     vault.dataset.reaction = isCorrect ? 'route' : 'mismatch';
@@ -332,12 +338,63 @@
     }
   }
 
+  function renderAnswerReview() {
+    reviewList.replaceChildren();
+    reviewFilter.setAttribute('aria-pressed', 'false');
+    const mistakes = answers.filter((answer) => !answer.isCorrect).length;
+    reviewFilter.hidden = mistakes === 0;
+    reviewFilter.textContent = '間違えた問題と解説を見る';
+    reviewStatus.textContent = mistakes === 0
+      ? '全問正解！各問題をタップして解説を振り返れます。'
+      : `不正解は${mistakes}問。各問題をタップすると、回答と解説を確認できます。`;
+
+    answers.forEach((answer, index) => {
+      const sector = sectors[index];
+      const detail = document.createElement('details');
+      detail.className = 'review-item';
+      detail.dataset.correct = String(answer.isCorrect);
+      const summary = document.createElement('summary');
+      summary.textContent = `Q${index + 1} / ${sector.title} — ${answer.isCorrect ? '正解' : '不正解'}`;
+      const question = document.createElement('p');
+      question.className = 'review-question';
+      question.textContent = sector.question;
+      const choices = document.createElement('p');
+      choices.className = 'review-choices';
+      choices.textContent = `自分の回答：${answer.selected ? '○' : '×'}　／　正解：${sector.correct ? '○' : '×'}`;
+      const explanationText = document.createElement('p');
+      explanationText.className = 'explanation';
+      explanationText.textContent = sector.explanation;
+      const note = document.createElement('p');
+      note.className = 'vault-note';
+      const label = document.createElement('span');
+      label.textContent = 'VAULT NOTE';
+      const noteText = document.createElement('strong');
+      noteText.textContent = sector.vaultNote;
+      note.append(label, noteText);
+      detail.append(summary, question, choices, explanationText, note);
+      reviewList.append(detail);
+    });
+  }
+
+  function toggleMistakeReview() {
+    if (phase !== 'result') return;
+    const onlyMistakes = reviewFilter.getAttribute('aria-pressed') !== 'true';
+    reviewFilter.setAttribute('aria-pressed', String(onlyMistakes));
+    reviewFilter.textContent = onlyMistakes ? 'すべての問題を見る' : '間違えた問題と解説を見る';
+    [...reviewList.children].forEach((detail) => {
+      const isCorrect = detail.dataset.correct === 'true';
+      detail.hidden = onlyMistakes && isCorrect;
+      detail.open = onlyMistakes && !isCorrect;
+    });
+  }
+
   function showResult() {
     if (phase !== 'traversing' || !inputLocked) return;
     inputLocked = true;
     setPhase('result');
     sectorCount.textContent = 'COMPLETE';
     scoreValue.textContent = String(score);
+    renderAnswerReview();
     showOnly(resultPanel);
     revealPanelOnMobile(resultPanel);
     inputLocked = false;
@@ -350,6 +407,9 @@
     clearTimers();
     setTraversalReady(false);
     score = 0;
+    answers = [];
+    reviewList.replaceChildren();
+    reviewFilter.setAttribute('aria-pressed', 'false');
     sectorIndex = 0;
     vault.dataset.sector = '0';
     vault.dataset.traversal = 'none';
@@ -369,6 +429,7 @@
   continueButton.addEventListener('click', continueDeeper);
   traversalButton.addEventListener('click', advanceAfterTraversal);
   restartButton.addEventListener('click', restartGame);
+  reviewFilter.addEventListener('click', toggleMistakeReview);
 
   document.addEventListener('visibilitychange', () => {
     if (document.hidden || phase !== 'traversing') return;
