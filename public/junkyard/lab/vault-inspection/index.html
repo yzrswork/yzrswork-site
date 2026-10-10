@@ -137,9 +137,17 @@
           <div><dt>通過区画</dt><dd>10 / 10</dd></div>
         </dl>
         <p class="final-status">STATUS：点検完了</p>
+        <section class="answer-review" aria-labelledby="reviewTitle">
+          <h3 id="reviewTitle">回答を振り返る</h3>
+          <p id="reviewStatus"></p>
+          <button class="review-button" id="reviewMistakesButton" type="button" aria-controls="reviewList">間違えた問題と解説を見る</button>
+          <p class="review-hint">各問題をタップすると、自分の回答と解説を確認できます。</p>
+          <div class="review-list" id="reviewList"></div>
+        </section>
         <button class="primary-button" id="restartButton" type="button">もう一度入る</button>
       </section>
     </section>
   </main>
 </body>
 </html>
+

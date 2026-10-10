@@ -159,6 +159,9 @@
   const traversalTitle = document.getElementById('traversalTitle');
   const traversalLabel = document.getElementById('traversalLabel');
   const scoreValue = document.getElementById('scoreValue');
+  const reviewList = document.getElementById('reviewList');
+  const reviewStatus = document.getElementById('reviewStatus');
+  const reviewMistakesButton = document.getElementById('reviewMistakesButton');
   const answerButtons = [...document.querySelectorAll('[data-answer]')];
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -167,6 +170,7 @@
   let phase = 'intro';
   let sectorIndex = 0;
   let score = 0;
+  let answers = [];
   let inputLocked = false;
   let traversalReady = false;
   let session = 0;
@@ -271,6 +275,7 @@
     if (phase !== 'intro' || inputLocked) return;
     inputLocked = true;
     score = 0;
+    answers = [];
     sectorIndex = 0;
     renderSector();
     world.scrollIntoView({ behavior: 'auto', block: 'start' });
@@ -284,6 +289,7 @@
     const selected = selectedButton.dataset.answer === 'true';
     const sector = sectors[sectorIndex];
     const isCorrect = selected === sector.correct;
+    answers[sectorIndex] = { selected, isCorrect };
 
     if (isCorrect) score += 1;
     setPhase('answered');
@@ -338,9 +344,54 @@
     setPhase('result');
     sectorCount.textContent = 'COMPLETE';
     scoreValue.textContent = String(score);
+    renderAnswerReview();
     showOnly(resultPanel);
     revealPanelOnMobile(resultPanel);
     inputLocked = false;
+  }
+
+  function renderAnswerReview() {
+    reviewList.replaceChildren();
+    const mistakes = answers.filter((answer) => !answer.isCorrect).length;
+    reviewStatus.textContent = mistakes === 0
+      ? '全問正解です。各問題の解説も確認できます。'
+      : `間違えた問題は${mistakes}問です。`;
+    reviewMistakesButton.hidden = mistakes === 0;
+
+    sectors.forEach((sector, index) => {
+      const answer = answers[index];
+      const detail = document.createElement('details');
+      detail.className = 'review-item';
+      detail.dataset.correct = String(answer.isCorrect);
+      const summary = document.createElement('summary');
+      summary.textContent = `Q${index + 1} / ${sector.title} — ${answer.isCorrect ? '正解' : '不正解'}`;
+      detail.append(summary);
+      const content = document.createElement('div');
+      content.className = 'review-content';
+      [
+        sector.question,
+        `自分の回答：${answer.selected ? '○' : '×'} / 正解：${sector.correct ? '○' : '×'}`,
+        `解説：${sector.explanation}`,
+        `VAULT NOTE：${sector.vaultNote}`,
+      ].forEach((text) => {
+        const paragraph = document.createElement('p');
+        paragraph.textContent = text;
+        content.append(paragraph);
+      });
+      detail.append(content);
+      reviewList.append(detail);
+    });
+  }
+
+  function reviewMistakes() {
+    if (phase !== 'result') return;
+    const items = [...reviewList.children];
+    items.forEach((item) => { item.open = item.dataset.correct === 'false'; });
+    const firstMistake = items.find((item) => item.open);
+    if (firstMistake) {
+      firstMistake.querySelector('summary').focus({ preventScroll: true });
+      firstMistake.scrollIntoView({ behavior: 'auto', block: 'start' });
+    }
   }
 
   function restartGame() {
@@ -350,6 +401,10 @@
     clearTimers();
     setTraversalReady(false);
     score = 0;
+    answers = [];
+    reviewList.replaceChildren();
+    reviewStatus.textContent = '';
+    reviewMistakesButton.hidden = true;
     sectorIndex = 0;
     vault.dataset.sector = '0';
     vault.dataset.traversal = 'none';
@@ -369,6 +424,7 @@
   continueButton.addEventListener('click', continueDeeper);
   traversalButton.addEventListener('click', advanceAfterTraversal);
   restartButton.addEventListener('click', restartGame);
+  reviewMistakesButton.addEventListener('click', reviewMistakes);
 
   document.addEventListener('visibilitychange', () => {
     if (document.hidden || phase !== 'traversing') return;
@@ -376,3 +432,4 @@
     // remains locked, so returning to the tab cannot skip more than one sector.
   });
 })();
+
