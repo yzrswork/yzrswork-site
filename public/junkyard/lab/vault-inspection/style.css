@@ -846,6 +846,27 @@ body.vault-traversing {
 .result-list dd { margin: 0; font: 800 18px/1 var(--mono); }
 .final-status { margin: 0 0 16px; color: var(--rust-700); font: 800 10px/1.4 var(--mono); letter-spacing: 0.08em; }
 
+.answer-review { margin: 22px 0; }
+.answer-review h3 { margin: 0 0 8px; font-size: 18px; }
+.answer-review > p { margin: 0 0 12px; font-size: 13px; line-height: 1.65; }
+.review-filter {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 12px;
+  border: 2px solid var(--navy-950);
+  background: var(--paper);
+  color: var(--navy-950);
+  font-weight: 800;
+  cursor: pointer;
+}
+.review-item { margin-bottom: 9px; border: 1px solid var(--line); background: var(--paper); overflow-wrap: anywhere; }
+.review-item summary { min-height: 48px; padding: 14px 12px; font-size: 13px; font-weight: 800; line-height: 1.6; cursor: pointer; touch-action: manipulation; }
+.review-item[data-correct="false"] summary { color: var(--rust-700); border-left: 5px solid var(--rust-700); }
+.review-item summary:focus-visible { outline: 3px solid var(--navy-700); outline-offset: 2px; }
+.review-item > p { margin: 12px; }
+.review-question { font-size: 15px; font-weight: 800; line-height: 1.7; }
+.review-choices { font-size: 14px; font-weight: 800; line-height: 1.7; }
+
 .vault[data-sector="1"] { --sector-accent: #bd6a49; --sector-glow: #a8e5d8; }
 .vault[data-sector="2"] { --sector-accent: #a14f34; --sector-glow: #b8df8c; }
 .vault[data-sector="3"] { --sector-accent: #7c5a45; --sector-glow: #f1cb85; }

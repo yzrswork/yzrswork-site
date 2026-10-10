@@ -136,6 +136,12 @@
           <div><dt>点検結果</dt><dd><span id="scoreValue">0</span> / 10</dd></div>
           <div><dt>通過区画</dt><dd>10 / 10</dd></div>
         </dl>
+        <section class="answer-review" aria-labelledby="reviewTitle">
+          <h3 id="reviewTitle">回答を振り返る</h3>
+          <p id="reviewStatus">問題をタップすると、回答と解説を確認できます。</p>
+          <button class="review-filter" id="reviewFilter" type="button" aria-controls="reviewList" aria-pressed="false">間違えた問題と解説を見る</button>
+          <div class="review-list" id="reviewList"></div>
+        </section>
         <p class="final-status">STATUS：点検完了</p>
         <button class="primary-button" id="restartButton" type="button">もう一度入る</button>
       </section>
