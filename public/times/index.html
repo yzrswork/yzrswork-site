@@ -532,6 +532,17 @@
   .back-issue-item a { text-decoration: none; color: var(--ink-soft); }
   .back-issue-item a:hover { color: var(--accent); }
   .back-issue-item .biq-date { color: var(--muted); white-space: nowrap; }
+  .back-issues-all { margin-top: 14px; }
+  .back-issues-all > summary {
+    display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; cursor: pointer;
+    border: 1px solid var(--rule-soft); border-radius: 6px; list-style: none;
+    font-family: var(--sans-jp); font-size: 13px; font-weight: 700; color: var(--accent);
+  }
+  .back-issues-all > summary::-webkit-details-marker { display: none; }
+  .back-issues-all > summary::before { content: "＋"; }
+  .back-issues-all[open] > summary::before { content: "－"; }
+  .back-issues-all[open] > summary { margin-bottom: 4px; }
+  .back-issues-all > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .back-issues-empty {
     font-family: var(--sans-jp);
     font-size: 12px;
@@ -563,8 +574,11 @@
     .page { max-width: 100%; padding: 0 8mm; }
   }
 </style>
+<link rel="stylesheet" href="/styles/yzrs-header.css" />
 </head>
 <body>
+<header class="yzrs-sitebar"><div class="yzrs-sitebar-inner"><a class="yzrs-sitebar-brand" href="/" aria-label="や印工務店 トップページ"><b>や印工務店</b><span>yzrswork</span></a>
+<nav class="yzrs-sitebar-nav" aria-label="主要な案内"><a href="/guides/hajimete-no-denshi-kousaku-starter-guide/">Guide</a><a href="/#toolbox">道具箱</a><a href="/times/" aria-current="page">Times</a><a href="/about/">工房案内</a></nav></div></header>
   <main class="page" id="page">
 
     <div class="notice" id="version-notice" hidden>この号は古い形式のため一部を表示できません。</div>
@@ -1110,6 +1124,23 @@
   }
 
   /* ---------- back issues (縮刷版) ---------- */
+  var BACK_ISSUES_RECENT = 7;
+  function backIssueRow(item) {
+    if (!item) return null;
+    var date = item.date || item.issueDate;
+    var edition = item.edition || 'morning';
+    var path = item.path || item.file || item.filename ||
+      (date ? 'issues/' + date + '-' + edition + '.json' : null);
+    if (!path) return null;
+    var row = el('div', { className: 'back-issue-item' });
+    var issueNo = item.issueNo != null ? item.issueNo : item.issue;
+    var linkText = 'Issue #' + (typeof issueNo === 'number' ? String(issueNo).padStart(3, '0') : '?');
+    var theme = (item.theme && item.theme.title) || item.theme || item.themeTitle;
+    if (theme) linkText += '　' + theme;
+    row.appendChild(el('a', { text: linkText, attrs: { href: '?issue=' + path } }));
+    if (date) row.appendChild(el('span', { className: 'biq-date', text: date }));
+    return row;
+  }
   function renderBackIssues(currentIssue) {
     var host = document.getElementById('back-issues-list');
     host.textContent = '';
@@ -1123,7 +1154,7 @@
         return;
       }
       var chain = Promise.resolve();
-      var any = false;
+      var groups = [];
       months.forEach(function (month) {
         chain = chain.then(function () {
           return fetch('/data/issues-index-' + month + '.json').then(function (r) {
@@ -1131,31 +1162,43 @@
             return r.json();
           }).then(function (idx) {
             var issues = Array.isArray(idx.issues) ? idx.issues.slice().reverse() : [];
-            if (!issues.length) return;
-            any = true;
-            host.appendChild(el('div', { className: 'back-issues-month', text: month }));
+            var rows = [];
             issues.forEach(function (item) {
-              if (!item) return;
-              var date = item.date || item.issueDate;
-              var edition = item.edition || 'morning';
-              var path = item.path || item.file || item.filename ||
-                (date ? 'issues/' + date + '-' + edition + '.json' : null);
-              if (!path) return;
-              var row = el('div', { className: 'back-issue-item' });
-              var issueNo = item.issueNo != null ? item.issueNo : item.issue;
-              var linkText = 'Issue #' + (typeof issueNo === 'number' ? String(issueNo).padStart(3, '0') : '?');
-              var theme = (item.theme && item.theme.title) || item.theme || item.themeTitle;
-              if (theme) linkText += '　' + theme;
-              var a = el('a', { text: linkText, attrs: { href: '?issue=' + path } });
-              row.appendChild(a);
-              if (date) row.appendChild(el('span', { className: 'biq-date', text: date }));
-              host.appendChild(row);
+              var row = backIssueRow(item);
+              if (row) rows.push(row);
             });
+            if (rows.length) groups.push({ month: month, rows: rows });
           }).catch(function () { /* skip a broken month silently */ });
         });
       });
       chain.then(function () {
-        if (!any) host.appendChild(el('p', { className: 'back-issues-empty', text: '縮刷版はまだありません。' }));
+        if (!groups.length) {
+          host.appendChild(el('p', { className: 'back-issues-empty', text: '縮刷版はまだありません。' }));
+          return;
+        }
+        // 最新の数号だけ並べ、残りは月ごとに折りたたむ(一覧が200件を超えても紙面の終わりが見えるように)
+        var recent = [];
+        var older = [];
+        groups.forEach(function (g) {
+          g.rows.forEach(function (row) {
+            if (recent.length < BACK_ISSUES_RECENT) recent.push(row);
+            else older.push({ month: g.month, row: row });
+          });
+        });
+        host.appendChild(el('div', { className: 'back-issues-month', text: '最近の号' }));
+        recent.forEach(function (row) { host.appendChild(row); });
+        if (!older.length) return;
+        var all = el('details', { className: 'back-issues-all' });
+        all.appendChild(el('summary', { text: 'それより前の号(' + older.length + '号)' }));
+        var lastMonth = null;
+        older.forEach(function (o) {
+          if (o.month !== lastMonth) {
+            all.appendChild(el('div', { className: 'back-issues-month', text: o.month }));
+            lastMonth = o.month;
+          }
+          all.appendChild(o.row);
+        });
+        host.appendChild(all);
       });
     }).catch(function () {
       host.textContent = '';
