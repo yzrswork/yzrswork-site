@@ -90,10 +90,14 @@
           <img src="/images/home/hero-tools.webp" width="800" height="537" alt="ハンダごてとこて台、ニッパー、ブレッドボードを描いたイラスト" fetchpriority="high" decoding="async" />
         </figure>
         <div class="home-hero-copy">
-          <p class="home-kicker">電子工作 ／ 自作PC ／ DIY・模型</p>
+          <p class="home-kicker">Electronics / PC build / DIY</p>
           <h1 id="hero-title">作る。直す。<br />測って確かめる。</h1>
           <p>作業中の計算や部品選び、配線確認に使える道具と、制作・修理の記録。登録なし、ブラウザだけで動きます。</p>
-          <a class="button primary" href="https://apps.yzrswork.com/kit/?yzrs_ref=home-hero-kit">はじめての道具をそろえる　→</a>
+          <div class="home-actions">
+            <a class="button primary" href="https://apps.yzrswork.com/kit/?yzrs_ref=home-hero-kit">はじめての道具をそろえる　→</a>
+            <a class="text-link" href="/guides/hajimete-no-denshi-kousaku-starter-guide/">先にガイドを読む</a>
+          </div>
+          <p class="home-meta">9 TOOLS ・ 登録不要 ・ ブラウザだけで動く</p>
         </div>
       </div>
     </section>
@@ -101,8 +105,8 @@
     <section class="home-section" id="tools" aria-labelledby="tools-title">
       <div class="inner">
         <div class="home-head">
-          <h2 id="tools-title">道具</h2>
-          <a class="home-more" href="https://apps.yzrswork.com/?yzrs_ref=home-all-tools">道具箱をぜんぶ見る　→</a>
+          <div><p class="home-kicker">Toolbox</p><h2 id="tools-title">道具</h2></div>
+          <a class="home-more" href="https://apps.yzrswork.com/?yzrs_ref=home-all-tools">ぜんぶ見る　→</a>
         </div>
         <div class="home-filter" role="group" aria-label="分野で絞り込む" hidden>
           <button type="button" aria-pressed="true" data-filter="all">すべて</button>
@@ -113,39 +117,39 @@
         <ul class="home-tools">
           <li class="home-tool" data-group="electronics"><a href="https://apps.yzrswork.com/bench/?yzrs_ref=home-tool-bench">
             <img src="/images/home/tool-bench.webp" width="480" height="360" alt="" loading="lazy" decoding="async" />
-            <span class="home-tool-text"><span class="home-tool-group">電子工作</span><strong>工房の電卓</strong><span>LED抵抗・オームの法則・電池の持ち時間を計算</span></span>
+            <span class="home-tool-text"><span class="home-tool-group"><b>01</b>電子工作</span><strong>工房の電卓</strong><span>LED抵抗・オームの法則・電池の持ち時間を計算</span></span>
           </a></li>
           <li class="home-tool" data-group="electronics"><a href="https://apps.yzrswork.com/haisen/?yzrs_ref=home-tool-haisen">
             <img src="/images/home/tool-haisen.webp" width="480" height="360" alt="" loading="lazy" decoding="async" />
-            <span class="home-tool-text"><span class="home-tool-group">電子工作</span><strong>配線ナビ</strong><span>ジャックやスイッチの端子と極性を色分けで確認</span></span>
+            <span class="home-tool-text"><span class="home-tool-group"><b>02</b>電子工作</span><strong>配線ナビ</strong><span>ジャックやスイッチの端子と極性を色分けで確認</span></span>
           </a></li>
           <li class="home-tool" data-group="electronics"><a href="https://apps.yzrswork.com/handa/?yzrs_ref=home-tool-handa">
             <img src="/images/home/tool-handa.webp" width="480" height="360" alt="" loading="lazy" decoding="async" />
-            <span class="home-tool-text"><span class="home-tool-group">電子工作</span><strong>はんだ付けナビ</strong><span>こて先温度と、うまく付かないときの確認点</span></span>
+            <span class="home-tool-text"><span class="home-tool-group"><b>03</b>電子工作</span><strong>はんだ付けナビ</strong><span>こて先温度と、うまく付かないときの確認点</span></span>
           </a></li>
           <li class="home-tool" data-group="pc"><a href="https://apps.yzrswork.com/build/?yzrs_ref=home-tool-build">
             <img src="/images/home/tool-build.webp" width="480" height="360" alt="" loading="lazy" decoding="async" />
-            <span class="home-tool-text"><span class="home-tool-group">自作PC</span><strong>PC構成プランナー</strong><span>構成を整理して、電源容量の目安まで</span></span>
+            <span class="home-tool-text"><span class="home-tool-group"><b>04</b>自作PC</span><strong>PC構成プランナー</strong><span>構成を整理して、電源容量の目安まで</span></span>
           </a></li>
           <li class="home-tool" data-group="pc"><a href="https://apps.yzrswork.com/usbc/?yzrs_ref=home-tool-usbc">
             <img src="/images/home/tool-usbc.webp" width="480" height="360" alt="" loading="lazy" decoding="async" />
-            <span class="home-tool-text"><span class="home-tool-group">自作PC</span><strong>USB-C見分けナビ</strong><span>手持ちのケーブルで何ができるかを切り分け</span></span>
+            <span class="home-tool-text"><span class="home-tool-group"><b>05</b>自作PC</span><strong>USB-C見分けナビ</strong><span>手持ちのケーブルで何ができるかを切り分け</span></span>
           </a></li>
           <li class="home-tool" data-group="pc"><a href="https://apps.yzrswork.com/hdd/?yzrs_ref=home-tool-hdd">
             <img src="/images/home/tool-hdd.webp" width="480" height="360" alt="" loading="lazy" decoding="async" />
-            <span class="home-tool-text"><span class="home-tool-group">自作PC</span><strong>HDD選びナビ</strong><span>用途とCMR・SMRから候補を絞る</span></span>
+            <span class="home-tool-text"><span class="home-tool-group"><b>06</b>自作PC</span><strong>HDD選びナビ</strong><span>用途とCMR・SMRから候補を絞る</span></span>
           </a></li>
           <li class="home-tool" data-group="pc"><a href="https://apps.yzrswork.com/mem/?yzrs_ref=home-tool-mem">
             <img src="/images/home/tool-mem.webp" width="480" height="360" alt="" loading="lazy" decoding="async" />
-            <span class="home-tool-text"><span class="home-tool-group">自作PC</span><strong>メモリ選びナビ</strong><span>DDR世代と容量から必要な条件を確認</span></span>
+            <span class="home-tool-text"><span class="home-tool-group"><b>07</b>自作PC</span><strong>メモリ選びナビ</strong><span>DDR世代と容量から必要な条件を確認</span></span>
           </a></li>
           <li class="home-tool" data-group="diy"><a href="https://apps.yzrswork.com/glue/?yzrs_ref=home-tool-glue">
             <img src="/images/home/tool-glue.webp" width="480" height="360" alt="" loading="lazy" decoding="async" />
-            <span class="home-tool-text"><span class="home-tool-group">DIY・模型</span><strong>接着剤選びナビ</strong><span>素材を2つ選んで、接着剤と注意点を確認</span></span>
+            <span class="home-tool-text"><span class="home-tool-group"><b>08</b>DIY・模型</span><strong>接着剤選びナビ</strong><span>素材を2つ選んで、接着剤と注意点を確認</span></span>
           </a></li>
           <li class="home-tool" data-group="diy"><a href="https://apps.yzrswork.com/nurerukun/?yzrs_ref=home-tool-nurerukun">
             <img src="/images/home/tool-nurerukun.webp" width="480" height="360" alt="" loading="lazy" decoding="async" />
-            <span class="home-tool-text"><span class="home-tool-group">DIY・模型</span><strong>塗れるくん</strong><span>気温・湿度・露点から、今日塗装できるか</span></span>
+            <span class="home-tool-text"><span class="home-tool-group"><b>09</b>DIY・模型</span><strong>塗れるくん</strong><span>気温・湿度・露点から、今日塗装できるか</span></span>
           </a></li>
         </ul>
       </div>
@@ -153,13 +157,14 @@
 
     <section class="home-section" id="guides" aria-labelledby="guide-title">
       <div class="inner">
-        <div class="home-head"><h2>はじめての方へ</h2></div>
+        <div class="home-head"><div><p class="home-kicker">Guide 01</p><h2>はじめての方へ</h2></div></div>
         <article class="home-guide">
           <img src="/images/home/guide-tools.webp" width="800" height="537" alt="テスター、ワイヤーストリッパー、ラジオペンチを描いたイラスト" loading="lazy" decoding="async" />
           <div class="home-guide-copy">
-            <p class="home-kicker">Guide 01 ／ 約13分 ・ 3ステップ</p>
+            <p class="home-kicker">Electronics — Beginner</p>
             <h3 id="guide-title">はじめての電子工作スターターガイド</h3>
             <p>部品はどこで買う？ 工具は何から？ 工具・部品・消耗品を、最初に揃える順番でまとめました。</p>
+            <p class="home-meta">約13分 ・ 3 STEPS ・ 失敗例あり</p>
             <div class="home-actions">
               <a class="button primary" href="/guides/hajimete-no-denshi-kousaku-starter-guide/">ガイドを読む　→</a>
               <a class="text-link" href="https://apps.yzrswork.com/kit/?yzrs_ref=home-guide01-kit">装備ナビを開く</a>
@@ -172,7 +177,7 @@
     <div class="inner home-split">
       <section class="home-section" id="reading" aria-labelledby="times-title">
         <div class="home-head">
-          <h2 id="times-title">今日のTimes</h2>
+          <div><p class="home-kicker">YZRS Times</p><h2 id="times-title">今日のTimes</h2></div>
           <a class="home-more" href="/times/">ぜんぶ読む　→</a>
         </div>
         <ol class="home-times" data-times-list>
@@ -182,21 +187,21 @@
 
       <section class="home-section" id="works" aria-labelledby="works-title">
         <div class="home-head">
-          <h2 id="works-title">作ったもの</h2>
-          <a class="home-more" href="https://note.com/yzrswork">制作記録(note)　→</a>
+          <div><p class="home-kicker">Junk Yard 2026</p><h2 id="works-title">作ったもの</h2></div>
+          <a class="home-more" href="https://note.com/yzrswork">制作記録　→</a>
         </div>
         <ul class="home-works">
-          <li><a href="/junkyard/works/compo-1/"><img src="/images/home/work-compo-1.webp" width="560" height="560" alt="COMPO-1。基板と2つのスピーカーを黄色いケーブルでつないだ作品" loading="lazy" decoding="async" /><span>COMPO-1</span></a></li>
-          <li><a href="/junkyard/works/im-1/"><img src="/images/home/work-im-1.webp" width="560" height="560" alt="IM-1。赤と緑の表示が縦に並ぶ額縁型の作品" loading="lazy" decoding="async" /><span>IM-1</span></a></li>
+          <li><a href="/junkyard/works/compo-1/"><img src="/images/home/work-compo-1.webp" width="560" height="560" alt="COMPO-1。基板と2つのスピーカーを黄色いケーブルでつないだ作品" loading="lazy" decoding="async" /><span class="home-work-cap">COMPO-1<span>AUDIO</span></span></a></li>
+          <li><a href="/junkyard/works/im-1/"><img src="/images/home/work-im-1.webp" width="560" height="560" alt="IM-1。赤と緑の表示が縦に並ぶ額縁型の作品" loading="lazy" decoding="async" /><span class="home-work-cap">IM-1<span>DISPLAY</span></span></a></li>
         </ul>
       </section>
     </div>
 
     <section class="home-about" id="operator" aria-labelledby="about-title">
-      <div class="inner">
+      <div class="inner home-about-row">
         <h2 id="about-title">や印工務店について</h2>
         <p>電子工作・自作PC・DIY・模型の制作や修理で調べたことを、次に使える道具と記録にしている個人の工房です。運営者情報やお問い合わせは工房案内にあります。</p>
-        <a class="text-link" href="/about/">工房案内を見る　→</a>
+        <a class="text-link" href="/about/">工房案内　→</a>
       </div>
     </section>
   </main>

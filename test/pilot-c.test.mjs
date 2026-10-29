@@ -6,7 +6,7 @@ const html = readFileSync(new URL('index.html', base), 'utf8');
 const text = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
 
 test('Pilot C canonical route, shared presentation, sitemap and sibling links', () => {
-  for (const value of ['<html lang="en-US">', 'href="https://yzrswork.com/en/builds/volt-1/"', 'content="https://yzrswork.com/en/builds/volt-1/"', '/styles/yzrs-ui.css', '/styles/yzrs-top.css', '/analytics.js', 'href="/en/tools/makers-bench/"', 'href="/en/builds/usb-boost-cable-repair/"']) assert.ok(html.includes(value), value);
+  for (const value of ['<html lang="en-US">', 'href="https://yzrswork.com/en/builds/volt-1/"', 'content="https://yzrswork.com/en/builds/volt-1/"', '/styles/yzrs-ui.css', '/styles/yzrs-en.css', '/analytics.js', 'href="/en/tools/makers-bench/"', 'href="/en/builds/usb-boost-cable-repair/"']) assert.ok(html.includes(value), value);
   const sitemap = readFileSync(new URL('../public/sitemap.xml', import.meta.url), 'utf8');
   assert.equal(sitemap.split('<loc>https://yzrswork.com/en/builds/volt-1/</loc>').length - 1, 1);
 });

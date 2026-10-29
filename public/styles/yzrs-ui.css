@@ -1,14 +1,23 @@
 :root {
-  --yzrs-desk: #e6dfd0;
-  --yzrs-paper: #f0ebe3;
-  --yzrs-paper-raised: #f6f1e8;
-  --yzrs-paper-deep: #ede5d4;
-  --yzrs-ink: #1c1a16;
-  --yzrs-ink-soft: #2b2823;
-  --yzrs-muted: #6f675b;
-  --yzrs-separator: #c8bfae;
+  /* 2026-10-29 ハイブリッド型: Calendly の色の組み立て + Vercel の文字と余白 + teenage engineering の写真の見せ方。
+     背景は青みの白、ボタンと選択中はブルーグレー、強調文字はテラコッタ。黒の塗りと緑は使わない。 */
+  --yzrs-desk: #f8f9fb;
+  --yzrs-paper: #f8f9fb;
+  --yzrs-paper-raised: #ffffff;
+  --yzrs-paper-deep: #eef1f4;
+  --yzrs-ink: #1b2530;
+  --yzrs-ink-soft: #3a4652;
+  --yzrs-muted: #5d6b78;
+  --yzrs-separator: #e3e7ec;
+  --yzrs-line-strong: #cfd6de;
   --yzrs-accent: #b5451b;
+  --yzrs-accent-text: #9a3a16;
   --yzrs-sub: #3f5f7a;
+  --yzrs-action: #3f5f7a;
+  --yzrs-action-deep: #2b4256;
+  --yzrs-action-tint: #e9eff4;
+  --yzrs-radius: 8px;
+  --yzrs-radius-card: 12px;
   --yzrs-space-1: 4px;
   --yzrs-space-2: 8px;
   --yzrs-space-3: 12px;
@@ -27,6 +36,52 @@
 
 body.yzrs-ui {
   text-rendering: optimizeLegibility;
+  background: var(--yzrs-paper);
+  color: var(--yzrs-ink);
+}
+
+/* 共通の部品。等幅英字の小見出し(テラコッタ)、主ボタン(ブルーグレー)、強調リンク(テラコッタ) */
+body.yzrs-ui .yzrs-eyebrow {
+  margin: 0;
+  color: var(--yzrs-accent-text);
+  font: 500 11.5px/1.6 var(--yzrs-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+body.yzrs-ui .yzrs-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 22px;
+  border: 1px solid var(--yzrs-action);
+  border-radius: var(--yzrs-radius);
+  background: var(--yzrs-action);
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+body.yzrs-ui .yzrs-btn:hover { background: var(--yzrs-action-deep); border-color: var(--yzrs-action-deep); }
+
+body.yzrs-ui .yzrs-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--yzrs-accent);
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+body.yzrs-ui .yzrs-card {
+  background: var(--yzrs-paper-raised);
+  border: 1px solid var(--yzrs-separator);
+  border-radius: var(--yzrs-radius-card);
 }
 
 body.yzrs-ui :where(a, button, input, select, textarea, summary):focus-visible {

@@ -1,6 +1,7 @@
 /* 共通ヘッダー。サイト内の全ページで同じ形にそろえる(項目は基本 Guide / 道具箱 / Times / 工房案内)。 */
 .yzrs-sitebar {
-  border-bottom: 1px solid var(--yzrs-separator, #c8bfae);
+  border-bottom: 1px solid var(--yzrs-separator, #e3e7ec);
+  background: var(--yzrs-paper-raised, #ffffff);
   position: relative; z-index: 1;
   font-family: var(--yzrs-sans, "Noto Sans JP", "Yu Gothic", sans-serif);
   line-height: 1.5;
@@ -11,14 +12,14 @@
 }
 .yzrs-sitebar-brand {
   min-height: 44px; display: inline-flex; align-items: center; gap: 8px;
-  color: var(--yzrs-ink, #1c1a16); text-decoration: none;
+  color: var(--yzrs-ink, #1b2530); text-decoration: none;
 }
 .yzrs-sitebar-brand b { font-size: 17px; font-weight: 700; letter-spacing: 0.06em; }
-.yzrs-sitebar-brand span { color: var(--yzrs-muted, #6f675b); font: italic 14px/1.2 var(--yzrs-serif, "EB Garamond", Georgia, serif); }
+.yzrs-sitebar-brand span { color: var(--yzrs-muted, #5d6b78); font: 400 11px/1.2 var(--yzrs-mono, "DM Mono", ui-monospace, monospace); letter-spacing: 0.1em; text-transform: uppercase; }
 .yzrs-sitebar .yzrs-sitebar-nav { margin: 0; padding: 0; border: 0; display: flex; flex-wrap: wrap; gap: 0 4px; font-size: 14px; }
 .yzrs-sitebar-nav a {
   min-height: 44px; display: inline-flex; align-items: center; padding: 0 10px; border-radius: 6px;
-  color: var(--yzrs-ink, #1c1a16); font-size: 14px; font-weight: 700; text-decoration: none;
+  color: var(--yzrs-ink, #1b2530); font-size: 14px; font-weight: 700; text-decoration: none;
 }
 .yzrs-sitebar-nav a:hover { color: var(--yzrs-accent, #b5451b); }
 .yzrs-sitebar-nav a[aria-current="page"] { color: var(--yzrs-accent, #b5451b); box-shadow: inset 0 -2px 0 var(--yzrs-accent, #b5451b); border-radius: 0; }
