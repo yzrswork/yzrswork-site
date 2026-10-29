@@ -46,8 +46,26 @@
   location.replace(destination.href);
 })();
 </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8467165715973366"
-     crossorigin="anonymous"></script>
+<meta name="google-adsense-account" content="ca-pub-8467165715973366" />
+<script>
+/* 広告スクリプトは最初の表示を待たせないよう、スクロールなどの操作後か読み込み5秒後に読む。 */
+(function () {
+  var loaded = false;
+  var events = ['scroll', 'pointerdown', 'keydown', 'touchstart'];
+  function load() {
+    if (loaded) return;
+    loaded = true;
+    events.forEach(function (type) { removeEventListener(type, load); });
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8467165715973366';
+    s.crossOrigin = 'anonymous';
+    document.head.appendChild(s);
+  }
+  events.forEach(function (type) { addEventListener(type, load, { once: true, passive: true }); });
+  addEventListener('load', function () { setTimeout(load, 5000); });
+})();
+</script>
 <script src="/analytics.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
