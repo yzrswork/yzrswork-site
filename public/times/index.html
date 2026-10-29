@@ -2,6 +2,9 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8" />
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>YZRS Times — や印工務店</title>
 <meta name="description" content="技術、AI、ものづくり周辺の情報を拾い、日々読むためのデジタル新聞としてまとめる、や印工務店の読み物です。" />
@@ -19,7 +22,7 @@
     --paper-2: #eae2d0;
     --ink: #211d16;
     --ink-soft: #3a3427;
-    --muted: #746a58;
+    --muted: #655d50;
     --rule: #2c261c;
     --rule-soft: rgba(44, 38, 28, 0.28);
     --accent: #7d2318;
@@ -577,7 +580,7 @@
 <link rel="stylesheet" href="/styles/yzrs-header.css" />
 </head>
 <body>
-<header class="yzrs-sitebar"><div class="yzrs-sitebar-inner"><a class="yzrs-sitebar-brand" href="/" aria-label="や印工務店 トップページ"><b>や印工務店</b><span>yzrswork</span></a>
+<header class="yzrs-sitebar"><div class="yzrs-sitebar-inner"><a class="yzrs-sitebar-brand" href="/" aria-label="や印工務店 yzrswork トップページ"><b>や印工務店</b><span>yzrswork</span></a>
 <nav class="yzrs-sitebar-nav" aria-label="主要な案内"><a href="/guides/hajimete-no-denshi-kousaku-starter-guide/">Guide</a><a href="/#toolbox">道具箱</a><a href="/times/" aria-current="page">Times</a><a href="/about/">工房案内</a></nav></div></header>
   <main class="page" id="page">
 
@@ -867,7 +870,7 @@
     if (heatMeter) head.appendChild(heatMeter);
     wrap.appendChild(head);
 
-    wrap.appendChild(el('h3', { className: 'article-title', text: article.title || '(無題)' }));
+    wrap.appendChild(el('h2', { className: 'article-title', text: article.title || '(無題)' }));
 
     if (article.source) {
       wrap.appendChild(el('div', { className: 'article-source', text: article.source }));
