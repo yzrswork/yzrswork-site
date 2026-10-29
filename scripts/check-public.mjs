@@ -236,7 +236,7 @@ if (!foundationGuide.includes('grid-template-columns:minmax(0,1fr)')) errors.pus
 if (!foundationGuide.includes('.article-body a{overflow-wrap:anywhere;word-break:break-word}')) errors.push('Guide long URL wrap契約がない');
 
 const rootAppRoutes = [
-  ['/', 'home-hero-toolbox'],
+  ['/kit/', 'home-hero-kit'],
   ['/kit/', 'home-guide01-kit'],
   ['/bench/', 'home-tool-bench'],
   ['/haisen/', 'home-tool-haisen'],
@@ -248,7 +248,6 @@ const rootAppRoutes = [
   ['/glue/', 'home-tool-glue'],
   ['/nurerukun/', 'home-tool-nurerukun'],
   ['/', 'home-all-tools'],
-  ['/', 'home-closing-tools'],
   ['/', 'home-footer-tools'],
 ];
 const rootApp = htmlByPage.get('index.html');

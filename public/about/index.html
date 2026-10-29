@@ -12,17 +12,22 @@
 <link rel="canonical" href="https://yzrswork.com/about/" />
 <script src="/analytics.js"></script>
 <style>
-  :root { --paper:var(--yzrs-paper,#f3ede0); --ink:var(--yzrs-ink,#211d16); --muted:var(--yzrs-muted,#655d50); --rule:var(--yzrs-separator,#b9ad96); --accent:var(--yzrs-accent,#7d2318); }
+  :root { --paper:var(--yzrs-paper,#f8f9fb); --ink:var(--yzrs-ink,#1b2530); --muted:var(--yzrs-muted,#5d6b78); --rule:var(--yzrs-separator,#e3e7ec); --accent:var(--yzrs-accent,#b5451b); }
   * { box-sizing:border-box; }
-  body { margin:0; background:var(--paper); color:var(--ink); font-family:"Noto Serif JP","Yu Mincho",serif; line-height:1.9; }
-  main { width:min(720px,100%); margin:auto; padding:40px 20px 64px; }
-  h1 { font-size:clamp(1.6rem,6vw,2.25rem); line-height:1.35; }
-  h2 { margin-top:2rem; padding-bottom:.35rem; border-bottom:1px solid var(--rule); font-size:1.15rem; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--yzrs-sans,"Noto Sans JP","Yu Gothic",sans-serif); letter-spacing:.02em; line-height:1.85; }
+  main { width:min(720px,100%); margin:auto; padding:48px 20px 64px; }
+  h1 { margin:0 0 16px; font-size:clamp(1.6rem,6vw,2.25rem); line-height:1.35; font-weight:700; }
+  h1::before { content:"ABOUT"; display:block; margin-bottom:12px; color:var(--yzrs-accent-text,#9a3a16); font:500 11.5px/1.6 var(--yzrs-mono,monospace); letter-spacing:.12em; }
+  h2 { margin:48px 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule); font-size:1.15rem; font-weight:700; line-height:1.5; }
   p,li { font-size:.95rem; }
+  p { margin:0 0 16px; }
+  li { margin-bottom:8px; }
   a { color:var(--accent); }
   .lead { color:var(--muted); }
+  .updated { color:var(--muted); font:400 12.5px/1.7 var(--yzrs-mono,monospace); letter-spacing:.04em; }
   main > nav a { display:inline-flex; align-items:center; min-height:44px; }
-  nav,footer { margin-top:2rem; padding-top:1rem; border-top:1px solid var(--rule); font-size:.88rem; }
+  nav,footer { margin-top:32px; padding-top:16px; border-top:1px solid var(--rule); color:var(--muted); font-size:.88rem; }
+  footer { margin-top:0; border-top:0; font-family:var(--yzrs-mono,monospace); font-size:11.5px; letter-spacing:.08em; }
 </style>
 <link rel="stylesheet" href="/styles/yzrs-ui.css" />
 <link rel="stylesheet" href="/styles/yzrs-header.css" />

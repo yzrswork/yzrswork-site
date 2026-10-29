@@ -14,7 +14,7 @@ test('Pilot B has the canonical route, metadata, shared visual system, and JP au
   assert.ok(html.includes(`<meta property="og:url" content="${route}"`));
   assert.ok(html.includes('<meta name="robots" content="index,follow"'));
   assert.equal(sitemap.split(`<loc>${route}</loc>`).length - 1, 1);
-  for (const value of ['/styles/yzrs-ui.css', '/styles/yzrs-top.css', '/analytics.js', jp]) assert.ok(html.includes(`"${value}"`));
+  for (const value of ['/styles/yzrs-ui.css', '/styles/yzrs-en.css', '/analytics.js', jp]) assert.ok(html.includes(`"${value}"`));
 });
 
 test('all 20 approved article contract items remain addressable', () => {
