@@ -188,7 +188,8 @@ body.yzrs-ui { margin: 0; background: var(--yzrs-desk); }
   .yzrs-top .yzrs-tool-list { grid-template-columns: minmax(0, 1fr); padding-inline: 12px; }
   .yzrs-top .tool-group-title { margin-right: 8px; }
   .yzrs-top .operator-grid .button { width: 100%; }
-  .yzrs-top .footer-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .yzrs-top .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; }
+  .yzrs-top .footer-grid > div:first-child { grid-column: 1 / -1; }
   .yzrs-top .footer-bottom { align-items: flex-start; }
 }
 @media (prefers-reduced-motion: reduce) {
