@@ -15,7 +15,7 @@
 <script src="/analytics.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
   :root {
     --paper: #f3ede0;
@@ -549,6 +549,59 @@
     .notice { display: none; }
     .page { max-width: 100%; padding: 0 8mm; }
   }
+
+  /* ==== 一覧型(B-2)の層: 熱い順の記事リスト、刺し色はブルーグレー ==== */
+  :root {
+    --accent: #34506a;
+    --accent-soft: #e8edf1;
+    --line: #d9cfbd;
+    --card: #fbf8f2;
+    --dim: #8a8173;
+    --mono: "DM Mono", ui-monospace, monospace;
+  }
+  body { font-family: var(--sans-jp); letter-spacing: 0.02em; line-height: 1.7; }
+  body::before { display: none; }
+  .page { max-width: 680px; padding-top: 20px; }
+  .masthead { text-align: left; }
+  .title-en { font-weight: 500; font-size: clamp(30px, 8vw, 40px); margin: 4px 0 2px; }
+  .masthead-meta { font-size: 12px; letter-spacing: 0.04em; text-transform: none; }
+  .masthead-meta .sep { color: var(--dim); }
+  .masthead hr.rule-thick, .masthead .tagline { display: none; }
+  .theme-band {
+    text-align: left; margin: 18px 0 14px; padding: 12px 14px;
+    border: 0; border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; background: var(--card);
+  }
+  .theme-band .theme-kicker { margin: 0 0 2px; font: 500 11px var(--mono); letter-spacing: 0.1em; color: var(--accent); }
+  .theme-band .theme-title { font-family: var(--sans-jp); font-weight: 500; font-size: 15px; margin: 0 0 4px; }
+  .theme-band .theme-note { font-size: 13px; color: var(--muted); }
+  .press-strip { background: transparent; border: 0; padding: 0; margin: 0 0 18px; }
+  .press-strip .press-label { display: inline; margin: 0 10px 0 0; text-align: left; letter-spacing: 0.04em; }
+  .press-grid { display: inline-flex; }
+  .press-cell { min-width: 0; padding: 0; border: 0; }
+  .press-cell .glyph { font-size: 15px; }
+  .press-cell .info { display: flex; gap: 8px; font-size: 12px; }
+  .press-cell .info .main { font-weight: 500; }
+  .section-head { font-family: var(--sans-jp); }
+  .rank-list { margin: 0; padding: 0; list-style: none; counter-reset: rank; }
+  .rank-item {
+    counter-increment: rank; display: grid; grid-template-columns: 24px minmax(0, 1fr); column-gap: 10px;
+    padding: 16px 0; border-bottom: 1px solid var(--line);
+  }
+  .rank-item:last-child { border-bottom: 0; }
+  .rank-item::before { content: counter(rank); padding-top: 3px; text-align: right; color: var(--dim); font: 500 13px var(--mono); }
+  .rank-title { display: block; color: var(--ink); font-size: 15.5px; font-weight: 500; line-height: 1.65; text-decoration: none; overflow-wrap: anywhere; }
+  .rank-title:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+  .rank-title:visited { color: var(--muted); }
+  .rank-meta { margin-top: 6px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; color: var(--muted); font-size: 12px; letter-spacing: 0.01em; }
+  .rank-heat { color: var(--accent); font: 500 12.5px var(--mono); }
+  .rank-hit { padding: 1px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 11px; font-weight: 700; }
+  .rank-domain { color: var(--dim); overflow-wrap: anywhere; }
+  .rank-meta .btn-save {
+    margin-left: auto; min-height: 32px; padding: 0 12px; border: 1px solid var(--line); border-radius: 999px;
+    background: var(--card); color: var(--muted); font: 500 12px var(--sans-jp); cursor: pointer;
+  }
+  .rank-meta .btn-save.saved { color: var(--accent); border-color: var(--accent); }
+  .hidden-gem, .from-editor { font-family: var(--sans-jp); }
 </style>
 <link rel="stylesheet" href="/styles/yzrs-header.css" />
 <link rel="preload" href="/data/latest.json" as="fetch" crossorigin="anonymous" />
@@ -573,6 +626,7 @@
     <div class="issue-loading" id="issue-loading" role="status">紙面を読み込み中…</div>
 
     <section class="theme-band" id="theme-band" hidden>
+      <p class="theme-kicker">TODAY'S THEME</p>
       <p class="theme-title" id="theme-title"></p>
       <p class="theme-note" id="theme-note"></p>
     </section>
@@ -583,7 +637,7 @@
     </section>
 
     <section class="front-page" id="front-page" hidden>
-      <div class="section-head">一面 <span class="en">Front Page</span></div>
+      <div class="section-head">今日の記事 <span class="en">熱い順</span></div>
       <hr class="rule">
       <div id="top-articles"></div>
     </section>
@@ -843,6 +897,51 @@
     return wrap;
   }
 
+  /* ---------- rank list (一覧型) ---------- */
+  var HIT_TEMPERATURE = 85;
+  function heatOf(a) { return a.heat && typeof a.heat.temperature === 'number' ? a.heat.temperature : 0; }
+  function signalText(a) {
+    var s = a.heat && a.heat.signals;
+    if (!s) return '';
+    if (s.hatebuCount) return s.hatebuCount + ' users';
+    if (s.hnPoints) return s.hnPoints + ' pts';
+    return '';
+  }
+  function domainOf(url) {
+    try { return new URL(url).hostname.replace(/^www\./, ''); } catch (e) { return ''; }
+  }
+  function buildRankItem(article) {
+    var li = el('li', { className: 'rank-item' });
+    var body = el('div');
+    var title = article.url
+      ? el('a', { className: 'rank-title', text: article.title, attrs: { href: article.url, target: '_blank', rel: 'noopener noreferrer' } })
+      : el('span', { className: 'rank-title', text: article.title });
+    body.appendChild(title);
+    var meta = el('div', { className: 'rank-meta' });
+    var temp = heatOf(article);
+    if (temp) meta.appendChild(el('span', { className: 'rank-heat', text: Math.round(temp) + '℃' }));
+    if (temp >= HIT_TEMPERATURE) meta.appendChild(el('span', { className: 'rank-hit', text: '当たり' }));
+    var src = [article.source, signalText(article)].filter(Boolean).join(' ');
+    if (src) meta.appendChild(el('span', { text: src }));
+    if (article.heat && article.heat.signals && typeof article.heat.signals.ageHours === 'number') {
+      meta.appendChild(el('span', { text: fmtAge(article.heat.signals.ageHours) }));
+    }
+    var dom = domainOf(article.url);
+    if (dom) meta.appendChild(el('span', { className: 'rank-domain', text: dom }));
+    var saveBtn = el('button', { className: 'btn-save no-print', text: isClipped(article.id) ? '保存済み' : '保存', attrs: { type: 'button' } });
+    if (isClipped(article.id)) saveBtn.classList.add('saved');
+    saveBtn.addEventListener('click', function () {
+      addClipping(article);
+      saveBtn.textContent = '保存済み';
+      saveBtn.classList.add('saved');
+      renderClippings();
+    });
+    meta.appendChild(saveBtn);
+    body.appendChild(meta);
+    li.appendChild(body);
+    return li;
+  }
+
   /* ---------- main render ---------- */
   function renderIssue(issue, opts) {
     opts = opts || {};
@@ -863,7 +962,7 @@
 
     // theme band
     if (issue.theme && issue.theme.title) {
-      text('theme-title', '今日のテーマ:『' + issue.theme.title + '』');
+      text('theme-title', issue.theme.title);
       if (issue.theme.note) text('theme-note', issue.theme.note);
       show(document.getElementById('theme-band'));
     }
@@ -871,33 +970,17 @@
     // press strip
     renderPressStrip(issue);
 
-    // front page (top)
-    var topIds = Array.isArray(issue.top) ? issue.top : [];
-    var topArticles = topIds.map(function (id) { return articleById(issue, id); }).filter(Boolean);
-    if (topArticles.length) {
-      var frontHost = document.getElementById('top-articles');
-      topArticles.forEach(function (a, i) {
-        frontHost.appendChild(buildArticleNode(a, { lead: i === 0 }));
-      });
+    // 記事一覧: その号の記事を熱い順に1列で並べる(掘り出し物は下の別枠)
+    var gemId = issue.hiddenGem && issue.hiddenGem.article ? issue.hiddenGem.article.id : null;
+    var listed = (Array.isArray(issue.articles) ? issue.articles : []).filter(function (a) {
+      return a && a.title && a.id !== gemId;
+    }).sort(function (a, b) { return heatOf(b) - heatOf(a); });
+    if (listed.length) {
+      var list = el('ol', { className: 'rank-list' });
+      listed.forEach(function (a) { list.appendChild(buildRankItem(a)); });
+      document.getElementById('top-articles').appendChild(list);
       show(document.getElementById('front-page'));
     }
-
-    // sections
-    var sectionsHost = document.getElementById('sections-container');
-    var sections = Array.isArray(issue.sections) ? issue.sections : [];
-    sections.forEach(function (sec) {
-      if (!sec || !sec.title) return;
-      var ids = Array.isArray(sec.articleIds) ? sec.articleIds : [];
-      var arts = ids.map(function (id) { return articleById(issue, id); }).filter(Boolean);
-      if (!arts.length) return;
-      var section = el('section', { className: 'section-block' });
-      var head = el('div', { className: 'section-head' });
-      head.appendChild(document.createTextNode(sec.title + ' '));
-      section.appendChild(head);
-      section.appendChild(el('hr', { className: 'rule' }));
-      arts.forEach(function (a) { section.appendChild(buildArticleNode(a)); });
-      sectionsHost.appendChild(section);
-    });
 
     // hidden gem
     if (issue.hiddenGem && issue.hiddenGem.article && issue.hiddenGem.article.title) {
