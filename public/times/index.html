@@ -28,7 +28,6 @@
     --accent: #7d2318;
     --accent-soft: rgba(125, 35, 24, 0.08);
     --up: #2f6b3a;
-    --down: #a3271c;
     --serif-en: "EB Garamond", "Times New Roman", serif;
     --serif-jp: "Noto Serif JP", "Hiragino Mincho ProN", serif;
     --sans-jp: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
@@ -194,33 +193,6 @@
   .press-cell .info .main { font-weight: 700; color: var(--ink); }
   .press-cell .info .sub { color: var(--muted); }
 
-  .coins-row {
-    margin-top: 10px;
-    padding-top: 10px;
-    border-top: 1px solid var(--rule-soft);
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px 14px;
-  }
-  .coin-cell {
-    min-width: 0;
-    font-size: 11px;
-    padding-bottom: 2px;
-  }
-  .coin-cell .coin-top,
-  .coin-cell .coin-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 6px;
-  }
-  .coin-cell .coin-top { margin-bottom: 3px; }
-  .coin-cell .symbol { font-weight: 700; letter-spacing: 0.02em; }
-  .coin-cell .price { color: var(--ink-soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .coin-cell .change { white-space: nowrap; }
-  .coin-cell .change.up { color: var(--up); }
-  .coin-cell .change.down { color: var(--down); }
-  .coin-cell svg { display: block; flex-shrink: 0; }
 
   /* ---- section head ---- */
   .section-head {
@@ -608,7 +580,6 @@
     <section class="press-strip" id="press-strip" hidden>
       <div class="press-label" id="press-label"></div>
       <div class="press-grid" id="press-grid"></div>
-      <div class="coins-row" id="coins-row" hidden></div>
     </section>
 
     <section class="front-page" id="front-page" hidden>
@@ -780,43 +751,6 @@
   function weatherIcon(icon) {
     if (typeof icon !== 'string') return '🌤️';
     return WEATHER_ICONS[icon] || '🌤️';
-  }
-
-  function fmtNum(n, digits) {
-    if (typeof n !== 'number' || isNaN(n)) return null;
-    return n.toLocaleString('en-US', { maximumFractionDigits: digits == null ? 2 : digits, minimumFractionDigits: 0 });
-  }
-
-  /* ---------- sparkline (static inline SVG, no external data) ---------- */
-  var SVGNS = 'http://www.w3.org/2000/svg';
-  function sparkline(values, isUp) {
-    if (!Array.isArray(values) || values.length < 2) return null;
-    var nums = values.filter(function (v) { return typeof v === 'number' && !isNaN(v); });
-    if (nums.length < 2) return null;
-    var w = 46, h = 16, pad = 2;
-    var min = Math.min.apply(null, nums);
-    var max = Math.max.apply(null, nums);
-    var range = max - min || 1;
-    var step = (w - pad * 2) / (nums.length - 1);
-    var points = nums.map(function (v, i) {
-      var x = pad + i * step;
-      var y = pad + (1 - (v - min) / range) * (h - pad * 2);
-      return x.toFixed(1) + ',' + y.toFixed(1);
-    }).join(' ');
-    var svg = document.createElementNS(SVGNS, 'svg');
-    svg.setAttribute('width', w);
-    svg.setAttribute('height', h);
-    svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
-    svg.setAttribute('aria-hidden', 'true');
-    var polyline = document.createElementNS(SVGNS, 'polyline');
-    polyline.setAttribute('points', points);
-    polyline.setAttribute('fill', 'none');
-    polyline.setAttribute('stroke', isUp ? '#2f6b3a' : '#a3271c');
-    polyline.setAttribute('stroke-width', '1.4');
-    polyline.setAttribute('stroke-linecap', 'round');
-    polyline.setAttribute('stroke-linejoin', 'round');
-    svg.appendChild(polyline);
-    return svg;
   }
 
   /* ---------- clippings (saved articles) ---------- */
@@ -1035,55 +969,6 @@
       cell.appendChild(info);
       grid.appendChild(cell);
       any = true;
-    }
-
-    var m = issue.market;
-    var fg = m && m.fearGreed;
-    if (fg && typeof fg.value === 'number') {
-      var fgCell = el('div', { className: 'press-cell' });
-      fgCell.appendChild(el('span', { className: 'glyph', text: '📊' }));
-      var fgInfo = el('div', { className: 'info' });
-      fgInfo.appendChild(el('div', { className: 'main', text: 'F&G ' + fg.value }));
-      if (fg.label) fgInfo.appendChild(el('div', { className: 'sub', text: fg.label }));
-      fgCell.appendChild(fgInfo);
-      grid.appendChild(fgCell);
-      any = true;
-    }
-
-    if (m && Array.isArray(m.coins) && m.coins.length) {
-      var row = document.getElementById('coins-row');
-      var coinsShown = 0;
-      m.coins.forEach(function (coin) {
-        // Skip a coin entirely when there is no usable price — an empty
-        // shell (symbol only) is not worth a newspaper column.
-        if (!coin || !coin.symbol || typeof coin.priceUsd !== 'number') return;
-        var cell = el('div', { className: 'coin-cell' });
-        var isUp = typeof coin.change24hPct === 'number' && coin.change24hPct >= 0;
-
-        var top = el('div', { className: 'coin-top' });
-        top.appendChild(el('span', { className: 'symbol', text: coin.symbol }));
-        if (typeof coin.change24hPct === 'number') {
-          top.appendChild(el('span', {
-            className: 'change ' + (isUp ? 'up' : 'down'),
-            text: (isUp ? '+' : '') + coin.change24hPct.toFixed(2) + '%'
-          }));
-        }
-        cell.appendChild(top);
-
-        var bottom = el('div', { className: 'coin-bottom' });
-        var priceStr = fmtNum(coin.priceUsd, coin.priceUsd < 10 ? 4 : 2);
-        if (priceStr) bottom.appendChild(el('span', { className: 'price', text: '$' + priceStr }));
-        var spark = sparkline(coin.sparkline7d, isUp);
-        if (spark) bottom.appendChild(spark);
-        cell.appendChild(bottom);
-
-        row.appendChild(cell);
-        coinsShown++;
-      });
-      if (coinsShown) {
-        show(row);
-        any = true;
-      }
     }
 
     if (any) show(document.getElementById('press-strip'));
