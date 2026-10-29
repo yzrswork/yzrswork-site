@@ -34,8 +34,9 @@ body.yzrs-ui { margin: 0; background: var(--yzrs-desk); }
   text-decoration: none; font-weight: 500; transition: background 0.15s ease, color 0.15s ease;
 }
 .yzrs-top .button:hover { background: var(--yzrs-ink); color: var(--yzrs-paper-raised); }
-.yzrs-top .button.primary { background: var(--yzrs-accent); border-color: var(--yzrs-accent); color: var(--yzrs-paper-raised); }
-.yzrs-top .button.primary:hover { background: var(--yzrs-ink); border-color: var(--yzrs-ink); }
+/* ボタン類はブルーグレー、強調文字はテラコッタ(2026-10-29 Owner) */
+.yzrs-top .button.primary { background: var(--yzrs-sub); border-color: var(--yzrs-sub); color: var(--yzrs-paper-raised); }
+.yzrs-top .button.primary:hover { background: #2b4256; border-color: #2b4256; }
 .yzrs-top .text-link {
   display: inline-flex; align-items: center; min-height: 44px; max-width: 100%;
   color: var(--yzrs-accent); text-decoration: underline; font-size: 14px;
@@ -63,7 +64,7 @@ body.yzrs-ui { margin: 0; background: var(--yzrs-desk); }
   min-height: 40px; padding: 6px 16px; border: 1px solid var(--yzrs-separator); border-radius: 999px;
   background: var(--yzrs-paper-raised); color: var(--yzrs-ink); font: 500 14px/1 var(--yzrs-sans); white-space: nowrap; cursor: pointer;
 }
-.yzrs-top .home-filter button[aria-pressed="true"] { background: var(--yzrs-ink); border-color: var(--yzrs-ink); color: var(--yzrs-paper-raised); }
+.yzrs-top .home-filter button[aria-pressed="true"] { background: var(--yzrs-sub); border-color: var(--yzrs-sub); color: var(--yzrs-paper-raised); }
 .yzrs-top .home-tools { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .yzrs-top .home-tool[hidden] { display: none; }
 .yzrs-top .home-tool a {
@@ -71,7 +72,7 @@ body.yzrs-ui { margin: 0; background: var(--yzrs-desk); }
   background: var(--yzrs-paper-raised); border: 1px solid var(--yzrs-separator); border-radius: 12px;
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
-.yzrs-top .home-tool a:hover { border-color: var(--yzrs-accent); transform: translateY(-2px); }
+.yzrs-top .home-tool a:hover { border-color: var(--yzrs-sub); transform: translateY(-2px); }
 .yzrs-top .home-tool img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: top; border-bottom: 1px solid var(--yzrs-separator); background: var(--yzrs-paper-deep); }
 .yzrs-top .home-tool-text { padding: 12px 14px 14px; display: block; }
 .yzrs-top .home-tool-group { display: block; color: var(--yzrs-muted); font-size: 12px; }
