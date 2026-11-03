@@ -29,6 +29,20 @@
       "edition": "midday",
       "theme": "構造の解剖と手元の制御",
       "path": "issues/2026-11-02-midday.json"
+    },
+    {
+      "issueNo": 231,
+      "date": "2026-11-03",
+      "edition": "morning",
+      "theme": "相次ぐ侵食と防壁の綻び",
+      "path": "issues/2026-11-03-morning.json"
+    },
+    {
+      "issueNo": 232,
+      "date": "2026-11-03",
+      "edition": "midday",
+      "theme": "可視化するキャンバスと手元のハック",
+      "path": "issues/2026-11-03-midday.json"
     }
   ]
 }
