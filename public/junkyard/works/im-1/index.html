@@ -1,4 +1,4 @@
-<!-- GENERATED DERIVATIVE: yzrswork/obsidian-vault@9be33cdaa7a7bdbcdd446b0250cabff39379cba3 / PlayGuide_HTML/yzrsnote_A5_pages/data/junk-yard-2026.json; generated from the shared work-page pattern, then adapted only for this production route; do not edit content by hand. -->
+<!-- GENERATED DERIVATIVE: yzrswork/obsidian-vault@769f7325c95c160def77ea871ceaacf82d9f00d9 / PlayGuide_HTML/yzrsnote_A5_pages/data/junk-yard-2026.json; generated with scripts/generate_work_pages.py --slug im-1, then adapted only for this production route; do not edit content by hand. -->
 <!doctype html>
 <html lang="ja">
 <head>
@@ -48,15 +48,13 @@ h1 { margin: 8px 0 0; color: var(--navy); font-size: clamp(2.35rem, 13vw, 4.5rem
   border: 1px solid var(--rule);
   background: var(--paper-alt);
 }
-.visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
+.visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .asset-state { padding: 20px; color: var(--muted); font-size: .72rem; text-align: center; }
 section { padding: 24px 0; border-bottom: 1px solid var(--rule); }
 h2 { margin: 0 0 12px; font-size: .75rem; letter-spacing: .15em; color: var(--accent); }
+h3 { margin: 0 0 4px; font-size: .95rem; color: var(--navy); }
+.archive-item { margin: 0 0 16px; }
+.archive-item:last-child { margin-bottom: 0; }
 p { margin: 0; font-size: 1rem; line-height: 1.85; overflow-wrap: anywhere; }
 dl { margin: 0; }
 .spec { display: grid; grid-template-columns: minmax(5.5rem, 30%) minmax(0, 1fr); gap: 8px 14px; padding: 10px 0; border-bottom: 1px dotted var(--rule); }
@@ -82,10 +80,10 @@ dd { margin: 0; font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; f
   <div class="eyebrow">JUNK YARD 2026 / WORK IM-1</div>
   <h1>IM-1</h1>
   <p class="subtitle">インフィニティミラー</p>
-  <div class="visual"><img src="https://assets.yzrswork.com/junkyard/2026/works/im-1/official/550747b4448b.jpeg" alt="IM-1 / インフィニティミラー"></div>
+  <div class="visual"><img src="https://assets.yzrswork.com/junkyard/2026/works/im-1/official/550747b4448b.jpeg" alt="IM-1"></div>
   <section>
     <h2>CONCEPT / コンセプト</h2>
-    <p>深いフォトフレームにインフィニティミラー構造を組み込んだ。前面ガラスを約10度傾けたことで、反射が「奥」ではなく「上」へ無限に伸び、下部の7セグメントの数字が上方向へ積み重なっていく。</p>
+    <p>深いフォトフレームにインフィニティミラー構造を組み込みました。ひょんなことから前面ガラスを約10度傾けたことで、反射が「奥」ではなく「上」へ無限に伸び、下部の7セグメントの数字が上方向へ積み重なっていきます。</p>
   </section>
   <section>
     <h2>KEY SPECS / 主要仕様</h2>
@@ -94,6 +92,22 @@ dd { margin: 0; font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; f
   <section>
     <h2>PRODUCTION MEMO / 制作メモ</h2>
     <p>Arduino Nanoはハーフミラーに映り込むためDigispark（ATtiny85）へ変更しました。内壁を黒にして余計な乱反射を抑え、3ポジションSWのフローティング問題に詰まった結果、2ポジションの演出へ絞るようにしています。</p>
+  </section>
+  <section>
+    <h2>TROUBLES / 制作トラブルと切り分け</h2>
+    <div class="archive-item"><h3>ハーフミラーに映り込むマイコン</h3><p>当初予定の Arduino Nano は、フレーム内に仮置きすると基板がハーフミラーへ映り込んだ。ほぼ切手サイズの Digispark（ATtiny85）へ変更して解消した。TM1637 の制御は DIO と CLK の2本だけなので、ピン数の少ない ATtiny85 でも問題なかった。</p></div><div class="archive-item"><h3>3ポジションスイッチのフローティング</h3><p>3モード切り替えを狙った3ポジションスイッチは、中ポジションで INPUT_PULLUP が不安定になり、OFF の判定ができなかった。2ポジションのトグルスイッチへ変更し、演出も横バーがゆっくり移動する1種へ絞った。結果として、時間と無限をテーマにした静かな演出に寄った。</p></div><div class="archive-item"><h3>7セグ表示の桁順の入れ替わり</h3><p>TM1637 の6桁モジュールは、基板によって物理的な桁の並びが入れ替わるものがあり、123456 と設定しても 321654 と表示されることがある。スケッチ側で表示データの並びを入れ替え、実機で確認しながら対応を確定した。</p></div><div class="archive-item"><h3>内壁の乱反射</h3><p>内壁が素地のままだと余計な乱反射が増えて像がぼやけるため、内壁と内枠をマットな黒に統一した。</p></div>
+  </section>
+  <section>
+    <h2>MEASUREMENTS / 実測</h2>
+    <div class="archive-item"><h3>斜め配置の確定寸法</h3><p>前面ガラスを約10度傾ける配置は、底辺 150mm、高さ差 26mm、斜辺 153mm で確定した。ガラス板は 102 x 153 x 2mm。内枠は5mm厚のカラーボードを平行四辺形に切って自作している。</p></div><div class="archive-item"><h3>展示給電の受け入れ試験（2026-10-04）</h3><p>展示本番の給電構成（5V モバイルバッテリーから PDB-1 経由）で、MO-1 と IM-1 を3時間以上連続駆動して異常なし。volt-1 を加えた本番構成でも2から3時間運用し、cold start や電圧降下、モバイルバッテリーの auto-off まで確認した。判定は acceptance COMPLETE / PASS。</p></div>
+  </section>
+  <section>
+    <h2>EXHIBITION / 展示</h2>
+    <p>JUNK YARD（2026-10-11 から 10-25、仙川 TINY CAFE）の最終展示9点の1つとして展示された。給電は 5V MAIN 系統から受け、作品紹介は 2026-09-30 に SNS へ投稿された。</p>
+  </section>
+  <section>
+    <h2>AFTER / その後</h2>
+    <p>会期は 2026-10-25 に終了した。作品は自宅へ運ばれ、整理中（展示全体の記録による）。</p>
   </section>
   <a class="note-link" href="https://note.com/yzrswork/n/n546adc606ab9">noteで制作過程・技術詳細を読む →</a>
 </main>

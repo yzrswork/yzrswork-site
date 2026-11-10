@@ -1,4 +1,4 @@
-<!-- GENERATED DERIVATIVE: yzrswork/obsidian-vault@3633363b63118dca610481b2d23ebced36da2454 / PlayGuide_HTML/yzrsnote_A5_pages/data/junk-yard-2026.json; generated with scripts/generate_work_pages.py --slug mo-1, then adapted only for this production route; do not edit content by hand. -->
+<!-- GENERATED DERIVATIVE: yzrswork/obsidian-vault@769f7325c95c160def77ea871ceaacf82d9f00d9 / PlayGuide_HTML/yzrsnote_A5_pages/data/junk-yard-2026.json; generated with scripts/generate_work_pages.py --slug mo-1, then adapted only for this production route; do not edit content by hand. -->
 <!doctype html>
 <html lang="ja">
 <head>
@@ -52,6 +52,9 @@ h1 { margin: 8px 0 0; color: var(--navy); font-size: clamp(2.35rem, 13vw, 4.5rem
 .asset-state { padding: 20px; color: var(--muted); font-size: .72rem; text-align: center; }
 section { padding: 24px 0; border-bottom: 1px solid var(--rule); }
 h2 { margin: 0 0 12px; font-size: .75rem; letter-spacing: .15em; color: var(--accent); }
+h3 { margin: 0 0 4px; font-size: .95rem; color: var(--navy); }
+.archive-item { margin: 0 0 16px; }
+.archive-item:last-child { margin-bottom: 0; }
 p { margin: 0; font-size: 1rem; line-height: 1.85; overflow-wrap: anywhere; }
 dl { margin: 0; }
 .spec { display: grid; grid-template-columns: minmax(5.5rem, 30%) minmax(0, 1fr); gap: 8px 14px; padding: 10px 0; border-bottom: 1px dotted var(--rule); }
@@ -80,7 +83,7 @@ dd { margin: 0; font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; f
   <div class="visual"><img src="https://assets.yzrswork.com/junkyard/2026/works/mo-1/official/c5fe94b74d73.jpeg" alt="MO-1"></div>
   <section>
     <h2>CONCEPT / コンセプト</h2>
-    <p>「Music Organizer」という考え方が面白いと思ったのが出発点。ストリーミングで無限に音楽を聴ける時代だからこそ、あえて選んだ曲だけを収めた、小さな閉じたプレーヤーを作った。たまに戻ってきて音楽を聴く、自分にとっての“心のJuke Joint”のような一台。</p>
+    <p>何にしようかと悩んだ末、「Music Organizer」にしようと思ったのが出発点。ストリーミングで無限に音楽を聴ける時代だからこそ、あえて選んだ曲だけを収めた、小さな閉じたプレーヤーを作りました。たまに戻ってきて音楽を聴く、“心のJuke Joint”のような一台。</p>
   </section>
   <section>
     <h2>KEY SPECS / 主要仕様</h2>
@@ -88,7 +91,23 @@ dd { margin: 0; font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; f
   </section>
   <section>
     <h2>PRODUCTION MEMO / 制作メモ</h2>
-    <p>当初のゴールド×赤マットのL判フレーム案から、黒く塗装したセリアの深型額縁へ変更。DFPlayer Miniはaitendoのポリバリコン取付基板をキャリアとして再利用した。3.3VではVfの高い青LEDが点灯しにくいため、再生表示は赤い5mm LEDへ変更した。</p>
+    <p>当初のゴールド×赤マットのL判フレーム案から、黒く塗装した深型額縁へ変更。DFPlayer Miniはaitendoのポリバリコン取付基板をキャリアとして再活用しました。3.3VではVfの高い青LEDが点灯しにくいため、再生表示は赤い5mm LEDへ変更しています。</p>
+  </section>
+  <section>
+    <h2>TROUBLES / 制作トラブルと切り分け</h2>
+    <div class="archive-item"><h3>青い LED が点かない</h3><p>再生表示の LED を青にしたかったが、マイコンの GPIO へ直結しても光らなかった。青 LED の順方向電圧は約3.0から3.4V で、GPIO の 3.3V では足りない。赤 LED は約2.0V で足りるため、赤い5mm LED へ変更した。</p></div><div class="archive-item"><h3>画面が真っ暗になる問題を2回に分けて切り分け</h3><p>SPI ライブラリを変えたら画面が真っ暗になった件は、その方式が GP0 と GP1 では動作しないことが原因で、動作実績のある SWSPI へ戻して解消した。図形は出るのに日本語文字だけ描画されない件は、U8g2 フォントを使う場合に setUTF8Print(true) の呼び出しが必須だったことが原因。色つき四角のマーカーを初期化のステップごとに置く方法で、シリアルが繋がらない状況でも画面だけで停止箇所を特定できた。</p></div><div class="archive-item"><h3>SD.begin() がハングする</h3><p>SD の初期化は、失敗を返すのではなく無限待ちになった。SPI のピン指定とコントローラの組み合わせが合っていなかったためで、最終的には画像用 SD 自体を廃止し、表紙画像をマイコンのフラッシュ内蔵へ移した。SD は音楽カード1枚だけになった。</p></div><div class="archive-item"><h3>展示現場の AUX ノイズ（未解決）</h3><p>設営時、モバイルバッテリー1台の2出力を同時利用し、COMPO-1 の AUX 入力へ接続したときに強いホワイトノイズを確認した。COMPO-1 の Bluetooth 再生では出ないことまでは切り分けたが、共有電源やアナログ音声の GND 経路などの候補から原因を確定するには至っていない。会期中は電源を2台に分けて運用したが、解消したかどうかの確認は取れていない。</p></div>
+  </section>
+  <section>
+    <h2>MEASUREMENTS / 実測</h2>
+    <div class="archive-item"><h3>裏配線の通し穴の実測（2026-06-22）</h3><p>アクリル板に開けた直径3mm の穴5つの位置を、ボリュームダイヤル脇の基準穴から実測した。GP13 は14mm、GP12 は17mm、GND は25mm。2.54mm ピッチの理論値との差はどちらも約+0.4mm で揃い、基準の取り方による系統的なオフセットと判断して、そのまま採用した。</p></div><div class="archive-item"><h3>本番コンテンツと給電の受け入れ（2026-10-04）</h3><p>展示本番用の13曲を投入し、実機再生の acceptance を PASS した。給電系は PDB-1 経由の 5V MAIN で、本番構成を2から3時間運用して異常なし。</p></div>
+  </section>
+  <section>
+    <h2>EXHIBITION / 展示</h2>
+    <p>JUNK YARD（2026-10-11 から 10-25、仙川 TINY CAFE）の最終展示9点の1つ。作品紹介の第1弾として 2026-09-28 に紹介投稿された。会期中は 5V MAIN から給電し、音声は COMPO-1 の AUX 入力へ接続して使われた。会期全体を通して、安全固定と動作はまったく問題なし（オーナー報告）。</p>
+  </section>
+  <section>
+    <h2>AFTER / その後</h2>
+    <p>会期終了後、作品は自宅へ運ばれ、整理中（オーナー報告）。</p>
   </section>
   <a class="note-link" href="https://note.com/yzrswork/n/n1d2d7c27e061">noteで制作過程・技術詳細を読む →</a>
 </main>
