@@ -1,45 +1,12 @@
-import { readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
-const SLUG = 'hajimete-no-denshi-kousaku-starter-guide';
-const SOURCE = join(ROOT, 'content', 'guides', `${SLUG}.md`);
-const MANIFEST = join(ROOT, 'content', 'guides', `${SLUG}.images.yaml`);
-const OUTPUT = join(ROOT, 'public', 'guides', SLUG, 'index.html');
-
-const imageFiles = {
-  'tools-step1-set': 'tools-step1-set.jpg',
-  'tools-step2-set': 'tools-step2-set.jpg',
-  'tools-step3-psu': 'tools-step3-psu.jpg',
-  'parts-amazon-stock-set': 'parts-amazon-stock-set.png',
-  'parts-domestic-stock-set': 'parts-domestic-stock-set.png',
-  'parts-china-stock-set': 'parts-china-stock-set.png',
-};
-// 読み込み中に本文がずれないよう、img に実寸の width/height を入れる。
-const IMAGE_SIZES = {
-  'tools-step1-set.jpg': [1168, 784],
-  'tools-step2-set.jpg': [1168, 784],
-  'tools-step3-psu.jpg': [1168, 784],
-  'parts-amazon-stock-set.png': [1376, 768],
-  'parts-domestic-stock-set.png': [1376, 768],
-  'parts-china-stock-set.png': [1376, 768],
-};
-
-const knownHeadingIds = {
-  'この記事で分かること': 'overview',
-  '結論': 'answer',
-  '対象読者': 'audience',
-  '作業手順：3ステップで揃える': 'three-steps',
-  'STEP1. 部品はどこで買う？': 'step-1',
-  'STEP2. 工具は何から揃える？': 'step-2',
-  'STEP3. 消耗品と部品ストックは？': 'step-3',
-  '確認方法：買う前にここだけ確認': 'check-before-buying',
-  '失敗例：買い方でつまずいた話': 'failure-notes',
-  '注意点': 'cautions',
-  'まとめ': 'summary',
-  '次に読む記事': 'next',
-};
+const GUIDES_DIR = join(ROOT, 'content', 'guides');
+const PUBLIC_GUIDES_DIR = join(ROOT, 'public', 'guides');
+const DEFAULT_OG_IMAGE = 'https://yzrswork.com/og.png';
+const REQUIRED_PAGE_KEYS = ['breadcrumbs', 'kicker', 'heroTitle', 'dek', 'facts', 'toolboxRef', 'toolLink'];
 
 function escapeHtml(value) {
   return String(value)
@@ -145,7 +112,7 @@ function normalizeBody(body) {
   return output.join('\n');
 }
 
-function parseBlocks(rawBody) {
+function parseBlocks(rawBody, headingIds) {
   const lines = normalizeBody(rawBody).split(/\r?\n/);
   const blocks = [];
   let index = 0;
@@ -160,7 +127,7 @@ function parseBlocks(rawBody) {
       const text = heading[2].trim();
       if (level !== 1) {
         headingIndex += 1;
-        blocks.push({ kind: 'heading', level, text, id: knownHeadingIds[text] || `section-${headingIndex}` });
+        blocks.push({ kind: 'heading', level, text, id: headingIds[text] || `section-${headingIndex}` });
       }
       index += 1;
       continue;
@@ -197,7 +164,7 @@ function parseBlocks(rawBody) {
   return blocks;
 }
 
-function renderArticle(blocks, images) {
+function renderArticle(blocks, images, imageConfig, slug) {
   const imageMap = new Map(images.map((image) => [image.id, image]));
   return blocks.map((block) => {
     if (block.kind === 'heading') {
@@ -209,35 +176,16 @@ function renderArticle(blocks, images) {
     if (block.kind === 'quote') return `<blockquote>${renderInline(block.text)}</blockquote>`;
     if (block.kind === 'rule') return '<hr />';
     const image = imageMap.get(block.imageId);
-    if (!image || image.rights_review !== false || !imageFiles[image.id]) throw new Error(`公開不可または不明な画像: ${block.imageId}`);
-    return `<figure class="article-figure" data-image-role="${escapeHtml(image.role)}"><img src="/guides/${SLUG}/assets/${imageFiles[image.id]}" width="${IMAGE_SIZES[imageFiles[image.id]][0]}" height="${IMAGE_SIZES[imageFiles[image.id]][1]}" alt="${escapeHtml(image.alt)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" /><figcaption>${escapeHtml(image.caption)}</figcaption></figure>`;
+    const file = image && imageConfig ? imageConfig.files[image.id] : undefined;
+    if (!image || image.rights_review !== false || !file) throw new Error(`公開不可または不明な画像: ${block.imageId}`);
+    const size = imageConfig.sizes[file];
+    if (!size) throw new Error(`画像サイズ未定義: ${file}`);
+    return `<figure class="article-figure" data-image-role="${escapeHtml(image.role)}"><img src="/guides/${slug}/assets/${file}" width="${size[0]}" height="${size[1]}" alt="${escapeHtml(image.alt)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" /><figcaption>${escapeHtml(image.caption)}</figcaption></figure>`;
   }).join('\n');
 }
 
-const { frontmatter, body } = splitSource(readFileSync(SOURCE, 'utf8'));
-const images = parseManifest(readFileSync(MANIFEST, 'utf8'));
-const blocks = parseBlocks(body);
-const toc = blocks.filter((block) => block.kind === 'heading' && (block.level === 2 || block.text.startsWith('STEP')));
-const article = renderArticle(blocks, images);
-const stepSummaries = {
-  'step-1': 'Amazon、AliExpress、秋月、千石、aitendoの使い分け',
-  'step-2': '最初に買う3つと、そのあとに足す順番',
-  'step-3': 'セット品で済むものと、ケチらないもの',
-};
-const needStart = body.indexOf('#### まず絶対いる3つ');
-const needSection = needStart >= 0 ? body.slice(needStart).split(/\n#{2,4}\s/)[0] : '';
-const needItems = [...needSection.matchAll(/^\*\*([^*]+)\*\*\s*$/gm)].map((match) => match[1]);
-const needHtml = needItems.length
-  ? `<section class="need" aria-labelledby="need-title"><h2 id="need-title">最初にそろえるもの</h2><ul>${needItems.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul><a href="https://apps.yzrswork.com/kit/?yzrs_ref=guide01-kit-need&amp;solder=yes">この道具を装備ナビでそろえる →</a><p class="need-note">記事内の商品リンクの一部はAmazonアソシエイトです。<a href="#affiliate-disclosure">くわしく</a></p></section>`
-  : '';
-const stepItems = toc.filter((block) => /^STEP\d/.test(block.text));
-const stepsHtml = stepItems.length
-  ? `<ol class="steps" aria-label="3ステップ">${stepItems.map((item, i) => `<li><a href="#${escapeHtml(item.id)}"><b>${i + 1}</b><strong>${escapeHtml(item.text.replace(/^STEP\d+\.\s*/, ''))}</strong><span>${escapeHtml(stepSummaries[item.id] || '')}</span></a></li>`).join('')}</ol>`
-  : '';
-
-if (images.length !== 6 || images.some((image) => image.rights_review !== false)) throw new Error('画像manifestは権利確認済み6点である必要があります');
-
-const html = `<!doctype html>
+function renderPage({ slug, frontmatter, page, ogImage, toc, article, stepsHtml, factsHtml, originHtml, needHtml, affiliateHtml }) {
+  return `<!doctype html>
 <html lang="ja">
 <head>
 <meta charset="utf-8" />
@@ -253,11 +201,11 @@ const html = `<!doctype html>
 <meta property="og:locale" content="ja_JP" />
 <meta property="og:title" content="${escapeHtml(frontmatter.title)}" />
 <meta property="og:description" content="${escapeHtml(frontmatter.description)}" />
-<meta property="og:url" content="https://yzrswork.com/guides/${SLUG}/" />
-<meta property="og:image" content="https://yzrswork.com/guides/${SLUG}/assets/tools-step1-set.jpg" />
+<meta property="og:url" content="https://yzrswork.com/guides/${slug}/" />
+<meta property="og:image" content="${ogImage}" />
 <meta name="twitter:card" content="summary_large_image" />
-<link rel="canonical" href="https://yzrswork.com/guides/${SLUG}/" />
-<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: frontmatter.title, description: frontmatter.description, image: `https://yzrswork.com/guides/${SLUG}/assets/tools-step1-set.jpg`, author: { '@type': 'Person', name: 'や印工務店', url: 'https://yzrswork.com/about/' }, publisher: { '@type': 'Organization', name: 'や印工務店', url: 'https://yzrswork.com/' }, mainEntityOfPage: `https://yzrswork.com/guides/${SLUG}/`, inLanguage: 'ja' })}</script>
+<link rel="canonical" href="https://yzrswork.com/guides/${slug}/" />
+<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: frontmatter.title, description: frontmatter.description, image: ogImage, author: { '@type': 'Person', name: 'や印工務店', url: 'https://yzrswork.com/about/' }, publisher: { '@type': 'Organization', name: 'や印工務店', url: 'https://yzrswork.com/' }, mainEntityOfPage: `https://yzrswork.com/guides/${slug}/`, inLanguage: 'ja' })}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8467165715973366" crossorigin="anonymous"></script>
 <script src="/analytics.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -361,11 +309,11 @@ a{color:var(--clay-text);text-underline-offset:3px}
 <body class="yzrs-ui">
 <a class="skip-link" href="#article-content">本文へ移動</a>
 <div class="page">
-<header class="yzrs-sitebar"><div class="yzrs-sitebar-inner"><a class="yzrs-sitebar-brand" href="/"><b>や印工務店</b><span>yzrswork</span></a><nav class="yzrs-sitebar-nav" aria-label="主要な案内"><a href="/#guides" aria-current="page">Guide</a><a href="https://apps.yzrswork.com/?yzrs_ref=guide01-toolbox">道具箱</a><a href="/times/">Times</a><a href="/about/">工房案内</a></nav></div></header>
+<header class="yzrs-sitebar"><div class="yzrs-sitebar-inner"><a class="yzrs-sitebar-brand" href="/"><b>や印工務店</b><span>yzrswork</span></a><nav class="yzrs-sitebar-nav" aria-label="主要な案内"><a href="/#guides" aria-current="page">Guide</a><a href="https://apps.yzrswork.com/?yzrs_ref=${escapeHtml(page.toolboxRef)}">道具箱</a><a href="/times/">Times</a><a href="/about/">工房案内</a></nav></div></header>
 <main>
-<section class="article-hero"><nav class="breadcrumbs" aria-label="パンくず"><a href="/">や印工務店</a> ／ <a href="/#guides">Guide 01</a> ／ スターターガイド</nav><p class="kicker">GUIDE 01 ／ ELECTRONICS — BEGINNER</p><h1>はじめての電子工作<br />スターターガイド</h1><p class="dek">部品はどこで買う？ 工具は何から？ 消耗品はどこまで必要？<br />最初の買い物を、実際に揃える順番でひとつにまとめました。</p><div class="facts"><span class="level">● はじめて</span><span>約${escapeHtml(frontmatter.estimated_minutes)}分</span><span>3記事を再編集</span><span>失敗例あり</span></div></section>
+<section class="article-hero"><nav class="breadcrumbs" aria-label="パンくず">${page.breadcrumbs}</nav><p class="kicker">${escapeHtml(page.kicker)}</p><h1>${page.heroTitle}</h1><p class="dek">${page.dek}</p><div class="facts">${factsHtml}</div></section>
 ${stepsHtml}
-<div class="layout"><aside class="toc" aria-label="この記事の目次"><p>CONTENTS</p><nav>${toc.map((item) => `<a href="#${escapeHtml(item.id)}">${escapeHtml(item.text)}</a>`).join('')}</nav><a class="tool-link" href="https://apps.yzrswork.com/kit/?yzrs_ref=guide01-kit">装備ナビでそろえる →</a></aside><div class="content"><div class="origin"><p><strong>3本のnote記事を、1本のGuideへ。</strong></p><p>部品調達・工具・消耗品ストックの記事を、初めて買う人の行動順に再編集しています。</p></div>${needHtml}<article class="article-body" id="article-content">${article}</article><aside class="affiliate" id="affiliate-disclosure"><h2>Amazonアソシエイトについて</h2><p>この記事にはAmazonアソシエイトのアフィリエイトリンクを含みます。リンク経由の購入により、や印工務店が紹介料を受け取る場合があります。Amazonのアソシエイトとして、や印工務店は適格販売により収入を得ています。</p><p>価格・在庫・型番・販売元は購入時にリンク先で確認してください。</p></aside></div></div>
+<div class="layout"><aside class="toc" aria-label="この記事の目次"><p>CONTENTS</p><nav>${toc.map((item) => `<a href="#${escapeHtml(item.id)}">${escapeHtml(item.text)}</a>`).join('')}</nav><a class="tool-link" href="${page.toolLink.href}">${escapeHtml(page.toolLink.text)}</a></aside><div class="content">${originHtml}${needHtml}<article class="article-body" id="article-content">${article}</article>${affiliateHtml}</div></div>
 </main>
 <footer class="site-footer"><div><strong>や印工務店</strong><p>作る。直す。測って確かめる。</p><small>© や印工務店 ／ 記事内容と購入条件は公開時点の情報です。</small></div><nav class="footer-links" aria-label="フッター"><a href="/">工房トップ</a><a href="/about/">工房案内</a><a href="/privacy/">プライバシー</a><a href="https://forms.gle/y3zyPFtuNh8qpj18A">問い合わせ</a><a href="/about/#advertising">広告・Amazon関連表記</a></nav></footer>
 </div>
@@ -375,6 +323,73 @@ ${stepsHtml}
 </body>
 </html>
 `;
+}
 
-writeFileSync(OUTPUT, html, 'utf8');
-console.log(`[build:guide] ${OUTPUT}`);
+async function loadPage(slug) {
+  const pagePath = join(GUIDES_DIR, `${slug}.page.mjs`);
+  if (!existsSync(pagePath)) throw new Error(`${slug}.md に対応する ${slug}.page.mjs がありません`);
+  const { default: page } = await import(pathToFileURL(pagePath).href);
+  if (!page || typeof page !== 'object') throw new Error(`${slug}.page.mjs は default export のオブジェクトである必要があります`);
+  for (const key of REQUIRED_PAGE_KEYS) {
+    if (page[key] === undefined) throw new Error(`${slug}.page.mjs に ${key} がありません`);
+  }
+  return page;
+}
+
+function loadImages(slug) {
+  const manifestPath = join(GUIDES_DIR, `${slug}.images.yaml`);
+  return existsSync(manifestPath) ? parseManifest(readFileSync(manifestPath, 'utf8')) : [];
+}
+
+async function buildGuide(slug) {
+  const source = join(GUIDES_DIR, `${slug}.md`);
+  const output = join(PUBLIC_GUIDES_DIR, slug, 'index.html');
+  const page = await loadPage(slug);
+  const imageConfig = page.images;
+  const images = loadImages(slug);
+  if (imageConfig?.requiredCount !== undefined && (images.length !== imageConfig.requiredCount || images.some((image) => image.rights_review !== false))) {
+    throw new Error(`画像manifestは権利確認済み${imageConfig.requiredCount}点である必要があります`);
+  }
+
+  const { frontmatter, body } = splitSource(readFileSync(source, 'utf8'));
+  const blocks = parseBlocks(body, page.headingIds ?? {});
+  const toc = blocks.filter((block) => block.kind === 'heading' && (block.level === 2 || (page.tocIncludesSteps === true && block.text.startsWith('STEP'))));
+  const article = renderArticle(blocks, images, imageConfig, slug);
+
+  const stepItems = blocks.filter((block) => block.kind === 'heading' && /^STEP\d/.test(block.text));
+  const stepsHtml = page.steps && stepItems.length
+    ? `<ol class="steps" aria-label="3ステップ">${stepItems.map((item, i) => `<li><a href="#${escapeHtml(item.id)}"><b>${i + 1}</b><strong>${escapeHtml(item.text.replace(/^STEP\d+\.\s*/, ''))}</strong><span>${escapeHtml(page.steps.summaries?.[item.id] || '')}</span></a></li>`).join('')}</ol>`
+    : '';
+
+  let needHtml = '';
+  if (page.need) {
+    const needStart = body.indexOf(page.need.anchor);
+    const needSection = needStart >= 0 ? body.slice(needStart).split(/\n#{2,4}\s/)[0] : '';
+    const needItems = [...needSection.matchAll(/^\*\*([^*]+)\*\*\s*$/gm)].map((match) => match[1]);
+    if (needItems.length) {
+      needHtml = `<section class="need" aria-labelledby="need-title"><h2 id="need-title">${escapeHtml(page.need.title)}</h2><ul>${needItems.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul><a href="${escapeHtml(page.need.href)}">${escapeHtml(page.need.linkText)}</a><p class="need-note">${page.need.note}</p></section>`;
+    }
+  }
+
+  const factsHtml = page.facts(frontmatter).map((fact) => `<span${fact.level ? ' class="level"' : ''}>${escapeHtml(fact.text)}</span>`).join('');
+  const originHtml = page.origin?.length
+    ? `<div class="origin">${page.origin.map((paragraph) => `<p>${paragraph}</p>`).join('')}</div>`
+    : '';
+  const affiliateHtml = page.affiliateDisclosure === false
+    ? ''
+    : '<aside class="affiliate" id="affiliate-disclosure"><h2>Amazonアソシエイトについて</h2><p>この記事にはAmazonアソシエイトのアフィリエイトリンクを含みます。リンク経由の購入により、や印工務店が紹介料を受け取る場合があります。Amazonのアソシエイトとして、や印工務店は適格販売により収入を得ています。</p><p>価格・在庫・型番・販売元は購入時にリンク先で確認してください。</p></aside>';
+  const ogImage = imageConfig?.og ? `https://yzrswork.com/guides/${slug}/assets/${imageConfig.og}` : DEFAULT_OG_IMAGE;
+
+  const html = renderPage({ slug, frontmatter, page, ogImage, toc, article, stepsHtml, factsHtml, originHtml, needHtml, affiliateHtml });
+  mkdirSync(dirname(output), { recursive: true });
+  writeFileSync(output, html, 'utf8');
+  console.log(`[build:guide] ${output}`);
+}
+
+const slugs = readdirSync(GUIDES_DIR)
+  .filter((name) => name.endsWith('.md'))
+  .map((name) => name.slice(0, -'.md'.length))
+  .sort();
+for (const slug of slugs) {
+  await buildGuide(slug);
+}

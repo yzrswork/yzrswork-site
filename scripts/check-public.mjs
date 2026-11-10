@@ -12,8 +12,13 @@ const APPS_BASE = `https://${APPS_HOST}`;
 const ROUTE_KEY_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const GUIDE = 'guides/hajimete-no-denshi-kousaku-starter-guide/index.html';
 const GUIDE_SOURCE = 'content/guides/hajimete-no-denshi-kousaku-starter-guide.md';
-const GUIDE_BUILD = 'scripts/build-guide.mjs';
+// apps導線（道具箱・サイドバー）の定義はguideごとの .page.mjs に置かれる（scripts/build-guide.mjs は全guide共通）
+const GUIDE_BUILD = 'content/guides/hajimete-no-denshi-kousaku-starter-guide.page.mjs';
 const GUIDE_URL = `${BASE}/guides/hajimete-no-denshi-kousaku-starter-guide/`;
+const AUX_GUIDE = 'guides/aux-no-sound/index.html';
+const AUX_GUIDE_SOURCE = 'content/guides/aux-no-sound.md';
+const AUX_GUIDE_BUILD = 'content/guides/aux-no-sound.page.mjs';
+const AUX_GUIDE_URL = `${BASE}/guides/aux-no-sound/`;
 const LP = 'lp/electronics-starter/index.html';
 const LP_URL = `${BASE}/lp/electronics-starter/`;
 const MAKERS_BENCH_EN = 'en/tools/makers-bench/index.html';
@@ -74,7 +79,7 @@ const WORKS = [
     requiredText: ['IM-1', 'インフィニティミラー', '120 × 165 mm', '5V / DC 5.5×2.1mm center positive', 'Digispark (ATtiny85)', '前面ガラスを約10度傾けた', 'Arduino Nanoはハーフミラーに映り込むためDigispark（ATtiny85）へ変更しました。内壁を黒にして余計な乱反射を抑え、3ポジションSWのフローティング問題に詰まった結果、2ポジションの演出へ絞るようにしています。'],
   },
 ];
-const pages = ['index.html', 'about/index.html', 'privacy/index.html', MAKERS_BENCH_EN, REPAIR_EN, SALVAGE_EN, GUIDE, LP, ...WORKS.map(({ page }) => page)];
+const pages = ['index.html', 'about/index.html', 'privacy/index.html', MAKERS_BENCH_EN, REPAIR_EN, SALVAGE_EN, GUIDE, AUX_GUIDE, LP, ...WORKS.map(({ page }) => page)];
 const uiPages = [TIMES, EVENING];
 const analyticsPages = new Set(pages);
 const errors = [];
@@ -191,7 +196,7 @@ function checkLinks(page, html) {
 
 const expectedFiles = [
   'index.html', 'about/index.html', 'privacy/index.html', 'analytics.js', 'ads.txt', 'robots.txt', 'sitemap.xml', 'og.png', FOUNDATION,
-  GUIDE, LP,
+  GUIDE, AUX_GUIDE, LP,
   TIMES, EVENING,
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/tools-step1-set.jpg',
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/tools-step2-set.jpg',
@@ -221,7 +226,7 @@ for (const [page, html] of htmlByPage) {
   checkLinks(page, html);
 }
 
-const foundationPages = ['index.html', 'about/index.html', 'privacy/index.html', GUIDE, LP];
+const foundationPages = ['index.html', 'about/index.html', 'privacy/index.html', GUIDE, AUX_GUIDE, LP];
 const foundationCss = read(FOUNDATION);
 for (const page of foundationPages) {
   const html = htmlByPage.get(page);
@@ -291,8 +296,46 @@ for (const [pathname, routeKey] of [
   ['/handa/', 'guide01-handa'],
   ['/bench/', 'guide01-bench'],
 ]) checkExpectedRoute(GUIDE_SOURCE, guideSource, pathname, routeKey, true);
-checkExpectedRoute(GUIDE_BUILD, guideBuild, '/', 'guide01-toolbox');
-checkExpectedRoute(GUIDE_BUILD, guideBuild, '/kit/', 'guide01-kit');
+if (!guideBuild.includes("toolboxRef: 'guide01-toolbox'")) errors.push(`apps routeがない: ${GUIDE_BUILD}: guide01-toolbox`);
+if (!guideBuild.includes(`'${appUrl('/kit/', 'guide01-kit')}'`)) errors.push(`apps routeがない: ${GUIDE_BUILD}: ${appUrl('/kit/', 'guide01-kit')}`);
+
+const auxGuideSource = readRoot(AUX_GUIDE_SOURCE);
+const auxGuideBuild = readRoot(AUX_GUIDE_BUILD);
+const auxGuideApp = htmlByPage.get(AUX_GUIDE);
+checkAppLinks(AUX_GUIDE, auxGuideApp);
+checkExpectedRoute(AUX_GUIDE, auxGuideApp, '/', 'auxguide-toolbox');
+if (!auxGuideBuild.includes("toolboxRef: 'auxguide-toolbox'")) errors.push(`apps routeがない: ${AUX_GUIDE_BUILD}: auxguide-toolbox`);
+for (const [page, content] of [[AUX_GUIDE_SOURCE, auxGuideSource], [AUX_GUIDE_BUILD, auxGuideBuild]]) {
+  for (const match of content.matchAll(/https?:\/\/apps\.yzrswork\.com\/[^"'\s)]+/gi)) checkAppUrl(page, match[0]);
+}
+const auxFixitUrl = 'https://apps.yzrswork.com/fixit/?yzrs_ref=auxguide-fixit#aux-no-sound';
+if (countOccurrences(auxGuideApp, `href="${auxFixitUrl}"`) < 2) errors.push('AUX GuideのFix-it導線が2件未満');
+if (countOccurrences(auxGuideSource, `](${auxFixitUrl})`) < 2) errors.push('AUX source のFix-it Markdownリンクが2件未満');
+for (const expected of [
+  'href="https://note.com/yzrswork/n/n4ca2e1ba5b8e"',
+  'href="https://note.com/yzrswork/n/ne871f1c34dd9"',
+  'href="/guides/hajimete-no-denshi-kousaku-starter-guide/"',
+]) if (!auxGuideApp.includes(expected)) errors.push(`AUX Guideにリンクがない: ${expected}`);
+if (!guideApp.includes('href="/guides/aux-no-sound/"')) errors.push('Guide 01からAUX Guideへの導線がない');
+for (const id of ['symptoms', 'causes', 'what-to-measure', 'tools', 'measurements', 'next']) {
+  if (!auxGuideApp.includes(`id="${id}"`)) errors.push(`AUX Guideのheading idがない: ${id}`);
+}
+if (!/<title>[^<]*AUX[^<]*<\/title>/.test(auxGuideApp)) errors.push('AUX GuideのtitleにAUXがない');
+for (const forbidden of ['amzn.to', 'amazon.co.jp', 'link.amazon', '円']) {
+  if (auxGuideApp.includes(forbidden)) errors.push(`AUX Guideに禁止語がある: ${forbidden}`);
+}
+if (/\{\{[^}]+\}\}/.test(auxGuideApp)) errors.push('AUX Guideに未解決placeholderがある');
+const auxArticleStart = auxGuideApp.indexOf('<article class="article-body"');
+const auxArticleEnd = auxArticleStart >= 0 ? auxGuideApp.indexOf('</article>', auxArticleStart) : -1;
+if (auxArticleStart < 0 || auxArticleEnd < 0) {
+  errors.push('AUX Guideのarticle-bodyがない');
+} else {
+  const auxArticle = auxGuideApp.slice(auxArticleStart, auxArticleEnd);
+  if (auxArticle.includes('<figure')) errors.push('AUX Guideの本文にfigureがある');
+  if (auxArticle.includes('<img')) errors.push('AUX Guideの本文にimgがある');
+}
+if (!auxGuideApp.includes('grid-template-columns:minmax(0,1fr)')) errors.push('AUX Guide mobile layoutがminmax(0,1fr)ではない');
+if (!auxGuideApp.includes('.article-body a{overflow-wrap:anywhere;word-break:break-word}')) errors.push('AUX Guide long URL wrap契約がない');
 
 for (const [page, content] of [[GUIDE_SOURCE, guideSource], [GUIDE_BUILD, guideBuild]]) {
   for (const match of content.matchAll(/https?:\/\/apps\.yzrswork\.com\/[^"'\s)]+/gi)) checkAppUrl(page, match[0]);
@@ -313,6 +356,7 @@ const canonicalExpectations = {
   [REPAIR_EN]: REPAIR_EN_URL,
   [SALVAGE_EN]: SALVAGE_EN_URL,
   [GUIDE]: GUIDE_URL,
+  [AUX_GUIDE]: AUX_GUIDE_URL,
   [LP]: LP_URL,
   ...Object.fromEntries(WORKS.map(({ page, url }) => [page, url])),
   [TIMES]: TIMES_URL,
@@ -333,6 +377,9 @@ for (const path of ['/about/', '/privacy/', '/guides/hajimete-no-denshi-kousaku-
 const guide = htmlByPage.get(GUIDE);
 if (!guide.includes('<meta name="robots" content="index,follow,max-image-preview:large"')) errors.push('Guideのrobotsが不一致');
 if (!guide.includes('<script type="application/ld+json">')) errors.push('GuideのJSON-LDがない');
+const auxGuide = htmlByPage.get(AUX_GUIDE);
+if (!auxGuide.includes('<meta name="robots" content="index,follow,max-image-preview:large"')) errors.push('AUX Guideのrobotsが不一致');
+if (!auxGuide.includes('<script type="application/ld+json">')) errors.push('AUX GuideのJSON-LDがない');
 
 const lp = htmlByPage.get(LP);
 for (const [label, expected] of [
@@ -393,7 +440,7 @@ for (const spec of WORKS) {
 const robots = read('robots.txt');
 if (!robots.includes('Sitemap: https://yzrswork.com/sitemap.xml')) errors.push('robots.txtのSitemap指定がない');
 const sitemap = read('sitemap.xml');
-for (const url of [BASE + '/', TIMES_URL, `${BASE}/about/`, `${BASE}/privacy/`, MAKERS_BENCH_EN_URL, REPAIR_EN_URL, SALVAGE_EN_URL, GUIDE_URL]) {
+for (const url of [BASE + '/', TIMES_URL, `${BASE}/about/`, `${BASE}/privacy/`, MAKERS_BENCH_EN_URL, REPAIR_EN_URL, SALVAGE_EN_URL, GUIDE_URL, AUX_GUIDE_URL]) {
   if (!sitemap.includes(`<loc>${url}</loc>`)) errors.push(`sitemapにURLがない: ${url}`);
 }
 if (sitemap.includes('/lp/electronics-starter/') || sitemap.includes('/evening.html')) errors.push('sitemapにnoindexまたはlegacy URLがある');

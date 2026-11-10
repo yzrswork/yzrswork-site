@@ -13,6 +13,7 @@ const urls = [
   'https://yzrswork.com/en/builds/usb-boost-cable-repair/',
   'https://yzrswork.com/en/builds/volt-1/',
   'https://yzrswork.com/guides/hajimete-no-denshi-kousaku-starter-guide/',
+  'https://yzrswork.com/guides/aux-no-sound/',
   'https://yzrswork.com/junkyard/works/mo-1/',
   'https://yzrswork.com/junkyard/works/compo-1/',
   'https://yzrswork.com/junkyard/works/pdb-1/',

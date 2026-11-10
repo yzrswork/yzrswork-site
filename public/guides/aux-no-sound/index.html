@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bluetoothは鳴るのにAUXだけ無音 — 3.5mmジャックの挿入検出DETをテスターで切り分ける｜や印工務店</title>
+<meta name="description" content="Bluetoothは鳴るのに3.5mm AUX入力だけ無音のとき、純正AUX INでは鳴るのに外部ジャックでは鳴らないなら、挿入検出DETの配線が抜けている可能性があります。テスターでDET-GND間の導通をプラグの有無で確かめる切り分け手順をまとめました。" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<meta name="google-adsense-account" content="ca-pub-8467165715973366" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:title" content="Bluetoothは鳴るのにAUXだけ無音 — 3.5mmジャックの挿入検出DETをテスターで切り分ける" />
+<meta property="og:description" content="Bluetoothは鳴るのに3.5mm AUX入力だけ無音のとき、純正AUX INでは鳴るのに外部ジャックでは鳴らないなら、挿入検出DETの配線が抜けている可能性があります。テスターでDET-GND間の導通をプラグの有無で確かめる切り分け手順をまとめました。" />
+<meta property="og:url" content="https://yzrswork.com/guides/aux-no-sound/" />
+<meta property="og:image" content="https://yzrswork.com/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="canonical" href="https://yzrswork.com/guides/aux-no-sound/" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Bluetoothは鳴るのにAUXだけ無音 — 3.5mmジャックの挿入検出DETをテスターで切り分ける","description":"Bluetoothは鳴るのに3.5mm AUX入力だけ無音のとき、純正AUX INでは鳴るのに外部ジャックでは鳴らないなら、挿入検出DETの配線が抜けている可能性があります。テスターでDET-GND間の導通をプラグの有無で確かめる切り分け手順をまとめました。","image":"https://yzrswork.com/og.png","author":{"@type":"Person","name":"や印工務店","url":"https://yzrswork.com/about/"},"publisher":{"@type":"Organization","name":"や印工務店","url":"https://yzrswork.com/"},"mainEntityOfPage":"https://yzrswork.com/guides/aux-no-sound/","inLanguage":"ja"}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8467165715973366" crossorigin="anonymous"></script>
+<script src="/analytics.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+:root{--paper:var(--yzrs-paper,#f8f9fb);--paper-deep:var(--yzrs-paper-deep,#eef1f4);--raised:var(--yzrs-paper-raised,#fff);--card:var(--yzrs-paper-raised,#fff);--ink:var(--yzrs-ink,#1b2530);--clay:var(--yzrs-accent,#b5451b);--clay-text:var(--yzrs-accent-text,#9a3a16);--tint:var(--yzrs-action-tint,#e9eff4);--sub:var(--yzrs-action,#3f5f7a);--sub-deep:var(--yzrs-action-deep,#2b4256);--muted:var(--yzrs-muted,#5d6b78);--line:var(--yzrs-separator,#e3e7ec);--line-strong:var(--yzrs-line-strong,#cfd6de);--sans:var(--yzrs-sans,"Noto Sans JP","Yu Gothic",sans-serif);--mono:var(--yzrs-mono,"DM Mono",monospace);--gut:clamp(16px,5vw,56px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.85 var(--sans);letter-spacing:.02em;-webkit-font-smoothing:antialiased}
+a{color:var(--clay-text);text-underline-offset:3px}
+.skip-link{position:fixed;top:8px;left:8px;z-index:10;padding:8px 12px;border-radius:8px;background:var(--sub);color:#fff;transform:translateY(-150%)}
+.skip-link:focus{transform:none}
+.page{max-width:1240px;margin:0 auto;background:var(--paper)}
+.article-hero{padding:clamp(32px,6vw,64px) var(--gut) 24px}
+.breadcrumbs{font:12px var(--mono);letter-spacing:.04em;color:var(--muted)}
+.kicker{display:block;margin:24px 0 12px;color:var(--clay-text);font:500 11.5px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.article-hero h1{max-width:920px;margin:0;color:var(--ink);font-size:clamp(32px,6vw,56px);line-height:1.3;font-weight:700;letter-spacing:.01em}
+.dek{max-width:680px;margin:24px 0 0;font-size:17px;line-height:1.85;color:var(--muted)}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 0;padding:0;list-style:none;font-size:13px}
+.facts span{display:inline-block;padding:4px 12px;border:1px solid var(--line-strong);border-radius:999px;background:var(--card);color:var(--muted)}
+.facts .level{border-color:var(--sub);background:var(--tint);color:var(--sub-deep)}
+.steps{max-width:calc(1078px + 2 * var(--gut));margin-inline:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px;margin:0;padding:0 var(--gut) 32px;list-style:none}
+.steps a{display:block;height:100%;padding:20px;border-radius:12px;background:var(--card);border:1px solid var(--line-strong);color:var(--ink);text-decoration:none}
+.steps a:hover{border-color:var(--sub)}
+.steps b{display:inline-grid;place-items:center;width:32px;height:32px;margin-bottom:8px;border-radius:50%;background:var(--sub);color:#fff;font:500 13px var(--mono)}
+.steps strong{display:block;font-size:17px;line-height:1.5}
+.steps span{display:block;margin-top:4px;font-size:14px;line-height:1.7;color:var(--muted)}
+.layout{display:grid;grid-template-columns:250px minmax(0,780px);justify-content:center;gap:clamp(20px,4vw,48px);padding:0 var(--gut) 64px;align-items:start}
+.layout>*{min-width:0}
+.article-body{min-width:0}
+.article-body a{overflow-wrap:anywhere;word-break:break-word}
+.article-body a:not(.tool-link){color:var(--clay-text)}
+.breadcrumbs a,.need a{color:var(--clay-text)}
+.breadcrumbs a{display:inline-block;padding:4px 0}
+.toc{position:sticky;top:20px;padding:12px 16px;border-radius:12px;background:var(--card);border:1px solid var(--line)}
+.toc>p{margin:4px 0 8px;color:var(--clay-text);font:500 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.toc nav{display:grid}
+.toc nav a[aria-current="true"]{color:var(--sub-deep);font-weight:700;box-shadow:inset 3px 0 0 var(--sub);padding-left:10px;background:var(--tint)}
+.toc nav a{display:flex;align-items:center;min-height:44px;padding:4px 0;border-top:1px solid var(--line);color:var(--ink);font-size:14px;line-height:1.5;text-decoration:none}
+.toc .tool-link{display:flex;align-items:center;justify-content:center;min-height:48px;margin-top:16px;padding:0 16px;border-radius:8px;background:var(--sub);color:#fff;font-weight:700;text-decoration:none}
+.toc .tool-link:hover{background:var(--sub-deep)}
+.content{padding:clamp(20px,4vw,44px);border-radius:12px;background:var(--card);border:1px solid var(--line)}
+.origin{margin-bottom:32px;padding:4px 0 4px 16px;border-left:2px solid var(--sub)}
+.need{margin:0 0 40px;padding:20px;border:1px solid var(--line-strong);border-radius:12px;background:var(--paper)}
+.need h2{margin:0 0 8px;font-size:16px}
+.need ul{margin:0 0 12px;padding-left:1.2em}
+.need a{font-weight:700}
+.need .need-note{margin:12px 0 0;font-size:12.5px;line-height:1.7;color:var(--muted)}
+.need .need-note a{font-weight:400}
+.origin p{margin:0;font-size:15px}
+.origin p+p{margin-top:8px}
+.article-body h2{margin:64px 0 16px;padding:0 0 12px;border-bottom:1px solid var(--line-strong);color:var(--ink);font-size:clamp(23px,4vw,30px);line-height:1.5;font-weight:700;scroll-margin-top:16px}
+.article-body h3{margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line);color:var(--ink);font-size:clamp(21px,3.4vw,25px);line-height:1.5;font-weight:700;scroll-margin-top:16px}
+.article-body h4{margin:32px 0 8px;font-size:18px;font-weight:700;color:var(--ink)}
+.article-body p{margin:0 0 24px;line-height:1.9}
+.article-body ul{margin:0 0 24px;padding-left:1.4em}
+.article-body li+li{margin-top:8px}
+.article-body blockquote{margin:32px 0;padding:16px 20px;border-radius:8px;border-left:2px solid var(--clay);background:var(--paper-deep);font-weight:700}
+.article-body hr{margin:48px 0;border:0;border-top:1px solid var(--line)}
+.article-body code{padding:1px 6px;border-radius:4px;background:var(--paper-deep);font:13px var(--mono)}
+.article-figure{margin:32px 0 48px;padding:0}
+.article-figure img{display:block;width:100%;height:auto;border:1px solid var(--line-strong);border-radius:0;background:#fff}
+.article-figure figcaption{padding:8px 0;border-bottom:1px solid var(--line);color:var(--muted);font:12px/1.7 var(--mono);letter-spacing:.04em}
+.affiliate{margin-top:56px;padding:20px 24px;border:1px solid var(--line);border-radius:12px;background:var(--paper-deep)}
+.affiliate h2{margin:0 0 8px;padding:0;border:0;background:none;color:var(--clay-text);font:500 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.affiliate p{margin:8px 0;font-size:13px}
+.site-footer{display:grid;grid-template-columns:1fr auto;gap:24px;padding:32px var(--gut);border-top:1px solid var(--line);background:var(--raised)}
+.footer-links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:0 8px;font-size:13px}
+.footer-links a{display:inline-flex;align-items:center;min-height:44px;padding:0 6px;color:var(--clay-text)}
+.site-footer p{margin:4px 0}
+.site-footer small{font:11px var(--mono);color:var(--muted)}
+@media(max-width:900px){.layout{grid-template-columns:minmax(0,1fr)}
+.toc{position:static;padding:0;border:0;background:none}
+.toc>p,.toc nav{display:none}
+.toc .tool-link{margin-top:0;background:var(--card);border:1px solid var(--sub);color:var(--sub-deep)}
+.toc .tool-link:hover{background:var(--tint)}
+.site-footer{grid-template-columns:1fr}
+.footer-links{justify-content:flex-start}
+}
+@media(max-width:540px){.page{margin:0}
+}
+.mtoc{display:none}
+@media(max-width:900px){body{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+.mtoc{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:8px;align-items:flex-end;padding:8px max(12px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));background:var(--raised);border-top:1px solid var(--line-strong)}
+.mtoc details{flex:1;min-width:0}
+.mtoc summary{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:8px;background:var(--sub);color:#fff;font-weight:700;list-style:none}
+.mtoc summary::-webkit-details-marker{display:none}
+.mtoc details[open] summary{margin-top:8px}
+.mtoc-list{display:grid;max-height:55vh;overflow-y:auto;order:-1}
+.mtoc details[open]{display:flex;flex-direction:column-reverse}
+.mtoc-list a{display:flex;align-items:center;min-height:44px;border-bottom:1px solid var(--line);color:var(--ink);font-size:14px;text-decoration:none}
+.mtoc-top{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:8px;border:1px solid var(--line-strong);background:var(--card);font-size:14px;text-decoration:none;color:var(--ink)}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+}
+</style>
+<link rel="stylesheet" href="/styles/yzrs-ui.css" />
+<link rel="stylesheet" href="/styles/yzrs-header.css" />
+</head>
+<body class="yzrs-ui">
+<a class="skip-link" href="#article-content">本文へ移動</a>
+<div class="page">
+<header class="yzrs-sitebar"><div class="yzrs-sitebar-inner"><a class="yzrs-sitebar-brand" href="/"><b>や印工務店</b><span>yzrswork</span></a><nav class="yzrs-sitebar-nav" aria-label="主要な案内"><a href="/#guides" aria-current="page">Guide</a><a href="https://apps.yzrswork.com/?yzrs_ref=auxguide-toolbox">道具箱</a><a href="/times/">Times</a><a href="/about/">工房案内</a></nav></div></header>
+<main>
+<section class="article-hero"><nav class="breadcrumbs" aria-label="パンくず"><a href="/">や印工務店</a> ／ <a href="/#guides">Guide</a> ／ AUXだけ無音の切り分け</nav><p class="kicker">GUIDE ／ ELECTRONICS — TROUBLESHOOTING</p><h1>Bluetoothは鳴るのにAUXだけ無音<br />3.5mmジャックの挿入検出DETをテスターで切り分ける</h1><p class="dek">Bluetoothは鳴るのに、AUX入力だけ音が出ない。<br />純正ジャックと外部ジャックの違いを、導通チェックで確かめる手順にまとめました。</p><div class="facts"><span class="level">● 切り分け</span><span>約6分</span><span>実測あり</span><span>失敗例あり</span></div></section>
+
+<div class="layout"><aside class="toc" aria-label="この記事の目次"><p>CONTENTS</p><nav><a href="#symptoms">症状</a><a href="#causes">原因候補</a><a href="#what-to-measure">何を測るか</a><a href="#tools">使う道具</a><a href="#measurements">関連する実測</a><a href="#next">次に読む</a></nav><a class="tool-link" href="https://apps.yzrswork.com/fixit/?yzrs_ref=auxguide-fixit#aux-no-sound">Fix-itで切り分ける →</a></aside><div class="content"><div class="origin"><p><strong>note記事を、切り分け手順の型で再編集。</strong></p><p>「Bluetoothは鳴るのにAUXは無音。YS-AP50Lの挿入検出DETを追った話」を、症状→原因候補→何を測るか の順に並べ直しています。</p></div><article class="article-body" id="article-content"><p>Bluetoothスピーカーを作っているとき、Bluetoothでは普通に鳴るのに、外部のAUX入力からだけ音が出ないという症状にぶつかりました。</p>
+<p>原因は3.5mmジャックの挿入検出DETでした。アンプ基板の純正AUXジャックにはプラグが挿さったことを知らせる端子があり、外部へ引き出すときにそれを持ってこなかったのです。</p>
+<p>このページは、note記事「<a href="https://note.com/yzrswork/n/n4ca2e1ba5b8e" target="_blank" rel="noopener noreferrer">Bluetoothは鳴るのにAUXは無音。YS-AP50Lの挿入検出DETを追った話</a>」を、切り分け手順の型で組み直した版です。経緯は元記事にあります。</p>
+<h2 id="symptoms">症状</h2>
+<p>Bluetoothで再生すると音は出ます。一方、外部に引き出したAUX入力へプラグを挿しても音が出ません。</p>
+<p>切り分けの結果は次のとおりでした。</p>
+<ul><li>信号源（MO-1）：正常</li><li>ケーブル：正常</li><li>基板の純正AUX INへプラグを直接挿す：正常に再生する</li><li>外部化したAUXジャックへプラグを挿す：鳴らない</li></ul>
+<p>信号源もケーブルも、基板のAUX入力そのものも生きています。純正AUX INでは鳴るのに外部ジャックでは鳴らないので、問題は基板のAUX INから外部ジャックへ延長した部分に絞られます。</p>
+<h2 id="causes">原因候補</h2>
+<p>症状から、次の3つを順番に疑いました。</p>
+<ul><li>信号源とケーブル：最初に確認した場所です。MO-1もケーブルも正常だったので、候補から外れました。</li><li>外部化した配線：純正AUXジャックから外部ジャックへ、L / R / GNDだけをつないでいました。音声を入れるだけならこれで足りそうに見えます。</li><li>ジャックの挿入検出接点：純正ジャックは、プラグを挿すとDETという端子がGNDへつながります。アンプ基板はこの接点の状態も見てAUXへ切り替えていて、外部化したときにDETを持ってこなかったことが原因でした。</li></ul>
+<p>ここで紛らわしいのが、前回の記事で扱ったSW端子です。HLA-3501D1Iというスイッチ付きジャックのTIP-SW端子は、機械的なスイッチ接点で、プラグ未挿入で導通、挿入で非導通になります。</p>
+<p>一方のDETは、プラグなしでDET-GND非導通、プラグありで導通です。どちらもプラグの挿抜で接点が動きますが、大事なのはその接点を回路側が何のために使っているかです。</p>
+<p>L / R / GNDが正しくつながっていても、機器側がDETを見て入力を切り替えているなら、それだけでは純正ジャックと同じ動作にはなりません。</p>
+<h2 id="what-to-measure">何を測るか</h2>
+<p>テスターの導通チェックで、DETとGNDの間をプラグの有無で測ります。今回の測定結果は次のとおりです。</p>
+<ul><li>プラグなし：DET-GND 導通なし</li><li>プラグあり：DET-GND 導通あり</li></ul>
+<p>プラグの有無で導通が変わるなら、その端子は挿抜で動く接点です。</p>
+<p>切り分けは次の順番で進めます。</p>
+<ul><li>1. 信号源：信号源が正常に出力しているかを確認する。</li><li>2. ケーブル：ケーブルに問題がないかを確認する。</li><li>3. 純正入力：基板の純正AUX INへプラグを直接挿し、鳴るかを確認する。ここで鳴れば、基板側は生きています。</li><li>4. 外部化した配線：純正ジャックから外部ジャックまでのL / R / GNDを確認する。</li><li>5. プラグ有無で変化する接点：純正ジャックのDET-GNDを、プラグの有無で導通チェックする。</li></ul>
+<p>純正入力では鳴るのに外部ジャックでは鳴らないなら、4と5を重点的に見てください。</p>
+<p>直し方としては、DETを自動検出のまま外部ジャックへ複製する方法があります。用途によっては自動検出を再現せず、トグルスイッチで手動切り替えにする方法もあります。今回の展示機では後者を選び、DET --- トグル --- GNDという単純な配線にしました。トグルOFFでDET-GND非導通（Bluetooth）、ONでDET-GND導通（AUX）になります。</p>
+<h2 id="tools">使う道具</h2>
+<p>今回の切り分けで一番働いたのは導通チェックでした。必要な道具はテスターで、2点がつながっているかを確かめる導通チェックが主役です。</p>
+<p>テスターの選び方は<a href="/guides/hajimete-no-denshi-kousaku-starter-guide/">はじめての電子工作 スターターガイド</a>で扱っています。</p>
+<p>切り分けを順番に絞り込みたいときは、<a href="https://apps.yzrswork.com/fixit/?yzrs_ref=auxguide-fixit#aux-no-sound" target="_blank" rel="noopener">Fix-it の「AUXだけ鳴らない」ツリーで切り分けを進める</a>のが使えます。</p>
+<h2 id="measurements">関連する実測</h2>
+<ul><li><a href="https://note.com/yzrswork/n/n4ca2e1ba5b8e" target="_blank" rel="noopener noreferrer">Bluetoothは鳴るのにAUXは無音。YS-AP50Lの挿入検出DETを追った話（note）</a>：このページの元になった記事。プラグの有無によるDET-GNDの導通変化と、DETを外部へ持ってこなかったことによる無音の経緯を書いています。</li><li><a href="https://note.com/yzrswork/n/ne871f1c34dd9" target="_blank" rel="noopener noreferrer">3.5mmモノラルジャックの配線記録（note）</a>：前段の記事。SW端子をGNDだと思い込んで配線し、プラグを挿した瞬間に回路を切断してしまった話です。</li></ul>
+<h2 id="next">次に読む</h2>
+<ul><li><a href="https://apps.yzrswork.com/fixit/?yzrs_ref=auxguide-fixit#aux-no-sound" target="_blank" rel="noopener">Fix-it の「AUXだけ鳴らない」ツリー</a>：切り分けの手順を順番に進められます。</li><li><a href="/guides/hajimete-no-denshi-kousaku-starter-guide/">はじめての電子工作 スターターガイド</a>：テスターの選び方はこちら。</li><li><a href="https://note.com/yzrswork/n/n4ca2e1ba5b8e" target="_blank" rel="noopener noreferrer">Bluetoothは鳴るのにAUXは無音。YS-AP50Lの挿入検出DETを追った話（note）</a>：DETを追った元の記事。</li></ul></article></div></div>
+</main>
+<footer class="site-footer"><div><strong>や印工務店</strong><p>作る。直す。測って確かめる。</p><small>© や印工務店 ／ 記事内容と購入条件は公開時点の情報です。</small></div><nav class="footer-links" aria-label="フッター"><a href="/">工房トップ</a><a href="/about/">工房案内</a><a href="/privacy/">プライバシー</a><a href="https://forms.gle/y3zyPFtuNh8qpj18A">問い合わせ</a><a href="/about/#advertising">広告・Amazon関連表記</a></nav></footer>
+</div>
+<nav class="mtoc" aria-label="ページ内の移動"><details><summary>目次</summary><div class="mtoc-list"><a href="#symptoms">症状</a><a href="#causes">原因候補</a><a href="#what-to-measure">何を測るか</a><a href="#tools">使う道具</a><a href="#measurements">関連する実測</a><a href="#next">次に読む</a></div></details><a class="mtoc-top" href="#">↑ 上へ</a></nav>
+<script>document.querySelectorAll('.mtoc-list a').forEach((a)=>a.addEventListener('click',()=>a.closest('details').removeAttribute('open')));</script>
+<script>(()=>{const links=[...document.querySelectorAll('.toc nav a')];const map=new Map(links.map((a)=>[a.getAttribute('href').slice(1),a]));if(!('IntersectionObserver' in window))return;const io=new IntersectionObserver((entries)=>{for(const e of entries){if(e.isIntersecting&&map.has(e.target.id)){links.forEach((a)=>a.removeAttribute('aria-current'));map.get(e.target.id).setAttribute('aria-current','true');}}},{rootMargin:'0px 0px -70% 0px'});map.forEach((_,id)=>{const el=document.getElementById(id);if(el)io.observe(el);});})();</script>
+</body>
+</html>
