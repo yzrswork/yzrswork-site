@@ -1,0 +1,70 @@
+// Guide 01 page settings. Read by scripts/build-guide.mjs.
+export default {
+  headingIds: {
+    'この記事で分かること': 'overview',
+    '結論': 'answer',
+    '対象読者': 'audience',
+    '作業手順：3ステップで揃える': 'three-steps',
+    'STEP1. 部品はどこで買う？': 'step-1',
+    'STEP2. 工具は何から揃える？': 'step-2',
+    'STEP3. 消耗品と部品ストックは？': 'step-3',
+    '確認方法：買う前にここだけ確認': 'check-before-buying',
+    '失敗例：買い方でつまずいた話': 'failure-notes',
+    '注意点': 'cautions',
+    'まとめ': 'summary',
+    '次に読む記事': 'next',
+  },
+  images: {
+    files: {
+      'tools-step1-set': 'tools-step1-set.jpg',
+      'tools-step2-set': 'tools-step2-set.jpg',
+      'tools-step3-psu': 'tools-step3-psu.jpg',
+      'parts-amazon-stock-set': 'parts-amazon-stock-set.png',
+      'parts-domestic-stock-set': 'parts-domestic-stock-set.png',
+      'parts-china-stock-set': 'parts-china-stock-set.png',
+    },
+    // 読み込み中に本文がずれないよう、img に実寸の width/height を入れる。
+    sizes: {
+      'tools-step1-set.jpg': [1168, 784],
+      'tools-step2-set.jpg': [1168, 784],
+      'tools-step3-psu.jpg': [1168, 784],
+      'parts-amazon-stock-set.png': [1376, 768],
+      'parts-domestic-stock-set.png': [1376, 768],
+      'parts-china-stock-set.png': [1376, 768],
+    },
+    requiredCount: 6,
+    og: 'tools-step1-set.jpg',
+  },
+  toolboxRef: 'guide01-toolbox',
+  breadcrumbs: '<a href="/">や印工務店</a> ／ <a href="/#guides">Guide 01</a> ／ スターターガイド',
+  kicker: 'GUIDE 01 ／ ELECTRONICS — BEGINNER',
+  heroTitle: 'はじめての電子工作<br />スターターガイド',
+  dek: '部品はどこで買う？ 工具は何から？ 消耗品はどこまで必要？<br />最初の買い物を、実際に揃える順番でひとつにまとめました。',
+  facts: (frontmatter) => [
+    { text: '● はじめて', level: true },
+    { text: `約${frontmatter.estimated_minutes}分` },
+    { text: '3記事を再編集' },
+    { text: '失敗例あり' },
+  ],
+  tocIncludesSteps: true,
+  steps: {
+    summaries: {
+      'step-1': 'Amazon、AliExpress、秋月、千石、aitendoの使い分け',
+      'step-2': '最初に買う3つと、そのあとに足す順番',
+      'step-3': 'セット品で済むものと、ケチらないもの',
+    },
+  },
+  need: {
+    anchor: '#### まず絶対いる3つ',
+    title: '最初にそろえるもの',
+    href: 'https://apps.yzrswork.com/kit/?yzrs_ref=guide01-kit-need&solder=yes',
+    linkText: 'この道具を装備ナビでそろえる →',
+    note: '記事内の商品リンクの一部はAmazonアソシエイトです。<a href="#affiliate-disclosure">くわしく</a>',
+  },
+  toolLink: { href: 'https://apps.yzrswork.com/kit/?yzrs_ref=guide01-kit', text: '装備ナビでそろえる →' },
+  origin: [
+    '<strong>3本のnote記事を、1本のGuideへ。</strong>',
+    '部品調達・工具・消耗品ストックの記事を、初めて買う人の行動順に再編集しています。',
+  ],
+  affiliateDisclosure: true,
+};
