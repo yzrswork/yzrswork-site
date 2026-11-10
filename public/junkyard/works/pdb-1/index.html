@@ -1,4 +1,4 @@
-<!-- GENERATED DERIVATIVE: yzrswork/obsidian-vault@1c9235d065eaa656aa1a0556f6c8242cd81d7201 / PlayGuide_HTML/yzrsnote_A5_pages/data/junk-yard-2026.json; generated from the shared work-page pattern, then adapted only for this production route; do not edit content by hand. -->
+<!-- GENERATED DERIVATIVE: yzrswork/obsidian-vault@769f7325c95c160def77ea871ceaacf82d9f00d9 / PlayGuide_HTML/yzrsnote_A5_pages/data/junk-yard-2026.json; generated with scripts/generate_work_pages.py --slug pdb-1, then adapted only for this production route; do not edit content by hand. -->
 <!doctype html>
 <html lang="ja">
 <head>
@@ -52,6 +52,9 @@ h1 { margin: 8px 0 0; color: var(--navy); font-size: clamp(2.35rem, 13vw, 4.5rem
 .asset-state { padding: 20px; color: var(--muted); font-size: .72rem; text-align: center; }
 section { padding: 24px 0; border-bottom: 1px solid var(--rule); }
 h2 { margin: 0 0 12px; font-size: .75rem; letter-spacing: .15em; color: var(--accent); }
+h3 { margin: 0 0 4px; font-size: .95rem; color: var(--navy); }
+.archive-item { margin: 0 0 16px; }
+.archive-item:last-child { margin-bottom: 0; }
 p { margin: 0; font-size: 1rem; line-height: 1.85; overflow-wrap: anywhere; }
 dl { margin: 0; }
 .spec { display: grid; grid-template-columns: minmax(5.5rem, 30%) minmax(0, 1fr); gap: 8px 14px; padding: 10px 0; border-bottom: 1px dotted var(--rule); }
@@ -89,6 +92,18 @@ dd { margin: 0; font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; f
   <section>
     <h2>PRODUCTION MEMO / 制作メモ</h2>
     <p>ジャンクで手に入れた大きな端子台や、赤と青のバスバー、WAGOなど、手元にあった配電用の部品を組み合わせて作りました。機能だけなら箱の中に隠せる部分ですが、配線や端子そのものが見えるよう、一枚のボード上に並べています。</p>
+  </section>
+  <section>
+    <h2>TROUBLES / 制作トラブルと切り分け</h2>
+    <div class="archive-item"><h3>SPL-2 は分岐できなかった</h3><p>WAGO SPL-2 は、1本の入力を2本へ分岐できる部品だと勘違いして進めていた。実物は入力と出力の1対1パススルーで、分岐はできない。導通を改めてチェックして気づいた。用途は接続口として便利なことに変わりないため、採用は続けた。</p></div><div class="archive-item"><h3>SPL-2 の固定方法の変更</h3><p>当初は SPL-2 をエポキシで背板へ貼る計画だったが、スプリングが硬く、ケーブルを抜き差しするたびに剥離方向の力がかかり、剥がれるのが時間の問題だった。マジックテープの脱着式へ変更し、レイアウト変更と個別メンテナンスができるようになった。</p></div><div class="archive-item"><h3>展示受け入れ時の出力異常</h3><p>2026-10-04 の final acceptance で、下部出力 LINE の一系統が約0.1mV しか出ていないことを確認し、配線を修復した。</p></div>
+  </section>
+  <section>
+    <h2>MEASUREMENTS / 実測</h2>
+    <div class="archive-item"><h3>完成時の電圧と LED の調整</h3><p>完成時の電圧計の表示は 5.58V。緑 LED は、通常の150オーム前後では展示空間で眩しすぎるため、抵抗を970オームにして電流を約5mAまで絞り、ぼんやり光る程度に調整した。</p></div><div class="archive-item"><h3>受け入れ試験（2026-10-04）</h3><p>配線の修復後、PDB-1 から MO-1 と IM-1 へ給電して3時間以上連続駆動し、異常なし。volt-1 を加えた本番構成でも2から3時間運用し、判定は acceptance COMPLETE / PASS。</p></div>
+  </section>
+  <section>
+    <h2>EXHIBITION / 展示</h2>
+    <p>JUNK YARD（2026-10-11 から 10-25、仙川 TINY CAFE）の最終展示9点の1つ。会期中は 5V MAIN の起点として、モバイルバッテリーから MO-1、IM-1、volt-1 へ給電した。作品紹介は 2026-10-02 に投稿された。</p>
   </section>
   <a class="note-link" href="https://note.com/yzrswork/n/nf10af42494eb">noteで制作過程・技術詳細を読む →</a>
 </main>
