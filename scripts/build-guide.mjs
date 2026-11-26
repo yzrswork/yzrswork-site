@@ -5,7 +5,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const GUIDES_DIR = join(ROOT, 'content', 'guides');
 const PUBLIC_GUIDES_DIR = join(ROOT, 'public', 'guides');
-const DEFAULT_OG_IMAGE = 'https://yzrswork.com/og.png';
+const DEFAULT_OG_IMAGE = 'https://yzrswork.com/og.png?v=20261126';
 const REQUIRED_PAGE_KEYS = ['breadcrumbs', 'kicker', 'heroTitle', 'dek', 'facts', 'toolboxRef', 'toolLink'];
 
 function escapeHtml(value) {

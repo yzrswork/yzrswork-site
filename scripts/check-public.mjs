@@ -369,7 +369,7 @@ for (const [page, canonical] of Object.entries(canonicalExpectations)) {
 
 const root = htmlByPage.get('index.html');
 if (!root.includes('<script type="application/ld+json">')) errors.push('TopのJSON-LDがない');
-if (!root.includes('<meta property="og:image" content="https://yzrswork.com/og.png"')) errors.push('TopのOGP画像がない');
+if (!root.includes('<meta property="og:image" content="https://yzrswork.com/og.png?v=20261126"')) errors.push('TopのOGP画像がない');
 for (const path of ['/about/', '/privacy/', '/guides/hajimete-no-denshi-kousaku-starter-guide/']) {
   if (!root.includes(`href="${path}"`)) errors.push(`Topからの導線がない: ${path}`);
 }
