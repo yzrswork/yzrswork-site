@@ -195,7 +195,7 @@ function checkLinks(page, html) {
 }
 
 const expectedFiles = [
-  'index.html', 'about/index.html', 'privacy/index.html', 'analytics.js', 'ads.txt', 'robots.txt', 'sitemap.xml', 'og.png', FOUNDATION,
+  'index.html', 'about/index.html', 'privacy/index.html', 'analytics.js', 'ads.txt', 'robots.txt', 'sitemap.xml', 'llms.txt', 'og.png', FOUNDATION,
   GUIDE, AUX_GUIDE, LP,
   TIMES, EVENING,
   'guides/hajimete-no-denshi-kousaku-starter-guide/assets/tools-step1-set.jpg',
@@ -369,6 +369,23 @@ for (const [page, canonical] of Object.entries(canonicalExpectations)) {
 
 const root = htmlByPage.get('index.html');
 if (!root.includes('<script type="application/ld+json">')) errors.push('TopのJSON-LDがない');
+const ORG_ID = `${BASE}/#organization`;
+function jsonLdNodes(html) {
+  return [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].flatMap((match) => {
+    try { return [JSON.parse(match[1])]; } catch { return []; }
+  });
+}
+const topJsonLd = jsonLdNodes(root);
+const orgNode = topJsonLd.find((node) => node['@type'] === 'Organization' && node['@id'] === ORG_ID);
+if (!orgNode) {
+  errors.push('TopにOrganization JSON-LD（@id一致）がない');
+} else {
+  if (orgNode.name !== 'や印工務店') errors.push('Organization nameが不一致');
+  if (orgNode.url !== `${BASE}/`) errors.push('Organization urlが不一致');
+  if (!Array.isArray(orgNode.sameAs) || !orgNode.sameAs.includes('https://note.com/yzrswork')) errors.push('Organization sameAsにnoteがない');
+  if (!orgNode.logo?.startsWith(`${BASE}/`) || !localPathExists(new URL(orgNode.logo).pathname)) errors.push(`Organization logoの参照先がない: ${orgNode.logo}`);
+}
+if (topJsonLd.find((node) => node['@type'] === 'WebSite')?.publisher?.['@id'] !== ORG_ID) errors.push('TopのWebSiteがOrganizationと結ばれていない');
 if (!root.includes('<meta property="og:image" content="https://yzrswork.com/og.png?v=20261126"')) errors.push('TopのOGP画像がない');
 for (const path of ['/about/', '/privacy/', '/guides/hajimete-no-denshi-kousaku-starter-guide/']) {
   if (!root.includes(`href="${path}"`)) errors.push(`Topからの導線がない: ${path}`);
@@ -380,6 +397,63 @@ if (!guide.includes('<script type="application/ld+json">')) errors.push('Guide�
 const auxGuide = htmlByPage.get(AUX_GUIDE);
 if (!auxGuide.includes('<meta name="robots" content="index,follow,max-image-preview:large"')) errors.push('AUX Guideのrobotsが不一致');
 if (!auxGuide.includes('<script type="application/ld+json">')) errors.push('AUX GuideのJSON-LDがない');
+
+// ガイドの日付は frontmatter（ソース）と生成HTMLを突き合わせる。手編集や生成し忘れのずれを検出する。
+function frontmatterValue(source, key) {
+  return source.match(new RegExp(`^${key}:\\s*"?([^"\\r\\n]+?)"?\\s*$`, 'm'))?.[1];
+}
+function checkGuideDates(label, source, html) {
+  const published = frontmatterValue(source, 'date_published');
+  const modified = frontmatterValue(source, 'date_modified');
+  if (!published || !modified) {
+    errors.push(`${label}: frontmatterに日付がない`);
+    return;
+  }
+  const article = jsonLdNodes(html).find((node) => node['@type'] === 'Article');
+  if (!article) {
+    errors.push(`${label}: Article JSON-LDがない`);
+  } else {
+    if (article.datePublished !== published) errors.push(`${label}: JSON-LDのdatePublishedがfrontmatterと不一致`);
+    if (article.dateModified !== modified) errors.push(`${label}: JSON-LDのdateModifiedがfrontmatterと不一致`);
+    if (article.publisher?.['@id'] !== ORG_ID) errors.push(`${label}: JSON-LDのpublisherがOrganizationと結ばれていない`);
+  }
+  const byline = html.match(/<p class="byline">([\s\S]*?)<\/p>/)?.[1];
+  if (!byline) {
+    errors.push(`${label}: bylineがない`);
+    return;
+  }
+  if (!byline.includes(`<time datetime="${published}">`)) errors.push(`${label}: bylineの公開日がfrontmatterと不一致`);
+  const hasUpdated = byline.includes('更新：');
+  if (hasUpdated !== (modified !== published)) errors.push(`${label}: bylineの更新表示が日付の関係と一致しない`);
+  if (hasUpdated && !byline.includes(`<time datetime="${modified}">`)) errors.push(`${label}: bylineの更新日がfrontmatterと不一致`);
+}
+checkGuideDates(GUIDE, guideSource, guideApp);
+checkGuideDates(AUX_GUIDE, auxGuideSource, auxGuideApp);
+
+// llms.txt: 1行目の見出し、要約行、絶対URL、リンク先の実在。計測用クエリ・期間限定棚・価格は載せない。
+const llmsTxt = existsSync(join(PUBLIC, 'llms.txt')) ? read('llms.txt') : '';
+if (llmsTxt.split('\n')[0] !== '# や印工務店') errors.push('llms.txtの1行目が「# や印工務店」ではない');
+if (!llmsTxt.split('\n').some((line) => line.startsWith('> '))) errors.push('llms.txtに要約行（> で始まる行）がない');
+if (llmsTxt.startsWith('﻿')) errors.push('llms.txtにBOMがある');
+if (llmsTxt && !llmsTxt.endsWith('\n')) errors.push('llms.txtの末尾に改行がない');
+if (/[ \t]$/m.test(llmsTxt)) errors.push('llms.txtに行末の空白がある');
+for (const forbidden of ['yzrs_ref', 'utm_', '円', '/deals']) {
+  if (llmsTxt.includes(forbidden)) errors.push(`llms.txtに禁止語がある: ${forbidden}`);
+}
+if (/\]\((?!https:\/\/)/.test(llmsTxt)) errors.push('llms.txtに絶対URLでないリンクがある');
+const llmsLinks = [...llmsTxt.matchAll(/\]\((https:\/\/[^)\s]+)\)/g)].map((match) => match[1]);
+for (const url of [GUIDE_URL, AUX_GUIDE_URL, `${APPS_BASE}/fixit/`]) {
+  if (!llmsLinks.includes(url)) errors.push(`llms.txtにリンクがない: ${url}`);
+}
+for (const link of llmsLinks) {
+  const url = new URL(link);
+  if (url.search || url.hash) errors.push(`llms.txtのリンクにクエリまたはフラグメントがある: ${link}`);
+  if (url.origin === BASE) {
+    if (!localPathExists(url.pathname)) errors.push(`llms.txtのリンク先がない: ${link}`);
+  } else if (url.origin !== APPS_BASE) {
+    errors.push(`llms.txtのリンクが想定外のオリジン: ${link}`);
+  }
+}
 
 const lp = htmlByPage.get(LP);
 for (const [label, expected] of [

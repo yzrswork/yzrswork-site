@@ -184,6 +184,27 @@ function renderArticle(blocks, images, imageConfig, slug) {
   }).join('\n');
 }
 
+const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
+
+// 運用: date_modified は本文・手順を実際に更新した日にする。テンプレートや表示の修正だけで全ガイドの更新日を上げない。
+function checkGuideDates(slug, frontmatter) {
+  const published = frontmatter.date_published;
+  const modified = frontmatter.date_modified;
+  if (!published || !modified) throw new Error(`${slug}.md に date_published / date_modified がありません`);
+  const isRealDate = (value) => {
+    if (!DATE_PATTERN.test(value)) return false;
+    const time = Date.parse(`${value}T00:00:00Z`);
+    return !Number.isNaN(time) && new Date(time).toISOString().slice(0, 10) === value;
+  };
+  if (!isRealDate(published) || !isRealDate(modified)) throw new Error(`${slug}.md の日付は実在する YYYY-MM-DD 形式である必要があります`);
+  if (published > modified) throw new Error(`${slug}.md の date_published が date_modified より後になっています`);
+}
+
+function renderByline({ date_published: published, date_modified: modified }) {
+  const updated = modified !== published ? ` ／ 更新：<time datetime="${modified}">${modified}</time>` : '';
+  return `<p class="byline">著者：<a href="/about/">や印工務店</a> ／ 公開：<time datetime="${published}">${published}</time>${updated}</p>`;
+}
+
 function renderPage({ slug, frontmatter, page, ogImage, toc, article, stepsHtml, factsHtml, originHtml, needHtml, affiliateHtml }) {
   return `<!doctype html>
 <html lang="ja">
@@ -205,7 +226,7 @@ function renderPage({ slug, frontmatter, page, ogImage, toc, article, stepsHtml,
 <meta property="og:image" content="${ogImage}" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="canonical" href="https://yzrswork.com/guides/${slug}/" />
-<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: frontmatter.title, description: frontmatter.description, image: ogImage, author: { '@type': 'Person', name: 'や印工務店', url: 'https://yzrswork.com/about/' }, publisher: { '@type': 'Organization', name: 'や印工務店', url: 'https://yzrswork.com/' }, mainEntityOfPage: `https://yzrswork.com/guides/${slug}/`, inLanguage: 'ja' })}</script>
+<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: frontmatter.title, description: frontmatter.description, image: ogImage, author: { '@type': 'Person', name: 'や印工務店', url: 'https://yzrswork.com/about/' }, publisher: { '@type': 'Organization', '@id': 'https://yzrswork.com/#organization', name: 'や印工務店', url: 'https://yzrswork.com/' }, datePublished: frontmatter.date_published, dateModified: frontmatter.date_modified, mainEntityOfPage: `https://yzrswork.com/guides/${slug}/`, inLanguage: 'ja' })}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8467165715973366" crossorigin="anonymous"></script>
 <script src="/analytics.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -228,6 +249,7 @@ a{color:var(--clay-text);text-underline-offset:3px}
 .facts{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 0;padding:0;list-style:none;font-size:13px}
 .facts span{display:inline-block;padding:4px 12px;border:1px solid var(--line-strong);border-radius:999px;background:var(--card);color:var(--muted)}
 .facts .level{border-color:var(--sub);background:var(--tint);color:var(--sub-deep)}
+.byline{margin:16px 0 0;font:12px/1.7 var(--mono);letter-spacing:.04em;color:var(--muted)}
 .steps{max-width:calc(1078px + 2 * var(--gut));margin-inline:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px;margin:0;padding:0 var(--gut) 32px;list-style:none}
 .steps a{display:block;height:100%;padding:20px;border-radius:12px;background:var(--card);border:1px solid var(--line-strong);color:var(--ink);text-decoration:none}
 .steps a:hover{border-color:var(--sub)}
@@ -311,7 +333,7 @@ a{color:var(--clay-text);text-underline-offset:3px}
 <div class="page">
 <header class="yzrs-sitebar"><div class="yzrs-sitebar-inner"><a class="yzrs-sitebar-brand" href="/"><b>や印工務店</b><span>yzrswork</span></a><nav class="yzrs-sitebar-nav" aria-label="主要な案内"><a href="/#guides" aria-current="page">Guide</a><a href="https://apps.yzrswork.com/?yzrs_ref=${escapeHtml(page.toolboxRef)}">道具箱</a><a href="/times/">Times</a><a href="/about/">工房案内</a></nav></div></header>
 <main>
-<section class="article-hero"><nav class="breadcrumbs" aria-label="パンくず">${page.breadcrumbs}</nav><p class="kicker">${escapeHtml(page.kicker)}</p><h1>${page.heroTitle}</h1><p class="dek">${page.dek}</p><div class="facts">${factsHtml}</div></section>
+<section class="article-hero"><nav class="breadcrumbs" aria-label="パンくず">${page.breadcrumbs}</nav><p class="kicker">${escapeHtml(page.kicker)}</p><h1>${page.heroTitle}</h1><p class="dek">${page.dek}</p><div class="facts">${factsHtml}</div>${renderByline(frontmatter)}</section>
 ${stepsHtml}
 <div class="layout"><aside class="toc" aria-label="この記事の目次"><p>CONTENTS</p><nav>${toc.map((item) => `<a href="#${escapeHtml(item.id)}">${escapeHtml(item.text)}</a>`).join('')}</nav><a class="tool-link" href="${page.toolLink.href}">${escapeHtml(page.toolLink.text)}</a></aside><div class="content">${originHtml}${needHtml}<article class="article-body" id="article-content">${article}</article>${affiliateHtml}</div></div>
 </main>
@@ -352,6 +374,7 @@ async function buildGuide(slug) {
   }
 
   const { frontmatter, body } = splitSource(readFileSync(source, 'utf8'));
+  checkGuideDates(slug, frontmatter);
   const blocks = parseBlocks(body, page.headingIds ?? {});
   const toc = blocks.filter((block) => block.kind === 'heading' && (block.level === 2 || (page.tocIncludesSteps === true && block.text.startsWith('STEP'))));
   const article = renderArticle(blocks, images, imageConfig, slug);
