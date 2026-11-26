@@ -21,6 +21,8 @@ has_measurements: false
 has_failure_examples: true
 hero_image_id: tools-step1-set
 status: editorial-draft
+date_published: "2026-08-10"
+date_modified: "2026-11-26"
 ---
 
 # はじめての電子工作 スターターガイド

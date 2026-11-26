@@ -16,6 +16,8 @@ estimated_minutes: 6
 has_measurements: true
 has_failure_examples: true
 status: editorial-draft
+date_published: "2026-11-10"
+date_modified: "2026-11-26"
 ---
 
 # Bluetoothは鳴るのにAUXだけ無音 — 3.5mmジャックの挿入検出DETをテスターで切り分ける

@@ -1,0 +1,17 @@
+# や印工務店
+
+> 電子工作、自作PC、DIY・模型の道具と記録をまとめる個人の工房です。作業中の計算や部品選び、配線確認、原因探しに使うWebツールと、制作・修理で分かったことをまとめています。
+
+## ガイド
+
+- [はじめての電子工作 スターターガイド — 部品はどこで買う？工具は何から？をまとめました](https://yzrswork.com/guides/hajimete-no-denshi-kousaku-starter-guide/): 部品の調達先の使い分け、最初に買う工具の順番、消耗品と部品ストックの揃え方をひとつの記事にまとめたガイド。
+- [Bluetoothは鳴るのにAUXだけ無音 — 3.5mmジャックの挿入検出DETをテスターで切り分ける](https://yzrswork.com/guides/aux-no-sound/): Bluetoothは鳴るのに外部AUX入力だけ無音のとき、挿入検出DETの導通をテスターで確かめる切り分け手順。
+
+## 工房
+
+- [工房案内](https://yzrswork.com/about/): 運営者情報、サイト運営の目的、問い合わせ、広告・Amazonアソシエイト関連表記。
+- [プライバシーポリシー](https://yzrswork.com/privacy/): アクセス解析、広告配信、ブラウザ保存データ、外部リンクに関するプライバシーポリシー。
+
+## 道具箱
+
+- [直し方ナビ（Fix-it）](https://apps.yzrswork.com/fixit/): よくあるトラブルを質問に答えるだけで切り分ける診断ナビ（BluetoothアンプのAUX無音を含む）。
